@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="meas_8h" kind="file" language="C++">
+    <compoundname>meas.h</compoundname>
+    <includes refid="meas__cfg_8h" local="yes">meas_cfg.h</includes>
+    <includedby refid="appltask__cfg_8c" local="yes">appltask_cfg.c</includedby>
+    <includedby refid="sys_8c" local="yes">sys.c</includedby>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="meas_8c" local="yes">meas.c</includedby>
+    <incdepgraph>
+      <node id="2173">
+        <label>meas_cfg.h</label>
+        <link refid="meas__cfg_8h"/>
+      </node>
+      <node id="2172">
+        <label>meas.h</label>
+        <link refid="meas_8h"/>
+        <childnode refid="2173" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2176">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="2177">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="2178">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="2174">
+        <label>meas.h</label>
+        <link refid="meas_8h"/>
+        <childnode refid="2175" relation="include">
+        </childnode>
+        <childnode refid="2176" relation="include">
+        </childnode>
+        <childnode refid="2177" relation="include">
+        </childnode>
+        <childnode refid="2178" relation="include">
+        </childnode>
+      </node>
+      <node id="2175">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="meas_8h_1a19e07286226192e32f876733e9d83f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MEAS_Ctrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Ctrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="46" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1afd00ee5bffce24a15a9606109087401b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e MEAS_IsFirstMeasurementCycleFinished</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_IsFirstMeasurementCycleFinished</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks if the first LTC measurement cycle was made. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TURE is the first measurement cycle was made, FALSE otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="54" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="124" bodyend="131"/>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="ltc_8c_1a612a43f8bc6c4b96b942f98277ba7be3" compoundref="ltc_8c" startline="3229" endline="3237">LTC_IsFirstMeasurementCycleFinished</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1a55247d0978a7017843bdb63b1e1c0d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e MEAS_StartMeasurement</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_StartMeasurement</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the initialization request to the LTC state machine. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="60" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="134" bodyend="143"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa32d31ccbfce34084aee81b9d82d8c647" compoundref="ltc__defs_8h" startline="336">LTC_STATE_INIT_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1a13cdbdb43eb8ec6908aeb857ded3fbcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MEAS_Request_IO_Write</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Request_IO_Write</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the request to the LTC state machine to write to the IO port-expander. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="66" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="56" bodyend="65"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa75918e89dc7d618eef12336e6a998860" compoundref="ltc__defs_8h" startline="337">LTC_STATE_USER_IO_WRITE_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1abd55b4038f8fec4e782a2f0c1cf25be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MEAS_Request_IO_Read</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Request_IO_Read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the request to the LTC state machine to read from the IO port-expander. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="67" bodyend="76"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa42fe338c2b9d1dd92d09820c23055ac3" compoundref="ltc__defs_8h" startline="338">LTC_STATE_USER_IO_READ_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1a65cac733109aabcf0d64c3b0bc9f4385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MEAS_Request_Temperature_Read</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Request_Temperature_Read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the request to the LTC state machine to read from the external temperature sensor on slaves. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="78" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="78" bodyend="87"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fae8c8499af7792e82be52999afd78c246" compoundref="ltc__defs_8h" startline="343">LTC_STATE_TEMP_SENS_READ_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1a079057d39c7ae2126b37fc433950c361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MEAS_Request_BalancingFeedback_Read</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Request_BalancingFeedback_Read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the request to the LTC state machine to read balancing feedback from the slaves. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="84" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="89" bodyend="98"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fad8d84a068d6ba19630fad4750c0ea1d0" compoundref="ltc__defs_8h" startline="344">LTC_STATE_BALANCEFEEDBACK_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1ae6b75dd3c330e59f31086317dce62602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MEAS_Request_EEPROM_Read</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Request_EEPROM_Read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the request to the LTC state machine to read from the external EEPROM on slaves. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="90" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="101" bodyend="110"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa0d13f9ac99e33ffcfe9c206bdef94222" compoundref="ltc__defs_8h" startline="340">LTC_STATE_EEPROM_READ_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="meas_8h_1a7425ff3111b7329767bf3e8f67126ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MEAS_Request_EEPROM_Write</definition>
+        <argsstring>(void)</argsstring>
+        <name>MEAS_Request_EEPROM_Write</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the request to the LTC state machine to write to the external EEPROM on slaves. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h" line="96" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.c" bodystart="112" bodyend="121"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="ltc_8c_1a39ab4baacdb3ae44540e0a69db165094" compoundref="ltc_8c" startline="577" endline="590">LTC_SetStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa5877ee9f80ec4e911bdb7c0e05af995f" compoundref="ltc__defs_8h" startline="341">LTC_STATE_EEPROM_WRITE_REQUEST</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the driver for the measurements needed by the BMS (e.g., I,V,T). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>02.10.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>MEAS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>MEAS_IF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEAS_IF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="meas__cfg_8h" kindref="compound">meas_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="meas_8h_1a19e07286226192e32f876733e9d83f6b" kindref="member">MEAS_Ctrl</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="meas_8h_1afd00ee5bffce24a15a9606109087401b" kindref="member">MEAS_IsFirstMeasurementCycleFinished</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="meas_8h_1a55247d0978a7017843bdb63b1e1c0d3d" kindref="member">MEAS_StartMeasurement</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="meas_8h_1a13cdbdb43eb8ec6908aeb857ded3fbcf" kindref="member">MEAS_Request_IO_Write</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="meas_8h_1abd55b4038f8fec4e782a2f0c1cf25be4" kindref="member">MEAS_Request_IO_Read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="meas_8h_1a65cac733109aabcf0d64c3b0bc9f4385" kindref="member">MEAS_Request_Temperature_Read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="meas_8h_1a079057d39c7ae2126b37fc433950c361" kindref="member">MEAS_Request_BalancingFeedback_Read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="meas_8h_1ae6b75dd3c330e59f31086317dce62602" kindref="member">MEAS_Request_EEPROM_Read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="meas_8h_1a7425ff3111b7329767bf3e8f67126ed2" kindref="member">MEAS_Request_EEPROM_Write</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MEAS_IF_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/meas/meas.h"/>
+  </compounddef>
+</doxygen>

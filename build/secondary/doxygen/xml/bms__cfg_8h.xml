@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="bms__cfg_8h" kind="file" language="C++">
+    <compoundname>bms_cfg.h</compoundname>
+    <includes refid="mcu_8h" local="yes">mcu.h</includes>
+    <includedby refid="bms_8h" local="yes">bms.h</includedby>
+    <includedby refid="bms__cfg_8c" local="yes">bms_cfg.c</includedby>
+    <incdepgraph>
+      <node id="314">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>stdint.h</label>
+      </node>
+      <node id="315">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="316">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="322">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="326">
+        <label>bms_cfg.c</label>
+        <link refid="bms__cfg_8c"/>
+      </node>
+      <node id="319">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="321">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="320">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="323">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bms__cfg_8h_1affea96b6fdafcff283f8080c451fd2b7" prot="public" static="no">
+        <name>BMS_ECU_GOTOSLEEP</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="41" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a97e4cccfe3a62a8e2da63208838e2157" prot="public" static="no">
+        <name>BMS_STARTAWAKESELFCHECK</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="42" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a48dd955144cdf894aef71852c3b9e8c3" prot="public" static="no">
+        <name>BMS_STARTPOWERONSELFCHECK</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="43" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gaae331a8533f6e3070aa025c827afac3c" prot="public" static="no">
+        <name>BMS_CURRENTMAX</name>
+        <initializer>15000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current safe operating limit When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mA </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>15000 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="58" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gae679817424f4d4e8f2431622a16a7c61" prot="public" static="no">
+        <name>BMS_CURRENTMIN</name>
+        <initializer>-15000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minimum current safe operating limit When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mA </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>-15000 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="71" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gac2ae229e872b85bae7317473b927fdc8" prot="public" static="no">
+        <name>BMS_TEST_CELL_SOF_LIMITS</name>
+        <initializer><ref refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>checking if current is in SOF limits of cells. Set FALSE for test without checking against SOF derating. <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="82" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a623d42db4b4d647ea577f5ee2c16992b" prot="public" static="no">
+        <name>BMS_REQ_ID_NOREQ</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="90" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" prot="public" static="no">
+        <name>BMS_REQ_ID_STANDBY</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN signal to go to STANDBY state (ready, but no contactors closed) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>8 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="102" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" prot="public" static="no">
+        <name>BMS_REQ_ID_NORMAL</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN signal to go to NORMAL state (contactors closing procedure) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>3 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="114" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gaaad264c5e922187cdb569e1cbe7db4a9" prot="public" static="no">
+        <name>BMS_REQ_ID_CHARGE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN signal to go to CHARGE state (contactors closing procedure) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>4 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="126" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" prot="public" static="no">
+        <name>BMS_STATEMACH_SHORTTIME_MS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine short time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="134" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" prot="public" static="no">
+        <name>BMS_STATEMACH_MEDIUMTIME_MS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine medium time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="140" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a4409acb53e6a5f164efafdff8e6b256a" prot="public" static="no">
+        <name>BMS_STATEMACH_LONGTIME_MS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine long time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="146" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a09a8abf3f6ceb92b0e8246a8b8ca94e3" prot="public" static="no">
+        <name>BMS_STATEMACH_VERYLONGTIME_MS</name>
+        <initializer>2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine very long time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="152" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga67b6663770c7f235fa045649286278dd" prot="public" static="no">
+        <name>BMS_SELFPOWERONCHECK_TIMEOUT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="166" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga01d7e471386cf41c6a5b97ab1e184d02" prot="public" static="no">
+        <name>BMS_SELFAWAKECHECK_TIMEOUT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="179" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga222c89eb614e2e8f58bfb142ed284028" prot="public" static="no">
+        <name>BMS_IDLE_TIMEOUT</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>50 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[40,60] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="193" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gaf0da7287cb9b874642e2a94fbd13f023" prot="public" static="no">
+        <name>BMS_PRECHARGE_VOLTAGE_THRESHOLD</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>V </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="206" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga2be5c2dffed30d25f64e4a74e0730f2b" prot="public" static="no">
+        <name>BMS_PRECHARGE_CURRENT_THRESHOLD</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mA </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="219" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga3f50e0a1a12b4618c20f638770abb5a7" prot="public" static="no">
+        <name>BMS_PRECHARGE_TIMEOUT</name>
+        <initializer>600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>600 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[500,700] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="232" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga1324e4115fc243ed4a39fc0f49a85491" prot="public" static="no">
+        <name>BMS_TIMER_MAINMINUS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>100 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[50,150] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="245" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga350a6eb4eeb03c2091f3310412fedc01" prot="public" static="no">
+        <name>BMS_TIMER_MAINPRECHARGE</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>200 </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[150,250] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="258" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gafc76899157a024b0b0684b7ccf30139d" prot="public" static="no">
+        <name>BMS_TIMER_MAINPLUS</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>50 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[40,60] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="271" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a42b1dba02f1766c8747dca68bbac31f6" prot="public" static="no">
+        <name>BMS_GETSELFCHECK_STATE</name>
+        <param></param>
+        <initializer><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" kindref="member">BMS_CHECK_OK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="273" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a4c22d4ae2cf34c1ca35a8b316217b2af" prot="public" static="no">
+        <name>BMS_GETPOWERONSELFCHECK_STATE</name>
+        <param></param>
+        <initializer><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" kindref="member">BMS_CHECK_OK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="274" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a79ccaee80dfcccb5f735066ddf5fbc48" prot="public" static="no">
+        <name>BMS_CHECKPRECHARGE</name>
+        <param></param>
+        <initializer>BMS_CheckPrecharge()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" line="275" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>bms driver configuration header </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>BMS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>BMS_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu_8h" kindref="compound">mcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="bms__cfg_8h_1affea96b6fdafcff283f8080c451fd2b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_ECU_GOTOSLEEP()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>CPU_GoToSleep(60)</highlight><highlight class="comment">/*<sp/>EcuMode_GoToSleep();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//TODO<sp/>Review:<sp/>dummy<sp/>macro<sp/>with<sp/>no<sp/>effect</highlight></codeline>
+<codeline lineno="42" refid="bms__cfg_8h_1a97e4cccfe3a62a8e2da63208838e2157" refkind="member"><highlight class="comment">#define<sp/>BMS_STARTAWAKESELFCHECK()<sp/><sp/><sp/>//<sp/>Start<sp/>SelfCheck<sp/>in<sp/>case<sp/>of<sp/>awaking<sp/>from<sp/>sleep<sp/><sp/><sp/><sp/>//TODO<sp/>Review:<sp/>dummy<sp/>macro<sp/>with<sp/>no<sp/>effect</highlight></codeline>
+<codeline lineno="43" refid="bms__cfg_8h_1a48dd955144cdf894aef71852c3b9e8c3" refkind="member"><highlight class="comment">#define<sp/>BMS_STARTPOWERONSELFCHECK()<sp/>//<sp/>Start<sp/>SelfCheck<sp/>in<sp/>case<sp/>of<sp/>starting<sp/>by<sp/>power<sp/>on<sp/><sp/>//TODO<sp/>Review:<sp/>dummy<sp/>macro<sp/>with<sp/>no<sp/>effect</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">//<sp/>#define<sp/>BMS_RESETSLEEPFLAG()<sp/>RTC_IF_ResetSleepFlag<sp/>()<sp/>//TODO<sp/>Review:<sp/>function<sp/>RTC_IF_ResetSleepFlag<sp/>not<sp/>existing</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight></codeline>
+<codeline lineno="58" refid="group__CONFIG__BMS_1gaae331a8533f6e3070aa025c827afac3c" refkind="member"><highlight class="comment">#define<sp/>BMS_CURRENTMAX<sp/>15000</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight></codeline>
+<codeline lineno="71" refid="group__CONFIG__BMS_1gae679817424f4d4e8f2431622a16a7c61" refkind="member"><highlight class="comment">#define<sp/>BMS_CURRENTMIN<sp/>-15000</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight></codeline>
+<codeline lineno="81"><highlight class="comment">//#define<sp/>BMS_TEST_CELL_SOF_LIMITS<sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="82" refid="group__CONFIG__BMS_1gac2ae229e872b85bae7317473b927fdc8" refkind="member"><highlight class="comment">#define<sp/>BMS_TEST_CELL_SOF_LIMITS<sp/>FALSE</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"></highlight></codeline>
+<codeline lineno="84"><highlight class="comment"></highlight></codeline>
+<codeline lineno="85"><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight></codeline>
+<codeline lineno="90" refid="bms__cfg_8h_1a623d42db4b4d647ea577f5ee2c16992b" refkind="member"><highlight class="comment">#define<sp/>BMS_REQ_ID_NOREQ<sp/>0</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"></highlight></codeline>
+<codeline lineno="102" refid="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" refkind="member"><highlight class="comment">#define<sp/>BMS_REQ_ID_STANDBY<sp/>8</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"></highlight></codeline>
+<codeline lineno="114" refid="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" refkind="member"><highlight class="comment">#define<sp/>BMS_REQ_ID_NORMAL<sp/>3</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"></highlight></codeline>
+<codeline lineno="126" refid="group__CONFIG__BMS_1gaaad264c5e922187cdb569e1cbe7db4a9" refkind="member"><highlight class="comment">#define<sp/>BMS_REQ_ID_CHARGE<sp/>4</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"></highlight></codeline>
+<codeline lineno="128"><highlight class="comment"></highlight></codeline>
+<codeline lineno="129"><highlight class="comment"></highlight></codeline>
+<codeline lineno="134" refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" refkind="member"><highlight class="comment">#define<sp/>BMS_STATEMACH_SHORTTIME_MS<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"></highlight></codeline>
+<codeline lineno="140" refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" refkind="member"><highlight class="comment">#define<sp/>BMS_STATEMACH_MEDIUMTIME_MS<sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight></codeline>
+<codeline lineno="146" refid="bms__cfg_8h_1a4409acb53e6a5f164efafdff8e6b256a" refkind="member"><highlight class="comment">#define<sp/>BMS_STATEMACH_LONGTIME_MS<sp/><sp/><sp/><sp/><sp/>100</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"></highlight></codeline>
+<codeline lineno="152" refid="bms__cfg_8h_1a09a8abf3f6ceb92b0e8246a8b8ca94e3" refkind="member"><highlight class="comment">#define<sp/>BMS_STATEMACH_VERYLONGTIME_MS<sp/><sp/><sp/><sp/><sp/>2000</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment"></highlight></codeline>
+<codeline lineno="166" refid="group__CONFIG__BMS_1ga67b6663770c7f235fa045649286278dd" refkind="member"><highlight class="comment">#define<sp/>BMS_SELFPOWERONCHECK_TIMEOUT<sp/><sp/><sp/><sp/>10<sp/>//<sp/>100ms</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"></highlight></codeline>
+<codeline lineno="179" refid="group__CONFIG__BMS_1ga01d7e471386cf41c6a5b97ab1e184d02" refkind="member"><highlight class="comment">#define<sp/>BMS_SELFAWAKECHECK_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/>10<sp/>//<sp/>100ms</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"></highlight></codeline>
+<codeline lineno="181"><highlight class="comment"></highlight></codeline>
+<codeline lineno="193" refid="group__CONFIG__BMS_1ga222c89eb614e2e8f58bfb142ed284028" refkind="member"><highlight class="comment">#define<sp/>BMS_IDLE_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>500<sp/>//<sp/>5s<sp/>timeout<sp/>to<sp/>go<sp/>to<sp/>sleep<sp/>or<sp/>power<sp/>off<sp/>in<sp/>idle<sp/>state</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"></highlight></codeline>
+<codeline lineno="206" refid="group__CONFIG__BMS_1gaf0da7287cb9b874642e2a94fbd13f023" refkind="member"><highlight class="comment">#define<sp/>BMS_PRECHARGE_VOLTAGE_THRESHOLD<sp/>10<sp/>//<sp/>V</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"></highlight></codeline>
+<codeline lineno="219" refid="group__CONFIG__BMS_1ga2be5c2dffed30d25f64e4a74e0730f2b" refkind="member"><highlight class="comment">#define<sp/>BMS_PRECHARGE_CURRENT_THRESHOLD<sp/>10<sp/>//<sp/>mA</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"></highlight></codeline>
+<codeline lineno="232" refid="group__CONFIG__BMS_1ga3f50e0a1a12b4618c20f638770abb5a7" refkind="member"><highlight class="comment">#define<sp/>BMS_PRECHARGE_TIMEOUT<sp/>600<sp/>//<sp/>6s</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"></highlight></codeline>
+<codeline lineno="245" refid="group__CONFIG__BMS_1ga1324e4115fc243ed4a39fc0f49a85491" refkind="member"><highlight class="comment">#define<sp/>BMS_TIMER_MAINMINUS<sp/>100<sp/>//<sp/>1s</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"></highlight></codeline>
+<codeline lineno="258" refid="group__CONFIG__BMS_1ga350a6eb4eeb03c2091f3310412fedc01" refkind="member"><highlight class="comment">#define<sp/>BMS_TIMER_MAINPRECHARGE<sp/>200<sp/>//<sp/>2s</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"></highlight></codeline>
+<codeline lineno="271" refid="group__CONFIG__BMS_1gafc76899157a024b0b0684b7ccf30139d" refkind="member"><highlight class="comment">#define<sp/>BMS_TIMER_MAINPLUS<sp/>50<sp/>//<sp/>500ms</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"></highlight></codeline>
+<codeline lineno="273" refid="bms__cfg_8h_1a42b1dba02f1766c8747dca68bbac31f6" refkind="member"><highlight class="comment">#define<sp/>BMS_GETSELFCHECK_STATE()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMS_CHECK_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>function<sp/>could<sp/>return:<sp/>BMS_CHECK_NOT_OK<sp/>or<sp/>OK<sp/>BMS_CHECK_BUSY<sp/>//TODO<sp/>Review:<sp/>dummy</highlight></codeline>
+<codeline lineno="274" refid="bms__cfg_8h_1a4c22d4ae2cf34c1ca35a8b316217b2af" refkind="member"><highlight class="comment">#define<sp/>BMS_GETPOWERONSELFCHECK_STATE()<sp/><sp/><sp/><sp/><sp/>BMS_CHECK_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>function<sp/>could<sp/>return:<sp/>BMS_CHECK_NOT_OK<sp/>or<sp/>OK<sp/>BMS_CHECK_BUSY<sp/>//TODO<sp/>Review:<sp/>dummy</highlight></codeline>
+<codeline lineno="275" refid="bms__cfg_8h_1a79ccaee80dfcccb5f735066ddf5fbc48" refkind="member"><highlight class="comment">#define<sp/>BMS_CHECKPRECHARGE()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMS_CheckPrecharge()<sp/><sp/><sp/><sp/>//<sp/>DIAG_CheckPrecharge()</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"></highlight></codeline>
+<codeline lineno="277"><highlight class="comment"></highlight></codeline>
+<codeline lineno="278"><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BMS_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/bms_cfg.h"/>
+  </compounddef>
+</doxygen>

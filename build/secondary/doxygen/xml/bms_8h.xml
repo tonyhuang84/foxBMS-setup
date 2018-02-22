@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="bms_8h" kind="file" language="C++">
+    <compoundname>bms.h</compoundname>
+    <includes refid="bms__cfg_8h" local="yes">bms_cfg.h</includes>
+    <includedby refid="bms_8c" local="yes">bms.c</includedby>
+    <includedby refid="appltask__cfg_8c" local="yes">appltask_cfg.c</includedby>
+    <includedby refid="diag_8c" local="yes">diag.c</includedby>
+    <includedby refid="sys_8c" local="yes">sys.c</includedby>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <incdepgraph>
+      <node id="296">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>stdint.h</label>
+      </node>
+      <node id="297">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="298">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="303">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="305">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="302">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="301">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="304">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structBMS__STATE__s" prot="public">BMS_STATE_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bms_8h_1a3443a7897961ac867c0b03e3baae58dc" prot="public" static="no">
+        <name>BMS_CHECK_e</name>
+        <enumvalue id="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" prot="public">
+          <name>BMS_CHECK_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>syscontrol ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a3443a7897961ac867c0b03e3baae58dcac7706545d9d23ded40a3cda768701163" prot="public">
+          <name>BMS_CHECK_BUSY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>syscontrol busy </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a3443a7897961ac867c0b03e3baae58dca7de564ce5282d04b40de2b534bdf3878" prot="public">
+          <name>BMS_CHECK_NOT_OK</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>syscontrol not ok </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Symbolic names for busyness of the syscontrol </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="47" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5b" prot="public" static="no">
+        <name>BMS_TRIG_EVENT_e</name>
+        <enumvalue id="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5bacd387741d13fe384a1872c8df88b7566" prot="public">
+          <name>BMS_MODE_STARTUP_EVENT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>syscontrol startup </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba95f5505eee5d98a12d82ebecb222ee71" prot="public">
+          <name>BMS_MODE_CYCLIC_EVENT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>for cyclic events </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5baf0c2341fae14bc7d3cc8f409e8449252" prot="public">
+          <name>BMS_MODE_TRIGGERED_EVENT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>for triggered events </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba5c5908eebb6578d4f7f520c066c9fc42" prot="public">
+          <name>BMS_MODE_ABNORMAL_EVENT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>for abnormal (error etc.) events </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba90c4b455f5f4b3a16c8edb64d8c9e630" prot="public">
+          <name>BMS_MODE_EVENT_RESERVED</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>do not use </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="55" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" prot="public" static="no">
+        <name>BMS_STATEMACH_e</name>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" prot="public">
+          <name>BMS_STATEMACH_UNINITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" prot="public">
+          <name>BMS_STATEMACH_INITIALIZATION</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" prot="public">
+          <name>BMS_STATEMACH_INITIALIZED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67adcd5ff5a0f825e8441925c5ee7da8b88" prot="public">
+          <name>BMS_STATEMACH_IDLE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" prot="public">
+          <name>BMS_STATEMACH_STANDBY</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a20d59e20f702e9fc65bbe3f1def7bb20" prot="public">
+          <name>BMS_STATEMACH_PRECHARGE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a80d8029f395da5c25c79d2e97e905c7e" prot="public">
+          <name>BMS_STATEMACH_NORMAL</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a5e3a0016f0e14f4b9bf7250cbf7b55aa" prot="public">
+          <name>BMS_STATEMACH_CHARGE_PRECHARGE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4be265a2827e15ee9a997708902d7bb6" prot="public">
+          <name>BMS_STATEMACH_CHARGE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4d2e2e631943fa2467315f78711cdfcb" prot="public">
+          <name>BMS_STATEMACH_UNDEFINED</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>undefined state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a1b086aae86da6c3593e81c116964e1a5" prot="public">
+          <name>BMS_STATEMACH_RESERVED1</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>reserved state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" prot="public">
+          <name>BMS_STATEMACH_ERROR</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>States of the SYS state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="91" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" bodystart="91" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382e" prot="public" static="no">
+        <name>BMS_STATEMACH_SUB_e</name>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" prot="public">
+          <name>BMS_ENTRY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate entry state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" prot="public">
+          <name>BMS_CHECK_ERROR_FLAGS_INTERLOCK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate check measurements after interlock closed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" prot="public">
+          <name>BMS_INTERLOCK_CHECKED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate interlocked checked </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eacd11925055b7f57647e889e209fa5317" prot="public">
+          <name>BMS_CHECK_STATE_REQUESTS</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate check if there is a state request </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" prot="public">
+          <name>BMS_CHECK_ERROR_FLAGS</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate check if any error flag set </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ead81313a69301f57958ed3fb971b96204" prot="public">
+          <name>BMS_CHECK_CONTACTOR_NORMAL_STATE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate in precharge, check if there contactors reached normal </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac0e5a9603bbec550554aa0e84299b413" prot="public">
+          <name>BMS_CHECK_CONTACTOR_CHARGE_STATE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate in precharge, check if there contactors reached normal </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac349966dfd7cd1d17b94998c104b2827" prot="public">
+          <name>BMS_OPEN_INTERLOCK</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate in error to open interlock after contactors have been opened </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea8dd5047f9389d49e31232b47e4924a13" prot="public">
+          <name>BMS_CHECK_INTERLOCK_CLOSE_AFTER_ERROR</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate in error to close interlock after all error flags were reset </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Substates of the SYS state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="111" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" bodystart="111" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="bms_8h_1a83cf77f74949b62d97e29f9be722f593" prot="public" static="no">
+        <name>BMS_STATE_REQUEST_e</name>
+        <enumvalue id="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" prot="public">
+          <name>BMS_STATE_INIT_REQUEST</name>
+          <initializer>= BMS_STATEMACH_INITIALIZATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a83cf77f74949b62d97e29f9be722f593ad478e86d9beb5e5f4f4572459a20557c" prot="public">
+          <name>BMS_STATE_ERROR_REQUEST</name>
+          <initializer>= BMS_STATEMACH_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" prot="public">
+          <name>BMS_STATE_NO_REQUEST</name>
+          <initializer>= BMS_STATEMACH_RESERVED1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State requests for the SYS statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="127" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="enum" id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" prot="public" static="no">
+        <name>BMS_RETURN_TYPE_e</name>
+        <enumvalue id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" prot="public">
+          <name>BMS_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba49580ee4077fecec0e46fa9acb2fc758" prot="public">
+          <name>BMS_BUSY_OK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT under load <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba2359a5fcc8a330f656014bf1e90a7c61" prot="public">
+          <name>BMS_REQUEST_PENDING</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requested to be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba7a0d090a526d2ee0ab21c868bd74e13e" prot="public">
+          <name>BMS_ILLEGAL_REQUEST</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request can not be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba46c142fedcf2b6d215a3c6ced6d031c5" prot="public">
+          <name>BMS_ALREADY_INITIALIZED</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initialization of LTC already finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621bad0d57b4d50bf0765a9c171ce816a3ec9" prot="public">
+          <name>BMS_ILLEGAL_TASK_TYPE</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Illegal </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible return values when state requests are made to the SYS statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="137" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" bodystart="137" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bms_8h_1a40eb276efea852638c5ba83e53569ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref></type>
+        <definition>BMS_RETURN_TYPE_e BMS_SetStateRequest</definition>
+        <argsstring>(BMS_STATE_REQUEST_e statereq)</argsstring>
+        <name>BMS_SetStateRequest</name>
+        <param>
+          <type><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable bms_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine,e.g, start voltage measurement, read result of voltage measurement, re-initialization. It calls <ref refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" kindref="member">BMS_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state request to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>current state request, taken from BMS_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="179" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="146" bodyend="158"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="311" endline="322">OS_TaskEnter_Critical</references>
+        <references refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" compoundref="bms_8c" startline="170" endline="189">BMS_CheckStateRequest</references>
+        <references refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" compoundref="bms_8h" startline="138">BMS_OK</references>
+        <references refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" compoundref="bms_8h" startline="154">BMS_STATE_s::statereq</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="324" endline="335">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8h_1afcd6e979c7502594e6807d322df11555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref></type>
+        <definition>BMS_STATEMACH_e BMS_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the SYS state machine.</para><para><simplesect kind="return"><para>current state, taken from BMS_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="188" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="122" bodyend="124"/>
+        <references refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" compoundref="bms_8h" startline="155">BMS_STATE_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8h_1a954a05b20669dc00663c4f0f2a729fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BMS_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the SYS driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the SYS state machine. It must be called time-triggered, every 1ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h" line="196" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="191" bodyend="323"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa1c17b9694c7034ae7adff25cab57a91" compoundref="diag__cfg_8h" startline="293">DIAG_SYSMON_BMS_ID</references>
+        <references refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" compoundref="bms_8h" startline="155">BMS_STATE_s::state</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" compoundref="bms_8h" startline="93">BMS_STATEMACH_UNINITIALIZED</references>
+        <references refid="bms_8c_1aa72909416e548055c772878fcc840f41" compoundref="bms_8c" startline="353" endline="369">BMS_CheckVoltages</references>
+        <references refid="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" compoundref="bms_8c" startline="377" endline="411">BMS_CheckTemperatures</references>
+        <references refid="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" compoundref="bms_8c" startline="422" endline="451">BMS_CheckCurrent</references>
+        <references refid="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" compoundref="bms_8c" startline="92" endline="102">BMS_CheckReEntrance</references>
+        <references refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" compoundref="bms_8h" startline="153">BMS_STATE_s::timer</references>
+        <references refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" compoundref="bms_8h" startline="160">BMS_STATE_s::triggerentry</references>
+        <references refid="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" compoundref="bms_8c" startline="134" endline="142">BMS_TransferStateRequest</references>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" compoundref="bms_8h" startline="128">BMS_STATE_INIT_REQUEST</references>
+        <references refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" compoundref="bms_8c" startline="48">BMS_SAVELASTSTATES</references>
+        <references refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" compoundref="bms__cfg_8h" startline="134">BMS_STATEMACH_SHORTTIME_MS</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" compoundref="bms_8h" startline="94">BMS_STATEMACH_INITIALIZATION</references>
+        <references refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" compoundref="bms_8h" startline="156">BMS_STATE_s::substate</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" compoundref="bms_8h" startline="112">BMS_ENTRY</references>
+        <references refid="structBMS__STATE__s_1aa887635fef363b58d693ea1c4f88e7ac" compoundref="bms_8h" startline="159">BMS_STATE_s::ErrRequestCounter</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" compoundref="bms_8h" startline="95">BMS_STATEMACH_INITIALIZED</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" compoundref="bms_8h" startline="97">BMS_STATEMACH_STANDBY</references>
+        <references refid="interlock_8c_1ab218c092199d1c3999262123352877fc" compoundref="interlock_8c" startline="236" endline="248">ILCK_SetStateRequest</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" compoundref="interlock_8h" startline="136">ILCK_STATE_CLOSE_REQUEST</references>
+        <references refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" compoundref="bms__cfg_8h" startline="140">BMS_STATEMACH_MEDIUMTIME_MS</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" compoundref="bms_8h" startline="113">BMS_CHECK_ERROR_FLAGS_INTERLOCK</references>
+        <references refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" compoundref="bms_8c" startline="460" endline="491">BMS_CheckAnyErrorFlagSet</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" compoundref="bms_8h" startline="104">BMS_STATEMACH_ERROR</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" compoundref="bms_8h" startline="114">BMS_INTERLOCK_CHECKED</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" compoundref="bms_8h" startline="116">BMS_CHECK_ERROR_FLAGS</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3a661b3d706ce5932f009cfe176f67199d" compoundref="interlock_8h" startline="135">ILCK_STATE_OPEN_REQUEST</references>
+        <references refid="batterysystem__cfg_8h_1a144a967d8c4a938ea18ac9fae3055264" compoundref="batterysystem__cfg_8h" startline="51">SECONDARY_OUT_OF_ERROR_STATE</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea8dd5047f9389d49e31232b47e4924a13" compoundref="bms_8h" startline="120">BMS_CHECK_INTERLOCK_CLOSE_AFTER_ERROR</references>
+        <references refid="structBMS__STATE__s_1a278b998c12d1c5ab6f8d291c067f936a" compoundref="bms_8h" startline="161">BMS_STATE_s::counter</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>bms driver header </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>BMS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#ifndef<sp/>BMS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bms__cfg_8h" kindref="compound">bms_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dc" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" kindref="member">BMS_CHECK_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dcac7706545d9d23ded40a3cda768701163" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dcac7706545d9d23ded40a3cda768701163" kindref="member">BMS_CHECK_BUSY</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca7de564ce5282d04b40de2b534bdf3878" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca7de564ce5282d04b40de2b534bdf3878" kindref="member">BMS_CHECK_NOT_OK</ref><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dc" kindref="member">BMS_CHECK_e</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56" refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5bacd387741d13fe384a1872c8df88b7566" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5bacd387741d13fe384a1872c8df88b7566" kindref="member">BMS_MODE_STARTUP_EVENT</ref><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment">//<sp/>BMS_MODE_EVENT_INIT<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/>/*!&lt;<sp/>todo<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba95f5505eee5d98a12d82ebecb222ee71" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba95f5505eee5d98a12d82ebecb222ee71" kindref="member">BMS_MODE_CYCLIC_EVENT</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5baf0c2341fae14bc7d3cc8f409e8449252" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5baf0c2341fae14bc7d3cc8f409e8449252" kindref="member">BMS_MODE_TRIGGERED_EVENT</ref><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba5c5908eebb6578d4f7f520c066c9fc42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba5c5908eebb6578d4f7f520c066c9fc42" kindref="member">BMS_MODE_ABNORMAL_EVENT</ref><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba90c4b455f5f4b3a16c8edb64d8c9e630" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5ba90c4b455f5f4b3a16c8edb64d8c9e630" kindref="member">BMS_MODE_EVENT_RESERVED</ref><sp/><sp/><sp/>=<sp/>0xFF,<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="bms_8h_1a868f630c3f020eb3c30bc0b4871f3f5b" kindref="member">BMS_TRIG_EVENT_e</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//#######################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Init-Sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" kindref="member">BMS_STATEMACH_INITIALIZATION</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" kindref="member">BMS_STATEMACH_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67adcd5ff5a0f825e8441925c5ee7da8b88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67adcd5ff5a0f825e8441925c5ee7da8b88" kindref="member">BMS_STATEMACH_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" kindref="member">BMS_STATEMACH_STANDBY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a20d59e20f702e9fc65bbe3f1def7bb20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a20d59e20f702e9fc65bbe3f1def7bb20" kindref="member">BMS_STATEMACH_PRECHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a80d8029f395da5c25c79d2e97e905c7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a80d8029f395da5c25c79d2e97e905c7e" kindref="member">BMS_STATEMACH_NORMAL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a5e3a0016f0e14f4b9bf7250cbf7b55aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a5e3a0016f0e14f4b9bf7250cbf7b55aa" kindref="member">BMS_STATEMACH_CHARGE_PRECHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4be265a2827e15ee9a997708902d7bb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4be265a2827e15ee9a997708902d7bb6" kindref="member">BMS_STATEMACH_CHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4d2e2e631943fa2467315f78711cdfcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4d2e2e631943fa2467315f78711cdfcb" kindref="member">BMS_STATEMACH_UNDEFINED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a1b086aae86da6c3593e81c116964e1a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a1b086aae86da6c3593e81c116964e1a5" kindref="member">BMS_STATEMACH_RESERVED1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x80,<sp/></highlight></codeline>
+<codeline lineno="104" refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" kindref="member">BMS_STATEMACH_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xF0,<sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="112" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" kindref="member">BMS_CHECK_ERROR_FLAGS_INTERLOCK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" kindref="member">BMS_INTERLOCK_CHECKED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eacd11925055b7f57647e889e209fa5317" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eacd11925055b7f57647e889e209fa5317" kindref="member">BMS_CHECK_STATE_REQUESTS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" kindref="member">BMS_CHECK_ERROR_FLAGS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ead81313a69301f57958ed3fb971b96204" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ead81313a69301f57958ed3fb971b96204" kindref="member">BMS_CHECK_CONTACTOR_NORMAL_STATE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac0e5a9603bbec550554aa0e84299b413" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac0e5a9603bbec550554aa0e84299b413" kindref="member">BMS_CHECK_CONTACTOR_CHARGE_STATE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac349966dfd7cd1d17b94998c104b2827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac349966dfd7cd1d17b94998c104b2827" kindref="member">BMS_OPEN_INTERLOCK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea8dd5047f9389d49e31232b47e4924a13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea8dd5047f9389d49e31232b47e4924a13" kindref="member">BMS_CHECK_INTERLOCK_CLOSE_AFTER_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382e" kindref="member">BMS_STATEMACH_SUB_e</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="128" refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" kindref="member">BMS_STATE_INIT_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" kindref="member">BMS_STATEMACH_INITIALIZATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593ad478e86d9beb5e5f4f4572459a20557c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593ad478e86d9beb5e5f4f4572459a20557c" kindref="member">BMS_STATE_ERROR_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" kindref="member">BMS_STATEMACH_ERROR</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a1b086aae86da6c3593e81c116964e1a5" kindref="member">BMS_STATEMACH_RESERVED1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" kindref="member">BMS_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba49580ee4077fecec0e46fa9acb2fc758" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba49580ee4077fecec0e46fa9acb2fc758" kindref="member">BMS_BUSY_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba2359a5fcc8a330f656014bf1e90a7c61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba2359a5fcc8a330f656014bf1e90a7c61" kindref="member">BMS_REQUEST_PENDING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba7a0d090a526d2ee0ab21c868bd74e13e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba7a0d090a526d2ee0ab21c868bd74e13e" kindref="member">BMS_ILLEGAL_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba46c142fedcf2b6d215a3c6ced6d031c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba46c142fedcf2b6d215a3c6ced6d031c5" kindref="member">BMS_ALREADY_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>30,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621bad0d57b4d50bf0765a9c171ce816a3ec9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621bad0d57b4d50bf0765a9c171ce816a3ec9" kindref="member">BMS_ILLEGAL_TASK_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>99,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}<sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="structBMS__STATE__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153" refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/><ref refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" kindref="member">statereq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref><sp/><ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="structBMS__STATE__s_1a9fb8447b9324fdf9b16007f2f526f95d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref><sp/><ref refid="structBMS__STATE__s_1a9fb8447b9324fdf9b16007f2f526f95d" kindref="member">laststate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="structBMS__STATE__s_1a1c47ff716a4aa2c68ffe4b2f8ce3dd37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBMS__STATE__s_1a1c47ff716a4aa2c68ffe4b2f8ce3dd37" kindref="member">lastsubstate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="structBMS__STATE__s_1aa887635fef363b58d693ea1c4f88e7ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBMS__STATE__s_1aa887635fef363b58d693ea1c4f88e7ac" kindref="member">ErrRequestCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" kindref="member">triggerentry</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="structBMS__STATE__s_1a278b998c12d1c5ab6f8d291c067f936a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBMS__STATE__s_1a278b998c12d1c5ab6f8d291c067f936a" kindref="member">counter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}<sp/><ref refid="structBMS__STATE__s" kindref="compound">BMS_STATE_s</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight></codeline>
+<codeline lineno="179"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref><sp/><ref refid="bms_8h_1a40eb276efea852638c5ba83e53569ebc" kindref="member">BMS_SetStateRequest</ref>(<ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref><sp/><ref refid="bms_8h_1afcd6e979c7502594e6807d322df11555" kindref="member">BMS_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1a954a05b20669dc00663c4f0f2a729fcd" kindref="member">BMS_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BMS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.h"/>
+  </compounddef>
+</doxygen>

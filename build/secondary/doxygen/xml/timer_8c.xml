@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="timer_8c" kind="file" language="C++">
+    <compoundname>timer.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="io_8h" local="yes">io.h</includes>
+    <includes refid="intermcu_8h" local="yes">intermcu.h</includes>
+    <incdepgraph>
+      <node id="2316">
+        <label>intermcu_cfg.h</label>
+        <link refid="intermcu__cfg_8h"/>
+      </node>
+      <node id="2312">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="2305">
+        <label>stdint.h</label>
+      </node>
+      <node id="2315">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="2316" relation="include">
+        </childnode>
+        <childnode refid="2309" relation="include">
+        </childnode>
+        <childnode refid="2317" relation="include">
+        </childnode>
+        <childnode refid="2319" relation="include">
+        </childnode>
+      </node>
+      <node id="2308">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="2309" relation="include">
+        </childnode>
+      </node>
+      <node id="2319">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="2304" relation="include">
+        </childnode>
+      </node>
+      <node id="2317">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="2318" relation="include">
+        </childnode>
+      </node>
+      <node id="2318">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="2309" relation="include">
+        </childnode>
+        <childnode refid="2314" relation="include">
+        </childnode>
+      </node>
+      <node id="2309">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2311" relation="include">
+        </childnode>
+      </node>
+      <node id="2313">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="2303">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+        <childnode refid="2304" relation="include">
+        </childnode>
+        <childnode refid="2307" relation="include">
+        </childnode>
+        <childnode refid="2314" relation="include">
+        </childnode>
+        <childnode refid="2315" relation="include">
+        </childnode>
+      </node>
+      <node id="2307">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="2308" relation="include">
+        </childnode>
+      </node>
+      <node id="2311">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="2309" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+      </node>
+      <node id="2306">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2314">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2311" relation="include">
+        </childnode>
+      </node>
+      <node id="2304">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="2305" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2310">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="timer_8c_1a9caa1e61ee11742e57bfa36da2c187a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>TIM_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Interface function to enable the pwm output and pwm input caputure timers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c" line="60" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c" bodystart="60" bodyend="66"/>
+        <references refid="timer_8c_1aa47740af70b2afef2b67f52b36c4719a" compoundref="timer_8c" startline="69" endline="76">TIM_SW_PWM_OUT_Init</references>
+      </memberdef>
+      <memberdef kind="function" id="timer_8c_1aa47740af70b2afef2b67f52b36c4719a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM_SW_PWM_OUT_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>TIM_SW_PWM_OUT_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initalizes the pwm output timer (timer4) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c" line="69" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c" bodystart="69" bodyend="76"/>
+        <references refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" compoundref="timer__cfg_8c" startline="61">htim3</references>
+      </memberdef>
+      <memberdef kind="function" id="timer_8c_1a1728b0d3578c206e515f0f3ec2f44bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>TIM_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Interrupt Handler for the timer interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c" line="79" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c" bodystart="79" bodyend="102"/>
+        <references refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" compoundref="timer__cfg_8c" startline="61">htim3</references>
+        <references refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" compoundref="io_8c" startline="152" endline="155">IO_TogglePin</references>
+        <references refid="io__mcu__cfg_8h_1a749c127a1c40be07c3efbdb19277207d" compoundref="io__mcu__cfg_8h" startline="95">IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_0</references>
+        <references refid="io__mcu__cfg_8h_1a783b749d6a533123da24bcbd7b98d123" compoundref="io__mcu__cfg_8h" startline="70">IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_NSS</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Driver to enable/disable/change the peripheral timers. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>30.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>TIM</para></simplesect>
+Source file to enable/disable/change peripheral timers. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="36"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io_8h" kindref="compound">io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="intermcu_8h" kindref="compound">intermcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="timer_8h_1a9caa1e61ee11742e57bfa36da2c187a8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8c_1a9caa1e61ee11742e57bfa36da2c187a8" kindref="member">TIM_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_SAFETY_FEATURES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="timer_8c_1aa47740af70b2afef2b67f52b36c4719a" kindref="member">TIM_SW_PWM_OUT_Init</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="timer_8h_1aa47740af70b2afef2b67f52b36c4719a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8c_1aa47740af70b2afef2b67f52b36c4719a" kindref="member">TIM_SW_PWM_OUT_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>__TIM3_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_TIM_Base_Init(&amp;<ref refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_TIM_Base_Start_IT(&amp;<ref refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="timer_8h_1a1728b0d3578c206e515f0f3ec2f44bd2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8c_1a1728b0d3578c206e515f0f3ec2f44bd2" kindref="member">TIM_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>toggle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(toggle<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Time<sp/>until<sp/>next<sp/>interrupt:<sp/>100us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.Instance-&gt;ARR<sp/>=<sp/>840<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" kindref="member">IO_TogglePin</ref>(<ref refid="io__mcu__cfg_8h_1a749c127a1c40be07c3efbdb19277207d" kindref="member">IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_0</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" kindref="member">IO_TogglePin</ref>(<ref refid="io__mcu__cfg_8h_1a783b749d6a533123da24bcbd7b98d123" kindref="member">IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_NSS</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Time<sp/>until<sp/>next<sp/>interrupt<sp/>:<sp/>900us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>.Instance-&gt;ARR<sp/>=<sp/>7560<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" kindref="member">IO_TogglePin</ref>(<ref refid="io__mcu__cfg_8h_1a749c127a1c40be07c3efbdb19277207d" kindref="member">IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_0</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" kindref="member">IO_TogglePin</ref>(<ref refid="io__mcu__cfg_8h_1a783b749d6a533123da24bcbd7b98d123" kindref="member">IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_NSS</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>pending<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_TIM_CLEAR_IT(&amp;<ref refid="timer__cfg_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>,<sp/>TIM_IT_UPDATE);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>toggle++;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/timer/timer.c"/>
+  </compounddef>
+</doxygen>

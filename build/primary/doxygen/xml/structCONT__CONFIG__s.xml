@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCONT__CONFIG__s" kind="struct" language="C++" prot="public">
+    <compoundname>CONT_CONFIG_s</compoundname>
+    <includes refid="contactor__cfg_8h" local="no">contactor_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCONT__CONFIG__s_1a3cc8df36a0159e1839b2fade7da79143" prot="public" static="no" mutable="no">
+        <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+        <definition>IO_PORTS_e CONT_CONFIG_s::control_pin</definition>
+        <argsstring></argsstring>
+        <name>control_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="275" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__CONFIG__s_1aa195ff65524243a81bd3e9cc3a817234" prot="public" static="no" mutable="no">
+        <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+        <definition>IO_PORTS_e CONT_CONFIG_s::feedback_pin</definition>
+        <argsstring></argsstring>
+        <name>feedback_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="276" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__CONFIG__s_1aa39087abeb31bf138149bc4306ef180f" prot="public" static="no" mutable="no">
+        <type><ref refid="contactor__cfg_8h_1a038c69a22bf936df1d5673d1e136738f" kindref="member">CONT_FEEDBACK_TYPE_e</ref></type>
+        <definition>CONT_FEEDBACK_TYPE_e CONT_CONFIG_s::feedback_pin_type</definition>
+        <argsstring></argsstring>
+        <name>feedback_pin_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="277" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="274" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="274" bodyend="278"/>
+    <listofallmembers>
+      <member refid="structCONT__CONFIG__s_1a3cc8df36a0159e1839b2fade7da79143" prot="public" virt="non-virtual"><scope>CONT_CONFIG_s</scope><name>control_pin</name></member>
+      <member refid="structCONT__CONFIG__s_1aa195ff65524243a81bd3e9cc3a817234" prot="public" virt="non-virtual"><scope>CONT_CONFIG_s</scope><name>feedback_pin</name></member>
+      <member refid="structCONT__CONFIG__s_1aa39087abeb31bf138149bc4306ef180f" prot="public" virt="non-virtual"><scope>CONT_CONFIG_s</scope><name>feedback_pin_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

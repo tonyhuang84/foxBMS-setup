@@ -1,0 +1,11 @@
+<map id="adc_cfg.h" name="adc_cfg.h">
+<area shape="rect" id="node2" href="$adc__ex_8h.html" title="adc_ex.h" alt="" coords="125,80,200,107"/>
+<area shape="rect" id="node5" href="$adc__cfg_8c.html" title="Configuration for the analog to digital converter. " alt="" coords="238,80,317,107"/>
+<area shape="rect" id="node6" href="$adc_8h.html" title="Header for the driver for the analog to digital converter. " alt="" coords="367,80,422,107"/>
+<area shape="rect" id="node3" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node4" href="$adc__ex_8c.html" title="Driver for the analog to digital converter. " alt="" coords="125,155,200,181"/>
+<area shape="rect" id="node7" href="$stm32f4xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="224,155,331,181"/>
+<area shape="rect" id="node8" href="$stm32f7xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="355,155,461,181"/>
+<area shape="rect" id="node9" href="$main_8c.html" title="Main function. " alt="" coords="485,155,547,181"/>
+<area shape="rect" id="node10" href="$adc_8c.html" title="Driver for the analog to digital converter. " alt="" coords="571,155,626,181"/>
+</map>

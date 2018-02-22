@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__BATTERYCELL" kind="group">
+    <compoundname>CONFIG_BATTERYCELL</compoundname>
+    <title>BATTERYCELL User configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1ga2095686e6e3f462b6a9ae975e1b66414" prot="public" static="no">
+        <name>BC_TEMPMAX_DISCHARGE</name>
+        <initializer>55</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum temperature safe operating limit during discharge process When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>°C </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>55 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="52" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1ga0116684b2063f1c24c8744c3cbf76b3a" prot="public" static="no">
+        <name>BC_TEMPMIN_DISCHARGE</name>
+        <initializer>-20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minimum operating temperature safe operating limit during discharge process When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>°C </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>-20 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="65" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1ga38fa01536e20a0dbd91b8cf24edb97e0" prot="public" static="no">
+        <name>BC_TEMPMAX_CHARGE</name>
+        <initializer>45</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum operating temperature safe operating limit during charge process When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>°C </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>45 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="78" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1ga9f0aef8143e610412ee0db1d0e1122b8" prot="public" static="no">
+        <name>BC_TEMPMIN_CHARGE</name>
+        <initializer>-20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minimum operating temperature safe operating limit during charge process When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>°C </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="91" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1gac8ce10ba9f885c57798d47ac5a3fdfe2" prot="public" static="no">
+        <name>BC_VOLTMAX</name>
+        <initializer>2800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum cell voltage safe operating limit When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mV </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>2800 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="104" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1ga249d966bad1d68b04316e988f788a4c2" prot="public" static="no">
+        <name>BC_VOLT_NOMINAL</name>
+        <initializer>2500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nominal cell voltage according to datasheet <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mV </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>2500 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="116" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1gaf575d94060cd6470a61a6796e74beb27" prot="public" static="no">
+        <name>BC_VOLTMIN</name>
+        <initializer>1700</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minimum cell voltage safe operating limit When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mV </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1700 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="128" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1ga17367c184f1619ff5e320e43ac5af8f5" prot="public" static="no">
+        <name>BC_CURRENTMAX_DISCHARGE</name>
+        <initializer>180000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current safe operating limit When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mA </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>180000 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="141" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYCELL_1gac9972664f0ffea757192cae81cceeff6" prot="public" static="no">
+        <name>BC_CURRENTMAX_CHARGE</name>
+        <initializer>180000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current safe operating limit When limit is violated, error state is requested and contactors will open. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mA </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>180000 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" line="154" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/batterycell_cfg.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration settings of the battery cell, e.g. current, voltage and temperature limits. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Software Overview &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="3. Important Switches in Code" href="../defines/defines.html"/>
+        <link rel="prev" title="1. Software Components" href="../components/components.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Software Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/software_documentation/overview/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-overview">
+<span id="software-documentation-overview"></span><h1>2. Software Overview<a class="headerlink" href="#software-overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="startup">
+<h2>2.1. Startup<a class="headerlink" href="#startup" title="Permalink to this headline">¶</a></h2>
+<p>The startup code begins at the label Reset_Handler in <code class="docutils literal"><span class="pre">general/config/startup_stm32f429xx.s</span></code>. After initialization of the main microcontroller registers, the system clock unit and the memory data (e.g., stack- and program pointer, system control block (SCB), interrupt vector, pre-initialization of data-sections, FPU settings), the C function <code class="docutils literal"><span class="pre">main()</span></code> is called. In <code class="docutils literal"><span class="pre">general/main.c</span></code> the second step of initializations of the microcontroller unit, peripherals and software modules are done (e.g., interrupt priorities, hardware modules like SPI and DMA). At this point, interrupts are still disabled. The steps are indicated by the global variable <code class="docutils literal"><span class="pre">os_boot</span></code>. At the end of the main function, the operating system resources (tasks, events, queues, mutex) are configured in <code class="docutils literal"><span class="pre">OS_TaskInit()</span></code> (<code class="docutils literal"><span class="pre">os/os.c</span></code>) and the scheduler is started by enabling the interrupts. Scheduling is started by invoking all configured tasks (FreeRTOS threads) regarding their priority. The activation of the scheduling is indicated by <code class="docutils literal"><span class="pre">os_boot</span> <span class="pre">=</span> <span class="pre">OS_RUNNING</span></code>. The OS-scheduler first calls the task <code class="docutils literal"><span class="pre">void</span> <span class="pre">OS_TSK_Engine(void)</span></code> as the highest priority is assigned to this task. All other tasks are blocked in a while-loop until <code class="docutils literal"><span class="pre">OS_TSK_Engine()</span></code> finishes the third initialization step and enters the periodic execution.</p>
+</div>
+<div class="section" id="engine">
+<h2>2.2. Engine<a class="headerlink" href="#engine" title="Permalink to this headline">¶</a></h2>
+<p>The task <code class="docutils literal"><span class="pre">void</span> <span class="pre">OS_TSK_Engine(void)</span></code> executes the third (and last) step of system initialization with enabled interrupts in <code class="docutils literal"><span class="pre">OS_PostOSInit()</span></code>. Then <code class="docutils literal"><span class="pre">OS_TSK_Engine()</span></code> manages the database and system monitoring via a periodic call of <code class="docutils literal"><span class="pre">DATA_Task()</span></code> and <code class="docutils literal"><span class="pre">DIAG_SysMon()</span></code> every 1ms.</p>
+<p>After that, <code class="docutils literal"><span class="pre">os_boot</span></code> is set to <code class="docutils literal"><span class="pre">OS_SYTEM_RUNNING</span></code> and the function <code class="docutils literal"><span class="pre">void</span> <span class="pre">ENG_Init(void)</span></code> is run before the periodic tasks. Initializations can be made in this function. The database is already running when it is called. The system then runs the following tasks periodically:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">OS_TSK_Cyclic_1ms(void)</span></code></li>
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">OS_TSK_Cyclic_10ms(void)</span></code></li>
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">OS_TSK_Cyclic_100ms(void)</span></code></li>
+</ul>
+</div></blockquote>
+<p>It must be noted that no changes should be made directly in these functions, since they are used as wrapper. They call the following functions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">ENG_TSK_Cyclic_1ms(void)</span></code></li>
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">ENG_TSK_Cyclic_10ms(void)</span></code></li>
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">ENG_TSK_Cyclic_100ms(void)</span></code></li>
+</ul>
+</div></blockquote>
+<p>where the effective calls for system tasks are made. These three functions and <code class="docutils literal"><span class="pre">OS_TSK_Engine()</span></code> make up the core of the system and are called <code class="docutils literal"><span class="pre">engine</span></code>. These function calls are found in <code class="docutils literal"><span class="pre">engine/task/enginetask.c</span></code>. Additionally, two users tasks run periodically. They are described in <a class="reference internal" href="#usr-apps"><span class="std std-ref">User Applications</span></a>.</p>
+</div>
+<div class="section" id="user-applications">
+<span id="usr-apps"></span><h2>2.3. User Applications<a class="headerlink" href="#user-applications" title="Permalink to this headline">¶</a></h2>
+<p>For the user applications, three periodic tasks are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">APPL_Cyclic_1ms(void)</span></code></li>
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">APPL_Cyclic_10ms(void)</span></code></li>
+<li><code class="docutils literal"><span class="pre">void</span> <span class="pre">APPL_Cyclic_100ms(void)</span></code></li>
+</ul>
+</div></blockquote>
+<p>Here, the user can implement its own functions, like new battery state estimation algorithms. The user has access to system data via the database. These function calls are found in <code class="docutils literal"><span class="pre">application/task/appltask_cfg.c</span></code>.</p>
+</div>
+<div class="section" id="startup-sequence">
+<h2>2.4. Startup Sequence<a class="headerlink" href="#startup-sequence" title="Permalink to this headline">¶</a></h2>
+<p>The start-up sequence is shown in <a class="reference internal" href="#startup-simplified"><span class="std std-numref">fig. 2.24</span></a>.</p>
+<div class="figure" id="id2">
+<span id="startup-simplified"></span><a class="reference internal image-reference" href="../../_images/startup_simplified.png"><img alt="../../_images/startup_simplified.png" src="../../_images/startup_simplified.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.24 </span><span class="caption-text">foxBMS system start-up</span></p>
+</div>
+</div>
+<div class="section" id="software-architecture">
+<h2>2.5. Software Architecture<a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h2>
+<p>The database runs with the highest priority in the system and provides asynchronous data exchange for the whole system. <a class="reference internal" href="#database"><span class="std std-numref">Fig. 2.25</span></a> shows the data exchanges implemented via the database.</p>
+<div class="figure" id="id3">
+<span id="database"></span><a class="reference internal image-reference" href="../../_images/database.png"><img alt="../../_images/database.png" src="../../_images/database.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.25 </span><span class="caption-text">Asynchronous data exchange with the foxBMS database</span></p>
+</div>
+<p><a class="reference internal" href="#id1"><span class="std std-numref">Fig. 2.26</span></a> shows the main structure of foxBMS.</p>
+<div class="figure" id="id4">
+<span id="id1"></span><a class="reference internal image-reference" href="../../_images/engine.png"><img alt="../../_images/engine.png" src="../../_images/engine.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.26 </span><span class="caption-text">Main tasks in foxBMS</span></p>
+</div>
+<p>The two key modules used are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">SYS</span></code></li>
+<li><code class="docutils literal"><span class="pre">BMS</span></code></li>
+</ul>
+</div></blockquote>
+<p><code class="docutils literal"><span class="pre">SYS</span></code> has a lower priority than the database and a higher priority than <code class="docutils literal"><span class="pre">BMS</span></code>. Both modules are implemented as a state machine, with a trigger function that implements the transition between the states. The trigger functions of <code class="docutils literal"><span class="pre">SYS</span></code> is called in <code class="docutils literal"><span class="pre">void</span> <span class="pre">ENG_TSK_Cyclic_1ms(void)</span></code>. As <code class="docutils literal"><span class="pre">BMS</span></code> implements the user application, it is called in the user task <code class="docutils literal"><span class="pre">void</span> <span class="pre">APPL_Cyclic_1ms(void)</span></code>.</p>
+<p><code class="docutils literal"><span class="pre">SYS</span></code> controls the operating state of the system. It starts the other state machines (e.g., <code class="docutils literal"><span class="pre">CONT</span></code> for the contactors, <code class="docutils literal"><span class="pre">ILCK</span></code> for the interlock, <code class="docutils literal"><span class="pre">BMS</span></code>).</p>
+<p><code class="docutils literal"><span class="pre">BMS</span></code> gathers info on the system via the database and takes decisions based on this data. The BMS is driven via CAN. Requests are made via CAN to go either in STANDBY mode (i.e., contactors are open) or in NORMAL mode (i.e., contactors are closed). A safety feature is that these requests must be sent periodically every 100ms. <code class="docutils literal"><span class="pre">BMS</span></code> retrieves the state requests received via CAN from the database and analyses them. If the requests are not sent correctly, this means that the controlling unit driving the BMS has a problem and the correctness of the orders sent to the BMS may not be given anymore. As a consequence, in this case <code class="docutils literal"><span class="pre">BMS</span></code> makes a request to <code class="docutils literal"><span class="pre">CONT</span></code> to open the contactors. Currently, <code class="docutils literal"><span class="pre">BMS</span></code> checks the cell voltages, the cell temperatures and the global battery current. If one of these physical quantities show a value out of the safe operating area, <code class="docutils literal"><span class="pre">BMS</span></code> makes the corresponding state request to <code class="docutils literal"><span class="pre">CONT</span></code> to open the contactors. <code class="docutils literal"><span class="pre">BMS</span></code> is started via an initial state request made in <code class="docutils literal"><span class="pre">SYS</span></code>.</p>
+<p>A watchdog instance is needed in case one of the aforementioned tasks hangs: in this case, the control over the contactors would not be provided anymore. This watchdog is made by the System Monitor module which monitors all important tasks (e.g., <code class="docutils literal"><span class="pre">Database</span></code>, <code class="docutils literal"><span class="pre">SYS</span></code>, <code class="docutils literal"><span class="pre">BMS</span></code>): if any of the monitored tasks hangs, the contactors are opened to prevent damage and protect persons and the battery. To ensure the highest level of safety, opening the contactors is made by direct access to the <code class="docutils literal"><span class="pre">io</span></code> module.</p>
+<p>A last barrier is present in case all the preceeding measures fail: the hardware watchdog timer. In case it is not triggered periodically, it resets the systems, provoking the opening of the contactors. Function calls (other than <code class="docutils literal"><span class="pre">SYS</span></code>) and closely related to the system are made in the engine tasks, for example:</p>
+<blockquote>
+<div><ul class="simple">
+<li>CAN</li>
+<li>Battery cells monitoring (voltages and temperatures)</li>
+<li>Galvanic isolation monitoring</li>
+<li>Lithium 3V button cell voltage monitoring</li>
+<li>System LED blink</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="diagnostic">
+<h2>2.6. Diagnostic<a class="headerlink" href="#diagnostic" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">diag</span></code> module is designed to report problems on the whole system. The events that trigger the <code class="docutils literal"><span class="pre">diag</span></code> module have to be defined by the user. The event handler <code class="docutils literal"><span class="pre">DIAG_Handler(...)</span></code> has to be called when the event is detected. The way the system reacts to a <code class="docutils literal"><span class="pre">Diag</span></code> event is defined via a callback function or by the caller according the return value.</p>
+<p>Diagnostic events are stored in the Backup SRAM memory in the variable <code class="docutils literal"><span class="pre">DIAG_ERROR_ENTRY_s</span> <span class="pre">diag_memory[]</span></code></p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">uint8_t</span> <span class="n">JJ</span><span class="p">;</span>              <span class="c1">// date and time of event (JJMMDDhhmmss)</span>
+    <span class="kt">uint8_t</span> <span class="n">MM</span><span class="p">;</span>
+    <span class="kt">uint8_t</span> <span class="n">DD</span><span class="p">;</span>
+    <span class="kt">uint8_t</span> <span class="n">hh</span><span class="p">;</span>
+    <span class="kt">uint8_t</span> <span class="n">mm</span><span class="p">;</span>
+    <span class="kt">uint8_t</span> <span class="n">ss</span><span class="p">;</span>
+    <span class="n">DIAG_EVENT_e</span> <span class="n">event</span><span class="p">;</span>      <span class="c1">// event OK (no error), event NOK (error)</span>
+    <span class="n">DIAG_CH_ID_e</span> <span class="n">event_id</span><span class="p">;</span>   <span class="c1">// diagnosis event ID</span>
+    <span class="kt">uint8_t</span> <span class="n">item</span><span class="p">;</span>            <span class="c1">// unique item of event (optional sub-ID)</span>
+    <span class="kt">uint8_t</span> <span class="n">dummy1</span><span class="p">;</span>
+    <span class="kt">uint8_t</span> <span class="n">dummy2</span><span class="p">;</span>
+    <span class="kt">uint8_t</span> <span class="n">dummy3</span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="n">dummy4</span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="n">Val0</span><span class="p">;</span>           <span class="c1">// specific value of event (optional)</span>
+    <span class="kt">uint32_t</span> <span class="n">Val1</span><span class="p">;</span>           <span class="c1">// specific value of event (optional)</span>
+    <span class="kt">uint32_t</span> <span class="n">Val2</span><span class="p">;</span>           <span class="c1">// specific value of event (optional)</span>
+    <span class="kt">uint32_t</span> <span class="n">Val3</span><span class="p">;</span>           <span class="c1">// specific value of event (optional)</span>
+ <span class="p">}</span> <span class="n">DIAG_ERROR_ENTRY_s</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../defines/defines.html" class="btn btn-neutral float-right" title="3. Important Switches in Code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../components/components.html" class="btn btn-neutral" title="1. Software Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

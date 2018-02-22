@@ -1,0 +1,7 @@
+<map id="intermcu_cfg.h" name="intermcu_cfg.h">
+<area shape="rect" id="node2" href="$spi__cfg_8c.html" title="Configuration for the serial peripheral interface module. " alt="" coords="27,80,101,107"/>
+<area shape="rect" id="node3" href="$intermcu_8h.html" title="Driver for the inter&#45;MCU communication. " alt="" coords="125,80,208,107"/>
+<area shape="rect" id="node4" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node5" href="$intermcu_8c.html" title="intermcu.c" alt="" coords="125,155,208,181"/>
+<area shape="rect" id="node6" href="$spi_8c.html" title="Driver for the serial peripheral interface module (encapsulation of some HAL functions) ..." alt="" coords="232,155,283,181"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="APPL_Cyclic_10ms" name="APPL_Cyclic_10ms">
+<area shape="rect" id="node2" href="$diag_8c.html#a7970909aa22bb87427a96c694fbab0e4" title="DIAG_SysMonNotify has to be called in every function using the system monitoring. ..." alt="" coords="192,5,333,32"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="381,5,527,32"/>
+</map>

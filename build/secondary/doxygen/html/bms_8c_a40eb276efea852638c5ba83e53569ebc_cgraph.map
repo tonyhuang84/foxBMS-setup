@@ -1,0 +1,5 @@
+<map id="BMS_SetStateRequest" name="BMS_SetStateRequest">
+<area shape="rect" id="node2" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="221,5,375,32"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a619db2b25db4bb9b7f5f4564bf6291c9" title="checks the state requests that are made. " alt="" coords="211,56,385,83"/>
+<area shape="rect" id="node4" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="225,107,371,133"/>
+</map>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__DRIVERS" kind="group">
+    <compoundname>DRIVERS</compoundname>
+    <title>Drivers</title>
+    <innerfile refid="bal_8c">bal.c</innerfile>
+    <innerfile refid="bal_8h">bal.h</innerfile>
+    <innerfile refid="com_8c">com.c</innerfile>
+    <innerfile refid="com_8h">com.h</innerfile>
+    <innerfile refid="adc__ex_8c">adc_ex.c</innerfile>
+    <innerfile refid="contactor_8c">contactor.c</innerfile>
+    <innerfile refid="contactor_8h">contactor.h</innerfile>
+    <innerfile refid="intermcu_8h">intermcu.h</innerfile>
+    <innerfile refid="intermcu_8h">intermcu.h</innerfile>
+    <innerfile refid="ir155_8c">ir155.c</innerfile>
+    <innerfile refid="ir155_8h">ir155.h</innerfile>
+    <innerfile refid="isoguard_8c">isoguard.c</innerfile>
+    <innerfile refid="isoguard_8h">isoguard.h</innerfile>
+    <innerfile refid="eepr_8c">eepr.c</innerfile>
+    <innerfile refid="eepr_8h">eepr.h</innerfile>
+    <innerfile refid="timer_8c">timer.c</innerfile>
+    <innerfile refid="timer_8h">timer.h</innerfile>
+    <innerfile refid="adc_8c">adc.c</innerfile>
+    <innerfile refid="adc_8h">adc.h</innerfile>
+    <innerfile refid="can_8c">can.c</innerfile>
+    <innerfile refid="can_8h">can.h</innerfile>
+    <innerfile refid="cansignal_8c">cansignal.c</innerfile>
+    <innerfile refid="cansignal_8h">cansignal.h</innerfile>
+    <innerfile refid="chksum_8c">chksum.c</innerfile>
+    <innerfile refid="chksum_8h">chksum.h</innerfile>
+    <innerfile refid="dma_8c">dma.c</innerfile>
+    <innerfile refid="dma_8h">dma.h</innerfile>
+    <innerfile refid="interlock_8c">interlock.c</innerfile>
+    <innerfile refid="interlock_8h">interlock.h</innerfile>
+    <innerfile refid="io_8c">io.c</innerfile>
+    <innerfile refid="io_8h">io.h</innerfile>
+    <innerfile refid="portcheck_8c">portcheck.c</innerfile>
+    <innerfile refid="portcheck_8h">portcheck.h</innerfile>
+    <innerfile refid="ltc_8c">ltc.c</innerfile>
+    <innerfile refid="ltc_8h">ltc.h</innerfile>
+    <innerfile refid="ltc_8h">ltc.h</innerfile>
+    <innerfile refid="mcu_8c">mcu.c</innerfile>
+    <innerfile refid="mcu_8h">mcu.h</innerfile>
+    <innerfile refid="meas_8c">meas.c</innerfile>
+    <innerfile refid="meas_8h">meas.h</innerfile>
+    <innerfile refid="rcc_8c">rcc.c</innerfile>
+    <innerfile refid="rcc_8h">rcc.h</innerfile>
+    <innerfile refid="bkpsram_8c">bkpsram.c</innerfile>
+    <innerfile refid="bkpsram_8h">bkpsram.h</innerfile>
+    <innerfile refid="rtc_8c">rtc.c</innerfile>
+    <innerfile refid="rtc_8h">rtc.h</innerfile>
+    <innerfile refid="spi_8c">spi.c</innerfile>
+    <innerfile refid="spi_8h">spi.h</innerfile>
+    <innerfile refid="uart_8c">uart.c</innerfile>
+    <innerfile refid="uart_8h">uart.h</innerfile>
+    <innerfile refid="wdg_8c">wdg.c</innerfile>
+    <innerfile refid="wdg_8h">wdg.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the drivers used by foxBMS </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structSYS__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>SYS_STATE_s</compoundname>
+    <includes refid="sys_8h" local="no">sys.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SYS_STATE_s::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time in ms before the state machine processes the next state, e.g. in counts of 1ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="150" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" prot="public" static="no" mutable="no">
+        <type><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref></type>
+        <definition>SYS_STATE_REQUEST_e SYS_STATE_s::statereq</definition>
+        <argsstring></argsstring>
+        <name>statereq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current state request made to the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="151" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" prot="public" static="no" mutable="no">
+        <type><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref></type>
+        <definition>SYS_STATEMACH_e SYS_STATE_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state of Driver State Machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="152" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SYS_STATE_s::substate</definition>
+        <argsstring></argsstring>
+        <name>substate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current substate of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="153" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1ae63af2908e9fde14c1e51303bcfcde32" prot="public" static="no" mutable="no">
+        <type><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref></type>
+        <definition>SYS_STATEMACH_e SYS_STATE_s::laststate</definition>
+        <argsstring></argsstring>
+        <name>laststate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous state of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="154" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1abab84ad33991b331aa4a21b1bdff6ffb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SYS_STATE_s::lastsubstate</definition>
+        <argsstring></argsstring>
+        <name>lastsubstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous substate of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="155" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SYS_STATE_s::ErrRequestCounter</definition>
+        <argsstring></argsstring>
+        <name>ErrRequestCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counts the number of illegal requests to the SYS state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="156" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SYS_STATE_s::InitCounter</definition>
+        <argsstring></argsstring>
+        <name>InitCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timeout to wait for initialization of state machine state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="157" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SYS_STATE_s::triggerentry</definition>
+        <argsstring></argsstring>
+        <name>triggerentry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counter for re-entrance protection (function running flag) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="158" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all the variables relevant for the CONT state machine. The user can get the current state of the CONT state machine with this variable </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="149" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="149" bodyend="159"/>
+    <listofallmembers>
+      <member refid="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>ErrRequestCounter</name></member>
+      <member refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>InitCounter</name></member>
+      <member refid="structSYS__STATE__s_1ae63af2908e9fde14c1e51303bcfcde32" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>laststate</name></member>
+      <member refid="structSYS__STATE__s_1abab84ad33991b331aa4a21b1bdff6ffb" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>lastsubstate</name></member>
+      <member refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>state</name></member>
+      <member refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>statereq</name></member>
+      <member refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>substate</name></member>
+      <member refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>timer</name></member>
+      <member refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" prot="public" virt="non-virtual"><scope>SYS_STATE_s</scope><name>triggerentry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

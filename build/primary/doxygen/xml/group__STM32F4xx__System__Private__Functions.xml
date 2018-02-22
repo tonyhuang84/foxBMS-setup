@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__STM32F4xx__System__Private__Functions" kind="group">
+    <compoundname>STM32F4xx_System_Private_Functions</compoundname>
+    <title>STM32F4xx_System_Private_Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__STM32F4xx__System__Private__Functions_1ga93f514700ccf00d08dbdcff7f1224eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SystemInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>SystemInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Setup the microcontroller system Initialize the FPU setting, vector table location and External memory configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/system_stm32f4xx.c" line="174" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/system_stm32f4xx.c" bodystart="174" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="group__STM32F4xx__System__Private__Functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SystemCoreClockUpdate</definition>
+        <argsstring>(void)</argsstring>
+        <name>SystemCoreClockUpdate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Update SystemCoreClock variable according to Clock Register Values. The SystemCoreClock variable contains the core clock (HCLK), it can be used by the user application to setup the SysTick timer or configure other parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Each time the core clock (HCLK) changes, this function must be called to update SystemCoreClock variable value. Otherwise, any configuration based on this variable will be incorrect.</para></simplesect>
+<simplesect kind="note"><para>- The system frequency computed by this function is not the real frequency in the chip. It is calculated based on the predefined constant and the selected clock source:</para></simplesect>
+<itemizedlist>
+<listitem><para>If SYSCLK source is HSI, SystemCoreClock will contain the <ref refid="group__STM32F4xx__System__Private__Includes_1gaaa8c76e274d0f6dd2cefb5d0b17fbc37" kindref="member">HSI_VALUE(*)</ref></para></listitem><listitem><para>If SYSCLK source is HSE, SystemCoreClock will contain the <ref refid="group__STM32F4xx__System__Private__Includes_1gaeafcff4f57440c60e64812dddd13e7cb" kindref="member">HSE_VALUE(**)</ref></para></listitem><listitem><para>If SYSCLK source is PLL, SystemCoreClock will contain the <ref refid="group__STM32F4xx__System__Private__Includes_1gaeafcff4f57440c60e64812dddd13e7cb" kindref="member">HSE_VALUE(**)</ref> or <ref refid="group__STM32F4xx__System__Private__Includes_1gaaa8c76e274d0f6dd2cefb5d0b17fbc37" kindref="member">HSI_VALUE(*)</ref> multiplied/divided by the PLL factors.</para></listitem></itemizedlist>
+</para><para>(*) HSI_VALUE is a constant defined in <ref refid="stm32f4xx__hal__conf_8h" kindref="compound">stm32f4xx_hal_conf.h</ref> file (default value 16 MHz) but the real value may vary depending on the variations in voltage and temperature.</para><para>(**) HSE_VALUE is a constant defined in <ref refid="stm32f4xx__hal__conf_8h" kindref="compound">stm32f4xx_hal_conf.h</ref> file (its value depends on the application requirements), user has to ensure that HSE_VALUE is same as the real frequency of the crystal used. Otherwise, this function may have wrong result.</para><para><itemizedlist>
+<listitem><para>The result of this function could be not correct when using fractional value for HSE crystal.</para></listitem></itemizedlist>
+</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/system_stm32f4xx.c" line="256" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/system_stm32f4xx.c" bodystart="256" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

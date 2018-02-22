@@ -1,0 +1,8 @@
+<map id="main.h" name="main.h">
+<area shape="rect" id="node2" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="156,80,204,107"/>
+<area shape="rect" id="node3" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="108,155,180,181"/>
+<area shape="rect" id="node4" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="139,229,221,256"/>
+<area shape="rect" id="node6" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="147,304,213,331"/>
+<area shape="rect" id="node7" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="51,379,173,405"/>
+<area shape="rect" id="node8" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="197,379,296,405"/>
+</map>

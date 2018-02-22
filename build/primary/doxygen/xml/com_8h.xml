@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="com_8h" kind="file" language="C++">
+    <compoundname>com.h</compoundname>
+    <includedby refid="appltask__cfg_8c" local="yes">appltask_cfg.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <invincdepgraph>
+      <node id="669">
+        <label>com.h</label>
+        <link refid="com_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="670">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="com_8h_1a2cedddad7b6b7bbdd93d70b315dd09ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COM_Decoder</definition>
+        <argsstring>(void)</argsstring>
+        <name>COM_Decoder</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>COM_Decoder parses and interprets user defined input data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function needs to be called within a cyclic engtask e.g. ENG_TSK_Cyclic_10ms It processes input data received by the UART module asynchronly.</para><para><simplesect kind="return"><para>(type: void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/com/com.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="com_8h_1a83dbba20990b5ab84da232f8419d1315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COM_StartupInfo</definition>
+        <argsstring>(void)</argsstring>
+        <name>COM_StartupInfo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>COM_StartupInfo prints some startup related informations (time &amp; date). </para>        </briefdescription>
+        <detaileddescription>
+<para>This function needs proper initialized RTC and UART module to work. Called during startup process in main function.</para><para><simplesect kind="return"><para>(type: void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/com/com.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="com_8h_1a8a690f22f3247d5b8c9e9a94f0c98f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COM_printTimeAndDate</definition>
+        <argsstring>(void)</argsstring>
+        <name>COM_printTimeAndDate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints date and time info on serial interface</para><para><simplesect kind="return"><para>(type: void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/com/com.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="com_8h_1afcc24512a46d5337ea59e58c1246e7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COM_printHelpCommand</definition>
+        <argsstring>(void)</argsstring>
+        <name>COM_printHelpCommand</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints list of available commands</para><para><simplesect kind="return"><para>(type: void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/com/com.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the driver for the COM module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>28.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>COM</para></simplesect>
+Available COM commands:</para><para>help <ndash/> prints list of available commands teston <ndash/> Enables testmode printcontactorinfo <ndash/> prints the contactor info (number of switches and the contactor hard switch entries printdiaginfo <ndash/> prints the diagnosis info gettime <ndash/> prints mcu time and date getruntime <ndash/> get runtime since last reset getoperatingtime <ndash/> get total operating time</para><para>Following commands only available in testmode!</para><para>testoff <ndash/> disables testmode settime YY MM DD HH MM SS <ndash/> sets mcu time and date (YY-year, MM-month, DD-date, HH-hours, MM-minutes, SS-seconds) reset <ndash/> resets mcu watchdogtest <ndash/> watchdog timeout results in system reset setsoc xxx.xxx <ndash/> set SOC value (000.000% - 100.000%) ceX <ndash/> enables contactor number X cdX <ndash/> disables contactor number X </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#ifndef<sp/>COM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="com_8h_1a2cedddad7b6b7bbdd93d70b315dd09ce" kindref="member">COM_Decoder</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="com_8h_1a83dbba20990b5ab84da232f8419d1315" kindref="member">COM_StartupInfo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="com_8h_1a8a690f22f3247d5b8c9e9a94f0c98f84" kindref="member">COM_printTimeAndDate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="com_8h_1afcc24512a46d5337ea59e58c1246e7a2" kindref="member">COM_printHelpCommand</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/com/com.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,881 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="batterysystem__cfg_8h" kind="file" language="C++">
+    <compoundname>batterysystem_cfg.h</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includedby refid="bal__cfg_8h" local="yes">bal_cfg.h</includedby>
+    <includedby refid="database__cfg_8h" local="yes">database_cfg.h</includedby>
+    <includedby refid="diag__cfg_8h" local="yes">diag_cfg.h</includedby>
+    <includedby refid="diag_8h" local="yes">diag.h</includedby>
+    <includedby refid="batterysystem__cfg_8c" local="yes">batterysystem_cfg.c</includedby>
+    <includedby refid="contactor__cfg_8h" local="yes">contactor_cfg.h</includedby>
+    <includedby refid="interlock__cfg_8h" local="yes">interlock_cfg.h</includedby>
+    <includedby refid="ltc__cfg_8h" local="yes">ltc_cfg.h</includedby>
+    <includedby refid="contactor_8c" local="yes">contactor.c</includedby>
+    <incdepgraph>
+      <node id="197">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>stdint.h</label>
+      </node>
+      <node id="199">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="196">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="203">
+        <label>bal.c</label>
+        <link refid="bal_8c"/>
+      </node>
+      <node id="202">
+        <label>bal.h</label>
+        <link refid="bal_8h"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>ir155.c</label>
+        <link refid="ir155_8c"/>
+      </node>
+      <node id="221">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="211">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="206">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="255">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>bms_cfg.c</label>
+        <link refid="bms__cfg_8c"/>
+      </node>
+      <node id="258">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>bkpsram.c</label>
+        <link refid="bkpsram_8c"/>
+      </node>
+      <node id="232">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="249">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="231">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>contactor_cfg.c</label>
+        <link refid="contactor__cfg_8c"/>
+      </node>
+      <node id="253">
+        <label>contactor_cfg.h</label>
+        <link refid="contactor__cfg_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>interlock_cfg.c</label>
+        <link refid="interlock__cfg_8c"/>
+      </node>
+      <node id="262">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="218">
+        <label>contactor.c</label>
+        <link refid="contactor_8c"/>
+      </node>
+      <node id="226">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>contactor.h</label>
+        <link refid="contactor_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="213">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+      <node id="230">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>sox.c</label>
+        <link refid="sox_8c"/>
+      </node>
+      <node id="234">
+        <label>stm32f7xx_it.c</label>
+        <link refid="stm32f7xx__it_8c"/>
+      </node>
+      <node id="214">
+        <label>enginetask_cfg.c</label>
+        <link refid="enginetask__cfg_8c"/>
+      </node>
+      <node id="236">
+        <label>nvic.c</label>
+        <link refid="nvic_8c"/>
+      </node>
+      <node id="216">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+      </node>
+      <node id="224">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="238">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="228">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="235">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="264">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>isoguard.c</label>
+        <link refid="isoguard_8c"/>
+      </node>
+      <node id="208">
+        <label>bal_cfg.c</label>
+        <link refid="bal__cfg_8c"/>
+      </node>
+      <node id="201">
+        <label>bal_cfg.h</label>
+        <link refid="bal__cfg_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>database_cfg.c</label>
+        <link refid="database__cfg_8c"/>
+      </node>
+      <node id="209">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>eepr.c</label>
+        <link refid="eepr_8c"/>
+      </node>
+      <node id="222">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="241">
+        <label>eepr.h</label>
+        <link refid="eepr_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="246">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="242">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>sys_cfg.c</label>
+        <link refid="sys__cfg_8c"/>
+      </node>
+      <node id="260">
+        <label>sys_cfg.h</label>
+        <link refid="sys__cfg_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="254">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="229">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="240">
+        <label>eepr_cfg.c</label>
+        <link refid="eepr__cfg_8c"/>
+      </node>
+      <node id="239">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>batterysystem_cfg.c</label>
+        <link refid="batterysystem__cfg_8c"/>
+      </node>
+      <node id="200">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="217">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="244">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" prot="public" static="no">
+        <name>POSITIVE_DISCHARGE_CURRENT</name>
+        <initializer><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define if discharge current are positive negative, default is positive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="58" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" prot="public" static="no">
+        <name>BS_NR_OF_MODULES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of modules in battery pack <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="68" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1gae91303895658daa4549ef8d8942c20e3" prot="public" static="no">
+        <name>BS_NR_OF_BAT_CELLS_PER_MODULE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of battery cells per battery module (parallel cells are counted as one) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>12 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="78" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="batterysystem__cfg_8h_1a6ad5ac93d710f9db6d01f79160d55780" prot="public" static="no">
+        <name>BS_MAX_SUPPORTED_CELLS</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="81" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1gaa99dfa07a1fc1af7cd452f80273a0d6c" prot="public" static="no">
+        <name>BS_NR_OF_LTC_PER_MODULE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of LTC-ICs per battery module <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="98" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga6e85c9c9cb9c49f0e29841223cedb80d" prot="public" static="no">
+        <name>BS_NR_OF_TEMP_SENSORS_PER_MODULE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of temperature sensors per battery module <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>6 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="107" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="batterysystem__cfg_8h_1aba9327c982eb341df30d75586d62f425" prot="public" static="no">
+        <name>BS_NR_OF_BAT_CELLS</name>
+        <initializer>(<ref refid="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" kindref="member">BS_NR_OF_MODULES</ref> * <ref refid="group__CONFIG__BATTERYSYSTEM_1gae91303895658daa4549ef8d8942c20e3" kindref="member">BS_NR_OF_BAT_CELLS_PER_MODULE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="110" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="batterysystem__cfg_8h_1ad6cd2d93ab04801d943daa5e96f0a5f9" prot="public" static="no">
+        <name>BS_NR_OF_TEMP_SENSORS</name>
+        <initializer>(<ref refid="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" kindref="member">BS_NR_OF_MODULES</ref> * <ref refid="group__CONFIG__BATTERYSYSTEM_1ga6e85c9c9cb9c49f0e29841223cedb80d" kindref="member">BS_NR_OF_TEMP_SENSORS_PER_MODULE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="111" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="batterysystem__cfg_8h_1a5ea1537ce38517b1fa24ee89e69f417b" prot="public" static="no">
+        <name>CURRENT_SENSOR_PRESENT</name>
+        <initializer><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to FALSE, foxBMS does not check for the presence of a current sensor. If set to TRUE, foxBMS checks for the presence of a current sensor. If sensor stops responding during runtime, an error is raised </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="119" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="batterysystem__cfg_8h_1a0043323216b3517873efc4050c71a8aa" prot="public" static="no">
+        <name>CHECK_CAN_TIMING</name>
+        <initializer><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to FALSE, foxBMS does not check CAN timing. If set to TRUE, foxBMS checks CAN timing. A valid request must come every 100ms, within the 95-150ms window. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="126" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="batterysystem__cfg_8h_1a70fd26623a2128dd8e74cec7bf7762f2" prot="public" static="no">
+        <name>BALANCING_DEFAULT_INACTIVE</name>
+        <initializer><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to TRUE, balancing is deactivated completely. If set to FALSE, foxBMS checks when balancing must be done and activates it accordingly. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="133" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga134742c4201dec02c5822bb35dc06ec2" prot="public" static="no">
+        <name>BS_NR_OF_VOLTAGES_FROM_CURRENT_SENSOR</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of pack voltage inputs measured by current sensors (like IVT-MOD) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>3 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="144" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1gad2afbed51c59fa4b3a43169ab83f1fc7" prot="public" static="no">
+        <name>BS_NR_OF_CONTACTORS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of contactors On the foxBMS Basic Board 6 contactors are supported. On the foxBMS Basic Extension board one can use 3 more contactors. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>3 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="156" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga1865406d4168f96de07d0b031f3c78a6" prot="public" static="no">
+        <name>BS_SEPARATE_POWERLINES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>separation of charge and discharge power line <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="166" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" prot="public" static="no">
+        <name>BS_CURRENT_DIRECTION_e</name>
+        <enumvalue id="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" prot="public">
+          <name>BS_CURRENT_CHARGE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" prot="public">
+          <name>BS_CURRENT_DISCHARGE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Symbolic names for current flow direction in the battery </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="batterysystem__cfg_8h_1ab63a3ee8060ce339fd0eaf6029981512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref></type>
+        <definition>BS_CURRENT_DIRECTION_e BS_CheckCurrent_Direction</definition>
+        <argsstring>(void)</argsstring>
+        <name>BS_CheckCurrent_Direction</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks current direction, read current from database. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>BS_CURRENT_DISCHARGE or BS_CURRENT_CHARGE depending on current direction ( (type: BS_CURRENT_DIRECTION_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="184" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c" bodystart="46" bodyend="68"/>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" compoundref="batterysystem__cfg_8h" startline="51">BS_CURRENT_DISCHARGE</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" compoundref="database__cfg_8h" startline="123">DATA_BLOCK_ID_CURRENT</references>
+        <references refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" compoundref="batterysystem__cfg_8h" startline="58">POSITIVE_DISCHARGE_CURRENT</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" compoundref="database__cfg_8h" startline="240">DATA_BLOCK_CURRENT_s::current</references>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" compoundref="batterysystem__cfg_8h" startline="50">BS_CURRENT_CHARGE</references>
+      </memberdef>
+      <memberdef kind="function" id="batterysystem__cfg_8h_1aa06ea71be06dc7e07f5769ddd83e15d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref></type>
+        <definition>BS_CURRENT_DIRECTION_e BS_CheckCurrentValue_Direction</definition>
+        <argsstring>(float current)</argsstring>
+        <name>BS_CheckCurrentValue_Direction</name>
+        <param>
+          <type>float</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+<para>Checks current direction, current value as function parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>BS_CURRENT_DISCHARGE or BS_CURRENT_CHARGE depending on current direction ( (type: BS_CURRENT_DIRECTION_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="192" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c" bodystart="70" bodyend="89"/>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" compoundref="batterysystem__cfg_8h" startline="51">BS_CURRENT_DISCHARGE</references>
+        <references refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" compoundref="batterysystem__cfg_8h" startline="58">POSITIVE_DISCHARGE_CURRENT</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" compoundref="batterysystem__cfg_8h" startline="50">BS_CURRENT_CHARGE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>20.02.2017 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>BS</para></simplesect>
+This files contains basic macros of the battery system in order to derive needed inputs in other parts of the software. These macros are all depended on the hardware. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>BATTERYSYSTEM_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERYSYSTEM_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="50" refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" kindref="member">BS_CURRENT_CHARGE</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" refkind="member"><highlight class="preprocessor">#define<sp/>POSITIVE_DISCHARGE_CURRENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" refkind="member"><highlight class="preprocessor">#define<sp/>BS_NR_OF_MODULES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group__CONFIG__BATTERYSYSTEM_1gae91303895658daa4549ef8d8942c20e3" refkind="member"><highlight class="preprocessor">#define<sp/>BS_NR_OF_BAT_CELLS_PER_MODULE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BS_NR_OF_BAT_CELLS_PER_MODULE&lt;=12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="batterysystem__cfg_8h_1a6ad5ac93d710f9db6d01f79160d55780" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BS_MAX_SUPPORTED_CELLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>BS_NR_OF_BAT_CELLS_PER_MODULE&lt;=15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BS_MAX_SUPPORTED_CELLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>BS_NR_OF_BAT_CELLS_PER_MODULE&lt;=18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BS_MAX_SUPPORTED_CELLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;Unsupported<sp/>number<sp/>of<sp/>cells<sp/>per<sp/>module,<sp/>higher<sp/>than<sp/>18&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group__CONFIG__BATTERYSYSTEM_1gaa99dfa07a1fc1af7cd452f80273a0d6c" refkind="member"><highlight class="preprocessor">#define<sp/>BS_NR_OF_LTC_PER_MODULE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="group__CONFIG__BATTERYSYSTEM_1ga6e85c9c9cb9c49f0e29841223cedb80d" refkind="member"><highlight class="preprocessor">#define<sp/>BS_NR_OF_TEMP_SENSORS_PER_MODULE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="batterysystem__cfg_8h_1aba9327c982eb341df30d75586d62f425" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BS_NR_OF_BAT_CELLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BS_NR_OF_MODULES<sp/>*<sp/>BS_NR_OF_BAT_CELLS_PER_MODULE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="batterysystem__cfg_8h_1ad6cd2d93ab04801d943daa5e96f0a5f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BS_NR_OF_TEMP_SENSORS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BS_NR_OF_MODULES<sp/>*<sp/>BS_NR_OF_TEMP_SENSORS_PER_MODULE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="batterysystem__cfg_8h_1a5ea1537ce38517b1fa24ee89e69f417b" refkind="member"><highlight class="preprocessor">#define<sp/>CURRENT_SENSOR_PRESENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="batterysystem__cfg_8h_1a0043323216b3517873efc4050c71a8aa" refkind="member"><highlight class="preprocessor">#define<sp/>CHECK_CAN_TIMING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="batterysystem__cfg_8h_1a70fd26623a2128dd8e74cec7bf7762f2" refkind="member"><highlight class="preprocessor">#define<sp/>BALANCING_DEFAULT_INACTIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="group__CONFIG__BATTERYSYSTEM_1ga134742c4201dec02c5822bb35dc06ec2" refkind="member"><highlight class="preprocessor">#define<sp/>BS_NR_OF_VOLTAGES_FROM_CURRENT_SENSOR<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="group__CONFIG__BATTERYSYSTEM_1gad2afbed51c59fa4b3a43169ab83f1fc7" refkind="member"><highlight class="preprocessor">#define<sp/>BS_NR_OF_CONTACTORS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="group__CONFIG__BATTERYSYSTEM_1ga1865406d4168f96de07d0b031f3c78a6" refkind="member"><highlight class="preprocessor">#define<sp/>BS_SEPARATE_POWERLINES<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>BS_SEPARATE_POWERLINES<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BS_NR_OF_CONTACTORS<sp/>&gt;<sp/>3<sp/>&amp;&amp;<sp/>BS_SEPARATE_POWERLINES<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;Configuration<sp/>mismatch:<sp/>Can&apos;t<sp/>use<sp/>BS_SEPARATE_POWERLINES<sp/>with<sp/>only<sp/>3<sp/>contactors&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref><sp/><ref refid="batterysystem__cfg_8h_1ab63a3ee8060ce339fd0eaf6029981512" kindref="member">BS_CheckCurrent_Direction</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref><sp/><ref refid="batterysystem__cfg_8h_1aa06ea71be06dc7e07f5769ddd83e15d1" kindref="member">BS_CheckCurrentValue_Direction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>current);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BATTERYSYSTEM_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h"/>
+  </compounddef>
+</doxygen>

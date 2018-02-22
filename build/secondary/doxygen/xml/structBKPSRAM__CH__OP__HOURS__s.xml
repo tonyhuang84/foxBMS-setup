@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structBKPSRAM__CH__OP__HOURS__s" kind="struct" language="C++" prot="public">
+    <compoundname>BKPSRAM_CH_OP_HOURS_s</compoundname>
+    <includes refid="bkpsram__cfg_8h" local="no">bkpsram_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBKPSRAM__CH__OP__HOURS__s_1abc0c5efe5e11e9a3ebb0264bbf036bfc" prot="public" static="no" mutable="no">
+        <type><ref refid="structBKPSRAM__OPERATING__HOURS__s" kindref="compound">BKPSRAM_OPERATING_HOURS_s</ref></type>
+        <definition>BKPSRAM_OPERATING_HOURS_s BKPSRAM_CH_OP_HOURS_s::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="92" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__CH__OP__HOURS__s_1a3947eab69a59aee1eb4f13a78842bd65" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BKPSRAM_CH_OP_HOURS_s::checksum</definition>
+        <argsstring></argsstring>
+        <name>checksum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="93" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>BKPSRAM_CH_OP_HOURS_s</label>
+        <link refid="structBKPSRAM__CH__OP__HOURS__s"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>BKPSRAM_OPERATING_HOURS_s</label>
+        <link refid="structBKPSRAM__OPERATING__HOURS__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="91" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="91" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structBKPSRAM__CH__OP__HOURS__s_1a3947eab69a59aee1eb4f13a78842bd65" prot="public" virt="non-virtual"><scope>BKPSRAM_CH_OP_HOURS_s</scope><name>checksum</name></member>
+      <member refid="structBKPSRAM__CH__OP__HOURS__s_1abc0c5efe5e11e9a3ebb0264bbf036bfc" prot="public" virt="non-virtual"><scope>BKPSRAM_CH_OP_HOURS_s</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

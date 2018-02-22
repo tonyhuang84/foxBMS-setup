@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__ACCESS__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_ACCESS_s</compoundname>
+    <includes refid="database_8h" local="no">database.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__ACCESS__s_1abbba39d578864435d50df35472492728" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DATA_BLOCK_ACCESS_s::RDptr</definition>
+        <argsstring></argsstring>
+        <name>RDptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="59" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__ACCESS__s_1a74d7daabe117c16195c42b9ab004fcd7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DATA_BLOCK_ACCESS_s::WRptr</definition>
+        <argsstring></argsstring>
+        <name>WRptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="60" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__ACCESS__s_1adef4715d8b0081a2a15697f999ceeaaa" prot="public" static="no" mutable="no">
+        <type><ref refid="database__cfg_8h_1a311de4fcd71b45a64471cce98fb27100" kindref="member">DATA_BLOCK_CONSISTENCY_TYPE_e</ref></type>
+        <definition>DATA_BLOCK_CONSISTENCY_TYPE_e DATA_BLOCK_ACCESS_s::nr_of_buffer</definition>
+        <argsstring></argsstring>
+        <name>nr_of_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="61" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="58" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="58" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__ACCESS__s_1adef4715d8b0081a2a15697f999ceeaaa" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ACCESS_s</scope><name>nr_of_buffer</name></member>
+      <member refid="structDATA__BLOCK__ACCESS__s_1abbba39d578864435d50df35472492728" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ACCESS_s</scope><name>RDptr</name></member>
+      <member refid="structDATA__BLOCK__ACCESS__s_1a74d7daabe117c16195c42b9ab004fcd7" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ACCESS_s</scope><name>WRptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

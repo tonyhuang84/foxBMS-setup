@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="portcheck_8c" kind="file" language="C++">
+    <compoundname>portcheck.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="portcheck_8h" local="yes">portcheck.h</includes>
+    <includes refid="mcu__cfg_8h" local="yes">mcu_cfg.h</includes>
+    <incdepgraph>
+      <node id="1855">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1849">
+        <label>stdint.h</label>
+      </node>
+      <node id="1853">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1856">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1847">
+        <label>portcheck.c</label>
+        <link refid="portcheck_8c"/>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+      </node>
+      <node id="1851">
+        <label>portcheck.h</label>
+        <link refid="portcheck_8h"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+      </node>
+      <node id="1850">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="1848">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+      </node>
+      <node id="1854">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="portcheck_8c_1a9f30425211b75e4ab36c4e7cbea06a41" prot="public" static="no">
+        <name>GPIO_MODE</name>
+        <initializer>((uint32_t)0x00000003U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="50" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1a50756019598a98c1dd294fb6c54da638" prot="public" static="no">
+        <name>EXTI_MODE</name>
+        <initializer>((uint32_t)0x10000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="51" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1a5283b76e07c6eba042342aa3eaec9a0f" prot="public" static="no">
+        <name>GPIO_MODE_IT</name>
+        <initializer>((uint32_t)0x00010000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="52" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1aab555136b933ff2f44c3bf39738dd79e" prot="public" static="no">
+        <name>GPIO_MODE_EVT</name>
+        <initializer>((uint32_t)0x00020000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="53" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1af13ff90bb3a97b9d46ae59f02c515b67" prot="public" static="no">
+        <name>RISING_EDGE</name>
+        <initializer>((uint32_t)0x00100000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="54" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1a159ba045d627097f4f2d351bec51afe1" prot="public" static="no">
+        <name>FALLING_EDGE</name>
+        <initializer>((uint32_t)0x00200000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="55" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1a06c7b107fa4038d08dd564f48ca44646" prot="public" static="no">
+        <name>GPIO_OUTPUT_TYPE</name>
+        <initializer>((uint32_t)0x00000010U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="56" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="portcheck_8c_1ae8e9740a0d9ca9a179cb4fd05a2cd3d9" prot="public" static="no">
+        <name>GPIO_NUMBER</name>
+        <initializer>((uint32_t)16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="58" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="portcheck_8c_1ab34f18df31d74c08458d7c6c771bdecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e GPIO_Check</definition>
+        <argsstring>(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init)</argsstring>
+        <name>GPIO_Check</name>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>GPIOx</declname>
+        </param>
+        <param>
+          <type>GPIO_InitTypeDef *</type>
+          <declname>GPIO_Init</declname>
+        </param>
+        <briefdescription>
+<para>Checks the GPIOx peripheral according to the specified parameters in the GPIO_Init. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GPIOx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where x can be (A..K) to select the GPIO peripheral for STM32F429X device or x can be (A..I) to select the GPIO peripheral for STM32F40XX and STM32F427X devices. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GPIO_Init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a GPIO_InitTypeDef structure that contains the configuration information for the specified GPIO peripheral. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on success, E_NOT_OK on failure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" line="71" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c" bodystart="71" bodyend="175"/>
+        <references refid="portcheck_8c_1ae8e9740a0d9ca9a179cb4fd05a2cd3d9" compoundref="portcheck_8c" startline="58">GPIO_NUMBER</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="portcheck_8c_1a9f30425211b75e4ab36c4e7cbea06a41" compoundref="portcheck_8c" startline="50">GPIO_MODE</references>
+        <references refid="portcheck_8c_1a06c7b107fa4038d08dd564f48ca44646" compoundref="portcheck_8c" startline="56">GPIO_OUTPUT_TYPE</references>
+        <references refid="portcheck_8c_1a50756019598a98c1dd294fb6c54da638" compoundref="portcheck_8c" startline="51">EXTI_MODE</references>
+        <references refid="portcheck_8c_1a5283b76e07c6eba042342aa3eaec9a0f" compoundref="portcheck_8c" startline="52">GPIO_MODE_IT</references>
+        <references refid="portcheck_8c_1aab555136b933ff2f44c3bf39738dd79e" compoundref="portcheck_8c" startline="53">GPIO_MODE_EVT</references>
+        <references refid="portcheck_8c_1af13ff90bb3a97b9d46ae59f02c515b67" compoundref="portcheck_8c" startline="54">RISING_EDGE</references>
+        <references refid="portcheck_8c_1a159ba045d627097f4f2d351bec51afe1" compoundref="portcheck_8c" startline="55">FALLING_EDGE</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Validity checker for STM32 GPIO Configuration. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>05.08.2016 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>PORTCHECK </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="portcheck_8h" kindref="compound">portcheck.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu__cfg_8h" kindref="compound">mcu_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="portcheck_8c_1a9f30425211b75e4ab36c4e7cbea06a41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000003U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="portcheck_8c_1a50756019598a98c1dd294fb6c54da638" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXTI_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x10000000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="portcheck_8c_1a5283b76e07c6eba042342aa3eaec9a0f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_IT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00010000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="portcheck_8c_1aab555136b933ff2f44c3bf39738dd79e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_EVT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00020000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="portcheck_8c_1af13ff90bb3a97b9d46ae59f02c515b67" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RISING_EDGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00100000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="portcheck_8c_1a159ba045d627097f4f2d351bec51afe1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FALLING_EDGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00200000U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="portcheck_8c_1a06c7b107fa4038d08dd564f48ca44646" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_OUTPUT_TYPE<sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x00000010U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="portcheck_8c_1ae8e9740a0d9ca9a179cb4fd05a2cd3d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_NUMBER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)16U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Public<sp/>functions<sp/>=====================================*/</highlight></codeline>
+<codeline lineno="71" refid="portcheck_8h_1ab34f18df31d74c08458d7c6c771bdecb" refkind="member"><highlight class="normal"><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="portcheck_8c_1ab34f18df31d74c08458d7c6c771bdecb" kindref="member">GPIO_Check</ref>(GPIO_TypeDef<sp/><sp/>*GPIOx,<sp/>GPIO_InitTypeDef<sp/>*GPIO_Init)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>uint32_t<sp/>position;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>uint32_t<sp/>ioposition<sp/>=<sp/>0x00U;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>uint32_t<sp/>iocurrent<sp/>=<sp/>0x00U;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>uint32_t<sp/>temp<sp/>=<sp/>0x00U;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>port<sp/>pins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(position<sp/>=<sp/>0U;<sp/>position<sp/>&lt;<sp/><ref refid="portcheck_8c_1ae8e9740a0d9ca9a179cb4fd05a2cd3d9" kindref="member">GPIO_NUMBER</ref>;<sp/>position++)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>IO<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>ioposition<sp/>=<sp/>((uint32_t)0x01U)<sp/>&lt;&lt;<sp/>position;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>the<sp/>current<sp/>IO<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>iocurrent<sp/>=<sp/>(uint32_t)(GPIO_Init-&gt;Pin)<sp/>&amp;<sp/>ioposition;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iocurrent<sp/>==<sp/>ioposition)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*---------------------<sp/>GPIO<sp/>Mode<sp/>Checking<sp/>------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>In<sp/>case<sp/>of<sp/>Alternate<sp/>function<sp/>mode<sp/>selection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>==<sp/>GPIO_MODE_AF_PP)<sp/>||<sp/>(GPIO_Init-&gt;Mode<sp/>==<sp/>GPIO_MODE_AF_OD))</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>Alternate<sp/>function<sp/>mapped<sp/>with<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;AFR[position<sp/>&gt;&gt;<sp/>3U];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~((uint32_t)0xFU<sp/>&lt;&lt;<sp/>((uint32_t)(position<sp/>&amp;<sp/>(uint32_t)0x07U)<sp/>*<sp/>4U))<sp/>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((uint32_t)(GPIO_Init-&gt;Alternate)<sp/>&lt;&lt;<sp/>(((uint32_t)position<sp/>&amp;<sp/>(uint32_t)0x07U)<sp/>*<sp/>4U));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIOx-&gt;AFR[position<sp/>&gt;&gt;<sp/>3U]<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>IO<sp/>Direction<sp/>mode<sp/>(Input,<sp/>Output,<sp/>Alternate<sp/>or<sp/>Analog)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;MODER;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(GPIO_MODER_MODER0<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2U));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1a9f30425211b75e4ab36c4e7cbea06a41" kindref="member">GPIO_MODE</ref>)<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2U));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIOx-&gt;MODER<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>In<sp/>case<sp/>of<sp/>Output<sp/>or<sp/>Alternate<sp/>function<sp/>mode<sp/>selection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>==<sp/>GPIO_MODE_OUTPUT_PP)<sp/>||<sp/>(GPIO_Init-&gt;Mode<sp/>==<sp/>GPIO_MODE_AF_PP)<sp/>||</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(GPIO_Init-&gt;Mode<sp/>==<sp/>GPIO_MODE_OUTPUT_OD)<sp/>||<sp/>(GPIO_Init-&gt;Mode<sp/>==<sp/>GPIO_MODE_AF_OD))</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>IO<sp/>Speed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;OSPEEDR;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(GPIO_OSPEEDER_OSPEEDR0<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2U));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>(GPIO_Init-&gt;Speed<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2U));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIOx-&gt;OSPEEDR<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>IO<sp/>Output<sp/>Type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;OTYPER;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(GPIO_OTYPER_OT_0<sp/>&lt;&lt;<sp/>position)<sp/>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>(((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1a06c7b107fa4038d08dd564f48ca44646" kindref="member">GPIO_OUTPUT_TYPE</ref>)<sp/>&gt;&gt;<sp/>4U)<sp/>&lt;&lt;<sp/>position);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIOx-&gt;OTYPER<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Activate<sp/>the<sp/>Pull-up<sp/>or<sp/>Pull<sp/>down<sp/>resistor<sp/>for<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>GPIOx-&gt;PUPDR;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(GPIO_PUPDR_PUPDR0<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2U));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((GPIO_Init-&gt;Pull)<sp/>&lt;&lt;<sp/>(position<sp/>*<sp/>2U));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GPIOx-&gt;PUPDR<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*---------------------<sp/>EXTI<sp/>Mode<sp/>Configuration<sp/>------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>the<sp/>External<sp/>Interrupt<sp/>or<sp/>event<sp/>for<sp/>the<sp/>current<sp/>IO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1a50756019598a98c1dd294fb6c54da638" kindref="member">EXTI_MODE</ref>)<sp/>==<sp/><ref refid="portcheck_8c_1a50756019598a98c1dd294fb6c54da638" kindref="member">EXTI_MODE</ref>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>SYSCFG-&gt;EXTICR[position<sp/>&gt;&gt;<sp/>2U];</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~(((uint32_t)0x0FU)<sp/>&lt;&lt;<sp/>(4U<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03U)));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>((uint32_t)(GPIO_GET_INDEX(GPIOx))<sp/>&lt;&lt;<sp/>(4U<sp/>*<sp/>(position<sp/>&amp;<sp/>0x03U)));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SYSCFG-&gt;EXTICR[position<sp/>&gt;&gt;<sp/>2U]<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>EXTI<sp/>line<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>EXTI-&gt;IMR;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~((uint32_t)iocurrent);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1a5283b76e07c6eba042342aa3eaec9a0f" kindref="member">GPIO_MODE_IT</ref>)<sp/>==<sp/><ref refid="portcheck_8c_1a5283b76e07c6eba042342aa3eaec9a0f" kindref="member">GPIO_MODE_IT</ref>)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(EXTI-&gt;IMR<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>EXTI-&gt;EMR;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~((uint32_t)iocurrent);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1aab555136b933ff2f44c3bf39738dd79e" kindref="member">GPIO_MODE_EVT</ref>)<sp/>==<sp/><ref refid="portcheck_8c_1aab555136b933ff2f44c3bf39738dd79e" kindref="member">GPIO_MODE_EVT</ref>)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(EXTI-&gt;EMR<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>Rising<sp/>Falling<sp/>edge<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>EXTI-&gt;RTSR;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~((uint32_t)iocurrent);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1af13ff90bb3a97b9d46ae59f02c515b67" kindref="member">RISING_EDGE</ref>)<sp/>==<sp/><ref refid="portcheck_8c_1af13ff90bb3a97b9d46ae59f02c515b67" kindref="member">RISING_EDGE</ref>)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(EXTI-&gt;RTSR<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>EXTI-&gt;FTSR;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>&amp;=<sp/>~((uint32_t)iocurrent);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((GPIO_Init-&gt;Mode<sp/>&amp;<sp/><ref refid="portcheck_8c_1a159ba045d627097f4f2d351bec51afe1" kindref="member">FALLING_EDGE</ref>)<sp/>==<sp/><ref refid="portcheck_8c_1a159ba045d627097f4f2d351bec51afe1" kindref="member">FALLING_EDGE</ref>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>|=<sp/>iocurrent;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(EXTI-&gt;FTSR<sp/>!=<sp/>temp)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/portcheck.c"/>
+  </compounddef>
+</doxygen>

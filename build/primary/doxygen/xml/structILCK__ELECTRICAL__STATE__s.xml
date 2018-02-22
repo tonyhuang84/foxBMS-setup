@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structILCK__ELECTRICAL__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>ILCK_ELECTRICAL_STATE_s</compoundname>
+    <includes refid="interlock__cfg_8h" local="no">interlock_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structILCK__ELECTRICAL__STATE__s_1a901cf426290bf2951dc600101278106b" prot="public" static="no" mutable="no">
+        <type><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" kindref="member">ILCK_ELECTRICAL_STATE_TYPE_s</ref></type>
+        <definition>ILCK_ELECTRICAL_STATE_TYPE_s ILCK_ELECTRICAL_STATE_s::set</definition>
+        <argsstring></argsstring>
+        <name>set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="96" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structILCK__ELECTRICAL__STATE__s_1abc475c9660c36ee2c1b6979cc8160a65" prot="public" static="no" mutable="no">
+        <type><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" kindref="member">ILCK_ELECTRICAL_STATE_TYPE_s</ref></type>
+        <definition>ILCK_ELECTRICAL_STATE_TYPE_s ILCK_ELECTRICAL_STATE_s::feedback</definition>
+        <argsstring></argsstring>
+        <name>feedback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="97" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="95" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="95" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structILCK__ELECTRICAL__STATE__s_1abc475c9660c36ee2c1b6979cc8160a65" prot="public" virt="non-virtual"><scope>ILCK_ELECTRICAL_STATE_s</scope><name>feedback</name></member>
+      <member refid="structILCK__ELECTRICAL__STATE__s_1a901cf426290bf2951dc600101278106b" prot="public" virt="non-virtual"><scope>ILCK_ELECTRICAL_STATE_s</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

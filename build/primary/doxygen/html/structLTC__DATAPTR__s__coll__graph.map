@@ -1,0 +1,12 @@
+<map id="LTC_DATAPTR_s" name="LTC_DATAPTR_s">
+<area shape="rect" id="node2" href="$structDATA__BLOCK__CELLTEMPERATURE__s.html" title="DATA_BLOCK_CELLTEMPERATURE_s" alt="" coords="5,5,263,32"/>
+<area shape="rect" id="node3" href="$structDATA__BLOCK__LTC__ADC__ACCURACY__s.html" title="DATA_BLOCK_LTC_ADC\l_ACCURACY_s" alt="" coords="49,57,219,98"/>
+<area shape="rect" id="node4" href="$structDATA__BLOCK__SLAVE__CONTROL__s.html" title="DATA_BLOCK_SLAVE_CONTROL_s" alt="" coords="15,123,253,149"/>
+<area shape="rect" id="node5" href="$structDATA__BLOCK__LTC__DEVICE__PARAMETER__s.html" title="DATA_BLOCK_LTC_DEVICE\l_PARAMETER_s" alt="" coords="38,174,230,215"/>
+<area shape="rect" id="node6" href="$structDATA__BLOCK__BALANCING__CONTROL__s.html" title="DATA_BLOCK_BALANCING\l_CONTROL_s" alt="" coords="40,239,228,281"/>
+<area shape="rect" id="node7" href="$structDATA__BLOCK__USER__MUX__s.html" title="DATA_BLOCK_USER_MUX_s" alt="" coords="35,305,233,332"/>
+<area shape="rect" id="node8" href="$structDATA__BLOCK__BALANCING__FEEDBACK__s.html" title="DATA_BLOCK_BALANCING\l_FEEDBACK_s" alt="" coords="40,357,228,398"/>
+<area shape="rect" id="node9" href="$structDATA__BLOCK__OPENWIRE__s.html" title="DATA_BLOCK_OPENWIRE_s" alt="" coords="35,423,233,449"/>
+<area shape="rect" id="node10" href="$structDATA__BLOCK__MINMAX__s.html" title="DATA_BLOCK_MINMAX_s" alt="" coords="45,473,223,500"/>
+<area shape="rect" id="node11" href="$structDATA__BLOCK__CELLVOLTAGE__s.html" title="DATA_BLOCK_CELLVOLTAGE_s" alt="" coords="23,524,245,551"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="intermcu.h" name="intermcu.h">
+<area shape="rect" id="node2" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$intermcu_8c.html" title="intermcu.c" alt="" coords="125,80,208,107"/>
+<area shape="rect" id="node4" href="$timer_8c.html" title="Driver to enable/disable/change the peripheral timers. " alt="" coords="233,80,295,107"/>
+<area shape="rect" id="node5" href="$spi_8c.html" title="Driver for the serial peripheral interface module (encapsulation of some HAL functions) ..." alt="" coords="320,80,371,107"/>
+</map>

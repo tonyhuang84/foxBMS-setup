@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__BKPSRAM" kind="group">
+    <compoundname>CONFIG_BKPSRAM</compoundname>
+    <title>BKPSRAM User configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__BKPSRAM_1ga86083b0f792b98d99735e9da3d77864f" prot="public" static="no">
+        <name>BKP_SRAM_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the usage of the 4kB backup SRAM <simplesect kind="par"><title>Type:</title><para>toggle </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>True Enables the usage of the backup SRAM </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="57" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration settings backup SRAM. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCONT__ELECTRICAL__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>CONT_ELECTRICAL_STATE_s</compoundname>
+    <includes refid="contactor__cfg_8h" local="no">contactor_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCONT__ELECTRICAL__STATE__s_1a260fd18e87fe58c6ae25dab8b6317ea1" prot="public" static="no" mutable="no">
+        <type><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref></type>
+        <definition>CONT_ELECTRICAL_STATE_TYPE_s CONT_ELECTRICAL_STATE_s::set</definition>
+        <argsstring></argsstring>
+        <name>set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="270" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__ELECTRICAL__STATE__s_1a3d23cb590ff7e8b9a1bf17478d58ff14" prot="public" static="no" mutable="no">
+        <type><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref></type>
+        <definition>CONT_ELECTRICAL_STATE_TYPE_s CONT_ELECTRICAL_STATE_s::feedback</definition>
+        <argsstring></argsstring>
+        <name>feedback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="271" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" line="269" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/contactor_cfg.h" bodystart="269" bodyend="272"/>
+    <listofallmembers>
+      <member refid="structCONT__ELECTRICAL__STATE__s_1a3d23cb590ff7e8b9a1bf17478d58ff14" prot="public" virt="non-virtual"><scope>CONT_ELECTRICAL_STATE_s</scope><name>feedback</name></member>
+      <member refid="structCONT__ELECTRICAL__STATE__s_1a260fd18e87fe58c6ae25dab8b6317ea1" prot="public" virt="non-virtual"><scope>CONT_ELECTRICAL_STATE_s</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

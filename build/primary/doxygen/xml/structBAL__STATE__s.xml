@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structBAL__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>BAL_STATE_s</compoundname>
+    <includes refid="bal_8h" local="no">bal.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBAL__STATE__s_1ae30411d0de7feacf6ac5c19d9ecfcc51" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t BAL_STATE_s::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time in ms before the state machine processes the next state, e.g. in counts of 1ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="124" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1ad4ef7092a042b8ae57260ae542ac9148" prot="public" static="no" mutable="no">
+        <type><ref refid="bal_8h_1a662193881734907573e742ac5e8d878a" kindref="member">BAL_STATE_REQUEST_e</ref></type>
+        <definition>BAL_STATE_REQUEST_e BAL_STATE_s::statereq</definition>
+        <argsstring></argsstring>
+        <name>statereq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current state request made to the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="125" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1ae95b31d9adce29ad66888ec5f8c0386f" prot="public" static="no" mutable="no">
+        <type><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref></type>
+        <definition>BAL_STATEMACH_e BAL_STATE_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state of Driver State Machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="126" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1adbdc6d835443ba7e2788951da7ba05f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BAL_STATE_s::substate</definition>
+        <argsstring></argsstring>
+        <name>substate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current substate of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="127" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1a3276bbc8c9fc1d58588d079fc1e0b629" prot="public" static="no" mutable="no">
+        <type><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref></type>
+        <definition>BAL_STATEMACH_e BAL_STATE_s::laststate</definition>
+        <argsstring></argsstring>
+        <name>laststate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous state of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="128" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1afe39c8487d4cdcdbcfbe5487dde92a96" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BAL_STATE_s::lastsubstate</definition>
+        <argsstring></argsstring>
+        <name>lastsubstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous substate of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="129" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1a5d6e60d6c75ad797541c9487489cd23c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BAL_STATE_s::triggerentry</definition>
+        <argsstring></argsstring>
+        <name>triggerentry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counter for re-entrance protection (function running flag) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="130" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1adf215b27411115fb535f108999560572" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BAL_STATE_s::ErrRequestCounter</definition>
+        <argsstring></argsstring>
+        <name>ErrRequestCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counts the number of illegal requests to the BAL state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="131" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1afa523ffcfd4704d713242289f573ef25" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BAL_STATE_s::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicate if balancing active or not </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="132" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1a21dffac20a5ded898f7d279fc448d9af" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BAL_STATE_s::resting</definition>
+        <argsstring></argsstring>
+        <name>resting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicate if current flowing through battery or not </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="133" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1a827c680033ce04ce1f4eea7a519a5258" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BAL_STATE_s::rest_timer</definition>
+        <argsstring></argsstring>
+        <name>rest_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counter since last timestamp with no current flowing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="134" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBAL__STATE__s_1abc7365d2ba05737063253a58e49847a9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BAL_STATE_s::balancing_threshold</definition>
+        <argsstring></argsstring>
+        <name>balancing_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>effective balancing threshod </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="135" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all the variables relevant for the BAL state machine. The user can get the current state of the BAL state machine with this variable </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="123" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="123" bodyend="136"/>
+    <listofallmembers>
+      <member refid="structBAL__STATE__s_1afa523ffcfd4704d713242289f573ef25" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>active</name></member>
+      <member refid="structBAL__STATE__s_1abc7365d2ba05737063253a58e49847a9" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>balancing_threshold</name></member>
+      <member refid="structBAL__STATE__s_1adf215b27411115fb535f108999560572" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>ErrRequestCounter</name></member>
+      <member refid="structBAL__STATE__s_1a3276bbc8c9fc1d58588d079fc1e0b629" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>laststate</name></member>
+      <member refid="structBAL__STATE__s_1afe39c8487d4cdcdbcfbe5487dde92a96" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>lastsubstate</name></member>
+      <member refid="structBAL__STATE__s_1a827c680033ce04ce1f4eea7a519a5258" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>rest_timer</name></member>
+      <member refid="structBAL__STATE__s_1a21dffac20a5ded898f7d279fc448d9af" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>resting</name></member>
+      <member refid="structBAL__STATE__s_1ae95b31d9adce29ad66888ec5f8c0386f" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>state</name></member>
+      <member refid="structBAL__STATE__s_1ad4ef7092a042b8ae57260ae542ac9148" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>statereq</name></member>
+      <member refid="structBAL__STATE__s_1adbdc6d835443ba7e2788951da7ba05f5" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>substate</name></member>
+      <member refid="structBAL__STATE__s_1ae30411d0de7feacf6ac5c19d9ecfcc51" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>timer</name></member>
+      <member refid="structBAL__STATE__s_1a5d6e60d6c75ad797541c9487489cd23c" prot="public" virt="non-virtual"><scope>BAL_STATE_s</scope><name>triggerentry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

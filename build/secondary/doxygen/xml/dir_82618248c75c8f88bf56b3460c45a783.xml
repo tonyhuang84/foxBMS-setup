@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_82618248c75c8f88bf56b3460c45a783" kind="dir">
+    <compoundname>uart</compoundname>
+    <innerfile refid="uart_8c">uart.c</innerfile>
+    <innerfile refid="uart_8h">uart.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/uart/"/>
+  </compounddef>
+</doxygen>

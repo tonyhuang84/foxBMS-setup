@@ -1,0 +1,492 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7. Battery Junction Box &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="8. Hardware Toolchain" href="../toolchain/toolchain.html"/>
+        <link rel="prev" title="6. Hardware Safety Components" href="../components/components.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>7. Battery Junction Box</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/hardware_documentation/bjb/bjb.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="battery-junction-box">
+<span id="hardware-documentation-bjb"></span><h1>7. Battery Junction Box<a class="headerlink" href="#battery-junction-box" title="Permalink to this headline">¶</a></h1>
+<p>This section presents an example of a typical battery junction box. The design must be adapted to the application and specific care must be taken by sizing the components to ensure the required safety level.</p>
+<div class="section" id="introduction">
+<h2>7.1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="system-specifications">
+<span id="system-spec"></span><h3>7.1.1. System Specifications<a class="headerlink" href="#system-specifications" title="Permalink to this headline">¶</a></h3>
+<p>The Battery Junction Box (BJB) described in this document is designed for mobile and stationary battery systems. The target system has a voltage range between 315V and 567V, while being capable to source and sink a continuous current of up to 320A. The stationary battery consists of up to 14 series connected battery modules (i.e., 28 daisy chained LTC6804). Each module is a 15s2p configuration of 2.3V 20Ah lithium-ion NMC/LTO prismatic battery cells.</p>
+</div>
+<div class="section" id="system-overview">
+<h3>7.1.2. System Overview<a class="headerlink" href="#system-overview" title="Permalink to this headline">¶</a></h3>
+<p>The BJB contains the Battery Management System (BMS) and all safety relevant components. <a class="reference internal" href="#big-bjb"><span class="std std-numref">Fig. 7.1</span></a> shows a BJB integrated into a 19’’ enclosure with a 4U height.</p>
+<div class="figure" id="id1">
+<span id="big-bjb"></span><a class="reference internal image-reference" href="../../_images/big_bjb.jpg"><img alt="../../_images/big_bjb.jpg" src="../../_images/big_bjb.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7.1 </span><span class="caption-text">BJB top view</span></p>
+</div>
+<p><a class="reference internal" href="#bjb-block-diagram"><span class="std std-numref">Fig. 7.2</span></a> shows the block diagram of the BJB. The battery is connected to the BJB at the left side (<code class="docutils literal"><span class="pre">Batt_Positive</span></code> and <code class="docutils literal"><span class="pre">Batt_Negative</span></code>). The source/sink (e.g., load, charger, inverter) is connected to the right side (<code class="docutils literal"><span class="pre">Out_Positive</span></code> and <code class="docutils literal"><span class="pre">Out_Negative</span></code>).</p>
+<p>The main contactors disconnect the battery from the output terminals. These are normally off and switched on in BMS ON-Mode. The contactors are opened if the BMS detects hazardous conditions (e.g., abnormal battery cell temperature) or in BMS OFF-Mode.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A precharge contactor and resistor are used to limit the inrush current into the inverter DC-link capacitor when closing the main contactors at startup.</p>
+</div>
+<p>To break the current flowing in case a short circuit condition occurs between the two high voltage battery system poles, a fuse is placed in the positive current path. A Cooper Bussmann FWP-Series (700Vdc) or better FWJ-Series (800Vdc) fuse was selected for this purpose.</p>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">A special high-voltage DC fuse must be used to break high short circuit currents in high voltage battery systems. This fuse must be very carefully chosen by electrically skilled engineers to ensure proper protection in the specific test environment using specific testing equipment and test conditions. In case the fuse is not appropriately chosen, its protection effect will not be provided.</p>
+</div>
+<div class="figure" id="id2">
+<span id="bjb-block-diagram"></span><a class="reference internal image-reference" href="../../_images/bjb_block_diagram.png"><img alt="../../_images/bjb_block_diagram.png" src="../../_images/bjb_block_diagram.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7.2 </span><span class="caption-text">BJB block diagram</span></p>
+</div>
+<p>A Manual Service Disconnect (MSD) is placed in the positive current path to ensure a manual disconnection while the system is serviced. It is mounted on the front of the BJB for easy access. The MSD used is available with an integrated fuse or as shunted version without fuse. In case the fused version is chosen, the Cooper Bussmann fuse can be omitted, but the integrated fuse version is limited to 200A.</p>
+<p>The Battery Management System (BMS) is the main control unit of the whole battery system. It collects data from the battery modules (e.g., battery cell voltages, cell temperatures) and from the current sensor, and uses these data for battery state calculations (e.g., SOC, SOH, SOF). In addition, the BMS controls the power contactors and communicates with a superior management unit through the CAN bus.</p>
+</div>
+</div>
+<div class="section" id="battery-junction-box-part-list">
+<h2>7.2. Battery Junction Box Part List<a class="headerlink" href="#battery-junction-box-part-list" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="in-stock-products">
+<h3>7.2.1. In-stock Products<a class="headerlink" href="#in-stock-products" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#instock-products"><span class="std std-numref">Table 7.1</span></a> shows the components used in the BJB. All components were selected to fit the system specifications listed in <a class="reference internal" href="#system-spec"><span class="std std-ref">System Specifications</span></a>. If another battery configuration than specified here is used, the voltage and current ratings of these components have to be checked and adapted.</p>
+<span id="instock-products"></span><table border="1" class="docutils" id="id3">
+<caption><span class="caption-number">Table 7.1 </span><span class="caption-text">BJB part list</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="17%" />
+<col width="34%" />
+<col width="22%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Part Description</strong></td>
+<td><strong>Manufacturer</strong></td>
+<td><strong>Part Suggested</strong></td>
+<td><strong>Supplier</strong></td>
+</tr>
+<tr class="row-even"><td>Power Contactors</td>
+<td>Gigavac</td>
+<td>GX16BEB (600A)</td>
+<td>HVC Technologies</td>
+</tr>
+<tr class="row-odd"><td>Precharge Contactor</td>
+<td>TE</td>
+<td>LEV200A4ANA</td>
+<td>Mouser</td>
+</tr>
+<tr class="row-even"><td>Precharge Resistor</td>
+<td>Vishay</td>
+<td>LPS 300 Series (300W)</td>
+<td>Farnell</td>
+</tr>
+<tr class="row-odd"><td>DC Fuse*</td>
+<td>Cooper Bussmann</td>
+<td>FWJ-Series or FWP-Series</td>
+<td>Mouser</td>
+</tr>
+<tr class="row-even"><td>Current Sensor</td>
+<td>Isabellenhuette</td>
+<td>IVT-MOD or IVT-S</td>
+<td>Isabellenhuette</td>
+</tr>
+<tr class="row-odd"><td>Emergency Stop Button</td>
+<td>Moeller</td>
+<td>M22-PV/K11 + M22 K01</td>
+<td>Farnell</td>
+</tr>
+<tr class="row-even"><td>Insulation Monitoring</td>
+<td>Bender</td>
+<td>ISOMETER IR155-3204</td>
+<td>Bender</td>
+</tr>
+<tr class="row-odd"><td>BMS</td>
+<td>Fraunhofer IISB</td>
+<td>foxBMS Master Unit with foxBMS Slave Units</td>
+<td>Fraunhofer IISB</td>
+</tr>
+<tr class="row-even"><td>Manual Service Disconnect</td>
+<td>TE</td>
+<td>AMP + Manual Service Disconnect</td>
+<td>Power &amp; Signal Group</td>
+</tr>
+<tr class="row-odd"><td>12V Power Supply</td>
+<td>Meanwell</td>
+<td>WDR-120-12</td>
+<td>Mouser</td>
+</tr>
+<tr class="row-even"><td>Power Switch</td>
+<td>Kraus &amp; Naimer</td>
+<td>G20S D322-600 E</td>
+<td>Kraus &amp; Naimer</td>
+</tr>
+</tbody>
+</table>
+<p>* rated currents and voltages are depending from the used battery cells</p>
+</div>
+<div class="section" id="custom-parts">
+<h3>7.2.2. Custom Parts<a class="headerlink" href="#custom-parts" title="Permalink to this headline">¶</a></h3>
+<p>In addition to the components listed in <a class="reference internal" href="#instock-products"><span class="std std-numref">table 7.1</span></a>, sundries not listed here are needed (e.g., terminal blocks). <a class="reference internal" href="#custom-products"><span class="std std-numref">Table 7.2</span></a> shows the wires used inside the BJB. Basically only 0.5mm<sup>2</sup> wires are used. Wires are used for signals and low voltage only (e.g., 12V or 24V power supply). The continuous insulation rating must exceed the maximum voltage of the whole battery pack.</p>
+<span id="custom-products"></span><table border="1" class="docutils" id="id4">
+<caption><span class="caption-number">Table 7.2 </span><span class="caption-text">Litz wires used inside the BJB</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="18%" />
+<col width="28%" />
+<col width="54%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Color</strong></td>
+<td><strong>Cross Section</strong></td>
+<td><strong>Usage</strong></td>
+</tr>
+<tr class="row-even"><td>Red</td>
+<td>0.5mm<sup>2</sup></td>
+<td>12V Supply Positive</td>
+</tr>
+<tr class="row-odd"><td>Blue</td>
+<td>0.5mm<sup>2</sup></td>
+<td>12V Supply Ground</td>
+</tr>
+<tr class="row-even"><td>Orange</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Insulation Monitoring</td>
+</tr>
+<tr class="row-odd"><td>Blue/Yellow</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Insulation Monitoring</td>
+</tr>
+<tr class="row-even"><td>Brown/Grey</td>
+<td>0.5mm<sup>2</sup></td>
+<td>CAN High</td>
+</tr>
+<tr class="row-odd"><td>Brown/Orange</td>
+<td>0.5mm<sup>2</sup></td>
+<td>CAN Low</td>
+</tr>
+<tr class="row-even"><td>Green/Orange</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Interlock Line</td>
+</tr>
+<tr class="row-odd"><td>Green</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Battery Monitoring Backup Interface</td>
+</tr>
+<tr class="row-even"><td>Grey/White</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Battery Monitoring Backup Interface</td>
+</tr>
+<tr class="row-odd"><td>Brown/Purple</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Battery Monitoring Main Interface</td>
+</tr>
+<tr class="row-even"><td>Red/Green</td>
+<td>0.5mm<sup>2</sup></td>
+<td>Battery Monitoring Main Interface</td>
+</tr>
+</tbody>
+</table>
+<p>For the high power DC connections, copper bus bars are used, since high current pulses can occur. The copper bus bars were fabricated with a cross section of 150mm<sup>2</sup> (5mm x 30mm) for the maximum continuous current specified in <a class="reference internal" href="#system-spec"><span class="std std-ref">System Specifications</span></a>.</p>
+</div>
+</div>
+<div class="section" id="main-and-precharge-contactors-wiring">
+<h2>7.3. Main and Precharge Contactors Wiring<a class="headerlink" href="#main-and-precharge-contactors-wiring" title="Permalink to this headline">¶</a></h2>
+<p>The main and precharge contactors are delivered with bare wire ends. The corresponding crimps and plugs must be used to connect them to the foxBMS Master Unit. The direction of the current flow through the power contactors must be carefully considered, since the ability of the power contactor to interrupt the current is dependant on the direction of the current flowing through them.</p>
+</div>
+<div class="section" id="insulation-monitor-wiring">
+<h2>7.4. Insulation Monitor Wiring<a class="headerlink" href="#insulation-monitor-wiring" title="Permalink to this headline">¶</a></h2>
+<p>The Bender insulation monitor is delivered with a socket on its PCB. The corresponding crimps and plugs must be used used to connect it to the foxBMS Master Unit.</p>
+</div>
+<div class="section" id="current-sensor-wiring">
+<h2>7.5. Current Sensor Wiring<a class="headerlink" href="#current-sensor-wiring" title="Permalink to this headline">¶</a></h2>
+<p>The current sensor is supplied without its crimps and housings (e.g., by JST). The current sensor has to be wired to the CAN bus and to a power supply. In addition, voltage sense wires may be connected to measure up to 3 voltages in the battery system (e.g., battery voltage, voltage over the DC fuse, voltage over the contactors, voltage on the load side). In the given BJB example, the voltage sensing inputs are monitoring the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Voltage measurement 1: between fuse and main contactor</li>
+<li>Voltage measurement 2: between fuse and service disconnect (MSD)</li>
+<li>Voltage measurement 3: between battery positive and precharge contactor</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When the precharge contactor is closed after the main negative contactor has been closed, the measured voltages are used to ensure a correct precharge procedure.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="summary-of-the-assembly-procedure">
+<h2>7.6. Summary of the Assembly Procedure<a class="headerlink" href="#summary-of-the-assembly-procedure" title="Permalink to this headline">¶</a></h2>
+<p>For developing and building the BJB, the following procedure may be used:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Defining the specification of the battery (e.g., maximum current, maximum voltage)</li>
+<li>Defining the placement of the input (from the battery) and the output (to the user) connectors and the manual service disconnect</li>
+<li>Placement of the main parts of the current path (e.g., main contactors)</li>
+<li>Designing of the copper bus bars (alternatively wire with appropriate cross section may be used)</li>
+<li>Placement of the BJB electronic parts (e.g., BMS)</li>
+<li>Wiring of the electronic parts</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../toolchain/toolchain.html" class="btn btn-neutral float-right" title="8. Hardware Toolchain" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../components/components.html" class="btn btn-neutral" title="6. Hardware Safety Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__SOX__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_SOX_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a10f6c8b2bab26a774b48ad00518dca04" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::soc_mean</definition>
+        <argsstring></argsstring>
+        <name>soc_mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0.0 &lt;= soc_mean &lt;= 100.0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="173" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a1265477614b7d2828b1b4d79899d841d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::soc_min</definition>
+        <argsstring></argsstring>
+        <name>soc_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0.0 &lt;= soc_min &lt;= 100.0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="174" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a58316185a80d58865039a57eeef4931b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::soc_max</definition>
+        <argsstring></argsstring>
+        <name>soc_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0.0 &lt;= soc_max &lt;= 100.0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="175" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a1006152b36f4f2b709aca895bc74f58d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SOX_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="176" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1aa82c8bcfb87237ec238fdeb76283af8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SOX_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="177" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a8817a1e0810238d2b3b72a3a453f39f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SOX_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="178" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a25f121909faa5a6ac0221c720b936a14" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::sof_continuous_charge</definition>
+        <argsstring></argsstring>
+        <name>sof_continuous_charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="179" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1ad049d59e18d1e91b467eb6ad41887ac3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::sof_continuous_discharge</definition>
+        <argsstring></argsstring>
+        <name>sof_continuous_discharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="180" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a0ca298eec4ee02d9e9ebcafd8cb05724" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::sof_peak_charge</definition>
+        <argsstring></argsstring>
+        <name>sof_peak_charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="181" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SOX__s_1a85a1562ea8734784a99091b74a5d30a4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DATA_BLOCK_SOX_s::sof_peak_discharge</definition>
+        <argsstring></argsstring>
+        <name>sof_peak_discharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="182" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of sox </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="172" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="172" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__SOX__s_1a1006152b36f4f2b709aca895bc74f58d" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a58316185a80d58865039a57eeef4931b" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>soc_max</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a10f6c8b2bab26a774b48ad00518dca04" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>soc_mean</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a1265477614b7d2828b1b4d79899d841d" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>soc_min</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a25f121909faa5a6ac0221c720b936a14" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>sof_continuous_charge</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1ad049d59e18d1e91b467eb6ad41887ac3" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>sof_continuous_discharge</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a0ca298eec4ee02d9e9ebcafd8cb05724" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>sof_peak_charge</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a85a1562ea8734784a99091b74a5d30a4" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>sof_peak_discharge</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1a8817a1e0810238d2b3b72a3a453f39f8" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__SOX__s_1aa82c8bcfb87237ec238fdeb76283af8e" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SOX_s</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="sox.c" name="sox.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="115,304,190,331"/>
+<area shape="rect" id="node5" href="$sox_8h.html" title="Header for SOX module, responsible for calculation of current derating and of SOC. " alt="" coords="49,80,104,107"/>
+<area shape="rect" id="node7" href="$database_8h.html" title="Database module header. " alt="" coords="134,80,221,107"/>
+<area shape="rect" id="node10" href="$mcu_8h.html" title="Headers for the functions for the MCU to manage time and interrupts. " alt="" coords="247,229,306,256"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="159,379,250,405"/>
+<area shape="rect" id="node6" href="$sox__cfg_8h.html" title="Configuration header for SOX. " alt="" coords="25,155,104,181"/>
+<area shape="rect" id="node8" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="128,155,238,181"/>
+<area shape="rect" id="node9" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="82,229,222,256"/>
+</map>

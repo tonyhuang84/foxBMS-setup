@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structLTC__ERRORTABLE__s" kind="struct" language="C++" prot="public">
+    <compoundname>LTC_ERRORTABLE_s</compoundname>
+    <includes refid="ltc_8h" local="no">ltc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLTC__ERRORTABLE__s_1ad884201254e724974f0a79120abb6141" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERRORTABLE_s::LTC</definition>
+        <argsstring></argsstring>
+        <name>LTC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="50" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERRORTABLE__s_1a49af41df850f578cbdf67f022f3dff43" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERRORTABLE_s::mux0</definition>
+        <argsstring></argsstring>
+        <name>mux0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="51" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERRORTABLE__s_1ae4a29abf7320187e1adabfb30ef29f44" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERRORTABLE_s::mux1</definition>
+        <argsstring></argsstring>
+        <name>mux1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="52" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERRORTABLE__s_1aa12e9478362814b34ef88d9cfdd4896e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERRORTABLE_s::mux2</definition>
+        <argsstring></argsstring>
+        <name>mux2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="53" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERRORTABLE__s_1a5a1835137919aedb4bfccae9e6848a16" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERRORTABLE_s::mux3</definition>
+        <argsstring></argsstring>
+        <name>mux3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="54" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" bodystart="49" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structLTC__ERRORTABLE__s_1ad884201254e724974f0a79120abb6141" prot="public" virt="non-virtual"><scope>LTC_ERRORTABLE_s</scope><name>LTC</name></member>
+      <member refid="structLTC__ERRORTABLE__s_1a49af41df850f578cbdf67f022f3dff43" prot="public" virt="non-virtual"><scope>LTC_ERRORTABLE_s</scope><name>mux0</name></member>
+      <member refid="structLTC__ERRORTABLE__s_1ae4a29abf7320187e1adabfb30ef29f44" prot="public" virt="non-virtual"><scope>LTC_ERRORTABLE_s</scope><name>mux1</name></member>
+      <member refid="structLTC__ERRORTABLE__s_1aa12e9478362814b34ef88d9cfdd4896e" prot="public" virt="non-virtual"><scope>LTC_ERRORTABLE_s</scope><name>mux2</name></member>
+      <member refid="structLTC__ERRORTABLE__s_1a5a1835137919aedb4bfccae9e6848a16" prot="public" virt="non-virtual"><scope>LTC_ERRORTABLE_s</scope><name>mux3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

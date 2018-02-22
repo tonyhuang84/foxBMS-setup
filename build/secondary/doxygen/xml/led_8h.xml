@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="led_8h" kind="file" language="C++">
+    <compoundname>led.h</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="io_8h" local="yes">io.h</includes>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="led_8c" local="yes">led.c</includedby>
+    <incdepgraph>
+      <node id="1360">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1354">
+        <label>stdint.h</label>
+      </node>
+      <node id="1358">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1352">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+      </node>
+      <node id="1355">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="1356">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+      </node>
+      <node id="1353">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1355" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1364">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1363">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1365">
+        <label>led.c</label>
+        <link refid="led_8c"/>
+      </node>
+      <node id="1362">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="led_8h_1a70525a88addc59272477fccaa645ee35" prot="public" static="no">
+        <name>LED_DEBUG_0</name>
+        <initializer><ref refid="mcu__cfg_8h_1aac7d2a00d222e7835dde07ed8a53748c" kindref="member">IO_PIN_DEBUG_LED_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" line="42" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="led_8h_1a85ae59312bb9da4690addf9103ab4858" prot="public" static="no">
+        <name>LED_DEBUG_1</name>
+        <initializer><ref refid="mcu__cfg_8h_1a733242f5d49505cfd7bee88f1fc2f938" kindref="member">IO_PIN_DEBUG_LED_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" line="43" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="led_8h_1a4ca198836ebbe2168b1e4de166c82832" prot="public" static="no">
+        <name>LED_BLINK_TASK_DURATION_MS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blinking time im milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" line="48" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="led_8h_1a623042cdcfaa58f4a944b79645c83626" prot="public" static="no">
+        <name>LED_OFF_TIME_MS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LED off time in milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" line="53" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="led_8h_1ab3570a8c9e1266519ad1c7e00093812b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LED_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>LED_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>switches the debug LEDs off </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" line="64" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.c" bodystart="56" bodyend="60"/>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="led_8h_1a70525a88addc59272477fccaa645ee35" compoundref="led_8h" startline="42">LED_DEBUG_0</references>
+        <references refid="led_8h_1a85ae59312bb9da4690addf9103ab4858" compoundref="led_8h" startline="43">LED_DEBUG_1</references>
+      </memberdef>
+      <memberdef kind="function" id="led_8h_1abfc5f852a22844ea0501fad65ed890b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LED_Ctrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>LED_Ctrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>controls the debug LED blinking frequency </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h" line="71" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.c" bodystart="64" bodyend="150"/>
+        <references refid="led_8h_1a4ca198836ebbe2168b1e4de166c82832" compoundref="led_8h" startline="48">LED_BLINK_TASK_DURATION_MS</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="led_8h_1a70525a88addc59272477fccaa645ee35" compoundref="led_8h" startline="42">LED_DEBUG_0</references>
+        <references refid="led_8h_1a85ae59312bb9da4690addf9103ab4858" compoundref="led_8h" startline="43">LED_DEBUG_1</references>
+        <references refid="led_8h_1a623042cdcfaa58f4a944b79645c83626" compoundref="led_8h" startline="53">LED_OFF_TIME_MS</references>
+        <references refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" compoundref="io_8c" startline="152" endline="155">IO_TogglePin</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the driver to control the blinking of the display LEDs. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>12.11.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>LED </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>LED_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io_8h" kindref="compound">io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="led_8h_1a70525a88addc59272477fccaa645ee35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_DEBUG_0<sp/><sp/><sp/><sp/>IO_PIN_DEBUG_LED_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="led_8h_1a85ae59312bb9da4690addf9103ab4858" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_DEBUG_1<sp/><sp/><sp/><sp/>IO_PIN_DEBUG_LED_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="led_8h_1a4ca198836ebbe2168b1e4de166c82832" refkind="member"><highlight class="preprocessor">#define<sp/>LED_BLINK_TASK_DURATION_MS<sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="led_8h_1a623042cdcfaa58f4a944b79645c83626" refkind="member"><highlight class="preprocessor">#define<sp/>LED_OFF_TIME_MS<sp/><sp/><sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="led_8h_1ab3570a8c9e1266519ad1c7e00093812b" kindref="member">LED_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="led_8h_1abfc5f852a22844ea0501fad65ed890b7" kindref="member">LED_Ctrl</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LED_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/led.h"/>
+  </compounddef>
+</doxygen>

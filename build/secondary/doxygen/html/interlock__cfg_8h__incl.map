@@ -1,0 +1,9 @@
+<map id="interlock_cfg.h" name="interlock_cfg.h">
+<area shape="rect" id="node2" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="52,80,192,107"/>
+<area shape="rect" id="node3" href="$general_8h.html" title="Settings for the system. " alt="" coords="97,155,171,181"/>
+<area shape="rect" id="node6" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="267,80,334,107"/>
+<area shape="rect" id="node5" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,229,186,256"/>
+<area shape="rect" id="node7" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="234,155,317,181"/>
+<area shape="rect" id="node9" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="341,155,463,181"/>
+<area shape="rect" id="node10" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="487,155,586,181"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="bal_cfg.h" name="bal_cfg.h">
+<area shape="rect" id="node2" href="$bal_8h.html" title="Header for the driver for balancing. " alt="" coords="191,80,241,107"/>
+<area shape="rect" id="node8" href="$bal__cfg_8c.html" title="Configuration for the driver for balancing. " alt="" coords="265,80,340,107"/>
+<area shape="rect" id="node3" href="$bal_8c.html" title="Driver for the Balancing module. " alt="" coords="5,155,56,181"/>
+<area shape="rect" id="node4" href="$bms_8c.html" title="bms driver implementation " alt="" coords="80,155,139,181"/>
+<area shape="rect" id="node5" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="163,155,269,181"/>
+<area shape="rect" id="node6" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="294,155,349,181"/>
+<area shape="rect" id="node7" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="373,155,469,181"/>
+</map>

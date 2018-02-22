@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structSOX__SOF__CONFIG__s" kind="struct" language="C++" prot="public">
+    <compoundname>SOX_SOF_CONFIG_s</compoundname>
+    <includes refid="sox__cfg_8h" local="no">sox_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1ad31c4e8fcdb911907fe341469970d488" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::I_DischaMax_Cont</definition>
+        <argsstring></argsstring>
+        <name>I_DischaMax_Cont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="379" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1afd9c21ac00158077e5d7afc38fb771f6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::I_ChargeMax_Cont</definition>
+        <argsstring></argsstring>
+        <name>I_ChargeMax_Cont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="380" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a091326cc17497b0972fd0d5777099996" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::I_Limphome</definition>
+        <argsstring></argsstring>
+        <name>I_Limphome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="381" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1aafa2aa9797bc5419e6fce00f82d54570" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_TLow_Discha</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_TLow_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="383" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a39a819ac6142241b97e70f6b21de5fc0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_TLow_Discha</definition>
+        <argsstring></argsstring>
+        <name>Limit_TLow_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="384" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a9905fcdf16a17f943cd904bd7bd5244a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_TLow_Charge</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_TLow_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="386" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1ae693beef39f62cdf0cd060a551814f5b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_TLow_Charge</definition>
+        <argsstring></argsstring>
+        <name>Limit_TLow_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="387" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1ac77663c7f8c79fe40139f5ee270f97f5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_THigh_Discha</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_THigh_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="389" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a02b8636b6b895eccfc9d48748c837ed8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_THigh_Discha</definition>
+        <argsstring></argsstring>
+        <name>Limit_THigh_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="390" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1aa550c2a591a916519dc837611412423c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_THigh_Charge</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_THigh_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="392" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a57c35beb30d827e92a55b65f2eaf0d44" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_THigh_Charge</definition>
+        <argsstring></argsstring>
+        <name>Limit_THigh_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="393" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a7fe29b55353092be4272b367ed136c76" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_Soc_Charge</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_Soc_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="395" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1ab047888a369ed6fc9fee34d7af89613a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_Soc_Charge</definition>
+        <argsstring></argsstring>
+        <name>Limit_Soc_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="396" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a53229deac7a9c12b0dcff630ed4c3233" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_Soc_Discha</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_Soc_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="398" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a17f4b63b2c4c7325f85622ab92e2895e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_Soc_Discha</definition>
+        <argsstring></argsstring>
+        <name>Limit_Soc_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="399" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1ab2c59465607c4319a96c7c9de4d9678b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_Voltage_Charge</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_Voltage_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="401" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a51f2c0e2cd93543dd0b86e35209c86dd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_Voltage_Charge</definition>
+        <argsstring></argsstring>
+        <name>Limit_Voltage_Charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="402" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1ab12784e5c92dfedf17c573a310da8bb7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Cutoff_Voltage_Discha</definition>
+        <argsstring></argsstring>
+        <name>Cutoff_Voltage_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="404" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__CONFIG__s_1a5901bacde2e67e67bfcfa9e9974bc302" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_CONFIG_s::Limit_Voltage_Discha</definition>
+        <argsstring></argsstring>
+        <name>Limit_Voltage_Discha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="405" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>structure for configuration of SoF Calculation </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" line="378" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/sox_cfg.h" bodystart="378" bodyend="406"/>
+    <listofallmembers>
+      <member refid="structSOX__SOF__CONFIG__s_1a7fe29b55353092be4272b367ed136c76" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_Soc_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a53229deac7a9c12b0dcff630ed4c3233" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_Soc_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1aa550c2a591a916519dc837611412423c" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_THigh_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1ac77663c7f8c79fe40139f5ee270f97f5" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_THigh_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a9905fcdf16a17f943cd904bd7bd5244a" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_TLow_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1aafa2aa9797bc5419e6fce00f82d54570" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_TLow_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1ab2c59465607c4319a96c7c9de4d9678b" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_Voltage_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1ab12784e5c92dfedf17c573a310da8bb7" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Cutoff_Voltage_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1afd9c21ac00158077e5d7afc38fb771f6" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>I_ChargeMax_Cont</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1ad31c4e8fcdb911907fe341469970d488" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>I_DischaMax_Cont</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a091326cc17497b0972fd0d5777099996" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>I_Limphome</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1ab047888a369ed6fc9fee34d7af89613a" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_Soc_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a17f4b63b2c4c7325f85622ab92e2895e" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_Soc_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a57c35beb30d827e92a55b65f2eaf0d44" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_THigh_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a02b8636b6b895eccfc9d48748c837ed8" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_THigh_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1ae693beef39f62cdf0cd060a551814f5b" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_TLow_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a39a819ac6142241b97e70f6b21de5fc0" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_TLow_Discha</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a51f2c0e2cd93543dd0b86e35209c86dd" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_Voltage_Charge</name></member>
+      <member refid="structSOX__SOF__CONFIG__s_1a5901bacde2e67e67bfcfa9e9974bc302" prot="public" virt="non-virtual"><scope>SOX_SOF_CONFIG_s</scope><name>Limit_Voltage_Discha</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

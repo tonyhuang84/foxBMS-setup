@@ -1,0 +1,6 @@
+<map id="sys.h" name="sys.h">
+<area shape="rect" id="node2" href="$sys__cfg_8h.html" title="Sys driver configuration header. " alt="" coords="49,80,128,107"/>
+<area shape="rect" id="node3" href="$mcu_8h.html" title="Headers for the functions for the MCU to manage time and interrupts. " alt="" coords="59,155,118,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="Settings for the system. " alt="" coords="51,229,126,256"/>
+<area shape="rect" id="node6" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,304,186,331"/>
+</map>

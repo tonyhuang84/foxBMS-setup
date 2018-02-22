@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCAN__RX__BUFFER" kind="struct" language="C++" prot="public">
+    <compoundname>CAN_RX_BUFFER</compoundname>
+    <includes refid="can_8h" local="no">can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCAN__RX__BUFFER_1aebacd6951fe2a6aa010d232d08b27d2e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_RX_BUFFER::ptrRead</definition>
+        <argsstring></argsstring>
+        <name>ptrRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="92" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__RX__BUFFER_1a324459948678acccea34b4058ee1e43d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_RX_BUFFER::ptrWrite</definition>
+        <argsstring></argsstring>
+        <name>ptrWrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="93" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__RX__BUFFER_1a47a5da3da927dbb8aaa8dc0241436c98" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_RX_BUFFER::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="94" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__RX__BUFFER_1a760c52f2e809f30fa0ea5be9c76bf130" prot="public" static="no" mutable="no">
+        <type><ref refid="can_8h_1a6124b2906125300d005a111fca75d293" kindref="member">CAN_RX_BUFFERELEMENT_s</ref> *</type>
+        <definition>CAN_RX_BUFFERELEMENT_s* CAN_RX_BUFFER::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="95" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="23">
+        <label>CAN_RX_BUFFERELEMENT</label>
+        <link refid="structCAN__RX__BUFFERELEMENT"/>
+      </node>
+      <node id="22">
+        <label>CAN_RX_BUFFER</label>
+        <link refid="structCAN__RX__BUFFER"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="91" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="91" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structCAN__RX__BUFFER_1a760c52f2e809f30fa0ea5be9c76bf130" prot="public" virt="non-virtual"><scope>CAN_RX_BUFFER</scope><name>buffer</name></member>
+      <member refid="structCAN__RX__BUFFER_1a47a5da3da927dbb8aaa8dc0241436c98" prot="public" virt="non-virtual"><scope>CAN_RX_BUFFER</scope><name>length</name></member>
+      <member refid="structCAN__RX__BUFFER_1aebacd6951fe2a6aa010d232d08b27d2e" prot="public" virt="non-virtual"><scope>CAN_RX_BUFFER</scope><name>ptrRead</name></member>
+      <member refid="structCAN__RX__BUFFER_1a324459948678acccea34b4058ee1e43d" prot="public" virt="non-virtual"><scope>CAN_RX_BUFFER</scope><name>ptrWrite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

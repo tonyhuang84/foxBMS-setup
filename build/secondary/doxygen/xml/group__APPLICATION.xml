@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__APPLICATION" kind="group">
+    <compoundname>APPLICATION</compoundname>
+    <title>Applications</title>
+    <innerfile refid="sox_8c">sox.c</innerfile>
+    <innerfile refid="sox_8h">sox.h</innerfile>
+    <innerfile refid="appltask_8c">appltask.c</innerfile>
+    <innerfile refid="appltask_8h">appltask.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains low priority custom and user tasks </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

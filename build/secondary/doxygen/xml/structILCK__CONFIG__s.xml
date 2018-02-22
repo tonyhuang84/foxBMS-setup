@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structILCK__CONFIG__s" kind="struct" language="C++" prot="public">
+    <compoundname>ILCK_CONFIG_s</compoundname>
+    <includes refid="interlock__cfg_8h" local="no">interlock_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structILCK__CONFIG__s_1a8129d316fdba4d08a05e69250f8c261d" prot="public" static="no" mutable="no">
+        <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+        <definition>IO_PORTS_e ILCK_CONFIG_s::control_pin</definition>
+        <argsstring></argsstring>
+        <name>control_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" line="110" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structILCK__CONFIG__s_1ac1537912d93a51de9183539aa8cafde8" prot="public" static="no" mutable="no">
+        <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+        <definition>IO_PORTS_e ILCK_CONFIG_s::feedback_pin</definition>
+        <argsstring></argsstring>
+        <name>feedback_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" line="111" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structILCK__CONFIG__s_1aebcd8649d97463b31134e7058b016475" prot="public" static="no" mutable="no">
+        <type><ref refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5" kindref="member">ILCK_FEEDBACK_TYPE_e</ref></type>
+        <definition>ILCK_FEEDBACK_TYPE_e ILCK_CONFIG_s::feedback_pin_type</definition>
+        <argsstring></argsstring>
+        <name>feedback_pin_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" line="112" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" line="109" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/interlock_cfg.h" bodystart="109" bodyend="113"/>
+    <listofallmembers>
+      <member refid="structILCK__CONFIG__s_1a8129d316fdba4d08a05e69250f8c261d" prot="public" virt="non-virtual"><scope>ILCK_CONFIG_s</scope><name>control_pin</name></member>
+      <member refid="structILCK__CONFIG__s_1ac1537912d93a51de9183539aa8cafde8" prot="public" virt="non-virtual"><scope>ILCK_CONFIG_s</scope><name>feedback_pin</name></member>
+      <member refid="structILCK__CONFIG__s_1aebcd8649d97463b31134e7058b016475" prot="public" virt="non-virtual"><scope>ILCK_CONFIG_s</scope><name>feedback_pin_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_313f52a8850e606e3473b82effd8c999" kind="dir">
+    <compoundname>engine</compoundname>
+    <innerdir refid="dir_51287df7f830a8cb01d0226e6e57b8b8">config</innerdir>
+    <innerdir refid="dir_4d9ad8379b9a95fd2fbf0f40b81ada19">diag</innerdir>
+    <innerdir refid="dir_176a3e5427063051ed20e4bbf58fbb0c">sys</innerdir>
+    <innerdir refid="dir_9a2ccd18da3f5c6a44b76ea8746e1d29">task</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9 @@
+<map id="BMS_CheckCurrent" name="BMS_CheckCurrent">
+<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="191,5,305,32"/>
+<area shape="rect" id="node3" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="196,56,300,83"/>
+<area shape="rect" id="node4" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="353,56,503,83"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="551,56,673,83"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="723,5,823,32"/>
+<area shape="rect" id="node7" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="723,56,822,83"/>
+<area shape="rect" id="node8" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="721,107,824,133"/>
+</map>

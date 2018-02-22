@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structBKPSRAM__OPERATING__HOURS__s" kind="struct" language="C++" prot="public">
+    <compoundname>BKPSRAM_OPERATING_HOURS_s</compoundname>
+    <includes refid="bkpsram__cfg_8h" local="no">bkpsram_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1aba75fe4a4811a46fb342e4472dccd7d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BKPSRAM_OPERATING_HOURS_s::Timer_1ms</definition>
+        <argsstring></argsstring>
+        <name>Timer_1ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="65" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1ae463e4f5440bed6d4fd26a6af109f269" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BKPSRAM_OPERATING_HOURS_s::Timer_10ms</definition>
+        <argsstring></argsstring>
+        <name>Timer_10ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>10*milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="66" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1ab921e8aecbb407d919f8128720cd3fb5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BKPSRAM_OPERATING_HOURS_s::Timer_100ms</definition>
+        <argsstring></argsstring>
+        <name>Timer_100ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>100*milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="67" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1a18828d77a75865c5490473f95ca36ce9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BKPSRAM_OPERATING_HOURS_s::Timer_sec</definition>
+        <argsstring></argsstring>
+        <name>Timer_sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>seconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="68" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1a7405a72eebdbf31f1bfe79394402772a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BKPSRAM_OPERATING_HOURS_s::Timer_min</definition>
+        <argsstring></argsstring>
+        <name>Timer_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minutes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="69" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1adb419ea20cfaffbb439da31b9a6c13fb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BKPSRAM_OPERATING_HOURS_s::Timer_h</definition>
+        <argsstring></argsstring>
+        <name>Timer_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hours </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="70" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1a5b19b4fe714b0746e697466c5f82e0c4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t BKPSRAM_OPERATING_HOURS_s::Timer_d</definition>
+        <argsstring></argsstring>
+        <name>Timer_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>days </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="71" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__OPERATING__HOURS__s_1ac650583a898ce9da1ed91bf13d064ef6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t BKPSRAM_OPERATING_HOURS_s::reserved[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reserved for future use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Operating hours-Timer </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" line="64" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.h" bodystart="64" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1ac650583a898ce9da1ed91bf13d064ef6" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>reserved</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1ab921e8aecbb407d919f8128720cd3fb5" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_100ms</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1ae463e4f5440bed6d4fd26a6af109f269" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_10ms</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1aba75fe4a4811a46fb342e4472dccd7d4" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_1ms</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1a5b19b4fe714b0746e697466c5f82e0c4" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_d</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1adb419ea20cfaffbb439da31b9a6c13fb" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_h</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1a7405a72eebdbf31f1bfe79394402772a" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_min</name></member>
+      <member refid="structBKPSRAM__OPERATING__HOURS__s_1a18828d77a75865c5490473f95ca36ce9" prot="public" virt="non-virtual"><scope>BKPSRAM_OPERATING_HOURS_s</scope><name>Timer_sec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

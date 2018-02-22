@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Slave 12-Cell v1.x.x &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="5. Hardware Design Resources" href="../design_resources/design_resources.html"/>
+        <link rel="prev" title="3. Slave 12-Cell v2.x.x" href="../slave_v2.x/slave_12cell_v2_x.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>4. Slave 12-Cell v1.x.x</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/hardware_documentation/slave_v1.x/slave_12cell_v1_x.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="slave-12-cell-v1-x-x">
+<span id="hw-slave-12cell-v1-x"></span><h1>4. Slave 12-Cell v1.x.x<a class="headerlink" href="#slave-12-cell-v1-x-x" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>4.1. Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The following description only applies for the BMS-Slave Board hardware versions <code class="docutils literal"><span class="pre">1.x.x</span></code>.</p>
+</div>
+<div class="section" id="block-diagram">
+<h3>4.1.1. Block Diagram<a class="headerlink" href="#block-diagram" title="Permalink to this headline">¶</a></h3>
+<p>A block diagram of a BMS-Slave Board is shown in <a class="reference internal" href="#slave-diagram"><span class="std std-numref">fig. 4.24</span></a></p>
+<div class="figure" id="id5">
+<span id="slave-diagram"></span><a class="reference internal image-reference" href="../../_images/blockdiagram.png"><img alt="../../_images/blockdiagram.png" src="../../_images/blockdiagram.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.24 </span><span class="caption-text">Block diagram of a BMS-Slave Board</span></p>
+</div>
+<p>The connector indicated as <code class="docutils literal"><span class="pre">Daisy</span> <span class="pre">Chain</span></code> in <a class="reference internal" href="../../getting_started/cabling/cabling.html#foxbmsfront-quickstart"><span class="std std-numref">fig. 5.14</span></a> must be used on the BMS-Master Board. Its layout is described in <a class="reference internal" href="#master-daisy-connector"><span class="std std-numref">table 4.2</span></a>.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_16pin1.png"><img alt="../../_images/connector_16pin1.png" src="../../_images/connector_16pin1.png" style="width: 30%;" /></a>
+</div>
+<span id="master-daisy-connector"></span><table border="1" class="docutils" id="id6">
+<caption><span class="caption-number">Table 4.2 </span><span class="caption-text">BMS-Master Board Daisy Chain Connector</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>OUT+ (Secondary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>OUT- (Secondary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>OUT+ (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>OUT- (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>NC</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This connector pin out is only valid for use of a foxBMS Master Interface board for the LTC6804-1/LTC6811-1 monitoring IC.</p>
+</div>
+<p>On the BMS-Slave Board, the connectors indicated as <code class="docutils literal"><span class="pre">Primary</span> <span class="pre">Daisy</span> <span class="pre">Chain</span> <span class="pre">connector</span></code> and <code class="docutils literal"><span class="pre">Secondary</span> <span class="pre">Daisy</span> <span class="pre">Chain</span> <span class="pre">connector</span></code> in <a class="reference internal" href="#slave-diagram"><span class="std std-numref">fig. 4.24</span></a> must be used. Their layout is described in <a class="reference internal" href="#primary-daisy-connector"><span class="std std-numref">table 4.3</span></a>.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_4pin2.png"><img alt="../../_images/connector_4pin2.png" src="../../_images/connector_4pin2.png" style="width: 10%;" /></a>
+</div>
+<span id="primary-daisy-connector"></span><table border="1" class="docutils" id="id7">
+<caption><span class="caption-number">Table 4.3 </span><span class="caption-text">Primary Daisy Chain Connector</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Connector Pin</th>
+<th class="head">Daisy Chain</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>IN+ (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>OUT- (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>IN- (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>OUT+ (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+</tbody>
+</table>
+<p>The OUT+ and OUT- pins of the BMS-Master Board go to the IN+ and IN- pins of the BMS-Slave Board.  A cable with a receptable on both ends must be crimped correctly to make the connection.</p>
+<p>In case a second BMS-Slave Board must be connected to the daisy chain, the OUT+ and OUT- pins of the first BMS-Slave Board must be connected to the IN+ and IN- pins of the second BMS-Slave Board.</p>
+<div class="section" id="cell-voltage-connector-on-the-slaves">
+<h4>4.1.1.1. Cell Voltage Connector on the foxBMS Slave Units<a class="headerlink" href="#cell-voltage-connector-on-the-slaves" title="Permalink to this headline">¶</a></h4>
+<p>The connector indicated as <code class="docutils literal"><span class="pre">Battery</span> <span class="pre">cell</span> <span class="pre">connector</span> <span class="pre">(16</span> <span class="pre">pin)</span></code> in <a class="reference internal" href="#slave-diagram"><span class="std std-numref">fig. 4.24</span></a> has two purposes:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Supply of the BMS-Slave Board</li>
+<li>Input of the cell voltages to the LTC6804-1/LTC6811-1 monitoring chip</li>
+</ul>
+</div></blockquote>
+<p>The layout of the connector is described in <a class="reference internal" href="#cell-voltage-connector"><span class="std std-numref">table 4.4</span></a>. Up to 12 battery cells can be connected in series, between VBAT+ and VBAT-. The BMS-Slave Board is supplied by VBAT+ and VBAT-. The total voltage of all cells in series must be between 11V and 55V (see <a class="reference internal" href="../../getting_started/cabling/cabling.html#ltc-datasheet6804" id="id1">[ltc_datasheet6804]</a> and <a class="reference internal" href="../../getting_started/cabling/cabling.html#ltc-datasheet6811" id="id2">[ltc_datasheet6811]</a>). 0- correspond to the negative pole of cell 0, 0+ to the positive pole of cell 0, 1- correspond to the negative pole of cell 1, 1+ to the positive pole of cell 1 and so one till 11+, the positive pole of cell 11. As the cells are connected in series, the positive pole of one cell is connected to the negative pole of the next cell: 0+ to 1-, 1+ to 2+ and so on. The poles should be connected to the cell voltage connector as shown in <a class="reference internal" href="#cell-voltage-connector"><span class="std std-numref">table 4.4</span></a>.</p>
+<p>If less than 12 battery cells are used, information on how to connect them can be found LTC6804-1/LTC6811-1 datasheets (<a class="reference internal" href="../../getting_started/cabling/cabling.html#ltc-datasheet6804" id="id3">[ltc_datasheet6804]</a> and <a class="reference internal" href="../../getting_started/cabling/cabling.html#ltc-datasheet6811" id="id4">[ltc_datasheet6811]</a>).</p>
+<div class="figure" id="cell-voltage-connector-layout">
+<a class="reference internal image-reference" href="../../_images/connector_16pin1.png"><img alt="../../_images/connector_16pin1.png" src="../../_images/connector_16pin1.png" style="width: 30%;" /></a>
+</div>
+<span id="cell-voltage-connector"></span><table border="1" class="docutils" id="id8">
+<caption><span class="caption-number">Table 4.4 </span><span class="caption-text">BMS-Slave Board, battery cell voltage connector</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Connector Pin</th>
+<th class="head">Battery Cell</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>VBAT-</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0+ (1-)</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>2+ (3-)</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>4+ (5-)</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>6+ (7-)</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>8+ (9-)</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>10+ (11-)</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>0-</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>1+ (2-)</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>3+ (4-)</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>5+ (6-)</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>7+ (8-)</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>9+ (10-)</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>11+</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>VBAT+</td>
+</tr>
+</tbody>
+</table>
+<p>In case no cells are available, they can be simulated with a series of voltage divider. A voltage supplied of 30V should be used and 12 resistors with the same value connected in series between the positive and negative connectors of the voltage supply. The positive connector is linked to VBAT+, the negative connector to VBAT- and each pole of a resistor correspond to  a pole of a battery cell. The voltage of 30V  is chosen so that every simulated cell voltage lies around 2.5V, which lies in the center of the safe operating area defined by default in the foxBMS software.</p>
+</div>
+<div class="section" id="cell-temperature-connector-on-the-slaves">
+<span id="slave-voltage-divider"></span><h4>4.1.1.2. Cell Temperature Connector on the foxBMS Slave Units<a class="headerlink" href="#cell-temperature-connector-on-the-slaves" title="Permalink to this headline">¶</a></h4>
+<p>The connector indicated as <code class="docutils literal"><span class="pre">Temperature</span> <span class="pre">sensor</span> <span class="pre">connector</span> <span class="pre">(24</span> <span class="pre">pin)</span></code> in <a class="reference internal" href="#slave-diagram"><span class="std std-numref">fig. 4.24</span></a> is used to connect temperature sensors to the BMS-Slave Board.</p>
+<p><a class="reference internal" href="#cell-temperature-connector"><span class="std std-numref">Table 4.5</span></a> describes the temperature connector.</p>
+<div class="figure" id="cell-temperature-connector-layout">
+<a class="reference internal image-reference" href="../../_images/connector_24pin.png"><img alt="../../_images/connector_24pin.png" src="../../_images/connector_24pin.png" style="width: 45%;" /></a>
+</div>
+<span id="cell-temperature-connector"></span><table border="1" class="docutils" id="id9">
+<caption><span class="caption-number">Table 4.5 </span><span class="caption-text">Temperature Sensor Connector</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="42%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Connector Pin</th>
+<th class="head">Temperature Sensor</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1, 24</td>
+<td>T-Sensor 0</td>
+</tr>
+<tr class="row-odd"><td>2, 23</td>
+<td>T-Sensor 1</td>
+</tr>
+<tr class="row-even"><td>3, 22</td>
+<td>T-Sensor 2</td>
+</tr>
+<tr class="row-odd"><td>4, 21</td>
+<td>T-Sensor 3</td>
+</tr>
+<tr class="row-even"><td>5, 20</td>
+<td>T-Sensor 4</td>
+</tr>
+<tr class="row-odd"><td>6, 19</td>
+<td>T-Sensor 5</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#temp-sensor"><span class="std std-numref">Fig. 4.27</span></a> shows the functioning of a temperature sensor.</p>
+<div class="figure" id="id10">
+<span id="temp-sensor"></span><a class="reference internal image-reference" href="../../_images/temperature_sensor.png"><img alt="../../_images/temperature_sensor.png" src="../../_images/temperature_sensor.png" style="width: 30%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.27 </span><span class="caption-text">Temperature sensor circuit.</span></p>
+</div>
+<p>The voltage VREF (3V) is generated by the LTC6804-1/LTC6811-1 chip. A temperature-dependent resistor must be added to build a voltage divider (drawn as a dashed line in <a class="reference internal" href="#temp-sensor"><span class="std std-numref">fig. 4.27</span></a>, not delivered with the BMS-Slave Boards). The resulting voltage is measured by the LTC6804-1/LTC6811-1 chip. Knowing the temperature dependence of the resistor, the relation between measured voltage and temperature can be determined.</p>
+<p>A function is present in the code to make the conversion between measured voltage and temperature. It must be adapted to the temperature sensor used. This is described in the software FAQ (<a class="reference internal" href="../../software_documentation/faq/faq.html#sw-faq-temperature-sensors"><span class="std std-ref">How to change the relation between voltages read by multiplexer via LTC6804-1/LTC6811-1 and temperatures?</span></a>). In case temperatures are read incorrectly, this function is the first step to verify.</p>
+<p>It must be noted that if no sensor is connected, 3V are measured. For the quickstart guide, no sensor needs to be connected: the conversion function is simply a multiplication by 10, so 30°C will be displayed, which again lies in the center of the safe operating area defined by default in the foxBMS software.</p>
+<p>If sensors are added, they must be connected between the connector pins corresponding to the sensors 0 to 5, as shown in <a class="reference internal" href="#cell-temperature-connector"><span class="std std-numref">table 4.5</span></a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../design_resources/design_resources.html" class="btn btn-neutral float-right" title="5. Hardware Design Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../slave_v2.x/slave_12cell_v2_x.html" class="btn btn-neutral" title="3. Slave 12-Cell v2.x.x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

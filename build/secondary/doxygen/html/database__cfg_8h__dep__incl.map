@@ -1,0 +1,22 @@
+<map id="database_cfg.h" name="database_cfg.h">
+<area shape="rect" id="node2" href="$database__cfg_8c.html" title="Database configuration. " alt="" coords="367,80,478,107"/>
+<area shape="rect" id="node3" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="502,80,557,107"/>
+<area shape="rect" id="node4" href="$database_8h.html" title="Database module header. " alt="" coords="581,80,667,107"/>
+<area shape="rect" id="node5" href="$bms_8c.html" title="bms driver implementation " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node6" href="$sox_8c.html" title="SOX module responsible for calculation of current derating and of SOC. " alt="" coords="89,155,143,181"/>
+<area shape="rect" id="node7" href="$diag__cfg_8c.html" title="Diagnostic module configuration. " alt="" coords="167,155,249,181"/>
+<area shape="rect" id="node8" href="$enginetask__cfg_8c.html" title="Engine task configuration FIXME file description. " alt="" coords="273,155,393,181"/>
+<area shape="rect" id="node9" href="$adc__ex_8c.html" title="Driver for the analog to digital converter. " alt="" coords="417,155,492,181"/>
+<area shape="rect" id="node10" href="$cansignal__cfg_8c.html" title="Configuration of the messages and signal settings for the CAN driver. " alt="" coords="516,155,628,181"/>
+<area shape="rect" id="node11" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="653,155,699,181"/>
+<area shape="rect" id="node12" href="$database_8c.html" title="Database module implementation. " alt="" coords="723,155,810,181"/>
+<area shape="rect" id="node13" href="$cansignal_8c.html" title="Messages and signal settings for the CAN driver. " alt="" coords="835,155,923,181"/>
+<area shape="rect" id="node14" href="$interlock_8c.html" title="Driver for the interlock. " alt="" coords="947,155,1029,181"/>
+<area shape="rect" id="node15" href="$ltc_8c.html" title="Driver for the LTC monitoring chip. " alt="" coords="1073,379,1119,405"/>
+<area shape="rect" id="node16" href="$ltc__defs_8h.html" title="ltc_defs.h" alt="" coords="1106,155,1185,181"/>
+<area shape="rect" id="node17" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC monitoring chip. " alt="" coords="1110,229,1181,256"/>
+<area shape="rect" id="node19" href="$ltc_8h.html" title="Headers for the driver for the LTC monitoring chip. " alt="" coords="1199,304,1246,331"/>
+<area shape="rect" id="node18" href="$ltc__cfg_8c.html" title="Configuration for the LTC monitoring chip. " alt="" coords="1105,304,1175,331"/>
+<area shape="rect" id="node20" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="1159,379,1255,405"/>
+<area shape="rect" id="node21" href="$meas_8c.html" title="Driver for the measurements needed by the BMS (e.g., I,V,T). " alt="" coords="1279,379,1345,405"/>
+</map>

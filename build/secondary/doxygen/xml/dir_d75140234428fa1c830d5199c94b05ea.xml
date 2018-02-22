@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d75140234428fa1c830d5199c94b05ea" kind="dir">
+    <compoundname>general</compoundname>
+    <innerdir refid="dir_c68028793a9d15426f8a9a5f1affa50c">config</innerdir>
+    <innerdir refid="dir_d7195c7ada9a02238c2b7adc94935b79">includes</innerdir>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <innerfile refid="main_8h">main.h</innerfile>
+    <innerfile refid="nvic_8c">nvic.c</innerfile>
+    <innerfile refid="nvic_8h">nvic.h</innerfile>
+    <innerfile refid="version_8c">version.c</innerfile>
+    <innerfile refid="version_8h">version.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/"/>
+  </compounddef>
+</doxygen>

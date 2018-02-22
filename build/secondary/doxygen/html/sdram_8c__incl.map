@@ -1,0 +1,10 @@
+<map id="sdram.c" name="sdram.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="29,80,104,107"/>
+<area shape="rect" id="node5" href="$sdram_8h.html" title="Headers for the driver for the volatile SDRAM. " alt="" coords="148,80,217,107"/>
+<area shape="rect" id="node7" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="328,80,411,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="21,155,112,181"/>
+<area shape="rect" id="node6" href="$sdram__cfg_8h.html" title="Headers for the external SDRAM configuration and data definitions. " alt="" coords="136,155,229,181"/>
+<area shape="rect" id="node9" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="395,155,461,181"/>
+<area shape="rect" id="node10" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="299,229,421,256"/>
+<area shape="rect" id="node11" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="445,229,544,256"/>
+</map>

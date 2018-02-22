@@ -1,0 +1,9 @@
+<map id="io.c" name="io.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="85,80,159,107"/>
+<area shape="rect" id="node5" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="183,80,226,107"/>
+<area shape="rect" id="node10" href="$portcheck_8h.html" title="Validity checker for STM32 GPIO Configuration. " alt="" coords="250,80,341,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,155,186,181"/>
+<area shape="rect" id="node6" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="227,155,294,181"/>
+<area shape="rect" id="node8" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="199,229,322,256"/>
+<area shape="rect" id="node9" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU0 (primary) " alt="" coords="346,229,445,256"/>
+</map>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BASE__HEADER__DEV__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BASE_HEADER_DEV_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BASE__HEADER__DEV__s_1a9c2247b06c09095d5815da8e99e308ad" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BASE_HEADER_DEV_s::nr_of_blockheader</definition>
+        <argsstring></argsstring>
+        <name>nr_of_blockheader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="110" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BASE__HEADER__DEV__s_1a0d0803ea24dcf80657d7d76e9b7e0dd9" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BASE__HEADER__s" kindref="compound">DATA_BASE_HEADER_s</ref> *</type>
+        <definition>DATA_BASE_HEADER_s* DATA_BASE_HEADER_DEV_s::blockheaderptr</definition>
+        <argsstring></argsstring>
+        <name>blockheaderptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="111" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>configuration struct of database device </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="46">
+        <label>DATA_BASE_HEADER_DEV_s</label>
+        <link refid="structDATA__BASE__HEADER__DEV__s"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>blockheaderptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>DATA_BASE_HEADER_s</label>
+        <link refid="structDATA__BASE__HEADER__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="109" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="109" bodyend="112"/>
+    <listofallmembers>
+      <member refid="structDATA__BASE__HEADER__DEV__s_1a0d0803ea24dcf80657d7d76e9b7e0dd9" prot="public" virt="non-virtual"><scope>DATA_BASE_HEADER_DEV_s</scope><name>blockheaderptr</name></member>
+      <member refid="structDATA__BASE__HEADER__DEV__s_1a9c2247b06c09095d5815da8e99e308ad" prot="public" virt="non-virtual"><scope>DATA_BASE_HEADER_DEV_s</scope><name>nr_of_blockheader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

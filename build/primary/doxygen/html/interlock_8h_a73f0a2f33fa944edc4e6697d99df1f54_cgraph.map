@@ -1,0 +1,4 @@
+<map id="ILCK_SwitchInterlockOn" name="ILCK_SwitchInterlockOn">
+<area shape="rect" id="node2" href="$interlock_8c.html#a94d222e102cda7c2e378ff32a810d314" title="Sets the interlock state to its requested state, if the interlock is at that time not in the requeste..." alt="" coords="216,5,373,32"/>
+<area shape="rect" id="node3" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="421,5,513,32"/>
+</map>

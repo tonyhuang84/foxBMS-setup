@@ -1,0 +1,10 @@
+<map id="BAL_Trigger" name="BAL_Trigger">
+<area shape="rect" id="node2" href="$bal_8c.html#aa42a90db3e0a780d408f57c908ab20df" title="re&#45;entrance check of BAL state machine trigger function " alt="" coords="157,5,315,32"/>
+<area shape="rect" id="node3" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="393,107,508,133"/>
+<area shape="rect" id="node4" href="$bal_8c.html#a83f59255531f11abef84a213a2beedb7" title="transfers the current state request to the state machine. " alt="" coords="147,259,325,285"/>
+<area shape="rect" id="node5" href="$bal_8c.html#a7e1bfa9a6e1ca5b1d063398d8dc8720e" title="BAL_Init" alt="" coords="201,107,271,133"/>
+<area shape="rect" id="node7" href="$bal_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="BAL_Deactivate" alt="" coords="179,157,293,184"/>
+<area shape="rect" id="node9" href="$bal_8c.html#ac20d253b687803d47e23d57450c7bf08" title="BAL_Activate" alt="" coords="186,208,286,235"/>
+<area shape="rect" id="node6" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="373,157,528,184"/>
+<area shape="rect" id="node8" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="378,208,523,235"/>
+</map>

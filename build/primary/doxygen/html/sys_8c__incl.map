@@ -1,0 +1,38 @@
+<map id="sys.c" name="sys.c">
+<area shape="rect" id="node2" href="$sys_8h.html" title="Sys driver header. " alt="" coords="106,379,161,405"/>
+<area shape="rect" id="node8" href="$contactor_8h.html" title="Headers for the driver for the contactors. " alt="" coords="193,528,279,555"/>
+<area shape="rect" id="node15" href="$bms_8h.html" title="bms driver header " alt="" coords="209,379,268,405"/>
+<area shape="rect" id="node17" href="$meas_8h.html" title="Headers for the driver for the measurements needed by the BMS (e.g., I,V,T). " alt="" coords="286,80,351,107"/>
+<area shape="rect" id="node19" href="$cansignal_8h.html" title="Headers for the messages and signal settings for the CAN driver. " alt="" coords="765,80,853,107"/>
+<area shape="rect" id="node25" href="$sox_8h.html" title="Header for SOX module, responsible for calculation of current derating and of SOC. " alt="" coords="759,528,814,555"/>
+<area shape="rect" id="node27" href="$diag_8h.html" title="Diag driver header. " alt="" coords="675,528,733,555"/>
+<area shape="rect" id="node33" href="$interlock_8h.html" title="Headers for the driver for the interlock. " alt="" coords="505,229,588,256"/>
+<area shape="rect" id="node36" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="406,304,517,331"/>
+<area shape="rect" id="node37" href="$isoguard_8h.html" title="Headers for the driver for the isolation monitoring. " alt="" coords="921,80,1004,107"/>
+<area shape="rect" id="node39" href="$bal_8h.html" title="Header for the driver for balancing. " alt="" coords="12,229,63,256"/>
+<area shape="rect" id="node3" href="$sys__cfg_8h.html" title="Sys driver configuration header. " alt="" coords="94,453,173,480"/>
+<area shape="rect" id="node9" href="$contactor__cfg_8h.html" title="Header for the configuration for the driver for the contactors. " alt="" coords="246,603,357,629"/>
+<area shape="rect" id="node4" href="$mcu_8h.html" title="Headers for the functions for the MCU to manage time and interrupts. " alt="" coords="104,528,163,555"/>
+<area shape="rect" id="node5" href="$general_8h.html" title="Settings for the system. " alt="" coords="319,752,393,779"/>
+<area shape="rect" id="node7" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="260,827,351,853"/>
+<area shape="rect" id="node10" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="339,677,479,704"/>
+<area shape="rect" id="node11" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="655,677,721,704"/>
+<area shape="rect" id="node13" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="492,752,615,779"/>
+<area shape="rect" id="node14" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU0 (primary) " alt="" coords="639,752,737,779"/>
+<area shape="rect" id="node16" href="$bms__cfg_8h.html" title="bms driver configuration header " alt="" coords="197,453,280,480"/>
+<area shape="rect" id="node18" href="$meas__cfg_8h.html" title="meas configuration header " alt="" coords="267,155,357,181"/>
+<area shape="rect" id="node20" href="$cansignal__cfg_8h.html" title="Headers for the configuration of the messages and signal settings for the CAN driver. " alt="" coords="816,155,928,181"/>
+<area shape="rect" id="node21" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module. " alt="" coords="834,229,913,256"/>
+<area shape="rect" id="node22" href="$eepr_8h.html" title="Headers for the driver for the storage in the EEPROM memory. " alt="" coords="844,304,903,331"/>
+<area shape="rect" id="node23" href="$eepr__cfg_8h.html" title="Header for the configuration for the driver for the storage in the EEPROM memory. ..." alt="" coords="832,379,915,405"/>
+<area shape="rect" id="node24" href="$bkpsram__cfg_8h.html" title="Headers for the configuration for static backup RAM. " alt="" coords="821,453,928,480"/>
+<area shape="rect" id="node32" href="$main_8h.html" title="Main function header. " alt="" coords="873,603,935,629"/>
+<area shape="rect" id="node26" href="$sox__cfg_8h.html" title="Configuration header for SOX. " alt="" coords="770,603,849,629"/>
+<area shape="rect" id="node28" href="$diag__cfg_8h.html" title="Diagnostic module configuration header. " alt="" coords="665,603,746,629"/>
+<area shape="rect" id="node29" href="$diag__id__cfg_8h.html" title="This file contains basic definitions in order to use an abstracted diagnosis. " alt="" coords="745,677,844,704"/>
+<area shape="rect" id="node30" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="871,677,919,704"/>
+<area shape="rect" id="node31" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="863,752,935,779"/>
+<area shape="rect" id="node34" href="$interlock__cfg_8h.html" title="Header for the configuration for the driver for the interlock. " alt="" coords="483,603,589,629"/>
+<area shape="rect" id="node38" href="$isoguard__cfg_8h.html" title="Headers for the configuration for the isolation monitoring. " alt="" coords="952,155,1059,181"/>
+<area shape="rect" id="node40" href="$bal__cfg_8h.html" title="Header for the configuration for the driver for balancing. " alt="" coords="147,603,221,629"/>
+</map>

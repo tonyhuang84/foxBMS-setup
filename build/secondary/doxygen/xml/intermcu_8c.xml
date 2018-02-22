@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="intermcu_8c" kind="file" language="C++">
+    <compoundname>intermcu.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="intermcu_8h" local="yes">intermcu.h</includes>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <incdepgraph>
+      <node id="991">
+        <label>intermcu_cfg.h</label>
+        <link refid="intermcu__cfg_8h"/>
+      </node>
+      <node id="995">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="986">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="990" relation="include">
+        </childnode>
+        <childnode refid="997" relation="include">
+        </childnode>
+      </node>
+      <node id="988">
+        <label>stdint.h</label>
+      </node>
+      <node id="990">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="991" relation="include">
+        </childnode>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="997" relation="include">
+        </childnode>
+        <childnode refid="1000" relation="include">
+        </childnode>
+      </node>
+      <node id="1000">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="987" relation="include">
+        </childnode>
+      </node>
+      <node id="997">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="998" relation="include">
+        </childnode>
+      </node>
+      <node id="998">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="999" relation="include">
+        </childnode>
+      </node>
+      <node id="992">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="994" relation="include">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="994">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="989">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="999">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="994" relation="include">
+        </childnode>
+      </node>
+      <node id="987">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="988" relation="include">
+        </childnode>
+        <childnode refid="989" relation="include">
+        </childnode>
+      </node>
+      <node id="993">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="intermcu_8c_1a0fd059dd8ed6b78672330c98b245b4db" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t readArray[]</definition>
+        <argsstring>[]</argsstring>
+        <name>readArray</name>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" line="50" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="intermcu_8c_1a02de281de6d8bfac7a9ecf10291778c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMC_sendByte</definition>
+        <argsstring>(uint8_t message)</argsstring>
+        <name>IMC_sendByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Sends one byte via the internal SPI bus connecting both the main MCU and the Safety MCU. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the byte to be sent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" line="63" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" bodystart="63" bodyend="69"/>
+        <references refid="intermcu__cfg_8h_1a5eea994504257aa25f79f563525da27e" compoundref="intermcu__cfg_8h" startline="42">SPI_HANDLE_IMC</references>
+      </memberdef>
+      <memberdef kind="function" id="intermcu_8c_1a167b66a07ff230c01d280385e86cf8df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMC_enableInterrupt</definition>
+        <argsstring>(void)</argsstring>
+        <name>IMC_enableInterrupt</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enables a listener interrupt on the internal SPI bus connecting both the main MCU and the Safety MCU. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" line="76" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" bodystart="76" bodyend="78"/>
+        <references refid="intermcu__cfg_8h_1a5eea994504257aa25f79f563525da27e" compoundref="intermcu__cfg_8h" startline="42">SPI_HANDLE_IMC</references>
+        <references refid="intermcu_8c_1a0fd059dd8ed6b78672330c98b245b4db" compoundref="intermcu_8c" startline="50">readArray</references>
+      </memberdef>
+      <memberdef kind="function" id="intermcu_8c_1afb733d99b66bc442521dd5bb26b28baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t IMC_readByte</definition>
+        <argsstring>(void)</argsstring>
+        <name>IMC_readByte</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reads one byte on the internal SPI bus connecting both the main MCU and the Safety MCU that has been received by interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the received byte </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" line="85" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c" bodystart="85" bodyend="87"/>
+        <references refid="intermcu_8c_1a0fd059dd8ed6b78672330c98b245b4db" compoundref="intermcu_8c" startline="50">readArray</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="intermcu_8h" kindref="compound">intermcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="intermcu_8h_1a0fd059dd8ed6b78672330c98b245b4db" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="intermcu_8c_1a0fd059dd8ed6b78672330c98b245b4db" kindref="member">readArray</ref>[]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="intermcu_8h_1a02de281de6d8bfac7a9ecf10291778c3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="intermcu_8c_1a02de281de6d8bfac7a9ecf10291778c3" kindref="member">IMC_sendByte</ref>(uint8_t<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>transmitArray[]<sp/>=<sp/>{message};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>SPI_SetCS(2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_SPI_Transmit(<ref refid="intermcu__cfg_8h_1a5eea994504257aa25f79f563525da27e" kindref="member">SPI_HANDLE_IMC</ref>,<sp/>transmitArray,<sp/>1,<sp/>1000);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>SPI_UnsetCS(2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="intermcu_8h_1a167b66a07ff230c01d280385e86cf8df" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="intermcu_8c_1a167b66a07ff230c01d280385e86cf8df" kindref="member">IMC_enableInterrupt</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/>HAL_SPI_Receive_IT(<ref refid="intermcu__cfg_8h_1a5eea994504257aa25f79f563525da27e" kindref="member">SPI_HANDLE_IMC</ref>,<sp/><ref refid="intermcu_8c_1a0fd059dd8ed6b78672330c98b245b4db" kindref="member">readArray</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="intermcu_8h_1afb733d99b66bc442521dd5bb26b28baa" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="intermcu_8c_1afb733d99b66bc442521dd5bb26b28baa" kindref="member">IMC_readByte</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="intermcu_8c_1a0fd059dd8ed6b78672330c98b245b4db" kindref="member">readArray</ref>[0];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/intermcu/intermcu.c"/>
+  </compounddef>
+</doxygen>

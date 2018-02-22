@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="batterysystem__cfg_8c" kind="file" language="C++">
+    <compoundname>batterysystem_cfg.c</compoundname>
+    <includes refid="batterysystem__cfg_8h" local="yes">batterysystem_cfg.h</includes>
+    <includes refid="database_8h" local="yes">database.h</includes>
+    <incdepgraph>
+      <node id="193">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>stdint.h</label>
+      </node>
+      <node id="192">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="194">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>batterysystem_cfg.c</label>
+        <link refid="batterysystem__cfg_8c"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="batterysystem__cfg_8c_1ab63a3ee8060ce339fd0eaf6029981512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref></type>
+        <definition>BS_CURRENT_DIRECTION_e BS_CheckCurrent_Direction</definition>
+        <argsstring>(void)</argsstring>
+        <name>BS_CheckCurrent_Direction</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks current direction, read current from database. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>BS_CURRENT_DISCHARGE or BS_CURRENT_CHARGE depending on current direction ( (type: BS_CURRENT_DIRECTION_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c" line="46" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c" bodystart="46" bodyend="68"/>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" compoundref="batterysystem__cfg_8h" startline="51">BS_CURRENT_DISCHARGE</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" compoundref="database__cfg_8h" startline="123">DATA_BLOCK_ID_CURRENT</references>
+        <references refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" compoundref="batterysystem__cfg_8h" startline="58">POSITIVE_DISCHARGE_CURRENT</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" compoundref="database__cfg_8h" startline="240">DATA_BLOCK_CURRENT_s::current</references>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" compoundref="batterysystem__cfg_8h" startline="50">BS_CURRENT_CHARGE</references>
+      </memberdef>
+      <memberdef kind="function" id="batterysystem__cfg_8c_1aa06ea71be06dc7e07f5769ddd83e15d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref></type>
+        <definition>BS_CURRENT_DIRECTION_e BS_CheckCurrentValue_Direction</definition>
+        <argsstring>(float current)</argsstring>
+        <name>BS_CheckCurrentValue_Direction</name>
+        <param>
+          <type>float</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+<para>Checks current direction, current value as function parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>BS_CURRENT_DISCHARGE or BS_CURRENT_CHARGE depending on current direction ( (type: BS_CURRENT_DIRECTION_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c" line="70" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c" bodystart="70" bodyend="89"/>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" compoundref="batterysystem__cfg_8h" startline="51">BS_CURRENT_DISCHARGE</references>
+        <references refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" compoundref="batterysystem__cfg_8h" startline="58">POSITIVE_DISCHARGE_CURRENT</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" compoundref="batterysystem__cfg_8h" startline="50">BS_CURRENT_CHARGE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration for the battery system. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>23.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>CONT </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="batterysystem__cfg_8h" kindref="compound">batterysystem_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="database_8h" kindref="compound">database.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="batterysystem__cfg_8h_1ab63a3ee8060ce339fd0eaf6029981512" refkind="member"><highlight class="normal"><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref><sp/><ref refid="batterysystem__cfg_8c_1ab63a3ee8060ce339fd0eaf6029981512" kindref="member">BS_CheckCurrent_Direction</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__CURRENT__s" kindref="compound">DATA_BLOCK_CURRENT_s</ref><sp/>current_tab<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;current_tab,<sp/><ref refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" kindref="member">DATA_BLOCK_ID_CURRENT</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" kindref="member">POSITIVE_DISCHARGE_CURRENT</ref><sp/>==<sp/><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref>){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref><sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" kindref="member">BS_CURRENT_CHARGE</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref><sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" kindref="member">BS_CURRENT_CHARGE</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="batterysystem__cfg_8h_1aa06ea71be06dc7e07f5769ddd83e15d1" refkind="member"><highlight class="normal"><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref><sp/><ref refid="batterysystem__cfg_8c_1aa06ea71be06dc7e07f5769ddd83e15d1" kindref="member">BS_CheckCurrentValue_Direction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>current)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21" kindref="member">BS_CURRENT_DIRECTION_e</ref><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="batterysystem__cfg_8h_1a5e4b897ba4cda343075cd54d3fa319ac" kindref="member">POSITIVE_DISCHARGE_CURRENT</ref><sp/>==<sp/><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref>){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" kindref="member">BS_CURRENT_CHARGE</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" kindref="member">BS_CURRENT_DISCHARGE</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37ced433a1c068cc5392100c4c32969a" kindref="member">BS_CURRENT_CHARGE</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.c"/>
+  </compounddef>
+</doxygen>

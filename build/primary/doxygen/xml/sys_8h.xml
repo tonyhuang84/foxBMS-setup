@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sys_8h" kind="file" language="C++">
+    <compoundname>sys.h</compoundname>
+    <includes refid="sys__cfg_8h" local="yes">sys_cfg.h</includes>
+    <includes refid="contactor__cfg_8h" local="yes">contactor_cfg.h</includes>
+    <includedby refid="sys_8c" local="yes">sys.c</includedby>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="os_8c" local="yes">os.c</includedby>
+    <incdepgraph>
+      <node id="2956">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="2957" relation="include">
+        </childnode>
+        <childnode refid="2958" relation="include">
+        </childnode>
+      </node>
+      <node id="2953">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="2954" relation="include">
+        </childnode>
+        <childnode refid="2960" relation="include">
+        </childnode>
+      </node>
+      <node id="2957">
+        <label>stdint.h</label>
+      </node>
+      <node id="2955">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="2956" relation="include">
+        </childnode>
+      </node>
+      <node id="2964">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="2960">
+        <label>contactor_cfg.h</label>
+        <link refid="contactor__cfg_8h"/>
+        <childnode refid="2961" relation="include">
+        </childnode>
+        <childnode refid="2962" relation="include">
+        </childnode>
+        <childnode refid="2956" relation="include">
+        </childnode>
+      </node>
+      <node id="2959">
+        <label>contactor.h</label>
+        <link refid="contactor_8h"/>
+        <childnode refid="2960" relation="include">
+        </childnode>
+      </node>
+      <node id="2962">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="2963" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2965" relation="include">
+        </childnode>
+      </node>
+      <node id="2965">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="2963">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="2958">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2954">
+        <label>sys_cfg.h</label>
+        <link refid="sys__cfg_8h"/>
+        <childnode refid="2955" relation="include">
+        </childnode>
+        <childnode refid="2959" relation="include">
+        </childnode>
+      </node>
+      <node id="2961">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="2956" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2967">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="2966">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="2967" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="2969" relation="include">
+        </childnode>
+      </node>
+      <node id="2968">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="2969">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structSYS__STATE__s" prot="public">SYS_STATE_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="sys_8h_1a7d8cec19633c14951d14b960aa61b422" prot="public" static="no">
+        <name>SYS_CHECK_e</name>
+        <enumvalue id="sys_8h_1a7d8cec19633c14951d14b960aa61b422a5eb02be19a7cc33ec1be50a2c4602c56" prot="public">
+          <name>SYS_CHECK_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>system ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a7d8cec19633c14951d14b960aa61b422ab67d782d991d2b17c49513578bfc6bc6" prot="public">
+          <name>SYS_CHECK_BUSY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>system busy </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a7d8cec19633c14951d14b960aa61b422a4bffb43d35dbe82ebcd84f211373ac9d" prot="public">
+          <name>SYS_CHECK_NOT_OK</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>system not ok </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Symbolic names for busyness of the system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="47" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="sys_8h_1ac1f997c56f390be3e40ac2936e5db48c" prot="public" static="no">
+        <name>SYS_TRIG_EVENT_e</name>
+        <enumvalue id="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca866023ba0974b5e2344a75264e0b37f8" prot="public">
+          <name>SYS_MODE_STARTUP_EVENT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>system startup </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca3d967e582cb392352e3ce325c38767f7" prot="public">
+          <name>SYS_MODE_CYCLIC_EVENT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>for cyclic events </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca25512e7ea59a83bbb8b979c93178742f" prot="public">
+          <name>SYS_MODE_TRIGGERED_EVENT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>for triggered events </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca8a212bf6babc9aa4cc339daf4397b9d2" prot="public">
+          <name>SYS_MODE_ABNORMAL_EVENT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>for abnormal (error etc.) events </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca7d9991026fe53540f9a470023dc48800" prot="public">
+          <name>SYS_MODE_EVENT_RESERVED</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>do not use </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="55" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" prot="public" static="no">
+        <name>SYS_STATEMACH_e</name>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" prot="public">
+          <name>SYS_STATEMACH_UNINITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" prot="public">
+          <name>SYS_STATEMACH_INITIALIZATION</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" prot="public">
+          <name>SYS_STATEMACH_INITIALIZED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daad352eca96bc1b0de7066bf07276372d" prot="public">
+          <name>SYS_STATEMACH_IDLE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" prot="public">
+          <name>SYS_STATEMACH_INITIALIZE_INTERLOCK</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da96c46920a6c48bde381695e12b2d08f0" prot="public">
+          <name>SYS_STATEMACH_INITIALIZE_CONTACTORS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da518b56543a4c844ba68aa97fe0f1e686" prot="public">
+          <name>SYS_STATEMACH_INITIALIZE_BALANCING</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" prot="public">
+          <name>SYS_STATEMACH_INITIALIZE_BMS</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" prot="public">
+          <name>SYS_STATEMACH_RUNNING</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dacb2bcbf2663bd26c08d4322f367617ed" prot="public">
+          <name>SYS_STATEMACH_FIRST_MEASUREMENT_CYCLE</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" prot="public">
+          <name>SYS_STATEMACH_INITIALIZE_MISC</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf35f1a466c5311530f04c2137a038e5f" prot="public">
+          <name>SYS_STATEMACH_CHECK_CURRENT_SENSOR_PRESENCE</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dabdf0d4d5a994ee534ad4b5e5335a90f9" prot="public">
+          <name>SYS_STATEMACH_UNDEFINED</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>undefined state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da893fef899ac5180688cd74f4e31b1d40" prot="public">
+          <name>SYS_STATEMACH_RESERVED1</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>reserved state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" prot="public">
+          <name>SYS_STATEMACH_ERROR</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>States of the SYS state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="80" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="80" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="sys_8h_1a023839e44707acf6190c0d061c54700c" prot="public" static="no">
+        <name>SYS_STATEMACH_SUB_e</name>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" prot="public">
+          <name>SYS_ENTRY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate entry state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca2b333177489403de9c7d44f644a7e5df" prot="public">
+          <name>SYS_CHECK_ERROR_FLAGS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate check if any error flag set </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700caeb090b2d5eea630b6488c4fcb2a55bee" prot="public">
+          <name>SYS_CHECK_STATE_REQUESTS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate check if there is a state request </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" prot="public">
+          <name>SYS_WAIT_INITIALIZATION_INTERLOCK</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate to wait for initialization of the interlock state machine </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700caf5439ed0765496f4a26c97c6fada18d7" prot="public">
+          <name>SYS_WAIT_INITIALIZATION_CONT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate to wait for initialization of the contactor state machine </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca92d18fb8ae5c8d682f435cdddfa7a4e4" prot="public">
+          <name>SYS_WAIT_INITIALIZATION_BAL</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate to wait for initialization of the balancing state machine </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" prot="public">
+          <name>SYS_WAIT_INITIALIZATION_BMS</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate to wait for initialization of the bms state machine </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca31576dca77b88e78841006c5ccefd76d" prot="public">
+          <name>SYS_WAIT_FIRST_MEASUREMENT_CYCLE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate to wait for first measurement cycle to complete </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700caaad6265db60e37d0f20e393b291ab888" prot="public">
+          <name>SYS_WAIT_CURRENT_SENSOR_PRESENCE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate to wait for first measurement cycle to complete </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca244b78d24d27f4b0da70fc71a8db6f0d" prot="public">
+          <name>SYS_CONT_INIT_ERROR</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate error of contactor state machine initialization </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca6a8dffd37e60346691e6414607f656fa" prot="public">
+          <name>SYS_ILCK_INIT_ERROR</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate error of contactor state machine initialization </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700cac900f01d8306f7accb0fbe7b73d7e5ad" prot="public">
+          <name>SYS_BMS_INIT_ERROR</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate error of bms state machine initialization </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700caa49fc4621d36520136ab54f2a29d20fb" prot="public">
+          <name>SYS_MEAS_INIT_ERROR</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate error if first measurement cycle does not complete </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a023839e44707acf6190c0d061c54700ca9dc81bfa4bf7f58bed9a8c03b236b35c" prot="public">
+          <name>SYS_CURRENT_SENSOR_PRESENCE_ERROR</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate error if first measurement cycle does not complete </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Substates of the SYS state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="103" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="103" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="enum" id="sys_8h_1a0dc0032c535919759fd08fc274373cbd" prot="public" static="no">
+        <name>SYS_STATE_REQUEST_e</name>
+        <enumvalue id="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" prot="public">
+          <name>SYS_STATE_INIT_REQUEST</name>
+          <initializer>= SYS_STATEMACH_INITIALIZATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0dc0032c535919759fd08fc274373cbdac6063298bb5d68d4dc782c0bb2f9f83a" prot="public">
+          <name>SYS_STATE_ERROR_REQUEST</name>
+          <initializer>= SYS_STATEMACH_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" prot="public">
+          <name>SYS_STATE_NO_REQUEST</name>
+          <initializer>= SYS_STATEMACH_RESERVED1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State requests for the SYS statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="124" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="enum" id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" prot="public" static="no">
+        <name>SYS_RETURN_TYPE_e</name>
+        <enumvalue id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" prot="public">
+          <name>SYS_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23af8aa3ebddc7edfa126d02add666f3c0b" prot="public">
+          <name>SYS_BUSY_OK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT under load <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23aa7b023d3323aacffa88109c32b5ffa35" prot="public">
+          <name>SYS_REQUEST_PENDING</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requested to be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23afd97d5744272ecf8ffaa7ed7ba56b7e2" prot="public">
+          <name>SYS_ILLEGAL_REQUEST</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request can not be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23acda6bd24072d7164fdd7942c03bebfab" prot="public">
+          <name>SYS_ALREADY_INITIALIZED</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initialization of LTC already finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a0589bececea3a9697f50e285e5bc995c" prot="public">
+          <name>SYS_ILLEGAL_TASK_TYPE</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Illegal </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible return values when state requests are made to the SYS statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="134" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" bodystart="134" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sys_8h_1ac8cb702ac8a7ab08c2bbb0890e47613d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref></type>
+        <definition>SYS_RETURN_TYPE_e SYS_SetStateRequest</definition>
+        <argsstring>(SYS_STATE_REQUEST_e statereq)</argsstring>
+        <name>SYS_SetStateRequest</name>
+        <param>
+          <type><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable sys_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine, e.g., start voltage measurement, read result of voltage measurement, re-initialization. It calls <ref refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" kindref="member">SYS_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state requested to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the request was successfully set, it returns the SYS_OK, else the current state of requests ( type SYS_STATE_REQUEST_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="177" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.c" bodystart="156" bodyend="168"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="127">SYS_STATE_NO_REQUEST</references>
+        <references refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" compoundref="sys_8c" startline="182" endline="201">SYS_CheckStateRequest</references>
+        <references refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" compoundref="sys_8h" startline="135">SYS_OK</references>
+        <references refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" compoundref="sys_8h" startline="151">SYS_STATE_s::statereq</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8h_1afdcd41d850170687d575bdfed59fd172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref></type>
+        <definition>SYS_STATEMACH_e SYS_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the SYS state machine.</para><para><simplesect kind="return"><para>current state, taken from SYS_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="186" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.c" bodystart="129" bodyend="131"/>
+        <references refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" compoundref="sys_8h" startline="152">SYS_STATE_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8h_1a8ee066ca68d286c5a4c1231a6e68bb11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SYS_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the SYS driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the SYS state machine. It must be called time-triggered, every 1ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h" line="194" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.c" bodystart="204" bodyend="487"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="127">SYS_STATE_NO_REQUEST</references>
+        <references refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48ae480eb9f365b0f6c3a870efef0c18e4f" compoundref="interlock_8h" startline="107">ILCK_STATEMACH_UNDEFINED</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3af66f3ed6c53aed5c5e213b02224ae5ce" compoundref="contactor_8h" startline="132">CONT_STATEMACH_UNDEFINED</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6ae000cd5dffa41273cb32d654e1a34515" compoundref="bal_8h" startline="68">BAL_STATEMACH_UNDEFINED</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4d2e2e631943fa2467315f78711cdfcb" compoundref="bms_8h" startline="103">BMS_STATEMACH_UNDEFINED</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="802" endline="811">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faaeb9258e21c43f5201eda4a0ee1b829c" compoundref="diag__cfg_8h" startline="292">DIAG_SYSMON_SYS_ID</references>
+        <references refid="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" compoundref="sys_8c" startline="94" endline="106">SYS_CheckReEntrance</references>
+        <references refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" compoundref="sys_8h" startline="150">SYS_STATE_s::timer</references>
+        <references refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" compoundref="sys_8h" startline="158">SYS_STATE_s::triggerentry</references>
+        <references refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" compoundref="sys_8h" startline="152">SYS_STATE_s::state</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" compoundref="sys_8h" startline="82">SYS_STATEMACH_UNINITIALIZED</references>
+        <references refid="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" compoundref="sys_8c" startline="143" endline="152">SYS_TransferStateRequest</references>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" compoundref="sys_8h" startline="125">SYS_STATE_INIT_REQUEST</references>
+        <references refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" compoundref="sys_8c" startline="53">SYS_SAVELASTSTATES</references>
+        <references refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" compoundref="sys__cfg_8h" startline="46">SYS_STATEMACH_SHORTTIME_MS</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" compoundref="sys_8h" startline="83">SYS_STATEMACH_INITIALIZATION</references>
+        <references refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" compoundref="sys_8h" startline="153">SYS_STATE_s::substate</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" compoundref="sys_8h" startline="104">SYS_ENTRY</references>
+        <references refid="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" compoundref="sys_8h" startline="156">SYS_STATE_s::ErrRequestCounter</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" compoundref="sys_8h" startline="84">SYS_STATEMACH_INITIALIZED</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" compoundref="sys_8h" startline="86">SYS_STATEMACH_INITIALIZE_INTERLOCK</references>
+        <references refid="interlock_8c_1ab218c092199d1c3999262123352877fc" compoundref="interlock_8c" startline="236" endline="248">ILCK_SetStateRequest</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3ad2ff63664a017a544d334fc60563e238" compoundref="interlock_8h" startline="134">ILCK_STATE_INIT_REQUEST</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" compoundref="sys_8h" startline="107">SYS_WAIT_INITIALIZATION_INTERLOCK</references>
+        <references refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" compoundref="sys_8h" startline="157">SYS_STATE_s::InitCounter</references>
+        <references refid="interlock_8c_1af3194f3e84a7a0a097d9c9c9f6b7330e" compoundref="interlock_8c" startline="196" endline="198">ILCK_GetState</references>
+        <references refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48a6b24ec397fceb6f826aeb74ec1229fee" compoundref="interlock_8h" startline="104">ILCK_STATEMACH_WAIT_FIRST_REQUEST</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" compoundref="interlock_8h" startline="136">ILCK_STATE_CLOSE_REQUEST</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da96c46920a6c48bde381695e12b2d08f0" compoundref="sys_8h" startline="87">SYS_STATEMACH_INITIALIZE_CONTACTORS</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" compoundref="sys_8h" startline="96">SYS_STATEMACH_ERROR</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca6a8dffd37e60346691e6414607f656fa" compoundref="sys_8h" startline="114">SYS_ILCK_INIT_ERROR</references>
+        <references refid="contactor_8c_1ada308aa02debcd131b6be7cfdff748c2" compoundref="contactor_8c" startline="318" endline="330">CONT_SetStateRequest</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aaccfc4a81d5179235454c5eeb3d64ee9" compoundref="contactor_8h" startline="157">CONT_STATE_INIT_REQUEST</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700caf5439ed0765496f4a26c97c6fada18d7" compoundref="sys_8h" startline="108">SYS_WAIT_INITIALIZATION_CONT</references>
+        <references refid="contactor_8c_1ae67a61c958356a5fd0bf3e1b4763aaa1" compoundref="contactor_8c" startline="278" endline="280">CONT_GetState</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a2b9ff639fa9daed730461a3f615b5226" compoundref="contactor_8h" startline="127">CONT_STATEMACH_STANDBY</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da518b56543a4c844ba68aa97fe0f1e686" compoundref="sys_8h" startline="88">SYS_STATEMACH_INITIALIZE_BALANCING</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca244b78d24d27f4b0da70fc71a8db6f0d" compoundref="sys_8h" startline="113">SYS_CONT_INIT_ERROR</references>
+        <references refid="bal_8c_1a1e9d7cabf5fbe4f033dc95ed554abd77" compoundref="bal_8c" startline="243" endline="257">BAL_SetStateRequest</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aabed624b03b2aebb46aa921a77af0cfda" compoundref="bal_8h" startline="89">BAL_STATE_INIT_REQUEST</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca92d18fb8ae5c8d682f435cdddfa7a4e4" compoundref="sys_8h" startline="109">SYS_WAIT_INITIALIZATION_BAL</references>
+        <references refid="bal_8c_1a4dc6e7af1844381b914edc8441e8229b" compoundref="bal_8c" startline="201" endline="203">BAL_GetState</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a75e90b4e73f52a3ebd0098bb8caa22d0" compoundref="bal_8h" startline="61">BAL_STATEMACH_INITIALIZED</references>
+        <references refid="batterysystem__cfg_8h_1a70fd26623a2128dd8e74cec7bf7762f2" compoundref="batterysystem__cfg_8h" startline="133">BALANCING_DEFAULT_INACTIVE</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa6976895d4387a649f734353bd0aeafe4" compoundref="bal_8h" startline="93">BAL_STATE_INACTIVE_OVERRIDE_REQUEST</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dacb2bcbf2663bd26c08d4322f367617ed" compoundref="sys_8h" startline="91">SYS_STATEMACH_FIRST_MEASUREMENT_CYCLE</references>
+        <references refid="meas_8c_1a55247d0978a7017843bdb63b1e1c0d3d" compoundref="meas_8c" startline="134" endline="143">MEAS_StartMeasurement</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca31576dca77b88e78841006c5ccefd76d" compoundref="sys_8h" startline="111">SYS_WAIT_FIRST_MEASUREMENT_CYCLE</references>
+        <references refid="meas_8c_1afd00ee5bffce24a15a9606109087401b" compoundref="meas_8c" startline="124" endline="131">MEAS_IsFirstMeasurementCycleFinished</references>
+        <references refid="batterysystem__cfg_8h_1a5ea1537ce38517b1fa24ee89e69f417b" compoundref="batterysystem__cfg_8h" startline="119">CURRENT_SENSOR_PRESENT</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf35f1a466c5311530f04c2137a038e5f" compoundref="sys_8h" startline="93">SYS_STATEMACH_CHECK_CURRENT_SENSOR_PRESENCE</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" compoundref="sys_8h" startline="92">SYS_STATEMACH_INITIALIZE_MISC</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700caa49fc4621d36520136ab54f2a29d20fb" compoundref="sys_8h" startline="116">SYS_MEAS_INIT_ERROR</references>
+        <references refid="sys__cfg_8h_1affae1efb96a2215859df22755d2412e5" compoundref="sys__cfg_8h" startline="52">SYS_STATEMACH_MEDIUMTIME_MS</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700caaad6265db60e37d0f20e393b291ab888" compoundref="sys_8h" startline="112">SYS_WAIT_CURRENT_SENSOR_PRESENCE</references>
+        <references refid="cansignal_8c_1a94e479f449b20c73b65d165cdae1d482" compoundref="cansignal_8c" startline="468" endline="474">CANS_IsCurrentSensorPresent</references>
+        <references refid="sox_8c_1afd9a15c2da7ada29701833a9cd8c2c9e" compoundref="sox_8c" startline="333" endline="355">SOF_Init</references>
+        <references refid="cansignal_8c_1ac4c69a3c7d81c33764178e49e55b327a" compoundref="cansignal_8c" startline="484" endline="490">CANS_IsCurrentSensorCCPresent</references>
+        <references refid="sox_8c_1aa56b5f66d49c50f99ea3986c40435b1a" compoundref="sox_8c" startline="107" endline="151">SOC_Init</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="cansignal_8c_1a28c789e881eaa97bf87a0b4e51f40423" compoundref="cansignal_8c" startline="409" endline="419">CANS_Enable_Periodic</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca9dc81bfa4bf7f58bed9a8c03b236b35c" compoundref="sys_8h" startline="117">SYS_CURRENT_SENSOR_PRESENCE_ERROR</references>
+        <references refid="isoguard_8c_1a7c24f002d607cfda45cbd73b8c514bd5" compoundref="isoguard_8c" startline="88" endline="97">ISO_Init</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" compoundref="sys_8h" startline="89">SYS_STATEMACH_INITIALIZE_BMS</references>
+        <references refid="bms_8c_1a40eb276efea852638c5ba83e53569ebc" compoundref="bms_8c" startline="148" endline="160">BMS_SetStateRequest</references>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" compoundref="bms_8h" startline="130">BMS_STATE_INIT_REQUEST</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" compoundref="sys_8h" startline="110">SYS_WAIT_INITIALIZATION_BMS</references>
+        <references refid="bms_8c_1afcd6e979c7502594e6807d322df11555" compoundref="bms_8c" startline="124" endline="126">BMS_GetState</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67adcd5ff5a0f825e8441925c5ee7da8b88" compoundref="bms_8h" startline="97">BMS_STATEMACH_IDLE</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" compoundref="bms_8h" startline="98">BMS_STATEMACH_STANDBY</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" compoundref="sys_8h" startline="90">SYS_STATEMACH_RUNNING</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700cac900f01d8306f7accb0fbe7b73d7e5ad" compoundref="sys_8h" startline="115">SYS_BMS_INIT_ERROR</references>
+        <references refid="sys__cfg_8h_1ad1c8d5f0b85a642687eeb90e37fcdbee" compoundref="sys__cfg_8h" startline="58">SYS_STATEMACH_LONGTIME_MS</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sys driver header. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>SYS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#ifndef<sp/>SYS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sys__cfg_8h" kindref="compound">sys_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422a5eb02be19a7cc33ec1be50a2c4602c56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422a5eb02be19a7cc33ec1be50a2c4602c56" kindref="member">SYS_CHECK_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422ab67d782d991d2b17c49513578bfc6bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422ab67d782d991d2b17c49513578bfc6bc6" kindref="member">SYS_CHECK_BUSY</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422a4bffb43d35dbe82ebcd84f211373ac9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422a4bffb43d35dbe82ebcd84f211373ac9d" kindref="member">SYS_CHECK_NOT_OK</ref><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="sys_8h_1a7d8cec19633c14951d14b960aa61b422" kindref="member">SYS_CHECK_e</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56" refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca866023ba0974b5e2344a75264e0b37f8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca866023ba0974b5e2344a75264e0b37f8" kindref="member">SYS_MODE_STARTUP_EVENT</ref><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment">//<sp/>SYS_MODE_EVENT_INIT<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/>/*!&lt;<sp/>todo<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca3d967e582cb392352e3ce325c38767f7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca3d967e582cb392352e3ce325c38767f7" kindref="member">SYS_MODE_CYCLIC_EVENT</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca25512e7ea59a83bbb8b979c93178742f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca25512e7ea59a83bbb8b979c93178742f" kindref="member">SYS_MODE_TRIGGERED_EVENT</ref><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca8a212bf6babc9aa4cc339daf4397b9d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca8a212bf6babc9aa4cc339daf4397b9d2" kindref="member">SYS_MODE_ABNORMAL_EVENT</ref><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca7d9991026fe53540f9a470023dc48800" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48ca7d9991026fe53540f9a470023dc48800" kindref="member">SYS_MODE_EVENT_RESERVED</ref><sp/><sp/><sp/>=<sp/>0xFF,<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="sys_8h_1ac1f997c56f390be3e40ac2936e5db48c" kindref="member">SYS_TRIG_EVENT_e</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="contactor__cfg_8h" kindref="compound">contactor_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Init-Sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" kindref="member">SYS_STATEMACH_INITIALIZATION</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" kindref="member">SYS_STATEMACH_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daad352eca96bc1b0de7066bf07276372d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daad352eca96bc1b0de7066bf07276372d" kindref="member">SYS_STATEMACH_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" kindref="member">SYS_STATEMACH_INITIALIZE_INTERLOCK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da96c46920a6c48bde381695e12b2d08f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da96c46920a6c48bde381695e12b2d08f0" kindref="member">SYS_STATEMACH_INITIALIZE_CONTACTORS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da518b56543a4c844ba68aa97fe0f1e686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da518b56543a4c844ba68aa97fe0f1e686" kindref="member">SYS_STATEMACH_INITIALIZE_BALANCING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" kindref="member">SYS_STATEMACH_INITIALIZE_BMS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" kindref="member">SYS_STATEMACH_RUNNING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dacb2bcbf2663bd26c08d4322f367617ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dacb2bcbf2663bd26c08d4322f367617ed" kindref="member">SYS_STATEMACH_FIRST_MEASUREMENT_CYCLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" kindref="member">SYS_STATEMACH_INITIALIZE_MISC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf35f1a466c5311530f04c2137a038e5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf35f1a466c5311530f04c2137a038e5f" kindref="member">SYS_STATEMACH_CHECK_CURRENT_SENSOR_PRESENCE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dabdf0d4d5a994ee534ad4b5e5335a90f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dabdf0d4d5a994ee534ad4b5e5335a90f9" kindref="member">SYS_STATEMACH_UNDEFINED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da893fef899ac5180688cd74f4e31b1d40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da893fef899ac5180688cd74f4e31b1d40" kindref="member">SYS_STATEMACH_RESERVED1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x80,<sp/></highlight></codeline>
+<codeline lineno="96" refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" kindref="member">SYS_STATEMACH_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xF0,<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="sys_8h_1a023839e44707acf6190c0d061c54700c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104" refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca2b333177489403de9c7d44f644a7e5df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca2b333177489403de9c7d44f644a7e5df" kindref="member">SYS_CHECK_ERROR_FLAGS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="sys_8h_1a023839e44707acf6190c0d061c54700caeb090b2d5eea630b6488c4fcb2a55bee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700caeb090b2d5eea630b6488c4fcb2a55bee" kindref="member">SYS_CHECK_STATE_REQUESTS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" kindref="member">SYS_WAIT_INITIALIZATION_INTERLOCK</ref><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="sys_8h_1a023839e44707acf6190c0d061c54700caf5439ed0765496f4a26c97c6fada18d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700caf5439ed0765496f4a26c97c6fada18d7" kindref="member">SYS_WAIT_INITIALIZATION_CONT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca92d18fb8ae5c8d682f435cdddfa7a4e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca92d18fb8ae5c8d682f435cdddfa7a4e4" kindref="member">SYS_WAIT_INITIALIZATION_BAL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" kindref="member">SYS_WAIT_INITIALIZATION_BMS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca31576dca77b88e78841006c5ccefd76d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca31576dca77b88e78841006c5ccefd76d" kindref="member">SYS_WAIT_FIRST_MEASUREMENT_CYCLE</ref><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="sys_8h_1a023839e44707acf6190c0d061c54700caaad6265db60e37d0f20e393b291ab888" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700caaad6265db60e37d0f20e393b291ab888" kindref="member">SYS_WAIT_CURRENT_SENSOR_PRESENCE</ref><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca244b78d24d27f4b0da70fc71a8db6f0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca244b78d24d27f4b0da70fc71a8db6f0d" kindref="member">SYS_CONT_INIT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca6a8dffd37e60346691e6414607f656fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca6a8dffd37e60346691e6414607f656fa" kindref="member">SYS_ILCK_INIT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="sys_8h_1a023839e44707acf6190c0d061c54700cac900f01d8306f7accb0fbe7b73d7e5ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cac900f01d8306f7accb0fbe7b73d7e5ad" kindref="member">SYS_BMS_INIT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="sys_8h_1a023839e44707acf6190c0d061c54700caa49fc4621d36520136ab54f2a29d20fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700caa49fc4621d36520136ab54f2a29d20fb" kindref="member">SYS_MEAS_INIT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="sys_8h_1a023839e44707acf6190c0d061c54700ca9dc81bfa4bf7f58bed9a8c03b236b35c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca9dc81bfa4bf7f58bed9a8c03b236b35c" kindref="member">SYS_CURRENT_SENSOR_PRESENCE_ERROR</ref><sp/><sp/><sp/>=<sp/>13,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700c" kindref="member">SYS_STATEMACH_SUB_e</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="125" refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" kindref="member">SYS_STATE_INIT_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" kindref="member">SYS_STATEMACH_INITIALIZATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="sys_8h_1a0dc0032c535919759fd08fc274373cbdac6063298bb5d68d4dc782c0bb2f9f83a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbdac6063298bb5d68d4dc782c0bb2f9f83a" kindref="member">SYS_STATE_ERROR_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" kindref="member">SYS_STATEMACH_ERROR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da893fef899ac5180688cd74f4e31b1d40" kindref="member">SYS_STATEMACH_RESERVED1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="135" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" kindref="member">SYS_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23af8aa3ebddc7edfa126d02add666f3c0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23af8aa3ebddc7edfa126d02add666f3c0b" kindref="member">SYS_BUSY_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23aa7b023d3323aacffa88109c32b5ffa35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23aa7b023d3323aacffa88109c32b5ffa35" kindref="member">SYS_REQUEST_PENDING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23afd97d5744272ecf8ffaa7ed7ba56b7e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23afd97d5744272ecf8ffaa7ed7ba56b7e2" kindref="member">SYS_ILLEGAL_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23acda6bd24072d7164fdd7942c03bebfab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23acda6bd24072d7164fdd7942c03bebfab" kindref="member">SYS_ALREADY_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>30,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a0589bececea3a9697f50e285e5bc995c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a0589bececea3a9697f50e285e5bc995c" kindref="member">SYS_ILLEGAL_TASK_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>99,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}<sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="structSYS__STATE__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150" refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/><ref refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" kindref="member">statereq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref><sp/><ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structSYS__STATE__s_1ae63af2908e9fde14c1e51303bcfcde32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref><sp/><ref refid="structSYS__STATE__s_1ae63af2908e9fde14c1e51303bcfcde32" kindref="member">laststate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="structSYS__STATE__s_1abab84ad33991b331aa4a21b1bdff6ffb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structSYS__STATE__s_1abab84ad33991b331aa4a21b1bdff6ffb" kindref="member">lastsubstate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" kindref="member">ErrRequestCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" kindref="member">triggerentry</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}<sp/><ref refid="structSYS__STATE__s" kindref="compound">SYS_STATE_s</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight></codeline>
+<codeline lineno="177"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref><sp/><ref refid="sys_8h_1ac8cb702ac8a7ab08c2bbb0890e47613d" kindref="member">SYS_SetStateRequest</ref>(<ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref><sp/><ref refid="sys_8h_1afdcd41d850170687d575bdfed59fd172" kindref="member">SYS_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a8ee066ca68d286c5a4c1231a6e68bb11" kindref="member">SYS_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SYS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/sys/sys.h"/>
+  </compounddef>
+</doxygen>

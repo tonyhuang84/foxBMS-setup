@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="mcu_8c" kind="file" language="C++">
+    <compoundname>mcu.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="mcu_8h" local="yes">mcu.h</includes>
+    <includes refid="os_8h" local="yes">os.h</includes>
+    <includes refid="diag_8h" local="yes">diag.h</includes>
+    <includes local="yes">mcu_cfg.h</includes>
+    <includes refid="chksum_8h" local="yes">chksum.h</includes>
+    <incdepgraph>
+      <node id="1988">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1989" relation="include">
+        </childnode>
+        <childnode refid="1990" relation="include">
+        </childnode>
+      </node>
+      <node id="1998">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+      </node>
+      <node id="1989">
+        <label>stdint.h</label>
+      </node>
+      <node id="2001">
+        <label>chksum.h</label>
+        <link refid="chksum_8h"/>
+        <childnode refid="2002" relation="include">
+        </childnode>
+      </node>
+      <node id="1994">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="1995" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+      </node>
+      <node id="1987">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1991" relation="include">
+        </childnode>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+      </node>
+      <node id="1991">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+      </node>
+      <node id="1993">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="1995">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="1996" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="1998" relation="include">
+        </childnode>
+      </node>
+      <node id="2000">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="1990">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2002">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="1989" relation="include">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="2000" relation="include">
+        </childnode>
+      </node>
+      <node id="1997">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="1992">
+        <label>os.h</label>
+        <link refid="os_8h"/>
+        <childnode refid="1993" relation="include">
+        </childnode>
+      </node>
+      <node id="1996">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="mcu_8c_1ac898f928970a9d55fcd431ac1fb30ce4" prot="public" static="no" mutable="no">
+        <type><ref refid="structMCU__DeviceID__s" kindref="compound">MCU_DeviceID_s</ref></type>
+        <definition>MCU_DeviceID_s mcu_unique_deviceID</definition>
+        <argsstring></argsstring>
+        <name>mcu_unique_deviceID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="55" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mcu_8c_1ad73255284eee7230c9082a9f0e0500f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCU_Wait_us</definition>
+        <argsstring>(uint32_t time)</argsstring>
+        <name>MCU_Wait_us</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>simple wait-loop to wait short periods of time </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of microseconds to wait, max. 1000us </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="62" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="62" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="mcu_8c_1aa7a3020dbc1fb1110a8c41a2989f25b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int MCU_DisableINT</definition>
+        <argsstring>(void)</argsstring>
+        <name>MCU_DisableINT</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>disables interrupts and returns prior state (enabled or disabled) </para>        </briefdescription>
+        <detaileddescription>
+<para>this function is used for synchronization of real-time interrupts when bypassing FreeRTOS context and could be used (called) from &apos;interrupt blocked&apos; or &apos;interrupt unblocked&apos; context</para><para><simplesect kind="return"><para>current priority mask register, store this value and use it to enable interrupts again with CPU_RestoreINT() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="95" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="mcu_8c_1a74382aca8f0a3c77df269579204ee9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCU_RestoreINT</definition>
+        <argsstring>(unsigned int primask_reg)</argsstring>
+        <name>MCU_RestoreINT</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>primask_reg</declname>
+        </param>
+        <briefdescription>
+<para>restores interrupts to given state (enable or disable) </para>        </briefdescription>
+        <detaileddescription>
+<para>this function is used for synchronization of real-time interrupts when bypassing FreeRTOS context</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>primask_reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value for priority mask register, for use in case of nesting calling</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="103" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="103" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="mcu_8c_1ac5a4af3d1911474d17f4ec0fcdd48bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t MCU_GetTimeBase</definition>
+        <argsstring>(void)</argsstring>
+        <name>MCU_GetTimeBase</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets systick value which is a 24-bit downcounter, auto refreshed with 71999 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>time current systick value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="112" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="mcu_8c_1ad330c9b64342cd301086b357822a1d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t MCU_SystemResetStatus_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MCU_SystemResetStatus_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets system reset status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>csr controller reset status register </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="117" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="117" bodyend="162"/>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="450" endline="484">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1aed68c0e94bcf97cee97200d60b64fe4b" compoundref="diag__cfg_8h" startline="95">DIAG_CH_WATCHDOGRESET_FAILURE</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+      </memberdef>
+      <memberdef kind="function" id="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t MCU_GetTimeStamp</definition>
+        <argsstring>(void)</argsstring>
+        <name>MCU_GetTimeStamp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>returns OS based system tick value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>time stamp in ms, based on the OS time. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="164" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="mcu_8c_1abe9ce7ce94ce132936a0076f88a7513e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCU_GetDeviceID</definition>
+        <argsstring>(MCU_DeviceID_s *deviceID)</argsstring>
+        <name>MCU_GetDeviceID</name>
+        <param>
+          <type><ref refid="structMCU__DeviceID__s" kindref="compound">MCU_DeviceID_s</ref> *</type>
+          <declname>deviceID</declname>
+        </param>
+        <briefdescription>
+<para>Get unique device ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" line="169" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c" bodystart="169" bodyend="177"/>
+        <references refid="structMCU__DeviceID__s_1accd8834084207e61cc922c4cf3018389" compoundref="mcu_8h" startline="45">MCU_DeviceID_s::off0</references>
+        <references refid="structMCU__DeviceID__s_1a2676826c216b45917976f73b9b8c8621" compoundref="mcu_8h" startline="46">MCU_DeviceID_s::off32</references>
+        <references refid="structMCU__DeviceID__s_1a5242a065f63764d11d4f15c9287ad070" compoundref="mcu_8h" startline="47">MCU_DeviceID_s::off64</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions for the MCU to manage time and interrupts. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>22.11.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>MCU</para></simplesect>
+Source file implements the interfaces to set boot information, to disable/enable all interrupts, to wait a designated time and and to get the a timestamp based on the os systick. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="36"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu_8h" kindref="compound">mcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="os_8h" kindref="compound">os.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diag_8h" kindref="compound">diag.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mcu_cfg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="chksum_8h" kindref="compound">chksum.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="mcu_8h_1ac898f928970a9d55fcd431ac1fb30ce4" refkind="member"><highlight class="normal"><ref refid="structMCU__DeviceID__s" kindref="compound">MCU_DeviceID_s</ref><sp/><ref refid="mcu_8c_1ac898f928970a9d55fcd431ac1fb30ce4" kindref="member">mcu_unique_deviceID</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Public<sp/>functions<sp/>=====================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="mcu_8h_1ad73255284eee7230c9082a9f0e0500f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mcu_8c_1ad73255284eee7230c9082a9f0e0500f9" kindref="member">MCU_Wait_us</ref>(uint32_t<sp/>time)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>start<sp/>=<sp/>(SysTick-&gt;VAL);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>t_end<sp/>=<sp/>start;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>dt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>&gt;<sp/>1000)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>dt<sp/>=<sp/>start<sp/>-<sp/>(time<sp/>*<sp/>72);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dt<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_end<sp/>=<sp/>dt;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>act_time<sp/>=<sp/>(uint32_t)<sp/>(SysTick-&gt;VAL);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(act_time<sp/>&lt;=<sp/>t_end)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_end<sp/>=<sp/>71999<sp/>+<sp/>(dt);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>act_time<sp/>=<sp/>(uint32_t)<sp/>(SysTick-&gt;VAL);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(act_time<sp/>&lt;<sp/>t_end<sp/>&amp;&amp;<sp/>act_time<sp/>&gt;<sp/>start)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="mcu_8h_1aa7a3020dbc1fb1110a8c41a2989f25b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="mcu_8c_1aa7a3020dbc1fb1110a8c41a2989f25b0" kindref="member">MCU_DisableINT</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>primask_reg;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>primask_reg<sp/>=<sp/>__get_PRIMASK();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>__disable_irq();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>primask<sp/>register<sp/>to<sp/>disable<sp/>global<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CPSID<sp/>instruction<sp/>is<sp/>self<sp/>synchronizing,<sp/>thus<sp/>instruction-sync<sp/>__ISB()<sp/>not<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(primask_reg);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="mcu_8h_1a74382aca8f0a3c77df269579204ee9b1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mcu_8c_1a74382aca8f0a3c77df269579204ee9b1" kindref="member">MCU_RestoreINT</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>primask_reg)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((primask_reg<sp/>&amp;<sp/>0x01)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>enable<sp/>global<sp/>interrupts*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__DMB();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>not<sp/>execute<sp/>any<sp/>instructions<sp/>with<sp/>memory<sp/>access<sp/>when<sp/>prior<sp/>memory<sp/>accesses<sp/>not<sp/>finished</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__enable_irq();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CPSIE<sp/>instruction<sp/>is<sp/>not<sp/>self<sp/>synchronizing,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>else<sp/>...<sp/>restore<sp/>of<sp/>disabled<sp/>interrupts<sp/>throughout<sp/>enabled<sp/>state<sp/>not<sp/>supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="mcu_8h_1ac5a4af3d1911474d17f4ec0fcdd48bd6" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="mcu_8c_1ac5a4af3d1911474d17f4ec0fcdd48bd6" kindref="member">MCU_GetTimeBase</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>time<sp/>=<sp/>SysTick-&gt;VAL;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>Value<sp/>of<sp/>SysTick<sp/>Base<sp/>Register,<sp/>Downcounter<sp/>24-bit,<sp/>Startvalue<sp/>71999<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(time);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="mcu_8h_1ad330c9b64342cd301086b357822a1d5e" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="mcu_8c_1ad330c9b64342cd301086b357822a1d5e" kindref="member">MCU_SystemResetStatus_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>csr;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>csr<sp/>=<sp/>RCC-&gt;CSR;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_LPWRRSTF)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Low-power<sp/>management(!)<sp/>reset<sp/>flag,<sp/>note:<sp/>this<sp/>is<sp/>not<sp/>low-power<sp/>reset!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_Handler(DIAG_CH_WATCHDOGRESET_FAILURE,DIAG_EVENT_NOK,0);<sp/>//<sp/>actually<sp/>not<sp/>supported<sp/>by<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(csr<sp/>&amp;<sp/>RCC_CSR_WWDGRSTF)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Window<sp/>watchdog<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1aed68c0e94bcf97cee97200d60b64fe4b" kindref="member">DIAG_CH_WATCHDOGRESET_FAILURE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/>NULL);<sp/></highlight><highlight class="comment">//<sp/>unexcepted<sp/>watchdog<sp/>reset<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>STM32F767xx<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_IWDGRSTF)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_WDGRSTF)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Independent<sp/>watchdog<sp/>reset<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1aed68c0e94bcf97cee97200d60b64fe4b" kindref="member">DIAG_CH_WATCHDOGRESET_FAILURE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,1,<sp/>NULL);<sp/></highlight><highlight class="comment">//<sp/>unexcepted<sp/>watchdog<sp/>reset<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_SFTRSTF)<sp/>{<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>actually<sp/>not<sp/>evaluated<sp/>by<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Software<sp/>reset<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>sw<sp/>reset<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DIAG_Handler(DIAG_CH_....,DIAG_EVENT_NOK,0);<sp/>//<sp/>unexcepted<sp/>software<sp/>reset<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_PORRSTF)<sp/>{<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>actually<sp/>not<sp/>evaluated<sp/>by<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>POR/PDR<sp/>reset<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>POR<sp/>reset<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DIAG_Handler(DIAG_CH_....,DIAG_EVENT_NOK,0);<sp/>//<sp/>unexcepted<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>STM32F767xx<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_PINRSTF)<sp/>{<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>actually<sp/>not<sp/>evaluated<sp/>by<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_PADRSTF)<sp/>{<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>actually<sp/>not<sp/>evaluated<sp/>by<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PIN<sp/>reset<sp/>flag<sp/>(NRST)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DIAG_Handler(DIAG_CH_....,DIAG_EVENT_NOK,0);<sp/>//<sp/>unexcepted<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(csr<sp/>&amp;<sp/>RCC_CSR_BORRSTF)<sp/>{<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>actually<sp/>not<sp/>evaluated<sp/>by<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>BOR<sp/>reset<sp/>flag<sp/>(POR/PDR<sp/>or<sp/>BOR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DIAG_Handler(DIAG_CH_....,DIAG_EVENT_NOK,0);<sp/>//<sp/>unexcepted<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC-&gt;CSR<sp/>=<sp/>RCC_CSR_RMVF;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>all<sp/>(sticky)<sp/>reset<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(csr);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="mcu_8h_1a09e5f493b1f3dc15a07b7b72ad69cede" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" kindref="member">MCU_GetTimeStamp</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>osKernelSysTick();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="mcu_8h_1abe9ce7ce94ce132936a0076f88a7513e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mcu_8c_1abe9ce7ce94ce132936a0076f88a7513e" kindref="member">MCU_GetDeviceID</ref>(<ref refid="structMCU__DeviceID__s" kindref="compound">MCU_DeviceID_s</ref><sp/>*<sp/>deviceID)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Base<sp/>address<sp/>of<sp/>device<sp/>ID<sp/>register<sp/><sp/>0x1FFF<sp/>7A10<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>deviceID-&gt;<ref refid="structMCU__DeviceID__s_1accd8834084207e61cc922c4cf3018389" kindref="member">off0</ref><sp/>=<sp/>(*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(0x1FFF7A10<sp/>+<sp/>0x0));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>deviceID-&gt;<ref refid="structMCU__DeviceID__s_1a2676826c216b45917976f73b9b8c8621" kindref="member">off32</ref><sp/>=<sp/>(*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(0x1FFF7A10<sp/>+<sp/>0x4));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>deviceID-&gt;<ref refid="structMCU__DeviceID__s_1a5242a065f63764d11d4f15c9287ad070" kindref="member">off64</ref><sp/>=<sp/>(*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(0x1FFF7A10<sp/>+<sp/>0x8));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Static<sp/>functions<sp/>=====================================*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/mcu/mcu.c"/>
+  </compounddef>
+</doxygen>

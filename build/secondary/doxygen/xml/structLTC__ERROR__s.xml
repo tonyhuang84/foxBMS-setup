@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structLTC__ERROR__s" kind="struct" language="C++" prot="public">
+    <compoundname>LTC_ERROR_s</compoundname>
+    <includes refid="ltc__defs_8h" local="no">ltc_defs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLTC__ERROR__s_1a79ab291425a7f7aa5a02535d64006720" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* LTC_ERROR_s::errPECCnt</definition>
+        <argsstring></argsstring>
+        <name>errPECCnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="426" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERROR__s_1a8849b5ffba954e9b97e68ecd78062fd7" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* LTC_ERROR_s::errSPICnt</definition>
+        <argsstring></argsstring>
+        <name>errSPICnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="427" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERROR__s_1ac1fbc11727d611e9880f2ce594630301" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* LTC_ERROR_s::ltcStatus</definition>
+        <argsstring></argsstring>
+        <name>ltcStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="428" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERROR__s_1a17efac493acbacb1e7029bdbe560112a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERROR_s::errPECRetryCnt</definition>
+        <argsstring></argsstring>
+        <name>errPECRetryCnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="429" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERROR__s_1a88c2303371da236fc2f7df1b11fe868b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERROR_s::errSPIRetryCnt</definition>
+        <argsstring></argsstring>
+        <name>errSPIRetryCnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="430" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERROR__s_1a6bf4fc6d493f5ea9fb4ee5466017b945" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_ERROR_s::errOccurred</definition>
+        <argsstring></argsstring>
+        <name>errOccurred</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="431" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__ERROR__s_1ab32e7ee2d3e9d8d463717e0ed1526b49" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LTC_ERROR_s::nrOfConsecutiveErrors</definition>
+        <argsstring></argsstring>
+        <name>nrOfConsecutiveErrors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="432" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct contains error counter and pointer to used error buffers </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="425" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="425" bodyend="433"/>
+    <listofallmembers>
+      <member refid="structLTC__ERROR__s_1a6bf4fc6d493f5ea9fb4ee5466017b945" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>errOccurred</name></member>
+      <member refid="structLTC__ERROR__s_1a79ab291425a7f7aa5a02535d64006720" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>errPECCnt</name></member>
+      <member refid="structLTC__ERROR__s_1a17efac493acbacb1e7029bdbe560112a" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>errPECRetryCnt</name></member>
+      <member refid="structLTC__ERROR__s_1a8849b5ffba954e9b97e68ecd78062fd7" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>errSPICnt</name></member>
+      <member refid="structLTC__ERROR__s_1a88c2303371da236fc2f7df1b11fe868b" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>errSPIRetryCnt</name></member>
+      <member refid="structLTC__ERROR__s_1ac1fbc11727d611e9880f2ce594630301" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>ltcStatus</name></member>
+      <member refid="structLTC__ERROR__s_1ab32e7ee2d3e9d8d463717e0ed1526b49" prot="public" virt="non-virtual"><scope>LTC_ERROR_s</scope><name>nrOfConsecutiveErrors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

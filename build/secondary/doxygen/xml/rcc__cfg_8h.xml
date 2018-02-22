@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="rcc__cfg_8h" kind="file" language="C++">
+    <compoundname>rcc_cfg.h</compoundname>
+    <includes refid="mcu__cfg_8h" local="yes">mcu_cfg.h</includes>
+    <includedby refid="can__cfg_8c" local="yes">can_cfg.c</includedby>
+    <includedby refid="rcc__cfg_8c" local="yes">rcc_cfg.c</includedby>
+    <includedby refid="rcc_8h" local="yes">rcc.h</includedby>
+    <incdepgraph>
+      <node id="1904">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1900">
+        <label>rcc_cfg.h</label>
+        <link refid="rcc__cfg_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="1902" relation="include">
+        </childnode>
+        <childnode refid="1903" relation="include">
+        </childnode>
+      </node>
+      <node id="1905">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1903">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1905" relation="include">
+        </childnode>
+      </node>
+      <node id="1902">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1910">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1908">
+        <label>rcc_cfg.c</label>
+        <link refid="rcc__cfg_8c"/>
+      </node>
+      <node id="1906">
+        <label>rcc_cfg.h</label>
+        <link refid="rcc__cfg_8h"/>
+        <childnode refid="1907" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+        <childnode refid="1909" relation="include">
+        </childnode>
+      </node>
+      <node id="1907">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="1911">
+        <label>rcc.c</label>
+        <link refid="rcc_8c"/>
+      </node>
+      <node id="1909">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1910" relation="include">
+        </childnode>
+        <childnode refid="1911" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rcc__cfg_8h_1acca3169158498b464114d4534c722635" prot="public" static="no">
+        <name>RCC_PLL_M</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCLOCK = ((HSE/RCC_PLL_M) * RCC_PLL_N) / RCC_PLL_P_NUM</para><para>HCLK = SYSCLK / AHB Prescaler</para><para>APB1 peripheral clock = HCLK / APB1 Prescaler (45MHz max.)</para><para>APB1 timer clock = 2 * APB1 peripheral clock</para><para>APB2 peripheral clock = HCLK / APB2 Prescaler (90MHz max.)</para><para>APB2 timer clock = 2 * APB2 peripheral clock Divides output of the PLL SOURCE MUX(HSI or HSE clock) by the factor RCC_PLL_M. The dived clock signal is then used for Main PLL, PLLI2S (currently not used) and PLLSAI (currently not used).</para><para>Possible values: 2-63 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="81" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a6c8d4212415f7c86b76b7c9c731b153c" prot="public" static="no">
+        <name>RCC_PLL_N</name>
+        <initializer>336</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplies the input of Main PLL with the factor RCC_PLL_N. This clock frequency divided by the factor RCC_PLL_P_NUM results in the SysClock frequency.</para><para>Possible values for RCC_PLL_N: 192 - 432 Possible values for RCC_PLL_P_NUM: 2, 4, 6, 8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="90" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1ae828a8cf807a381a406009e19e5ff49b" prot="public" static="no">
+        <name>RCC_PLL_P_NUM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="92" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1aba92144c7737b5d88ccf68299c27be2a" prot="public" static="no">
+        <name>RCC_PLL_Q</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divides the multiplied clock frequency (after RCC_PLL_N) by the factor RCC_PLL_Q. This frequency supplies the I2S clock (currently not used) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="97" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a3b1c4f129550e3d78983f390386a53b6" prot="public" static="no">
+        <name>RCC_AHBCLKDivider_NUM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AHB Prescaler for HCLK. Divides the SYSCLK frequency by factor RCC_AHBCLKDivider_NUM</para><para>Possible values: 1, 2, 4, 8, 16, 64, 128, 256, 512 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="104" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1ab373a4b1444c936bbebdad580a69fec0" prot="public" static="no">
+        <name>RCC_APB1CLKDivider_NUM</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>APB1 Prescaler for APB1 Clock. Divides the HCLK frequency by factor RCC_APB1CLKDivider_NUM.</para><para>Possible values: 1, 2, 4, 8, 16 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="111" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a3570e217ac65629ae20c1778108f207c" prot="public" static="no">
+        <name>RCC_APB2CLKDivider_NUM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>APB2 Prescaler for APB2 Clock. Divides the HCLK frequency by factor RCC_APB1CLKDivider_NUM.</para><para>Possible values: 1, 2, 4, 8, 16 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="118" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1ac1e25c39c219f53b1d06d43ad32736ed" prot="public" static="no">
+        <name>RCC_SYSTEM_CLOCK</name>
+        <initializer>(HSE_VALUE/<ref refid="rcc__cfg_8h_1acca3169158498b464114d4534c722635" kindref="member">RCC_PLL_M</ref>/<ref refid="rcc__cfg_8h_1ae828a8cf807a381a406009e19e5ff49b" kindref="member">RCC_PLL_P_NUM</ref>*<ref refid="rcc__cfg_8h_1a6c8d4212415f7c86b76b7c9c731b153c" kindref="member">RCC_PLL_N</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the different clock frequencies in [Hz] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="123" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1add7f6a2ab35b9c9782715aa9ec2c41ac" prot="public" static="no">
+        <name>RCC_AHB_CLOCK</name>
+        <initializer>(<ref refid="rcc__cfg_8h_1ac1e25c39c219f53b1d06d43ad32736ed" kindref="member">RCC_SYSTEM_CLOCK</ref>/<ref refid="rcc__cfg_8h_1a3b1c4f129550e3d78983f390386a53b6" kindref="member">RCC_AHBCLKDivider_NUM</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="124" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a2d2c237fb214407a4fa651e8e4049460" prot="public" static="no">
+        <name>RCC_APB1_CLOCK</name>
+        <initializer>(<ref refid="rcc__cfg_8h_1add7f6a2ab35b9c9782715aa9ec2c41ac" kindref="member">RCC_AHB_CLOCK</ref>/<ref refid="rcc__cfg_8h_1ab373a4b1444c936bbebdad580a69fec0" kindref="member">RCC_APB1CLKDivider_NUM</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="125" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a732393f1758f4a39792c571952f13216" prot="public" static="no">
+        <name>RCC_APB2_CLOCK</name>
+        <initializer>(<ref refid="rcc__cfg_8h_1add7f6a2ab35b9c9782715aa9ec2c41ac" kindref="member">RCC_AHB_CLOCK</ref>/<ref refid="rcc__cfg_8h_1a3570e217ac65629ae20c1778108f207c" kindref="member">RCC_APB2CLKDivider_NUM</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="126" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1ac22cdf9beabe86873c78864c9b15b49e" prot="public" static="no">
+        <name>RCC_PLL_P</name>
+        <initializer>RCC_PLLP_DIV2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="130" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1aedb27d82ce4973dceed32fd3b499e200" prot="public" static="no">
+        <name>RCC_AHBCLKDivider</name>
+        <initializer>RCC_SYSCLK_DIV1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="142" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a7802d52ce36534bd9e2c028f291da5e7" prot="public" static="no">
+        <name>RCC_APB1CLKDivider</name>
+        <initializer>RCC_HCLK_DIV4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="169" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rcc__cfg_8h_1a6583878094dbc137068d15d2981d7d27" prot="public" static="no">
+        <name>RCC_APB2CLKDivider</name>
+        <initializer>RCC_HCLK_DIV2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="182" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rcc__cfg_8h_1a578bac3b3db8897e7d353d5b56ad3577" prot="public" static="no" mutable="no">
+        <type>RCC_OscInitTypeDef</type>
+        <definition>RCC_OscInitTypeDef RCC_OscInitStruct</definition>
+        <argsstring></argsstring>
+        <name>RCC_OscInitStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="195" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rcc__cfg_8h_1aadea8a5f7f679414f2abe06e7a2d7ebe" prot="public" static="no" mutable="no">
+        <type>RCC_ClkInitTypeDef</type>
+        <definition>RCC_ClkInitTypeDef RCC_ClkInitStruct</definition>
+        <argsstring></argsstring>
+        <name>RCC_ClkInitStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h" line="196" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the configuration for the clock system. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>02.10.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>RCC</para></simplesect>
+The system Clock is configured as follows:</para><para><table rows="15" cols="2"><row>
+<entry thead="yes"><para>Description </para></entry><entry thead="yes"><para>Value  </para></entry></row>
+<row>
+<entry thead="no"><para>System Clock source </para></entry><entry thead="no"><para>PLL (HSE) </para></entry></row>
+<row>
+<entry thead="no"><para>SYSCLK(Hz) </para></entry><entry thead="no"><para>168000000 </para></entry></row>
+<row>
+<entry thead="no"><para>HCLK(Hz) </para></entry><entry thead="no"><para>168000000 </para></entry></row>
+<row>
+<entry thead="no"><para>AHB Prescaler </para></entry><entry thead="no"><para>1 </para></entry></row>
+<row>
+<entry thead="no"><para>APB1 Prescaler </para></entry><entry thead="no"><para>4 </para></entry></row>
+<row>
+<entry thead="no"><para>APB2 Prescaler </para></entry><entry thead="no"><para>2 </para></entry></row>
+<row>
+<entry thead="no"><para>HSE Frequency(Hz) </para></entry><entry thead="no"><para>8000000 define given by compiler flag -DHSEVALUE= </para></entry></row>
+<row>
+<entry thead="no"><para>PLL_M </para></entry><entry thead="no"><para>8 </para></entry></row>
+<row>
+<entry thead="no"><para>PLL_N </para></entry><entry thead="no"><para>336 </para></entry></row>
+<row>
+<entry thead="no"><para>PLL_P </para></entry><entry thead="no"><para>2 </para></entry></row>
+<row>
+<entry thead="no"><para>PLL_Q </para></entry><entry thead="no"><para>7 </para></entry></row>
+<row>
+<entry thead="no"><para>VDD(V) </para></entry><entry thead="no"><para>3.3 </para></entry></row>
+<row>
+<entry thead="no"><para>Main regulator output voltage </para></entry><entry thead="no"><para>Scale1 mode </para></entry></row>
+<row>
+<entry thead="no"><para>Flash Latency(WS) </para></entry><entry thead="no"><para>5 </para></entry></row>
+</table>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="52"><highlight class="preprocessor">#ifndef<sp/>RCC_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu__cfg_8h" kindref="compound">mcu_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="rcc__cfg_8h_1acca3169158498b464114d4534c722635" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_PLL_M<sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="rcc__cfg_8h_1a6c8d4212415f7c86b76b7c9c731b153c" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_PLL_N<sp/><sp/><sp/><sp/><sp/><sp/><sp/>336</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="rcc__cfg_8h_1ae828a8cf807a381a406009e19e5ff49b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC_PLL_P_NUM<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="rcc__cfg_8h_1aba92144c7737b5d88ccf68299c27be2a" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_PLL_Q<sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="rcc__cfg_8h_1a3b1c4f129550e3d78983f390386a53b6" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_AHBCLKDivider_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="rcc__cfg_8h_1ab373a4b1444c936bbebdad580a69fec0" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_APB1CLKDivider_NUM<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="rcc__cfg_8h_1a3570e217ac65629ae20c1778108f207c" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_APB2CLKDivider_NUM<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="rcc__cfg_8h_1ac1e25c39c219f53b1d06d43ad32736ed" refkind="member"><highlight class="preprocessor">#define<sp/>RCC_SYSTEM_CLOCK<sp/><sp/><sp/><sp/>(HSE_VALUE/RCC_PLL_M/RCC_PLL_P_NUM*RCC_PLL_N)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="rcc__cfg_8h_1add7f6a2ab35b9c9782715aa9ec2c41ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC_AHB_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(RCC_SYSTEM_CLOCK/RCC_AHBCLKDivider_NUM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="rcc__cfg_8h_1a2d2c237fb214407a4fa651e8e4049460" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC_APB1_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/>(RCC_AHB_CLOCK/RCC_APB1CLKDivider_NUM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="rcc__cfg_8h_1a732393f1758f4a39792c571952f13216" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC_APB2_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/>(RCC_AHB_CLOCK/RCC_APB2CLKDivider_NUM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RCC_PLL_P_NUM<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="rcc__cfg_8h_1ac22cdf9beabe86873c78864c9b15b49e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_PLL_P<sp/><sp/><sp/><sp/>RCC_PLLP_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_PLL_P_NUM<sp/>==<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_PLL_P<sp/><sp/><sp/><sp/>RCC_PLLP_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_PLL_P_NUM<sp/>==<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_PLL_P<sp/><sp/><sp/><sp/>RCC_PLLP_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_PLL_P_NUM<sp/>==<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_PLL_P<sp/><sp/><sp/><sp/>RCC_PLLP_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>RCC_PLL_P_NUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="rcc__cfg_8h_1aedb27d82ce4973dceed32fd3b499e200" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_AHBCLKDivider_NUM<sp/>==<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_AHBCLKDivider<sp/><sp/><sp/><sp/>RCC_SYSCLK_DIV512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>RCC_AHBCLKDivider_NUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RCC_APB1CLKDivider_NUM<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB1CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB1CLKDivider_NUM<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB1CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB1CLKDivider_NUM<sp/>==<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="rcc__cfg_8h_1a7802d52ce36534bd9e2c028f291da5e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB1CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB1CLKDivider_NUM<sp/>==<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB1CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB1CLKDivider_NUM<sp/>==<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB1CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>RCC_APB1CLKDivider_NUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RCC_APB2CLKDivider_NUM<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB2CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB2CLKDivider_NUM<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="rcc__cfg_8h_1a6583878094dbc137068d15d2981d7d27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB2CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB2CLKDivider_NUM<sp/>==<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB2CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB2CLKDivider_NUM<sp/>==<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB2CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>RCC_APB2CLKDivider_NUM<sp/>==<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RCC_APB2CLKDivider<sp/><sp/><sp/><sp/>RCC_HCLK_DIV16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>RCC_APB2CLKDivider_NUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RCC_OscInitTypeDef<sp/><ref refid="rcc__cfg_8h_1a578bac3b3db8897e7d353d5b56ad3577" kindref="member">RCC_OscInitStruct</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RCC_ClkInitTypeDef<sp/><ref refid="rcc__cfg_8h_1aadea8a5f7f679414f2abe06e7a2d7ebe" kindref="member">RCC_ClkInitStruct</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RCC_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rcc_cfg.h"/>
+  </compounddef>
+</doxygen>

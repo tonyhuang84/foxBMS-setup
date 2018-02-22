@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Installing foxConda &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="3. Building the foxBMS Software and Documentation" href="../build/build.html"/>
+        <link rel="prev" title="1. Getting Started with foxBMS" href="../general/general.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Installing foxConda</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/getting_started/foxconda/foxconda.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installing-foxconda">
+<span id="getting-started-foxconda"></span><h1>2. Installing foxConda<a class="headerlink" href="#installing-foxconda" title="Permalink to this headline">¶</a></h1>
+<p>The foxBMS embedded software consists of a program written in C. Before it can be flashed and run on the microcontroller units (i.e., MCU0 and MCU1 located
+on the BMS-Master Board), it must be compiled to generate a binary file called firmware.</p>
+<p>Different softwares (i.e., the software toolchain) are needed for this compilation step. They are based on a Python environment. All the needed software, including the Python environment, are contained in a Python distribution called foxConda. It will be installed in the next steps.</p>
+<p>This section shows how to set up the development environment, foxConda (the software toolchain).</p>
+<p>In the section <a class="reference internal" href="../eclipse_workspace/eclipse_workspace.html#getting-started-eclipse-workspace"><span class="std std-ref">Eclipse Workspace Setup and Flashing</span></a>, it is shown how the compiled sources are flashed on the foxBMS Master Unit.</p>
+<div class="section" id="installation-of-the-needed-software-via-the-foxconda-distribution">
+<h2>2.1. Installation of the Needed Software via the foxConda Distribution<a class="headerlink" href="#installation-of-the-needed-software-via-the-foxconda-distribution" title="Permalink to this headline">¶</a></h2>
+<p>The first step is to install the software environment needed to compile and flash the foxBMS sources. First, the foxConda installer must be downloaded
+from the <a class="reference external" href="https://iisb-foxbms.iisb.fraunhofer.de/foxbms/">server</a> containing the foxConda installers. For Windows, the installer is run by executing
+<code class="docutils literal"><span class="pre">foxcondainstall-windows-1.0_000.exe</span></code>. The installer version with the highest version and build number must always be used.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<ul class="last simple">
+<li>Changing the default installation directory from <code class="docutils literal"><span class="pre">C:\foxconda</span></code> to something other will create a lot extra effort when setting up the
+Eclipse workspace. It is highly advised against changing the default installation directory.</li>
+<li>When installing foxConda to another directory, foxConda must not be installed into a directory containing whitespace (e.g. <code class="docutils literal"><span class="pre">C:\Program</span> <span class="pre">Files</span></code>, <code class="docutils literal"><span class="pre">C:\Program</span> <span class="pre">Files</span> <span class="pre">(x86)</span></code>)</li>
+</ul>
+</div>
+<p>The window shown in <a class="reference internal" href="#condainstaller1"><span class="std std-numref">fig. 2.1</span></a> will appear.</p>
+<div class="figure" id="id1">
+<span id="condainstaller1"></span><a class="reference internal image-reference" href="../../_images/condainstaller1.png"><img alt="../../_images/condainstaller1.png" src="../../_images/condainstaller1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Installer start page</span></p>
+</div>
+<p>On this window, the foxBMS webpage can be accessed by clicking on the link in
+blue.</p>
+<p>Then by clicking on <code class="docutils literal"><span class="pre">Next</span> <span class="pre">&gt;</span></code> the license shown in <a class="reference internal" href="#condainstaller2"><span class="std std-numref">fig. 2.2</span></a> is displayed.</p>
+<div class="figure" id="id2">
+<span id="condainstaller2"></span><a class="reference internal image-reference" href="../../_images/condainstaller2.png"><img alt="../../_images/condainstaller2.png" src="../../_images/condainstaller2.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Installer license terms</span></p>
+</div>
+<p>To continue, the license terms must be accepted (check <code class="docutils literal"><span class="pre">I</span> <span class="pre">accept</span> <span class="pre">the</span> <span class="pre">terms</span></code>)
+before clicking on <code class="docutils literal"><span class="pre">Next</span> <span class="pre">&gt;</span></code>.</p>
+<p>An installation directory must be selected as shown in <a class="reference internal" href="#condainstaller3"><span class="std std-numref">fig. 2.3</span></a>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Changing the default installation directory from <code class="docutils literal"><span class="pre">C:\foxconda</span></code> to something other will create a lot extra effort when setting up the Eclipse workspace. This is not advised.</p>
+</div>
+<div class="figure" id="id3">
+<span id="condainstaller3"></span><a class="reference internal image-reference" href="../../_images/condainstaller3.png"><img alt="../../_images/condainstaller3.png" src="../../_images/condainstaller3.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Installation path for the Front Desk environment</span></p>
+</div>
+<p>A default location is proposed. It can be changed, but it is advised to keep it. Clicking on <code class="docutils literal"><span class="pre">Next</span> <span class="pre">&gt;</span></code> starts the installation as shown in <a class="reference internal" href="#condainstaller4"><span class="std std-numref">fig. 2.4</span></a>. This step can take several minutes.</p>
+<div class="figure" id="id4">
+<span id="condainstaller4"></span><a class="reference internal image-reference" href="../../_images/condainstaller4.png"><img alt="../../_images/condainstaller4.png" src="../../_images/condainstaller4.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Installation progress</span></p>
+</div>
+<p>The login credentials may be asked to generate start menu and desktop shortcuts for the development tools.</p>
+<p>Once the installation is complete, the message shown in <a class="reference internal" href="#condainstaller5"><span class="std std-numref">fig. 2.5</span></a> appears.</p>
+<div class="figure" id="id5">
+<span id="condainstaller5"></span><a class="reference internal image-reference" href="../../_images/condainstaller5.png"><img alt="../../_images/condainstaller5.png" src="../../_images/condainstaller5.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Installation end</span></p>
+</div>
+<p>From the command line, the convenience terminal environment can be used by executing <code class="docutils literal"><span class="pre">fbterminal.exe</span></code>, which is also located under <code class="docutils literal"><span class="pre">FOXCONDA\Scripts</span></code>.
+It will open a CMD window with a PATH environment ready to configure amd compile foxBMS.</p>
+<div class="section" id="software-related-frequently-asked-questions">
+<h3>2.1.1. Software Related Frequently Asked Questions<a class="headerlink" href="#software-related-frequently-asked-questions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="where-are-the-sources">
+<h4>2.1.1.1. Where are the Sources?<a class="headerlink" href="#where-are-the-sources" title="Permalink to this headline">¶</a></h4>
+<p>The sources are available on <a class="reference external" href="https://github.com/foxBMS/">GitHub</a>.</p>
+</div>
+<div class="section" id="what-libraries-and-programs-must-be-installed">
+<h4>2.1.1.2. What Libraries and Programs Must be Installed?<a class="headerlink" href="#what-libraries-and-programs-must-be-installed" title="Permalink to this headline">¶</a></h4>
+<p>None, because they are installed with the foxConda installer.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../build/build.html" class="btn btn-neutral float-right" title="3. Building the foxBMS Software and Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../general/general.html" class="btn btn-neutral" title="1. Getting Started with foxBMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

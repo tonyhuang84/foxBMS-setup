@@ -1,0 +1,8 @@
+<map id="MCU_SystemResetStatus_Init" name="MCU_SystemResetStatus_Init">
+<area shape="rect" id="node2" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="252,56,356,83"/>
+<area shape="rect" id="node3" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="404,56,553,83"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="601,56,724,83"/>
+<area shape="rect" id="node5" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="773,5,873,32"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="774,56,873,83"/>
+<area shape="rect" id="node7" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="772,107,875,133"/>
+</map>

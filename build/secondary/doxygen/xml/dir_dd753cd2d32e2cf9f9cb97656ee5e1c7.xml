@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_dd753cd2d32e2cf9f9cb97656ee5e1c7" kind="dir">
+    <compoundname>watchdog</compoundname>
+    <innerfile refid="wdg_8c">wdg.c</innerfile>
+    <innerfile refid="wdg_8h">wdg.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/watchdog/"/>
+  </compounddef>
+</doxygen>

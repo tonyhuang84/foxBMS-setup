@@ -1,0 +1,1823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="eepr__cfg_8h" kind="file" language="C++">
+    <compoundname>eepr_cfg.h</compoundname>
+    <includes refid="bkpsram__cfg_8h" local="yes">bkpsram_cfg.h</includes>
+    <includes refid="sox_8h" local="yes">sox.h</includes>
+    <includedby refid="eepr__cfg_8c" local="yes">eepr_cfg.c</includedby>
+    <includedby refid="eepr_8h" local="yes">eepr.h</includedby>
+    <incdepgraph>
+      <node id="1154">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1155" relation="include">
+        </childnode>
+        <childnode refid="1156" relation="include">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1160" relation="include">
+        </childnode>
+      </node>
+      <node id="1155">
+        <label>stdint.h</label>
+      </node>
+      <node id="1151">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="1152" relation="include">
+        </childnode>
+        <childnode refid="1153" relation="include">
+        </childnode>
+      </node>
+      <node id="1152">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="1153" relation="include">
+        </childnode>
+        <childnode refid="1157" relation="include">
+        </childnode>
+        <childnode refid="1158" relation="include">
+        </childnode>
+      </node>
+      <node id="1150">
+        <label>sox_cfg.h</label>
+        <link refid="sox__cfg_8h"/>
+      </node>
+      <node id="1149">
+        <label>sox.h</label>
+        <link refid="sox_8h"/>
+        <childnode refid="1150" relation="include">
+        </childnode>
+      </node>
+      <node id="1148">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="1149" relation="include">
+        </childnode>
+        <childnode refid="1151" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+      </node>
+      <node id="1161">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="1158" relation="include">
+        </childnode>
+      </node>
+      <node id="1160">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="1156">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="1159">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="1160" relation="include">
+        </childnode>
+      </node>
+      <node id="1157">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="1147">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="1148" relation="include">
+        </childnode>
+        <childnode refid="1149" relation="include">
+        </childnode>
+      </node>
+      <node id="1153">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="1154" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1178">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="1173">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="1174">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1165">
+        <label>sox.c</label>
+        <link refid="sox_8c"/>
+      </node>
+      <node id="1179">
+        <label>stm32f7xx_it.c</label>
+        <link refid="stm32f7xx__it_8c"/>
+      </node>
+      <node id="1166">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="1180">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1182">
+        <label>eepr.c</label>
+        <link refid="eepr_8c"/>
+      </node>
+      <node id="1176">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="1164">
+        <label>eepr.h</label>
+        <link refid="eepr_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1166" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1163" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="1177">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1168">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="1167">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+      </node>
+      <node id="1175">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="1163">
+        <label>eepr_cfg.c</label>
+        <link refid="eepr__cfg_8c"/>
+      </node>
+      <node id="1162">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="1163" relation="include">
+        </childnode>
+        <childnode refid="1164" relation="include">
+        </childnode>
+      </node>
+      <node id="1172">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="1170">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="1169">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structEEPR__CH__CFG__s" prot="public">EEPR_CH_CFG_s</innerclass>
+    <innerclass refid="structEEPR__CALIB__STATISTICS__s" prot="public">EEPR_CALIB_STATISTICS_s</innerclass>
+    <innerclass refid="structEEPR__HEADER__s" prot="public">EEPR_HEADER_s</innerclass>
+    <innerclass refid="structEEPR__BOARD__INFO__s" prot="public">EEPR_BOARD_INFO_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__EEPR_1ga757570943c8ffe9be40df7c65575e646" prot="public" static="no">
+        <name>EEPROM_VERSION_AT25128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>selects the used Eeprom Hardware (IC), which are supported by this driver </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="49" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a0f3c4b7b291cec4c5445c4d45e60a5ba" prot="public" static="no">
+        <name>EEPR_HW_PROTECTION_NONE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>no protection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="53" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a3cfaf66f084f9289895c9a2afb62cfd2" prot="public" static="no">
+        <name>EEPR_HW_PROTECTION_1_4</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1/4 protected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="54" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a1c95fff0baef7a21339ab8405217d4ac" prot="public" static="no">
+        <name>EEPR_HW_PROTECTION_2_4</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1/2 protected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="55" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a00950fa0a992b28156b008aaa070cac5" prot="public" static="no">
+        <name>EEPR_HW_PROTECTION_ALL</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>everything protected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="56" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__EEPR_1ga26f0fa167c499d24fd5a582cae1911c6" prot="public" static="no">
+        <name>EEPR_HW_PROTECTION</name>
+        <initializer><ref refid="eepr__cfg_8h_1a0f3c4b7b291cec4c5445c4d45e60a5ba" kindref="member">EEPR_HW_PROTECTION_NONE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>select the write/read Protection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1aa43b77142a908c0a9f4740ec6fd06dd6" prot="public" static="no">
+        <name>EEPR_CHANNEL_MAX_NR</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="79" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a0db02ecdee445a500043e9e2d7c75aac" prot="public" static="no">
+        <name>EEPR_CH_MAXLENGTH</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="83" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a30199186a60e3e6d6be43657f6fa81a8" prot="public" static="no">
+        <name>EEPR_PageLength</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="87" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a89e020fb706c45c26b451f7b0ad9cdc2" prot="public" static="no">
+        <name>EEPR_CMDBUF_OFFSET</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="88" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a9522f2ebd974b9abbd5395016284a567" prot="public" static="no">
+        <name>EEPR_TXBUF_LENGTH</name>
+        <initializer>(<ref refid="eepr__cfg_8h_1a0db02ecdee445a500043e9e2d7c75aac" kindref="member">EEPR_CH_MAXLENGTH</ref> + <ref refid="eepr__cfg_8h_1a89e020fb706c45c26b451f7b0ad9cdc2" kindref="member">EEPR_CMDBUF_OFFSET</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="98" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a9634c98bd6b38557b7b2fa498dbec688" prot="public" static="no">
+        <name>EEPR_WRITETIME_PER_PAGE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="103" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a64944e59eca37f1f341763421e69f4c1" prot="public" static="no">
+        <name>EEPR_READTIME_PER_PAGE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="104" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1aec5f267cd33fccf4133b4ef479e980c1" prot="public" static="no">
+        <name>EEPR_CH_HEADER</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da1f79ac0752203f769ca29963e84f9638" kindref="member">EEPR_CHANNEL_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="124" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a291d4ec50ef4ae6731a6551fd907b4bd" prot="public" static="no">
+        <name>EEPR_CH_BOARD_INFO</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dae1e75e1fed5354aded142654e28ce2c5" kindref="member">EEPR_CHANNEL_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="125" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a8caba5b388b1f13b637300d8f208e6c2" prot="public" static="no">
+        <name>EEPR_CH_HARDWARE_INFO</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da176d7cfe3065af7dfa25eea924c745f5" kindref="member">EEPR_CHANNEL_3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="126" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a5fb6ce518be4d12c0a4c336b5793918b" prot="public" static="no">
+        <name>EEPR_CH_OPERATING_HOURS</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da8ec8f1c49cd5cdf78ae0424ade52871d" kindref="member">EEPR_CHANNEL_4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="127" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1ae87f74a14b3c3e34cfad1365bc1f60f4" prot="public" static="no">
+        <name>EEPR_CH_NVSOC</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da034e969bc58cd6186ea5144b9d74c45e" kindref="member">EEPR_CHANNEL_5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="128" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a03a06d68256924a2813d61fbed11bf5f" prot="public" static="no">
+        <name>EEPR_CH_CONTACTOR</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da0ce27262037719efd513eda5bc28a1c9" kindref="member">EEPR_CHANNEL_6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="129" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1ad1f048a5774fff515c3e6a87c0bdf4a6" prot="public" static="no">
+        <name>EEPR_CH_STATISTICS</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da2011fd80df960f912c594d5d7b4d7e26" kindref="member">EEPR_CHANNEL_7</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="130" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a6cce24fd9c878bfdf887ce816528238c" prot="public" static="no">
+        <name>EEPR_CH_USER_DATA</name>
+        <initializer><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da147a8f12eec49eb3347e650b993066ca" kindref="member">EEPR_CHANNEL_8</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="131" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a2fdb25c1345c0bcfd60e7f3784665bbd" prot="public" static="no">
+        <name>EEPR_DEFAULT_NETWORK_ID</name>
+        <initializer>0xFFFF  /* Default NodeID of Primary Controller*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="240" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1aa947426be70f62e2ed684fa7fdcc94c9" prot="public" static="no">
+        <name>EEPR_ReceiveData</name>
+        <param><defname>bufferptr</defname></param>
+        <param><defname>length</defname></param>
+        <initializer><ref refid="eepr__cfg_8h_1aa1d528bec397c49c6332f1aae6238376" kindref="member">SPI_ReceiveData</ref>(bufferptr,length)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Communication Interfaces: Data Receive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="243" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="eepr__cfg_8h_1a4e93fb3b1da996d926379a00a49de44f" prot="public" static="no">
+        <name>EEPR_SendData</name>
+        <param><defname>bufferptr</defname></param>
+        <param><defname>length</defname></param>
+        <param><defname>receiveoffset</defname></param>
+        <initializer><ref refid="eepr__cfg_8h_1a42790ff11eb0e6907ac836a2e7186bba" kindref="member">SPI_SendData</ref>(bufferptr,length,receiveoffset)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Communication Interfaces: Data Transmission </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="245" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" prot="public" static="no">
+        <name>EEPR_CHANNEL_ID_TYPE_e</name>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da1f79ac0752203f769ca29963e84f9638" prot="public">
+          <name>EEPR_CHANNEL_1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dae1e75e1fed5354aded142654e28ce2c5" prot="public">
+          <name>EEPR_CHANNEL_2</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da176d7cfe3065af7dfa25eea924c745f5" prot="public">
+          <name>EEPR_CHANNEL_3</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da8ec8f1c49cd5cdf78ae0424ade52871d" prot="public">
+          <name>EEPR_CHANNEL_4</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da034e969bc58cd6186ea5144b9d74c45e" prot="public">
+          <name>EEPR_CHANNEL_5</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da0ce27262037719efd513eda5bc28a1c9" prot="public">
+          <name>EEPR_CHANNEL_6</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da2011fd80df960f912c594d5d7b4d7e26" prot="public">
+          <name>EEPR_CHANNEL_7</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da147a8f12eec49eb3347e650b993066ca" prot="public">
+          <name>EEPR_CHANNEL_8</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da7e6ff6b267d3562c3f8be9272e138076" prot="public">
+          <name>EEPR_CHANNEL_9</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dac95a018dc59bd976012b03af7fc7bfd4" prot="public">
+          <name>EEPR_CHANNEL_MAX</name>
+          <initializer>= EEPR_CHANNEL_MAX_NR-1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for EEPROM Channels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="109" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="109" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" prot="public" static="no">
+        <name>EEPR_STATE_e</name>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a9a95c6d1bb9529b6f2d6939a14c2a3b3" prot="public">
+          <name>EEPR_INITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initializing-Sequence: EEPROM-driver initialized </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01af3da542ebf706545c5a4df1950b3f00c" prot="public">
+          <name>EEPR_INIT_INPROCESS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initializing-Sequence: EEPROM-driver initializing </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a1e96ba51dcc59eaa942c5299c095eccd" prot="public">
+          <name>EEPR_IDLE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Idle-State </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a50cfd5feb7ee9049ee8e943a420ea700" prot="public">
+          <name>EEPR_READMEMORY</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reading-Sequence: Initiate reading </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01adab9a1ac23346ee5d441c92df00789ed" prot="public">
+          <name>EEPR_READMEMORY_INPROCESS</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reading-Sequence: Currently reading </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a31eb5a04d01dfb76a3c419cc1f270e06" prot="public">
+          <name>EEPR_CHECK_DATA</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reading-Sequence: Data check </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a41976854e7fcec78ee11ca0e9ba246b8" prot="public">
+          <name>EEPR_WRITEMEMORY</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writing-Sequence: Initiate writing </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01aea58da32e08705324a3298d7eb66d3a2" prot="public">
+          <name>EEPR_WRITE_ENABLE_INPROCESS</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writing-Sequence: Enable writing </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a516e7fd7a42056c41ad91307dfe158f4" prot="public">
+          <name>EEPR_WRITEMEMORY_ENABLED</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writing-Sequence: Writing enabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ae4f5832d2e7e54bb87e7da16a6144b4f" prot="public">
+          <name>EEPR_WRITEMEMORY_INPROCESS</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writing-Sequence: Currently writing </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a8b1ac8d46651309cf29aa3169ae40b7f" prot="public">
+          <name>EEPR_INIT_PROTECTION_CFG</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writeprotection: Initiate protecting </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01af0536dfc256910a851f92d11056ffbac" prot="public">
+          <name>EEPR_ENABLE_PROTECTION_CFG</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writeprotection : Enable write statusregister </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ad96d663160de9d137ab09ff2db11faf9" prot="public">
+          <name>EEPR_PROTECTION_CFG_ENABLED</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writeprotection : writing status register enabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a6934286faf2780c4c46d6bf7a75a22b1" prot="public">
+          <name>EEPR_PROTECTION_CFG_INPROCESS</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Writeprotection : set statusregister bits </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01afa6ed2a346e0222fc3669f2a5839a9ef" prot="public">
+          <name>EEPR_NO_REQUEST</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM-driver not initialized </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ad5948a084f808c8b388a8dcc9bfdf270" prot="public">
+          <name>EEPR_PROTECTION_FAILED</name>
+          <initializer>= 0xFA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: Protection failed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ae2a251b74b00065b6f61f5b847700a20" prot="public">
+          <name>EEPR_WRITEFAILED</name>
+          <initializer>= 0xFB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: Write failed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01afc398f79a53e84b5905095035bf442fd" prot="public">
+          <name>EEPR_READFAILED</name>
+          <initializer>= 0xFC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: Read failed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ab6bef7898773ff6fa85bedef545a54cc" prot="public">
+          <name>EEPR_INITFAILED</name>
+          <initializer>= 0xFD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: Initialization failed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a9a749193d7c9d1bc83962d1e286e30b9" prot="public">
+          <name>EEPR_UNINITIALIZED</name>
+          <initializer>= 0xFE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM-driver not initialized </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a5c1fd1fb55a41ec4284e02cf85a05efa" prot="public">
+          <name>EEPR_DISABLED</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM-driver not active </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a68db110331b92449988fe40426a5c9db" prot="public">
+          <name>EEPR_STATEREQFAILED</name>
+          <initializer>= 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM-Requestfail </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01aab2a2d8dcfee7bc4a000fbabec7ecaea" prot="public">
+          <name>EEPR_WRITEPROTECTED</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM-Requestfail </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for the EEPROM states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="137" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="137" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956c" prot="public" static="no">
+        <name>EEPR_REQUEST_STATE_e</name>
+        <enumvalue id="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956cac65b093d723b1cc28d66062dc85f0fa6" prot="public">
+          <name>EEPR_REQ_TRANSITIONOK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transition allowed, request accepted </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956ca6fe71a75009022b82d434cbc4002128d" prot="public">
+          <name>EEPR_REQ_WRITEPROTECTED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transition forbidden, channel is writeprotected </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956cac509c39cb131021cc493a8de6be2e1d9" prot="public">
+          <name>EEPR_REQ_TRANSITIONFAIL</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transition from current state to requested state not allowed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956ca8e512ecb032e4de4b9278f6eec719dba" prot="public">
+          <name>EEPR_REQ_BUSY</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transition not possible, EEPROM already haandling a request </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="163" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="163" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" prot="public" static="no">
+        <name>EEPR_ERRORTYPES_e</name>
+        <enumvalue id="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca6862163bdc6d391b6d7f346f3c2bcd74" prot="public">
+          <name>EEPR_NO_ERROR</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca494be7b74d55612f945150f58b7716d7" prot="public">
+          <name>EEPR_INIT_ERROR</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09caf242750190769397418200fd80494277" prot="public">
+          <name>EEPR_ERR_WR</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Timeout Error while writing </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca527698a3898fa3d885403880df455700" prot="public">
+          <name>EEPR_ERR_RD</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Timeout Error while reading </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for the EEPROM errors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="173" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="enum" id="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" prot="public" static="no">
+        <name>EEPR_RETURNTYPE_e</name>
+        <enumvalue id="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" prot="public">
+          <name>EEPR_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>error not occured or occured but threshold not reached </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1aa089343a93450f12599ff603314000faafe59f00a52ce8220fab1534fb6fb9c17" prot="public">
+          <name>EEPR_BUSY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM driver busy </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" prot="public">
+          <name>EEPR_ERROR</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>error occurred </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1aa089343a93450f12599ff603314000faacc6bf50798e20d2724aafdd77d4e4f16" prot="public">
+          <name>EEPR_REQUEST_PENDING</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>request pending, no other request can be accepted </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa55f20730744477271e0053550810bfaf" prot="public">
+          <name>EEPR_WR_PROTECTED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>request declined, channel is write protected </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for the EEPROM return types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="183" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="183" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="enum" id="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518" prot="public" static="no">
+        <name>EEPR_SW_WRITEPROTECTION_e</name>
+        <enumvalue id="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518a16993179f235b7cf496d4427ec7f7739" prot="public">
+          <name>EEPR_SW_WRITE_UNPROTECTED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SW Write Protection off </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518aec7903c78b2c9d2ef0febb72d31494be" prot="public">
+          <name>EEPR_SW_WRITE_PROTECTED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SW Write Protection on </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for SW Write Protection of eeprom channels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="192" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="192" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="eepr__cfg_8h_1afbb08ccf64ff2f34cdc75ac1e8d559a9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eepr_ch_dirtyflag[EEPR_CHANNEL_MAX_NR]</definition>
+        <argsstring>[EEPR_CHANNEL_MAX_NR]</argsstring>
+        <name>eepr_ch_dirtyflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dirty Flag indicates a modification of data in BKPSRAM for the corresponding channel. Thus Eeprom and BKPSRAM data are not consistent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="250" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1a4947ba2cc8416ab4a596d615ea9404eb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eepr_bkpsram_buffer[EEPR_CH_MAXLENGTH]</definition>
+        <argsstring>[EEPR_CH_MAXLENGTH]</argsstring>
+        <name>eepr_bkpsram_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer used for eeprom reads data when double-buffering with BKPSRAM is not used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="251" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1a95230ca61b3061e703c650b2b57436ab" prot="public" static="no" mutable="no">
+        <type><ref refid="structEEPR__CH__CFG__s" kindref="compound">EEPR_CH_CFG_s</ref></type>
+        <definition>EEPR_CH_CFG_s eepr_ch_cfg[EEPR_CHANNEL_MAX_NR]</definition>
+        <argsstring>[EEPR_CHANNEL_MAX_NR]</argsstring>
+        <name>eepr_ch_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>configuration of eeprom channels</para><para>Channels are memory slots mapped to a certain eeprom address area which can be assigned with attributes like software protection. The channels can be linked to buffering SRAM areas (e.g. Backup-SRAM when available) for recovery and caching purposes. The last quarter of memory space is hardware protected, which can be only unprotected by specific command sequences. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="261" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1a19c6fcfaa05f3bf4a76e42b8325350f9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structEEPR__HEADER__s" kindref="compound">EEPR_HEADER_s</ref></type>
+        <definition>const EEPR_HEADER_s eepr_header_default</definition>
+        <argsstring></argsstring>
+        <name>eepr_header_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>versionnumber of EEPR Software</para><para>Version number of EEPR Software </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="267" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1a11c266ecf2d94361a4f046799b275cb9" prot="public" static="no" mutable="no">
+        <type><ref refid="structEEPR__BOARD__INFO__s" kindref="compound">EEPR_BOARD_INFO_s</ref></type>
+        <definition>EEPR_BOARD_INFO_s eepr_board_info</definition>
+        <argsstring></argsstring>
+        <name>eepr_board_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>foxBMS board and device information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="272" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1aafcc04d7a75cfd3628a5ec0d73efc4ec" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structEEPR__CALIB__STATISTICS__s" kindref="compound">EEPR_CALIB_STATISTICS_s</ref></type>
+        <definition>const EEPR_CALIB_STATISTICS_s defaultcalibstatistics</definition>
+        <argsstring></argsstring>
+        <name>defaultcalibstatistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default calibration statistics </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="278" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1a4fd38b08beb7717156e0d2fb1733aa95" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eepr_WR_RD_buffer[EEPR_CH_MAXLENGTH]</definition>
+        <argsstring>[EEPR_CH_MAXLENGTH]</argsstring>
+        <name>eepr_WR_RD_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>buffer to write or read data in eeprom </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="283" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="eepr__cfg_8h_1a53d0607eacac8645e03d519a78cbd752" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t eepr_WR_RD_Chksum</definition>
+        <argsstring></argsstring>
+        <name>eepr_WR_RD_Chksum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>checksum of the write/read buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="288" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="eepr__cfg_8h_1ae2c079158d0210850505e7567f0c75bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" kindref="member">EEPR_ERRORTYPES_e</ref></type>
+        <definition>EEPR_ERRORTYPES_e EEPR_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>EEPR_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>requests the initialization of the eeprom and triggers the state machine until eeprom is in IDLE-Mode or timer has elapsed </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 if successful, error-bit if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="298" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="530" bodyend="561"/>
+        <references refid="eepr__cfg_8c_1a1746e67d86e2f8637c3663aef2d39afe" compoundref="eepr__cfg_8c" startline="150">timeout_cnt</references>
+        <references refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca6862163bdc6d391b6d7f346f3c2bcd74" compoundref="eepr__cfg_8h" startline="174">EEPR_NO_ERROR</references>
+        <references refid="eepr__cfg_8h_1a9634c98bd6b38557b7b2fa498dbec688" compoundref="eepr__cfg_8h" startline="103">EEPR_WRITETIME_PER_PAGE</references>
+        <references refid="eepr__cfg_8h_1aefac79ed7e71cac9d3211a712fad2461" compoundref="eepr_8c" startline="373" endline="419">EEPR_SetStateRequest</references>
+        <references refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a1e96ba51dcc59eaa942c5299c095eccd" compoundref="eepr__cfg_8h" startline="140">EEPR_IDLE</references>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" compoundref="eepr__cfg_8h" startline="184">EEPR_OK</references>
+        <references refid="eepr__cfg_8h_1a6f557dc8e24353ebbece6b57485501ca" compoundref="eepr_8c" startline="304" endline="306">EEPR_GetState</references>
+        <references refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca494be7b74d55612f945150f58b7716d7" compoundref="eepr__cfg_8h" startline="175">EEPR_INIT_ERROR</references>
+        <references refid="eepr_8c_1af4db18407693f62fa9a7375faf679f0b" compoundref="eepr_8c" startline="536" endline="1102">EEPR_Trigger</references>
+        <references refid="eepr__cfg_8c_1a75ad38a70e241b1332c0c4d8e965a1e1" compoundref="eepr__cfg_8c" startline="425" endline="527">EEPR_InitChannelData</references>
+        <references refid="eepr__cfg_8c_1af9c4f7773244cbd5552ed3ca5cdd4ae5" compoundref="eepr__cfg_8c" startline="266" endline="301">EEPR_SetDefaultValue</references>
+        <references refid="eepr__cfg_8h_1aec5f267cd33fccf4133b4ef479e980c1" compoundref="eepr__cfg_8h" startline="124">EEPR_CH_HEADER</references>
+        <references refid="eepr__cfg_8h_1a291d4ec50ef4ae6731a6551fd907b4bd" compoundref="eepr__cfg_8h" startline="125">EEPR_CH_BOARD_INFO</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a62ad4bbac7d8b92d7481346b31cf187d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEPR_SetChDirtyFlag</definition>
+        <argsstring>(EEPR_CHANNEL_ID_TYPE_e eepr_channel)</argsstring>
+        <name>EEPR_SetChDirtyFlag</name>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref></type>
+          <declname>eepr_channel</declname>
+        </param>
+        <briefdescription>
+<para>sets a dirty flag to indicate that the data of a channel have been changed </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eepr_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channel of which the data have been changed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="306" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="170" bodyend="172"/>
+        <references refid="eepr__cfg_8c_1aaaf25478584a091b51a9714ff99a127f" compoundref="eepr__cfg_8c" startline="153">eepr_ch_dirtyflag</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a5f92c515fa55d80886bd904624fe1343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEPR_RemoveChDirtyFlag</definition>
+        <argsstring>(EEPR_CHANNEL_ID_TYPE_e eepr_channel)</argsstring>
+        <name>EEPR_RemoveChDirtyFlag</name>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref></type>
+          <declname>eepr_channel</declname>
+        </param>
+        <briefdescription>
+<para>removes the dirty flag to indicate that the eeprom was actualized </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eepr_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channel that has been updated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="314" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="174" bodyend="176"/>
+        <references refid="eepr__cfg_8c_1aaaf25478584a091b51a9714ff99a127f" compoundref="eepr__cfg_8c" startline="153">eepr_ch_dirtyflag</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1aefac79ed7e71cac9d3211a712fad2461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref></type>
+        <definition>EEPR_RETURNTYPE_e EEPR_SetStateRequest</definition>
+        <argsstring>(EEPR_STATE_e state_req, EEPR_CHANNEL_ID_TYPE_e channel, uint8_t *ramaddress)</argsstring>
+        <name>EEPR_SetStateRequest</name>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" kindref="member">EEPR_STATE_e</ref></type>
+          <declname>state_req</declname>
+        </param>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ramaddress</declname>
+        </param>
+        <briefdescription>
+<para>requests a state change to be handled by eeprom state machine (used by external modules) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state_req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eeprom channel to be written or read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ramaddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source (destination) RAM address (buffer) for writing (reading) from eeprom </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if request was accepted, 1 if eeprom is busy, 2 if request was denied </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="324" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/nvram/eepr.c" bodystart="373" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1aa1d528bec397c49c6332f1aae6238376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref></type>
+        <definition>EEPR_RETURNTYPE_e SPI_ReceiveData</definition>
+        <argsstring>(uint8_t *buffer, uint16_t length)</argsstring>
+        <name>SPI_ReceiveData</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Receives data from the EEPROM via SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para>data receive interface to SPI Unit</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer where the data should be stored to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EEPR_OK if OK, otherwise EEPR_ERROR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="330" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="186" bodyend="201"/>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" compoundref="eepr__cfg_8h" startline="186">EEPR_ERROR</references>
+        <references refid="eepr__cfg_8c_1a4b6d6b586caf705466fa57e29112f62f" compoundref="eepr__cfg_8c" startline="147">eepr_spi_rxbuf</references>
+        <references refid="eepr__cfg_8c_1ae74fe3e7657dbaececf8e696752cd1d0" compoundref="eepr__cfg_8c" startline="148">eepr_spi_rxoffset</references>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" compoundref="eepr__cfg_8h" startline="184">EEPR_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a42790ff11eb0e6907ac836a2e7186bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref></type>
+        <definition>EEPR_RETURNTYPE_e SPI_SendData</definition>
+        <argsstring>(uint8_t *data, uint16_t length, uint16_t receiveoffset)</argsstring>
+        <name>SPI_SendData</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>receiveoffset</declname>
+        </param>
+        <briefdescription>
+<para>Stores the data in the EEPROM via SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para>data send interface to SPI Unit</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer where the data is stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>receiveoffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receive offset</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EEPR_OK if okay, otherwise EEPR_ERROR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="335" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="212" bodyend="229"/>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" compoundref="eepr__cfg_8h" startline="186">EEPR_ERROR</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="io__mcu__cfg_8h_1a48538a5097d98baa48c29c72a4f803ee" compoundref="io__mcu__cfg_8h" startline="56">IO_PIN_MCU_0_DATA_STORAGE_EEPROM_SPI_NSS</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11daa6a9bf5c875444b48ed54169d1bae9fc" compoundref="io__cfg_8h" startline="203">IO_PIN_RESET</references>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+        <references refid="eepr__cfg_8c_1a4b6d6b586caf705466fa57e29112f62f" compoundref="eepr__cfg_8c" startline="147">eepr_spi_rxbuf</references>
+        <references refid="eepr__cfg_8c_1ae74fe3e7657dbaececf8e696752cd1d0" compoundref="eepr__cfg_8c" startline="148">eepr_spi_rxoffset</references>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" compoundref="eepr__cfg_8h" startline="184">EEPR_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a6f557dc8e24353ebbece6b57485501ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" kindref="member">EEPR_STATE_e</ref></type>
+        <definition>EEPR_STATE_e EEPR_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>EEPR_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>returns actual state of EEPROM state machine </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>state of EEPROM state machine</para></simplesect>
+<simplesect kind="return"><para>returns the current state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="342" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/nvram/eepr.c" bodystart="304" bodyend="306"/>
+        <references refid="structEEPR__STATUS__s_1a9aeb8281abca1768da51e602709ac08e" compoundref="eepr_8h" startline="98">EEPR_STATUS_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1ab14595ae571d9012a9650b3e2da964a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t EEPR_CalcChecksum</definition>
+        <argsstring>(uint8_t *dataptr, uint16_t byte_len)</argsstring>
+        <name>EEPR_CalcChecksum</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>byte_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="355" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="231" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1ab2fde6bd786a04c37296d0117870a82d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e EEPR_BkpSramCheckChksum</definition>
+        <argsstring>(EEPR_CHANNEL_ID_TYPE_e eepr_channel, uint8_t *ptr)</argsstring>
+        <name>EEPR_BkpSramCheckChksum</name>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref></type>
+          <declname>eepr_channel</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>checks the validation of the bkpsram_nvsoc checksum by comparing Backup-SRAM with eeprom data </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eepr_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel to be checked </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the startaddress of the data (in RAM), only necessary if no pointer is configured </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if checksum is OK, otherwise 0xFF </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="364" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="244" bodyend="264"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="structEEPR__CH__CFG__s_1a8c2c954fbafc7bbec4caaece40a7e5a2" compoundref="eepr__cfg_8h" startline="204">EEPR_CH_CFG_s::bkpsramptr</references>
+        <references refid="structEEPR__CH__CFG__s_1ac64b65340063d780337882c043ea909e" compoundref="eepr__cfg_8h" startline="200">EEPR_CH_CFG_s::length</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="eepr__cfg_8c_1ab14595ae571d9012a9650b3e2da964a5" compoundref="eepr__cfg_8c" startline="231" endline="239">EEPR_CalcChecksum</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1ad330919ba245caef75b47cf1a4820a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref></type>
+        <definition>EEPR_RETURNTYPE_e EEPR_GetChannelData</definition>
+        <argsstring>(EEPR_CHANNEL_ID_TYPE_e eepr_channel, uint8_t *dest_ptr)</argsstring>
+        <name>EEPR_GetChannelData</name>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref></type>
+          <declname>eepr_channel</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reads the Data of one eeprom channel function is usable as soon as the timer tasks have been initialized. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eepr_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channel to be read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*dest_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the destination of the read data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>state of epprom, returns EEPROM_OK if request was accepted, EEPR_BUSY, EEPR_ERROR or EEPR_REQUEST_PENDING if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="375" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="564" bodyend="579"/>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" compoundref="eepr__cfg_8h" startline="184">EEPR_OK</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="structEEPR__CH__CFG__s_1a8c2c954fbafc7bbec4caaece40a7e5a2" compoundref="eepr__cfg_8h" startline="204">EEPR_CH_CFG_s::bkpsramptr</references>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" compoundref="eepr__cfg_8h" startline="186">EEPR_ERROR</references>
+        <references refid="eepr__cfg_8h_1aefac79ed7e71cac9d3211a712fad2461" compoundref="eepr_8c" startline="373" endline="419">EEPR_SetStateRequest</references>
+        <references refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a50cfd5feb7ee9049ee8e943a420ea700" compoundref="eepr__cfg_8h" startline="141">EEPR_READMEMORY</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a4fbf51938cfadc93ea31f69fe2be0e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref></type>
+        <definition>EEPR_RETURNTYPE_e EEPR_SetChannelData</definition>
+        <argsstring>(EEPR_CHANNEL_ID_TYPE_e eepr_channel, uint8_t *src_ptr)</argsstring>
+        <name>EEPR_SetChannelData</name>
+        <param>
+          <type><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref></type>
+          <declname>eepr_channel</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>src_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Writes data into one eeprom channel function is usable as soon as the timer tasks have been initialized. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eepr_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channel to be read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*src_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ptr to the src of the data that should be written into the eeprom. Only necessary if no bkpsram channel is defined in eeprom channel config </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>state of epprom, returns EEPROM_OK if request was accepted, EEPR_BUSY, EEPR_ERROR or EEPR_REQUEST_PENDING if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="385" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="582" bodyend="601"/>
+        <references refid="structEEPR__CH__CFG__s_1ac64b65340063d780337882c043ea909e" compoundref="eepr__cfg_8h" startline="200">EEPR_CH_CFG_s::length</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="structEEPR__CH__CFG__s_1a8c2c954fbafc7bbec4caaece40a7e5a2" compoundref="eepr__cfg_8h" startline="204">EEPR_CH_CFG_s::bkpsramptr</references>
+        <references refid="eepr__cfg_8c_1ab14595ae571d9012a9650b3e2da964a5" compoundref="eepr__cfg_8c" startline="231" endline="239">EEPR_CalcChecksum</references>
+        <references refid="eepr__cfg_8h_1aefac79ed7e71cac9d3211a712fad2461" compoundref="eepr_8c" startline="373" endline="419">EEPR_SetStateRequest</references>
+        <references refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a41976854e7fcec78ee11ca0e9ba246b8" compoundref="eepr__cfg_8h" startline="144">EEPR_WRITEMEMORY</references>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" compoundref="eepr__cfg_8h" startline="186">EEPR_ERROR</references>
+        <references refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" compoundref="eepr__cfg_8h" startline="184">EEPR_OK</references>
+        <references refid="eepr__cfg_8c_1a5f92c515fa55d80886bd904624fe1343" compoundref="eepr__cfg_8c" startline="174" endline="176">EEPR_RemoveChDirtyFlag</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a75ad38a70e241b1332c0c4d8e965a1e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" kindref="member">EEPR_ERRORTYPES_e</ref></type>
+        <definition>EEPR_ERRORTYPES_e EEPR_InitChannelData</definition>
+        <argsstring>(void)</argsstring>
+        <name>EEPR_InitChannelData</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Updates the EEPROM data if bkpsram data are valid, otherwise uses the valid EEPROM data to update Bkpsram If both data are invalid, writes default values into corrupt channels. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="393" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.c" bodystart="425" bodyend="527"/>
+        <references refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca6862163bdc6d391b6d7f346f3c2bcd74" compoundref="eepr__cfg_8h" startline="174">EEPR_NO_ERROR</references>
+        <references refid="eepr__cfg_8c_1a7f5c064d10a65e3caae373059e6d30e3" compoundref="eepr__cfg_8c" startline="309" endline="333">EEPR_ReadChannelData</references>
+        <references refid="eepr__cfg_8h_1aec5f267cd33fccf4133b4ef479e980c1" compoundref="eepr__cfg_8h" startline="124">EEPR_CH_HEADER</references>
+        <references refid="eepr__cfg_8c_1a201f101dd5a4b7654bc741474223d572" compoundref="eepr__cfg_8c" startline="406" endline="423">EEPR_FormatCheck</references>
+        <references refid="eepr__cfg_8c_1af9c4f7773244cbd5552ed3ca5cdd4ae5" compoundref="eepr__cfg_8c" startline="266" endline="301">EEPR_SetDefaultValue</references>
+        <references refid="eepr__cfg_8c_1a7c5a68313b315c4d1fe54f8207a3fcc5" compoundref="eepr__cfg_8c" startline="341" endline="366">EEPR_BackupChannelData2Eepr</references>
+        <references refid="eepr__cfg_8h_1a291d4ec50ef4ae6731a6551fd907b4bd" compoundref="eepr__cfg_8h" startline="125">EEPR_CH_BOARD_INFO</references>
+        <references refid="rtc__cfg_8h_1a60adbc45bf3d9bb8ab529b09a66b21a0" compoundref="rtc__cfg_8h" startline="45">RTC_NVMRAM_DATAVALID_VARIABLE</references>
+        <references refid="eepr__cfg_8c_1a052c6d6c4fd9b6fe5b2c4330b1376e57" compoundref="eepr__cfg_8c" startline="158">cnt</references>
+        <references refid="eepr__cfg_8h_1aa43b77142a908c0a9f4740ec6fd06dd6" compoundref="eepr__cfg_8h" startline="79">EEPR_CHANNEL_MAX_NR</references>
+        <references refid="eepr__cfg_8c_1a62ad4bbac7d8b92d7481346b31cf187d" compoundref="eepr__cfg_8c" startline="170" endline="172">EEPR_SetChDirtyFlag</references>
+        <references refid="eepr__cfg_8h_1ae87f74a14b3c3e34cfad1365bc1f60f4" compoundref="eepr__cfg_8h" startline="128">EEPR_CH_NVSOC</references>
+        <references refid="eepr__cfg_8h_1a03a06d68256924a2813d61fbed11bf5f" compoundref="eepr__cfg_8h" startline="129">EEPR_CH_CONTACTOR</references>
+        <references refid="eepr__cfg_8h_1a5fb6ce518be4d12c0a4c336b5793918b" compoundref="eepr__cfg_8h" startline="127">EEPR_CH_OPERATING_HOURS</references>
+        <references refid="eepr__cfg_8c_1a8fe6b93853b3ce21a335df080d464b67" compoundref="eepr__cfg_8c" startline="377" endline="404">EEPR_RefreshChannelData</references>
+        <references refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca527698a3898fa3d885403880df455700" compoundref="eepr__cfg_8h" startline="177">EEPR_ERR_RD</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1a5f4ad19dec2fa0c0305d36f9a26796c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NVM_Set_soc</definition>
+        <argsstring>(SOX_SOC_s *ptr)</argsstring>
+        <name>NVM_Set_soc</name>
+        <param>
+          <type><ref refid="structSOX__SOC__s" kindref="compound">SOX_SOC_s</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Sets the soc data saved in the backup SRAM. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer where the soc data is stored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="401" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.c" bodystart="81" bodyend="95"/>
+        <references refid="mcu_8c_1aa7a3020dbc1fb1110a8c41a2989f25b0" compoundref="mcu_8c" startline="95" endline="101">MCU_DisableINT</references>
+        <references refid="eepr__cfg_8c_1a62ad4bbac7d8b92d7481346b31cf187d" compoundref="eepr__cfg_8c" startline="170" endline="172">EEPR_SetChDirtyFlag</references>
+        <references refid="eepr__cfg_8h_1ae87f74a14b3c3e34cfad1365bc1f60f4" compoundref="eepr__cfg_8h" startline="128">EEPR_CH_NVSOC</references>
+        <references refid="bkpsram__cfg_8c_1afa1f10664e4f640b018a5ff057ba0571" compoundref="bkpsram__cfg_8c" startline="52">bkpsram_nvsoc</references>
+        <references refid="structBKPSRAM__CH__NVSOC__s_1a65047bb55b85ae256f77d55373657a9c" compoundref="bkpsram__cfg_8h" startline="82">BKPSRAM_CH_NVSOC_s::data</references>
+        <references refid="structBKPSRAM__CH__NVSOC__s_1adb69ed42e7549a068c8b221788c6caeb" compoundref="bkpsram__cfg_8h" startline="83">BKPSRAM_CH_NVSOC_s::checksum</references>
+        <references refid="eepr__cfg_8c_1ab14595ae571d9012a9650b3e2da964a5" compoundref="eepr__cfg_8c" startline="231" endline="239">EEPR_CalcChecksum</references>
+        <references refid="mcu_8c_1a74382aca8f0a3c77df269579204ee9b1" compoundref="mcu_8c" startline="103" endline="110">MCU_RestoreINT</references>
+      </memberdef>
+      <memberdef kind="function" id="eepr__cfg_8h_1aad2b21ba7b320c432a7a7da2471caa1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e NVM_Get_soc</definition>
+        <argsstring>(SOX_SOC_s *dest_ptr)</argsstring>
+        <name>NVM_Get_soc</name>
+        <param>
+          <type><ref refid="structSOX__SOC__s" kindref="compound">SOX_SOC_s</ref> *</type>
+          <declname>dest_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Gets the soc data saved in the backup SRAM. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>state of charge </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="408" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/bkpsram_cfg.c" bodystart="97" bodyend="108"/>
+        <references refid="eepr__cfg_8c_1ab14595ae571d9012a9650b3e2da964a5" compoundref="eepr__cfg_8c" startline="231" endline="239">EEPR_CalcChecksum</references>
+        <references refid="bkpsram__cfg_8c_1afa1f10664e4f640b018a5ff057ba0571" compoundref="bkpsram__cfg_8c" startline="52">bkpsram_nvsoc</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the configuration for the driver for the storage in the EEPROM memory. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>23.02.2016 (date of creation) , </para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>EEPR </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>EEPR_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bkpsram__cfg_8h" kindref="compound">bkpsram_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sox_8h" kindref="compound">sox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="group__CONFIG__EEPR_1ga757570943c8ffe9be40df7c65575e646" refkind="member"><highlight class="preprocessor">#define<sp/>EEPROM_VERSION_AT25128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>EEPROM_VERSION_M95M02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="eepr__cfg_8h_1a0f3c4b7b291cec4c5445c4d45e60a5ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_HW_PROTECTION_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00<sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="eepr__cfg_8h_1a3cfaf66f084f9289895c9a2afb62cfd2" refkind="member"><highlight class="preprocessor">#define<sp/>EEPR_HW_PROTECTION_1_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04<sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="eepr__cfg_8h_1a1c95fff0baef7a21339ab8405217d4ac" refkind="member"><highlight class="preprocessor">#define<sp/>EEPR_HW_PROTECTION_2_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08<sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="eepr__cfg_8h_1a00950fa0a992b28156b008aaa070cac5" refkind="member"><highlight class="preprocessor">#define<sp/>EEPR_HW_PROTECTION_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0C<sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="group__CONFIG__EEPR_1ga26f0fa167c499d24fd5a582cae1911c6" refkind="member"><highlight class="preprocessor">#define<sp/>EEPR_HW_PROTECTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_HW_PROTECTION_NONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>EEPR_HW_PROTECTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_HW_PROTECTION_1_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>EEPR_HW_PROTECTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_HW_PROTECTION_2_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>EEPR_HW_PROTECTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_HW_PROTECTION_ALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//controls<sp/>if<sp/>one<sp/>eeprom<sp/>version<sp/>was<sp/>selected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EEPROM_VERSION_AT25128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>EEPROM_VERSION_M95M02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#error<sp/>no<sp/>Eeprom<sp/>Hardware<sp/>(IC)<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>maximum<sp/>numbers<sp/>of<sp/>channels</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="eepr__cfg_8h_1aa43b77142a908c0a9f4740ec6fd06dd6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CHANNEL_MAX_NR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>maximum<sp/>configured<sp/>channels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>maximum<sp/>length<sp/>of<sp/>channels</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="eepr__cfg_8h_1a0db02ecdee445a500043e9e2d7c75aac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_MAXLENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>maximum<sp/><sp/>channel<sp/>data<sp/>volume<sp/>in<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EEPROM_VERSION_AT25128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="eepr__cfg_8h_1a30199186a60e3e6d6be43657f6fa81a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>EEPR_PageLength<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="eepr__cfg_8h_1a89e020fb706c45c26b451f7b0ad9cdc2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>EEPR_CMDBUF_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>bytes<sp/>needed<sp/>to<sp/>send<sp/>address<sp/>and<sp/>commandbyte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>EEPROM_VERSION_M95M02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>EEPR_PageLength<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>EEPR_CMDBUF_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>bytes<sp/>needed<sp/>to<sp/>send<sp/>address<sp/>and<sp/>commandbyte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#error<sp/>no<sp/>Eeprom<sp/>Hardware<sp/>(IC)<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="eepr__cfg_8h_1a9522f2ebd974b9abbd5395016284a567" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_TXBUF_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EEPR_CH_MAXLENGTH<sp/>+<sp/>EEPR_CMDBUF_OFFSET)<sp/><sp/>//<sp/>maximum<sp/>data<sp/>+<sp/>command<sp/>byte<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>maximum<sp/>time<sp/>in<sp/>ms<sp/>which<sp/>is<sp/>needed<sp/>to<sp/>write<sp/>or<sp/>read<sp/>one<sp/>page</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="eepr__cfg_8h_1a9634c98bd6b38557b7b2fa498dbec688" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_WRITETIME_PER_PAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="eepr__cfg_8h_1a64944e59eca37f1f341763421e69f4c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_READTIME_PER_PAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="110" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da1f79ac0752203f769ca29963e84f9638" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da1f79ac0752203f769ca29963e84f9638" kindref="member">EEPR_CHANNEL_1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="111" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dae1e75e1fed5354aded142654e28ce2c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dae1e75e1fed5354aded142654e28ce2c5" kindref="member">EEPR_CHANNEL_2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="112" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da176d7cfe3065af7dfa25eea924c745f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da176d7cfe3065af7dfa25eea924c745f5" kindref="member">EEPR_CHANNEL_3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="113" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da8ec8f1c49cd5cdf78ae0424ade52871d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da8ec8f1c49cd5cdf78ae0424ade52871d" kindref="member">EEPR_CHANNEL_4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="114" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da034e969bc58cd6186ea5144b9d74c45e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da034e969bc58cd6186ea5144b9d74c45e" kindref="member">EEPR_CHANNEL_5</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="115" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da0ce27262037719efd513eda5bc28a1c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da0ce27262037719efd513eda5bc28a1c9" kindref="member">EEPR_CHANNEL_6</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="116" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da2011fd80df960f912c594d5d7b4d7e26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da2011fd80df960f912c594d5d7b4d7e26" kindref="member">EEPR_CHANNEL_7</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="117" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da147a8f12eec49eb3347e650b993066ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da147a8f12eec49eb3347e650b993066ca" kindref="member">EEPR_CHANNEL_8</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="118" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da7e6ff6b267d3562c3f8be9272e138076" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391da7e6ff6b267d3562c3f8be9272e138076" kindref="member">EEPR_CHANNEL_9</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dac95a018dc59bd976012b03af7fc7bfd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391dac95a018dc59bd976012b03af7fc7bfd4" kindref="member">EEPR_CHANNEL_MAX</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="eepr__cfg_8h_1aa43b77142a908c0a9f4740ec6fd06dd6" kindref="member">EEPR_CHANNEL_MAX_NR</ref>-1,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//Channeldefinition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="eepr__cfg_8h_1aec5f267cd33fccf4133b4ef479e980c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_HEADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="eepr__cfg_8h_1a291d4ec50ef4ae6731a6551fd907b4bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_BOARD_INFO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="eepr__cfg_8h_1a8caba5b388b1f13b637300d8f208e6c2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_HARDWARE_INFO<sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="eepr__cfg_8h_1a5fb6ce518be4d12c0a4c336b5793918b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_OPERATING_HOURS<sp/><sp/><sp/>EEPR_CHANNEL_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="eepr__cfg_8h_1ae87f74a14b3c3e34cfad1365bc1f60f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_NVSOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="eepr__cfg_8h_1a03a06d68256924a2813d61fbed11bf5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_CONTACTOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="eepr__cfg_8h_1ad1f048a5774fff515c3e6a87c0bdf4a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_STATISTICS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="eepr__cfg_8h_1a6cce24fd9c878bfdf887ce816528238c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_CH_USER_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPR_CHANNEL_8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a9a95c6d1bb9529b6f2d6939a14c2a3b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a9a95c6d1bb9529b6f2d6939a14c2a3b3" kindref="member">EEPR_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01af3da542ebf706545c5a4df1950b3f00c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01af3da542ebf706545c5a4df1950b3f00c" kindref="member">EEPR_INIT_INPROCESS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a1e96ba51dcc59eaa942c5299c095eccd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a1e96ba51dcc59eaa942c5299c095eccd" kindref="member">EEPR_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a50cfd5feb7ee9049ee8e943a420ea700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a50cfd5feb7ee9049ee8e943a420ea700" kindref="member">EEPR_READMEMORY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01adab9a1ac23346ee5d441c92df00789ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01adab9a1ac23346ee5d441c92df00789ed" kindref="member">EEPR_READMEMORY_INPROCESS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a31eb5a04d01dfb76a3c419cc1f270e06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a31eb5a04d01dfb76a3c419cc1f270e06" kindref="member">EEPR_CHECK_DATA</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a41976854e7fcec78ee11ca0e9ba246b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a41976854e7fcec78ee11ca0e9ba246b8" kindref="member">EEPR_WRITEMEMORY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01aea58da32e08705324a3298d7eb66d3a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01aea58da32e08705324a3298d7eb66d3a2" kindref="member">EEPR_WRITE_ENABLE_INPROCESS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a516e7fd7a42056c41ad91307dfe158f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a516e7fd7a42056c41ad91307dfe158f4" kindref="member">EEPR_WRITEMEMORY_ENABLED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ae4f5832d2e7e54bb87e7da16a6144b4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ae4f5832d2e7e54bb87e7da16a6144b4f" kindref="member">EEPR_WRITEMEMORY_INPROCESS</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a8b1ac8d46651309cf29aa3169ae40b7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a8b1ac8d46651309cf29aa3169ae40b7f" kindref="member">EEPR_INIT_PROTECTION_CFG</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01af0536dfc256910a851f92d11056ffbac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01af0536dfc256910a851f92d11056ffbac" kindref="member">EEPR_ENABLE_PROTECTION_CFG</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ad96d663160de9d137ab09ff2db11faf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ad96d663160de9d137ab09ff2db11faf9" kindref="member">EEPR_PROTECTION_CFG_ENABLED</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>12,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a6934286faf2780c4c46d6bf7a75a22b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a6934286faf2780c4c46d6bf7a75a22b1" kindref="member">EEPR_PROTECTION_CFG_INPROCESS</ref><sp/><sp/><sp/>=<sp/>13,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01afa6ed2a346e0222fc3669f2a5839a9ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01afa6ed2a346e0222fc3669f2a5839a9ef" kindref="member">EEPR_NO_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xF0,<sp/></highlight></codeline>
+<codeline lineno="153" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ad5948a084f808c8b388a8dcc9bfdf270" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ad5948a084f808c8b388a8dcc9bfdf270" kindref="member">EEPR_PROTECTION_FAILED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFA,<sp/></highlight></codeline>
+<codeline lineno="154" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ae2a251b74b00065b6f61f5b847700a20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ae2a251b74b00065b6f61f5b847700a20" kindref="member">EEPR_WRITEFAILED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFB,<sp/></highlight></codeline>
+<codeline lineno="155" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01afc398f79a53e84b5905095035bf442fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01afc398f79a53e84b5905095035bf442fd" kindref="member">EEPR_READFAILED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFC,<sp/></highlight></codeline>
+<codeline lineno="156" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ab6bef7898773ff6fa85bedef545a54cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01ab6bef7898773ff6fa85bedef545a54cc" kindref="member">EEPR_INITFAILED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFD,<sp/></highlight></codeline>
+<codeline lineno="157" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a9a749193d7c9d1bc83962d1e286e30b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a9a749193d7c9d1bc83962d1e286e30b9" kindref="member">EEPR_UNINITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFE,<sp/></highlight></codeline>
+<codeline lineno="158" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a5c1fd1fb55a41ec4284e02cf85a05efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a5c1fd1fb55a41ec4284e02cf85a05efa" kindref="member">EEPR_DISABLED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFF,<sp/></highlight></codeline>
+<codeline lineno="159" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a68db110331b92449988fe40426a5c9db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01a68db110331b92449988fe40426a5c9db" kindref="member">EEPR_STATEREQFAILED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x12,<sp/></highlight></codeline>
+<codeline lineno="160" refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01aab2a2d8dcfee7bc4a000fbabec7ecaea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01aab2a2d8dcfee7bc4a000fbabec7ecaea" kindref="member">EEPR_WRITEPROTECTED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x11,<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}<sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" kindref="member">EEPR_STATE_e</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="164" refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956cac65b093d723b1cc28d66062dc85f0fa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956cac65b093d723b1cc28d66062dc85f0fa6" kindref="member">EEPR_REQ_TRANSITIONOK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956ca6fe71a75009022b82d434cbc4002128d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956ca6fe71a75009022b82d434cbc4002128d" kindref="member">EEPR_REQ_WRITEPROTECTED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956cac509c39cb131021cc493a8de6be2e1d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956cac509c39cb131021cc493a8de6be2e1d9" kindref="member">EEPR_REQ_TRANSITIONFAIL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956ca8e512ecb032e4de4b9278f6eec719dba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956ca8e512ecb032e4de4b9278f6eec719dba" kindref="member">EEPR_REQ_BUSY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}<ref refid="eepr__cfg_8h_1ac5210078f3ddf29efdfab395e9a3956c" kindref="member">EEPR_REQUEST_STATE_e</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="174" refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca6862163bdc6d391b6d7f346f3c2bcd74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca6862163bdc6d391b6d7f346f3c2bcd74" kindref="member">EEPR_NO_ERROR</ref><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="175" refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca494be7b74d55612f945150f58b7716d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca494be7b74d55612f945150f58b7716d7" kindref="member">EEPR_INIT_ERROR</ref><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="176" refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09caf242750190769397418200fd80494277" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09caf242750190769397418200fd80494277" kindref="member">EEPR_ERR_WR</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177" refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca527698a3898fa3d885403880df455700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09ca527698a3898fa3d885403880df455700" kindref="member">EEPR_ERR_RD</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}<sp/><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" kindref="member">EEPR_ERRORTYPES_e</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="184" refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa31319fdf1023d5429b7c8c6504265fa6" kindref="member">EEPR_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faafe59f00a52ce8220fab1534fb6fb9c17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faafe59f00a52ce8220fab1534fb6fb9c17" kindref="member">EEPR_BUSY</ref><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="186" refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa073257c20740131173ec8c60eabb210f" kindref="member">EEPR_ERROR</ref><sp/><sp/><sp/>=<sp/>2,<sp/><sp/></highlight></codeline>
+<codeline lineno="187" refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faacc6bf50798e20d2724aafdd77d4e4f16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faacc6bf50798e20d2724aafdd77d4e4f16" kindref="member">EEPR_REQUEST_PENDING</ref><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="188" refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa55f20730744477271e0053550810bfaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000faa55f20730744477271e0053550810bfaf" kindref="member">EEPR_WR_PROTECTED</ref><sp/>=<sp/>4,<sp/><sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}<sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="193" refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518a16993179f235b7cf496d4427ec7f7739" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518a16993179f235b7cf496d4427ec7f7739" kindref="member">EEPR_SW_WRITE_UNPROTECTED</ref><sp/><sp/>=<sp/>0,<sp/><sp/></highlight></codeline>
+<codeline lineno="194" refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518aec7903c78b2c9d2ef0febb72d31494be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518aec7903c78b2c9d2ef0febb72d31494be" kindref="member">EEPR_SW_WRITE_PROTECTED</ref><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}<sp/><ref refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518" kindref="member">EEPR_SW_WRITEPROTECTION_e</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="structEEPR__CH__CFG__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199" refid="structEEPR__CH__CFG__s_1a0c8541db8d9e7569ba361a76747847e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__CH__CFG__s_1a0c8541db8d9e7569ba361a76747847e0" kindref="member">eepromaddress</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="200" refid="structEEPR__CH__CFG__s_1ac64b65340063d780337882c043ea909e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__CH__CFG__s_1ac64b65340063d780337882c043ea909e" kindref="member">length</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201" refid="structEEPR__CH__CFG__s_1a1a323f97cc250846ca6f8536af8aae8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/><ref refid="structEEPR__CH__CFG__s_1a1a323f97cc250846ca6f8536af8aae8a" kindref="member">channelid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202" refid="structEEPR__CH__CFG__s_1affe94181763010f7c51f06475af573af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__CH__CFG__s_1affe94181763010f7c51f06475af573af" kindref="member">chksumaddress</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203" refid="structEEPR__CH__CFG__s_1a2a5c25f512b809d1f214842eef8b737a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="eepr__cfg_8h_1a22829d44287f66c6e9b0947ae6457518" kindref="member">EEPR_SW_WRITEPROTECTION_e</ref><sp/><ref refid="structEEPR__CH__CFG__s_1a2a5c25f512b809d1f214842eef8b737a" kindref="member">writeprotection</ref>;<sp/></highlight></codeline>
+<codeline lineno="204" refid="structEEPR__CH__CFG__s_1a8c2c954fbafc7bbec4caaece40a7e5a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="structEEPR__CH__CFG__s_1a8c2c954fbafc7bbec4caaece40a7e5a2" kindref="member">bkpsramptr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}<sp/><ref refid="structEEPR__CH__CFG__s" kindref="compound">EEPR_CH_CFG_s</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//@FIXME<sp/>comments<sp/>missing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="structEEPR__CALIB__STATISTICS__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210" refid="structEEPR__CALIB__STATISTICS__s_1a8b974be9f8b1779637d7c0a45790aac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1a8b974be9f8b1779637d7c0a45790aac4" kindref="member">u_cell_max</ref>;</highlight></codeline>
+<codeline lineno="211" refid="structEEPR__CALIB__STATISTICS__s_1afa1306b6ecb40b6b4ec117a4d78ea815" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1afa1306b6ecb40b6b4ec117a4d78ea815" kindref="member">u_cell_min</ref>;</highlight></codeline>
+<codeline lineno="212" refid="structEEPR__CALIB__STATISTICS__s_1a01c19dccefc963c72740321c002e8dc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1a01c19dccefc963c72740321c002e8dc0" kindref="member">u_temperature_max</ref>;</highlight></codeline>
+<codeline lineno="213" refid="structEEPR__CALIB__STATISTICS__s_1a71022dc0692e567fb67542467c7ea214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1a71022dc0692e567fb67542467c7ea214" kindref="member">u_temperature_min</ref>;</highlight></codeline>
+<codeline lineno="214" refid="structEEPR__CALIB__STATISTICS__s_1a883a37f03ab14cc95c6e8b2fd6980cda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1a883a37f03ab14cc95c6e8b2fd6980cda" kindref="member">current_max</ref>;</highlight></codeline>
+<codeline lineno="215" refid="structEEPR__CALIB__STATISTICS__s_1a84b9f3f0634e49fd79b0090aef511e6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1a84b9f3f0634e49fd79b0090aef511e6f" kindref="member">current_min</ref>;</highlight></codeline>
+<codeline lineno="216" refid="structEEPR__CALIB__STATISTICS__s_1a60f8f52c2f8a2f66fcd9493ba11e8abe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/>dummy[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>future<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="structEEPR__CALIB__STATISTICS__s_1ac75e2a4fb69d921fa7d30ab69a7a1d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structEEPR__CALIB__STATISTICS__s_1ac75e2a4fb69d921fa7d30ab69a7a1d5a" kindref="member">checksum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>checksum<sp/>of<sp/>data<sp/>block<sp/>(must<sp/>be<sp/>last<sp/>position)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}<ref refid="structEEPR__CALIB__STATISTICS__s" kindref="compound">EEPR_CALIB_STATISTICS_s</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//@FIXME<sp/>comments<sp/>missing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="structEEPR__HEADER__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222" refid="structEEPR__HEADER__s_1a0b1b2700bb01c7cc7eacd304ed808226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structEEPR__HEADER__s_1a0b1b2700bb01c7cc7eacd304ed808226" kindref="member">versionnumbermajor</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223" refid="structEEPR__HEADER__s_1a8aac964d2ad9ba3e4a94d7c7d6950d36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structEEPR__HEADER__s_1a8aac964d2ad9ba3e4a94d7c7d6950d36" kindref="member">versionnumberminor</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224" refid="structEEPR__HEADER__s_1a268c098b4c4b0261dce4f3acc9c8716d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structEEPR__HEADER__s_1a268c098b4c4b0261dce4f3acc9c8716d" kindref="member">eepr_headerpattern</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225" refid="structEEPR__HEADER__s_1a2a7fb1e98809bc371004d9841eadb2d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__HEADER__s_1a2a7fb1e98809bc371004d9841eadb2d2" kindref="member">dummy2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226" refid="structEEPR__HEADER__s_1a9f02bff9d0384efc9681201db9788c20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__HEADER__s_1a9f02bff9d0384efc9681201db9788c20" kindref="member">dummy3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227" refid="structEEPR__HEADER__s_1a452bb3c0a5c0b45b1685dcd66adc416b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>reserved[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228" refid="structEEPR__HEADER__s_1a505be3d77f940f8820a2d8fb78cc222b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>reserved2[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229" refid="structEEPR__HEADER__s_1a35b6256f290dafca965679dcd682aff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structEEPR__HEADER__s_1a35b6256f290dafca965679dcd682aff9" kindref="member">chksum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}<ref refid="structEEPR__HEADER__s" kindref="compound">EEPR_HEADER_s</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//@FIXME<sp/>comments<sp/>missing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="structEEPR__BOARD__INFO__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234" refid="structEEPR__BOARD__INFO__s_1a6d09fb4b467032675ca68c8097be8be4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__BOARD__INFO__s_1a6d09fb4b467032675ca68c8097be8be4" kindref="member">network_nodeID</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235" refid="structEEPR__BOARD__INFO__s_1a49b02ce5d5b83dbcae7243c66e97e4c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEEPR__BOARD__INFO__s_1a49b02ce5d5b83dbcae7243c66e97e4c7" kindref="member">reserved_u16</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="structEEPR__BOARD__INFO__s_1a44f215f482edb7f0242f776adf3da72b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>reserved[8-2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="structEEPR__BOARD__INFO__s_1a62312b7c811d29293f5f8f494fa8c502" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structEEPR__BOARD__INFO__s_1a62312b7c811d29293f5f8f494fa8c502" kindref="member">chksum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}<ref refid="structEEPR__BOARD__INFO__s" kindref="compound">EEPR_BOARD_INFO_s</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="eepr__cfg_8h_1a2fdb25c1345c0bcfd60e7f3784665bbd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EEPR_DEFAULT_NETWORK_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFFF<sp/><sp/></highlight><highlight class="comment">/*<sp/>Default<sp/>NodeID<sp/>of<sp/>Primary<sp/>Controller*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="eepr__cfg_8h_1aa947426be70f62e2ed684fa7fdcc94c9" refkind="member"><highlight class="preprocessor">#define<sp/>EEPR_ReceiveData(bufferptr,length)<sp/><sp/><sp/>SPI_ReceiveData(bufferptr,length)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="eepr__cfg_8h_1a4e93fb3b1da996d926379a00a49de44f" refkind="member"><highlight class="preprocessor">#define<sp/>EEPR_SendData(bufferptr,length,receiveoffset)<sp/><sp/><sp/>SPI_SendData(bufferptr,length,receiveoffset)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="eepr__cfg_8h_1afbb08ccf64ff2f34cdc75ac1e8d559a9" kindref="member">eepr_ch_dirtyflag</ref>[<ref refid="eepr__cfg_8h_1aa43b77142a908c0a9f4740ec6fd06dd6" kindref="member">EEPR_CHANNEL_MAX_NR</ref>];</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="eepr__cfg_8h_1a4947ba2cc8416ab4a596d615ea9404eb" kindref="member">eepr_bkpsram_buffer</ref>[<ref refid="eepr__cfg_8h_1a0db02ecdee445a500043e9e2d7c75aac" kindref="member">EEPR_CH_MAXLENGTH</ref>];</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEEPR__CH__CFG__s" kindref="compound">EEPR_CH_CFG_s</ref><sp/><ref refid="eepr__cfg_8h_1a95230ca61b3061e703c650b2b57436ab" kindref="member">eepr_ch_cfg</ref>[<ref refid="eepr__cfg_8h_1aa43b77142a908c0a9f4740ec6fd06dd6" kindref="member">EEPR_CHANNEL_MAX_NR</ref>];</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEEPR__HEADER__s" kindref="compound">EEPR_HEADER_s</ref><sp/><ref refid="eepr__cfg_8h_1a19c6fcfaa05f3bf4a76e42b8325350f9" kindref="member">eepr_header_default</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEEPR__BOARD__INFO__s" kindref="compound">EEPR_BOARD_INFO_s</ref><sp/><ref refid="eepr__cfg_8h_1a11c266ecf2d94361a4f046799b275cb9" kindref="member">eepr_board_info</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEEPR__CALIB__STATISTICS__s" kindref="compound">EEPR_CALIB_STATISTICS_s</ref><sp/><ref refid="eepr__cfg_8h_1aafcc04d7a75cfd3628a5ec0d73efc4ec" kindref="member">defaultcalibstatistics</ref>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="eepr__cfg_8h_1a4fd38b08beb7717156e0d2fb1733aa95" kindref="member">eepr_WR_RD_buffer</ref>[<ref refid="eepr__cfg_8h_1a0db02ecdee445a500043e9e2d7c75aac" kindref="member">EEPR_CH_MAXLENGTH</ref>];</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="eepr__cfg_8h_1a53d0607eacac8645e03d519a78cbd752" kindref="member">eepr_WR_RD_Chksum</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" kindref="member">EEPR_ERRORTYPES_e</ref><sp/><ref refid="eepr__cfg_8h_1ae2c079158d0210850505e7567f0c75bf" kindref="member">EEPR_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1a62ad4bbac7d8b92d7481346b31cf187d" kindref="member">EEPR_SetChDirtyFlag</ref>(<ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/>eepr_channel);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1a5f92c515fa55d80886bd904624fe1343" kindref="member">EEPR_RemoveChDirtyFlag</ref>(<ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/>eepr_channel);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref><sp/><ref refid="eepr__cfg_8h_1aefac79ed7e71cac9d3211a712fad2461" kindref="member">EEPR_SetStateRequest</ref>(<ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" kindref="member">EEPR_STATE_e</ref><sp/>state_req,<sp/><ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/>channel,<sp/>uint8_t*<sp/>ramaddress);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref><sp/><ref refid="eepr__cfg_8h_1aa1d528bec397c49c6332f1aae6238376" kindref="member">SPI_ReceiveData</ref>(uint8_t*<sp/>buffer,<sp/>uint16_t<sp/>length);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref><sp/><ref refid="eepr__cfg_8h_1a42790ff11eb0e6907ac836a2e7186bba" kindref="member">SPI_SendData</ref>(uint8_t*<sp/>data,<sp/>uint16_t<sp/>length,<sp/>uint16_t<sp/>receiveoffset);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1ace67e4d7da7c0e08fa488804da8f0b01" kindref="member">EEPR_STATE_e</ref><sp/><ref refid="eepr__cfg_8h_1a6f557dc8e24353ebbece6b57485501ca" kindref="member">EEPR_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>bad<sp/>confusing<sp/>use<sp/>of<sp/>EEPR<sp/>in<sp/>EEPR<sp/>module<sp/>and<sp/>BKPSRAM<sp/>module.<sp/>maybe<sp/>move<sp/>this<sp/>checksum<sp/>to<sp/>utils<sp/>or<sp/>similar<sp/>and<sp/>use<sp/>define<sp/>here?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="eepr__cfg_8h_1ab14595ae571d9012a9650b3e2da964a5" kindref="member">EEPR_CalcChecksum</ref>(uint8_t<sp/>*dataptr,<sp/>uint16_t<sp/>byte_len);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><sp/><ref refid="eepr__cfg_8h_1ab2fde6bd786a04c37296d0117870a82d" kindref="member">EEPR_BkpSramCheckChksum</ref>(<ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/>eepr_channel,<sp/>uint8_t<sp/>*ptr);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref><sp/><ref refid="eepr__cfg_8h_1ad330919ba245caef75b47cf1a4820a0b" kindref="member">EEPR_GetChannelData</ref>(<ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/>eepr_channel,<sp/>uint8_t<sp/>*dest_ptr);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1aa089343a93450f12599ff603314000fa" kindref="member">EEPR_RETURNTYPE_e</ref><sp/><ref refid="eepr__cfg_8h_1a4fbf51938cfadc93ea31f69fe2be0e4f" kindref="member">EEPR_SetChannelData</ref>(<ref refid="eepr__cfg_8h_1a85e8f26b53c07e9c87edd27b7e54391d" kindref="member">EEPR_CHANNEL_ID_TYPE_e</ref><sp/>eepr_channel,<sp/>uint8_t<sp/>*src_ptr);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1adec8a2c41a221184c7993eef38c8f09c" kindref="member">EEPR_ERRORTYPES_e</ref><sp/><ref refid="eepr__cfg_8h_1a75ad38a70e241b1332c0c4d8e965a1e1" kindref="member">EEPR_InitChannelData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="eepr__cfg_8h_1a5f4ad19dec2fa0c0305d36f9a26796c7" kindref="member">NVM_Set_soc</ref>(<ref refid="structSOX__SOC__s" kindref="compound">SOX_SOC_s</ref>*<sp/>ptr);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="eepr__cfg_8h_1aad2b21ba7b320c432a7a7da2471caa1b" kindref="member">NVM_Get_soc</ref>(<ref refid="structSOX__SOC__s" kindref="compound">SOX_SOC_s</ref><sp/>*dest_ptr);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>EEPR_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h"/>
+  </compounddef>
+</doxygen>

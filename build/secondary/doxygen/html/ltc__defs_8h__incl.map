@@ -1,0 +1,14 @@
+<map id="ltc_defs.h" name="ltc_defs.h">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="51,304,126,331"/>
+<area shape="rect" id="node5" href="$database_8h.html" title="Database module header. " alt="" coords="149,80,236,107"/>
+<area shape="rect" id="node8" href="$spi_8h.html" title="Headers for the driver for the serial peripheral interface module (encapsulation of some HAL function..." alt="" coords="282,80,333,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,379,186,405"/>
+<area shape="rect" id="node6" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="137,155,248,181"/>
+<area shape="rect" id="node7" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="123,229,263,256"/>
+<area shape="rect" id="node9" href="$spi__cfg_8h.html" title="Headers for the configuration for the serial peripheral interface module. " alt="" coords="291,155,366,181"/>
+<area shape="rect" id="node10" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="287,229,370,256"/>
+<area shape="rect" id="node15" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="394,229,437,256"/>
+<area shape="rect" id="node12" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="338,304,405,331"/>
+<area shape="rect" id="node13" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="238,379,361,405"/>
+<area shape="rect" id="node14" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="385,379,483,405"/>
+</map>

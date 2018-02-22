@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_21a8c50fd288b9b472edec46fe8c4644" kind="dir">
+    <compoundname>config</compoundname>
+    <innerfile refid="appltask__cfg_8c">appltask_cfg.c</innerfile>
+    <innerfile refid="appltask__cfg_8h">appltask_cfg.h</innerfile>
+    <innerfile refid="bms__cfg_8c">bms_cfg.c</innerfile>
+    <innerfile refid="bms__cfg_8h">bms_cfg.h</innerfile>
+    <innerfile refid="sox__cfg_8c">sox_cfg.c</innerfile>
+    <innerfile refid="sox__cfg_8h">sox_cfg.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/"/>
+  </compounddef>
+</doxygen>

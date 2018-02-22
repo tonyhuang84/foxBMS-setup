@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCANS__signal__s" kind="struct" language="C++" prot="public">
+    <compoundname>CANS_signal_s</compoundname>
+    <includes refid="cansignal__cfg_8h" local="no">cansignal_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCANS__signal__s_1ad49bf38a21aa3f798a99691d228f8882" prot="public" static="no" mutable="no">
+        <type><ref refid="unionCANS__messages__t" kindref="compound">CANS_messages_t</ref></type>
+        <definition>CANS_messages_t CANS_signal_s::msgIdx</definition>
+        <argsstring></argsstring>
+        <name>msgIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="627" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1a89169c8eea6dd1f792b828b19974d4e0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CANS_signal_s::bit_position</definition>
+        <argsstring></argsstring>
+        <name>bit_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="628" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1a8d3a2074ed029b0ffaea5ba1e10bfa04" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CANS_signal_s::bit_length</definition>
+        <argsstring></argsstring>
+        <name>bit_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="629" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1aa64f65fb663c8a05d56d8be16fd05697" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CANS_signal_s::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="630" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1a9f7b03efc15a30bcb67e83898526a2e7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CANS_signal_s::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="631" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1af6f88d38ca0971aaf347c2742e38dd87" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CANS_signal_s::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="632" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1a2dad74723d594c7ac8a68b02a6b0d873" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CANS_signal_s::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="633" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1a6f6cfe20670b728efee60498bf51e321" prot="public" static="no" mutable="no">
+        <type><ref refid="can__cfg_8h_1a2e8b3cf405327f8f944437425dfc2fff" kindref="member">can_callback_funcPtr</ref></type>
+        <definition>can_callback_funcPtr CANS_signal_s::setter</definition>
+        <argsstring></argsstring>
+        <name>setter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="634" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__signal__s_1ab8901c9d328e1d934dde0d7b6760e308" prot="public" static="no" mutable="no">
+        <type><ref refid="can__cfg_8h_1a2e8b3cf405327f8f944437425dfc2fff" kindref="member">can_callback_funcPtr</ref></type>
+        <definition>can_callback_funcPtr CANS_signal_s::getter</definition>
+        <argsstring></argsstring>
+        <name>getter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="635" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>type definition for structure of a CAN signal</para><para>until now, multiplexed signal handling is hard coded in the corresponding getters/setters. For use of multiplexed signals refer to description in documentation.</para><para>support for automatic scaling is planned, but not implemented yet, so min, max, factor and offset are not relevant. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="39">
+        <label>CANS_messages_t</label>
+        <link refid="unionCANS__messages__t"/>
+      </node>
+      <node id="38">
+        <label>CANS_signal_s</label>
+        <link refid="structCANS__signal__s"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>msgIdx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="626" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="626" bodyend="636"/>
+    <listofallmembers>
+      <member refid="structCANS__signal__s_1a8d3a2074ed029b0ffaea5ba1e10bfa04" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>bit_length</name></member>
+      <member refid="structCANS__signal__s_1a89169c8eea6dd1f792b828b19974d4e0" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>bit_position</name></member>
+      <member refid="structCANS__signal__s_1af6f88d38ca0971aaf347c2742e38dd87" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>factor</name></member>
+      <member refid="structCANS__signal__s_1ab8901c9d328e1d934dde0d7b6760e308" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>getter</name></member>
+      <member refid="structCANS__signal__s_1a9f7b03efc15a30bcb67e83898526a2e7" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>max</name></member>
+      <member refid="structCANS__signal__s_1aa64f65fb663c8a05d56d8be16fd05697" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>min</name></member>
+      <member refid="structCANS__signal__s_1ad49bf38a21aa3f798a99691d228f8882" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>msgIdx</name></member>
+      <member refid="structCANS__signal__s_1a2dad74723d594c7ac8a68b02a6b0d873" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>offset</name></member>
+      <member refid="structCANS__signal__s_1a6f6cfe20670b728efee60498bf51e321" prot="public" virt="non-virtual"><scope>CANS_signal_s</scope><name>setter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

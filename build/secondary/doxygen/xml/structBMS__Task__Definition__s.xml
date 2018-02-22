@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structBMS__Task__Definition__s" kind="struct" language="C++" prot="public">
+    <compoundname>BMS_Task_Definition_s</compoundname>
+    <includes refid="os_8h" local="no">os.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BMS_Task_Definition_s::Phase</definition>
+        <argsstring></argsstring>
+        <name>Phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(ms) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="127" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BMS_Task_Definition_s::CycleTime</definition>
+        <argsstring></argsstring>
+        <name>CycleTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(ms) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="128" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" prot="public" static="no" mutable="no">
+        <type><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912a" kindref="member">OS_PRIORITY_e</ref></type>
+        <definition>OS_PRIORITY_e BMS_Task_Definition_s::Priority</definition>
+        <argsstring></argsstring>
+        <name>Priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="129" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BMS_Task_Definition_s::Stacksize</definition>
+        <argsstring></argsstring>
+        <name>Stacksize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the size, in words, of the stack allocated to the idle task. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="130" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct for FreeRTOS task definition </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="126" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="126" bodyend="131"/>
+    <listofallmembers>
+      <member refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" prot="public" virt="non-virtual"><scope>BMS_Task_Definition_s</scope><name>CycleTime</name></member>
+      <member refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" prot="public" virt="non-virtual"><scope>BMS_Task_Definition_s</scope><name>Phase</name></member>
+      <member refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" prot="public" virt="non-virtual"><scope>BMS_Task_Definition_s</scope><name>Priority</name></member>
+      <member refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" prot="public" virt="non-virtual"><scope>BMS_Task_Definition_s</scope><name>Stacksize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

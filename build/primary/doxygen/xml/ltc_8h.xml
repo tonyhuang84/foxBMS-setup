@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ltc_8h" kind="file" language="C++">
+    <compoundname>ltc.h</compoundname>
+    <includes refid="ltc__cfg_8h" local="yes">ltc_cfg.h</includes>
+    <includes refid="ltc__defs_8h" local="yes">ltc_defs.h</includes>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="ltc_8c" local="yes">ltc.c</includedby>
+    <includedby refid="meas_8c" local="yes">meas.c</includedby>
+    <incdepgraph>
+      <node id="1835">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="1836" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+      </node>
+      <node id="1834">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+      </node>
+      <node id="1825">
+        <label>stdint.h</label>
+      </node>
+      <node id="1832">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1827">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1828" relation="include">
+        </childnode>
+      </node>
+      <node id="1822">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1831">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1821">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="1826">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="1836">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+      </node>
+      <node id="1830">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1828">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+      </node>
+      <node id="1823">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1838">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1839">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="1837">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structLTC__ERRORTABLE__s" prot="public">LTC_ERRORTABLE_s</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ltc_8h_1accb6d35a38500c642797d2f7b32f44cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LTC_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the LTC driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the LTC state machine. It must be called time-triggered, every 1ms.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="69" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="592" bodyend="1891"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8faf4e66343294c7497a36ec9f6a2aca28e" compoundref="ltc__defs_8h" startline="360">LTC_STATE_NO_REQUEST</references>
+        <references refid="ltc__defs_8h_1adea19c9f914aa41eedbc3f3f39ab38e2a07f4ce2ab60d13131fe74d6f9d6003da" compoundref="ltc__defs_8h" startline="54">LTC_ADCMODE_UNDEFINED</references>
+        <references refid="ltc__defs_8h_1a73470c378a2a93ee4e6d1c0a6ebb6455a3b6a6403ef212829cd2f8b62f169c27a" compoundref="ltc__defs_8h" startline="67">LTC_ADCMEAS_UNDEFINED</references>
+        <references refid="ltc_8c_1a2c6b4e12d8e3060b3d80f3313ddda46b" compoundref="ltc_8c" startline="507" endline="519">LTC_CheckReEntrance</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="802" endline="811">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa56131cc6b0b25495d9484c5562938a4e" compoundref="diag__cfg_8h" startline="296">DIAG_SYSMON_LTC_ID</references>
+        <references refid="structLTC__STATE__s_1ae0214743a85df810f2635a718ff304a4" compoundref="ltc__defs_8h" startline="507">LTC_STATE_s::check_spi_flag</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="structLTC__STATE__s_1a8f4edcd404244101bb5e534ea3fc76bc" compoundref="ltc__defs_8h" startline="466">LTC_STATE_s::timer</references>
+        <references refid="structLTC__STATE__s_1a331332adfbd0bcc3371a2dab193ce88b" compoundref="ltc__defs_8h" startline="484">LTC_STATE_s::triggerentry</references>
+        <references refid="spi_8c_1a27af1ec96fd2cb03b6e6739372f8aac3" compoundref="spi_8c" startline="292" endline="298">SPI_IsTransmitOngoing</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="structLTC__STATE__s_1a9818917df5fe61ad9aac40a6e4b9e11a" compoundref="ltc__defs_8h" startline="469">LTC_STATE_s::state</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a07fdad695f6f58fa8be1d79bb85e070e" compoundref="ltc__defs_8h" startline="83">LTC_STATEMACH_UNINITIALIZED</references>
+        <references refid="ltc_8c_1a6f6b3ee5f1e8846fb828c133a6d74dd9" compoundref="ltc_8c" startline="563" endline="575">LTC_TransferStateRequest</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa32d31ccbfce34084aee81b9d82d8c647" compoundref="ltc__defs_8h" startline="336">LTC_STATE_INIT_REQUEST</references>
+        <references refid="ltc_8c_1a1028fcbe44c5b5349988b8aa8e2b28aa" compoundref="ltc_8c" startline="66">LTC_SAVELASTSTATES</references>
+        <references refid="ltc__cfg_8h_1a58650dce0cfbc661f38b84bf26e5d310" compoundref="ltc__cfg_8h" startline="137">LTC_STATEMACH_SHORTTIME</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a05636b834b23c22d10abde17efd8267a" compoundref="ltc__defs_8h" startline="84">LTC_STATEMACH_INITIALIZATION</references>
+        <references refid="structLTC__STATE__s_1a68f0fb4a796f73cca2fce65402e23c1b" compoundref="ltc__defs_8h" startline="470">LTC_STATE_s::substate</references>
+        <references refid="ltc__defs_8h_1a29b6b1413309c192a7751d9b5eae2076a3285a0542499150d106aaf61b28e932c" compoundref="ltc__defs_8h" startline="131">LTC_ENTRY_UNINITIALIZED</references>
+        <references refid="structLTC__STATE__s_1ac12ba51727d64a23407affe8becf9068" compoundref="ltc__defs_8h" startline="474">LTC_STATE_s::adcMode</references>
+        <references refid="structLTC__STATE__s_1a84c6501bbd0da00e3cc7a9f0a002505c" compoundref="ltc__defs_8h" startline="478">LTC_STATE_s::adcMeasCh</references>
+        <references refid="structLTC__STATE__s_1ac9dcdebbd57b115a418f615536fa6ee8" compoundref="ltc__defs_8h" startline="483">LTC_STATE_s::ErrRequestCounter</references>
+        <references refid="ltc_8c_1aef45ef51def6b02fc2d181e0c6aa83b2" compoundref="ltc_8c" startline="3162" endline="3186">LTC_SetTransferTimes</references>
+        <references refid="structLTC__STATE__s_1add9b1b77103adc44f7c7f3098badf560" compoundref="ltc__defs_8h" startline="490">LTC_STATE_s::muxmeas_seqptr</references>
+        <references refid="ltc__cfg_8c_1a36b044810a3f9d1602f286caf8846f68" compoundref="ltc__cfg_8c" startline="169">ltc_mux_seq</references>
+        <references refid="structLTC__MUX__SEQUENZ__s_1a02431485033db34d60cd1479b799c4cf" compoundref="ltc__defs_8h" startline="398">LTC_MUX_SEQUENZ_s::seqptr</references>
+        <references refid="structLTC__STATE__s_1ad59ebf8768feb4ee9896e208b5c0af8c" compoundref="ltc__defs_8h" startline="492">LTC_STATE_s::muxmeas_nr_end</references>
+        <references refid="structLTC__MUX__SEQUENZ__s_1a14f04f77cf510015f1bb5e57cd0e4403" compoundref="ltc__defs_8h" startline="397">LTC_MUX_SEQUENZ_s::nr_of_steps</references>
+        <references refid="structLTC__STATE__s_1a74e1f92007f84c3a0268187b124e01f6" compoundref="ltc__defs_8h" startline="491">LTC_STATE_s::muxmeas_seqendptr</references>
+        <references refid="ltc__defs_8h_1a046991d8f8ab352dad7ac39029e4c34ba2d2f77083a7615fe667b722321402673" compoundref="ltc__defs_8h" startline="139">LTC_ENTRY_INITIALIZATION</references>
+        <references refid="ltc__cfg_8h_1a0a508383db92a1b11229e3d16711d40f" compoundref="ltc__cfg_8h" startline="247">LTC_SendWakeUp</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="450" endline="484">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1a388b7673ede2627ab3ea99f231e943a8" compoundref="diag__cfg_8h" startline="162">DIAG_CH_LTC_SPI</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" compoundref="diag__id__cfg_8h" startline="43">DIAG_EVENT_OK</references>
+        <references refid="ltc__defs_8h_1a046991d8f8ab352dad7ac39029e4c34ba13d2ad30f2de0e4cc44a121a19c854a7" compoundref="ltc__defs_8h" startline="141">LTC_RE_ENTRY_INITIALIZATION</references>
+        <references refid="ltc__cfg_8h_1a097cecf964ffd2541604349a3b8c30a4" compoundref="ltc__cfg_8h" startline="143">LTC_STATEMACH_DAISY_CHAIN_FIRST_INITIALIZATION_TIME</references>
+        <references refid="ltc__defs_8h_1a046991d8f8ab352dad7ac39029e4c34ba77ded2c5510c4bee73d46f08ee1ecc2d" compoundref="ltc__defs_8h" startline="140">LTC_START_INIT_INITIALIZATION</references>
+        <references refid="ltc__cfg_8h_1affa73aaac089b7419b873ecc8ec71a93" compoundref="ltc__cfg_8h" startline="148">LTC_STATEMACH_DAISY_CHAIN_SECOND_INITIALIZATION_TIME</references>
+        <references refid="ltc_8c_1a831928414e85f075f460bbced71451bb" compoundref="ltc_8c" startline="2116" endline="2168">LTC_Init</references>
+        <references refid="structLTC__STATE__s_1a7fedd36e8acb6dbdea29d63cdd54458c" compoundref="ltc__defs_8h" startline="472">LTC_STATE_s::lastsubstate</references>
+        <references refid="ltc__defs_8h_1a046991d8f8ab352dad7ac39029e4c34bae3486b48f4754c49faee762dd3eb593e" compoundref="ltc__defs_8h" startline="143">LTC_EXIT_INITIALIZATION</references>
+        <references refid="structLTC__STATE__s_1a0591aa634286a42119f7188cdffcf377" compoundref="ltc__defs_8h" startline="485">LTC_STATE_s::commandDataTransferTime</references>
+        <references refid="ltc_8c_1a7ffc056e02aa5c1a9cc8b8ff72b4997a" compoundref="ltc_8c" startline="239" endline="305">LTC_Initialize_Database</references>
+        <references refid="ltc_8c_1aed8c9c5eb02357fedae1785cf8983bc8" compoundref="ltc_8c" startline="2297" endline="2307">LTC_ResetErrorTable</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4aaf75c41bec797b8e31ce3b082af30a58" compoundref="ltc__defs_8h" startline="86">LTC_STATEMACH_INITIALIZED</references>
+        <references refid="ltc__cfg_8h_1aea93a0df3861790fab73a492e8845830" compoundref="ltc__cfg_8h" startline="208">LTC_IF_INITIALIZED_CALLBACK</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4add62baf8e288fbceafe73ce06b18eeda" compoundref="ltc__defs_8h" startline="89">LTC_STATEMACH_STARTMEAS</references>
+        <references refid="ltc__defs_8h_1ae60a8db7d03c8a77fa2517dc07220dcaae7ec349b47cec6f8ee1bb0e009c35588" compoundref="ltc__defs_8h" startline="122">LTC_ENTRY</references>
+        <references refid="ltc__cfg_8h_1a9484c2122eba974a43304b18323a2c7f" compoundref="ltc__cfg_8h" startline="98">LTC_VOLTAGE_MEASUREMENT_MODE</references>
+        <references refid="ltc__defs_8h_1a73470c378a2a93ee4e6d1c0a6ebb6455a08e35de6bffecf8a272e4d75df5ec7db" compoundref="ltc__defs_8h" startline="68">LTC_ADCMEAS_ALLCHANNEL</references>
+        <references refid="ltc_8c_1adc70963f6820d9c14f0afedce4a122dd" compoundref="ltc_8c" startline="2374" endline="2411">LTC_StartVoltageMeasurement</references>
+        <references refid="structLTC__STATE__s_1a5e7d10bbac9597d1b13cdb503f2d609d" compoundref="ltc__defs_8h" startline="486">LTC_STATE_s::commandTransferTime</references>
+        <references refid="ltc_8c_1ad4c74acddf900cb21a971ecbcb944556" compoundref="ltc_8c" startline="2324" endline="2360">LTC_Get_MeasurementTCycle</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a7713c2ee698f27242c3ded7463340691" compoundref="ltc__defs_8h" startline="90">LTC_STATEMACH_READVOLTAGE</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969ea2c4609255b60da8fc1a6ddcc5977fc25" compoundref="ltc__defs_8h" startline="158">LTC_READ_VOLTAGE_REGISTER_A_RDCVA_READVOLTAGE</references>
+        <references refid="spi_8c_1ac76c884ebda9a3d04a2699ade7dfda9e" compoundref="spi_8c" startline="300" endline="304">SPI_SetTransmitOngoing</references>
+        <references refid="ltc_8c_1af9121f13ff04884f857f34e0ee3084db" compoundref="ltc_8c" startline="2566" endline="2592">LTC_RX</references>
+        <references refid="ltc_8c_1ae6ee75f5ca75ab4f3ebe0b329f4d118b" compoundref="ltc_8c" startline="117">ltc_cmdRDCVA</references>
+        <references refid="ltc_8c_1a12d5d98a0b89043ea37c9355554541df" compoundref="ltc_8c" startline="171">ltc_RXPECbuffer</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969eacef9e953b7d0f0b2247802871fa331e7" compoundref="ltc__defs_8h" startline="159">LTC_READ_VOLTAGE_REGISTER_B_RDCVB_READVOLTAGE</references>
+        <references refid="ltc_8c_1aefda0ed9da9cc8af32aa714fab6b0c74" compoundref="ltc_8c" startline="2501" endline="2544">LTC_RX_PECCheck</references>
+        <references refid="diag__cfg_8h_1a64da8f05b3ace88d84a7b0aea35a607b" compoundref="diag__cfg_8h" startline="163">DIAG_CH_LTC_PEC</references>
+        <references refid="ltc_8c_1ad97aed03adcf0b67fcac17d8764bc89e" compoundref="ltc_8c" startline="1962" endline="2033">LTC_SaveRXtoVoltagebuffer</references>
+        <references refid="ltc_8c_1a00fade4f0e20a5fb9912393fe06dd40a" compoundref="ltc_8c" startline="118">ltc_cmdRDCVB</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969eaf68fcf824e36a01bfa307c91865d4343" compoundref="ltc__defs_8h" startline="160">LTC_READ_VOLTAGE_REGISTER_C_RDCVC_READVOLTAGE</references>
+        <references refid="ltc_8c_1ae4dd4a73cae0a79b1a743735f1c0bb8b" compoundref="ltc_8c" startline="119">ltc_cmdRDCVC</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969ea62eb7ee2b9458e88865f161b1c447e62" compoundref="ltc__defs_8h" startline="161">LTC_READ_VOLTAGE_REGISTER_D_RDCVD_READVOLTAGE</references>
+        <references refid="ltc_8c_1ac3888ad61998626d80971b5793f195e9" compoundref="ltc_8c" startline="120">ltc_cmdRDCVD</references>
+        <references refid="batterysystem__cfg_8h_1a6ad5ac93d710f9db6d01f79160d55780" compoundref="batterysystem__cfg_8h" startline="81">BS_MAX_SUPPORTED_CELLS</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969ead9bc5bc6e823766241b97e8dd8c88600" compoundref="ltc__defs_8h" startline="162">LTC_READ_VOLTAGE_REGISTER_E_RDCVE_READVOLTAGE</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969ead399b11c7c8033d9da2e0aa1392e4fb6" compoundref="ltc__defs_8h" startline="164">LTC_EXIT_READVOLTAGE</references>
+        <references refid="ltc__defs_8h_1abb11f92f4b28823deeae0c186805969ea0255f863ca7f02fb3a868aaa7ebccfed" compoundref="ltc__defs_8h" startline="163">LTC_READ_VOLTAGE_REGISTER_F_RDCVF_READVOLTAGE</references>
+        <references refid="structDATA__BLOCK__CELLVOLTAGE__s_1a5257ff62876fd2d52278ebde17fa79c4" compoundref="database__cfg_8h" startline="143">DATA_BLOCK_CELLVOLTAGE_s::previous_timestamp</references>
+        <references refid="structDATA__BLOCK__CELLVOLTAGE__s_1adbdb4331bbc0c6940b16e67854775925" compoundref="database__cfg_8h" startline="144">DATA_BLOCK_CELLVOLTAGE_s::timestamp</references>
+        <references refid="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" compoundref="mcu_8c" startline="164" endline="166">MCU_GetTimeStamp</references>
+        <references refid="ltc_8c_1a1e176daa5dc098f6790bdff53b72ebb6" compoundref="ltc_8c" startline="318" endline="364">LTC_SaveVoltages</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a0cc200ebca9c8bf0c2a31493cb418dc1" compoundref="ltc__defs_8h" startline="91">LTC_STATEMACH_MUXMEASUREMENT</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908fa917943d825232003eddcdcc147bdba7d" compoundref="ltc__defs_8h" startline="189">LTC_STATEMACH_MUXCONFIGURATION_INIT</references>
+        <references refid="ltc__cfg_8h_1aca3def78581bb4af631d375975443805" compoundref="ltc__cfg_8h" startline="105">LTC_GPIO_MEASUREMENT_MODE</references>
+        <references refid="ltc__defs_8h_1a73470c378a2a93ee4e6d1c0a6ebb6455a66f1b16b78eb6e328c9ecd5a66e0a00f" compoundref="ltc__defs_8h" startline="69">LTC_ADCMEAS_SINGLECHANNEL_GPIO1</references>
+        <references refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a8095fc504a27d1de13fcdf1267e09569" compoundref="database__cfg_8h" startline="164">DATA_BLOCK_CELLTEMPERATURE_s::previous_timestamp</references>
+        <references refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a302b4fb05f625436391e2571f4add0be" compoundref="database__cfg_8h" startline="165">DATA_BLOCK_CELLTEMPERATURE_s::timestamp</references>
+        <references refid="ltc_8c_1a15bdae5ce62a072ea3ae6032f6822bae" compoundref="ltc_8c" startline="378" endline="421">LTC_SaveTemperatures</references>
+        <references refid="ltc_8c_1a612a43f8bc6c4b96b942f98277ba7be3" compoundref="ltc_8c" startline="3229" endline="3237">LTC_IsFirstMeasurementCycleFinished</references>
+        <references refid="ltc_8c_1a45e69b4206dd5f2b49f9082e9afc745b" compoundref="ltc_8c" startline="3245" endline="3249">LTC_SetFirstMeasurementCycleFinished</references>
+        <references refid="ltc_8c_1aa553cebf1019ba4ab514ae3eb72e54d5" compoundref="ltc_8c" startline="2929" endline="2942">LTC_SetMuxChannel</references>
+        <references refid="ltc_8c_1acbb410add916aa20ad411b6587446adf" compoundref="ltc_8c" startline="173">ltc_TXBuffer</references>
+        <references refid="ltc_8c_1a5d6579c028d1fe276337bcc51ab498b4" compoundref="ltc_8c" startline="172">ltc_TXPECbuffer</references>
+        <references refid="structLTC__MUX__CH__CFG__s_1ae982f0e345acf158811c136ae1cefb6e" compoundref="ltc__defs_8h" startline="392">LTC_MUX_CH_CFG_s::muxID</references>
+        <references refid="structLTC__MUX__CH__CFG__s_1accf39e40d7402e895bddbe2a98c65f50" compoundref="ltc__defs_8h" startline="393">LTC_MUX_CH_CFG_s::muxCh</references>
+        <references refid="ltc__defs_8h_1a973909f4478fb640ed439fe0bad81000a8aa2aded75f77616bb43faa7f43c5142" compoundref="ltc__defs_8h" startline="305">LTC_SEND_CLOCK_STCOMM_MUXMEASUREMENT_CONFIG</references>
+        <references refid="ltc_8c_1aeddca90bfa7aaacc34a21b9e7210f99f" compoundref="ltc_8c" startline="3094" endline="3111">LTC_I2CClock</references>
+        <references refid="ltc_8c_1a65e6f2ff059f32270f7bdf2aafc14020" compoundref="ltc_8c" startline="175">ltc_TXBufferClock</references>
+        <references refid="ltc_8c_1a5d36084f75f489ed3d06f16b95138745" compoundref="ltc_8c" startline="176">ltc_TXPECBufferClock</references>
+        <references refid="structLTC__STATE__s_1a8c0708bc6bcc2bffa7d1c1271986f210" compoundref="ltc__defs_8h" startline="487">LTC_STATE_s::gpioClocksTransferTime</references>
+        <references refid="ltc__cfg_8h_1a677d5ee4fe4ca05cd4217aab4c000412" compoundref="ltc__cfg_8h" startline="57">LTC_GOTO_MUX_CHECK</references>
+        <references refid="ltc__defs_8h_1a973909f4478fb640ed439fe0bad81000a1e82ef066bee79c10665761af629dcbe" compoundref="ltc__defs_8h" startline="306">LTC_READ_I2C_TRANSMISSION_RESULT_RDCOMM_MUXMEASUREMENT_CONFIG</references>
+        <references refid="ltc_8c_1a3560520cc0f810ca173592b0de7a1012" compoundref="ltc_8c" startline="125">ltc_cmdRDCOMM</references>
+        <references refid="ltc__defs_8h_1a973909f4478fb640ed439fe0bad81000a6156364f25ef1375d8275e8462e3714e" compoundref="ltc__defs_8h" startline="307">LTC_READ_I2C_TRANSMISSION_CHECK_MUXMEASUREMENT_CONFIG</references>
+        <references refid="ltc_8c_1a5238af0e752622caaf85ade0ab8baf67" compoundref="ltc_8c" startline="2051" endline="2104">LTC_I2CCheckACK</references>
+        <references refid="diag__cfg_8h_1a2902a67c2135bfed7456ed79a0dec75c" compoundref="diag__cfg_8h" startline="164">DIAG_CH_LTC_MUX</references>
+        <references refid="ltc_8c_1a4b784c9bc145d7b0c2952c058d4cde29" compoundref="ltc_8c" startline="2425" endline="2485">LTC_StartGPIOMeasurement</references>
+        <references refid="ltc__defs_8h_1a73470c378a2a93ee4e6d1c0a6ebb6455a3b3398400ec7c140b6fa33692ec66fdb" compoundref="ltc__defs_8h" startline="70">LTC_ADCMEAS_SINGLECHANNEL_GPIO2</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908fa00e7174ebb28087447e5585b947130ec" compoundref="ltc__defs_8h" startline="191">LTC_STATEMACH_READMUXMEASUREMENT</references>
+        <references refid="ltc_8c_1a81599684dd377fc624b15da789807204" compoundref="ltc_8c" startline="126">ltc_cmdRDAUXA</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908fac393ebb094c56e1943b57aebc2d9f63d" compoundref="ltc__defs_8h" startline="192">LTC_STATEMACH_STOREMUXMEASUREMENT</references>
+        <references refid="ltc_8c_1a293789a68e3df9f7df3b120797c025e8" compoundref="ltc_8c" startline="1907" endline="1943">LTC_SaveMuxMeasurement</references>
+        <references refid="structLTC__STATE__s_1acbeaa9c6b3046d021a20a9d610abe92f" compoundref="ltc__defs_8h" startline="508">LTC_STATE_s::balance_control_done</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa75918e89dc7d618eef12336e6a998860" compoundref="ltc__defs_8h" startline="337">LTC_STATE_USER_IO_WRITE_REQUEST</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a7207540986ed7d439e6a2b3718751a32" compoundref="ltc__defs_8h" startline="98">LTC_STATEMACH_USER_IO_CONTROL</references>
+        <references refid="ltc__defs_8h_1a0567f5b94a7f5417015fe17670868ec2addb7cdbeb0c7c3267e2573b41dc3fa19" compoundref="ltc__defs_8h" startline="259">LTC_USER_IO_SET_OUTPUT_REGISTER</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa42fe338c2b9d1dd92d09820c23055ac3" compoundref="ltc__defs_8h" startline="338">LTC_STATE_USER_IO_READ_REQUEST</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a0628d36b2a89154525ab2973b7389fca" compoundref="ltc__defs_8h" startline="99">LTC_STATEMACH_USER_IO_FEEDBACK</references>
+        <references refid="ltc__defs_8h_1a0567f5b94a7f5417015fe17670868ec2abd8e29b285e5d0a15daea5a5929d1774" compoundref="ltc__defs_8h" startline="260">LTC_USER_IO_READ_INPUT_REGISTER</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa0d13f9ac99e33ffcfe9c206bdef94222" compoundref="ltc__defs_8h" startline="340">LTC_STATE_EEPROM_READ_REQUEST</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a23dae16c62375ce125acff73097e90ba" compoundref="ltc__defs_8h" startline="100">LTC_STATEMACH_EEPROM_READ</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a4b47d044c917f7c77378699bf8c91b59" compoundref="ltc__defs_8h" startline="272">LTC_EEPROM_READ_DATA1</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fa5877ee9f80ec4e911bdb7c0e05af995f" compoundref="ltc__defs_8h" startline="341">LTC_STATE_EEPROM_WRITE_REQUEST</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a236450cc773dc1d1b16fe9a21532c708" compoundref="ltc__defs_8h" startline="101">LTC_STATEMACH_EEPROM_WRITE</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a2d84b44fcabfcea4bbbdcf0e21a33909" compoundref="ltc__defs_8h" startline="274">LTC_EEPROM_WRITE_DATA1</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8fae8c8499af7792e82be52999afd78c246" compoundref="ltc__defs_8h" startline="343">LTC_STATE_TEMP_SENS_READ_REQUEST</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a1c93d5148ed76b684fe967e5442144de" compoundref="ltc__defs_8h" startline="102">LTC_STATEMACH_TEMP_SENS_READ</references>
+        <references refid="ltc__defs_8h_1a7e05c6a6f918508d6c9a6a4b21711128ad20fc30fdf25fde66237b5558b3232aa" compoundref="ltc__defs_8h" startline="289">LTC_TEMP_SENS_SEND_DATA1</references>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8faf3da473ffc3ca270080b103f7014d681" compoundref="ltc__defs_8h" startline="354">LTC_STATEMACH_BALANCEFEEDBACK_REQUEST</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4aa8b85f25615c6171b8c7e03be92f322d" compoundref="ltc__defs_8h" startline="103">LTC_STATEMACH_BALANCEFEEDBACK</references>
+        <references refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4a1e9d6925e055a3a48d551e9bae423f92" compoundref="ltc__defs_8h" startline="93">LTC_STATEMACH_BALANCECONTROL</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908fa386e19feaaa0fb60a4c4a5e0f6425355" compoundref="ltc__defs_8h" startline="181">LTC_CONFIG_BALANCECONTROL</references>
+        <references refid="ltc_8c_1a1db8f25aca89b81082539d3ce03baddb" compoundref="ltc_8c" startline="2184" endline="2286">LTC_BalanceControl</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908fab238bd20b505789221bc254afe7c4f2a" compoundref="ltc__defs_8h" startline="182">LTC_CONFIG2_BALANCECONTROL</references>
+        <references refid="group__CONFIG__BATTERYSYSTEM_1gae91303895658daa4549ef8d8942c20e3" compoundref="batterysystem__cfg_8h" startline="78">BS_NR_OF_BAT_CELLS_PER_MODULE</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908faaa7aebe28b0e86e2852b1adf983c7e9b" compoundref="ltc__defs_8h" startline="183">LTC_CONFIG2_BALANCECONTROL_END</references>
+        <references refid="ltc__defs_8h_1adea19c9f914aa41eedbc3f3f39ab38e2a5d73a6b09db6aa4c421420a0e345ffe1" compoundref="ltc__defs_8h" startline="56">LTC_ADCMODE_NORMAL_DCP0</references>
+        <references refid="ltc__defs_8h_1a73470c378a2a93ee4e6d1c0a6ebb6455a701386cc53fc1a31c7cce20aad859d1c" compoundref="ltc__defs_8h" startline="71">LTC_ADCMEAS_SINGLECHANNEL_GPIO3</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908faafafdccbbefc7e84d0580d54b20f1db9" compoundref="ltc__defs_8h" startline="185">LTC_READ_FEEDBACK_BALANCECONTROL</references>
+        <references refid="ltc__defs_8h_1a91951f7e26fb8e9f54459b8be4cd908fa7a44b1830e99c64aab1da6af7c4b5fa0" compoundref="ltc__defs_8h" startline="186">LTC_SAVE_FEEDBACK_BALANCECONTROL</references>
+        <references refid="ltc_8c_1a0e1a3257f4f6a301717afb391595862e" compoundref="ltc_8c" startline="431" endline="449">LTC_SaveBalancingFeedback</references>
+        <references refid="ltc_8c_1ae24f0e85147a23d424c575f05f996381" compoundref="ltc_8c" startline="2957" endline="2983">LTC_Send_I2C_Command</references>
+        <references refid="ltc_8c_1a9d86bff9bbf7b2e4c6405bf4f0de2ebe" compoundref="ltc_8c" startline="137">ltc_I2CcmdTempSens0</references>
+        <references refid="ltc__defs_8h_1a7e05c6a6f918508d6c9a6a4b21711128a2fdf36da4cea3f4769f2f8db3f5431ef" compoundref="ltc__defs_8h" startline="292">LTC_TEMP_SENS_SEND_CLOCK_STCOMM1</references>
+        <references refid="ltc__defs_8h_1a7e05c6a6f918508d6c9a6a4b21711128affb26ce46b8319b8e5dccf5a900624ba" compoundref="ltc__defs_8h" startline="290">LTC_TEMP_SENS_READ_DATA1</references>
+        <references refid="ltc_8c_1ac38a016c9f0cdb4f3e127cb044a21425" compoundref="ltc_8c" startline="138">ltc_I2CcmdTempSens1</references>
+        <references refid="ltc__defs_8h_1a7e05c6a6f918508d6c9a6a4b21711128a5c70bd226a73bcf0676c767bf819b9e7" compoundref="ltc__defs_8h" startline="293">LTC_TEMP_SENS_SEND_CLOCK_STCOMM2</references>
+        <references refid="ltc__defs_8h_1a7e05c6a6f918508d6c9a6a4b21711128a07aeb6f04e7c4387aebd722180e1bb9f" compoundref="ltc__defs_8h" startline="294">LTC_TEMP_SENS_READ_I2C_TRANSMISSION_RESULT_RDCOMM</references>
+        <references refid="ltc__defs_8h_1a7e05c6a6f918508d6c9a6a4b21711128acd0804ea747afd2f3c365b8977fc8bdc" compoundref="ltc__defs_8h" startline="295">LTC_TEMP_SENS_SAVE_TEMP</references>
+        <references refid="ltc_8c_1aae58ad1c5cb56f73b4b9f50d062b0882" compoundref="ltc_8c" startline="2996" endline="3013">LTC_TempSensSaveTemp</references>
+        <references refid="ltc_8c_1a75c802eebfcfabe90c48d2f09ba309d8" compoundref="ltc_8c" startline="3025" endline="3055">LTC_SetPortExpander</references>
+        <references refid="ltc_8c_1a3d2b736f57b07a2df15a2a9d30101c1d" compoundref="ltc_8c" startline="140">ltc_I2CcmdPortExpander1</references>
+        <references refid="ltc__defs_8h_1a0567f5b94a7f5417015fe17670868ec2a7ff487b3bac80ea1da91e1f5068f18c4" compoundref="ltc__defs_8h" startline="261">LTC_USER_IO_SEND_CLOCK_STCOMM</references>
+        <references refid="ltc__defs_8h_1a0567f5b94a7f5417015fe17670868ec2a14f979da1c596dbb66590fd9b7818688" compoundref="ltc__defs_8h" startline="262">LTC_USER_IO_READ_I2C_TRANSMISSION_RESULT_RDCOMM</references>
+        <references refid="ltc__defs_8h_1a0567f5b94a7f5417015fe17670868ec2a5ffc1373d0bcc5d2408e594e98c77a0a" compoundref="ltc__defs_8h" startline="263">LTC_USER_IO_SAVE_DATA</references>
+        <references refid="ltc_8c_1a592c47f6c14e3c5a71f0b616cceee2ab" compoundref="ltc_8c" startline="3067" endline="3080">LTC_PortExpanderSaveValues</references>
+        <references refid="ltc_8c_1ad110d8c75a4a1422ab2892c3c228180b" compoundref="ltc_8c" startline="2723" endline="2736">LTC_SendEEPROMReadCommand</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6ab5e8bf541d5749bf1c3c1fbefb9ed193" compoundref="ltc__defs_8h" startline="276">LTC_EEPROM_SEND_CLOCK_STCOMM1</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a9b00b60f42ede79f763a5e378dd24baf" compoundref="ltc__defs_8h" startline="273">LTC_EEPROM_READ_DATA2</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a10c4356fdff7b5beb6243dc21467f23b" compoundref="ltc__defs_8h" startline="277">LTC_EEPROM_SEND_CLOCK_STCOMM2</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a3255ce7912abd40bcf8c74a735ca8738" compoundref="ltc__defs_8h" startline="280">LTC_EEPROM_READ_I2C_TRANSMISSION_RESULT_RDCOMM</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6aed61e9dd1a4ebf2ee5cb5d7c5ad57d5d" compoundref="ltc__defs_8h" startline="281">LTC_EEPROM_SAVE_READ</references>
+        <references refid="ltc_8c_1a3a248cdd60ec26b2cafc4da530f9f056" compoundref="ltc_8c" startline="2805" endline="2819">LTC_EEPROMSaveReadValue</references>
+        <references refid="ltc_8c_1a56b63c25a2375a1d29897c173dd160a8" compoundref="ltc_8c" startline="2834" endline="2847">LTC_SendEEPROMWriteCommand</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a7c8cbe4cedcec57c854f768b9ba4c47a" compoundref="ltc__defs_8h" startline="278">LTC_EEPROM_SEND_CLOCK_STCOMM3</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a85d2e00c09beb4185a0a3977fe96c81a" compoundref="ltc__defs_8h" startline="275">LTC_EEPROM_WRITE_DATA2</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6a10965ee0ed596022b2989f232e0e83b0" compoundref="ltc__defs_8h" startline="279">LTC_EEPROM_SEND_CLOCK_STCOMM4</references>
+        <references refid="ltc__defs_8h_1a581e8757d9fe5a564552775b6984dfd6af9a3975de6c93a8da13df3c0413459ba" compoundref="ltc__defs_8h" startline="282">LTC_EEPROM_FINISHED</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a39ab4baacdb3ae44540e0a69db165094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7" kindref="member">LTC_RETURN_TYPE_e</ref></type>
+        <definition>LTC_RETURN_TYPE_e LTC_SetStateRequest</definition>
+        <argsstring>(LTC_STATE_REQUEST_e statereq)</argsstring>
+        <name>LTC_SetStateRequest</name>
+        <param>
+          <type><ref refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8f" kindref="member">LTC_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable ltc_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine,e.g, start voltage measurement, read result of voltage measurement, re-initialization It calls <ref refid="ltc_8c_1a59d83a728308a82bca1b6b1e8c442fee" kindref="member">LTC_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state request to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>adcModereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LTC ADCmeasurement mode (fast, normal or filtered) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>adcMeasChreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of channels measured for GPIOS (one at a time for multiplexers or all five GPIOs) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numberOfMeasuredMux</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of multiplexer inputs measured between two cell voltage measurements</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>retVal current state request, taken from LTC_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="88" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="577" bodyend="590"/>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8faf4e66343294c7497a36ec9f6a2aca28e" compoundref="ltc__defs_8h" startline="360">LTC_STATE_NO_REQUEST</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="317" endline="328">OS_TaskEnter_Critical</references>
+        <references refid="ltc_8c_1a59d83a728308a82bca1b6b1e8c442fee" compoundref="ltc_8c" startline="3200" endline="3219">LTC_CheckStateRequest</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ad9ae3d530d332f137bab96ef193eb268" compoundref="ltc__defs_8h" startline="367">LTC_OK</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7a0c8ec0eed8ce22ff4fe211fec479bead" compoundref="ltc__defs_8h" startline="368">LTC_BUSY_OK</references>
+        <references refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7ac0a8a30639bbf81fdb9ea28b0c260fda" compoundref="ltc__defs_8h" startline="375">LTC_OK_FROM_ERROR</references>
+        <references refid="structLTC__STATE__s_1a642713b73eced444219c707f38c38e55" compoundref="ltc__defs_8h" startline="468">LTC_STATE_s::statereq</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="330" endline="341">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a45e69b4206dd5f2b49f9082e9afc745b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LTC_SetFirstMeasurementCycleFinished</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_SetFirstMeasurementCycleFinished</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>sets the measurement initialization status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>none </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="90" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="3245" bodyend="3249"/>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="317" endline="328">OS_TaskEnter_Critical</references>
+        <references refid="structLTC__STATE__s_1a7758a2e35e70880f61601be4112500cc" compoundref="ltc__defs_8h" startline="505">LTC_STATE_s::first_measurement_made</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="330" endline="341">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a612a43f8bc6c4b96b942f98277ba7be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LTC_IsFirstMeasurementCycleFinished</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_IsFirstMeasurementCycleFinished</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the measurement initialization status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>retval TRUE if a first measurement cycle was made, FALSE otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="91" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="3229" bodyend="3237"/>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="317" endline="328">OS_TaskEnter_Critical</references>
+        <references refid="structLTC__STATE__s_1a7758a2e35e70880f61601be4112500cc" compoundref="ltc__defs_8h" startline="505">LTC_STATE_s::first_measurement_made</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="330" endline="341">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a8e03a70ffefd2885aba0a5fa58ef779e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e LTC_GetMuxSequenceState</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_GetMuxSequenceState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the measurement initialization status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>retval TRUE if a first measurement cycle was made, FALSE otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="92" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="3259" bodyend="3265"/>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="structLTC__STATE__s_1af30701f3fde3b2365bbc0b5496749900" compoundref="ltc__defs_8h" startline="506">LTC_STATE_s::ltc_muxcycle_finished</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a519b91fad3c6160d76b757af1bc8c318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LTC_SaveAllGPIOs</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_SaveAllGPIOs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a1e176daa5dc098f6790bdff53b72ebb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LTC_SaveVoltages</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_SaveVoltages</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>stores the measured voltages in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loops through the data of all modules in the LTC daisy-chain that are stored in the LTC_CellVoltages buffer and writes them in the database. At each write iteration, the variable named &quot;state&quot; and related to voltages in the database is incremented.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="95" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="318" bodyend="364"/>
+        <references refid="structDATA__BLOCK__CELLVOLTAGE__s_1a2be9a58cf5bb6655185c177f5469549b" compoundref="database__cfg_8h" startline="139">DATA_BLOCK_CELLVOLTAGE_s::voltage</references>
+        <references refid="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" compoundref="batterysystem__cfg_8h" startline="68">BS_NR_OF_MODULES</references>
+        <references refid="group__CONFIG__BATTERYSYSTEM_1gae91303895658daa4549ef8d8942c20e3" compoundref="batterysystem__cfg_8h" startline="78">BS_NR_OF_BAT_CELLS_PER_MODULE</references>
+        <references refid="batterysystem__cfg_8h_1aba9327c982eb341df30d75586d62f425" compoundref="batterysystem__cfg_8h" startline="110">BS_NR_OF_BAT_CELLS</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" compoundref="database__cfg_8h" startline="126">DATA_BLOCK_ID_MINMAX</references>
+        <references refid="structDATA__BLOCK__CELLVOLTAGE__s_1a9b6f9833463e1b29a6c8983aaf3116d6" compoundref="database__cfg_8h" startline="145">DATA_BLOCK_CELLVOLTAGE_s::state</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a9744fd441e8eef46047ed45f980e3a9d" compoundref="database__cfg_8h" startline="307">DATA_BLOCK_MINMAX_s::state</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a4377a9d8f8cd74b613801d4744a5076a" compoundref="database__cfg_8h" startline="291">DATA_BLOCK_MINMAX_s::voltage_mean</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1ac7fb7208f06c99632ffc070fbfe30b18" compoundref="database__cfg_8h" startline="295">DATA_BLOCK_MINMAX_s::previous_voltage_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1ab9f24e98d980212dd9b88664091d8ec7" compoundref="database__cfg_8h" startline="292">DATA_BLOCK_MINMAX_s::voltage_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a019eede670eafbac8c429beccbd71f72" compoundref="database__cfg_8h" startline="293">DATA_BLOCK_MINMAX_s::voltage_module_number_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a90418a2fdd5580028d62cc2c321bde9f" compoundref="database__cfg_8h" startline="294">DATA_BLOCK_MINMAX_s::voltage_cell_number_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1af54ac320155ea7876cf6d57c9cc83b9a" compoundref="database__cfg_8h" startline="299">DATA_BLOCK_MINMAX_s::previous_voltage_max</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a630951b27b688dfc25874ad4c4bd835f" compoundref="database__cfg_8h" startline="296">DATA_BLOCK_MINMAX_s::voltage_max</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1ab5c1ad750e86a7dbeddbb70f777b2767" compoundref="database__cfg_8h" startline="297">DATA_BLOCK_MINMAX_s::voltage_module_number_max</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a684a49a5736ff7f92a019be52730c7a9" compoundref="database__cfg_8h" startline="298">DATA_BLOCK_MINMAX_s::voltage_cell_number_max</references>
+        <references refid="database_8c_1a71c46da113f917afb39cc80c56e598be" compoundref="database_8c" startline="78" endline="105">DATA_StoreDataBlock</references>
+        <references refid="database__cfg_8h_1ac21aeb62b730796694b3770cfa44f3c2" compoundref="database__cfg_8h" startline="118">DATA_BLOCK_ID_CELLVOLTAGE</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a15bdae5ce62a072ea3ae6032f6822bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LTC_SaveTemperatures</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_SaveTemperatures</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>stores the measured temperatures and the measured multiplexer feedbacks in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loops through the temperature and multiplexer feedback data of all modules in the LTC daisy-chain that are stored in the LTC_MultiplexerVoltages buffer and writes them in the database. At each write iteration, the variables named &quot;state&quot; and related to temperatures and multiplexer feedbacks in the database are incremented.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="96" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="378" bodyend="421"/>
+        <references refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a527fcd857de6c720920e9ab9be80fa34" compoundref="database__cfg_8h" startline="162">DATA_BLOCK_CELLTEMPERATURE_s::temperature</references>
+        <references refid="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" compoundref="batterysystem__cfg_8h" startline="68">BS_NR_OF_MODULES</references>
+        <references refid="group__CONFIG__BATTERYSYSTEM_1ga6e85c9c9cb9c49f0e29841223cedb80d" compoundref="batterysystem__cfg_8h" startline="107">BS_NR_OF_TEMP_SENSORS_PER_MODULE</references>
+        <references refid="batterysystem__cfg_8h_1ad6cd2d93ab04801d943daa5e96f0a5f9" compoundref="batterysystem__cfg_8h" startline="111">BS_NR_OF_TEMP_SENSORS</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" compoundref="database__cfg_8h" startline="126">DATA_BLOCK_ID_MINMAX</references>
+        <references refid="structDATA__BLOCK__CELLTEMPERATURE__s_1ab04ecd49a84626fba27d47375247ad1d" compoundref="database__cfg_8h" startline="166">DATA_BLOCK_CELLTEMPERATURE_s::state</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a9744fd441e8eef46047ed45f980e3a9d" compoundref="database__cfg_8h" startline="307">DATA_BLOCK_MINMAX_s::state</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a2036cd441b0f23a6ec399d0c16ecd508" compoundref="database__cfg_8h" startline="300">DATA_BLOCK_MINMAX_s::temperature_mean</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a1e425dd6a1805b873e0ec266f265bfea" compoundref="database__cfg_8h" startline="301">DATA_BLOCK_MINMAX_s::temperature_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1aa55bb2277484e1fdfda7eefbfa354f8b" compoundref="database__cfg_8h" startline="302">DATA_BLOCK_MINMAX_s::temperature_module_number_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a5f6c37b185576ed3305f49c4211434b1" compoundref="database__cfg_8h" startline="303">DATA_BLOCK_MINMAX_s::temperature_sensor_number_min</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a99c93ff1bbbe54351c2137702c79c8a5" compoundref="database__cfg_8h" startline="304">DATA_BLOCK_MINMAX_s::temperature_max</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a8309935abceebdee3e6840c801454e5a" compoundref="database__cfg_8h" startline="305">DATA_BLOCK_MINMAX_s::temperature_module_number_max</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a4089436e456a3b527b253f33138004e6" compoundref="database__cfg_8h" startline="306">DATA_BLOCK_MINMAX_s::temperature_sensor_number_max</references>
+        <references refid="database_8c_1a71c46da113f917afb39cc80c56e598be" compoundref="database_8c" startline="78" endline="105">DATA_StoreDataBlock</references>
+        <references refid="database__cfg_8h_1ab0c451b4d691e6d9499711b6fc837527" compoundref="database__cfg_8h" startline="119">DATA_BLOCK_ID_CELLTEMPERATURE</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a9720387602144e8ebf6ded5e87e9cf7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8f" kindref="member">LTC_STATE_REQUEST_e</ref></type>
+        <definition>LTC_STATE_REQUEST_e LTC_GetStateRequest</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_GetStateRequest</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state request. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the LTC state machine.</para><para><simplesect kind="return"><para>retval current state request, taken from LTC_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="97" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="528" bodyend="537"/>
+        <references refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8faf4e66343294c7497a36ec9f6a2aca28e" compoundref="ltc__defs_8h" startline="360">LTC_STATE_NO_REQUEST</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="317" endline="328">OS_TaskEnter_Critical</references>
+        <references refid="structLTC__STATE__s_1a642713b73eced444219c707f38c38e55" compoundref="ltc__defs_8h" startline="468">LTC_STATE_s::statereq</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="330" endline="341">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="ltc_8h_1a9a62bd325575577f53f43f3bbf591aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4" kindref="member">LTC_STATEMACH_e</ref></type>
+        <definition>LTC_STATEMACH_e LTC_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>LTC_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the LTC state machine.</para><para><simplesect kind="return"><para>current state, taken from LTC_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h" line="98" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.c" bodystart="546" bodyend="548"/>
+        <references refid="structLTC__STATE__s_1a9818917df5fe61ad9aac40a6e4b9e11a" compoundref="ltc__defs_8h" startline="469">LTC_STATE_s::state</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the driver for the LTC monitoring chip. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>01.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>LTC </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>LTC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LTC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ltc__cfg_8h" kindref="compound">ltc_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ltc__defs_8h" kindref="compound">ltc_defs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SLAVE_BOARD_VERSION<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>SLAVE_BOARD_VERSION<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>Please<sp/>select<sp/>the<sp/>slave<sp/>board<sp/>version<sp/>you<sp/>want<sp/>to<sp/>use.<sp/>Configuration<sp/>file:<sp/>\src\module\config\ltc_cfg.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structLTC__ERRORTABLE__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50" refid="structLTC__ERRORTABLE__s_1ad884201254e724974f0a79120abb6141" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structLTC__ERRORTABLE__s_1ad884201254e724974f0a79120abb6141" kindref="member">LTC</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structLTC__ERRORTABLE__s_1a49af41df850f578cbdf67f022f3dff43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structLTC__ERRORTABLE__s_1a49af41df850f578cbdf67f022f3dff43" kindref="member">mux0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structLTC__ERRORTABLE__s_1ae4a29abf7320187e1adabfb30ef29f44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structLTC__ERRORTABLE__s_1ae4a29abf7320187e1adabfb30ef29f44" kindref="member">mux1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structLTC__ERRORTABLE__s_1aa12e9478362814b34ef88d9cfdd4896e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structLTC__ERRORTABLE__s_1aa12e9478362814b34ef88d9cfdd4896e" kindref="member">mux2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structLTC__ERRORTABLE__s_1a5a1835137919aedb4bfccae9e6848a16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structLTC__ERRORTABLE__s_1a5a1835137919aedb4bfccae9e6848a16" kindref="member">mux3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/><ref refid="structLTC__ERRORTABLE__s" kindref="compound">LTC_ERRORTABLE_s</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ltc_8h_1accb6d35a38500c642797d2f7b32f44cb" kindref="member">LTC_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="ltc__defs_8h_1a7db2a44bd361b3439dd24ba1e62102a7" kindref="member">LTC_RETURN_TYPE_e</ref><sp/><ref refid="ltc_8h_1a39ab4baacdb3ae44540e0a69db165094" kindref="member">LTC_SetStateRequest</ref>(<ref refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8f" kindref="member">LTC_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ltc_8h_1a45e69b4206dd5f2b49f9082e9afc745b" kindref="member">LTC_SetFirstMeasurementCycleFinished</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="ltc_8h_1a612a43f8bc6c4b96b942f98277ba7be3" kindref="member">LTC_IsFirstMeasurementCycleFinished</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="ltc_8h_1a8e03a70ffefd2885aba0a5fa58ef779e" kindref="member">LTC_GetMuxSequenceState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ltc_8h_1a519b91fad3c6160d76b757af1bc8c318" kindref="member">LTC_SaveAllGPIOs</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ltc_8h_1a1e176daa5dc098f6790bdff53b72ebb6" kindref="member">LTC_SaveVoltages</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ltc_8h_1a15bdae5ce62a072ea3ae6032f6822bae" kindref="member">LTC_SaveTemperatures</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="ltc__defs_8h_1a1ecab3bf44db531c325d43581fc66a8f" kindref="member">LTC_STATE_REQUEST_e</ref><sp/><ref refid="ltc_8h_1a9720387602144e8ebf6ded5e87e9cf7f" kindref="member">LTC_GetStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="ltc__defs_8h_1a3bf622ee46cb96e2dc6ed99ba41571b4" kindref="member">LTC_STATEMACH_e</ref><sp/><ref refid="ltc_8h_1a9a62bd325575577f53f43f3bbf591aab" kindref="member">LTC_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LTC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc.h"/>
+  </compounddef>
+</doxygen>

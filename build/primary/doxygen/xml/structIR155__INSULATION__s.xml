@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structIR155__INSULATION__s" kind="struct" language="C++" prot="public">
+    <compoundname>IR155_INSULATION_s</compoundname>
+    <includes refid="ir155_8h" local="no">ir155.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIR155__INSULATION__s_1ac5f170e4b26c5cf299556b06b234f3c4" prot="public" static="no" mutable="no">
+        <type><ref refid="ir155_8h_1ac146440c63d2d22765032fed397fb88c" kindref="member">IR155_STATE_e</ref></type>
+        <definition>IR155_STATE_e IR155_INSULATION_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="244" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIR155__INSULATION__s_1af7c90d8eb6c3592a3ea2c1e21cda17c5" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IR155_INSULATION_s::resistance</definition>
+        <argsstring></argsstring>
+        <name>resistance</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="245" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIR155__INSULATION__s_1ae860e918212d1333b0f0e1006ec88311" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IR155_INSULATION_s::OKHS_state</definition>
+        <argsstring></argsstring>
+        <name>OKHS_state</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="246" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIR155__INSULATION__s_1a0ab39adddd2bbec05b7e24751e8d32bd" prot="public" static="no" mutable="no">
+        <type><ref refid="ir155_8h_1ac146440c63d2d22765032fed397fb88c" kindref="member">IR155_STATE_e</ref></type>
+        <definition>IR155_STATE_e IR155_INSULATION_s::state_old</definition>
+        <argsstring></argsstring>
+        <name>state_old</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="247" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIR155__INSULATION__s_1af916eafeeaeb730b75e2d394ca2c17a2" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IR155_INSULATION_s::resistance_old</definition>
+        <argsstring></argsstring>
+        <name>resistance_old</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="248" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIR155__INSULATION__s_1a2dc689ecb3b5c1991dedf276d78d5c84" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IR155_INSULATION_s::OKHS_State_old</definition>
+        <argsstring></argsstring>
+        <name>OKHS_State_old</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="249" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>type definition for structure when debugging operating state, measured insulation resistance, pinstate of OKHS pin, previous operating state, previous measured insulation resistance, previous pinstate of OKHS pin </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" line="243" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/isoguard/ir155.h" bodystart="243" bodyend="250"/>
+    <listofallmembers>
+      <member refid="structIR155__INSULATION__s_1ae860e918212d1333b0f0e1006ec88311" prot="public" virt="non-virtual"><scope>IR155_INSULATION_s</scope><name>OKHS_state</name></member>
+      <member refid="structIR155__INSULATION__s_1a2dc689ecb3b5c1991dedf276d78d5c84" prot="public" virt="non-virtual"><scope>IR155_INSULATION_s</scope><name>OKHS_State_old</name></member>
+      <member refid="structIR155__INSULATION__s_1af7c90d8eb6c3592a3ea2c1e21cda17c5" prot="public" virt="non-virtual"><scope>IR155_INSULATION_s</scope><name>resistance</name></member>
+      <member refid="structIR155__INSULATION__s_1af916eafeeaeb730b75e2d394ca2c17a2" prot="public" virt="non-virtual"><scope>IR155_INSULATION_s</scope><name>resistance_old</name></member>
+      <member refid="structIR155__INSULATION__s_1ac5f170e4b26c5cf299556b06b234f3c4" prot="public" virt="non-virtual"><scope>IR155_INSULATION_s</scope><name>state</name></member>
+      <member refid="structIR155__INSULATION__s_1a0ab39adddd2bbec05b7e24751e8d32bd" prot="public" virt="non-virtual"><scope>IR155_INSULATION_s</scope><name>state_old</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

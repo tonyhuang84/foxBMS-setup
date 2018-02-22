@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDIAG__CODE__s" kind="struct" language="C++" prot="public">
+    <compoundname>DIAG_CODE_s</compoundname>
+    <includes refid="diag__cfg_8h" local="no">diag_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDIAG__CODE__s_1afc64f3a5b7d8afb1ab2b0dd5342a3d49" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_CODE_s::GENERALmsk</definition>
+        <argsstring></argsstring>
+        <name>GENERALmsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="307" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CODE__s_1a10424cc144ee83f2085bd84e7ba25bd9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_CODE_s::CELLMONmsk</definition>
+        <argsstring></argsstring>
+        <name>CELLMONmsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="308" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CODE__s_1a8d3384a5fe4f0b1b6fdb13b9be52198f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_CODE_s::COMmsk</definition>
+        <argsstring></argsstring>
+        <name>COMmsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="309" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CODE__s_1aaf375f7a067a6e9a3d9232401449b322" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_CODE_s::ADCmsk</definition>
+        <argsstring></argsstring>
+        <name>ADCmsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="310" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="306" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="306" bodyend="311"/>
+    <listofallmembers>
+      <member refid="structDIAG__CODE__s_1aaf375f7a067a6e9a3d9232401449b322" prot="public" virt="non-virtual"><scope>DIAG_CODE_s</scope><name>ADCmsk</name></member>
+      <member refid="structDIAG__CODE__s_1a10424cc144ee83f2085bd84e7ba25bd9" prot="public" virt="non-virtual"><scope>DIAG_CODE_s</scope><name>CELLMONmsk</name></member>
+      <member refid="structDIAG__CODE__s_1a8d3384a5fe4f0b1b6fdb13b9be52198f" prot="public" virt="non-virtual"><scope>DIAG_CODE_s</scope><name>COMmsk</name></member>
+      <member refid="structDIAG__CODE__s_1afc64f3a5b7d8afb1ab2b0dd5342a3d49" prot="public" virt="non-virtual"><scope>DIAG_CODE_s</scope><name>GENERALmsk</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

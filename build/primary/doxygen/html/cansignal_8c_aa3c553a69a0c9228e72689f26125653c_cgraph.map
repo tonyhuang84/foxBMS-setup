@@ -1,0 +1,4 @@
+<map id="CANS_ComposeMessage" name="CANS_ComposeMessage">
+<area shape="rect" id="node2" href="$cansignal_8c.html#af89a8da997248a0cd5900fb5f1d3d1d0" title="CANS_SetSignalData" alt="" coords="227,5,375,32"/>
+<area shape="rect" id="node3" href="$cansignal_8c.html#a7d95cbf333bab22f926b97262b20a283" title="generates bitfield, which masks the bits where the actual signal (defined by its bitlength) is locate..." alt="" coords="423,5,557,32"/>
+</map>

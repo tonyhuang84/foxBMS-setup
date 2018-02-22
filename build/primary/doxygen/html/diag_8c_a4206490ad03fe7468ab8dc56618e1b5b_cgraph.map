@@ -1,0 +1,11 @@
+<map id="DIAG_ContHandler" name="DIAG_ContHandler">
+<area shape="rect" id="node2" href="$bkpsram__cfg_8c.html#a94275ffeb6898188bf4ee07fd6272640" title="Gets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="184,5,343,32"/>
+<area shape="rect" id="node4" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="213,56,313,83"/>
+<area shape="rect" id="node5" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="214,107,313,133"/>
+<area shape="rect" id="node6" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="212,157,315,184"/>
+<area shape="rect" id="node7" href="$bkpsram__cfg_8c.html#a55378df5e6e3e5d9e81c41a5238aa7ee" title="Sets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="185,208,342,235"/>
+<area shape="rect" id="node3" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="391,56,544,83"/>
+<area shape="rect" id="node8" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="407,157,527,184"/>
+<area shape="rect" id="node9" href="$eepr__cfg_8c.html#a62ad4bbac7d8b92d7481346b31cf187d" title="sets a dirty flag to indicate that the data of a channel have been changed " alt="" coords="391,208,544,235"/>
+<area shape="rect" id="node10" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="406,259,529,285"/>
+</map>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structIO__PIN__CFG__s" kind="struct" language="C++" prot="public">
+    <compoundname>IO_PIN_CFG_s</compoundname>
+    <includes refid="io__cfg_8h" local="no">io_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1ad71b2757728a6ce4dc75bf128a845df8" prot="public" static="no" mutable="no">
+        <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+        <definition>IO_PORTS_e IO_PIN_CFG_s::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pin to be configured defined by its symbolic name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="221" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1a8b93a4d9d0f39314d0bdcea12ef69fc4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__CONFIG__IO_1gac19ab9f7a1c55f3717a21b37a956b6c6" kindref="member">IO_PIN_MODES_e</ref></type>
+        <definition>IO_PIN_MODES_e IO_PIN_CFG_s::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The mode in which the pin will be used defined by its symbolic name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="222" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1ac4a8493a3842cac2a030bef57f5a0bfd" prot="public" static="no" mutable="no">
+        <type><ref refid="io__cfg_8h_1a3e7f65457f260a093f1656c1fd253493" kindref="member">IO_PIN_PULL_e</ref></type>
+        <definition>IO_PIN_PULL_e IO_PIN_CFG_s::pinpull</definition>
+        <argsstring></argsstring>
+        <name>pinpull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The speed at which the pin will be driven defined by its symbolic name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="223" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1a7dfb5d1df8e7fb8a7dd3efa8d8b2cd72" prot="public" static="no" mutable="no">
+        <type><ref refid="io__cfg_8h_1aa405acbc2c1a5cf8460c623595b39cf6" kindref="member">IO_PIN_SPEEDS_e</ref></type>
+        <definition>IO_PIN_SPEEDS_e IO_PIN_CFG_s::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The speed at which the pin will be driven defined by its symbolic name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="224" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1a018fdc956f7a72f0c606676055414ec9" prot="public" static="no" mutable="no">
+        <type><ref refid="io__cfg_8h_1a35252e3efb73618bf146a2f9a73421af" kindref="member">IO_PIN_ALTERNATE_e</ref></type>
+        <definition>IO_PIN_ALTERNATE_e IO_PIN_CFG_s::alternate</definition>
+        <argsstring></argsstring>
+        <name>alternate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The alternate function the pin uses defined by its symbolic name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="225" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1affe9fcb432a0574706deae8f59e3ce2b" prot="public" static="no" mutable="no">
+        <type><ref refid="io__cfg_8h_1a78e8f11cb8d0a4f36a70db9f3c9034f3" kindref="member">IO_PIN_LOCK_e</ref></type>
+        <definition>IO_PIN_LOCK_e IO_PIN_CFG_s::pinlock</definition>
+        <argsstring></argsstring>
+        <name>pinlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable pin locking. The macro IO_PIN_LOCKING has to be set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="226" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIO__PIN__CFG__s_1ae212b1203b5ad1b56f2dc11a82b1cfe8" prot="public" static="no" mutable="no">
+        <type><ref refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11d" kindref="member">IO_PIN_STATE_e</ref></type>
+        <definition>IO_PIN_STATE_e IO_PIN_CFG_s::initvalue</definition>
+        <argsstring></argsstring>
+        <name>initvalue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the pin high or low at the pin initialization. Default is low. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="227" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct for the initialization configuration of a pin </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" line="220" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_cfg.h" bodystart="220" bodyend="228"/>
+    <listofallmembers>
+      <member refid="structIO__PIN__CFG__s_1a018fdc956f7a72f0c606676055414ec9" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>alternate</name></member>
+      <member refid="structIO__PIN__CFG__s_1ae212b1203b5ad1b56f2dc11a82b1cfe8" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>initvalue</name></member>
+      <member refid="structIO__PIN__CFG__s_1a8b93a4d9d0f39314d0bdcea12ef69fc4" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>mode</name></member>
+      <member refid="structIO__PIN__CFG__s_1ad71b2757728a6ce4dc75bf128a845df8" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>pin</name></member>
+      <member refid="structIO__PIN__CFG__s_1affe9fcb432a0574706deae8f59e3ce2b" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>pinlock</name></member>
+      <member refid="structIO__PIN__CFG__s_1ac4a8493a3842cac2a030bef57f5a0bfd" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>pinpull</name></member>
+      <member refid="structIO__PIN__CFG__s_1a7dfb5d1df8e7fb8a7dd3efa8d8b2cd72" prot="public" virt="non-virtual"><scope>IO_PIN_CFG_s</scope><name>speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

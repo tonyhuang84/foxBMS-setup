@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>8. Checking-up foxBMS &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="1. Hardware Specifications" href="../../hardware_documentation/specifications/specifications.html"/>
+        <link rel="prev" title="7. Communicating with foxBMS" href="../communicating/communicating.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>8. Checking-up foxBMS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/getting_started/checking/checking.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="checking-up-foxbms">
+<span id="getting-started-checking"></span><h1>8. Checking-up foxBMS<a class="headerlink" href="#checking-up-foxbms" title="Permalink to this headline">¶</a></h1>
+<p>This section describes how to test the BMS-Master Board with one BMS-Slave Board
+connected. These tests show if the hardware and software components of the
+BMS-Master Board and BMS-Slave Board are working correctly:</p>
+<div class="section" id="required-hardware">
+<h2>8.1. Required Hardware<a class="headerlink" href="#required-hardware" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>1 * BMS-Master Board including a supply cable</li>
+<li>1 * BMS-Slave Board</li>
+<li>1 * Battery voltage simulation at the BMS-Slave Board (e.g., voltage divider)</li>
+<li>1 * CAN-Bus to PC adapter</li>
+<li>1 * Normally closed switch for opening the <code class="docutils literal"><span class="pre">interlock</span></code> (hereafter referred to as
+<code class="docutils literal"><span class="pre">emergency</span> <span class="pre">off</span></code>)</li>
+<li>3 * Contactors with normally open feedback (hereafter referred to as <code class="docutils literal"><span class="pre">plus</span> <span class="pre">main</span> <span class="pre">contactor</span></code>,
+<code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code>, <code class="docutils literal"><span class="pre">minus</span> <span class="pre">main</span> <span class="pre">contactor</span></code>)</li>
+<li>1 * Debugger (optinally but, recommended)</li>
+</ul>
+</div></blockquote>
+<div class="section" id="testing-without-debugger">
+<h3>8.1.1. Testing Without Debugger<a class="headerlink" href="#testing-without-debugger" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to get little information if the system is running
+correctly without variable checking on the debugger. When requesting the later
+described states to the BMS, the contactors opening and closing can be heard.</p>
+</div>
+<div class="section" id="testing-with-debugger">
+<h3>8.1.2. Testing With Debugger<a class="headerlink" href="#testing-with-debugger" title="Permalink to this headline">¶</a></h3>
+<p>This test procedure gives more detailed test information when a debugger is
+used. The following variables should be checked during the test:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">os_timer</span></code></li>
+<li><code class="docutils literal"><span class="pre">sys_state</span></code></li>
+<li><code class="docutils literal"><span class="pre">bms_state</span></code></li>
+<li><code class="docutils literal"><span class="pre">ltc_cellvoltage</span></code></li>
+<li><code class="docutils literal"><span class="pre">cont_contactor_states</span></code></li>
+<li><code class="docutils literal"><span class="pre">ilck_interlock_state</span></code></li>
+</ul>
+</div>
+</div>
+<div class="section" id="required-software">
+<h2>8.2. Required Software<a class="headerlink" href="#required-software" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>foxBMS binaries for MCU0 (<a class="reference external" href="https://github.com/foxbms/mcu-primary">latest release on GitHub for primary</a>)</li>
+<li>foxBMS binaries for MCU1 (<a class="reference external" href="https://github.com/foxbms/mcu-secondary">latest release on GitHub for secondary</a>)</li>
+<li>Debugger-Software</li>
+<li>Software to send CAN messages from the PC on the CAN bus.</li>
+<li>CAN message for Normal and Standby</li>
+</ul>
+</div>
+<div class="section" id="test-procedure">
+<h2>8.3. Test Procedure<a class="headerlink" href="#test-procedure" title="Permalink to this headline">¶</a></h2>
+<p>The test procedure consists of three steps:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Preparing the hardware</li>
+<li>Building the software from source</li>
+<li>Requesting bms-states to BMS-Master Board and checking variable values on the
+debugger</li>
+</ol>
+</div></blockquote>
+<p>If no debugger is available, only a partially test if all parts of foxBMS are
+running correctly can be performed. As mentioned above, it can be checked
+accoustically if the contactors are opening and closing. This is marked in the
+<a class="reference internal" href="#test">Test</a> with <strong>(H)</strong> and the corresponding explanation if needed.</p>
+<div class="section" id="hardware-setup">
+<h3>8.3.1. Hardware Setup<a class="headerlink" href="#hardware-setup" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Apply voltages to the BMS-Slave Board cell measurement inputs (e.g., voltage divider)</li>
+<li>Connect the daisy chain connector from the BMS-Slave Board to the
+BMS-Master Board.</li>
+<li>Connect the <code class="docutils literal"><span class="pre">emergency</span> <span class="pre">off</span></code> to the <code class="docutils literal"><span class="pre">interlock</span></code> of the BMS-Master Board.</li>
+<li>Connect the following contactors to the BMS-Master Board:<ol class="arabic">
+<li><code class="docutils literal"><span class="pre">contactor</span> <span class="pre">0</span></code> the <code class="docutils literal"><span class="pre">plus</span> <span class="pre">main</span> <span class="pre">contactor</span></code> in the positive current path</li>
+<li><code class="docutils literal"><span class="pre">contactor</span> <span class="pre">1</span></code> the <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code> in the positive current path</li>
+<li><code class="docutils literal"><span class="pre">contactor</span> <span class="pre">2</span></code> the <code class="docutils literal"><span class="pre">minus</span> <span class="pre">main</span> <span class="pre">contactor</span></code> in the negative current path</li>
+</ol>
+</li>
+<li>Connect the CAN-interface to the PC</li>
+<li>The debugger is connected from the PC to the JTAG-interface of MCU0 of
+BMS-Master Board (optional).</li>
+</ol>
+</div>
+<div class="section" id="software-setup">
+<h3>8.3.2. Software Setup<a class="headerlink" href="#software-setup" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Build the foxBMS binaries for both, MCU0 and MCU1.</li>
+</ol>
+</div>
+<div class="section" id="test">
+<h3>8.3.3. Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Power BMS-Master Board</p>
+</li>
+<li><p class="first">Flash foxBMS MCU0 binaries on MCU0</p>
+</li>
+<li><p class="first">Flash foxBMS MCU1 binaries on MCU1</p>
+</li>
+<li><p class="first">Start CAN-communication viewer (e.g., PCAN-View when using PCAN-USB)</p>
+</li>
+<li><p class="first">Restart BMS-Master Board</p>
+</li>
+<li><p class="first">Send CAN message for Request <cite>Standby</cite>-state via CAN</p>
+</li>
+<li><p class="first">Check on the debugger if the system timer is running; variable: <code class="docutils literal"><span class="pre">os_timer</span></code></p>
+</li>
+<li><p class="first">Check if BMS-Slave Board reads voltages; variable: <code class="docutils literal"><span class="pre">ltc_cellvoltage</span></code></p>
+</li>
+<li><p class="first">Request <cite>Standby</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if <code class="docutils literal"><span class="pre">interlock</span></code> is closed (variable: <code class="docutils literal"><span class="pre">ilck_interlock_state</span></code> with <code class="docutils literal"><span class="pre">ilck_interlock_state.feedback=ILCK_SWITCH_ON</span></code>)</li>
+</ol>
+</li>
+<li><p class="first">Request <cite>Normal</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if contactors are closed in the correct order (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)<ol class="arabic">
+<li>close <code class="docutils literal"><span class="pre">minus</span> <span class="pre">main</span> <span class="pre">contactor</span></code></li>
+<li>close <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code></li>
+<li>close <code class="docutils literal"><span class="pre">plus</span> <span class="pre">main</span> <span class="pre">contactor</span></code></li>
+<li>open <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code></li>
+</ol>
+</li>
+</ol>
+<p><strong>(H)</strong>: If this test is performed with no debugger, contactors can be clicking four times.</p>
+</li>
+<li><p class="first">Request <cite>Standby</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if <code class="docutils literal"><span class="pre">interlock</span></code> is closed (variable: <code class="docutils literal"><span class="pre">ilck_interlock_state</span></code>)</li>
+<li>Check on the debugger if contactors are opened (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)</li>
+</ol>
+<p><strong>(H)</strong>: If this test is performed with no debugger, each contactor can be heard clicking one time.</p>
+</li>
+<li><p class="first">Request <cite>Normal</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if contactors are closed in the correct order (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)<ol class="arabic">
+<li>close <code class="docutils literal"><span class="pre">minus</span> <span class="pre">main</span> <span class="pre">contactor</span></code></li>
+<li>close <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code></li>
+<li>close <code class="docutils literal"><span class="pre">plus</span> <span class="pre">main</span> <span class="pre">contactor</span></code></li>
+<li>open <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code></li>
+</ol>
+</li>
+</ol>
+<p><strong>(H)</strong>: If this test is performed with no debugger, contactors can be heard clicking four times.</p>
+</li>
+<li><p class="first">Open <code class="docutils literal"><span class="pre">interlock</span></code> by pressing <code class="docutils literal"><span class="pre">emergency</span> <span class="pre">off</span></code></p>
+<ol class="arabic simple">
+<li>Check on the debugger if <code class="docutils literal"><span class="pre">interlock</span></code> is opened (variable: <code class="docutils literal"><span class="pre">ilck_interlock_state</span></code>)</li>
+<li>Check on the debugger if contactors are opened (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)</li>
+</ol>
+<p><strong>(H)</strong>: If this test is performed with no debugger, each contactor can be heard clicking one time.</p>
+</li>
+<li><p class="first">Request <cite>Normal</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>BMS should switch to <code class="docutils literal"><span class="pre">bms_state.state=BMS_STATEMACH_ERROR</span></code> as the <code class="docutils literal"><span class="pre">interlock</span></code> is still open (variable <code class="docutils literal"><span class="pre">bms_state</span></code>)</li>
+</ol>
+</li>
+<li><p class="first">Close <code class="docutils literal"><span class="pre">interlock</span></code> by releasing <code class="docutils literal"><span class="pre">emergency</span> <span class="pre">off</span></code></p>
+<ol class="arabic simple">
+<li>Check on the debugger if <code class="docutils literal"><span class="pre">interlock</span></code> is still open (variable: <code class="docutils literal"><span class="pre">ilck_interlock_state</span></code>)</li>
+<li>BMS has to stay in error state (check variable <code class="docutils literal"><span class="pre">bms_state</span></code>)</li>
+</ol>
+</li>
+<li><p class="first">Request <cite>Standby</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if <code class="docutils literal"><span class="pre">interlock</span></code> is closed (variable: <code class="docutils literal"><span class="pre">ilck_interlock_state</span></code>)</li>
+<li>Check on the debugger if contactors are still open (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)</li>
+</ol>
+</li>
+<li><p class="first">Request <cite>Normal</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if contactors are closed in the correct order (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)<ol class="arabic">
+<li>close <code class="docutils literal"><span class="pre">minus</span> <span class="pre">main</span> <span class="pre">contactor</span></code></li>
+<li>close <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code></li>
+<li>close <code class="docutils literal"><span class="pre">plus</span> <span class="pre">main</span> <span class="pre">contactor</span></code></li>
+<li>open <code class="docutils literal"><span class="pre">plus</span> <span class="pre">precharge</span> <span class="pre">contactor</span></code></li>
+</ol>
+</li>
+</ol>
+<p><strong>(H)</strong>: If this test is performed with no debugger, contactors can be heard clicking four times.</p>
+</li>
+<li><p class="first">Request <cite>Standby</cite>-state via CAN</p>
+<ol class="arabic simple">
+<li>Check on the debugger if <code class="docutils literal"><span class="pre">interlock</span></code> is closed (variable: <code class="docutils literal"><span class="pre">ilck_interlock_state</span></code>)</li>
+<li>Check on the debugger if contactors are still open (variable: <code class="docutils literal"><span class="pre">cont_contactor_states</span></code>)</li>
+</ol>
+</li>
+<li><p class="first">done</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../hardware_documentation/specifications/specifications.html" class="btn btn-neutral float-right" title="1. Hardware Specifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../communicating/communicating.html" class="btn btn-neutral" title="7. Communicating with foxBMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

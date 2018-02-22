@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__EEPR" kind="group">
+    <compoundname>CONFIG_EEPR</compoundname>
+    <title>EEPR User configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__EEPR_1ga757570943c8ffe9be40df7c65575e646" prot="public" static="no">
+        <name>EEPROM_VERSION_AT25128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>selects the used Eeprom Hardware (IC), which are supported by this driver </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="49" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__EEPR_1ga26f0fa167c499d24fd5a582cae1911c6" prot="public" static="no">
+        <name>EEPR_HW_PROTECTION</name>
+        <initializer><ref refid="eepr__cfg_8h_1a0f3c4b7b291cec4c5445c4d45e60a5ba" kindref="member">EEPR_HW_PROTECTION_NONE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>select the write/read Protection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/eepr_cfg.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration settings for the EEPROM. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

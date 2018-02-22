@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDIAG__s" kind="struct" language="C++" prot="public">
+    <compoundname>DIAG_s</compoundname>
+    <includes refid="diag_8h" local="no">diag.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDIAG__s_1ac7b54e3ff34efeafa49fe1f8129b44c0" prot="public" static="no" mutable="no">
+        <type><ref refid="diag_8h_1ab8de5d7404919cf8065d43ae3e4c53c7" kindref="member">DIAG_STATE_e</ref></type>
+        <definition>DIAG_STATE_e DIAG_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>actual state of diagnosis module </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="136" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1a8d772cffb7845a4fedcf8697cbb4f20e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DIAG_s::errcnttotal</definition>
+        <argsstring></argsstring>
+        <name>errcnttotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>total counts of diagnosis entry records </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="137" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1a11cad12ace822c55a1bf7c86c4d7dc1a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DIAG_s::errcntreported</definition>
+        <argsstring></argsstring>
+        <name>errcntreported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reported error counts to external tool </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="138" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1a90d16989ea065c35517323304a9ff43a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_s::entry_event[DIAG_ID_MAX]</definition>
+        <argsstring>[DIAG_ID_MAX]</argsstring>
+        <name>entry_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last detected entry event </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="139" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1a98422ec3223ee3415f1bcbdbe14088e0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_s::entry_cnt[DIAG_ID_MAX]</definition>
+        <argsstring>[DIAG_ID_MAX]</argsstring>
+        <name>entry_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reported event counter used for limitation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="140" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1aecb4b75fb50477a24235e4d2a79ac45a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DIAG_s::occurrence_cnt[DIAG_ID_MAX]</definition>
+        <argsstring>[DIAG_ID_MAX]</argsstring>
+        <name>occurrence_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="141" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1aa753e90df77b66852371b8718db73548" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_s::id2ch[DIAG_ID_MAX]</definition>
+        <argsstring>[DIAG_ID_MAX]</argsstring>
+        <name>id2ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagnosis-id to configuration channel selector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="142" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1aea7c90d6bab5dd4f496d23235247baa0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_s::nr_of_ch</definition>
+        <argsstring></argsstring>
+        <name>nr_of_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of configured channels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="143" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1a4e223b870bca7999b72ef42b4b837f64" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_s::errflag[(DIAG_ID_MAX+31)/32]</definition>
+        <argsstring>[(DIAG_ID_MAX+31)/32]</argsstring>
+        <name>errflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>detected error flags (bit_nr = diag_id ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="144" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1ae909e391ee23c18359f146d8e8298351" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_s::warnflag[(DIAG_ID_MAX+31)/32]</definition>
+        <argsstring>[(DIAG_ID_MAX+31)/32]</argsstring>
+        <name>warnflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>detected warning flags (bit_nr = diag_id ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="145" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__s_1abe645f3ed90ba8231d160e5534a023d2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_s::err_enableflag[(DIAG_ID_MAX+31)/32]</definition>
+        <argsstring>[(DIAG_ID_MAX+31)/32]</argsstring>
+        <name>err_enableflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enabled error flags (bit_nr = diag_id ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="146" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="135" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="135" bodyend="147"/>
+    <listofallmembers>
+      <member refid="structDIAG__s_1a98422ec3223ee3415f1bcbdbe14088e0" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>entry_cnt</name></member>
+      <member refid="structDIAG__s_1a90d16989ea065c35517323304a9ff43a" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>entry_event</name></member>
+      <member refid="structDIAG__s_1abe645f3ed90ba8231d160e5534a023d2" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>err_enableflag</name></member>
+      <member refid="structDIAG__s_1a11cad12ace822c55a1bf7c86c4d7dc1a" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>errcntreported</name></member>
+      <member refid="structDIAG__s_1a8d772cffb7845a4fedcf8697cbb4f20e" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>errcnttotal</name></member>
+      <member refid="structDIAG__s_1a4e223b870bca7999b72ef42b4b837f64" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>errflag</name></member>
+      <member refid="structDIAG__s_1aa753e90df77b66852371b8718db73548" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>id2ch</name></member>
+      <member refid="structDIAG__s_1aea7c90d6bab5dd4f496d23235247baa0" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>nr_of_ch</name></member>
+      <member refid="structDIAG__s_1aecb4b75fb50477a24235e4d2a79ac45a" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>occurrence_cnt</name></member>
+      <member refid="structDIAG__s_1ac7b54e3ff34efeafa49fe1f8129b44c0" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>state</name></member>
+      <member refid="structDIAG__s_1ae909e391ee23c18359f146d8e8298351" prot="public" virt="non-virtual"><scope>DIAG_s</scope><name>warnflag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__LTC__ADC__ACCURACY__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_LTC_ADC_ACCURACY_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a504adaee5a2e8e897273f136ad9323ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DATA_BLOCK_LTC_ADC_ACCURACY_s::adc1_deviation[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>adc1_deviation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="349" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a002b2a43e5a1f40a504ab6bb70c351c3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DATA_BLOCK_LTC_ADC_ACCURACY_s::adc2_deviation[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>adc2_deviation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="350" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a00210d2b7abaa907ed7dd66e0cde3b0e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_LTC_ADC_ACCURACY_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="351" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a26db511896c45d77b4a1e07fb501bdf6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_LTC_ADC_ACCURACY_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="352" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of ltc adc accuracy measurement </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="348" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="348" bodyend="353"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a504adaee5a2e8e897273f136ad9323ce" prot="public" virt="non-virtual"><scope>DATA_BLOCK_LTC_ADC_ACCURACY_s</scope><name>adc1_deviation</name></member>
+      <member refid="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a002b2a43e5a1f40a504ab6bb70c351c3" prot="public" virt="non-virtual"><scope>DATA_BLOCK_LTC_ADC_ACCURACY_s</scope><name>adc2_deviation</name></member>
+      <member refid="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a26db511896c45d77b4a1e07fb501bdf6" prot="public" virt="non-virtual"><scope>DATA_BLOCK_LTC_ADC_ACCURACY_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__LTC__ADC__ACCURACY__s_1a00210d2b7abaa907ed7dd66e0cde3b0e" prot="public" virt="non-virtual"><scope>DATA_BLOCK_LTC_ADC_ACCURACY_s</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="database_8h" kind="file" language="C++">
+    <compoundname>database.h</compoundname>
+    <includes refid="database__cfg_8h" local="yes">database_cfg.h</includes>
+    <includedby refid="bms_8c" local="yes">bms.c</includedby>
+    <includedby refid="sox_8c" local="yes">sox.c</includedby>
+    <includedby refid="diag__cfg_8c" local="yes">diag_cfg.c</includedby>
+    <includedby refid="enginetask__cfg_8c" local="yes">enginetask_cfg.c</includedby>
+    <includedby refid="adc__ex_8c" local="yes">adc_ex.c</includedby>
+    <includedby refid="cansignal__cfg_8c" local="yes">cansignal_cfg.c</includedby>
+    <includedby refid="os_8c" local="yes">os.c</includedby>
+    <includedby refid="database_8c" local="yes">database.c</includedby>
+    <includedby refid="cansignal_8c" local="yes">cansignal.c</includedby>
+    <includedby refid="interlock_8c" local="yes">interlock.c</includedby>
+    <includedby refid="ltc_8c" local="yes">ltc.c</includedby>
+    <includedby refid="ltc__defs_8h" local="yes">ltc_defs.h</includedby>
+    <incdepgraph>
+      <node id="508">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>stdint.h</label>
+      </node>
+      <node id="509">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="510" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="511" relation="include">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="511">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="522">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="514">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="526">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>enginetask_cfg.c</label>
+        <link refid="enginetask__cfg_8c"/>
+      </node>
+      <node id="521">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="519">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+      </node>
+      <node id="515">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="530">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="528">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="527">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>sox.c</label>
+        <link refid="sox_8c"/>
+      </node>
+      <node id="525">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="529">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="523">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="531">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="517">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structDATA__QUEUE__MESSAGE__s" prot="public">DATA_QUEUE_MESSAGE_s</innerclass>
+    <innerclass refid="structDATA__BLOCK__ACCESS__s" prot="public">DATA_BLOCK_ACCESS_s</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="database_8h_1a71c46da113f917afb39cc80c56e598be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA_StoreDataBlock</definition>
+        <argsstring>(void *dataptrfromSender, DATA_BLOCK_ID_TYPE_e blockID)</argsstring>
+        <name>DATA_StoreDataBlock</name>
+        <param>
+          <type>void *</type>
+          <declname>dataptrfromSender</declname>
+        </param>
+        <param>
+          <type><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref></type>
+          <declname>blockID</declname>
+        </param>
+        <briefdescription>
+<para>Stores a datablock in database. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>blockID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: DATA_BLOCK_ID_TYPE_e) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataptrfromSender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: void *) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="75" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.c" bodystart="78" bodyend="105"/>
+        <references refid="database_8c_1ac2cc366a3b5c10b1d7c2814af0029c56" compoundref="database_8c" startline="56">DATA_QUEUE_TIMEOUT_MS</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" compoundref="database_8h" startline="53">DATA_QUEUE_MESSAGE_s::blockID</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a27ab2ea0a108938fce353b69cd6e6cdf">DATA_QUEUE_MESSAGE_s::value</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" compoundref="database_8h" startline="51">DATA_QUEUE_MESSAGE_s::voidptr</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" compoundref="database_8h" startline="54">DATA_QUEUE_MESSAGE_s::accesstype</references>
+        <references refid="database__cfg_8h_1a146e0fa1ea9fb5bc6c9033931a141be1a3ffa6efae04a5a66bad75f41a2e8708d" compoundref="database__cfg_8h" startline="81">WRITE_ACCESS</references>
+        <references refid="enginetask__cfg_8c_1aca362e39966bcd2f7777aa4b9fd4171c" compoundref="enginetask__cfg_8c" startline="89">data_queueID</references>
+      </memberdef>
+      <memberdef kind="function" id="database_8h_1ace052ca2c5098dcade967992ecebc8bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e DATA_GetTable</definition>
+        <argsstring>(void *dataptrtoReceiver, DATA_BLOCK_ID_TYPE_e blockID)</argsstring>
+        <name>DATA_GetTable</name>
+        <param>
+          <type>void *</type>
+          <declname>dataptrtoReceiver</declname>
+        </param>
+        <param>
+          <type><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref></type>
+          <declname>blockID</declname>
+        </param>
+        <briefdescription>
+<para>Reads a datablock in database by value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>blockID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: DATA_BLOCK_ID_TYPE_e) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataptrtoReceiver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: void *) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>STD_RETURN_TYPE_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="83" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.c" bodystart="195" bodyend="225"/>
+        <references refid="database_8c_1ac2cc366a3b5c10b1d7c2814af0029c56" compoundref="database_8c" startline="56">DATA_QUEUE_TIMEOUT_MS</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" compoundref="database_8h" startline="53">DATA_QUEUE_MESSAGE_s::blockID</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a27ab2ea0a108938fce353b69cd6e6cdf">DATA_QUEUE_MESSAGE_s::value</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" compoundref="database_8h" startline="51">DATA_QUEUE_MESSAGE_s::voidptr</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" compoundref="database_8h" startline="54">DATA_QUEUE_MESSAGE_s::accesstype</references>
+        <references refid="database__cfg_8h_1a146e0fa1ea9fb5bc6c9033931a141be1ac223a4833c94fa66ccb85f033d259d8a" compoundref="database__cfg_8h" startline="82">READ_ACCESS</references>
+        <references refid="enginetask__cfg_8c_1aca362e39966bcd2f7777aa4b9fd4171c" compoundref="enginetask__cfg_8c" startline="89">data_queueID</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="database_8h_1a2efc6eb177da1d157951867390b07927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* DATA_GetTablePtrBeginCritical</definition>
+        <argsstring>(DATA_BLOCK_ID_TYPE_e blockID)</argsstring>
+        <name>DATA_GetTablePtrBeginCritical</name>
+        <param>
+          <type><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref></type>
+          <declname>blockID</declname>
+        </param>
+        <briefdescription>
+<para>Gets a pointer to datablock in database () </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>blockID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: DATA_BLOCK_ID_TYPE_e) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* RDptr </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="90" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.c" bodystart="228" bodyend="231"/>
+        <references refid="structDATA__BLOCK__ACCESS__s_1abbba39d578864435d50df35472492728" compoundref="database_8h" startline="59">DATA_BLOCK_ACCESS_s::RDptr</references>
+      </memberdef>
+      <memberdef kind="function" id="database_8h_1a1585d5c7665504898be0371c5c6295b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA_Task</definition>
+        <argsstring>(void)</argsstring>
+        <name>DATA_Task</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger of database manager </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="97" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.c" bodystart="108" bodyend="192"/>
+        <references refid="database_8c_1ac56512eaa1dc0a6ae7174aabd33720d6" compoundref="database_8c" startline="67">data_state</references>
+        <references refid="database_8c_1a15d2ff576e5aa63eac01df9d81ff4c89" compoundref="database_8c" startline="242" endline="281">DATA_Init</references>
+        <references refid="database__cfg_8c_1ac202bc9e7cb828a73634dea7ca001762" compoundref="database__cfg_8c" startline="219">data_base_dev</references>
+        <references refid="enginetask__cfg_8c_1aca362e39966bcd2f7777aa4b9fd4171c" compoundref="enginetask__cfg_8c" startline="89">data_queueID</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" compoundref="database_8h" startline="53">DATA_QUEUE_MESSAGE_s::blockID</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a27ab2ea0a108938fce353b69cd6e6cdf">DATA_QUEUE_MESSAGE_s::value</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" compoundref="database_8h" startline="51">DATA_QUEUE_MESSAGE_s::voidptr</references>
+        <references refid="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" compoundref="database_8h" startline="54">DATA_QUEUE_MESSAGE_s::accesstype</references>
+        <references refid="database__cfg_8h_1a29647333a361ef456746044eaf041e5b" compoundref="database__cfg_8h" startline="49">DATA_MAX_BLOCK_NR</references>
+        <references refid="database__cfg_8h_1a146e0fa1ea9fb5bc6c9033931a141be1a3ffa6efae04a5a66bad75f41a2e8708d" compoundref="database__cfg_8h" startline="81">WRITE_ACCESS</references>
+        <references refid="structDATA__BASE__HEADER__DEV__s_1a0d0803ea24dcf80657d7d76e9b7e0dd9" compoundref="database__cfg_8h" startline="111">DATA_BASE_HEADER_DEV_s::blockheaderptr</references>
+        <references refid="structDATA__BLOCK__ACCESS__s_1a74d7daabe117c16195c42b9ab004fcd7" compoundref="database_8h" startline="60">DATA_BLOCK_ACCESS_s::WRptr</references>
+        <references refid="database_8c_1a30ec6818c2e23b11b34ea2c2ceccf01f" compoundref="database_8c" startline="62">data_base_mutex</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="database__cfg_8h_1a311de4fcd71b45a64471cce98fb27100ae27f9860c788fb3e2cc35538a868961f" compoundref="database__cfg_8h" startline="93">DOUBLE_BUFFERING</references>
+        <references refid="structDATA__BLOCK__ACCESS__s_1abbba39d578864435d50df35472492728" compoundref="database_8h" startline="59">DATA_BLOCK_ACCESS_s::RDptr</references>
+        <references refid="database__cfg_8h_1a146e0fa1ea9fb5bc6c9033931a141be1ac223a4833c94fa66ccb85f033d259d8a" compoundref="database__cfg_8h" startline="82">READ_ACCESS</references>
+        <references refid="database__cfg_8h_1a311de4fcd71b45a64471cce98fb27100a7a07be2ac1b4b4c51e4228a1e150d40d" compoundref="database__cfg_8h" startline="92">SINGLE_BUFFERING</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa4ba3cda6fb12ac36bf6be9ca9cae824f" compoundref="diag__cfg_8h" startline="291">DIAG_SYSMON_DATABASE_ID</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Database module header. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>18.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>DATA</para></simplesect>
+Provides interfaces to database module </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#ifndef<sp/>DATABASE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATABASE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>circular<sp/>include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="database__cfg_8h" kindref="compound">database_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>doxygen<sp/>comments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structDATA__QUEUE__MESSAGE__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME<sp/>what<sp/>is<sp/>the<sp/>intention<sp/>of<sp/>this<sp/>union?<sp/>isn&apos;t<sp/>it<sp/>dangerous<sp/>if<sp/>someone<sp/>expects<sp/>a<sp/>pointer<sp/>to<sp/>and<sp/>accesses<sp/>via<sp/>.u32ptr,<sp/>but<sp/>there<sp/>is<sp/>a<sp/>value<sp/>stored<sp/>in<sp/>value?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="structDATA__QUEUE__MESSAGE__s_1ac22eac0914ef813c52979308f7488e7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structDATA__QUEUE__MESSAGE__s_1ac22eac0914ef813c52979308f7488e7b" kindref="member">u32value</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>reference<sp/>by<sp/>uint32_t<sp/>value<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structDATA__QUEUE__MESSAGE__s_1af54a5a54c25dd91914cb087414cc7c4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structDATA__QUEUE__MESSAGE__s_1af54a5a54c25dd91914cb087414cc7c4f" kindref="member">u32ptr</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>reference<sp/>by<sp/>uint32_t<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" kindref="member">voidptr</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>reference<sp/>by<sp/>general<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>value;</highlight></codeline>
+<codeline lineno="53" refid="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" kindref="member">blockID</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>definition<sp/>of<sp/>used<sp/>message<sp/>data<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database__cfg_8h_1a146e0fa1ea9fb5bc6c9033931a141be1" kindref="member">DATA_BLOCK_ACCESS_TYPE_e</ref><sp/><sp/><sp/><sp/><ref refid="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" kindref="member">accesstype</ref>;<sp/></highlight><highlight class="comment">/*<sp/>read<sp/>or<sp/>write<sp/>access<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/><ref refid="structDATA__QUEUE__MESSAGE__s" kindref="compound">DATA_QUEUE_MESSAGE_s</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structDATA__BLOCK__ACCESS__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59" refid="structDATA__BLOCK__ACCESS__s_1abbba39d578864435d50df35472492728" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structDATA__BLOCK__ACCESS__s_1abbba39d578864435d50df35472492728" kindref="member">RDptr</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structDATA__BLOCK__ACCESS__s_1a74d7daabe117c16195c42b9ab004fcd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structDATA__BLOCK__ACCESS__s_1a74d7daabe117c16195c42b9ab004fcd7" kindref="member">WRptr</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structDATA__BLOCK__ACCESS__s_1adef4715d8b0081a2a15697f999ceeaaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database__cfg_8h_1a311de4fcd71b45a64471cce98fb27100" kindref="member">DATA_BLOCK_CONSISTENCY_TYPE_e</ref><sp/><sp/><ref refid="structDATA__BLOCK__ACCESS__s_1adef4715d8b0081a2a15697f999ceeaaa" kindref="member">nr_of_buffer</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo<sp/>really<sp/>needed?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="structDATA__BLOCK__ACCESS__s" kindref="compound">DATA_BLOCK_ACCESS_s</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight></codeline>
+<codeline lineno="75"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="database_8h_1a71c46da113f917afb39cc80c56e598be" kindref="member">DATA_StoreDataBlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dataptrfromSender,<sp/><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref><sp/><sp/>blockID);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="database_8h_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dataptrtoReceiver,<sp/><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref><sp/><sp/>blockID);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="database_8h_1a2efc6eb177da1d157951867390b07927" kindref="member">DATA_GetTablePtrBeginCritical</ref>(<ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref><sp/><sp/>blockID);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="database_8h_1a1585d5c7665504898be0371c5c6295b9" kindref="member">DATA_Task</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DATABASE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h"/>
+  </compounddef>
+</doxygen>

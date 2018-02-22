@@ -1,0 +1,6 @@
+10:04:33 **** Build of configuration cpplint for project secondary ****
+python "D:\\itri\\foxBMS\\src\\foxBMS-setup\\.ws/../tools/styleguide/cpplint.py" --linelength=160 --filter=-build/include_subdir --output=eclipse --recursive embedded-software/mcu-secondary 
+python: can't open file 'D:\itri\foxBMS\src\foxBMS-setup\.ws/../tools/styleguide/cpplint.py': [Errno 2] No such file or directory
+
+10:04:34 Build Finished (took 336ms)
+

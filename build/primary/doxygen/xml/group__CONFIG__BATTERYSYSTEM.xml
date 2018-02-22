@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__BATTERYSYSTEM" kind="group">
+    <compoundname>CONFIG_BATTERYSYSTEM</compoundname>
+    <title>BATTERYSYSTEM User configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga521f4245408e682a65a20c80f37d8024" prot="public" static="no">
+        <name>BS_NR_OF_MODULES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of modules in battery pack <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="68" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1gae91303895658daa4549ef8d8942c20e3" prot="public" static="no">
+        <name>BS_NR_OF_BAT_CELLS_PER_MODULE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of battery cells per battery module (parallel cells are counted as one) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>12 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="78" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1gaa99dfa07a1fc1af7cd452f80273a0d6c" prot="public" static="no">
+        <name>BS_NR_OF_LTC_PER_MODULE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of LTC-ICs per battery module <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="98" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga6e85c9c9cb9c49f0e29841223cedb80d" prot="public" static="no">
+        <name>BS_NR_OF_TEMP_SENSORS_PER_MODULE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of temperature sensors per battery module <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>6 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="107" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga134742c4201dec02c5822bb35dc06ec2" prot="public" static="no">
+        <name>BS_NR_OF_VOLTAGES_FROM_CURRENT_SENSOR</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of pack voltage inputs measured by current sensors (like IVT-MOD) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>3 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="144" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1gad2afbed51c59fa4b3a43169ab83f1fc7" prot="public" static="no">
+        <name>BS_NR_OF_CONTACTORS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of contactors On the foxBMS Basic Board 6 contactors are supported. On the foxBMS Basic Extension board one can use 3 more contactors. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>3 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="156" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BATTERYSYSTEM_1ga1865406d4168f96de07d0b031f3c78a6" prot="public" static="no">
+        <name>BS_SEPARATE_POWERLINES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>separation of charge and discharge power line <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" line="166" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/batterysystem_cfg.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration settings of the battery system, e.g. number of cells and modules or which monitoring chip is used. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

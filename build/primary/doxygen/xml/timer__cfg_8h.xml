@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="timer__cfg_8h" kind="file" language="C++">
+    <compoundname>timer_cfg.h</compoundname>
+    <includes local="yes">mcu_cfg.h</includes>
+    <includedby refid="timer__cfg_8c" local="yes">timer_cfg.c</includedby>
+    <includedby refid="timer_8h" local="yes">timer.h</includedby>
+    <incdepgraph>
+      <node id="3037">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="3038" relation="include">
+        </childnode>
+      </node>
+      <node id="3038">
+        <label>mcu_cfg.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3046">
+        <label>ir155.c</label>
+        <link refid="ir155_8c"/>
+      </node>
+      <node id="3045">
+        <label>ir155.h</label>
+        <link refid="ir155_8h"/>
+        <childnode refid="3046" relation="include">
+        </childnode>
+        <childnode refid="3047" relation="include">
+        </childnode>
+      </node>
+      <node id="3042">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="3048">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="3041">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="3042" relation="include">
+        </childnode>
+        <childnode refid="3043" relation="include">
+        </childnode>
+        <childnode refid="3044" relation="include">
+        </childnode>
+        <childnode refid="3045" relation="include">
+        </childnode>
+        <childnode refid="3048" relation="include">
+        </childnode>
+      </node>
+      <node id="3040">
+        <label>timer_cfg.c</label>
+        <link refid="timer__cfg_8c"/>
+      </node>
+      <node id="3039">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="3040" relation="include">
+        </childnode>
+        <childnode refid="3041" relation="include">
+        </childnode>
+      </node>
+      <node id="3043">
+        <label>stm32f7xx_it.c</label>
+        <link refid="stm32f7xx__it_8c"/>
+      </node>
+      <node id="3044">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3047">
+        <label>isoguard.c</label>
+        <link refid="isoguard_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__TIMER_1gadc54627b0a63ef1be704da337fa2872b" prot="public" static="no">
+        <name>TIM4_PWM_OUT_DEFAULT_FREQUENCY</name>
+        <initializer>20000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>After initializing the PWM output generation, the PWM starts with the frequency set in this define. After that, the frequency can be changed via the TIM_PWM_SetFrequency function. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>Hz </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>100 &lt;= x and x &lt;= 125000 </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>20000 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="59" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__TIMER_1gab9ff53b0041a5e65bf5d55b40213af50" prot="public" static="no">
+        <name>TIM4_PWM_OUT_DEFAULT_DUTYCYCLE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>After initializing the PWM output generation, the PWM starts with the dutycycle set in this define. After that, the dutycycle can be changed via the TIM_PWM_SetDutycycle function. <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>percentage </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0 &lt;= x and x &lt;= 100 </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>50 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="75" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__TIMER_1ga020d0f92d3ca2924006ea269ba779be6" prot="public" static="no">
+        <name>TIM4_CLOCK_FREQUENCY</name>
+        <initializer>0.4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The PWM output generation is done on TIM4 on CH1 and CH2. This define sets the duration of one clock tick of the peripheral clock for TIM4. TIM4 disposes of a 16bit timer register and therefore the minimum adjustable PWM frequency is dependent on this define. <simplesect kind="par"><title>Type:</title><para>float </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>MHz </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0 &lt; x </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0.4 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="93" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer__cfg_8h_1a21e84e20fa85e8d7ce4a1a205ff268e0" prot="public" static="no">
+        <name>TIM4_CLOCK_TICK_DURATION_IN_US</name>
+        <initializer>2.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="94" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer__cfg_8h_1af65b866f739e71608e4e988711c939a6" prot="public" static="no">
+        <name>TIM4_CLOCK_TICK_DURATION_IN_MS</name>
+        <initializer>0.0025</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="95" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer__cfg_8h_1a9c45c8ef10f5da60bad0a94002f35dae" prot="public" static="no">
+        <name>TIM4_CLOCK_TICK_DURATION_IN_S</name>
+        <initializer>0.0000025</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="96" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__TIMER_1ga32e19cf62ea05a13c2c57e8f1adb4682" prot="public" static="no">
+        <name>TIM9_CLOCK_FREQUENCY</name>
+        <initializer>0.2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The PWM input is captured with TIM9. This define sets the duration of one clock tick of the peripheral clock for TIM9. TIM9 disposes of a 16bit timer register and therefore the minimum measureable PWM frequency is dependent on this define. <simplesect kind="par"><title>Type:</title><para>float </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>MHz </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0 &lt; x </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0.2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="113" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer__cfg_8h_1a2cc56a3c6b0e8f70a5a8d521c417f5ca" prot="public" static="no">
+        <name>TIM9_CLOCK_TICK_DURATION_IN_US</name>
+        <initializer>5.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="114" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer__cfg_8h_1a404f08896d33eb6f47461cab3eb77eac" prot="public" static="no">
+        <name>TIM9_CLOCK_TICK_DURATION_IN_MS</name>
+        <initializer>0.005</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="115" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timer__cfg_8h_1ab495fe31ada0f67aa05939497d15e47b" prot="public" static="no">
+        <name>TIM9_CLOCK_TICK_DURATION_IN_S</name>
+        <initializer>0.000005</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="116" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="timer__cfg_8h_1aac3d2c59ee0e3bbae1b99529a154eb62" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim3</definition>
+        <argsstring></argsstring>
+        <name>htim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="119" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="timer__cfg_8h_1a85788cec5a97ee377e4ee2e74f026484" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim4</definition>
+        <argsstring></argsstring>
+        <name>htim4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="120" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="timer__cfg_8h_1a31f6f787777409af5ed0d131b52b7988" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim9</definition>
+        <argsstring></argsstring>
+        <name>htim9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h" line="121" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the configuration of the peripheral timers. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>30.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>TIM</para></simplesect>
+Configuration header file of timer module </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#ifndef<sp/>TIMER_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mcu_cfg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="group__CONFIG__TIMER_1gadc54627b0a63ef1be704da337fa2872b" refkind="member"><highlight class="preprocessor">#define<sp/>TIM4_PWM_OUT_DEFAULT_FREQUENCY<sp/><sp/><sp/><sp/>20000<sp/>//<sp/>[Hz]<sp/><sp/>100<sp/>-<sp/>125000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group__CONFIG__TIMER_1gab9ff53b0041a5e65bf5d55b40213af50" refkind="member"><highlight class="preprocessor">#define<sp/>TIM4_PWM_OUT_DEFAULT_DUTYCYCLE<sp/><sp/><sp/><sp/>50<sp/><sp/><sp/><sp/>//<sp/>[%]<sp/><sp/><sp/>0<sp/>-<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="group__CONFIG__TIMER_1ga020d0f92d3ca2924006ea269ba779be6" refkind="member"><highlight class="preprocessor">#define<sp/>TIM4_CLOCK_FREQUENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>in<sp/>[MHz]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="timer__cfg_8h_1a21e84e20fa85e8d7ce4a1a205ff268e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM4_CLOCK_TICK_DURATION_IN_US<sp/><sp/><sp/><sp/>2.5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>according<sp/>to<sp/>TIM4_CLOCK_FREQUENCY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="timer__cfg_8h_1af65b866f739e71608e4e988711c939a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM4_CLOCK_TICK_DURATION_IN_MS<sp/><sp/><sp/><sp/>0.0025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="timer__cfg_8h_1a9c45c8ef10f5da60bad0a94002f35dae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM4_CLOCK_TICK_DURATION_IN_S<sp/><sp/><sp/><sp/><sp/>0.0000025</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="group__CONFIG__TIMER_1ga32e19cf62ea05a13c2c57e8f1adb4682" refkind="member"><highlight class="preprocessor">#define<sp/>TIM9_CLOCK_FREQUENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.2<sp/><sp/><sp/><sp/><sp/>//<sp/>in<sp/>[MHz]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="timer__cfg_8h_1a2cc56a3c6b0e8f70a5a8d521c417f5ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM9_CLOCK_TICK_DURATION_IN_US<sp/><sp/><sp/><sp/><sp/>5.0<sp/><sp/><sp/><sp/><sp/>//<sp/>according<sp/>to<sp/>TIM9_CLOCK_FREQUENCY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="timer__cfg_8h_1a404f08896d33eb6f47461cab3eb77eac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM9_CLOCK_TICK_DURATION_IN_MS<sp/><sp/><sp/><sp/><sp/>0.005</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="timer__cfg_8h_1ab495fe31ada0f67aa05939497d15e47b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM9_CLOCK_TICK_DURATION_IN_S<sp/><sp/><sp/><sp/><sp/><sp/>0.000005</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/><ref refid="timer__cfg_8h_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/><ref refid="timer__cfg_8h_1a85788cec5a97ee377e4ee2e74f026484" kindref="member">htim4</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/><ref refid="timer__cfg_8h_1a31f6f787777409af5ed0d131b52b7988" kindref="member">htim9</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIMER_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/timer_cfg.h"/>
+  </compounddef>
+</doxygen>

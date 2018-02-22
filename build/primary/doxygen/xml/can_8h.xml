@@ -1,0 +1,1226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="can_8h" kind="file" language="C++">
+    <compoundname>can.h</compoundname>
+    <includes refid="can__cfg_8h" local="yes">can_cfg.h</includes>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="stm32f4xx__it_8c" local="yes">stm32f4xx_it.c</includedby>
+    <includedby refid="stm32f7xx__it_8c" local="yes">stm32f7xx_it.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="os_8c" local="yes">os.c</includedby>
+    <includedby refid="can_8c" local="yes">can.c</includedby>
+    <includedby refid="cansignal_8c" local="yes">cansignal.c</includedby>
+    <incdepgraph>
+      <node id="479">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+      </node>
+      <node id="483">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>stdint.h</label>
+      </node>
+      <node id="476">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>sox_cfg.h</label>
+        <link refid="sox__cfg_8h"/>
+      </node>
+      <node id="474">
+        <label>sox.h</label>
+        <link refid="sox_8h"/>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="481">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="484">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>eepr.h</label>
+        <link refid="eepr_8h"/>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="472">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+      </node>
+      <node id="478">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="488">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="487">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="489">
+        <label>stm32f7xx_it.c</label>
+        <link refid="stm32f7xx__it_8c"/>
+      </node>
+      <node id="490">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="493">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="492">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="486">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+      </node>
+      <node id="491">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCAN__ERROR" prot="public">CAN_ERROR</innerclass>
+    <innerclass refid="structCAN__RX__BUFFERELEMENT" prot="public">CAN_RX_BUFFERELEMENT</innerclass>
+    <innerclass refid="structCAN__RX__BUFFER" prot="public">CAN_RX_BUFFER</innerclass>
+    <innerclass refid="structCAN__TX__BUFFERELEMENT" prot="public">CAN_TX_BUFFERELEMENT</innerclass>
+    <innerclass refid="structCAN__TX__BUFFER" prot="public">CAN_TX_BUFFER</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="can_8h_1ad8665a2cdb715e37f5067e269656f189" prot="public" static="no">
+        <name>CAN0_USE_TX_BUFFER</name>
+        <initializer><ref refid="group__CONFIG__CAN_1gafeba3c30df01523e8289b01137b9d087" kindref="member">CAN0_USE_TRANSMIT_BUFFER</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="45" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1a43d17bcb52b4690480f04f8a1370823f" prot="public" static="no">
+        <name>CAN0_USE_RX_BUFFER</name>
+        <initializer><ref refid="group__CONFIG__CAN_1ga839a0b93895d6cfa36684a3d6e60cb6b" kindref="member">CAN0_USE_RECEIVE_BUFFER</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="46" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1a238ecc02f2310e15e91563cbe0796bcd" prot="public" static="no">
+        <name>CAN0_TX_BUFFER_LENGTH</name>
+        <initializer><ref refid="group__CONFIG__CAN_1ga0749d604e53b73565ac8a1feb7296176" kindref="member">CAN0_TRANSMIT_BUFFER_LENGTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="48" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1ac5955cbfd7dc08d66755c0c951af7d51" prot="public" static="no">
+        <name>CAN0_RX_BUFFER_LENGTH</name>
+        <initializer><ref refid="group__CONFIG__CAN_1gac7394b7cfc05037751fcd5112618e61e" kindref="member">CAN0_RECEIVE_BUFFER_LENGTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="49" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1aceca9ab82fb92b07579f5714b36ea582" prot="public" static="no">
+        <name>CAN1_USE_TX_BUFFER</name>
+        <initializer><ref refid="group__CONFIG__CAN_1ga2e86a6c474ea154042b76a9570276d62" kindref="member">CAN1_USE_TRANSMIT_BUFFER</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="51" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1a86edcc98f6351a717889cf6df31e83c7" prot="public" static="no">
+        <name>CAN1_USE_RX_BUFFER</name>
+        <initializer><ref refid="group__CONFIG__CAN_1ga23283091d297ebc8328c85559eb8d867" kindref="member">CAN1_USE_RECEIVE_BUFFER</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="52" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1aa3d3ece60bb6c40496e9a3aeecae442a" prot="public" static="no">
+        <name>CAN1_TX_BUFFER_LENGTH</name>
+        <initializer><ref refid="group__CONFIG__CAN_1gac8be798310883d3902f66c85ee31045c" kindref="member">CAN1_TRANSMIT_BUFFER_LENGTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="54" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="can_8h_1a4f3913cbb9c7d421b1bc7132976b8c22" prot="public" static="no">
+        <name>CAN1_RX_BUFFER_LENGTH</name>
+        <initializer><ref refid="group__CONFIG__CAN_1gab2afbab179c945bf7894b4505de5d58f" kindref="member">CAN1_RECEIVE_BUFFER_LENGTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="55" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5" prot="public" static="no">
+        <name>CAN_ErrorTypeDef_e</name>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ae72c3fec218f01166e1cdae6fbed44cd" prot="public">
+          <name>CAN_ERROR_NONE</name>
+          <initializer>= HAL_CAN_ERROR_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ab067edc2b600a08ddb005face740f9c9" prot="public">
+          <name>CAN_ERROR_EWG</name>
+          <initializer>= HAL_CAN_ERROR_EWG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EWG error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a89e3365ca4d059b90807c5ec06195b6a" prot="public">
+          <name>CAN_ERROR_EPV</name>
+          <initializer>= HAL_CAN_ERROR_EPV</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EPV error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a6940a532c01c8ad17ef67982d99e6078" prot="public">
+          <name>CAN_ERROR_BOF</name>
+          <initializer>= HAL_CAN_ERROR_BOF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BOF error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a148f52c2bb0d7e5eaf411b70da868f7e" prot="public">
+          <name>CAN_ERROR_STF</name>
+          <initializer>= HAL_CAN_ERROR_STF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stuff error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5af6742dd3c10343e734224a22b8f8387c" prot="public">
+          <name>CAN_ERROR_FOR</name>
+          <initializer>= HAL_CAN_ERROR_FOR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Form error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5abd43a054ac70bc0999a7a480bb795d5a" prot="public">
+          <name>CAN_ERROR_ACK</name>
+          <initializer>= HAL_CAN_ERROR_ACK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Acknowledgment error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5af652954cf95051926dd271bedc6e2b12" prot="public">
+          <name>CAN_ERROR_BR</name>
+          <initializer>= HAL_CAN_ERROR_BR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bit recessive </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ae0a0c329946734a20fac7a7892d3ae00" prot="public">
+          <name>CAN_ERROR_BD</name>
+          <initializer>= HAL_CAN_ERROR_BD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LEC dominant </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ad4604379becaa13df2444c3bb84934dc" prot="public">
+          <name>CAN_ERROR_CRC</name>
+          <initializer>= HAL_CAN_ERROR_CRC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LEC transfer error </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="57" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="57" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" prot="public" static="no">
+        <name>CAN_NodeTypeDef_e</name>
+        <enumvalue id="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" prot="public">
+          <name>CAN_NODE1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" prot="public">
+          <name>CAN_NODE0</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="70" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="can_8h_1aed607dfb558151e57e10625333d74c00" prot="public" static="no">
+        <type>struct <ref refid="structCAN__ERROR" kindref="compound">CAN_ERROR</ref></type>
+        <definition>typedef struct CAN_ERROR  CAN_ERROR_s</definition>
+        <argsstring></argsstring>
+        <name>CAN_ERROR_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="can_8h_1a6124b2906125300d005a111fca75d293" prot="public" static="no">
+        <type>struct <ref refid="structCAN__RX__BUFFERELEMENT" kindref="compound">CAN_RX_BUFFERELEMENT</ref></type>
+        <definition>typedef struct CAN_RX_BUFFERELEMENT  CAN_RX_BUFFERELEMENT_s</definition>
+        <argsstring></argsstring>
+        <name>CAN_RX_BUFFERELEMENT_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="can_8h_1a83e469fb0b74de293812051c55c5ef7d" prot="public" static="no">
+        <type>struct <ref refid="structCAN__RX__BUFFER" kindref="compound">CAN_RX_BUFFER</ref></type>
+        <definition>typedef struct CAN_RX_BUFFER  CAN_RX_BUFFER_s</definition>
+        <argsstring></argsstring>
+        <name>CAN_RX_BUFFER_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="can_8h_1aa20c18ae3a089669ff72f6dc17ef98b5" prot="public" static="no">
+        <type>struct <ref refid="structCAN__TX__BUFFERELEMENT" kindref="compound">CAN_TX_BUFFERELEMENT</ref></type>
+        <definition>typedef struct CAN_TX_BUFFERELEMENT  CAN_TX_BUFFERELEMENT_s</definition>
+        <argsstring></argsstring>
+        <name>CAN_TX_BUFFERELEMENT_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="can_8h_1ab6fbdbce768a2dfbbca64601cf8c78c2" prot="public" static="no">
+        <type>struct <ref refid="structCAN__TX__BUFFER" kindref="compound">CAN_TX_BUFFER</ref></type>
+        <definition>typedef struct CAN_TX_BUFFER  CAN_TX_BUFFER_s</definition>
+        <argsstring></argsstring>
+        <name>CAN_TX_BUFFER_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="can_8h_1adf1b1f5fa4e9025b882545c3cfd02d3f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t canNode0_listenonly_mode</definition>
+        <argsstring></argsstring>
+        <name>canNode0_listenonly_mode</name>
+        <briefdescription>
+<para>CAN listen only transceiver mode of CAN node 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="114" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="can_8h_1a52e614be9f1d0b38ade8d5f1dfd52b00" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t canNode1_listenonly_mode</definition>
+        <argsstring></argsstring>
+        <name>canNode1_listenonly_mode</name>
+        <briefdescription>
+<para>CAN listen only transceiver mode of CAN node 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="119" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="can_8h_1a0505a1f9b26b55293dc199f45e7bb0ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes CAN settings and message filtering. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(void) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="128" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="171" bodyend="226"/>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+        <references refid="can_8c_1a7f2ae9e76f9ca5289785ccd00fd58ef7" compoundref="can_8c" startline="138">sReceiveStruct0</references>
+        <references refid="can_8c_1a9d2ac075410a424726befa42b8c9d819" compoundref="can_8c" startline="232" endline="415">CAN_InitFilter</references>
+        <references refid="can__cfg_8c_1a2f16b0fa6559c13341790a11c411eaf5" compoundref="can__cfg_8c" startline="379">can0_RxMsgs</references>
+        <references refid="can__cfg_8c_1a5f03735b09f5dbc7411f98ba6e333256" compoundref="can__cfg_8c" startline="414">can_CAN0_rx_length</references>
+        <references refid="group__CONFIG__CAN_1ga20834704e9a69d64d0b67b32ab068b0b" compoundref="can__cfg_8h" startline="205">CAN0_BUFFER_BYPASS_NUMBER_OF_IDs</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="450" endline="484">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1acd21d83f3c9be9f8e626670e20cde1f7" compoundref="diag__cfg_8h" startline="98">DIAG_CH_CAN_INIT_FAILURE</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="STM32F4xx_2mcu__cfg_8h_1a2ebc6528005693f7f574224ea00960c5" compoundref="STM32F4xx_2mcu__cfg_8h" startline="42">IO_PIN_CAN_0_TRANS_STANDBY_CONTROL</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+        <references refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" compoundref="can__cfg_8c" startline="156">hcan1</references>
+        <references refid="can_8c_1ad612db183864cd2dc50857d7158184e2" compoundref="can_8c" startline="142">sReceiveStruct1</references>
+        <references refid="can__cfg_8c_1a80ac2d641e28ef88a858bacbcc0262fb" compoundref="can__cfg_8c" startline="409">can1_RxMsgs</references>
+        <references refid="can__cfg_8c_1a9cee6bfc5d40def47caa0ef9ba42974d" compoundref="can__cfg_8c" startline="415">can_CAN1_rx_length</references>
+        <references refid="group__CONFIG__CAN_1gaa756c8f6c2d26fd59c6e5160cb42e50a" compoundref="can__cfg_8h" startline="217">CAN1_BUFFER_BYPASS_NUMBER_OF_IDs</references>
+        <references refid="STM32F4xx_2mcu__cfg_8h_1ad5257989fd9fb4155948a1402c5d7a0c" compoundref="STM32F4xx_2mcu__cfg_8h" startline="43">IO_PIN_CAN_1_TRANS_STANDBY_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a539bc7c8da4f1a8724915582aaf4dee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_TX_IRQHandler</definition>
+        <argsstring>(CAN_HandleTypeDef *ptrHcan)</argsstring>
+        <name>CAN_TX_IRQHandler</name>
+        <param>
+          <type>CAN_HandleTypeDef *</type>
+          <declname>ptrHcan</declname>
+        </param>
+        <briefdescription>
+<para>Handles CAN TX interrupt request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptrHcan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a CAN_HandleTypeDef structure that contains the configuration information for the specified CAN. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(void) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="138" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="574" bodyend="585"/>
+        <references refid="can_8c_1a7527dda2064eca2a8785fd7f8be134d1" compoundref="can_8c" startline="732" endline="757">CAN_Disable_Transmit_IT</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a79338c20357e7247284f0009552d93e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_RX_IRQHandler</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode, CAN_HandleTypeDef *ptrHcan)</argsstring>
+        <name>CAN_RX_IRQHandler</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <param>
+          <type>CAN_HandleTypeDef *</type>
+          <declname>ptrHcan</declname>
+        </param>
+        <briefdescription>
+<para>Handles CAN RX interrupt request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode that received a message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrHcan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a CAN_HandleTypeDef structure that contains the configuration information for the specified CAN.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="149" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="588" bodyend="600"/>
+        <references refid="can_8c_1a5e6080405cd793da60708daac0f18dd1" compoundref="can_8c" startline="1000" endline="1187">CAN_RxMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a9820425942a5c033cca31ddbe7101ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_Error_IRQHandler</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode, CAN_HandleTypeDef *ptrHcan)</argsstring>
+        <name>CAN_Error_IRQHandler</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <param>
+          <type>CAN_HandleTypeDef *</type>
+          <declname>ptrHcan</declname>
+        </param>
+        <briefdescription>
+<para>Handles CAN error interrupt request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrHcan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a CAN_HandleTypeDef structure that contains the configuration information for the specified CAN.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="160" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="602" bodyend="725"/>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="structCAN__ERROR_1a643ca16de99d353516135aeae994b57a" compoundref="can_8h" startline="77">CAN_ERROR::canErrorCounter</references>
+        <references refid="structCAN__ERROR_1a207a999831105f1b29bacc9d16d37acf" compoundref="can_8h" startline="76">CAN_ERROR::canError</references>
+        <references refid="structCAN__ERROR_1a8667bb8ae1c3874db7486422264487c4" compoundref="can_8h" startline="80">CAN_ERROR::previous_timestamp</references>
+        <references refid="structCAN__ERROR_1a00bee8727f74d498cf77ab7ef41368a8" compoundref="can_8h" startline="79">CAN_ERROR::timestamp</references>
+        <references refid="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" compoundref="mcu_8c" startline="164" endline="166">MCU_GetTimeStamp</references>
+        <references refid="can_8c_1aa4dbf86d1f59d72beeb24bffd2269b75" compoundref="can_8c" startline="806" endline="808">CAN_ErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1ae507124701ea8830a9bea774d8ed38cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CAN_TxMsg</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode, uint32_t msgID, uint8_t *ptrMsgData, uint32_t msgLength, uint32_t RTR)</argsstring>
+        <name>CAN_TxMsg</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>msgID</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptrMsgData</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>msgLength</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>RTR</declname>
+        </param>
+        <briefdescription>
+<para>Transmits message directly on the CAN bus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode on which the message shall be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the message that will be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrMsgData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the data that shall be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the data length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the type of frame for the message that will be transmitted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if transmission successful, otherwise E_NOT_OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="175" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="814" bodyend="857"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can_8c_1adf1b1f5fa4e9025b882545c3cfd02d3f" compoundref="can_8c" startline="62">canNode0_listenonly_mode</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="can_8c_1a52e614be9f1d0b38ade8d5f1dfd52b00" compoundref="can_8c" startline="63">canNode1_listenonly_mode</references>
+        <references refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" compoundref="can__cfg_8c" startline="156">hcan1</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1ad7386c0b7048c957b8453b6492fb544f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CAN_Send</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode, uint32_t msgID, uint8_t *ptrMsgData, uint32_t msgLength, uint32_t RTR)</argsstring>
+        <name>CAN_Send</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>msgID</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptrMsgData</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>msgLength</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>RTR</declname>
+        </param>
+        <briefdescription>
+<para>Add message to transmit buffer, message will be transmitted shortly after. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode on which the message shall be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the message that will be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptrMsgData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a uint8_t array that contains the message that will be transmitted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the message that will be transmitted This parameter can be a value of CAN_identifier_type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the type of frame for the message that will be transmitted. This parameter can be a value of CAN_remote_transmission_request</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if successful, E_NOT_OK if buffer is full or error occurred </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="191" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="860" bodyend="933"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="317" endline="328">OS_TaskEnter_Critical</references>
+        <references refid="structCAN__TX__BUFFER_1a0439b3c3a20eb0a4e7d1f6a86fffe78a" compoundref="can_8h" startline="105">CAN_TX_BUFFER::ptrWrite</references>
+        <references refid="structCAN__TX__BUFFER_1a15f915db60c1a1f4da7e452d003ff691" compoundref="can_8h" startline="104">CAN_TX_BUFFER::ptrRead</references>
+        <references refid="structCAN__TX__BUFFER_1a66f70184fa8c6010e665d60793a2c98a" compoundref="can_8h" startline="107">CAN_TX_BUFFER::buffer</references>
+        <references refid="structCAN__TX__BUFFERELEMENT_1af12470bc6b1485391eed1ca2cdf19539" compoundref="can_8h" startline="100">CAN_TX_BUFFERELEMENT::newMsg</references>
+        <references refid="structCAN__TX__BUFFER_1ab8226696c9a33665d4b0dcddd33466d9" compoundref="can_8h" startline="106">CAN_TX_BUFFER::length</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="330" endline="341">OS_TaskExit_Critical</references>
+        <references refid="structCAN__TX__BUFFERELEMENT_1ae0aa1af48a38fb570682c084a2bcf377" compoundref="can_8h" startline="99">CAN_TX_BUFFERELEMENT::msg</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a1aef8b8c5b4c2a4e50033d65630a473e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CAN_TxMsgBuffer</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode)</argsstring>
+        <name>CAN_TxMsgBuffer</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <briefdescription>
+<para>Transmits a can message from transmit buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode on which the message shall be transmitted</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if transmission successful, otherwise E_NOT_OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="201" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="936" bodyend="985"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can_8c_1adf1b1f5fa4e9025b882545c3cfd02d3f" compoundref="can_8c" startline="62">canNode0_listenonly_mode</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="can_8c_1a52e614be9f1d0b38ade8d5f1dfd52b00" compoundref="can_8c" startline="63">canNode1_listenonly_mode</references>
+        <references refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" compoundref="can__cfg_8c" startline="156">hcan1</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="317" endline="328">OS_TaskEnter_Critical</references>
+        <references refid="structCAN__TX__BUFFER_1a0439b3c3a20eb0a4e7d1f6a86fffe78a" compoundref="can_8h" startline="105">CAN_TX_BUFFER::ptrWrite</references>
+        <references refid="structCAN__TX__BUFFER_1a15f915db60c1a1f4da7e452d003ff691" compoundref="can_8h" startline="104">CAN_TX_BUFFER::ptrRead</references>
+        <references refid="structCAN__TX__BUFFER_1a66f70184fa8c6010e665d60793a2c98a" compoundref="can_8h" startline="107">CAN_TX_BUFFER::buffer</references>
+        <references refid="structCAN__TX__BUFFERELEMENT_1af12470bc6b1485391eed1ca2cdf19539" compoundref="can_8h" startline="100">CAN_TX_BUFFERELEMENT::newMsg</references>
+        <references refid="structCAN__TX__BUFFERELEMENT_1ae0aa1af48a38fb570682c084a2bcf377" compoundref="can_8h" startline="99">CAN_TX_BUFFERELEMENT::msg</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="structCAN__TX__BUFFER_1ab8226696c9a33665d4b0dcddd33466d9" compoundref="can_8h" startline="106">CAN_TX_BUFFER::length</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="330" endline="341">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a043869ff22e53aac90ce0895bdf60ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CAN_ReceiveBuffer</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode, Can_PduType *msg)</argsstring>
+        <name>CAN_ReceiveBuffer</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <param>
+          <type><ref refid="can__cfg_8h_1a374dfdd1a08fb06f469deebbf8c9c323" kindref="member">Can_PduType</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Reads a can message from RxBuffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode on which a message has been received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message that has been received</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if reception successful, if buffer empty or invalid pointer E_NOT_OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="213" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="1190" bodyend="1235"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="structCAN__RX__BUFFER_1a324459948678acccea34b4058ee1e43d" compoundref="can_8h" startline="93">CAN_RX_BUFFER::ptrWrite</references>
+        <references refid="structCAN__RX__BUFFER_1aebacd6951fe2a6aa010d232d08b27d2e" compoundref="can_8h" startline="92">CAN_RX_BUFFER::ptrRead</references>
+        <references refid="structCAN__RX__BUFFER_1a760c52f2e809f30fa0ea5be9c76bf130" compoundref="can_8h" startline="95">CAN_RX_BUFFER::buffer</references>
+        <references refid="structCAN__RX__BUFFERELEMENT_1a895b465fdf3363e2a9fc59f268a25212" compoundref="can_8h" startline="88">CAN_RX_BUFFERELEMENT::newMsg</references>
+        <references refid="structCanPdu_1ab63a04613a09801d1babf73861fb1b26" compoundref="can__cfg_8h" startline="380">CanPdu::id</references>
+        <references refid="structCAN__RX__BUFFERELEMENT_1a47289a987b6ac9eb00f6b7fbc49e49c1" compoundref="can_8h" startline="84">CAN_RX_BUFFERELEMENT::ID</references>
+        <references refid="structCanPdu_1a11b3ccf3bb1e8f402b99a471ea316b29" compoundref="can__cfg_8h" startline="381">CanPdu::dlc</references>
+        <references refid="structCAN__RX__BUFFERELEMENT_1a11f63b433bcf825f9ec1d8b370c6ffd4" compoundref="can_8h" startline="85">CAN_RX_BUFFERELEMENT::DLC</references>
+        <references refid="structCanPdu_1a48b318e9c9d489d854840700cb92d177" compoundref="can__cfg_8h" startline="379">CanPdu::sdu</references>
+        <references refid="structCAN__RX__BUFFERELEMENT_1a72c38ce2ec3dff93fef0f7500bf8b5dc" compoundref="can_8h" startline="87">CAN_RX_BUFFERELEMENT::Data</references>
+        <references refid="structCAN__RX__BUFFER_1a47a5da3da927dbb8aaa8dc0241436c98" compoundref="can_8h" startline="94">CAN_RX_BUFFER::length</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a16f96b3b71b4f4ea6e8e9b0b06f8976c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_SetSleepMode</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode)</argsstring>
+        <name>CAN_SetSleepMode</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <briefdescription>
+<para>Set CAN to sleep mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode which shall be put to sleep mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>none</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(void) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="224" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="1524" bodyend="1531"/>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" compoundref="can__cfg_8c" startline="156">hcan1</references>
+      </memberdef>
+      <memberdef kind="function" id="can_8h_1a5a81b3e2fbc69b03435aba60dfd61402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_WakeUp</definition>
+        <argsstring>(CAN_NodeTypeDef_e canNode)</argsstring>
+        <name>CAN_WakeUp</name>
+        <param>
+          <type><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref></type>
+          <declname>canNode</declname>
+        </param>
+        <briefdescription>
+<para>Wake CAN up from sleep mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>canNode which shall be waken up from sleep mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>none.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h" line="233" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.c" bodystart="1534" bodyend="1541"/>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" compoundref="can_8h" startline="71">CAN_NODE1</references>
+        <references refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" compoundref="can__cfg_8c" startline="156">hcan1</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the driver for the CAN module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>12.07.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>CAN</para></simplesect>
+Provides the interfaces for initialization, receive and transmit handling </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>CAN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="can__cfg_8h" kindref="compound">can_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="can_8h_1ad8665a2cdb715e37f5067e269656f189" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN0_USE_TX_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0_USE_TRANSMIT_BUFFER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="can_8h_1a43d17bcb52b4690480f04f8a1370823f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN0_USE_RX_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0_USE_RECEIVE_BUFFER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="can_8h_1a238ecc02f2310e15e91563cbe0796bcd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN0_TX_BUFFER_LENGTH<sp/><sp/><sp/><sp/>CAN0_TRANSMIT_BUFFER_LENGTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="can_8h_1ac5955cbfd7dc08d66755c0c951af7d51" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN0_RX_BUFFER_LENGTH<sp/><sp/><sp/><sp/>CAN0_RECEIVE_BUFFER_LENGTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="can_8h_1aceca9ab82fb92b07579f5714b36ea582" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN1_USE_TX_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN1_USE_TRANSMIT_BUFFER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="can_8h_1a86edcc98f6351a717889cf6df31e83c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN1_USE_RX_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN1_USE_RECEIVE_BUFFER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="can_8h_1aa3d3ece60bb6c40496e9a3aeecae442a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN1_TX_BUFFER_LENGTH<sp/><sp/><sp/><sp/>CAN1_TRANSMIT_BUFFER_LENGTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="can_8h_1a4f3913cbb9c7d421b1bc7132976b8c22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN1_RX_BUFFER_LENGTH<sp/><sp/><sp/><sp/>CAN1_RECEIVE_BUFFER_LENGTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ae72c3fec218f01166e1cdae6fbed44cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ae72c3fec218f01166e1cdae6fbed44cd" kindref="member">CAN_ERROR_NONE</ref><sp/>=<sp/>HAL_CAN_ERROR_NONE,<sp/></highlight></codeline>
+<codeline lineno="59" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ab067edc2b600a08ddb005face740f9c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ab067edc2b600a08ddb005face740f9c9" kindref="member">CAN_ERROR_EWG</ref><sp/>=<sp/>HAL_CAN_ERROR_EWG,<sp/></highlight></codeline>
+<codeline lineno="60" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a89e3365ca4d059b90807c5ec06195b6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a89e3365ca4d059b90807c5ec06195b6a" kindref="member">CAN_ERROR_EPV</ref><sp/>=<sp/>HAL_CAN_ERROR_EPV,<sp/></highlight></codeline>
+<codeline lineno="61" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a6940a532c01c8ad17ef67982d99e6078" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a6940a532c01c8ad17ef67982d99e6078" kindref="member">CAN_ERROR_BOF</ref><sp/>=<sp/>HAL_CAN_ERROR_BOF,<sp/></highlight></codeline>
+<codeline lineno="62" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a148f52c2bb0d7e5eaf411b70da868f7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5a148f52c2bb0d7e5eaf411b70da868f7e" kindref="member">CAN_ERROR_STF</ref><sp/>=<sp/>HAL_CAN_ERROR_STF,<sp/></highlight></codeline>
+<codeline lineno="63" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5af6742dd3c10343e734224a22b8f8387c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5af6742dd3c10343e734224a22b8f8387c" kindref="member">CAN_ERROR_FOR</ref><sp/>=<sp/>HAL_CAN_ERROR_FOR,<sp/></highlight></codeline>
+<codeline lineno="64" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5abd43a054ac70bc0999a7a480bb795d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5abd43a054ac70bc0999a7a480bb795d5a" kindref="member">CAN_ERROR_ACK</ref><sp/>=<sp/>HAL_CAN_ERROR_ACK,<sp/></highlight></codeline>
+<codeline lineno="65" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5af652954cf95051926dd271bedc6e2b12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5af652954cf95051926dd271bedc6e2b12" kindref="member">CAN_ERROR_BR</ref><sp/>=<sp/>HAL_CAN_ERROR_BR,<sp/></highlight></codeline>
+<codeline lineno="66" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ae0a0c329946734a20fac7a7892d3ae00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ae0a0c329946734a20fac7a7892d3ae00" kindref="member">CAN_ERROR_BD</ref><sp/>=<sp/>HAL_CAN_ERROR_BD,<sp/></highlight></codeline>
+<codeline lineno="67" refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ad4604379becaa13df2444c3bb84934dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5ad4604379becaa13df2444c3bb84934dc" kindref="member">CAN_ERROR_CRC</ref><sp/>=<sp/>HAL_CAN_ERROR_CRC,<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5" kindref="member">CAN_ErrorTypeDef_e</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="71" refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" kindref="member">CAN_NODE1</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">/*<sp/>CAN1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" kindref="member">CAN_NODE0</ref><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">/*<sp/>CAN0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structCAN__ERROR" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCAN__ERROR" kindref="compound">CAN_ERROR</ref><sp/>{</highlight></codeline>
+<codeline lineno="76" refid="structCAN__ERROR_1a207a999831105f1b29bacc9d16d37acf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8h_1ac8cac001c32d6bb07f75c5ee5c1330c5" kindref="member">CAN_ErrorTypeDef_e</ref><sp/><ref refid="structCAN__ERROR_1a207a999831105f1b29bacc9d16d37acf" kindref="member">canError</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structCAN__ERROR_1a643ca16de99d353516135aeae994b57a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structCAN__ERROR_1a643ca16de99d353516135aeae994b57a" kindref="member">canErrorCounter</ref>[10<sp/>-<sp/>1];<sp/><sp/></highlight><highlight class="comment">//<sp/>One<sp/>slot<sp/>for<sp/>every<sp/>error<sp/>from<sp/>HAL_CAN_ErrorTypeDef;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>space<sp/>for<sp/>NoError</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structCAN__ERROR_1a00bee8727f74d498cf77ab7ef41368a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCAN__ERROR_1a00bee8727f74d498cf77ab7ef41368a8" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="80" refid="structCAN__ERROR_1a8667bb8ae1c3874db7486422264487c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCAN__ERROR_1a8667bb8ae1c3874db7486422264487c4" kindref="member">previous_timestamp</ref>;;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="can_8h_1aed607dfb558151e57e10625333d74c00" kindref="member">CAN_ERROR_s</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structCAN__RX__BUFFERELEMENT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCAN__RX__BUFFERELEMENT" kindref="compound">CAN_RX_BUFFERELEMENT</ref><sp/>{</highlight></codeline>
+<codeline lineno="84" refid="structCAN__RX__BUFFERELEMENT_1a47289a987b6ac9eb00f6b7fbc49e49c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCAN__RX__BUFFERELEMENT_1a47289a987b6ac9eb00f6b7fbc49e49c1" kindref="member">ID</ref>;</highlight></codeline>
+<codeline lineno="85" refid="structCAN__RX__BUFFERELEMENT_1a11f63b433bcf825f9ec1d8b370c6ffd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__RX__BUFFERELEMENT_1a11f63b433bcf825f9ec1d8b370c6ffd4" kindref="member">DLC</ref>;</highlight></codeline>
+<codeline lineno="86" refid="structCAN__RX__BUFFERELEMENT_1ae27e8bffe6baf04dc0c60def9531380d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__RX__BUFFERELEMENT_1ae27e8bffe6baf04dc0c60def9531380d" kindref="member">RTR</ref>;</highlight></codeline>
+<codeline lineno="87" refid="structCAN__RX__BUFFERELEMENT_1a72c38ce2ec3dff93fef0f7500bf8b5dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>Data[8];</highlight></codeline>
+<codeline lineno="88" refid="structCAN__RX__BUFFERELEMENT_1a895b465fdf3363e2a9fc59f268a25212" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__RX__BUFFERELEMENT_1a895b465fdf3363e2a9fc59f268a25212" kindref="member">newMsg</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="can_8h_1a6124b2906125300d005a111fca75d293" kindref="member">CAN_RX_BUFFERELEMENT_s</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structCAN__RX__BUFFER" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCAN__RX__BUFFER" kindref="compound">CAN_RX_BUFFER</ref><sp/>{</highlight></codeline>
+<codeline lineno="92" refid="structCAN__RX__BUFFER_1aebacd6951fe2a6aa010d232d08b27d2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__RX__BUFFER_1aebacd6951fe2a6aa010d232d08b27d2e" kindref="member">ptrRead</ref>;</highlight></codeline>
+<codeline lineno="93" refid="structCAN__RX__BUFFER_1a324459948678acccea34b4058ee1e43d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__RX__BUFFER_1a324459948678acccea34b4058ee1e43d" kindref="member">ptrWrite</ref>;</highlight></codeline>
+<codeline lineno="94" refid="structCAN__RX__BUFFER_1a47a5da3da927dbb8aaa8dc0241436c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__RX__BUFFER_1a47a5da3da927dbb8aaa8dc0241436c98" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="95" refid="structCAN__RX__BUFFER_1a760c52f2e809f30fa0ea5be9c76bf130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCAN__RX__BUFFERELEMENT" kindref="compound">CAN_RX_BUFFERELEMENT_s</ref>*<sp/><ref refid="structCAN__RX__BUFFER_1a760c52f2e809f30fa0ea5be9c76bf130" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}<sp/><ref refid="can_8h_1a83e469fb0b74de293812051c55c5ef7d" kindref="member">CAN_RX_BUFFER_s</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="structCAN__TX__BUFFERELEMENT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCAN__TX__BUFFERELEMENT" kindref="compound">CAN_TX_BUFFERELEMENT</ref><sp/>{</highlight></codeline>
+<codeline lineno="99" refid="structCAN__TX__BUFFERELEMENT_1ae0aa1af48a38fb570682c084a2bcf377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CanTxMsgTypeDef<sp/><ref refid="structCAN__TX__BUFFERELEMENT_1ae0aa1af48a38fb570682c084a2bcf377" kindref="member">msg</ref>;</highlight></codeline>
+<codeline lineno="100" refid="structCAN__TX__BUFFERELEMENT_1af12470bc6b1485391eed1ca2cdf19539" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__TX__BUFFERELEMENT_1af12470bc6b1485391eed1ca2cdf19539" kindref="member">newMsg</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/><ref refid="can_8h_1aa20c18ae3a089669ff72f6dc17ef98b5" kindref="member">CAN_TX_BUFFERELEMENT_s</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="structCAN__TX__BUFFER" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCAN__TX__BUFFER" kindref="compound">CAN_TX_BUFFER</ref><sp/>{</highlight></codeline>
+<codeline lineno="104" refid="structCAN__TX__BUFFER_1a15f915db60c1a1f4da7e452d003ff691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__TX__BUFFER_1a15f915db60c1a1f4da7e452d003ff691" kindref="member">ptrRead</ref>;</highlight></codeline>
+<codeline lineno="105" refid="structCAN__TX__BUFFER_1a0439b3c3a20eb0a4e7d1f6a86fffe78a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__TX__BUFFER_1a0439b3c3a20eb0a4e7d1f6a86fffe78a" kindref="member">ptrWrite</ref>;</highlight></codeline>
+<codeline lineno="106" refid="structCAN__TX__BUFFER_1ab8226696c9a33665d4b0dcddd33466d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCAN__TX__BUFFER_1ab8226696c9a33665d4b0dcddd33466d9" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structCAN__TX__BUFFER_1a66f70184fa8c6010e665d60793a2c98a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCAN__TX__BUFFERELEMENT" kindref="compound">CAN_TX_BUFFERELEMENT_s</ref>*<sp/><ref refid="structCAN__TX__BUFFER_1a66f70184fa8c6010e665d60793a2c98a" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}<sp/><ref refid="can_8h_1ab6fbdbce768a2dfbbca64601cf8c78c2" kindref="member">CAN_TX_BUFFER_s</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight></codeline>
+<codeline lineno="114"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="can_8h_1adf1b1f5fa4e9025b882545c3cfd02d3f" kindref="member">canNode0_listenonly_mode</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="can_8h_1a52e614be9f1d0b38ade8d5f1dfd52b00" kindref="member">canNode1_listenonly_mode</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="can_8h_1a0505a1f9b26b55293dc199f45e7bb0ec" kindref="member">CAN_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Interrupt<sp/>handling<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="can_8h_1a539bc7c8da4f1a8724915582aaf4dee5" kindref="member">CAN_TX_IRQHandler</ref>(CAN_HandleTypeDef*<sp/>ptrHcan);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="can_8h_1a79338c20357e7247284f0009552d93e2" kindref="member">CAN_RX_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode,<sp/>CAN_HandleTypeDef*<sp/>ptrHcan);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="can_8h_1a9820425942a5c033cca31ddbe7101ff9" kindref="member">CAN_Error_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode,<sp/>CAN_HandleTypeDef*<sp/>ptrHcan);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Transmit<sp/>Message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="can_8h_1ae507124701ea8830a9bea774d8ed38cb" kindref="member">CAN_TxMsg</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode,<sp/>uint32_t<sp/>msgID,<sp/>uint8_t*<sp/>ptrMsgData,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>msgLength,<sp/>uint32_t<sp/>RTR);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="can_8h_1ad7386c0b7048c957b8453b6492fb544f" kindref="member">CAN_Send</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode,<sp/>uint32_t<sp/>msgID,<sp/>uint8_t*<sp/>ptrMsgData,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>msgLength,<sp/>uint32_t<sp/>RTR);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="can_8h_1a1aef8b8c5b4c2a4e50033d65630a473e" kindref="member">CAN_TxMsgBuffer</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Read<sp/>Message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="can_8h_1a043869ff22e53aac90ce0895bdf60ff6" kindref="member">CAN_ReceiveBuffer</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode,<sp/><ref refid="structCanPdu" kindref="compound">Can_PduType</ref>*<sp/>msg);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Sleep<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="can_8h_1a16f96b3b71b4f4ea6e8e9b0b06f8976c" kindref="member">CAN_SetSleepMode</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="can_8h_1a5a81b3e2fbc69b03435aba60dfd61402" kindref="member">CAN_WakeUp</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63" kindref="member">CAN_NodeTypeDef_e</ref><sp/>canNode);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/>*<sp/><sp/>CAN<sp/>Fault<sp/>Confinement</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/>****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fault<sp/>confinement<sp/>is<sp/>a<sp/>checking<sp/>mechanism<sp/>that<sp/>makes<sp/>it<sp/>possible<sp/>to<sp/>distinguish<sp/>between<sp/>short<sp/>disturbances</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>(e.g.<sp/>switching<sp/>noise<sp/>from<sp/>a<sp/>nearby<sp/>power<sp/>cable<sp/>couples<sp/>into<sp/>the<sp/>transmission<sp/>media)<sp/>and<sp/>permanent<sp/>failures</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>(e.g.<sp/>a<sp/>node<sp/>is<sp/>malfunctioning<sp/>and<sp/>disturbs<sp/>the<sp/>bus).</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"></highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/>Manipulation<sp/>of<sp/>the<sp/>error<sp/>counters<sp/>is<sp/>asymmetric.<sp/>On<sp/>a<sp/>successful<sp/>transmission,<sp/>or<sp/>reception,<sp/>of<sp/>a<sp/>message,</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/>the<sp/>respective<sp/>error<sp/>counter<sp/>is<sp/>decremented<sp/>if<sp/>it<sp/>had<sp/>not<sp/>been<sp/>at<sp/>zero.<sp/>In<sp/>the<sp/>case<sp/>of<sp/>a<sp/>transmit<sp/>or<sp/>receive</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/>error<sp/>the<sp/>counters<sp/>are<sp/>incremented,<sp/>but<sp/>by<sp/>a<sp/>value<sp/>greater<sp/>than<sp/>the<sp/>value<sp/>they<sp/>would<sp/>be<sp/>decrement<sp/>by<sp/>following</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>a<sp/>successful<sp/>message<sp/>transaction.</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"></highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/>If<sp/>a<sp/>node<sp/>detects<sp/>a<sp/>local<sp/>error<sp/>condition<sp/>(e.g.<sp/>due<sp/>to<sp/>local<sp/>conducted<sp/>noise,<sp/>application<sp/>software,<sp/>etc.),</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>its<sp/>resulting<sp/>error<sp/>flag<sp/>(primary<sp/>error<sp/>flag)<sp/>will<sp/>subsequently<sp/>cause<sp/>all<sp/>other<sp/>nodes<sp/>to<sp/>respond<sp/>with<sp/>an<sp/>error</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>flag<sp/>too<sp/>(secondary<sp/>error<sp/>flags).<sp/>It<sp/>is<sp/>important<sp/>that<sp/>a<sp/>distinction<sp/>is<sp/>made<sp/>between<sp/>the<sp/>nodes<sp/>that<sp/>detected<sp/>an</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>error<sp/>first<sp/>and<sp/>the<sp/>nodes<sp/>which<sp/>responded<sp/>to<sp/>the<sp/>primary<sp/>error<sp/>flag.<sp/>If<sp/>a<sp/>node<sp/>transmits<sp/>an<sp/>active<sp/>error<sp/>frame,</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>and<sp/>it<sp/>monitors<sp/>a<sp/>dominant<sp/>bit<sp/>after<sp/>the<sp/>sixth<sp/>bit<sp/>of<sp/>its<sp/>error<sp/>flag,<sp/>it<sp/>considers<sp/>itself<sp/>as<sp/>the<sp/>node<sp/>that<sp/>has</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>detected<sp/>the<sp/>error<sp/>first.<sp/>In<sp/>the<sp/>case<sp/>where<sp/>a<sp/>node<sp/>detects<sp/>errors<sp/>first<sp/>too<sp/>often,<sp/>it<sp/>is<sp/>regarded<sp/>as<sp/>malfunctioning,</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>and<sp/>its<sp/>impact<sp/>to<sp/>the<sp/>network<sp/>has<sp/>to<sp/>be<sp/>limited.<sp/>Therefore,<sp/>a<sp/>node<sp/>can<sp/>be<sp/>in<sp/>one<sp/>of<sp/>three<sp/>possible<sp/>error<sp/>states:</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"></highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/>ERROR<sp/>ACTIVE<sp/>-<sp/>Both<sp/>of<sp/>its<sp/>error<sp/>counters<sp/>are<sp/>less<sp/>than<sp/>128.<sp/>It<sp/>takes<sp/>part<sp/>fully<sp/>in<sp/>bus<sp/>communication<sp/>and<sp/>signals</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/>an<sp/>error<sp/>by<sp/>transmission<sp/>of<sp/>an<sp/>active<sp/>error<sp/>frame.This<sp/>consists<sp/>of<sp/>sequence<sp/>of<sp/>6<sp/>dominant<sp/>bits<sp/>followed</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>by<sp/>8<sp/>recessive<sp/>bits,<sp/>all<sp/>other<sp/>nodes<sp/>respond<sp/>with<sp/>the<sp/>appropriate<sp/>error<sp/>flag,<sp/>in<sp/>response<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>violation<sp/>of<sp/>the<sp/>bit<sp/>stuffing<sp/>rule.</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"></highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>ERROR<sp/>PASSIVE<sp/>-<sp/>A<sp/>node<sp/>goes<sp/>into<sp/>error<sp/>passive<sp/>state<sp/>if<sp/>at<sp/>least<sp/>one<sp/>of<sp/>its<sp/>error<sp/>counters<sp/>is<sp/>greater<sp/>than<sp/>127.<sp/>It</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>still<sp/>takes<sp/>part<sp/>in<sp/>bus<sp/>activities,<sp/>but<sp/>it<sp/>sends<sp/>a<sp/>passive<sp/>error<sp/>frame<sp/>only,<sp/>on<sp/>errors.<sp/>Furthermore,</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>an<sp/>error<sp/>passive<sp/>node<sp/>has<sp/>to<sp/>wait<sp/>an<sp/>additional<sp/>time<sp/>(Suspend<sp/>Transmission<sp/>Field,<sp/>8<sp/>recessive<sp/>bits<sp/>after</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>Intermission<sp/>Field)<sp/>after<sp/>transmission<sp/>of<sp/>a<sp/>message,<sp/>before<sp/>it<sp/>can<sp/>initiate<sp/>a<sp/>new<sp/>data<sp/>transfer.<sp/>The</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>primary<sp/>passive<sp/>error<sp/>flag<sp/>consists<sp/>of<sp/>6<sp/>passive<sp/>bits<sp/>and<sp/>thus<sp/>is<sp/>transparent<sp/>on<sp/>the<sp/>bus<sp/>and<sp/>will</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>not<sp/>jam<sp/>communications.</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"></highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>BUS<sp/>OFF<sp/>-<sp/>If<sp/>the<sp/>Transmit<sp/>Error<sp/>Counter<sp/>of<sp/>a<sp/>CAN<sp/>controller<sp/>exceeds<sp/>255,<sp/>it<sp/>goes<sp/>into<sp/>the<sp/>bus<sp/>off<sp/>state.<sp/>It<sp/>is</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>disconnected<sp/>from<sp/>the<sp/>bus<sp/>(using<sp/>internal<sp/>logic)<sp/>and<sp/>does<sp/>not<sp/>take<sp/>part<sp/>in<sp/>bus<sp/>activities<sp/>anymore.<sp/>In<sp/>order</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>to<sp/>reconnect<sp/>the<sp/>protocol<sp/>controller,<sp/>a<sp/>so-called<sp/>Bus<sp/>Off<sp/>recovery<sp/>sequence<sp/>has<sp/>to<sp/>be<sp/>executed.<sp/>This<sp/>usually</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>involves<sp/>the<sp/>re-initialization<sp/>and<sp/>configuration<sp/>of<sp/>the<sp/>CAN<sp/>controller<sp/>by<sp/>the<sp/>host<sp/>system,<sp/>after<sp/>which<sp/>it</highlight></codeline>
+<codeline lineno="274"><highlight class="comment"><sp/>will<sp/>wait<sp/>for<sp/>128<sp/>*<sp/>11<sp/>recessive<sp/>bit<sp/>times<sp/>before<sp/>it<sp/>commences<sp/>communication.</highlight></codeline>
+<codeline lineno="275"><highlight class="comment"></highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*<sp/><sp/>CAN<sp/>Error<sp/>Confinement<sp/>Rules</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>REC:<sp/>Receive<sp/>Error<sp/>Counter,<sp/>TEC:<sp/>Transmit<sp/>Error<sp/>Counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-<sp/>When<sp/>a<sp/>receiver<sp/>detects<sp/>an<sp/>error,<sp/>the<sp/>REC<sp/>will<sp/>be<sp/>increased<sp/>by<sp/>1,<sp/>except<sp/>when<sp/>the<sp/>detected<sp/>error<sp/>was<sp/>a<sp/>Bit<sp/>Error</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>during<sp/>the<sp/>sending<sp/>of<sp/>an<sp/>Active<sp/>error<sp/>Flag<sp/>or<sp/>an<sp/>Overload<sp/>Flag.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"></highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>-<sp/>When<sp/>a<sp/>receiver<sp/>detects<sp/>a<sp/>dominant<sp/>bit<sp/>as<sp/>the<sp/>first<sp/>bit<sp/>after<sp/>sending<sp/>an<sp/>Error<sp/>Flag,<sp/>the<sp/>REC<sp/>will<sp/>be<sp/>increased<sp/>by<sp/>8.</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"></highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>-<sp/>When<sp/>a<sp/>transmitter<sp/>sends<sp/>an<sp/>Error<sp/>Flag,<sp/>the<sp/>TEC<sp/>is<sp/>increased<sp/>by<sp/>8.</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>Exception<sp/>1:<sp/>If<sp/>the<sp/>transmitter<sp/>is<sp/>Error<sp/>Passive<sp/>and<sp/>detects<sp/>an<sp/>ACK<sp/>Error<sp/>because<sp/>of<sp/>not<sp/>detecting<sp/>a<sp/>dominant<sp/>ACK</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>and<sp/>does<sp/>not<sp/>detect<sp/>a<sp/>dominant<sp/>bit<sp/>while<sp/>sending<sp/>its<sp/>Passive<sp/>Error<sp/>Flag.</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"><sp/>Exception<sp/>2:<sp/>If<sp/>the<sp/>transmitter<sp/>sends<sp/>an<sp/>Error<sp/>Flag<sp/>because<sp/>a<sp/>Stuff<sp/>Error<sp/>occurred<sp/>during<sp/>arbitration,<sp/>and<sp/>should</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/>have<sp/>been<sp/>recessive,<sp/>and<sp/>has<sp/>been<sp/>sent<sp/>as<sp/>recessive<sp/>but<sp/>monitored<sp/>as<sp/>dominant.</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"></highlight></codeline>
+<codeline lineno="295"><highlight class="comment"><sp/>-<sp/>If<sp/>the<sp/>transmitter<sp/>detects<sp/>a<sp/>Bit<sp/>Error<sp/>while<sp/>sending<sp/>an<sp/>Active<sp/>Error<sp/>Flag<sp/>or<sp/>an<sp/>Overload<sp/>Frame,<sp/>the<sp/>TEC<sp/>is<sp/>increased<sp/>by<sp/>8.</highlight></codeline>
+<codeline lineno="296"><highlight class="comment"></highlight></codeline>
+<codeline lineno="297"><highlight class="comment"><sp/>-<sp/>If<sp/>a<sp/>receiver<sp/>detects<sp/>a<sp/>Bit<sp/>Error<sp/>while<sp/>sending<sp/>an<sp/>Active<sp/>Error<sp/>Flag<sp/>or<sp/>an<sp/>Overload<sp/>Flag,<sp/>the<sp/>REC<sp/>is<sp/>increased<sp/>by<sp/>8.</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"></highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>-<sp/>Any<sp/>node<sp/>tolerates<sp/>up<sp/>to<sp/>7<sp/>consecutive<sp/>dominant<sp/>bits<sp/>after<sp/>sending<sp/>an<sp/>Active<sp/>Error<sp/>Flag,<sp/>Passive<sp/>Error<sp/>Flag<sp/>or<sp/>Overload<sp/>Flag.</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"><sp/>After<sp/>detecting<sp/>the<sp/>fourteenth<sp/>consecutive<sp/>dominant<sp/>bit<sp/>(in<sp/>case<sp/>of<sp/>an<sp/>Active<sp/>Error<sp/>Flag<sp/>or<sp/>an<sp/>Overload<sp/>Flag)<sp/>or<sp/>after</highlight></codeline>
+<codeline lineno="301"><highlight class="comment"><sp/>detecting<sp/>the<sp/>eighth<sp/>consecutive<sp/>dominant<sp/>bit<sp/>following<sp/>a<sp/>Passive<sp/>Error<sp/>Flag,<sp/>and<sp/>after<sp/>each<sp/>sequence<sp/>of<sp/>additional<sp/>eight</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"><sp/>consecutive<sp/>dominant<sp/>bits,<sp/>ever<sp/>y<sp/>transmitter<sp/>increases<sp/>its<sp/>TEC<sp/>by<sp/>8<sp/>and<sp/>every<sp/>receiver<sp/>increases<sp/>its<sp/>REC<sp/>by<sp/>8.</highlight></codeline>
+<codeline lineno="303"><highlight class="comment"></highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>-<sp/>After<sp/>successful<sp/>transmission<sp/>of<sp/>a<sp/>frame<sp/>(getting<sp/>ACK<sp/>and<sp/>no<sp/>error<sp/>until<sp/>EOF<sp/>is<sp/>finished),<sp/>the<sp/>TEC<sp/>is<sp/>decreased<sp/>by<sp/>1<sp/>unless<sp/>it<sp/>was<sp/>already<sp/>0.</highlight></codeline>
+<codeline lineno="305"><highlight class="comment"></highlight></codeline>
+<codeline lineno="306"><highlight class="comment"><sp/>-<sp/>After<sp/>the<sp/>successful<sp/>reception<sp/>of<sp/>a<sp/>frame<sp/>(reception<sp/>without<sp/>error<sp/>up<sp/>to<sp/>the<sp/>ACK<sp/>Slot<sp/>and<sp/>the<sp/>successful<sp/>sending<sp/>of<sp/>the<sp/>ACK<sp/>bit),</highlight></codeline>
+<codeline lineno="307"><highlight class="comment"><sp/>the<sp/>REC<sp/>is<sp/>decreased<sp/>by<sp/>1,<sp/>if<sp/>it<sp/>was<sp/>between<sp/>1<sp/>and<sp/>127.<sp/>If<sp/>the<sp/>REC<sp/>was<sp/>0,<sp/>it<sp/>stays<sp/>0,<sp/>and<sp/>if<sp/>it<sp/>was<sp/>greater<sp/>than<sp/>127,<sp/>then<sp/>it</highlight></codeline>
+<codeline lineno="308"><highlight class="comment"><sp/>will<sp/>be<sp/>set<sp/>to<sp/>a<sp/>value<sp/>between<sp/>119<sp/>and<sp/>127.</highlight></codeline>
+<codeline lineno="309"><highlight class="comment"></highlight></codeline>
+<codeline lineno="310"><highlight class="comment"><sp/>-<sp/>A<sp/>node<sp/>is<sp/>Error<sp/>Passive<sp/>when<sp/>the<sp/>TEC<sp/>equals<sp/>or<sp/>exceeds<sp/>128,<sp/>or<sp/>when<sp/>the<sp/>REC<sp/>equals<sp/>or<sp/>exceeds<sp/>128.<sp/>An<sp/>error<sp/>condition</highlight></codeline>
+<codeline lineno="311"><highlight class="comment"><sp/>letting<sp/>a<sp/>node<sp/>become<sp/>Error<sp/>Passive<sp/>causes<sp/>the<sp/>node<sp/>to<sp/>send<sp/>an<sp/>Active<sp/>Error<sp/>Flag.</highlight></codeline>
+<codeline lineno="312"><highlight class="comment"></highlight></codeline>
+<codeline lineno="313"><highlight class="comment"><sp/>-<sp/>A<sp/>node<sp/>is<sp/>Bus<sp/>Off<sp/>when<sp/>the<sp/>TEC<sp/>is<sp/>greater<sp/>than<sp/>or<sp/>equal<sp/>to<sp/>256.</highlight></codeline>
+<codeline lineno="314"><highlight class="comment"></highlight></codeline>
+<codeline lineno="315"><highlight class="comment"><sp/>-<sp/>An<sp/>Error<sp/>Passive<sp/>node<sp/>becomes<sp/>Error<sp/>Active<sp/>again<sp/>when<sp/>both<sp/>the<sp/>TEC<sp/>and<sp/>the<sp/>REC<sp/>are<sp/>less<sp/>than<sp/>or<sp/>equal<sp/>to<sp/>127.</highlight></codeline>
+<codeline lineno="316"><highlight class="comment"></highlight></codeline>
+<codeline lineno="317"><highlight class="comment"><sp/>-<sp/>A<sp/>node<sp/>which<sp/>is<sp/>Bus<sp/>Off<sp/>is<sp/>permitted<sp/>to<sp/>become<sp/>Error<sp/>Active<sp/>(no<sp/>longer<sp/>Bus<sp/>Off)<sp/>with<sp/>its<sp/>error<sp/>counters<sp/>both<sp/>set<sp/>to<sp/>0</highlight></codeline>
+<codeline lineno="318"><highlight class="comment"><sp/>after<sp/>128<sp/>occurrence<sp/>of<sp/>11<sp/>consecutive<sp/>recessive<sp/>bits<sp/>have<sp/>been<sp/>monitored<sp/>on<sp/>the<sp/>bus.</highlight></codeline>
+<codeline lineno="319"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CAN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/can/can.h"/>
+  </compounddef>
+</doxygen>

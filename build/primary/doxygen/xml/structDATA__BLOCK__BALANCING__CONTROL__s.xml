@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__BALANCING__CONTROL__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_BALANCING_CONTROL_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1a4b61329c2ff63ff8ae3ceb2702ca6e18" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DATA_BLOCK_BALANCING_CONTROL_s::value[BS_NR_OF_BAT_CELLS]</definition>
+        <argsstring>[BS_NR_OF_BAT_CELLS]</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="188" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1a90c9e86da420c3f4bb1a7a82f86dde9e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_BALANCING_CONTROL_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="189" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1af776d7e493dfa6b50e0f24a3400ba8b5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_BALANCING_CONTROL_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="190" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1a0f50ab29d007bb9287e4846c944ceb7b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_BALANCING_CONTROL_s::enable_balancing</definition>
+        <argsstring></argsstring>
+        <name>enable_balancing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch for enabling/disabling balancing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="191" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1a78a30e9ed2447a8163f343cf62244f18" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_BALANCING_CONTROL_s::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>balancing threshold in mV </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="192" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1ab913efbcb804bf4b348e16180e8cd245" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_BALANCING_CONTROL_s::request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>balancing request per CAN </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="193" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__BALANCING__CONTROL__s_1adf7d94951004237cac04dcf424633aec" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_BALANCING_CONTROL_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for future use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="194" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="187" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="187" bodyend="195"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1a0f50ab29d007bb9287e4846c944ceb7b" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>enable_balancing</name></member>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1a90c9e86da420c3f4bb1a7a82f86dde9e" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1ab913efbcb804bf4b348e16180e8cd245" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>request</name></member>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1adf7d94951004237cac04dcf424633aec" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1a78a30e9ed2447a8163f343cf62244f18" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>threshold</name></member>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1af776d7e493dfa6b50e0f24a3400ba8b5" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>timestamp</name></member>
+      <member refid="structDATA__BLOCK__BALANCING__CONTROL__s_1a4b61329c2ff63ff8ae3ceb2702ca6e18" prot="public" virt="non-virtual"><scope>DATA_BLOCK_BALANCING_CONTROL_s</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

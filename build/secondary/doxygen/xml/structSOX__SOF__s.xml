@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structSOX__SOF__s" kind="struct" language="C++" prot="public">
+    <compoundname>SOX_SOF_s</compoundname>
+    <includes refid="sox_8h" local="no">sox.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSOX__SOF__s_1a9f1d51c00d3879838a99c197df0fba30" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_s::current_Charge_cont_max</definition>
+        <argsstring></argsstring>
+        <name>current_Charge_cont_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current for continues charging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="46" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__s_1a86a99cf6b5b02e64821c42b1ab964420" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_s::current_Charge_peak_max</definition>
+        <argsstring></argsstring>
+        <name>current_Charge_peak_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current for peak charging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="47" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__s_1aea3b5ff52435f2fed74185f78034eef5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_s::current_Discha_cont_max</definition>
+        <argsstring></argsstring>
+        <name>current_Discha_cont_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current for continues discharging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="48" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOF__s_1a98b89ec110c9b6030d80044a931532fe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOF_s::current_Discha_peak_max</definition>
+        <argsstring></argsstring>
+        <name>current_Discha_peak_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum current for peak discharging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct definition for 4 different values: in two current directions (charge, discharge) for two use cases (peak and continuous) </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="45" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="45" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structSOX__SOF__s_1a9f1d51c00d3879838a99c197df0fba30" prot="public" virt="non-virtual"><scope>SOX_SOF_s</scope><name>current_Charge_cont_max</name></member>
+      <member refid="structSOX__SOF__s_1a86a99cf6b5b02e64821c42b1ab964420" prot="public" virt="non-virtual"><scope>SOX_SOF_s</scope><name>current_Charge_peak_max</name></member>
+      <member refid="structSOX__SOF__s_1aea3b5ff52435f2fed74185f78034eef5" prot="public" virt="non-virtual"><scope>SOX_SOF_s</scope><name>current_Discha_cont_max</name></member>
+      <member refid="structSOX__SOF__s_1a98b89ec110c9b6030d80044a931532fe" prot="public" virt="non-virtual"><scope>SOX_SOF_s</scope><name>current_Discha_peak_max</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

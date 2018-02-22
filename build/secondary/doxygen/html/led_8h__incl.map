@@ -1,0 +1,9 @@
+<map id="led.h" name="led.h">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="103,80,178,107"/>
+<area shape="rect" id="node5" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="211,80,254,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,155,186,181"/>
+<area shape="rect" id="node6" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="210,155,277,181"/>
+<area shape="rect" id="node7" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="138,229,221,256"/>
+<area shape="rect" id="node9" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="245,229,367,256"/>
+<area shape="rect" id="node10" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="391,229,490,256"/>
+</map>

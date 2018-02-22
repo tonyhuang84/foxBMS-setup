@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="STM32F7xx_2mcu__cfg_8h" kind="file" language="C++">
+    <compoundname>STM32F7xx/mcu_cfg.h</compoundname>
+    <includes local="yes">stm32f7xx_hal.h</includes>
+    <includes refid="std__types_8h" local="yes">std_types.h</includes>
+    <includedby refid="nvic__cfg_8h" local="yes">nvic_cfg.h</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="nvic_8c" local="yes">nvic.c</includedby>
+    <includedby refid="adc__cfg_8h" local="yes">adc_cfg.h</includedby>
+    <includedby refid="can__cfg_8h" local="yes">can_cfg.h</includedby>
+    <includedby refid="rcc__cfg_8h" local="yes">rcc_cfg.h</includedby>
+    <includedby refid="io__cfg_8h" local="yes">io_cfg.h</includedby>
+    <includedby refid="dma__cfg_8h" local="yes">dma_cfg.h</includedby>
+    <includedby refid="rtc__cfg_8h" local="yes">rtc_cfg.h</includedby>
+    <includedby refid="sdram__cfg_8c" local="yes">sdram_cfg.c</includedby>
+    <includedby refid="spi__cfg_8h" local="yes">spi_cfg.h</includedby>
+    <includedby refid="timer__cfg_8h" local="yes">timer_cfg.h</includedby>
+    <includedby refid="uart__cfg_8h" local="yes">uart_cfg.h</includedby>
+    <includedby refid="intermcu_8h" local="yes">intermcu.h</includedby>
+    <includedby refid="chksum_8c" local="yes">chksum.c</includedby>
+    <includedby refid="portcheck_8c" local="yes">portcheck.c</includedby>
+    <includedby refid="mcu_8c" local="yes">mcu.c</includedby>
+    <includedby refid="rtc_8h" local="yes">rtc.h</includedby>
+    <includedby refid="sdram_8c" local="yes">sdram.c</includedby>
+    <includedby refid="wdg_8c" local="yes">wdg.c</includedby>
+    <incdepgraph>
+      <node id="2044">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2043">
+        <label>stm32f7xx_hal.h</label>
+      </node>
+      <node id="2042">
+        <label>mcu_cfg.h</label>
+        <link refid="STM32F7xx_2mcu__cfg_8h"/>
+        <childnode refid="2043" relation="include">
+        </childnode>
+        <childnode refid="2044" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2127">
+        <label>bal.c</label>
+        <link refid="bal_8c"/>
+      </node>
+      <node id="2109">
+        <label>ir155.c</label>
+        <link refid="ir155_8c"/>
+      </node>
+      <node id="2120">
+        <label>dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="2108">
+        <label>ir155.h</label>
+        <link refid="ir155_8h"/>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+      </node>
+      <node id="2136">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="2117">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+      </node>
+      <node id="2105">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+      </node>
+      <node id="2072">
+        <label>rcc_cfg.c</label>
+        <link refid="rcc__cfg_8c"/>
+      </node>
+      <node id="2104">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+      </node>
+      <node id="2071">
+        <label>rcc_cfg.h</label>
+        <link refid="rcc__cfg_8h"/>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2072" relation="include">
+        </childnode>
+        <childnode refid="2073" relation="include">
+        </childnode>
+      </node>
+      <node id="2058">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="2067">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="2080">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+      </node>
+      <node id="2107">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="2099" relation="include">
+        </childnode>
+        <childnode refid="2101" relation="include">
+        </childnode>
+      </node>
+      <node id="2084">
+        <label>bms_cfg.c</label>
+        <link refid="bms__cfg_8c"/>
+      </node>
+      <node id="2083">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="2077" relation="include">
+        </childnode>
+        <childnode refid="2084" relation="include">
+        </childnode>
+      </node>
+      <node id="2139">
+        <label>rtc.c</label>
+        <link refid="rtc_8c"/>
+      </node>
+      <node id="2123">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+      </node>
+      <node id="2151">
+        <label>wdg.c</label>
+        <link refid="wdg_8c"/>
+      </node>
+      <node id="2150">
+        <label>sdram.c</label>
+        <link refid="sdram_8c"/>
+      </node>
+      <node id="2149">
+        <label>chksum.c</label>
+        <link refid="chksum_8c"/>
+      </node>
+      <node id="2135">
+        <label>bkpsram.c</label>
+        <link refid="bkpsram_8c"/>
+      </node>
+      <node id="2079">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="2134">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2097">
+        <label>dma_cfg.c</label>
+        <link refid="dma__cfg_8c"/>
+      </node>
+      <node id="2137">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="2126">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2066" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2050" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+      </node>
+      <node id="2116">
+        <label>dma_cfg.h</label>
+        <link refid="dma__cfg_8h"/>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2117" relation="include">
+        </childnode>
+      </node>
+      <node id="2081">
+        <label>contactor_cfg.c</label>
+        <link refid="contactor__cfg_8c"/>
+      </node>
+      <node id="2056">
+        <label>adc_cfg.c</label>
+        <link refid="adc__cfg_8c"/>
+      </node>
+      <node id="2106">
+        <label>spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="2076">
+        <label>contactor_cfg.h</label>
+        <link refid="contactor__cfg_8h"/>
+        <childnode refid="2077" relation="include">
+        </childnode>
+        <childnode refid="2080" relation="include">
+        </childnode>
+        <childnode refid="2081" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+      </node>
+      <node id="2052">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="2053" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+        <childnode refid="2057" relation="include">
+        </childnode>
+      </node>
+      <node id="2096">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+        <childnode refid="2099" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+      </node>
+      <node id="2144">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="2143">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+      </node>
+      <node id="2140">
+        <label>sdram_cfg.c</label>
+        <link refid="sdram__cfg_8c"/>
+      </node>
+      <node id="2089">
+        <label>interlock_cfg.c</label>
+        <link refid="interlock__cfg_8c"/>
+      </node>
+      <node id="2146">
+        <label>uart_cfg.c</label>
+        <link refid="uart__cfg_8c"/>
+      </node>
+      <node id="2088">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="2089" relation="include">
+        </childnode>
+        <childnode refid="2090" relation="include">
+        </childnode>
+      </node>
+      <node id="2145">
+        <label>uart_cfg.h</label>
+        <link refid="uart__cfg_8h"/>
+        <childnode refid="2146" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+      </node>
+      <node id="2100">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="2087">
+        <label>contactor.c</label>
+        <link refid="contactor_8c"/>
+      </node>
+      <node id="2099">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="2100" relation="include">
+        </childnode>
+        <childnode refid="2101" relation="include">
+        </childnode>
+      </node>
+      <node id="2082">
+        <label>contactor.h</label>
+        <link refid="contactor_8h"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2083" relation="include">
+        </childnode>
+        <childnode refid="2085" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+      </node>
+      <node id="2054">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="2125">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+      <node id="2124">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+      </node>
+      <node id="2092">
+        <label>io_cfg.c</label>
+        <link refid="io__cfg_8c"/>
+      </node>
+      <node id="2075">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="2076" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+        <childnode refid="2092" relation="include">
+        </childnode>
+        <childnode refid="2093" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+      </node>
+      <node id="2119">
+        <label>stm32f7xx_hal_msp.c</label>
+        <link refid="stm32f7xx__hal__msp_8c"/>
+      </node>
+      <node id="2142">
+        <label>timer_cfg.c</label>
+        <link refid="timer__cfg_8c"/>
+      </node>
+      <node id="2141">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+      </node>
+      <node id="2047">
+        <label>nvic_cfg.c</label>
+        <link refid="nvic__cfg_8c"/>
+      </node>
+      <node id="2132">
+        <label>sox.c</label>
+        <link refid="sox_8c"/>
+      </node>
+      <node id="2046">
+        <label>nvic_cfg.h</label>
+        <link refid="nvic__cfg_8h"/>
+        <childnode refid="2047" relation="include">
+        </childnode>
+        <childnode refid="2048" relation="include">
+        </childnode>
+      </node>
+      <node id="2059">
+        <label>stm32f7xx_it.c</label>
+        <link refid="stm32f7xx__it_8c"/>
+      </node>
+      <node id="2115">
+        <label>portcheck.c</label>
+        <link refid="portcheck_8c"/>
+      </node>
+      <node id="2114">
+        <label>portcheck.h</label>
+        <link refid="portcheck_8h"/>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2115" relation="include">
+        </childnode>
+      </node>
+      <node id="2060">
+        <label>adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="2057">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2055" relation="include">
+        </childnode>
+        <childnode refid="2060" relation="include">
+        </childnode>
+      </node>
+      <node id="2113">
+        <label>led.c</label>
+        <link refid="led_8c"/>
+      </node>
+      <node id="2112">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="2066" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2113" relation="include">
+        </childnode>
+      </node>
+      <node id="2050">
+        <label>nvic.c</label>
+        <link refid="nvic_8c"/>
+      </node>
+      <node id="2055">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+      </node>
+      <node id="2048">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2050" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+      </node>
+      <node id="2053">
+        <label>adc_ex.h</label>
+        <link refid="adc__ex_8h"/>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2055" relation="include">
+        </childnode>
+      </node>
+      <node id="2102">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="2129">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="2101">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2102" relation="include">
+        </childnode>
+        <childnode refid="2103" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2134" relation="include">
+        </childnode>
+      </node>
+      <node id="2091">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="2049">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2090">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+      </node>
+      <node id="2138">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+      </node>
+      <node id="2110">
+        <label>isoguard.c</label>
+        <link refid="isoguard_8c"/>
+      </node>
+      <node id="2148">
+        <label>uart.c</label>
+        <link refid="uart_8c"/>
+      </node>
+      <node id="2045">
+        <label>mcu_cfg.h</label>
+        <link refid="STM32F7xx_2mcu__cfg_8h"/>
+        <childnode refid="2046" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2050" relation="include">
+        </childnode>
+        <childnode refid="2052" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2075" relation="include">
+        </childnode>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2094" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2149" relation="include">
+        </childnode>
+        <childnode refid="2115" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+        <childnode refid="2123" relation="include">
+        </childnode>
+        <childnode refid="2150" relation="include">
+        </childnode>
+        <childnode refid="2151" relation="include">
+        </childnode>
+      </node>
+      <node id="2147">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2148" relation="include">
+        </childnode>
+      </node>
+      <node id="2122">
+        <label>rtc_cfg.c</label>
+        <link refid="rtc__cfg_8c"/>
+      </node>
+      <node id="2121">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2123" relation="include">
+        </childnode>
+      </node>
+      <node id="2133">
+        <label>eepr.c</label>
+        <link refid="eepr_8c"/>
+      </node>
+      <node id="2068">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="2131">
+        <label>eepr.h</label>
+        <link refid="eepr_8h"/>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+      </node>
+      <node id="2065">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="2066" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+        <childnode refid="2068" relation="include">
+        </childnode>
+      </node>
+      <node id="2070">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="2069">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2068" relation="include">
+        </childnode>
+      </node>
+      <node id="2062">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="2111">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="2061">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
+        </childnode>
+        <childnode refid="2069" relation="include">
+        </childnode>
+      </node>
+      <node id="2093">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2094" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2113" relation="include">
+        </childnode>
+      </node>
+      <node id="2086">
+        <label>sys_cfg.c</label>
+        <link refid="sys__cfg_8c"/>
+      </node>
+      <node id="2085">
+        <label>sys_cfg.h</label>
+        <link refid="sys__cfg_8h"/>
+        <childnode refid="2086" relation="include">
+        </childnode>
+        <childnode refid="2080" relation="include">
+        </childnode>
+      </node>
+      <node id="2078">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="2077">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2066" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+      </node>
+      <node id="2051">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="2074">
+        <label>rcc.c</label>
+        <link refid="rcc_8c"/>
+      </node>
+      <node id="2073">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2074" relation="include">
+        </childnode>
+      </node>
+      <node id="2103">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="2095">
+        <label>spi_cfg.c</label>
+        <link refid="spi__cfg_8c"/>
+      </node>
+      <node id="2094">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="2095" relation="include">
+        </childnode>
+        <childnode refid="2096" relation="include">
+        </childnode>
+      </node>
+      <node id="2098">
+        <label>eepr_cfg.c</label>
+        <link refid="eepr__cfg_8c"/>
+      </node>
+      <node id="2130">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="2098" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+      </node>
+      <node id="2118">
+        <label>stm32f4xx_hal_msp.c</label>
+        <link refid="stm32f4xx__hal__msp_8c"/>
+      </node>
+      <node id="2066">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="2064">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="2063">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="2064" relation="include">
+        </childnode>
+        <childnode refid="2065" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="STM32F7xx_2mcu__cfg_8h_1a2ebc6528005693f7f574224ea00960c5" prot="public" static="no">
+        <name>IO_PIN_CAN_0_TRANS_STANDBY_CONTROL</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1a5bd8d86d1fbe87ae3b486184c3045684" kindref="member">IO_PIN_MCU_0_CAN_0_TRANS_STANDBY_CONTROL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" line="43" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="STM32F7xx_2mcu__cfg_8h_1ad5257989fd9fb4155948a1402c5d7a0c" prot="public" static="no">
+        <name>IO_PIN_CAN_1_TRANS_STANDBY_CONTROL</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1a60c7ccf1630108a52f9b8cce95ba3423" kindref="member">IO_PIN_MCU_0_CAN_1_TRANS_STANDBY_CONTROL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" line="44" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="STM32F7xx_2mcu__cfg_8h_1a78f027e5528b5e8fba780f15d9b9d54c" prot="public" static="no">
+        <name>SPI_HASEEPROM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" line="45" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="STM32F7xx_2mcu__cfg_8h_1a7039d296d3f95ff10a372201e2685c0c" prot="public" static="no">
+        <name>IO_PIN_DATA_STORAGE_EEPROM_SPI_NSS</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1a48538a5097d98baa48c29c72a4f803ee" kindref="member">IO_PIN_MCU_0_DATA_STORAGE_EEPROM_SPI_NSS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" line="46" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="STM32F7xx_2mcu__cfg_8h_1a733242f5d49505cfd7bee88f1fc2f938" prot="public" static="no">
+        <name>IO_PIN_DEBUG_LED_1</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1a3afe808f2a652fa033e7238ade19d265" kindref="member">IO_PIN_MCU_0_DEBUG_LED_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" line="47" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="STM32F7xx_2mcu__cfg_8h_1aac7d2a00d222e7835dde07ed8a53748c" prot="public" static="no">
+        <name>IO_PIN_DEBUG_LED_0</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1a8d77ed573053b028ee44e2ae0116f72d" kindref="member">IO_PIN_MCU_0_DEBUG_LED_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" line="48" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>MCU_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCU_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f7xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="std__types_8h" kindref="compound">std_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="STM32F7xx_2mcu__cfg_8h_1a2ebc6528005693f7f574224ea00960c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_CAN_0_TRANS_STANDBY_CONTROL<sp/>IO_PIN_MCU_0_CAN_0_TRANS_STANDBY_CONTROL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="STM32F7xx_2mcu__cfg_8h_1ad5257989fd9fb4155948a1402c5d7a0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_CAN_1_TRANS_STANDBY_CONTROL<sp/>IO_PIN_MCU_0_CAN_1_TRANS_STANDBY_CONTROL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="STM32F7xx_2mcu__cfg_8h_1a78f027e5528b5e8fba780f15d9b9d54c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_HASEEPROM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="STM32F7xx_2mcu__cfg_8h_1a7039d296d3f95ff10a372201e2685c0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_DATA_STORAGE_EEPROM_SPI_NSS<sp/>IO_PIN_MCU_0_DATA_STORAGE_EEPROM_SPI_NSS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="STM32F7xx_2mcu__cfg_8h_1a733242f5d49505cfd7bee88f1fc2f938" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_DEBUG_LED_1<sp/>IO_PIN_MCU_0_DEBUG_LED_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="STM32F7xx_2mcu__cfg_8h_1aac7d2a00d222e7835dde07ed8a53748c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_DEBUG_LED_0<sp/>IO_PIN_MCU_0_DEBUG_LED_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MCU_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/mcu_cfg.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+<map id="MEAS_Request_Temperature_Read" name="MEAS_Request_Temperature_Read">
+<area shape="rect" id="node2" href="$ltc_8c.html#a39ab4baacdb3ae44540e0a69db165094" title="sets the current state request of the state variable ltc_state. " alt="" coords="284,56,435,83"/>
+<area shape="rect" id="node3" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="489,5,644,32"/>
+<area shape="rect" id="node4" href="$ltc_8c.html#a59d83a728308a82bca1b6b1e8c442fee" title="checks the state requests that are made. " alt="" coords="483,56,651,83"/>
+<area shape="rect" id="node5" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="493,107,640,133"/>
+</map>

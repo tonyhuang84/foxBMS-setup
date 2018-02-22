@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5.1. Checksum Tool &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../../index.html"/>
+        <link rel="up" title="5. Software Tools" href="../tools.html"/>
+        <link rel="next" title="5.2. Flashtool" href="../flashtool/flashtool.html"/>
+        <link rel="prev" title="5. Software Tools" href="../tools.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tools.html">5. Software Tools</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.1. Checksum Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flashtool/flashtool.html">5.2. Flashtool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../tools.html">5. Software Tools</a> &raquo;</li>
+        
+      <li>5.1. Checksum Tool</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/software_documentation/tools/checksum/checksum.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="checksum-tool">
+<span id="software-documentation-checksum-tool"></span><h1>5.1. Checksum Tool<a class="headerlink" href="#checksum-tool" title="Permalink to this headline">¶</a></h1>
+<p>This section of the documentation shows the software build process and the integration of the checksum into that process in foxBMS. To setup and enabling/disabling the checksum verification on the microcontroller, see <a class="reference internal" href="../../modules/chksum/chksum.html#checksum-module"><span class="std std-ref">Checksum Module</span></a>.</p>
+<div class="section" id="module-files">
+<h2>5.1.1. Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h2>
+<p>Source:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">tools\checksum\chksum.py</span></code></li>
+</ul>
+</div></blockquote>
+<p>Configuration:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">tools\checksum\chksum.ini</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="dependencies">
+<h2>5.1.2. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Python modules used:</dt>
+<dd><ul class="first last simple">
+<li>sys</li>
+<li>os</li>
+<li>ConfigParser</li>
+<li>Bits</li>
+<li>binascii</li>
+<li>numpy</li>
+<li>struct</li>
+<li>argparse</li>
+</ul>
+</dd>
+</dl>
+<p>These modules usually are included in a foxConda Python environment.</p>
+</div>
+<div class="section" id="procedure">
+<h2>5.1.3. Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
+<p>Checksum is an after-build process.</p>
+<div class="code bash highlight-python"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">tools</span>\<span class="n">waf</span><span class="o">-</span><span class="mf">1.8</span><span class="o">.</span><span class="mi">12</span> <span class="n">configure</span> <span class="o">--</span><span class="n">check</span><span class="o">-</span><span class="n">c</span><span class="o">-</span><span class="n">compiler</span><span class="o">=</span><span class="n">gcc</span>
+<span class="n">python</span> <span class="n">tools</span>\<span class="n">waf</span><span class="o">-</span><span class="mf">1.8</span><span class="o">.</span><span class="mi">12</span> <span class="n">build</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="principle">
+<h2>5.1.4. Principle<a class="headerlink" href="#principle" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">The step</p>
+<blockquote>
+<div><div class="code bash highlight-python"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">tools</span>\<span class="n">waf</span><span class="o">-</span><span class="mf">1.8</span><span class="o">.</span><span class="mi">12</span> <span class="n">configure</span> <span class="o">--</span><span class="n">check</span><span class="o">-</span><span class="n">c</span><span class="o">-</span><span class="n">compiler</span><span class="o">=</span><span class="n">gcc</span>
+</pre></div>
+</div>
+<p>configures waf as needed to build.</p>
+</div></blockquote>
+</li>
+<li><p class="first">The step</p>
+<blockquote>
+<div><div class="code bash highlight-python"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">tools</span>\<span class="n">waf</span><span class="o">-</span><span class="mf">1.8</span><span class="o">.</span><span class="mi">12</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>builds the files</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">foxbms.elf</span></code></li>
+<li><code class="docutils literal"><span class="pre">foxbms.hex</span></code></li>
+<li><code class="docutils literal"><span class="pre">foxbms_flash.bin</span></code></li>
+<li><code class="docutils literal"><span class="pre">foxbms_flashheader.bin</span></code></li>
+</ul>
+</div></blockquote>
+<p>The <code class="docutils literal"><span class="pre">chksum</span></code> featured task is perfmored at next as defined in the main wscript. The steps are of this task are:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Reading the <code class="docutils literal"><span class="pre">foxbms.hex</span></code> file and calculates the checksum. The checksum is written back into the <code class="docutils literal"><span class="pre">foxbms.hex</span></code> file by the checksum script.</li>
+<li>Calling the GDB debugger and replaces the initial <code class="docutils literal"><span class="pre">ver_sw_validation.Checksum_u32</span></code> in <code class="docutils literal"><span class="pre">foxbms.elf</span></code> with the correct checksum.</li>
+<li>Calling the <code class="docutils literal"><span class="pre">objcopy</span></code> to regenerate the <code class="docutils literal"><span class="pre">foxbms_flashheader.bin</span></code> of <code class="docutils literal"><span class="pre">foxbms.elf</span></code>.</li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="related-modules">
+<h2>5.1.5. Related Modules<a class="headerlink" href="#related-modules" title="Permalink to this headline">¶</a></h2>
+<p>The checksum tool is related on the <code class="docutils literal"><span class="pre">Checksum</span> <span class="pre">Module</span></code> configuration (see <a class="reference internal" href="../../modules/chksum/chksum.html#checksum-module"><span class="std std-ref">Checksum Module</span></a>).</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../flashtool/flashtool.html" class="btn btn-neutral float-right" title="5.2. Flashtool" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../tools.html" class="btn btn-neutral" title="5. Software Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

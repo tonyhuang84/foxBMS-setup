@@ -1,0 +1,48 @@
+<map id="SYS_Trigger" name="SYS_Trigger">
+<area shape="rect" id="node2" href="$diag_8c.html#a7970909aa22bb87427a96c694fbab0e4" title="DIAG_SysMonNotify has to be called in every function using the system monitoring. ..." alt="" coords="188,5,329,32"/>
+<area shape="rect" id="node4" href="$sys_8c.html#a5adfb527b70165a2abfa75a8a80aeace" title="re&#45;entrance check of SYS state machine trigger function " alt="" coords="178,56,339,83"/>
+<area shape="rect" id="node5" href="$sys_8c.html#a31083c2e05ac5fe029a1a81d54b5f853" title="transfers the current state request to the state machine. " alt="" coords="168,107,349,133"/>
+<area shape="rect" id="node6" href="$interlock_8c.html#ab218c092199d1c3999262123352877fc" title="sets the current state request of the state variable ilck_state. " alt="" coords="181,157,337,184"/>
+<area shape="rect" id="node8" href="$interlock_8c.html#af3194f3e84a7a0a097d9c9c9f6b7330e" title="gets the current state. " alt="" coords="204,208,313,235"/>
+<area shape="rect" id="node9" href="$contactor_8c.html#ada308aa02debcd131b6be7cfdff748c2" title="sets the current state request of the state variable cont_state. " alt="" coords="177,259,340,285"/>
+<area shape="rect" id="node11" href="$contactor_8c.html#ae67a61c958356a5fd0bf3e1b4763aaa1" title="gets the current state. " alt="" coords="201,309,317,336"/>
+<area shape="rect" id="node12" href="$bal_8c.html#a1e9d7cabf5fbe4f033dc95ed554abd77" title="sets the current state request of the state variable bal_state. " alt="" coords="182,360,335,387"/>
+<area shape="rect" id="node14" href="$bal_8c.html#a4dc6e7af1844381b914edc8441e8229b" title="gets the current state. " alt="" coords="205,411,312,437"/>
+<area shape="rect" id="node15" href="$meas_8c.html#a55247d0978a7017843bdb63b1e1c0d3d" title="Makes the initialization request to the LTC state machine. " alt="" coords="171,579,346,605"/>
+<area shape="rect" id="node20" href="$meas_8c.html#afd00ee5bffce24a15a9606109087401b" title="Checks if the first LTC measurement cycle was made. " alt="" coords="151,513,366,554"/>
+<area shape="rect" id="node22" href="$cansignal_8c.html#a94e479f449b20c73b65d165cdae1d482" title="set flag for presence of current sensor. " alt="" coords="157,629,360,656"/>
+<area shape="rect" id="node23" href="$sox_8c.html#afd9a15c2da7ada29701833a9cd8c2c9e" title="initializes the area for SOF (where derating starts and is fully active). " alt="" coords="222,680,295,707"/>
+<area shape="rect" id="node24" href="$cansignal_8c.html#ac4c69a3c7d81c33764178e49e55b327a" title="set flag for sending of C&#45;C by current sensor. " alt="" coords="148,731,369,757"/>
+<area shape="rect" id="node25" href="$sox_8c.html#aa56b5f66d49c50f99ea3986c40435b1a" title="initializes startup SOC&#45;related values like lookup from nonvolatile ram at startup ..." alt="" coords="221,781,296,808"/>
+<area shape="rect" id="node30" href="$cansignal_8c.html#a28c789e881eaa97bf87a0b4e51f40423" title="enable/disable the periodic transmit/receive. " alt="" coords="179,883,338,909"/>
+<area shape="rect" id="node31" href="$isoguard_8c.html#a7c24f002d607cfda45cbd73b8c514bd5" title="Initializes SW&#45;Isoguard modul and Enables HW&#45;Bender&#45;Modul. " alt="" coords="225,832,293,859"/>
+<area shape="rect" id="node45" href="$bms_8c.html#a40eb276efea852638c5ba83e53569ebc" title="sets the current state request of the state variable bms_state. " alt="" coords="439,461,596,488"/>
+<area shape="rect" id="node47" href="$bms_8c.html#afcd6e979c7502594e6807d322df11555" title="Returns the current state. " alt="" coords="203,933,314,960"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="445,5,590,32"/>
+<area shape="rect" id="node7" href="$interlock_8c.html#af8ab82bd5afbd9735095f98d783246ae" title="checks the state requests that are made. " alt="" coords="431,157,604,184"/>
+<area shape="rect" id="node10" href="$contactor_8c.html#a2d058a2544cc6ec8f43566f21541404f" title="checks the state requests that are made. " alt="" coords="427,259,607,285"/>
+<area shape="rect" id="node13" href="$bal_8c.html#ab7ab439bc4f7c3a35d992cbeec514424" title="checks the state requests that are made. " alt="" coords="432,360,603,387"/>
+<area shape="rect" id="node16" href="$ltc_8c.html#a39ab4baacdb3ae44540e0a69db165094" title="sets the current state request of the state variable ltc_state. " alt="" coords="442,579,593,605"/>
+<area shape="rect" id="node17" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="675,545,830,572"/>
+<area shape="rect" id="node18" href="$ltc_8c.html#a59d83a728308a82bca1b6b1e8c442fee" title="checks the state requests that are made. " alt="" coords="669,596,837,623"/>
+<area shape="rect" id="node19" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="679,495,826,521"/>
+<area shape="rect" id="node21" href="$ltc_8c.html#a612a43f8bc6c4b96b942f98277ba7be3" title="gets the measurement initialization status. " alt="" coords="417,513,617,554"/>
+<area shape="rect" id="node26" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="460,705,575,732"/>
+<area shape="rect" id="node27" href="$bkpsram__cfg_8c.html#aad2b21ba7b320c432a7a7da2471caa1b" title="Gets the soc data saved in the backup SRAM. " alt="" coords="909,756,1016,783"/>
+<area shape="rect" id="node29" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="440,807,595,833"/>
+<area shape="rect" id="node28" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="1471,933,1624,960"/>
+<area shape="rect" id="node32" href="$ir155_8c.html#a31ea0410241eb0a7ee54267ad5153b6b" title="Software initialization of Timer&#45;modul. " alt="" coords="478,857,557,884"/>
+<area shape="rect" id="node33" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="701,857,805,884"/>
+<area shape="rect" id="node34" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="888,857,1037,884"/>
+<area shape="rect" id="node39" href="$diag_8c.html#a4206490ad03fe7468ab8dc56618e1b5b" title="DIAG_ContHandler provides generic contactor switching handling, based on configuration. " alt="" coords="1085,908,1216,935"/>
+<area shape="rect" id="node35" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="1089,857,1212,884"/>
+<area shape="rect" id="node36" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="1293,857,1393,884"/>
+<area shape="rect" id="node37" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="1294,908,1393,935"/>
+<area shape="rect" id="node38" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="1292,807,1395,833"/>
+<area shape="rect" id="node40" href="$bkpsram__cfg_8c.html#a94275ffeb6898188bf4ee07fd6272640" title="Gets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="1264,959,1423,985"/>
+<area shape="rect" id="node41" href="$bkpsram__cfg_8c.html#a55378df5e6e3e5d9e81c41a5238aa7ee" title="Sets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="1265,1009,1422,1036"/>
+<area shape="rect" id="node42" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="1487,1035,1607,1061"/>
+<area shape="rect" id="node43" href="$eepr__cfg_8c.html#a62ad4bbac7d8b92d7481346b31cf187d" title="sets a dirty flag to indicate that the data of a channel have been changed " alt="" coords="1471,1085,1624,1112"/>
+<area shape="rect" id="node44" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="1486,984,1609,1011"/>
+<area shape="rect" id="node46" href="$bms_8c.html#a619db2b25db4bb9b7f5f4564bf6291c9" title="checks the state requests that are made. " alt="" coords="665,444,840,471"/>
+</map>

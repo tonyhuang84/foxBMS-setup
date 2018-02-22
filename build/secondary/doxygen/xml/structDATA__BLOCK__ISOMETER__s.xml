@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__ISOMETER__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_ISOMETER_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__ISOMETER__s_1ae05d2c60fd3d04b6982139b1e555b4bd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_ISOMETER_s::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; valid, 1 -&gt; resistance unreliable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="317" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__ISOMETER__s_1a0412c238b18699a58ea669409fab884f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_ISOMETER_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; resistance/measurement OK , 1 -&gt; resistance too low or error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="318" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__ISOMETER__s_1a21466ab3046820a04e41afb9cd1b7ef2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_ISOMETER_s::resistance</definition>
+        <argsstring></argsstring>
+        <name>resistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>in intervals (max 3bit) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="319" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__ISOMETER__s_1a9c7eeded31fd927f80861b54c57aee8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_ISOMETER_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="320" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__ISOMETER__s_1a52db5762f68205da35e7343d64595dd6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_ISOMETER_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="321" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of isometer measurement </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="316" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="316" bodyend="322"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__ISOMETER__s_1a52db5762f68205da35e7343d64595dd6" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ISOMETER_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__ISOMETER__s_1a21466ab3046820a04e41afb9cd1b7ef2" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ISOMETER_s</scope><name>resistance</name></member>
+      <member refid="structDATA__BLOCK__ISOMETER__s_1a0412c238b18699a58ea669409fab884f" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ISOMETER_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__ISOMETER__s_1a9c7eeded31fd927f80861b54c57aee8e" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ISOMETER_s</scope><name>timestamp</name></member>
+      <member refid="structDATA__BLOCK__ISOMETER__s_1ae05d2c60fd3d04b6982139b1e555b4bd" prot="public" virt="non-virtual"><scope>DATA_BLOCK_ISOMETER_s</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

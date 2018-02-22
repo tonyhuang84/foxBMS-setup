@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_c68028793a9d15426f8a9a5f1affa50c" kind="dir">
+    <compoundname>config</compoundname>
+    <innerfile refid="batterycell__cfg_8h">batterycell_cfg.h</innerfile>
+    <innerfile refid="batterysystem__cfg_8h">batterysystem_cfg.h</innerfile>
+    <innerfile refid="general_8h">general.h</innerfile>
+    <innerfile refid="mcu__cfg_8h">mcu_cfg.h</innerfile>
+    <innerfile refid="nvic__cfg_8c">nvic_cfg.c</innerfile>
+    <innerfile refid="nvic__cfg_8h">nvic_cfg.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/"/>
+  </compounddef>
+</doxygen>

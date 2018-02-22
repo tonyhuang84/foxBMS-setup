@@ -1,0 +1,7 @@
+<map id="uart.h" name="uart.h">
+<area shape="rect" id="node2" href="$uart__cfg_8h.html" title="Headers for the configuration for the UART. " alt="" coords="141,80,219,107"/>
+<area shape="rect" id="node3" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="139,155,221,181"/>
+<area shape="rect" id="node5" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="147,229,213,256"/>
+<area shape="rect" id="node6" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="51,304,173,331"/>
+<area shape="rect" id="node7" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="197,304,296,331"/>
+</map>

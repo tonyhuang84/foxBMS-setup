@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structOS__TIMER__s" kind="struct" language="C++" prot="public">
+    <compoundname>OS_TIMER_s</compoundname>
+    <includes refid="os_8h" local="no">os.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOS__TIMER__s_1a76083e4eee94f37324478b8cc2c0c01e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_TIMER_s::Timer_1ms</definition>
+        <argsstring></argsstring>
+        <name>Timer_1ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="114" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOS__TIMER__s_1aba1a640ede3ed9b99b7a40447ec13917" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_TIMER_s::Timer_10ms</definition>
+        <argsstring></argsstring>
+        <name>Timer_10ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>10*milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="115" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOS__TIMER__s_1ad89c3f7586f482ce0316a4b70444ca65" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_TIMER_s::Timer_100ms</definition>
+        <argsstring></argsstring>
+        <name>Timer_100ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>100*milliseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="116" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOS__TIMER__s_1afb7037d90ef5ac004b414ad4cda66887" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_TIMER_s::Timer_sec</definition>
+        <argsstring></argsstring>
+        <name>Timer_sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>seconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="117" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOS__TIMER__s_1a6e0521201d5b6957d7e1f4e4072dd0d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_TIMER_s::Timer_min</definition>
+        <argsstring></argsstring>
+        <name>Timer_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minutes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="118" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOS__TIMER__s_1ab8f203f52cafc7e660a0f16e9232658e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_TIMER_s::Timer_h</definition>
+        <argsstring></argsstring>
+        <name>Timer_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hours </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="119" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOS__TIMER__s_1abbac9c91aad0cb76d871fe7fcf3bc21e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t OS_TIMER_s::Timer_d</definition>
+        <argsstring></argsstring>
+        <name>Timer_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>days </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="120" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>OS-Timer </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" line="113" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/os/os.h" bodystart="113" bodyend="121"/>
+    <listofallmembers>
+      <member refid="structOS__TIMER__s_1ad89c3f7586f482ce0316a4b70444ca65" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_100ms</name></member>
+      <member refid="structOS__TIMER__s_1aba1a640ede3ed9b99b7a40447ec13917" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_10ms</name></member>
+      <member refid="structOS__TIMER__s_1a76083e4eee94f37324478b8cc2c0c01e" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_1ms</name></member>
+      <member refid="structOS__TIMER__s_1abbac9c91aad0cb76d871fe7fcf3bc21e" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_d</name></member>
+      <member refid="structOS__TIMER__s_1ab8f203f52cafc7e660a0f16e9232658e" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_h</name></member>
+      <member refid="structOS__TIMER__s_1a6e0521201d5b6957d7e1f4e4072dd0d4" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_min</name></member>
+      <member refid="structOS__TIMER__s_1afb7037d90ef5ac004b414ad4cda66887" prot="public" virt="non-virtual"><scope>OS_TIMER_s</scope><name>Timer_sec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

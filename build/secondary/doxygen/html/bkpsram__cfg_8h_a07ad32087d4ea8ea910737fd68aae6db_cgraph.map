@@ -1,0 +1,4 @@
+<map id="BKPSRAM_Set_contactorcnt" name="BKPSRAM_Set_contactorcnt">
+<area shape="rect" id="node2" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="248,5,368,32"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="247,56,369,83"/>
+</map>

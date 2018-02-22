@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="spi_8h" kind="file" language="C++">
+    <compoundname>spi.h</compoundname>
+    <includes refid="spi__cfg_8h" local="yes">spi_cfg.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="dma__cfg_8c" local="yes">dma_cfg.c</includedby>
+    <includedby refid="ltc__cfg_8h" local="yes">ltc_cfg.h</includedby>
+    <includedby refid="intermcu_8h" local="yes">intermcu.h</includedby>
+    <includedby refid="intermcu_8c" local="yes">intermcu.c</includedby>
+    <includedby refid="ltc__defs_8h" local="yes">ltc_defs.h</includedby>
+    <includedby refid="ltc_8c" local="yes">ltc.c</includedby>
+    <includedby refid="spi_8c" local="yes">spi.c</includedby>
+    <incdepgraph>
+      <node id="2099">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="2094">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="2095" relation="include">
+        </childnode>
+      </node>
+      <node id="2095">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="2096" relation="include">
+        </childnode>
+        <childnode refid="2101" relation="include">
+        </childnode>
+      </node>
+      <node id="2096">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+      </node>
+      <node id="2100">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="2098">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="2096" relation="include">
+        </childnode>
+        <childnode refid="2099" relation="include">
+        </childnode>
+        <childnode refid="2100" relation="include">
+        </childnode>
+      </node>
+      <node id="2101">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2098" relation="include">
+        </childnode>
+      </node>
+      <node id="2097">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2115">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+      </node>
+      <node id="2112">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+      </node>
+      <node id="2111">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2113" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+      </node>
+      <node id="2103">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2114">
+        <label>spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="2102">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="2103" relation="include">
+        </childnode>
+        <childnode refid="2104" relation="include">
+        </childnode>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2115" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2114" relation="include">
+        </childnode>
+      </node>
+      <node id="2113">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="2108">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="2106">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="2105">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="2106" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+      </node>
+      <node id="2104">
+        <label>dma_cfg.c</label>
+        <link refid="dma__cfg_8c"/>
+      </node>
+      <node id="2109">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="2107">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+      </node>
+      <node id="2110">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structSPI__STATE__s" prot="public">SPI_STATE_s</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="spi_8h_1a1a4c5c177d7de38a2e439a7a0dad7962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_Init</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>SPI_Init</name>
+        <param>
+          <type>SPI_HandleTypeDef *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+<para>initializes the SPI module. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the SPI channels according to the configuration given as parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*hspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the spi configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none(void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="65" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="70" bodyend="119"/>
+        <references refid="spi__cfg_8c_1ae8c243378ff07f927ed77244e1df14b6" compoundref="spi__cfg_8c" startline="110">spi_number_of_used_SPI_channels</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a04e63f382f172164c8e7cae4ff5d883c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_SPI_TxRxCpltCallback</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>HAL_SPI_TxRxCpltCallback</name>
+        <param>
+          <type>SPI_HandleTypeDef *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+<para>callback SPI transmit and receive complete from SPI-Interrupt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to SPI hardware handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none(void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="122" bodyend="135"/>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+        <references refid="spi_8c_1a91406c314b72fede70c5b70edfb75dec" compoundref="spi_8c" startline="208" endline="242">SPI_UnsetCS</references>
+        <references refid="structSPI__STATE__s_1abd2e6c06fb5ae9109fee41e25f63a4e2" compoundref="spi_8h" startline="48">SPI_STATE_s::transmit_ongoing</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a0a99ab4f6aa6ee7dc2abca5483910dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_SPI_TxCpltCallback</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi)</argsstring>
+        <name>HAL_SPI_TxCpltCallback</name>
+        <param>
+          <type>SPI_HandleTypeDef *</type>
+          <declname>hspi</declname>
+        </param>
+        <briefdescription>
+<para>callback SPI transmit complete from SPI-Interrupt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to SPI hardware handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none(void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="83" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="138" bodyend="152"/>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+        <references refid="spi_8c_1a91406c314b72fede70c5b70edfb75dec" compoundref="spi_8c" startline="208" endline="242">SPI_UnsetCS</references>
+        <references refid="structSPI__STATE__s_1abd2e6c06fb5ae9109fee41e25f63a4e2" compoundref="spi_8h" startline="48">SPI_STATE_s::transmit_ongoing</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a31d14c356ad99590127446672cd32ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e SPI_Transmit</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size)</argsstring>
+        <name>SPI_Transmit</name>
+        <param>
+          <type>SPI_HandleTypeDef *</type>
+          <declname>hspi</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>Size</declname>
+        </param>
+        <briefdescription>
+<para>transmits through SPI without receiving data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*hspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to SPI hardware handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*pData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the data to be sent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>E_OK if SPI transmission is OK, E_NOT_OK otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="94" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="245" bodyend="267"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="spi_8c_1a0ef3d3e3c5397195b3d768fcbf9eefb4" compoundref="spi_8c" startline="170" endline="205">SPI_SetCS</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a32b8897d5a6e5ce8f097436e983dcdce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e SPI_TransmitReceive</definition>
+        <argsstring>(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size)</argsstring>
+        <name>SPI_TransmitReceive</name>
+        <param>
+          <type>SPI_HandleTypeDef *</type>
+          <declname>hspi</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pTxData</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pRxData</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>Size</declname>
+        </param>
+        <briefdescription>
+<para>transmits and receives data through SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*hspi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to SPI hardware handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*pTxData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*pRxData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the data to be sent/received</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>E_OK if SPI transmission is OK, E_NOT_OK otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="106" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="270" bodyend="290"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="spi_8c_1a0ef3d3e3c5397195b3d768fcbf9eefb4" compoundref="spi_8c" startline="170" endline="205">SPI_SetCS</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a0ef3d3e3c5397195b3d768fcbf9eefb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_SetCS</definition>
+        <argsstring>(uint8_t busID)</argsstring>
+        <name>SPI_SetCS</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>busID</declname>
+        </param>
+        <briefdescription>
+<para>sets Chip Select low to start SPI transmission. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets CS low in case CS is driven by software.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>busID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>selects which CS pin has to be set low</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none(void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="117" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="170" bodyend="205"/>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="spi__cfg_8h_1a51e296073dbc0c5ee0597f310e3604be" compoundref="spi__cfg_8h" startline="48">SPI_NSS_PORT1</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11daa6a9bf5c875444b48ed54169d1bae9fc" compoundref="io__cfg_8h" startline="203">IO_PIN_RESET</references>
+        <references refid="spi__cfg_8h_1a7dbcf08dcdab3ee50651243549953c2f" compoundref="spi__cfg_8h" startline="49">SPI_NSS_PORT2</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a91406c314b72fede70c5b70edfb75dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_UnsetCS</definition>
+        <argsstring>(uint8_t busID)</argsstring>
+        <name>SPI_UnsetCS</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>busID</declname>
+        </param>
+        <briefdescription>
+<para>sets Chip Select high to end SPI transmission. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets CS high in case CS is driven by software. It is typically called in the callback routine of SPI transmission.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>busID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>selects which CS pin has to be set high</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none(void) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="129" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="208" bodyend="242"/>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="spi__cfg_8h_1a51e296073dbc0c5ee0597f310e3604be" compoundref="spi__cfg_8h" startline="48">SPI_NSS_PORT1</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+        <references refid="spi__cfg_8h_1a7dbcf08dcdab3ee50651243549953c2f" compoundref="spi__cfg_8h" startline="49">SPI_NSS_PORT2</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1a27af1ec96fd2cb03b6e6739372f8aac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e SPI_IsTransmitOngoing</definition>
+        <argsstring>(void)</argsstring>
+        <name>SPI_IsTransmitOngoing</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the SPI transmit status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>retval TRUE if transmission still ongoing, FALSE otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="138" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="292" bodyend="298"/>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="structSPI__STATE__s_1abd2e6c06fb5ae9109fee41e25f63a4e2" compoundref="spi_8h" startline="48">SPI_STATE_s::transmit_ongoing</references>
+      </memberdef>
+      <memberdef kind="function" id="spi_8h_1ac76c884ebda9a3d04a2699ade7dfda9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_SetTransmitOngoing</definition>
+        <argsstring>(void)</argsstring>
+        <name>SPI_SetTransmitOngoing</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>sets the SPI transmit status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h" line="145" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.c" bodystart="300" bodyend="304"/>
+        <references refid="structSPI__STATE__s_1abd2e6c06fb5ae9109fee41e25f63a4e2" compoundref="spi_8h" startline="48">SPI_STATE_s::transmit_ongoing</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the driver for the serial peripheral interface module (encapsulation of some HAL functions). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>02.10.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>SPI </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#ifndef<sp/>SPI_IF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_IF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi__cfg_8h" kindref="compound">spi_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="structSPI__STATE__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48" refid="structSPI__STATE__s_1abd2e6c06fb5ae9109fee41e25f63a4e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structSPI__STATE__s_1abd2e6c06fb5ae9109fee41e25f63a4e2" kindref="member">transmit_ongoing</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structSPI__STATE__s_1a1a264c5c0c33bdcdd8fa15852dfdfb4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structSPI__STATE__s_1a1a264c5c0c33bdcdd8fa15852dfdfb4d" kindref="member">counter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/><ref refid="structSPI__STATE__s" kindref="compound">SPI_STATE_s</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8h_1a1a4c5c177d7de38a2e439a7a0dad7962" kindref="member">SPI_Init</ref>(SPI_HandleTypeDef<sp/>*hspi);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8h_1a04e63f382f172164c8e7cae4ff5d883c" kindref="member">HAL_SPI_TxRxCpltCallback</ref>(SPI_HandleTypeDef<sp/>*hspi);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8h_1a0a99ab4f6aa6ee7dc2abca5483910dde" kindref="member">HAL_SPI_TxCpltCallback</ref>(SPI_HandleTypeDef<sp/>*hspi);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="spi_8h_1a31d14c356ad99590127446672cd32ad4" kindref="member">SPI_Transmit</ref>(SPI_HandleTypeDef<sp/>*hspi,<sp/>uint8_t<sp/>*pData,<sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="spi_8h_1a32b8897d5a6e5ce8f097436e983dcdce" kindref="member">SPI_TransmitReceive</ref>(SPI_HandleTypeDef<sp/>*hspi,<sp/>uint8_t<sp/>*pTxData,<sp/>uint8_t<sp/>*pRxData,<sp/>uint16_t<sp/>Size);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8h_1a0ef3d3e3c5397195b3d768fcbf9eefb4" kindref="member">SPI_SetCS</ref>(uint8_t<sp/>busID);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8h_1a91406c314b72fede70c5b70edfb75dec" kindref="member">SPI_UnsetCS</ref>(uint8_t<sp/>busID);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="spi_8h_1a27af1ec96fd2cb03b6e6739372f8aac3" kindref="member">SPI_IsTransmitOngoing</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8h_1ac76c884ebda9a3d04a2699ade7dfda9e" kindref="member">SPI_SetTransmitOngoing</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SPI_IF_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/spi.h"/>
+  </compounddef>
+</doxygen>

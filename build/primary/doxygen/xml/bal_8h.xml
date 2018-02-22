@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="bal_8h" kind="file" language="C++">
+    <compoundname>bal.h</compoundname>
+    <includes refid="bal__cfg_8h" local="yes">bal_cfg.h</includes>
+    <includedby refid="bal_8c" local="yes">bal.c</includedby>
+    <includedby refid="bms_8c" local="yes">bms.c</includedby>
+    <includedby refid="appltask__cfg_8c" local="yes">appltask_cfg.c</includedby>
+    <includedby refid="sys_8c" local="yes">sys.c</includedby>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <incdepgraph>
+      <node id="153">
+        <label>bal.h</label>
+        <link refid="bal_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>stdint.h</label>
+      </node>
+      <node id="158">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="154">
+        <label>bal_cfg.h</label>
+        <link refid="bal__cfg_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="160">
+        <label>bal.c</label>
+        <link refid="bal_8c"/>
+      </node>
+      <node id="159">
+        <label>bal.h</label>
+        <link refid="bal_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="164">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="161">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="162">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structBAL__STATE__s" prot="public">BAL_STATE_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" prot="public" static="no">
+        <name>BAL_STATEMACH_e</name>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a3bb7fd8547b8a85987ac34cf7e92f37b" prot="public">
+          <name>BAL_STATEMACH_UNINITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a47bf5a9ee79b99e9bceebafdcb48355c" prot="public">
+          <name>BAL_STATEMACH_INITIALIZATION</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a75e90b4e73f52a3ebd0098bb8caa22d0" prot="public">
+          <name>BAL_STATEMACH_INITIALIZED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6abc0f24e8a8cf62e3ce4491aeba9f69b2" prot="public">
+          <name>BAL_STATEMACH_ACTIVE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5ba76d5cf95498622696a87bef96d935" prot="public">
+          <name>BAL_STATEMACH_INACTIVE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a46ab90e9a9b06f8e9e48c236a94afec3" prot="public">
+          <name>BAL_STATEMACH_ACTIVE_OVERRIDE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6aa1c23a0fa3c25eca9b381c8061cb2848" prot="public">
+          <name>BAL_STATEMACH_INACTIVE_OVERRIDE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a9ea911408c31b074d478b91e0ec2b8e8" prot="public">
+          <name>BAL_STATEMACH_STOP_OVERRIDE_ACTIVE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6adfb8dc0452ddc48ec6750986f8b45935" prot="public">
+          <name>BAL_STATEMACH_STOP_OVERRIDE_INACTIVE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6ae000cd5dffa41273cb32d654e1a34515" prot="public">
+          <name>BAL_STATEMACH_UNDEFINED</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>undefined state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5b4384b28911929a02c30f4df8704d01" prot="public">
+          <name>BAL_STATEMACH_RESERVED1</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>reserved state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a14c8d2b5bf16a09a9f5998686f014493" prot="public">
+          <name>BAL_STATEMACH_ERROR</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>States of the BAL state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="57" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="57" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="enum" id="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1" prot="public" static="no">
+        <name>BAL_STATEMACH_SUB_e</name>
+        <enumvalue id="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a6095ef96a8cfc40f4c1d9470dbf321a2" prot="public">
+          <name>BAL_ENTRY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate entry state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a1285ef5cf5889f8bf70730360a7c3fa2" prot="public">
+          <name>BAL_BALANCE_ACTIVE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Balancing starts </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a8cb363474d7bd391d5f0dbe41cd40b3e" prot="public">
+          <name>BAL_BALANCE_ACTIVE_FINISHED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Balancing activated and now finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1afff82b0a192e2de0a2a385d5626da88b" prot="public">
+          <name>BAL_BALANCE_INACTIVE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Balancing stops </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Substates of the BAL state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="77" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="bal_8h_1a662193881734907573e742ac5e8d878a" prot="public" static="no">
+        <name>BAL_STATE_REQUEST_e</name>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aabed624b03b2aebb46aa921a77af0cfda" prot="public">
+          <name>BAL_STATE_INIT_REQUEST</name>
+          <initializer>= BAL_STATEMACH_INITIALIZATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa6a1e371feaedef43ce37b5ba76b52b23" prot="public">
+          <name>BAL_STATE_ACTIVE_REQUEST</name>
+          <initializer>= BAL_STATEMACH_ACTIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa06f79ff2bcc2335accb08e737b8499f9" prot="public">
+          <name>BAL_STATE_INACTIVE_REQUEST</name>
+          <initializer>= BAL_STATEMACH_INACTIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa8816b7107456500f1791a0ab7616cd93" prot="public">
+          <name>BAL_STATE_ACTIVE_OVERRIDE_REQUEST</name>
+          <initializer>= BAL_STATEMACH_ACTIVE_OVERRIDE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa6976895d4387a649f734353bd0aeafe4" prot="public">
+          <name>BAL_STATE_INACTIVE_OVERRIDE_REQUEST</name>
+          <initializer>= BAL_STATEMACH_INACTIVE_OVERRIDE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa266979a5fd4411cd38516da42f453870" prot="public">
+          <name>BAL_STATE_STOP_OVERRIDE_ACTIVE_REQUEST</name>
+          <initializer>= BAL_STATEMACH_STOP_OVERRIDE_ACTIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa0b65f580fca4952aef562c8aab9574d6" prot="public">
+          <name>BAL_STATE_STOP_OVERRIDE_INACTIVE_REQUEST</name>
+          <initializer>= BAL_STATEMACH_STOP_OVERRIDE_INACTIVE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa8d74305a1a02cf0addc29989b43fc4f4" prot="public">
+          <name>BAL_STATE_ERROR_REQUEST</name>
+          <initializer>= BAL_STATEMACH_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a662193881734907573e742ac5e8d878aa917737b2cedb414e50dbd28d244482b8" prot="public">
+          <name>BAL_STATE_NO_REQUEST</name>
+          <initializer>= BAL_STATEMACH_RESERVED1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State requests for the BAL statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="88" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="88" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831" prot="public" static="no">
+        <name>BAL_RETURN_TYPE_e</name>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a856fdd6393904fcdfe749eedb4a58361" prot="public">
+          <name>BAL_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a0bfbaaed9be133d83594f783bcc6b666" prot="public">
+          <name>BAL_BUSY_OK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT under load <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831ae419ae1fb6a821b1acd963baf3f1de49" prot="public">
+          <name>BAL_REQUEST_PENDING</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requested to be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831ada84e4ad12e1695b099e39fa2110852b" prot="public">
+          <name>BAL_ILLEGAL_REQUEST</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request can not be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a3b2da12926a481153091d4fd4a16d403" prot="public">
+          <name>BAL_INIT_ERROR</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error state: Source: Initialization </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a6b58d269a1ea01408b272ed3aca4c90c" prot="public">
+          <name>BAL_OK_FROM_ERROR</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Return from error <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a7b4da23bf9551361203941639c8ea07a" prot="public">
+          <name>BAL_ERROR</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>General error state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a02ed0c7bbb52101bc41ebe17510526e2" prot="public">
+          <name>BAL_ALREADY_INITIALIZED</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initialization of LTC already finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a006dd2b726dd316c19758980a111fdba" prot="public">
+          <name>BAL_ILLEGAL_TASK_TYPE</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Illegal </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible return values when state requests are made to the BAL statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="104" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" bodystart="104" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bal_8h_1a1e9d7cabf5fbe4f033dc95ed554abd77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831" kindref="member">BAL_RETURN_TYPE_e</ref></type>
+        <definition>BAL_RETURN_TYPE_e BAL_SetStateRequest</definition>
+        <argsstring>(BAL_STATE_REQUEST_e statereq)</argsstring>
+        <name>BAL_SetStateRequest</name>
+        <param>
+          <type><ref refid="bal_8h_1a662193881734907573e742ac5e8d878a" kindref="member">BAL_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable bal_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine,e.g, start voltage measurement, read result of voltage measurement, re-initialization It calls <ref refid="bal_8c_1ab7ab439bc4f7c3a35d992cbeec514424" kindref="member">BAL_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state request to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>retVal current state request, taken from BAL_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="141" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.c" bodystart="243" bodyend="257"/>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa917737b2cedb414e50dbd28d244482b8" compoundref="bal_8h" startline="97">BAL_STATE_NO_REQUEST</references>
+        <references refid="bal_8c_1ab7ab439bc4f7c3a35d992cbeec514424" compoundref="bal_8c" startline="271" endline="303">BAL_CheckStateRequest</references>
+        <references refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a856fdd6393904fcdfe749eedb4a58361" compoundref="bal_8h" startline="105">BAL_OK</references>
+        <references refid="structBAL__STATE__s_1ad4ef7092a042b8ae57260ae542ac9148" compoundref="bal_8h" startline="125">BAL_STATE_s::statereq</references>
+      </memberdef>
+      <memberdef kind="function" id="bal_8h_1a4dc6e7af1844381b914edc8441e8229b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref></type>
+        <definition>BAL_STATEMACH_e BAL_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>BAL_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the BAL state machine.</para><para><simplesect kind="return"><para>current state, taken from BAL_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="142" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.c" bodystart="201" bodyend="203"/>
+        <references refid="structBAL__STATE__s_1ae95b31d9adce29ad66888ec5f8c0386f" compoundref="bal_8h" startline="126">BAL_STATE_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="bal_8h_1ac47a87986efae1622a9faa1e1f3c5e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BAL_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>BAL_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the BAL driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the BAL state machine. It must be called time-triggered, every 1ms.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h" line="143" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.c" bodystart="319" bodyend="595"/>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa917737b2cedb414e50dbd28d244482b8" compoundref="bal_8h" startline="97">BAL_STATE_NO_REQUEST</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="structBAL__STATE__s_1a827c680033ce04ce1f4eea7a519a5258" compoundref="bal_8h" startline="134">BAL_STATE_s::rest_timer</references>
+        <references refid="bal_8c_1aa42a90db3e0a780d408f57c908ab20df" compoundref="bal_8c" startline="157" endline="171">BAL_CheckReEntrance</references>
+        <references refid="structBAL__STATE__s_1ae30411d0de7feacf6ac5c19d9ecfcc51" compoundref="bal_8h" startline="124">BAL_STATE_s::timer</references>
+        <references refid="structBAL__STATE__s_1a5d6e60d6c75ad797541c9487489cd23c" compoundref="bal_8h" startline="130">BAL_STATE_s::triggerentry</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" compoundref="database__cfg_8h" startline="123">DATA_BLOCK_ID_CURRENT</references>
+        <references refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" compoundref="database__cfg_8h" startline="240">DATA_BLOCK_CURRENT_s::current</references>
+        <references refid="bal__cfg_8h_1a000c29098f055e0810ee5176e6119e95" compoundref="bal__cfg_8h" startline="77">BAL_REST_CURRENT</references>
+        <references refid="structBAL__STATE__s_1a21dffac20a5ded898f7d279fc448d9af" compoundref="bal_8h" startline="133">BAL_STATE_s::resting</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="bal__cfg_8h_1ac2f376e83befd5eb4cbe94adb3154e45" compoundref="bal__cfg_8h" startline="58">BAL_TIME_BEFORE_BALANCING_S</references>
+        <references refid="structBAL__STATE__s_1ae95b31d9adce29ad66888ec5f8c0386f" compoundref="bal_8h" startline="126">BAL_STATE_s::state</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a3bb7fd8547b8a85987ac34cf7e92f37b" compoundref="bal_8h" startline="59">BAL_STATEMACH_UNINITIALIZED</references>
+        <references refid="bal_8c_1a83f59255531f11abef84a213a2beedb7" compoundref="bal_8c" startline="216" endline="226">BAL_TransferStateRequest</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aabed624b03b2aebb46aa921a77af0cfda" compoundref="bal_8h" startline="89">BAL_STATE_INIT_REQUEST</references>
+        <references refid="bal_8c_1a22a9b267e94c0a981075427f32161de0" compoundref="bal_8c" startline="46">BAL_SAVELASTSTATES</references>
+        <references refid="bal__cfg_8h_1aed6dbfb35047f2113cdb46cecef5081a" compoundref="bal__cfg_8h" startline="46">BAL_STATEMACH_SHORTTIME_10MS</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a47bf5a9ee79b99e9bceebafdcb48355c" compoundref="bal_8h" startline="60">BAL_STATEMACH_INITIALIZATION</references>
+        <references refid="structBAL__STATE__s_1adbdc6d835443ba7e2788951da7ba05f5" compoundref="bal_8h" startline="127">BAL_STATE_s::substate</references>
+        <references refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a6095ef96a8cfc40f4c1d9470dbf321a2" compoundref="bal_8h" startline="78">BAL_ENTRY</references>
+        <references refid="structBAL__STATE__s_1adf215b27411115fb535f108999560572" compoundref="bal_8h" startline="131">BAL_STATE_s::ErrRequestCounter</references>
+        <references refid="bal_8c_1a7e1bfa9a6e1ca5b1d063398d8dc8720e" compoundref="bal_8c" startline="87" endline="93">BAL_Init</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a75e90b4e73f52a3ebd0098bb8caa22d0" compoundref="bal_8h" startline="61">BAL_STATEMACH_INITIALIZED</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5ba76d5cf95498622696a87bef96d935" compoundref="bal_8h" startline="63">BAL_STATEMACH_INACTIVE</references>
+        <references refid="structBAL__STATE__s_1afa523ffcfd4704d713242289f573ef25" compoundref="bal_8h" startline="132">BAL_STATE_s::active</references>
+        <references refid="bal_8c_1ab608144bd63e5fa96224e95cec7a3fb3" compoundref="bal_8c" startline="95" endline="109">BAL_Deactivate</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa8816b7107456500f1791a0ab7616cd93" compoundref="bal_8h" startline="92">BAL_STATE_ACTIVE_OVERRIDE_REQUEST</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a46ab90e9a9b06f8e9e48c236a94afec3" compoundref="bal_8h" startline="64">BAL_STATEMACH_ACTIVE_OVERRIDE</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa6976895d4387a649f734353bd0aeafe4" compoundref="bal_8h" startline="93">BAL_STATE_INACTIVE_OVERRIDE_REQUEST</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6aa1c23a0fa3c25eca9b381c8061cb2848" compoundref="bal_8h" startline="65">BAL_STATEMACH_INACTIVE_OVERRIDE</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa6a1e371feaedef43ce37b5ba76b52b23" compoundref="bal_8h" startline="90">BAL_STATE_ACTIVE_REQUEST</references>
+        <references refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6abc0f24e8a8cf62e3ce4491aeba9f69b2" compoundref="bal_8h" startline="62">BAL_STATEMACH_ACTIVE</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa06f79ff2bcc2335accb08e737b8499f9" compoundref="bal_8h" startline="91">BAL_STATE_INACTIVE_REQUEST</references>
+        <references refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a1285ef5cf5889f8bf70730360a7c3fa2" compoundref="bal_8h" startline="79">BAL_BALANCE_ACTIVE</references>
+        <references refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1afff82b0a192e2de0a2a385d5626da88b" compoundref="bal_8h" startline="81">BAL_BALANCE_INACTIVE</references>
+        <references refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" compoundref="database__cfg_8h" startline="126">DATA_BLOCK_ID_MINMAX</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1ab9f24e98d980212dd9b88664091d8ec7" compoundref="database__cfg_8h" startline="292">DATA_BLOCK_MINMAX_s::voltage_min</references>
+        <references refid="bal__cfg_8h_1abbd9f5603894f0d7b1e9de25d8bced20" compoundref="bal__cfg_8h" startline="84">BAL_LOWER_VOLTAGE_LIMIT_MV</references>
+        <references refid="bal_8c_1ac20d253b687803d47e23d57450c7bf08" compoundref="bal_8c" startline="111" endline="141">BAL_Activate</references>
+        <references refid="structBAL__STATE__s_1abc7365d2ba05737063253a58e49847a9" compoundref="bal_8h" startline="135">BAL_STATE_s::balancing_threshold</references>
+        <references refid="bal__cfg_8h_1af377518041181c1573ac86e9f97cdbc1" compoundref="bal__cfg_8h" startline="64">BAL_THRESHOLD_MV</references>
+        <references refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a8cb363474d7bd391d5f0dbe41cd40b3e" compoundref="bal_8h" startline="80">BAL_BALANCE_ACTIVE_FINISHED</references>
+        <references refid="bal__cfg_8h_1ab32d4cc5944950cd1b8adac819e587b6" compoundref="bal__cfg_8h" startline="70">BAL_HYSTERESIS_MV</references>
+        <references refid="bal__cfg_8h_1a103f46f4bf72621ef611a2dbd04c6e85" compoundref="bal__cfg_8h" startline="52">BAL_STATEMACH_LONGTIME_10MS</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa0b65f580fca4952aef562c8aab9574d6" compoundref="bal_8h" startline="95">BAL_STATE_STOP_OVERRIDE_INACTIVE_REQUEST</references>
+        <references refid="bal_8h_1a662193881734907573e742ac5e8d878aa266979a5fd4411cd38516da42f453870" compoundref="bal_8h" startline="94">BAL_STATE_STOP_OVERRIDE_ACTIVE_REQUEST</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the driver for balancing. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>26.02.2016 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>BAL </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>BAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bal__cfg_8h" kindref="compound">bal_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Init-Sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a3bb7fd8547b8a85987ac34cf7e92f37b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a3bb7fd8547b8a85987ac34cf7e92f37b" kindref="member">BAL_STATEMACH_UNINITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a47bf5a9ee79b99e9bceebafdcb48355c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a47bf5a9ee79b99e9bceebafdcb48355c" kindref="member">BAL_STATEMACH_INITIALIZATION</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a75e90b4e73f52a3ebd0098bb8caa22d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a75e90b4e73f52a3ebd0098bb8caa22d0" kindref="member">BAL_STATEMACH_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6abc0f24e8a8cf62e3ce4491aeba9f69b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6abc0f24e8a8cf62e3ce4491aeba9f69b2" kindref="member">BAL_STATEMACH_ACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5ba76d5cf95498622696a87bef96d935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5ba76d5cf95498622696a87bef96d935" kindref="member">BAL_STATEMACH_INACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a46ab90e9a9b06f8e9e48c236a94afec3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a46ab90e9a9b06f8e9e48c236a94afec3" kindref="member">BAL_STATEMACH_ACTIVE_OVERRIDE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6aa1c23a0fa3c25eca9b381c8061cb2848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6aa1c23a0fa3c25eca9b381c8061cb2848" kindref="member">BAL_STATEMACH_INACTIVE_OVERRIDE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a9ea911408c31b074d478b91e0ec2b8e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a9ea911408c31b074d478b91e0ec2b8e8" kindref="member">BAL_STATEMACH_STOP_OVERRIDE_ACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6adfb8dc0452ddc48ec6750986f8b45935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6adfb8dc0452ddc48ec6750986f8b45935" kindref="member">BAL_STATEMACH_STOP_OVERRIDE_INACTIVE</ref><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6ae000cd5dffa41273cb32d654e1a34515" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6ae000cd5dffa41273cb32d654e1a34515" kindref="member">BAL_STATEMACH_UNDEFINED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5b4384b28911929a02c30f4df8704d01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5b4384b28911929a02c30f4df8704d01" kindref="member">BAL_STATEMACH_RESERVED1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x80,<sp/></highlight></codeline>
+<codeline lineno="70" refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a14c8d2b5bf16a09a9f5998686f014493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a14c8d2b5bf16a09a9f5998686f014493" kindref="member">BAL_STATEMACH_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xF0,<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78" refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a6095ef96a8cfc40f4c1d9470dbf321a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a6095ef96a8cfc40f4c1d9470dbf321a2" kindref="member">BAL_ENTRY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a1285ef5cf5889f8bf70730360a7c3fa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a1285ef5cf5889f8bf70730360a7c3fa2" kindref="member">BAL_BALANCE_ACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a8cb363474d7bd391d5f0dbe41cd40b3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1a8cb363474d7bd391d5f0dbe41cd40b3e" kindref="member">BAL_BALANCE_ACTIVE_FINISHED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1afff82b0a192e2de0a2a385d5626da88b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1afff82b0a192e2de0a2a385d5626da88b" kindref="member">BAL_BALANCE_INACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><ref refid="bal_8h_1aee2a9b30250cbc04b8fea9a66eb257c1" kindref="member">BAL_STATEMACH_SUB_e</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="bal_8h_1a662193881734907573e742ac5e8d878a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="89" refid="bal_8h_1a662193881734907573e742ac5e8d878aabed624b03b2aebb46aa921a77af0cfda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aabed624b03b2aebb46aa921a77af0cfda" kindref="member">BAL_STATE_INIT_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a47bf5a9ee79b99e9bceebafdcb48355c" kindref="member">BAL_STATEMACH_INITIALIZATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="bal_8h_1a662193881734907573e742ac5e8d878aa6a1e371feaedef43ce37b5ba76b52b23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa6a1e371feaedef43ce37b5ba76b52b23" kindref="member">BAL_STATE_ACTIVE_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6abc0f24e8a8cf62e3ce4491aeba9f69b2" kindref="member">BAL_STATEMACH_ACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="bal_8h_1a662193881734907573e742ac5e8d878aa06f79ff2bcc2335accb08e737b8499f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa06f79ff2bcc2335accb08e737b8499f9" kindref="member">BAL_STATE_INACTIVE_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5ba76d5cf95498622696a87bef96d935" kindref="member">BAL_STATEMACH_INACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="bal_8h_1a662193881734907573e742ac5e8d878aa8816b7107456500f1791a0ab7616cd93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa8816b7107456500f1791a0ab7616cd93" kindref="member">BAL_STATE_ACTIVE_OVERRIDE_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a46ab90e9a9b06f8e9e48c236a94afec3" kindref="member">BAL_STATEMACH_ACTIVE_OVERRIDE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="bal_8h_1a662193881734907573e742ac5e8d878aa6976895d4387a649f734353bd0aeafe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa6976895d4387a649f734353bd0aeafe4" kindref="member">BAL_STATE_INACTIVE_OVERRIDE_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6aa1c23a0fa3c25eca9b381c8061cb2848" kindref="member">BAL_STATEMACH_INACTIVE_OVERRIDE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="bal_8h_1a662193881734907573e742ac5e8d878aa266979a5fd4411cd38516da42f453870" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa266979a5fd4411cd38516da42f453870" kindref="member">BAL_STATE_STOP_OVERRIDE_ACTIVE_REQUEST</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a9ea911408c31b074d478b91e0ec2b8e8" kindref="member">BAL_STATEMACH_STOP_OVERRIDE_ACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="bal_8h_1a662193881734907573e742ac5e8d878aa0b65f580fca4952aef562c8aab9574d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa0b65f580fca4952aef562c8aab9574d6" kindref="member">BAL_STATE_STOP_OVERRIDE_INACTIVE_REQUEST</ref><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6adfb8dc0452ddc48ec6750986f8b45935" kindref="member">BAL_STATEMACH_STOP_OVERRIDE_INACTIVE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="bal_8h_1a662193881734907573e742ac5e8d878aa8d74305a1a02cf0addc29989b43fc4f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa8d74305a1a02cf0addc29989b43fc4f4" kindref="member">BAL_STATE_ERROR_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a14c8d2b5bf16a09a9f5998686f014493" kindref="member">BAL_STATEMACH_ERROR</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="bal_8h_1a662193881734907573e742ac5e8d878aa917737b2cedb414e50dbd28d244482b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878aa917737b2cedb414e50dbd28d244482b8" kindref="member">BAL_STATE_NO_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6a5b4384b28911929a02c30f4df8704d01" kindref="member">BAL_STATEMACH_RESERVED1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878a" kindref="member">BAL_STATE_REQUEST_e</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="105" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a856fdd6393904fcdfe749eedb4a58361" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a856fdd6393904fcdfe749eedb4a58361" kindref="member">BAL_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a0bfbaaed9be133d83594f783bcc6b666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a0bfbaaed9be133d83594f783bcc6b666" kindref="member">BAL_BUSY_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831ae419ae1fb6a821b1acd963baf3f1de49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831ae419ae1fb6a821b1acd963baf3f1de49" kindref="member">BAL_REQUEST_PENDING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831ada84e4ad12e1695b099e39fa2110852b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831ada84e4ad12e1695b099e39fa2110852b" kindref="member">BAL_ILLEGAL_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a3b2da12926a481153091d4fd4a16d403" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a3b2da12926a481153091d4fd4a16d403" kindref="member">BAL_INIT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a6b58d269a1ea01408b272ed3aca4c90c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a6b58d269a1ea01408b272ed3aca4c90c" kindref="member">BAL_OK_FROM_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a7b4da23bf9551361203941639c8ea07a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a7b4da23bf9551361203941639c8ea07a" kindref="member">BAL_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a02ed0c7bbb52101bc41ebe17510526e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a02ed0c7bbb52101bc41ebe17510526e2" kindref="member">BAL_ALREADY_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>30,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a006dd2b726dd316c19758980a111fdba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831a006dd2b726dd316c19758980a111fdba" kindref="member">BAL_ILLEGAL_TASK_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>99,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}<sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831" kindref="member">BAL_RETURN_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="structBAL__STATE__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124" refid="structBAL__STATE__s_1ae30411d0de7feacf6ac5c19d9ecfcc51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structBAL__STATE__s_1ae30411d0de7feacf6ac5c19d9ecfcc51" kindref="member">timer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="structBAL__STATE__s_1ad4ef7092a042b8ae57260ae542ac9148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a662193881734907573e742ac5e8d878a" kindref="member">BAL_STATE_REQUEST_e</ref><sp/><ref refid="structBAL__STATE__s_1ad4ef7092a042b8ae57260ae542ac9148" kindref="member">statereq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="structBAL__STATE__s_1ae95b31d9adce29ad66888ec5f8c0386f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref><sp/><ref refid="structBAL__STATE__s_1ae95b31d9adce29ad66888ec5f8c0386f" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="structBAL__STATE__s_1adbdc6d835443ba7e2788951da7ba05f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBAL__STATE__s_1adbdc6d835443ba7e2788951da7ba05f5" kindref="member">substate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="structBAL__STATE__s_1a3276bbc8c9fc1d58588d079fc1e0b629" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref><sp/><ref refid="structBAL__STATE__s_1a3276bbc8c9fc1d58588d079fc1e0b629" kindref="member">laststate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="structBAL__STATE__s_1afe39c8487d4cdcdbcfbe5487dde92a96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBAL__STATE__s_1afe39c8487d4cdcdbcfbe5487dde92a96" kindref="member">lastsubstate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="structBAL__STATE__s_1a5d6e60d6c75ad797541c9487489cd23c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBAL__STATE__s_1a5d6e60d6c75ad797541c9487489cd23c" kindref="member">triggerentry</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="structBAL__STATE__s_1adf215b27411115fb535f108999560572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBAL__STATE__s_1adf215b27411115fb535f108999560572" kindref="member">ErrRequestCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="structBAL__STATE__s_1afa523ffcfd4704d713242289f573ef25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBAL__STATE__s_1afa523ffcfd4704d713242289f573ef25" kindref="member">active</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="structBAL__STATE__s_1a21dffac20a5ded898f7d279fc448d9af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structBAL__STATE__s_1a21dffac20a5ded898f7d279fc448d9af" kindref="member">resting</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="structBAL__STATE__s_1a827c680033ce04ce1f4eea7a519a5258" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBAL__STATE__s_1a827c680033ce04ce1f4eea7a519a5258" kindref="member">rest_timer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="structBAL__STATE__s_1abc7365d2ba05737063253a58e49847a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBAL__STATE__s_1abc7365d2ba05737063253a58e49847a9" kindref="member">balancing_threshold</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}<sp/><ref refid="structBAL__STATE__s" kindref="compound">BAL_STATE_s</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="bal_8h_1a3863f51129d91cd3f49cefa367ef9831" kindref="member">BAL_RETURN_TYPE_e</ref><sp/><ref refid="bal_8h_1a1e9d7cabf5fbe4f033dc95ed554abd77" kindref="member">BAL_SetStateRequest</ref>(<ref refid="bal_8h_1a662193881734907573e742ac5e8d878a" kindref="member">BAL_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/><ref refid="bal_8h_1a66c8702c455f6e9cf27ee4f162a94cc6" kindref="member">BAL_STATEMACH_e</ref><sp/><ref refid="bal_8h_1a4dc6e7af1844381b914edc8441e8229b" kindref="member">BAL_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bal_8h_1ac47a87986efae1622a9faa1e1f3c5e4b" kindref="member">BAL_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BAL_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/bal/bal.h"/>
+  </compounddef>
+</doxygen>

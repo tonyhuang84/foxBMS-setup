@@ -1,0 +1,19 @@
+<map id="can.c" name="can.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="51,304,126,331"/>
+<area shape="rect" id="node5" href="$can_8h.html" title="Header for the driver for the CAN module. " alt="" coords="399,80,453,107"/>
+<area shape="rect" id="node12" href="$os_8h.html" title="Implementation of the tasks used by the system, headers. " alt="" coords="175,80,221,107"/>
+<area shape="rect" id="node14" href="$mcu_8h.html" title="Headers for the functions for the MCU to manage time and interrupts. " alt="" coords="67,155,126,181"/>
+<area shape="rect" id="node15" href="$diag_8h.html" title="Diag driver header. " alt="" coords="249,80,307,107"/>
+<area shape="rect" id="node21" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="577,304,619,331"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,379,186,405"/>
+<area shape="rect" id="node6" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module. " alt="" coords="487,229,565,256"/>
+<area shape="rect" id="node7" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="446,379,529,405"/>
+<area shape="rect" id="node9" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="501,453,567,480"/>
+<area shape="rect" id="node10" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="406,528,529,555"/>
+<area shape="rect" id="node11" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="553,528,651,555"/>
+<area shape="rect" id="node16" href="$diag__cfg_8h.html" title="Diagnostic module configuration header. " alt="" coords="316,155,397,181"/>
+<area shape="rect" id="node17" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="127,229,267,256"/>
+<area shape="rect" id="node18" href="$diag__id__cfg_8h.html" title="This file contains basic definitions in order to use an abstracted diagnosis. " alt="" coords="291,229,390,256"/>
+<area shape="rect" id="node19" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="414,229,462,256"/>
+<area shape="rect" id="node20" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="421,304,493,331"/>
+</map>

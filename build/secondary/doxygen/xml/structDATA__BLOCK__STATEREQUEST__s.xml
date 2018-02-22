@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__STATEREQUEST__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_STATEREQUEST_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__STATEREQUEST__s_1adddc57fa75078eec60dc2f7150382b34" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_STATEREQUEST_s::state_request</definition>
+        <argsstring></argsstring>
+        <name>state_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="279" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__STATEREQUEST__s_1ac2f1c20c0e977eeb669b473f1c0df7d5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_STATEREQUEST_s::previous_state_request</definition>
+        <argsstring></argsstring>
+        <name>previous_state_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="280" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__STATEREQUEST__s_1ab77605b0f0693cc4dd5b93861a5f6a3a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_STATEREQUEST_s::state_request_pending</definition>
+        <argsstring></argsstring>
+        <name>state_request_pending</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="281" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__STATEREQUEST__s_1ab503dd29a7cfaa03042b2acaeab1d5f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_STATEREQUEST_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="282" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__STATEREQUEST__s_1afe4115eefe4358fc967e26121d70995a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_STATEREQUEST_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="283" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__STATEREQUEST__s_1a6f2500d7dd16a80a272eab4bf58bbcc4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_STATEREQUEST_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="284" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of can state request </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="278" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="278" bodyend="285"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__STATEREQUEST__s_1ac2f1c20c0e977eeb669b473f1c0df7d5" prot="public" virt="non-virtual"><scope>DATA_BLOCK_STATEREQUEST_s</scope><name>previous_state_request</name></member>
+      <member refid="structDATA__BLOCK__STATEREQUEST__s_1afe4115eefe4358fc967e26121d70995a" prot="public" virt="non-virtual"><scope>DATA_BLOCK_STATEREQUEST_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__STATEREQUEST__s_1a6f2500d7dd16a80a272eab4bf58bbcc4" prot="public" virt="non-virtual"><scope>DATA_BLOCK_STATEREQUEST_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__STATEREQUEST__s_1adddc57fa75078eec60dc2f7150382b34" prot="public" virt="non-virtual"><scope>DATA_BLOCK_STATEREQUEST_s</scope><name>state_request</name></member>
+      <member refid="structDATA__BLOCK__STATEREQUEST__s_1ab77605b0f0693cc4dd5b93861a5f6a3a" prot="public" virt="non-virtual"><scope>DATA_BLOCK_STATEREQUEST_s</scope><name>state_request_pending</name></member>
+      <member refid="structDATA__BLOCK__STATEREQUEST__s_1ab503dd29a7cfaa03042b2acaeab1d5f7" prot="public" virt="non-virtual"><scope>DATA_BLOCK_STATEREQUEST_s</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

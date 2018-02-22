@@ -1,0 +1,10 @@
+<map id="SOF_Ctrl" name="SOF_Ctrl">
+<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="149,35,264,61"/>
+<area shape="rect" id="node3" href="$sox_8c.html#a3e5305429d2dd4dc69820314f40a4b07" title="calculates State of function which means how much current can be delivered by battery to stay in safe..." alt="" coords="151,85,262,112"/>
+<area shape="rect" id="node9" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="129,136,284,163"/>
+<area shape="rect" id="node4" href="$sox_8c.html#ab4846b41d8b868d4a8e9b80b13bf03a1" title="calculates the SoF from voltage data (i.e., minimum and maximum voltage) " alt="" coords="343,5,534,32"/>
+<area shape="rect" id="node5" href="$sox_8c.html#a104e09068ce75ad7641fb45d22ca4f29" title="calculates the SoF from SoC data (i.e., minimum and maximum SoC of cells, both values are equal in ca..." alt="" coords="353,56,524,83"/>
+<area shape="rect" id="node6" href="$sox_8c.html#a46c089bf2aba0a9b913560863494aa1d" title="calculates the SoF from temperature data (i.e., minimum and maximum temperature of cells) ..." alt="" coords="347,107,530,149"/>
+<area shape="rect" id="node7" href="$sox_8c.html#a27285bee12976039b9a07aa8912efd0f" title="get the minimum current values of all variants of SoF calculation " alt="" coords="332,173,545,200"/>
+<area shape="rect" id="node8" href="$sox_8c.html#a56b4fa991373e5b1e3fd9aa70d8046b8" title="calculates minimum of three values " alt="" coords="593,173,788,200"/>
+</map>

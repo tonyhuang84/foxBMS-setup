@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.16. Isoguard &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../../index.html"/>
+        <link rel="up" title="4. Software Modules" href="../modules.html"/>
+        <link rel="next" title="5. Software Tools" href="../../tools/tools.html"/>
+        <link rel="prev" title="4.15. SOX" href="../sox/sox.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bms/bms.html">4.1. BMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys/sys.html">4.2. System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.3. IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.4. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.5. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../diag/diag.html">4.6. Diagnosis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../can/can.html">4.7. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cansignal/cansignal.html">4.8. CAN Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ltc/ltc.html">4.9. LTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../balancing/balancing.html">4.10. Balancing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nvm/nvm.html">4.11. NVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../com/com.html">4.12. COM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/uart.html">4.13. UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chksum/chksum.html">4.14. Checksum Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sox/sox.html">4.15. SOX</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.16. Isoguard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../modules.html">4. Software Modules</a> &raquo;</li>
+        
+      <li>4.16. Isoguard</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/software_documentation/modules/isoguard/isoguard.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="isoguard">
+<h1>4.16. Isoguard<a class="headerlink" href="#isoguard" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal"><span class="pre">isoguard</span></code> module measures the insulation resistance between the insulated and the active high-voltage conductors of the battery and the reference earth (e.g., chassis ground/Kl.31 in automotive applications).</p>
+<div class="section" id="module-files">
+<h2>4.16.1. Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Driver:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\isoguard\isoguard.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\isoguard\isoguard.c</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\isoguard\ir155.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\isoguard\ir155.c</span></code></li>
+</ul>
+</dd>
+<dt>Driver Configuration:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\isoguard_cfg.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\isoguard_cfg.c</span></code></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dependencies">
+<h2>4.16.2. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>CPU</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\mcu\mcu.h</span></code></li>
+</ul>
+</dd>
+<dt>Database</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\engine\database\database.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\engine\config\database_cfg.h</span></code></li>
+</ul>
+</dd>
+<dt>Diag</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\engine\diag\diag.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\engine\config\diag_cfg.h</span></code></li>
+</ul>
+</dd>
+<dt>IO</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\io\io.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\config\io_cfg.h</span></code></li>
+</ul>
+</dd>
+<dt>RTC</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\rtc\rtc.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\config\rtc_cfg.h</span></code></li>
+</ul>
+</dd>
+<dt>TIMER</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\timer\timer.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\timer_cfg.h</span></code></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="detailed-description-of-mod-isoguard">
+<h2>4.16.3. Detailed Description of <code class="docutils literal"><span class="pre">isoguard</span></code> module<a class="headerlink" href="#detailed-description-of-mod-isoguard" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-structure-and-interfaces">
+<h3>4.16.3.1. File Structure and Interfaces<a class="headerlink" href="#file-structure-and-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">isoguard</span></code> module is separated into two different layers, a bottom and a top layer. The top layer consists of the <code class="docutils literal"><span class="pre">isoguard.c</span></code> and its associated <code class="docutils literal"><span class="pre">isoguard.h</span></code> file. It provides an easy interface to initialize the <code class="docutils literal"><span class="pre">isoguard</span></code> module and to access the measurement data. The insulation threshold to differentiate between a good and bad insulation can be set in the <code class="docutils literal"><span class="pre">isoguard_cfg.h</span></code> file. The bottom layer contains the <code class="docutils literal"><span class="pre">ir155.c</span></code> and <code class="docutils literal"><span class="pre">ir155.h</span></code> files. They are both dedicated to the Bender IR155-3204 hardware (IR155-3203/-3204/-3210 are supported) and handle the connection of the Bender to the MCU, as well as the evaluation and interpretation of the measurement data.</p>
+<p>The external interface to the <code class="docutils literal"><span class="pre">isoguard</span></code> module is simple and consists of three functions and is viewable in <a class="reference internal" href="#isoguard-figure1"><span class="std std-numref">fig. 4.47</span></a>:</p>
+<div class="figure" id="id3">
+<span id="isoguard-figure1"></span><a class="reference internal image-reference" href="../../../_images/iso_block.png"><img alt="../../../_images/iso_block.png" src="../../../_images/iso_block.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.47 </span><span class="caption-text">External isoguard driver interface</span></p>
+</div>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">ISO_Init(void)</span></code></dt>
+<dd>Initializes software <code class="docutils literal"><span class="pre">isoguard</span></code> module and enables the hardware Bender module</dd>
+<dt><code class="docutils literal"><span class="pre">ISO_ReInit(void)</span></code></dt>
+<dd>Resets software <code class="docutils literal"><span class="pre">isoguard</span></code> module and hardware Bender module</dd>
+<dt><code class="docutils literal"><span class="pre">ISO_MeasureInsulation(void)</span></code></dt>
+<dd>Measures and evaluates the insulation</dd>
+</dl>
+</div>
+<div class="section" id="configuration">
+<h3>4.16.3.2. Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>The configuration is done in the <code class="docutils literal"><span class="pre">isoguard_cfg.h</span></code> file and consists of two defines:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define ISO_CYCLE_TIME                    200</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">ISO_CYCLE_TIME</span></code> is the periodic calling time of the <code class="docutils literal"><span class="pre">ISO_MeasureInsulation(void)</span></code> function and must not be chosen lower than 150ms due to the lowest possible frequency of the Bender of 10Hz. The default value is 200ms.</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define ISO_RESISTANCE_THRESHOLD          400</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">ISO_RESISTANCE_THRESHOLD</span></code> specifies the resistance threshold to differentiate between good and bad insulation. This value has no impact if
+the threshold is set lower than the intern resistance threshold of the Bender insulation monitor. The default value is 400kOhm.</p>
+</div>
+<div class="section" id="initialization">
+<h3>4.16.3.3. Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h3>
+<p>The initialization is done via the interface function <code class="docutils literal"><span class="pre">ISO_Init(void)</span></code>, which is forwarded to the Bender insulation monitor specific initialization functions, as shown in <a class="reference internal" href="#isoguard-figure2"><span class="std std-numref">fig. 4.48</span></a>.</p>
+<div class="figure" id="id4">
+<span id="isoguard-figure2"></span><a class="reference internal image-reference" href="../../../_images/iso_init.png"><img alt="../../../_images/iso_init.png" src="../../../_images/iso_init.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.48 </span><span class="caption-text">Initialization of the <code class="docutils literal"><span class="pre">isoguard</span></code> module</span></p>
+</div>
+<p>The most important steps in the initialization process are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Enabling of PWM input measurement</li>
+<li>Reading of <code class="docutils literal"><span class="pre">BKP_SRAM</span></code> variable for previous Ground Error</li>
+<li>Set start-up time before measurement results are trustworthy (dependent on the previous state)</li>
+<li>Enabling of Bender hardware module</li>
+</ul>
+</div></blockquote>
+<p>The function <code class="docutils literal"><span class="pre">ISO_ReInit(void)</span></code> resets the whole <code class="docutils literal"><span class="pre">isoguard</span></code> module and the initialization process is done again, including the waiting time until the measurement values are declared as trustworthy.</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>4.16.4. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>After initializing the <code class="docutils literal"><span class="pre">isoguard</span></code> module, the <code class="docutils literal"><span class="pre">ISO_MeasureInsulation(void)</span></code> function needs to be called periodically according to the set cycle time. The Bender insulation monitor measurement values are evaluated and then written into the database where further modules can operate on this data. Following measurement values are saved:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">uint8_t</span> <span class="n">valid</span><span class="p">;</span>         <span class="c1">// 0 -&gt; valid, 1 -&gt; resistance unreliable</span>
+    <span class="kt">uint8_t</span> <span class="n">state</span><span class="p">;</span>         <span class="c1">// 0 -&gt; resistance/measurement OK , 1 -&gt; resistance too low or error</span>
+    <span class="kt">uint8_t</span> <span class="n">resistance</span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="n">timestamp</span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="n">previous_timestamp</span><span class="p">;</span>
+<span class="p">}</span><span class="n">DATA_BLOCK_ISOMETER_s</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The measured insulation is split into intervals according to the array <code class="docutils literal"><span class="pre">uint16</span> <span class="pre">const</span> <span class="pre">static</span> <span class="pre">ir155_ResistanceInterval[7]</span></code>. For more detailed information see source code.</p>
+</div>
+<div class="section" id="observable-sw-behaviour">
+<h2>4.16.5. Observable SW-behaviour<a class="headerlink" href="#observable-sw-behaviour" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">data_block_isometer.timestamp</span></code>-variable must be always running, otherwise the measured values are not written into the database (Check if the define <code class="docutils literal"><span class="pre">ISO_ISOGUARD_ENABLE</span></code> is defined, otherwise the <code class="docutils literal"><span class="pre">isoguard</span></code> module is not activated). Depending on the used resistor, the following behavior can be observed:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Behaviour</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ir155_DC.resistance</td>
+<td>Should equal the resistance value</td>
+</tr>
+<tr class="row-odd"><td>ir155_DC.dutycycle</td>
+<td>Depending on the resistance, see table below for more information</td>
+</tr>
+<tr class="row-even"><td>ir155_DC.OKHS_state</td>
+<td>0 if measured resistance below factory set resistance threshold, otherwise 1</td>
+</tr>
+<tr class="row-odd"><td>ir155_DC.mode</td>
+<td>IR155_NORMAL_MODE</td>
+</tr>
+<tr class="row-even"><td>ir155_DC.state</td>
+<td>IR155_RESIST_MEAS_GOOD if resistance greater than factory set resistance threshold, otherwise IR155_RESIST_MEAS_BAD</td>
+</tr>
+<tr class="row-odd"><td>data_block_isometer.valid</td>
+<td>0; can be 1 if grounderror occurred before reset. Should be 0 again after 25s</td>
+</tr>
+<tr class="row-even"><td>data_block_isometer.state</td>
+<td>0 if measured resistance &gt; <code class="docutils literal"><span class="pre">ISO_RESISTANCE_THRESHOLD</span></code> and no error, otherwise 1</td>
+</tr>
+<tr class="row-odd"><td>data_block_isometer.resistance</td>
+<td>value between 0 and 7, see table below for more information</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="references">
+<h2>4.16.6. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>&lt;Link to source <a class="footnote-reference" href="#id2" id="id1">[1]</a>&gt;.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Datasheet ISOMETER IR155-3204 [PDF] <a class="reference external" href="https://www.bender-de.com/fileadmin/products/doc/IR155-42xx-V004_DB_en.pdf">https://www.bender-de.com/fileadmin/products/doc/IR155-42xx-V004_DB_en.pdf</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../tools/tools.html" class="btn btn-neutral float-right" title="5. Software Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../sox/sox.html" class="btn btn-neutral" title="4.15. SOX" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

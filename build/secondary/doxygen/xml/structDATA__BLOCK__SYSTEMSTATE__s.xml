@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__SYSTEMSTATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_SYSTEMSTATE_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a5ba42854e6f55ce0c589e5c750f71f8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::general_error</definition>
+        <argsstring></argsstring>
+        <name>general_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="359" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1ae790a43adf3ebd54e2c360201fed7e20" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::bms_state</definition>
+        <argsstring></argsstring>
+        <name>bms_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="360" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a5bff7c9cae7d4cd80cf7835812e3e099" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::currentsensorresponding</definition>
+        <argsstring></argsstring>
+        <name>currentsensorresponding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="361" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a7b024f6b6a4b7a6ce810bd74dace5ca2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::main_plus</definition>
+        <argsstring></argsstring>
+        <name>main_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="362" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a2fa34d1754746002656d6128fe7cc0e9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::main_minus</definition>
+        <argsstring></argsstring>
+        <name>main_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="363" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1ab3f7223d2dac2b04aac52922627daebf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::precharge</definition>
+        <argsstring></argsstring>
+        <name>precharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="364" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a0e9145a0647dc058104353b778f8d875" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::charge_main_plus</definition>
+        <argsstring></argsstring>
+        <name>charge_main_plus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="365" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1af84a63b32fdb2673e3fbc6ed463c86d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::charge_main_minus</definition>
+        <argsstring></argsstring>
+        <name>charge_main_minus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="366" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a65f140d7edb40d664b6d56408f492998" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::charge_precharge</definition>
+        <argsstring></argsstring>
+        <name>charge_precharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="367" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a9d8c8548158ddc4ec5ae9173444780b2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::interlock</definition>
+        <argsstring></argsstring>
+        <name>interlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="368" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a81a0121b9a7ddd0c3dd816a500c1b84c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DATA_BLOCK_SYSTEMSTATE_s::contactor_feedback</definition>
+        <argsstring></argsstring>
+        <name>contactor_feedback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="369" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1ae305a8e91af7b7170735620488f84c54" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::over_current_charge</definition>
+        <argsstring></argsstring>
+        <name>over_current_charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="370" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1aff26ef82bdc252d113bd8b058d049c19" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::over_current_discharge</definition>
+        <argsstring></argsstring>
+        <name>over_current_discharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="371" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1aff5effe89b6c9bc43e011568e7a59350" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::over_voltage</definition>
+        <argsstring></argsstring>
+        <name>over_voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="372" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a7768775aa99c709ddf879e039bbe758c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::under_voltage</definition>
+        <argsstring></argsstring>
+        <name>under_voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="373" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1af9961ee24200c03f71576b3bd09c0407" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::over_temperature_discharge</definition>
+        <argsstring></argsstring>
+        <name>over_temperature_discharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="374" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1aa930903b80cf7ebdc6f366b0f2365bc0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::under_temperature_discharge</definition>
+        <argsstring></argsstring>
+        <name>under_temperature_discharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="375" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a9928ac5403b13b2ff38901a90c52c52f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::over_temperature_charge</definition>
+        <argsstring></argsstring>
+        <name>over_temperature_charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="376" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a7dd881b691d4a505efdc101b76e19168" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::under_temperature_charge</definition>
+        <argsstring></argsstring>
+        <name>under_temperature_charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="377" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1ab6a881179199d7533f590da9c6f1e5ed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::crc_error</definition>
+        <argsstring></argsstring>
+        <name>crc_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="378" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1aedeaf1b1d78773e8967b98ad17744b80" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::mux_error</definition>
+        <argsstring></argsstring>
+        <name>mux_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="379" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a7e8c2c03be767ca7fc9ac2b0016e3fcc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::spi_error</definition>
+        <argsstring></argsstring>
+        <name>spi_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="380" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a36e0279b629eb4e225a000cb0bd6f27d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::can_timing</definition>
+        <argsstring></argsstring>
+        <name>can_timing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="381" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a587d1e15a430a022b042292610529fe1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::can_timing_cc</definition>
+        <argsstring></argsstring>
+        <name>can_timing_cc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; no error, 1 -&gt; error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="382" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1ad54e397711ca8f7fa0162e8294ad8899" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SYSTEMSTATE_s::can_cc_used</definition>
+        <argsstring></argsstring>
+        <name>can_cc_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 -&gt; not present, 1 -&gt; present </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="383" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1a8883c5fc7b5751e18181071c58cad823" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SYSTEMSTATE_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="384" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SYSTEMSTATE__s_1ac583d2f61897354e135c62ea0a271762" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SYSTEMSTATE_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="385" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of error flags </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="358" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="358" bodyend="386"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1ae790a43adf3ebd54e2c360201fed7e20" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>bms_state</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1ad54e397711ca8f7fa0162e8294ad8899" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>can_cc_used</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a36e0279b629eb4e225a000cb0bd6f27d" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>can_timing</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a587d1e15a430a022b042292610529fe1" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>can_timing_cc</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1af84a63b32fdb2673e3fbc6ed463c86d8" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>charge_main_minus</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a0e9145a0647dc058104353b778f8d875" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>charge_main_plus</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a65f140d7edb40d664b6d56408f492998" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>charge_precharge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a81a0121b9a7ddd0c3dd816a500c1b84c" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>contactor_feedback</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1ab6a881179199d7533f590da9c6f1e5ed" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>crc_error</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a5bff7c9cae7d4cd80cf7835812e3e099" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>currentsensorresponding</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a5ba42854e6f55ce0c589e5c750f71f8d" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>general_error</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a9d8c8548158ddc4ec5ae9173444780b2" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>interlock</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a2fa34d1754746002656d6128fe7cc0e9" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>main_minus</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7b024f6b6a4b7a6ce810bd74dace5ca2" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>main_plus</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1aedeaf1b1d78773e8967b98ad17744b80" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>mux_error</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1ae305a8e91af7b7170735620488f84c54" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>over_current_charge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1aff26ef82bdc252d113bd8b058d049c19" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>over_current_discharge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a9928ac5403b13b2ff38901a90c52c52f" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>over_temperature_charge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1af9961ee24200c03f71576b3bd09c0407" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>over_temperature_discharge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1aff5effe89b6c9bc43e011568e7a59350" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>over_voltage</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1ab3f7223d2dac2b04aac52922627daebf" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>precharge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1ac583d2f61897354e135c62ea0a271762" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7e8c2c03be767ca7fc9ac2b0016e3fcc" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>spi_error</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a8883c5fc7b5751e18181071c58cad823" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>timestamp</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7dd881b691d4a505efdc101b76e19168" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>under_temperature_charge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1aa930903b80cf7ebdc6f366b0f2365bc0" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>under_temperature_discharge</name></member>
+      <member refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7768775aa99c709ddf879e039bbe758c" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SYSTEMSTATE_s</scope><name>under_voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

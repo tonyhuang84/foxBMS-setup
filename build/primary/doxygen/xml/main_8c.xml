@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes local="yes">mcu_cfg.h</includes>
+    <includes refid="os_8h" local="yes">os.h</includes>
+    <includes refid="version_8h" local="yes">version.h</includes>
+    <includes refid="can_8h" local="yes">can.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="io_8h" local="yes">io.h</includes>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <includes refid="dma_8h" local="yes">dma.h</includes>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="led_8h" local="yes">led.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includes refid="bkpsram_8h" local="yes">bkpsram.h</includes>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+    <includes refid="com_8h" local="yes">com.h</includes>
+    <includes refid="chksum_8h" local="yes">chksum.h</includes>
+    <includes refid="diag_8h" local="yes">diag.h</includes>
+    <includes refid="mcu_8h" local="yes">mcu.h</includes>
+    <includes refid="wdg_8h" local="yes">wdg.h</includes>
+    <incdepgraph>
+      <node id="1940">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="1941" relation="include">
+        </childnode>
+      </node>
+      <node id="1939">
+        <label>rcc_cfg.h</label>
+        <link refid="rcc__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1911">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1912" relation="include">
+        </childnode>
+        <childnode refid="1913" relation="include">
+        </childnode>
+      </node>
+      <node id="1915">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="1916" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1955">
+        <label>wdg.h</label>
+        <link refid="wdg_8h"/>
+      </node>
+      <node id="1912">
+        <label>stdint.h</label>
+      </node>
+      <node id="1953">
+        <label>chksum.h</label>
+        <link refid="chksum_8h"/>
+        <childnode refid="1920" relation="include">
+        </childnode>
+      </node>
+      <node id="1949">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="1911" relation="include">
+        </childnode>
+        <childnode refid="1925" relation="include">
+        </childnode>
+      </node>
+      <node id="1928">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="1929" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+      </node>
+      <node id="1941">
+        <label>dma_cfg.h</label>
+        <link refid="dma__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1954">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="1911" relation="include">
+        </childnode>
+      </node>
+      <node id="1936">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1948">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="1911" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1942">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1943" relation="include">
+        </childnode>
+      </node>
+      <node id="1952">
+        <label>com.h</label>
+        <link refid="com_8h"/>
+      </node>
+      <node id="1944">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1945" relation="include">
+        </childnode>
+      </node>
+      <node id="1919">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="1951">
+        <label>uart_cfg.h</label>
+        <link refid="uart__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1929">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1915" relation="include">
+        </childnode>
+      </node>
+      <node id="1935">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1936" relation="include">
+        </childnode>
+        <childnode refid="1937" relation="include">
+        </childnode>
+      </node>
+      <node id="1927">
+        <label>sox_cfg.h</label>
+        <link refid="sox__cfg_8h"/>
+      </node>
+      <node id="1945">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1933">
+        <label>nvic_cfg.h</label>
+        <link refid="nvic__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1926">
+        <label>sox.h</label>
+        <link refid="sox_8h"/>
+        <childnode refid="1927" relation="include">
+        </childnode>
+      </node>
+      <node id="1947">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1948" relation="include">
+        </childnode>
+      </node>
+      <node id="1946">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="1911" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+      </node>
+      <node id="1937">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1932">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1933" relation="include">
+        </childnode>
+      </node>
+      <node id="1925">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1928" relation="include">
+        </childnode>
+        <childnode refid="1914" relation="include">
+        </childnode>
+      </node>
+      <node id="1910">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="1911" relation="include">
+        </childnode>
+        <childnode refid="1914" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1932" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+        <childnode refid="1938" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+        <childnode refid="1942" relation="include">
+        </childnode>
+        <childnode refid="1944" relation="include">
+        </childnode>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1947" relation="include">
+        </childnode>
+        <childnode refid="1949" relation="include">
+        </childnode>
+        <childnode refid="1950" relation="include">
+        </childnode>
+        <childnode refid="1952" relation="include">
+        </childnode>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1928" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+        <childnode refid="1955" relation="include">
+        </childnode>
+      </node>
+      <node id="1914">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="1915" relation="include">
+        </childnode>
+      </node>
+      <node id="1917">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="1913">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="1920">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="1912" relation="include">
+        </childnode>
+      </node>
+      <node id="1950">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="1951" relation="include">
+        </childnode>
+      </node>
+      <node id="1916">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+      </node>
+      <node id="1923">
+        <label>eepr.h</label>
+        <link refid="eepr_8h"/>
+        <childnode refid="1924" relation="include">
+        </childnode>
+      </node>
+      <node id="1921">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="1922" relation="include">
+        </childnode>
+      </node>
+      <node id="1922">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+      </node>
+      <node id="1934">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1935" relation="include">
+        </childnode>
+      </node>
+      <node id="1931">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="1918">
+        <label>os.h</label>
+        <link refid="os_8h"/>
+        <childnode refid="1919" relation="include">
+        </childnode>
+      </node>
+      <node id="1938">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1939" relation="include">
+        </childnode>
+      </node>
+      <node id="1943">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1934" relation="include">
+        </childnode>
+      </node>
+      <node id="1924">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="1925" relation="include">
+        </childnode>
+        <childnode refid="1926" relation="include">
+        </childnode>
+      </node>
+      <node id="1930">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="1911" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1a70af21c671abfcc773614a9a4f63d920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SystemClock_Config</definition>
+        <argsstring>(void)</argsstring>
+        <name>SystemClock_Config</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c" line="73" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c" bodystart="152" bodyend="155"/>
+        <references refid="rcc_8c_1ab5bb32ef30be43b8cc480ca2bbb8dc2c" compoundref="rcc_8c" startline="55" endline="63">RCC_ClockConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a1914e989db11c43bbd5ea947b86818c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BOOT_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>BOOT_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set boot reset date, time and status</para><para><simplesect kind="return"><para>void. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c" bodystart="162" bodyend="178"/>
+        <references refid="bkpsram__cfg_8c_1a59e02cebc030e2f5191692d9b6cd85fa" compoundref="bkpsram__cfg_8c" startline="55">main_state</references>
+        <references refid="structMAIN__STATUS__s_1acfa648d5d3bffd6444a6912da0e7341b" compoundref="main_8h" startline="62">MAIN_STATUS_s::CSR</references>
+        <references refid="mcu_8c_1ad330c9b64342cd301086b357822a1d5e" compoundref="mcu_8c" startline="117" endline="162">MCU_SystemResetStatus_Init</references>
+        <references refid="rtc_8c_1a1a6c518bfabf1187db2d330ed6e9d636" compoundref="rtc_8c" startline="99" endline="101">RTC_getTime</references>
+        <references refid="rtc_8c_1a432399abca2147611a2123349ec54a12" compoundref="rtc_8c" startline="103" endline="105">RTC_getDate</references>
+        <references refid="structMAIN__STATUS__s_1aded543c21456ac7b36d1b0ba0e7092ac" compoundref="main_8h" startline="64">MAIN_STATUS_s::boot_rtcdate</references>
+        <references refid="structMAIN__STATUS__s_1a6828320109f9a1982ff2e94bffe797db" compoundref="main_8h" startline="65">MAIN_STATUS_s::boot_rtctime</references>
+        <references refid="structMAIN__STATUS__s_1a19f4ac15d06c8305cf518f82dea466c1" compoundref="main_8h" startline="63">MAIN_STATUS_s::resetcounter</references>
+        <references refid="mcu_8c_1abe9ce7ce94ce132936a0076f88a7513e" compoundref="mcu_8c" startline="169" endline="177">MCU_GetDeviceID</references>
+        <references refid="mcu_8c_1ac898f928970a9d55fcd431ac1fb30ce4" compoundref="mcu_8c" startline="55">mcu_unique_deviceID</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Main program. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c" line="83" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c" bodystart="83" bodyend="149"/>
+        <references refid="rtc_8c_1a384f238fa0494e17f7814a4d505c20bf" compoundref="rtc_8c" startline="57" endline="89">RTC_Init</references>
+        <references refid="wdg_8c_1ab2d62b390b0bafbee96eb06daab786f0" compoundref="wdg_8c" startline="63" endline="70">WDG_Init</references>
+        <references refid="bkpsram_8c_1a832296683ae31a2c0d28dbefda71aad8" compoundref="bkpsram_8c" startline="56" endline="78">BKP_SRAM_Init</references>
+        <references refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" compoundref="main_8c" startline="152" endline="155">SystemClock_Config</references>
+        <references refid="diag_8c_1a796c69f6cd05a890a36df8b115561273" compoundref="diag_8c" startline="136" endline="203">DIAG_Init</references>
+        <references refid="diag__cfg_8c_1a38ec347f2786572d994d5328a5d56373" compoundref="diag__cfg_8c" startline="437">diag_dev</references>
+        <references refid="main_8c_1a1914e989db11c43bbd5ea947b86818c9" compoundref="main_8c" startline="162" endline="178">BOOT_Init</references>
+        <references refid="io_8c_1ac1a06f3124939d459db54da1e1c1be29" compoundref="io_8c" startline="62" endline="138">IO_Init</references>
+        <references refid="io__cfg_8h_1ac5206e05956c6add725226da867bd23b">io_cfg</references>
+        <references refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" compoundref="io_8c" startline="152" endline="155">IO_TogglePin</references>
+        <references refid="led_8h_1a85ae59312bb9da4690addf9103ab4858" compoundref="led_8h" startline="43">LED_DEBUG_1</references>
+        <references refid="os_8c_1ad858422b7a211f094e302688c3f98917" compoundref="os_8c" startline="61">os_safety_state</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad36e8509d66529f4fb436bd338d6d7dc" compoundref="os_8h" startline="96">OS_SAFETY_FEATURE_DISABLED</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad2a90c458aaf4c8829b9608d02a8783f" compoundref="os_8h" startline="95">OS_SAFETY_FEATURE_ENABLED</references>
+        <references refid="dma_8c_1a31b6691837fcb075cec43f3bbef33b16" compoundref="dma_8c" startline="53" endline="89">DMA_Init</references>
+        <references refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" compoundref="dma__cfg_8c" startline="49">dma_devices</references>
+        <references refid="spi_8c_1a1a4c5c177d7de38a2e439a7a0dad7962" compoundref="spi_8c" startline="70" endline="119">SPI_Init</references>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+        <references refid="timer_8c_1a9caa1e61ee11742e57bfa36da2c187a8" compoundref="timer_8c" startline="57" endline="64">TIM_Init</references>
+        <references refid="uart_8c_1ad5cbed2a2222bb84e8b5c1caaa50634e" compoundref="uart_8c" startline="86" endline="102">UART_Init</references>
+        <references refid="nvic_8c_1a31f2a19589eeadbf5ad1e592ddcea455" compoundref="nvic_8c" startline="109" endline="111">NVIC_PreOsInit</references>
+        <references refid="led_8c_1ab3570a8c9e1266519ad1c7e00093812b" compoundref="led_8c" startline="56" endline="60">LED_Init</references>
+        <references refid="adc_8c_1a365da52818e8a4d0c34db621e42ed4b4" compoundref="adc_8c" startline="62" endline="79">ADC_Init</references>
+        <references refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" compoundref="adc__cfg_8c" startline="48">adc_devices</references>
+        <references refid="os_8c_1a6f5422e600224458a5f0c216f534db57" compoundref="os_8c" startline="75" endline="104">OS_TaskInit</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="chksum_8c_1aba5196e1171f5a56adef0a2aeec49a77" compoundref="chksum_8c" startline="78" endline="89">CHK_Flashchecksum</references>
+        <references refid="version_8h_1abb9ff426215dd681f7a5137e7ed13ed8">ver_sw_validation</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="chksum_8c_1a1e8acf1fdd8f889dde0261dc0cbb9ecb" compoundref="chksum_8c" startline="62">chk_status</references>
+        <references refid="structCHK__STATUS__s_1a0143d7423d2dd3013657b040f17457e0" compoundref="chksum_8h" startline="60">CHK_STATUS_s::checksumstatus</references>
+        <references refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba037a9be3b79bbcfff9eca22bb0d8b8f8" compoundref="chksum_8h" startline="51">CHK_CHECKSUM_PASSED</references>
+        <references refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba042531d2bba493d9ed8a3bbbf7b76e79" compoundref="chksum_8h" startline="50">CHK_CHECKSUM_FAILED</references>
+        <references refid="diag_8h_1a55d0865d598a27a1bb18d386171cfd93adf22fbfe2a3d7a0dfc7335ab7d20e888" compoundref="diag_8h" startline="46">DIAG_HANDLER_RETURN_OK</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="450" endline="484">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1ac05a84b3d35db899d06ad57f03c84870" compoundref="diag__cfg_8h" startline="93">DIAG_CH_FLASHCHECKSUM</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="com_8h_1a83dbba20990b5ab84da232f8419d1315">COM_StartupInfo</references>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbac3f7d7b3e7cfd298c12c6cfdea05907b" compoundref="os_8h" startline="90">OS_INIT_OSSTARTKERNEL</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main function. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>26.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>none </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="35"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mcu_cfg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="os_8h" kindref="compound">os.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="can_8h" kindref="compound">can.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io_8h" kindref="compound">io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dma_8h" kindref="compound">dma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="led_8h" kindref="compound">led.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bkpsram_8h" kindref="compound">bkpsram.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="uart_8h" kindref="compound">uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="com_8h" kindref="compound">com.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="chksum_8h" kindref="compound">chksum.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diag_8h" kindref="compound">diag.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu_8h" kindref="compound">mcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wdg_8h" kindref="compound">wdg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a1914e989db11c43bbd5ea947b86818c9" kindref="member">BOOT_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight></codeline>
+<codeline lineno="83" refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_Init();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>STM32F4xx<sp/>HAL<sp/>library<sp/>initialization<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rtc_8c_1a384f238fa0494e17f7814a4d505c20bf" kindref="member">RTC_Init</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_WATCHDOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wdg_8c_1ab2d62b390b0bafbee96eb06daab786f0" kindref="member">WDG_Init</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>initialize<sp/>and<sp/>start<sp/>watchdog*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bkpsram_8c_1a832296683ae31a2c0d28dbefda71aad8" kindref="member">BKP_SRAM_Init</ref>();<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>at<sp/>this<sp/>point<sp/>diagnosis<sp/>event<sp/>memory<sp/>in<sp/>BKP_SRAM<sp/>will<sp/>be<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a796c69f6cd05a890a36df8b115561273" kindref="member">DIAG_Init</ref>(&amp;<ref refid="diag__cfg_8c_1a38ec347f2786572d994d5328a5d56373" kindref="member">diag_dev</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a1914e989db11c43bbd5ea947b86818c9" kindref="member">BOOT_Init</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8c_1ac1a06f3124939d459db54da1e1c1be29" kindref="member">IO_Init</ref>(&amp;<ref refid="io__cfg_8h_1ac5206e05956c6add725226da867bd23b" kindref="member">io_cfg</ref>[0]);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_SAFETY_FEATURES<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8c_1a329d86cd8f053a55229fc51b6f722546" kindref="member">IO_TogglePin</ref>(<ref refid="led_8h_1a85ae59312bb9da4690addf9103ab4858" kindref="member">LED_DEBUG_1</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1ad858422b7a211f094e302688c3f98917" kindref="member">os_safety_state</ref><sp/>=<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad36e8509d66529f4fb436bd338d6d7dc" kindref="member">OS_SAFETY_FEATURE_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1ad858422b7a211f094e302688c3f98917" kindref="member">os_safety_state</ref><sp/>=<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad2a90c458aaf4c8829b9608d02a8783f" kindref="member">OS_SAFETY_FEATURE_ENABLED</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dma_8c_1a31b6691837fcb075cec43f3bbef33b16" kindref="member">DMA_Init</ref>(&amp;<ref refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" kindref="member">dma_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="spi_8c_1a1a4c5c177d7de38a2e439a7a0dad7962" kindref="member">SPI_Init</ref>(&amp;<ref refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" kindref="member">spi_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="timer_8c_1a9caa1e61ee11742e57bfa36da2c187a8" kindref="member">TIM_Init</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_UART</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ad5cbed2a2222bb84e8b5c1caaa50634e" kindref="member">UART_Init</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8c_1a31f2a19589eeadbf5ad1e592ddcea455" kindref="member">NVIC_PreOsInit</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="led_8c_1ab3570a8c9e1266519ad1c7e00093812b" kindref="member">LED_Init</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8c_1a365da52818e8a4d0c34db621e42ed4b4" kindref="member">ADC_Init</ref>(<ref refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" kindref="member">adc_devices</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>mutexes,<sp/>events<sp/>and<sp/>tasks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a6f5422e600224458a5f0c216f534db57" kindref="member">OS_TaskInit</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" kindref="member">os_schedulerstarttime</ref><sp/>=<sp/>osKernelSysTick();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8c_1a31f2a19589eeadbf5ad1e592ddcea455" kindref="member">NVIC_PreOsInit</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="chksum_8c_1aba5196e1171f5a56adef0a2aeec49a77" kindref="member">CHK_Flashchecksum</ref>(&amp;<ref refid="version_8h_1abb9ff426215dd681f7a5137e7ed13ed8" kindref="member">ver_sw_validation</ref>)==<ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" kindref="member">E_OK</ref>)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="chksum_8c_1a1e8acf1fdd8f889dde0261dc0cbb9ecb" kindref="member">chk_status</ref>.<ref refid="structCHK__STATUS__s_1a0143d7423d2dd3013657b040f17457e0" kindref="member">checksumstatus</ref><sp/>=<sp/><ref refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba037a9be3b79bbcfff9eca22bb0d8b8f8" kindref="member">CHK_CHECKSUM_PASSED</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="chksum_8c_1a1e8acf1fdd8f889dde0261dc0cbb9ecb" kindref="member">chk_status</ref>.<ref refid="structCHK__STATUS__s_1a0143d7423d2dd3013657b040f17457e0" kindref="member">checksumstatus</ref><sp/>=<sp/><ref refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba042531d2bba493d9ed8a3bbbf7b76e79" kindref="member">CHK_CHECKSUM_FAILED</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="diag_8h_1a55d0865d598a27a1bb18d386171cfd93adf22fbfe2a3d7a0dfc7335ab7d20e888" kindref="member">DIAG_HANDLER_RETURN_OK</ref><sp/>!=<sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1ac05a84b3d35db899d06ad57f03c84870" kindref="member">DIAG_CH_FLASHCHECKSUM</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,<sp/>0,<sp/>NULL))</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_COM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="com_8h_1a83dbba20990b5ab84da232f8419d1315" kindref="member">COM_StartupInfo</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" kindref="member">os_boot</ref><sp/>=<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbac3f7d7b3e7cfd298c12c6cfdea05907b" kindref="member">OS_INIT_OSSTARTKERNEL</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>start<sp/>scheduler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>osKernelStart();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>osKernelStart()<sp/>should<sp/>never<sp/>return<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rcc_8c_1ab5bb32ef30be43b8cc480ca2bbb8dc2c" kindref="member">RCC_ClockConfig</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="main_8c_1a1914e989db11c43bbd5ea947b86818c9" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a1914e989db11c43bbd5ea947b86818c9" kindref="member">BOOT_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rtc_8h_1a4a0338d8767e400c4aec2cbde4202d0b" kindref="member">RTC_Time_s</ref><sp/>currTime;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rtc_8h_1a812d343b610250af9c54248ffa73afbe" kindref="member">RTC_Date_s</ref><sp/>currDate;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bkpsram__cfg_8c_1a59e02cebc030e2f5191692d9b6cd85fa" kindref="member">main_state</ref>.<ref refid="structMAIN__STATUS__s_1acfa648d5d3bffd6444a6912da0e7341b" kindref="member">CSR</ref><sp/>=<sp/><ref refid="mcu_8c_1ad330c9b64342cd301086b357822a1d5e" kindref="member">MCU_SystemResetStatus_Init</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rtc_8c_1a1a6c518bfabf1187db2d330ed6e9d636" kindref="member">RTC_getTime</ref>(&amp;currTime);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rtc_8c_1a432399abca2147611a2123349ec54a12" kindref="member">RTC_getDate</ref>(&amp;currDate);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bkpsram__cfg_8c_1a59e02cebc030e2f5191692d9b6cd85fa" kindref="member">main_state</ref>.<ref refid="structMAIN__STATUS__s_1aded543c21456ac7b36d1b0ba0e7092ac" kindref="member">boot_rtcdate</ref><sp/>=<sp/>currDate;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>boot<sp/>date<sp/>and<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bkpsram__cfg_8c_1a59e02cebc030e2f5191692d9b6cd85fa" kindref="member">main_state</ref>.<ref refid="structMAIN__STATUS__s_1a6828320109f9a1982ff2e94bffe797db" kindref="member">boot_rtctime</ref><sp/>=<sp/>currTime;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bkpsram__cfg_8c_1a59e02cebc030e2f5191692d9b6cd85fa" kindref="member">main_state</ref>.<ref refid="structMAIN__STATUS__s_1a19f4ac15d06c8305cf518f82dea466c1" kindref="member">resetcounter</ref>++;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mcu_8c_1abe9ce7ce94ce132936a0076f88a7513e" kindref="member">MCU_GetDeviceID</ref>(&amp;<ref refid="mcu_8c_1ac898f928970a9d55fcd431ac1fb30ce4" kindref="member">mcu_unique_deviceID</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@todo<sp/>akdere:<sp/>check<sp/>diagnosis<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/main.c"/>
+  </compounddef>
+</doxygen>

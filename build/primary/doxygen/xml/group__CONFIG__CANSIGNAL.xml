@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__CANSIGNAL" kind="group">
+    <compoundname>CONFIG_CANSIGNAL</compoundname>
+    <title>CANSIGNAL User configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__CANSIGNAL_1ga9060669d55a55b34ebfb1228bc33ac66" prot="public" static="no">
+        <name>CANS_TICK_MS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>task timeslot where the CANS main function is called. Repetition time of periodic CAN messages must be multiple of this <simplesect kind="par"><title>Type:</title><para>select(3) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="50" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration of the CAN BUS signals used in the BMS. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.6. Diagnosis &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../../index.html"/>
+        <link rel="up" title="4. Software Modules" href="../modules.html"/>
+        <link rel="next" title="4.7. CAN" href="../can/can.html"/>
+        <link rel="prev" title="4.5. Interlock" href="../interlock/interlock.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bms/bms.html">4.1. BMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys/sys.html">4.2. System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.3. IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.4. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.5. Interlock</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.6. Diagnosis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../can/can.html">4.7. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cansignal/cansignal.html">4.8. CAN Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ltc/ltc.html">4.9. LTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../balancing/balancing.html">4.10. Balancing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nvm/nvm.html">4.11. NVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../com/com.html">4.12. COM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/uart.html">4.13. UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chksum/chksum.html">4.14. Checksum Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sox/sox.html">4.15. SOX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../isoguard/isoguard.html">4.16. Isoguard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../modules.html">4. Software Modules</a> &raquo;</li>
+        
+      <li>4.6. Diagnosis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/software_documentation/modules/diag/diag.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="diagnosis">
+<h1>4.6. Diagnosis<a class="headerlink" href="#diagnosis" title="Permalink to this headline">¶</a></h1>
+<p>The diagnose module is responsible for error handling, error reporting and system monitoring.</p>
+<div class="section" id="description">
+<h2>4.6.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">diag</span></code> module consists of 2 independent main parts, diagnosis handling and system monitoring. When configured, reported errors are logged into the global diagnosis memory and a callback function can be triggered.</p>
+<p>The handler counts errors and calls a callback function when the configured error threshold is exceeded. The callback function is called again only when the error counter go back to zero after the error threshold was reached.</p>
+<p>The initialization of the diagnosis module has to be done during start-up after the diagnosis memory is available (e.g. after Backup-SRAM is accessible). The Backup-SRAM Flag <code class="docutils literal"><span class="pre">DIAG_DATA_IS_VALID</span></code> indicates the data validity in diagnosis memory.</p>
+<p>Two types of handling are defined:</p>
+<ul class="simple">
+<li>the general handler with debounce filter and thresholds for entering and exiting error state</li>
+<li>the contactor handler which counts all switching actions and reports when contactors are opened while the current flowing through the battery is above the configured threshold</li>
+</ul>
+</div>
+<div class="section" id="module-files">
+<h2>4.6.2. Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Driver:</dt>
+<dd><ul class="first last simple">
+<li>embedded-softwaremcu-primarysrcenginediagdiag.c</li>
+<li>embedded-softwaremcu-primarysrcenginediagdiag.h</li>
+</ul>
+</dd>
+<dt>Driver Configuration:</dt>
+<dd><ul class="first last simple">
+<li>embedded-softwaremcu-primarysrcengineconfigdiag_cfg.c</li>
+<li>embedded-softwaremcu-primarysrcengineconfigdiag_cfg.h</li>
+<li>embedded-softwaremcu-primarysrcengineconfigdiag_id.h</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="usage">
+<h2>4.6.3. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="diagnosis-handling">
+<h3>4.6.3.1. Diagnosis Handling<a class="headerlink" href="#diagnosis-handling" title="Permalink to this headline">¶</a></h3>
+<p>For using the diagnosis handler for a specific check in a module, a free diagnosis id has to be defined in <code class="docutils literal"><span class="pre">diag_cfg.h</span></code>
+and included as an additional diagnosis channel in <code class="docutils literal"><span class="pre">diag_cfg.c</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">diag_cfg</span><span class="p">.</span><span class="nl">h</span><span class="p">:</span>
+<span class="cp">#define     DIAG_ISOMETER_ERROR                 DIAG_ID_37           </span><span class="c1">// Device error, invalid measurement result</span>
+
+<span class="n">diag_cfg</span><span class="p">.</span><span class="nl">c</span><span class="p">:</span>
+<span class="n">DIAG_CH_CFG_s</span>  <span class="n">diag_ch_cfg</span><span class="p">[]</span><span class="o">=</span> <span class="p">{</span>
+  <span class="p">...</span>
+  <span class="p">{</span><span class="n">DIAG_ISOMETER_ERROR</span><span class="p">,</span><span class="n">DIAG_GENERAL_TYPE</span><span class="p">,</span> <span class="n">DIAG_ERROR_SENSITIVITY_MID</span><span class="p">,</span>  <span class="n">DIAG_RECORDING_ENABLED</span><span class="p">,</span> <span class="n">DIAG_ENABLED</span><span class="p">,</span> <span class="n">callbackfunction</span><span class="p">},</span>
+  <span class="p">...</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>Where error counting is needed, the diagnosis handler has to be called in the following way:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span> <span class="o">&lt;</span><span class="n">error</span> <span class="n">detected</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="n">retVal</span> <span class="o">=</span> <span class="n">DIAG_Handler</span><span class="p">(</span><span class="n">DIAG_ISOMETER_ERROR</span><span class="p">,</span> <span class="n">DIAG_EVENT_OK</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">retVAl</span> <span class="o">!=</span> <span class="n">DIAG_HANDLER_RETURN_OK</span><span class="p">)</span>
+     <span class="p">{</span>
+          <span class="cm">/* here implement local (directly) diagnosis handling */</span>
+     <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+     <span class="n">DIAG_Handler</span><span class="p">(</span><span class="n">DIAG_ISOMETER_ERROR</span><span class="p">,</span> <span class="n">DIAG_EVENT_NOK</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The callback function</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">callbackfunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+   <span class="cm">/* here implement (indirectly) diagnosis handling */</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>is called when the error threshold is reached or when the counter goes back to zero after the threshold was reached. Typically, an error flag stored in the database is set or unset in the callback function.</p>
+</div>
+<div class="section" id="system-monitoring">
+<h3>4.6.3.2. System Monitoring<a class="headerlink" href="#system-monitoring" title="Permalink to this headline">¶</a></h3>
+<p>For using the system monitor for a specific task or function, a free monitoring channel ID has to be defined in <code class="docutils literal"><span class="pre">diag_cfg.h</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">enum</span> <span class="p">{</span>
+   <span class="n">DIAG_SYSMON_DATABASE_ID</span>         <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_SYS_ID</span>          <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_LTC_ID</span>              <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_ISOGUARD_ID</span>         <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_CANS_ID</span>             <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_APPL_CYCLIC_10ms</span>    <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_APPL_CYCLIC_100ms</span>   <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_BMS_ID</span>          <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+   <span class="n">DIAG_SYSMON_MODULE_ID_MAX</span>       <span class="o">=</span> <span class="mi">8</span>    <span class="cm">/* do not delete endmarker */</span>
+<span class="p">}</span> <span class="n">DIAG_SYSMON_MODULE_ID_e</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>and a new channel configured in  <code class="docutils literal"><span class="pre">diag_cfg.c</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DIAG_SYSMON_CH_CFG_s</span>  <span class="n">diag_sysmon_ch_cfg</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="p">...</span>
+   <span class="p">{</span><span class="n">DIAG_SYSMON_ISOGUARD_ID</span><span class="p">,</span>   <span class="n">DIAG_SYSMON_CYCLICTASK</span><span class="p">,</span>  <span class="mi">400</span><span class="p">,</span> <span class="n">DIAG_RECORDING_ENABLED</span><span class="p">,</span> <span class="n">DIAG_ENABLED</span><span class="p">,</span> <span class="n">callbackfunction</span><span class="p">},</span>
+   <span class="p">...</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>In this example, a timeout of 400 ms is defined. In the corresponding task or cyclic called function, a notification to the system monitor has to be done within the configured timeout by passing the state value, here 0 (ok),</p>
+<p>Example:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">my_isoguardfunction</span><span class="p">()</span> <span class="p">{</span>
+   <span class="p">...</span>
+   <span class="n">DIAG_SysMonNotify</span><span class="p">(</span><span class="n">DIAG_SYSMON_ISOGUARD_ID</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+   <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>4.6.4. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>&lt;Link to source <a class="footnote-reference" href="#id2" id="id1">[1]</a>&gt;.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Datasheet DM00071990 [PDF] <a class="reference external" href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../can/can.html" class="btn btn-neutral float-right" title="4.7. CAN" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../interlock/interlock.html" class="btn btn-neutral" title="4.5. Interlock" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

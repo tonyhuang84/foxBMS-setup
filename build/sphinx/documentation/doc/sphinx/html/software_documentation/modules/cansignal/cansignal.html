@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.8. CAN Signal &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../../index.html"/>
+        <link rel="up" title="4. Software Modules" href="../modules.html"/>
+        <link rel="next" title="4.9. LTC" href="../ltc/ltc.html"/>
+        <link rel="prev" title="4.7. CAN" href="../can/can.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bms/bms.html">4.1. BMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys/sys.html">4.2. System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.3. IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.4. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.5. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../diag/diag.html">4.6. Diagnosis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../can/can.html">4.7. CAN</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.8. CAN Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ltc/ltc.html">4.9. LTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../balancing/balancing.html">4.10. Balancing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nvm/nvm.html">4.11. NVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../com/com.html">4.12. COM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/uart.html">4.13. UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chksum/chksum.html">4.14. Checksum Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sox/sox.html">4.15. SOX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../isoguard/isoguard.html">4.16. Isoguard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../modules.html">4. Software Modules</a> &raquo;</li>
+        
+      <li>4.8. CAN Signal</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/software_documentation/modules/cansignal/cansignal.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="can-signal">
+<h1>4.8. CAN Signal<a class="headerlink" href="#can-signal" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal"><span class="pre">cansignal</span></code> module is a software module to handle the conversion from data providers like a database or measurement modules to the <code class="docutils literal"><span class="pre">can</span></code> module. It works similar to a typical IPO (input-processing-output) pattern.</p>
+<div class="section" id="module-files">
+<h2>4.8.1. Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Driver:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\cansignal\cansignal.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\cansignal\cansignal.c</span></code></li>
+</ul>
+</dd>
+<dt>Driver Configuration:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\cansignal_cfg.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\cansignal_cfg.c</span></code></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dependencies">
+<h2>4.8.2. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>CAN:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\can\can.h</span></code></li>
+</ul>
+</dd>
+</dl>
+<p>Other dependencies can arise from callback functions in configuration of <code class="docutils literal"><span class="pre">cansignal</span></code> module.</p>
+</div>
+<div class="section" id="detailed-description-of-the-mod-cansignal">
+<h2>4.8.3. Detailed Description of the <code class="docutils literal"><span class="pre">cansignal</span></code> module<a class="headerlink" href="#detailed-description-of-the-mod-cansignal" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-structure-and-interfaces">
+<h3>4.8.3.1. File Structure and Interfaces<a class="headerlink" href="#file-structure-and-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">cansignal</span></code> module is a simple one-file module with one-file configuration:</p>
+<blockquote>
+<div><ul class="simple">
+<li>The module itself consists of one file <code class="docutils literal"><span class="pre">cansignal.c</span></code> and its associated <code class="docutils literal"><span class="pre">cansignal.h</span></code></li>
+<li>The configuration is given in <code class="docutils literal"><span class="pre">cansignal_cfg.c</span></code> and its associated <code class="docutils literal"><span class="pre">cansignal_cfg.h</span></code></li>
+</ul>
+</div></blockquote>
+<p>The external interface to the <code class="docutils literal"><span class="pre">cansignal</span></code> module is very easy and consists of just two functions:</p>
+<blockquote>
+<div><ul class="simple">
+<li>CANS_Init</li>
+<li>CANS_MainFunction</li>
+</ul>
+</div></blockquote>
+<p>CANS_Init is for parameter and configuration checking of the <code class="docutils literal"><span class="pre">cansignal</span></code> module.</p>
+<p>CANS_MainFunction is for data processing and should be called periodically.</p>
+</div>
+<div class="section" id="data-flow">
+<h3>4.8.3.2. Data Flow<a class="headerlink" href="#data-flow" title="Permalink to this headline">¶</a></h3>
+<p>The data flow is generally divided in two different domains, one for reception of CAN messages and signal value distribution, the other for transmission of CAN message and signal value assembling/message composition.</p>
+<p>When a CAN message is received physically, it is stored in a buffer which is polled periodically by <code class="docutils literal"><span class="pre">CANS_MainFunction()</span></code>.
+In case of a match, the corresponding signals of the message are extracted, scaled and handed over to a data consumer via the callback
+setter function.</p>
+<p>When a CAN message needs to be transmitted physically, the signals data belonging to this CAN message are collected via their getter callback function. From this signals data, the CAN message is assembled. If everything worked fine, it is stored in a buffer and sent out over the CAN peripheral hardware.</p>
+<p><a class="reference internal" href="#cansignal-figure1"><span class="std std-numref">fig. 4.38</span></a> shows the data flow used to assemble a CAN message.</p>
+<div class="figure" id="id1">
+<span id="cansignal-figure1"></span><a class="reference internal image-reference" href="../../../_images/cans_msg_handling_xxl.png"><img alt="../../../_images/cans_msg_handling_xxl.png" src="../../../_images/cans_msg_handling_xxl.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.38 </span><span class="caption-text">CAN data flow to assemble messages</span></p>
+</div>
+</div>
+<div class="section" id="control-flow">
+<h3>4.8.3.3. Control Flow<a class="headerlink" href="#control-flow" title="Permalink to this headline">¶</a></h3>
+<p>The module operates from a single function call to <code class="docutils literal"><span class="pre">CANS_MainFunction()</span></code>.</p>
+<p>First the periodic message transmission is handled in this function. If correspondence of an internal tick counter to a message repetition time and phase is detected (i.e., the periodic time expired) the CAN message is composed from its signals. Therefore all signals, which are included in a message, are collected via their getter callback and written to the message data block at the right position in the right length. This message data block together with the ID, Data Length Code and so on, is handed over to the <code class="docutils literal"><span class="pre">can</span></code> module, which handles the low level transmission to the CAN specific peripheral registers.</p>
+<p>The message reception in turn is done by reading out the buffer of the <code class="docutils literal"><span class="pre">can</span></code> module. Then the signals configuration is searched for this message(s). If one signal is represented in these received messages it is extracted and handed over to the setter callback function configured for this signal.</p>
+</div>
+</div>
+<div class="section" id="can-configurations">
+<span id="cansignal-can-config"></span><h2>4.8.4. CAN Configurations<a class="headerlink" href="#can-configurations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="default-configuration">
+<h3>4.8.4.1. Default Configuration<a class="headerlink" href="#default-configuration" title="Permalink to this headline">¶</a></h3>
+<p>The configuration comprises:</p>
+<ul class="simple">
+<li>enums for both receive and transmit message names (<code class="docutils literal"><span class="pre">CANS_messagesTx_e</span></code> respectively <code class="docutils literal"><span class="pre">CANS_messagesRx_e</span></code>)</li>
+<li>enums for both receive and transmit signal names (<code class="docutils literal"><span class="pre">CANS_CANx_signalsTx_e</span></code> respectively <code class="docutils literal"><span class="pre">CANS_CANx_signalsRx_e</span></code>)</li>
+<li>arrays for signal definition, for both receive and transmit signals</li>
+<li>callback function implementations for getting and setting of signals</li>
+<li>callback function implementations for post-processing after transmission and reception of messages</li>
+</ul>
+</div>
+<div class="section" id="custom-configuration-examples">
+<h3>4.8.4.2. Custom Configuration Examples<a class="headerlink" href="#custom-configuration-examples" title="Permalink to this headline">¶</a></h3>
+<p>See FAQ section on how to manually add/delete a CAN message.</p>
+</div>
+</div>
+<div class="section" id="usage-examples">
+<h2>4.8.5. Usage/Examples<a class="headerlink" href="#usage-examples" title="Permalink to this headline">¶</a></h2>
+<p>To use <code class="docutils literal"><span class="pre">can</span></code> module and <code class="docutils literal"><span class="pre">cansignal</span></code> module with a correct <a class="reference internal" href="#cansignal-can-config"><span class="std std-ref">CAN Configurations</span></a>, just call <code class="docutils literal"><span class="pre">CANS_MainFunction</span></code> in the cyclic tasks timeslot, that is configured in <code class="docutils literal"><span class="pre">CANS_TICK_MS</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ltc/ltc.html" class="btn btn-neutral float-right" title="4.9. LTC" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../can/can.html" class="btn btn-neutral" title="4.7. CAN" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<map id="io_cfg.h" name="io_cfg.h">
+<area shape="rect" id="node2" href="$contactor__cfg_8h.html" title="Header for the configuration for the driver for the contactors. " alt="" coords="344,80,455,107"/>
+<area shape="rect" id="node18" href="$interlock__cfg_8h.html" title="Header for the configuration for the driver for the interlock. " alt="" coords="959,229,1066,256"/>
+<area shape="rect" id="node22" href="$io__cfg_8c.html" title="Configuration for the driver for the I/O ports. " alt="" coords="1063,80,1130,107"/>
+<area shape="rect" id="node23" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="1207,80,1250,107"/>
+<area shape="rect" id="node48" href="$portcheck_8h.html" title="Validity checker for STM32 GPIO Configuration. " alt="" coords="2126,80,2217,107"/>
+<area shape="rect" id="node3" href="$bms_8h.html" title="bms driver header " alt="" coords="503,304,562,331"/>
+<area shape="rect" id="node9" href="$sys_8h.html" title="Sys driver header. " alt="" coords="113,304,168,331"/>
+<area shape="rect" id="node11" href="$contactor__cfg_8c.html" title="Configuration for the driver for the contactors. " alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node12" href="$contactor_8h.html" title="Headers for the driver for the contactors. " alt="" coords="356,155,443,181"/>
+<area shape="rect" id="node4" href="$bms_8c.html" title="bms driver implementation " alt="" coords="734,379,793,405"/>
+<area shape="rect" id="node5" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="603,379,710,405"/>
+<area shape="rect" id="node6" href="$diag_8c.html" title="Diag driver implementation. " alt="" coords="471,379,528,405"/>
+<area shape="rect" id="node7" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="387,379,441,405"/>
+<area shape="rect" id="node8" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="677,528,773,555"/>
+<area shape="rect" id="node10" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="117,379,164,405"/>
+<area shape="rect" id="node13" href="$bms__cfg_8h.html" title="bms driver configuration header " alt="" coords="397,229,479,256"/>
+<area shape="rect" id="node15" href="$sys__cfg_8h.html" title="Sys driver configuration header. " alt="" coords="192,229,271,256"/>
+<area shape="rect" id="node17" href="$contactor_8c.html" title="Driver for the contactors. " alt="" coords="605,229,692,256"/>
+<area shape="rect" id="node14" href="$bms__cfg_8c.html" title="bms driver configuration " alt="" coords="397,304,479,331"/>
+<area shape="rect" id="node16" href="$sys__cfg_8c.html" title="Sys driver configuration. " alt="" coords="192,304,271,331"/>
+<area shape="rect" id="node19" href="$interlock__cfg_8c.html" title="Configuration for the driver for the interlock. " alt="" coords="838,304,945,331"/>
+<area shape="rect" id="node20" href="$interlock_8h.html" title="Headers for the driver for the interlock. " alt="" coords="969,304,1051,331"/>
+<area shape="rect" id="node21" href="$interlock_8c.html" title="Driver for the interlock. " alt="" coords="1009,379,1091,405"/>
+<area shape="rect" id="node24" href="$stm32f4xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="1211,304,1318,331"/>
+<area shape="rect" id="node25" href="$stm32f7xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="1342,304,1449,331"/>
+<area shape="rect" id="node26" href="$main_8c.html" title="Main function. " alt="" coords="1126,304,1187,331"/>
+<area shape="rect" id="node27" href="$spi__cfg_8h.html" title="Headers for the configuration for the serial peripheral interface module. " alt="" coords="1581,155,1655,181"/>
+<area shape="rect" id="node39" href="$spi_8c.html" title="Driver for the serial peripheral interface module (encapsulation of some HAL functions) ..." alt="" coords="2049,379,2099,405"/>
+<area shape="rect" id="node41" href="$ir155_8h.html" title="Headers for the driver for the isolation monitoring. " alt="" coords="823,155,885,181"/>
+<area shape="rect" id="node44" href="$can_8c.html" title="Driver for the CAN module. " alt="" coords="1011,155,1065,181"/>
+<area shape="rect" id="node45" href="$io_8c.html" title="Driver for the I/O ports (pins). " alt="" coords="2150,155,2193,181"/>
+<area shape="rect" id="node46" href="$led_8h.html" title="Headers for the driver to control the blinking of the display LEDs. " alt="" coords="1141,155,1191,181"/>
+<area shape="rect" id="node47" href="$led_8c.html" title="Driver to control the blinking of the display LEDs. " alt="" coords="1191,229,1242,256"/>
+<area shape="rect" id="node28" href="$spi__cfg_8c.html" title="Configuration for the serial peripheral interface module. " alt="" coords="1667,229,1742,256"/>
+<area shape="rect" id="node29" href="$spi_8h.html" title="Headers for the driver for the serial peripheral interface module (encapsulation of some HAL function..." alt="" coords="1593,229,1643,256"/>
+<area shape="rect" id="node30" href="$dma__cfg_8c.html" title="Configuration for the DMA module. " alt="" coords="1523,304,1606,331"/>
+<area shape="rect" id="node31" href="$eepr__cfg_8c.html" title="Configuration for the driver for the storage in the EEPROM memory. " alt="" coords="1630,304,1713,331"/>
+<area shape="rect" id="node32" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC monitoring chip. " alt="" coords="1661,379,1732,405"/>
+<area shape="rect" id="node35" href="$ltc_8c.html" title="Driver for the LTC monitoring chip. " alt="" coords="1909,528,1956,555"/>
+<area shape="rect" id="node37" href="$intermcu_8h.html" title="Driver for the inter&#45;MCU communication. " alt="" coords="1891,304,1974,331"/>
+<area shape="rect" id="node38" href="$intermcu_8c.html" title="intermcu.c" alt="" coords="1813,379,1895,405"/>
+<area shape="rect" id="node40" href="$ltc__defs_8h.html" title="ltc_defs.h" alt="" coords="1737,304,1816,331"/>
+<area shape="rect" id="node33" href="$ltc__cfg_8c.html" title="Configuration for the LTC monitoring chip. " alt="" coords="1657,453,1728,480"/>
+<area shape="rect" id="node34" href="$ltc_8h.html" title="Headers for the driver for the LTC monitoring chip. " alt="" coords="1752,453,1799,480"/>
+<area shape="rect" id="node36" href="$meas_8c.html" title="Driver for the measurements needed by the BMS (e.g., I,V,T). " alt="" coords="1743,528,1808,555"/>
+<area shape="rect" id="node42" href="$ir155_8c.html" title="Driver for the isolation monitoring. " alt="" coords="823,229,885,256"/>
+<area shape="rect" id="node43" href="$isoguard_8c.html" title="Driver for the isolation monitoring. " alt="" coords="717,229,799,256"/>
+<area shape="rect" id="node49" href="$portcheck_8c.html" title="Validity checker for STM32 GPIO Configuration. " alt="" coords="2217,155,2307,181"/>
+</map>

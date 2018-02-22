@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__ENGINE__CONF" kind="group">
+    <compoundname>ENGINE_CONF</compoundname>
+    <title>Engine Configuration</title>
+    <innerfile refid="bms__cfg_8c">bms_cfg.c</innerfile>
+    <innerfile refid="bms__cfg_8h">bms_cfg.h</innerfile>
+    <innerfile refid="database__cfg_8c">database_cfg.c</innerfile>
+    <innerfile refid="database__cfg_8h">database_cfg.h</innerfile>
+    <innerfile refid="diag__cfg_8c">diag_cfg.c</innerfile>
+    <innerfile refid="diag__cfg_8h">diag_cfg.h</innerfile>
+    <innerfile refid="enginetask__cfg_8c">enginetask_cfg.c</innerfile>
+    <innerfile refid="enginetask__cfg_8h">enginetask_cfg.h</innerfile>
+    <innerfile refid="sys__cfg_8c">sys_cfg.c</innerfile>
+    <innerfile refid="sys__cfg_8h">sys_cfg.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains configuration for high priority kernel and database handler </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

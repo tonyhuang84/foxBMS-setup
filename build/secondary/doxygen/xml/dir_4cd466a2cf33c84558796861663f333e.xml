@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4cd466a2cf33c84558796861663f333e" kind="dir">
+    <compoundname>rcc</compoundname>
+    <innerfile refid="rcc_8c">rcc.c</innerfile>
+    <innerfile refid="rcc_8h">rcc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/rcc/"/>
+  </compounddef>
+</doxygen>

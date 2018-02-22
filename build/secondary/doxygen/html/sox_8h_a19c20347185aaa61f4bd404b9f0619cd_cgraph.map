@@ -1,0 +1,5 @@
+<map id="SOC_SetValue" name="SOC_SetValue">
+<area shape="rect" id="node2" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="181,5,301,32"/>
+<area shape="rect" id="node3" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="164,56,319,83"/>
+<area shape="rect" id="node4" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="180,107,303,133"/>
+</map>

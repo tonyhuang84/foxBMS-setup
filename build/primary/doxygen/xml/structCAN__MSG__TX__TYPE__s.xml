@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCAN__MSG__TX__TYPE__s" kind="struct" language="C++" prot="public">
+    <compoundname>CAN_MSG_TX_TYPE_s</compoundname>
+    <includes refid="can__cfg_8h" local="no">can_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCAN__MSG__TX__TYPE__s_1ac97ba868bdf829c4661f65a000f11bdd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_MSG_TX_TYPE_s::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+<para>CAN message id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" line="371" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__MSG__TX__TYPE__s_1a9749d79e72f2e04adb2fa7d5cd9a2098" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CAN_MSG_TX_TYPE_s::DLC</definition>
+        <argsstring></argsstring>
+        <name>DLC</name>
+        <briefdescription>
+<para>CAN message data length code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" line="372" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__MSG__TX__TYPE__s_1a3a839cbdc2ef5128245ffb40533f0e74" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_MSG_TX_TYPE_s::repetition_time</definition>
+        <argsstring></argsstring>
+        <name>repetition_time</name>
+        <briefdescription>
+<para>CAN message cycle time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" line="373" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__MSG__TX__TYPE__s_1a95cd1d14ed1b4410ca876fa1a02e54f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CAN_MSG_TX_TYPE_s::repetition_phase</definition>
+        <argsstring></argsstring>
+        <name>repetition_phase</name>
+        <briefdescription>
+<para>CAN message startup (first send) offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" line="374" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCAN__MSG__TX__TYPE__s_1a96819389d64625a61b9c54c8bf9c4ac7" prot="public" static="no" mutable="no">
+        <type><ref refid="can__cfg_8h_1a2e8b3cf405327f8f944437425dfc2fff" kindref="member">can_callback_funcPtr</ref></type>
+        <definition>can_callback_funcPtr CAN_MSG_TX_TYPE_s::cbk_func</definition>
+        <argsstring></argsstring>
+        <name>cbk_func</name>
+        <briefdescription>
+<para>CAN message callback after message is sent or received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" line="375" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>type definition for structure of a CAN message with its ID, data length code, repetition rate (stated in number of calls of CANS mainfunction = ticks), the initial phase, a callback function if transfer of TX message to CAN module is successful </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" line="370" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/can_cfg.h" bodystart="370" bodyend="376"/>
+    <listofallmembers>
+      <member refid="structCAN__MSG__TX__TYPE__s_1a96819389d64625a61b9c54c8bf9c4ac7" prot="public" virt="non-virtual"><scope>CAN_MSG_TX_TYPE_s</scope><name>cbk_func</name></member>
+      <member refid="structCAN__MSG__TX__TYPE__s_1a9749d79e72f2e04adb2fa7d5cd9a2098" prot="public" virt="non-virtual"><scope>CAN_MSG_TX_TYPE_s</scope><name>DLC</name></member>
+      <member refid="structCAN__MSG__TX__TYPE__s_1ac97ba868bdf829c4661f65a000f11bdd" prot="public" virt="non-virtual"><scope>CAN_MSG_TX_TYPE_s</scope><name>ID</name></member>
+      <member refid="structCAN__MSG__TX__TYPE__s_1a95cd1d14ed1b4410ca876fa1a02e54f7" prot="public" virt="non-virtual"><scope>CAN_MSG_TX_TYPE_s</scope><name>repetition_phase</name></member>
+      <member refid="structCAN__MSG__TX__TYPE__s_1a3a839cbdc2ef5128245ffb40533f0e74" prot="public" virt="non-virtual"><scope>CAN_MSG_TX_TYPE_s</scope><name>repetition_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

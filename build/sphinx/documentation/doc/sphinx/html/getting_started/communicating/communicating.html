@@ -1,0 +1,3656 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7. Communicating with foxBMS &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="8. Checking-up foxBMS" href="../checking/checking.html"/>
+        <link rel="prev" title="6. Connectors Pinout" href="../connectors/connectors.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>7. Communicating with foxBMS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/getting_started/communicating/communicating.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="communicating-with-foxbms">
+<span id="getting-started-communicating"></span><h1>7. Communicating with foxBMS<a class="headerlink" href="#communicating-with-foxbms" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="communicating-over-can">
+<span id="getting-started-communicating-can"></span><h2>7.1. Communicating over CAN<a class="headerlink" href="#communicating-over-can" title="Permalink to this headline">¶</a></h2>
+<p>The table <a class="reference internal" href="#canmsgs"><span class="std std-ref">CAN Messages</span></a> shows the CAN messages sent and received by the BMS with their respective names and IDs, the direction and a short comment.</p>
+<p>The table <a class="reference internal" href="#cansgnls"><span class="std std-ref">CAN RX Signals</span></a> gives the CAN signals sent and received in these messages.</p>
+<p>To add or change a signal it must be refered to the software FAQ: <a class="reference internal" href="../../software_documentation/faq/faq.html#faq-can-manually-add"><span class="std std-ref">How to manually add CAN entries (transmit and receive) and to change the transmit time period?</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">12 cell voltages, 12 cell temperatures and 8 modules are configured in the default CAN configuration of the foxBMS Software.</p>
+</div>
+<p>If less then 8  modules, 12 cell voltages or 12 cell temperatures are configured in the software (e.g., in <code class="docutils literal"><span class="pre">batterysystem_cfg.h</span></code>),
+random values are transmitted on these messages/signals. These values from the unused CAN messages must simply be ignored.</p>
+<p>In case it is really wanted not to transmit these values, the configuration of the CAN module must be changed as shown in the software FAQ in
+<a class="reference internal" href="../../software_documentation/faq/faq.html#faq-can-lessthan8modules"><span class="std std-ref">How to adapt the CAN module when less or more than 8 battery modules are used?</span></a> and in <a class="reference internal" href="../../software_documentation/faq/faq.html#faq-can-lessthan12cells"><span class="std std-ref">How to adapt the CAN module when less than 12 battery cells/temperature sensors per module are used?</span></a>. The configuration must also be changed if more than 8 modules,
+12 cell voltages or 12 cell temperatures are used.</p>
+<div class="section" id="can-messages">
+<span id="canmsgs"></span><h3>7.1.1. CAN Messages<a class="headerlink" href="#can-messages" title="Permalink to this headline">¶</a></h3>
+<p>Message names in the DBC file can vary from the following tables in order to be compliant with the 32 character limit of DBC files.</p>
+<p><strong>RX Messages:</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="16%" />
+<col width="9%" />
+<col width="15%" />
+<col width="39%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message Name</strong></td>
+<td><strong>Message ID</strong></td>
+<td><strong>DLC</strong></td>
+<td><strong>Direction</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>CAN0_Software_Reset</td>
+<td>0x95</td>
+<td>8</td>
+<td>RX</td>
+<td>Perform software reset</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Debug_Message</td>
+<td>0x100</td>
+<td>8</td>
+<td>RX</td>
+<td>Debug message</td>
+</tr>
+<tr class="row-even"><td>CAN0_State_Request</td>
+<td>0x120</td>
+<td>8</td>
+<td>RX</td>
+<td>State request</td>
+</tr>
+<tr class="row-odd"><td>CAN0_IVT_Current</td>
+<td>0x35C/0x521</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Current Value</td>
+</tr>
+<tr class="row-even"><td>CAN0_IVT_Voltage_1</td>
+<td>0x35D/0x522</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Voltage 1</td>
+</tr>
+<tr class="row-odd"><td>CAN0_IVT_Voltage_2</td>
+<td>0x35E/0x523</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Voltage 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_IVT_Voltage_3</td>
+<td>0x35F/0x524</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Voltage 3</td>
+</tr>
+<tr class="row-odd"><td>CAN0_IVT_Temperature</td>
+<td>0x525</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Temperature</td>
+</tr>
+<tr class="row-even"><td>CAN0_IVT_Power</td>
+<td>0x526</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Power</td>
+</tr>
+<tr class="row-odd"><td>CAN0_IVT_CoulombCount</td>
+<td>0x527</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Coulomb Counting Value</td>
+</tr>
+<tr class="row-even"><td>CAN0_IVT_EnergyCount</td>
+<td>0x528</td>
+<td>6</td>
+<td>RX</td>
+<td>Current Sensing Energy Counting Value</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TX Messages:</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="15%" />
+<col width="8%" />
+<col width="14%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message Name</strong></td>
+<td><strong>Message ID</strong></td>
+<td><strong>DLC</strong></td>
+<td><strong>Direction</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>CAN0_MSG_SystemState_0</td>
+<td>0x110</td>
+<td>8</td>
+<td>TX</td>
+<td>BMS system state 0</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MSG_SystemState_1</td>
+<td>0x111</td>
+<td>8</td>
+<td>TX</td>
+<td>BMS system state 1</td>
+</tr>
+<tr class="row-even"><td>CAN0_MSG_SystemState_2</td>
+<td>0x112</td>
+<td>8</td>
+<td>TX</td>
+<td>BMS system state 2</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MSG_SlaveState_0</td>
+<td>0x115</td>
+<td>8</td>
+<td>TX</td>
+<td>BMS slave state 0</td>
+</tr>
+<tr class="row-even"><td>CAN0_MSG_SlaveState_1</td>
+<td>0x116</td>
+<td>8</td>
+<td>TX</td>
+<td>BMS slave state 1</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MaxAllowedCurrent</td>
+<td>0x130</td>
+<td>8</td>
+<td>TX</td>
+<td>Maximum allowed current</td>
+</tr>
+<tr class="row-even"><td>CAN0_SOP</td>
+<td>0x131</td>
+<td>8</td>
+<td>TX</td>
+<td>State-of-power</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SOC</td>
+<td>0x140</td>
+<td>8</td>
+<td>TX</td>
+<td>State-of-charge</td>
+</tr>
+<tr class="row-even"><td>CAN0_SOH</td>
+<td>0x150</td>
+<td>8</td>
+<td>TX</td>
+<td>State-of-health</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SOE</td>
+<td>0x160</td>
+<td>8</td>
+<td>TX</td>
+<td>State-of-energy</td>
+</tr>
+<tr class="row-even"><td>CAN0_MinMaxCellVoltages</td>
+<td>0x170</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages Max Min Mean</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SOV</td>
+<td>0x171</td>
+<td>8</td>
+<td>TX</td>
+<td>State-of-voltage</td>
+</tr>
+<tr class="row-even"><td>CAN0_MinMaxCellTemperatures</td>
+<td>0x180</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures Max Min Mean</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Tempering</td>
+<td>0x190</td>
+<td>8</td>
+<td>TX</td>
+<td>Cooling/Heating</td>
+</tr>
+<tr class="row-even"><td>CAN0_Insulation</td>
+<td>0x1A0</td>
+<td>8</td>
+<td>TX</td>
+<td>Insulation</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MovMeanPower_0</td>
+<td>0x1D0</td>
+<td>8</td>
+<td>TX</td>
+<td>Moving mean power 0</td>
+</tr>
+<tr class="row-even"><td>CAN0_MovMeanPower_1</td>
+<td>0x1D1</td>
+<td>8</td>
+<td>TX</td>
+<td>Moving mean power 1</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MovMeanPower_2</td>
+<td>0x1D2</td>
+<td>8</td>
+<td>TX</td>
+<td>Moving mean power 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_MovMeanCurrent_0</td>
+<td>0x1E0</td>
+<td>8</td>
+<td>TX</td>
+<td>Moving mean current 0</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MovMeanCurrent_1</td>
+<td>0x1E1</td>
+<td>8</td>
+<td>TX</td>
+<td>Moving mean current 1</td>
+</tr>
+<tr class="row-even"><td>CAN0_MovMeanCurrent_2</td>
+<td>0x1E2</td>
+<td>8</td>
+<td>TX</td>
+<td>Moving mean current 2</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M0_0</td>
+<td>0x200</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 0 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M0_1</td>
+<td>0x201</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 0 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M0_2</td>
+<td>0x202</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 0 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M0_3</td>
+<td>0x203</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 0 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M0_0</td>
+<td>0x210</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 0 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M0_1</td>
+<td>0x211</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 0 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M0_2</td>
+<td>0x212</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 0 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M0_3</td>
+<td>0x213</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 0 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M1_0</td>
+<td>0x220</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 1 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M1_1</td>
+<td>0x221</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 1 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M1_2</td>
+<td>0x222</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 1 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M1_3</td>
+<td>0x223</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 1 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M1_0</td>
+<td>0x230</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 1 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M1_1</td>
+<td>0x231</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 1 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M1_2</td>
+<td>0x232</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 1 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M1_3</td>
+<td>0x233</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 1 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M2_0</td>
+<td>0x240</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 2 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M2_1</td>
+<td>0x241</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 2 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M2_2</td>
+<td>0x242</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 2 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M2_3</td>
+<td>0x243</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 2 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M2_0</td>
+<td>0x250</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 2 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M2_1</td>
+<td>0x251</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 2 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M2_2</td>
+<td>0x252</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 2 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M2_3</td>
+<td>0x253</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 2 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M3_0</td>
+<td>0x260</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 3 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M3_1</td>
+<td>0x261</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 3 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M3_2</td>
+<td>0x262</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 3 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M3_3</td>
+<td>0x263</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 3 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M3_0</td>
+<td>0x270</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 3 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M3_1</td>
+<td>0x271</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 3 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M3_2</td>
+<td>0x272</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 3 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M3_3</td>
+<td>0x273</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 3 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M4_0</td>
+<td>0x280</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 4 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M4_1</td>
+<td>0x281</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 4 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M4_2</td>
+<td>0x282</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 4 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M4_3</td>
+<td>0x283</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 4 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M4_0</td>
+<td>0x290</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 4 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M4_1</td>
+<td>0x291</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 4 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M4_2</td>
+<td>0x292</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 4 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M4_3</td>
+<td>0x293</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 4 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M5_0</td>
+<td>0x2A0</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 5 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M5_1</td>
+<td>0x2A1</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 5 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M5_2</td>
+<td>0x2A2</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 5 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M5_3</td>
+<td>0x2A3</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 5 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M5_0</td>
+<td>0x2B0</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 5 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M5_1</td>
+<td>0x2B1</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 5 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M5_2</td>
+<td>0x2B2</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 5 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M5_3</td>
+<td>0x2B3</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 5 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M6_0</td>
+<td>0x2C0</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 6 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M6_1</td>
+<td>0x2C1</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 6 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M6_2</td>
+<td>0x2C2</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 6 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M6_3</td>
+<td>0x2C3</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 6 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M6_0</td>
+<td>0x2D0</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 6 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M6_1</td>
+<td>0x2D1</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 6 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M6_2</td>
+<td>0x2D2</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 6 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M6_3</td>
+<td>0x2D3</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 6 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M7_0</td>
+<td>0x2E0</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 7 cell 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M7_1</td>
+<td>0x2E1</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 7 cell 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_voltage_M7_2</td>
+<td>0x2E2</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 7 cell 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_voltage_M7_3</td>
+<td>0x2E3</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell voltages module 7 cell 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M7_0</td>
+<td>0x2F0</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 7 - 0 1 2</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M7_1</td>
+<td>0x2F1</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 7 - 3 4 5</td>
+</tr>
+<tr class="row-odd"><td>CAN0_Cell_temperature_M7_2</td>
+<td>0x2F2</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 7 - 6 7 8</td>
+</tr>
+<tr class="row-even"><td>CAN0_Cell_temperature_M7_3</td>
+<td>0x2F3</td>
+<td>8</td>
+<td>TX</td>
+<td>Cell temperatures module 7 - 9 10 11</td>
+</tr>
+<tr class="row-odd"><td>CAN0_MSG_ISENS_TRIG</td>
+<td>0x35B</td>
+<td>8</td>
+<td>TX</td>
+<td>Trigger for CurrentSensor</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="can-rx-signals">
+<span id="cansgnls"></span><h3>7.1.2. CAN RX Signals<a class="headerlink" href="#can-rx-signals" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="17%" />
+<col width="12%" />
+<col width="6%" />
+<col width="6%" />
+<col width="9%" />
+<col width="9%" />
+<col width="7%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Software_Reset</strong></td>
+<td><strong>Message ID: 0x95</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+</tbody>
+</table>
+<p>When this message is received, a software reset is performed.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="16%" />
+<col width="11%" />
+<col width="6%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="7%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Debug_Message</strong></td>
+<td><strong>Message ID: 0x100</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_DEBUG_Data</td>
+<td>0</td>
+<td>64</td>
+<td>0.0</td>
+<td>0xFFFFFFFF</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>This message contains only one single signal. The debug data is interpreted by the embedded software differently depending on its actual databits. In the software FAQ (<a class="reference internal" href="../../software_documentation/faq/faq.html#can-debug-message"><span class="std std-ref">How to simply trigger events via CAN?</span></a>), further details are given on the handling of debug messages.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="16%" />
+<col width="11%" />
+<col width="6%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="7%" />
+<col width="11%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_State_Request</strong></td>
+<td><strong>Message ID: 0x120</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_ReceiveStateRequest</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>In the messages described in the previous table, the signal <code class="docutils literal"><span class="pre">CAN0_SIG_ReceiveStateRequest</span></code> is used to change the state of the foxBMS Master Unit. This is one of the most important signals: it allows initiating the procedure to close the power contactors. Possible request numbers in default configuration are 3 (Normal state), 4 (Charge state) and 8 (Standby state), but can be configured (0 is No Request). More details can be found in the documentation of the module <a class="reference internal" href="../../software_documentation/modules/bms/bms.html#bms"><span class="std std-ref">BMS</span></a>.</p>
+<p>A state request has to be sent every 100ms, otherwise the BMS enters into an error state. The requests must come in the window 95-105ms to be valid.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="10%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_Current</strong></td>
+<td><strong>Message ID: 0x35C/0x521</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Current_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_Current_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Current_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_Current_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_Current_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_Current_Measurement</span></code> is the current value measured by the sensor. It is a 32 bit signed value with 1mA resolution. It must be noted that resolution
+in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="10%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_Voltage_1</strong></td>
+<td><strong>Message ID: 0x35D/0x522</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Voltage_1_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_Voltage_1_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Voltage_1_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>0.0</td>
+<td>4294967295</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_1_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_1_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_1_Measurement</span></code> is the voltage value measured by the sensor at the voltage input channel 1. It is a 32 bit unsigned value with 1mV resolution.
+It must be noted that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="10%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_Voltage_2</strong></td>
+<td><strong>Message ID: 0x35E/0x523</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Voltage_2_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_Voltage_2_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Voltage_2_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>0.0</td>
+<td>4294967295</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_2_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_2_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_2_Measurement</span></code> is the voltage value measured by the sensor at the voltage input channel 2. It is a 32 bit unsigned value with 1mV resolution.
+It must be noted that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="10%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_Voltage_3</strong></td>
+<td><strong>Message ID: 0x35F/0x524</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Voltage_3_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_Voltage_3_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Voltage_3_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>0.0</td>
+<td>4294967295</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_3_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_3_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_Voltage_3_Measurement</span></code> is the voltage value measured by the sensor at the voltage input channel 3. It is a 32 bit unsigned value with 1mV resolution.
+It must be noted that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_Temperature</strong></td>
+<td><strong>Message ID: 0x525</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Temperature_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_Temperature_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Temperature_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.1°C</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_Temperature_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_Temperature_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_Temperature_Measurement</span></code> is the temperature value measured by the sensor. It is a 32 bit signed value with 0.1°C resolution. It must be noted
+that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="20%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="7%" />
+<col width="10%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_Power</strong></td>
+<td><strong>Message ID: 0x526</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Power_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_Power_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_Power_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_Power_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_Power_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN_IVT0_Power_Measurement</span></code> is the power value measured by the sensor (referring to current and voltage U1). It is a 32 bit signed value with 1W resolution. It must be noted
+that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_CoulombCount</strong></td>
+<td><strong>Message ID: 0x527</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_CC_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_CC_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_CC_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>As</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_CoulombCount_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN0_IVT_CoulombCount_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_CoulombCount_Measurement</span></code> is the current counted by the sensor. It is a 32 bit signed value with 1As resolution. It must be noted
+that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_IVT_EnergyCount</strong></td>
+<td><strong>Message ID: 0x528</strong></td>
+<td><strong>DLC: 6</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_EC_MuxID</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_IVT_EC_Status</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_IVT_EC_Measurement</td>
+<td>16</td>
+<td>32</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>Wh</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">CAN0_IVT_EnergyCount_MuxID</span></code> indicates the measurement type and <code class="docutils literal"><span class="pre">CAN_IVT0_EnergyCount_Status</span></code> indicates status values and counters of the current sensor measurement.
+For details the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a> must be consulted.
+<code class="docutils literal"><span class="pre">CAN0_IVT_EnergyCount_Measurement</span></code> is the energy counted by the sensor (referring to current and voltage U1). It is a 32 bit signed value with 1Wh resolution.
+It must be noted that resolution in CAN transmission is not the same as the measurement accuracy.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="can-tx-signals">
+<h3>7.1.3. CAN TX Signals<a class="headerlink" href="#can-tx-signals" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SystemState_0</strong></td>
+<td><strong>Message ID: 0x110</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS0_general_error</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS0_current_state</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS0_error_overtemp_charge</td>
+<td>16</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS0_error_undertemp_charge</td>
+<td>24</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS0_error_overtemp_discharge</td>
+<td>32</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS0_error_undertemp_discharge</td>
+<td>40</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS0_error_overcurrent_charge</td>
+<td>48</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS0_error_overcurrent_discharge</td>
+<td>56</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SystemState_1</strong></td>
+<td><strong>Message ID: 0x111</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS1_error_overvoltage</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS1_error_undervoltage</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS1_error_overtemp_IC</td>
+<td>16</td>
+<td>8</td>
+<td colspan="6">for future use (not implemented yet)</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS1_error_contactor</td>
+<td>24</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS1_error_selftest</td>
+<td>32</td>
+<td>8</td>
+<td colspan="6">for future use (not implemented yet)</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS1_error_cantiming</td>
+<td>40</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS1_current_sensor</td>
+<td>48</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_GS1_balancing_active</td>
+<td>56</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="18%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="8%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SystemState_2</strong></td>
+<td><strong>Message ID: 0x112</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_GS2_state_cont_interlock</td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>RESERVERD_FOR_FUTURE_USE</td>
+<td>8</td>
+<td>56</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The signals of the messages <code class="docutils literal"><span class="pre">CAN0_MSG_SystemState_0</span></code> , <code class="docutils literal"><span class="pre">CAN0_MSG_SystemState_1</span></code> and <code class="docutils literal"><span class="pre">CAN0_MSG_SystemState_2</span></code> display information about the system status
+of the battery system.</p>
+<p><code class="docutils literal"><span class="pre">CAN0_SIG_GS0_general_error</span></code> indicates if and an error is detected from the BMS.</p>
+<p>The current state of the battery system is represented by the a bitfield in signal <code class="docutils literal"><span class="pre">CAN0_SIG_GS0_current_state</span></code>:</p>
+<ul class="simple">
+<li>0x00: Uninitialized</li>
+<li>0x03: Idle</li>
+<li>0x04: Standby</li>
+<li>0x05: Precharge (normal)</li>
+<li>0x06: Normal</li>
+<li>0x07: Precharge (charge)</li>
+<li>0x08: Charge</li>
+<li>0xF0: Error</li>
+</ul>
+<p>The various error signals <code class="docutils literal"><span class="pre">CAN0_SIG_GSx_error_xxxx</span></code> give information about limit violations and internal errors. In general, a value of 0 indicates
+no error and value of 1 displays an error. <code class="docutils literal"><span class="pre">CAN0_SIG_GS1_current_sensor</span></code> is 1 if no current sensor is detected and otherwise 0. The signal
+<code class="docutils literal"><span class="pre">CAN0_SIG_GS1_balancing_active</span></code> is a simple flag to show if balancing is ON (1) or OFF (0).</p>
+<p>The status of contactors and the interlock is represented as a bitfield in <code class="docutils literal"><span class="pre">BMS1_status_contactors</span></code> (0: open, 1: closed):</p>
+<ul class="simple">
+<li>Bit[0]: Plus (normal)</li>
+<li>Bit[1]: Precharge (normal)</li>
+<li>Bit[2]: Minus (normal)</li>
+<li>Bit[3]: Plus (charge)</li>
+<li>Bit[4]: Precharge (charge)</li>
+<li>Bit[5]: Minus (charge)</li>
+<li>Bit[6-8]: reserved for future use</li>
+<li>Bit[9]: Interlock status</li>
+<li>Bit[10-15]: reserved for future use</li>
+</ul>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN_MSG_SlaveState_0</strong></td>
+<td><strong>Message ID: 0x115</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_SS0_states</td>
+<td>0</td>
+<td>64</td>
+<td colspan="5">for future use (not implemented yet)</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN_MSG_SlaveState_1</strong></td>
+<td><strong>Message ID: 0x116</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_SS1_states</td>
+<td>0</td>
+<td>64</td>
+<td colspan="6">for future use (not implemented yet)</td>
+</tr>
+</tbody>
+</table>
+<p>This messages indicate any errors with the foxBMS Slave Units but this functionality is currently not supported.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_MaxAllowedCurrent</strong></td>
+<td><strong>Message ID: 0x130</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MaxChargeCurrent</td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>A</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MaxChargeCurrent_Peak</td>
+<td>16</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>A</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MaxDischargeCurrent</td>
+<td>32</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>A</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MaxDischargeCurrent_Peak</td>
+<td>48</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>A</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The current capability of the battery system is indicated by the signals of the previous table. For both discharge and charge directions, two values are
+stated, one for the continuous current capability and one for the peak current capability. Currently, the peak value is simply the same as the continuous value.
+The resolution of the values is 0.1A, which should be of sufficient granularity for most applications. It is a tradeoff that enables a range up to 6553.5A
+in charge and discharge direction with reasonable resolution.</p>
+<hr class="docutils" />
+<p>This feature is currently not supported!</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SOP</strong></td>
+<td><strong>Message ID: 0x131</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MaxChargePower</td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>kW</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MaxChargePower_Peak</td>
+<td>16</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>kW</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MaxDischargePower</td>
+<td>32</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>kW</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MaxDischargePower_Peak</td>
+<td>48</td>
+<td>16</td>
+<td>0.0</td>
+<td>6553.5</td>
+<td>0.1</td>
+<td>0.0</td>
+<td>kW</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The power capability of the battery system is indicated by the signals of the previous table. For both discharge and charge directions, two values are
+stated, one for the continuous power capability and one for the peak power capability. Currently, the peak value is simply the same as the continuous value.
+The resolution of the values is 100W, which should be of sufficient granularity for most applications. It is a tradeoff that enables a range up to 6553.5kW
+in charge and discharge direction with reasonable resolution.</p>
+<p>This feature is currently not supported!</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SOC</strong></td>
+<td><strong>Message ID: 0x140</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_SOC_mean</td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td>100.0</td>
+<td>0.01</td>
+<td>0.0</td>
+<td>%</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_SOC_min</td>
+<td>16</td>
+<td>16</td>
+<td>0.0</td>
+<td>100.0</td>
+<td>0.01</td>
+<td>0.0</td>
+<td>%</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_SOC_max</td>
+<td>32</td>
+<td>16</td>
+<td>0.0</td>
+<td>100.0</td>
+<td>0.01</td>
+<td>0.0</td>
+<td>%</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_SOC_max</td>
+<td>48</td>
+<td>16</td>
+<td colspan="6">currently not used</td>
+</tr>
+</tbody>
+</table>
+<p>Once initialized, <code class="docutils literal"><span class="pre">CAN0_SIG_SOC_mean</span></code>, <code class="docutils literal"><span class="pre">CAN0_SIG_SOC_min</span></code>, <code class="docutils literal"><span class="pre">CAN0_SIG_SOC_max</span></code> the values are updated via Coulomb counting. The values can be initialized either with a look-up table or by setting the values directly.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SOH</strong></td>
+<td><strong>Message ID: 0x150</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This message is currently not backed up with information and provided for forward-compatibility only.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SOE</strong></td>
+<td><strong>Message ID: 0x160</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This message is currently not backed up with information and provided for forward-compatibility only.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN_MinMaxCellVoltages</strong></td>
+<td><strong>Message ID: 0x170</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Cellvolt_mean</td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Cellvolt_min</td>
+<td>16</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Cellvolt_max</td>
+<td>32</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_ModNumber_volt_min</td>
+<td>48</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_ModNumber_volt_max</td>
+<td>56</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The minimum, maximum and mean voltage are transmitted in the signals <code class="docutils literal"><span class="pre">CAN0_SIG_Cellvolt_min</span></code>, <code class="docutils literal"><span class="pre">CAN0_SIG_Cellvolt_max</span></code> and <code class="docutils literal"><span class="pre">CAN0_SIG_Cellvolt_mean</span></code>.
+Additionally, the number of the module with minimum and maximum voltage is indicated in the signals <code class="docutils literal"><span class="pre">CAN0_SIG_ModNumber_volt_min</span></code> and <code class="docutils literal"><span class="pre">CAN0_SIG_ModNumber_volt_max</span></code>.
+Indexing of module numbers starts from zero.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_SOV</strong></td>
+<td><strong>Message ID: 0x171</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This message is currently not backed up with information and provided for forward-compatibility only.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MinMaxCellTemperatures</strong></td>
+<td><strong>Message ID: 0x180</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Celltemp_mean</td>
+<td>0</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Celltemp_min</td>
+<td>16</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Celltemp_max</td>
+<td>32</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_ModNumber_temp_min</td>
+<td>48</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_ModNumber_temp_max</td>
+<td>56</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The minimum, maximum and mean temperature are transmitted in the signals <code class="docutils literal"><span class="pre">CAN0_SIG_Celltemp_min</span></code>, <code class="docutils literal"><span class="pre">CAN0_SIG_Celltemp_max</span></code> and <code class="docutils literal"><span class="pre">CAN0_SIG_Celltemp_mean</span></code>,
+respectively. Additionally, the number of the module with minimum and maximum temperature is indicated in the signals <code class="docutils literal"><span class="pre">CAN0_SIG_ModNumber_temp_min</span></code> and
+<code class="docutils literal"><span class="pre">CAN0_SIG_ModNumber_temp_max</span></code>, respectively. Indexing of module numbers starts from zero.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Tempering</strong></td>
+<td><strong>Message ID: 0x190</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_CoolingNeeded</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_HeatingNeeded</td>
+<td>8</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_TemperingDemand</td>
+<td>16</td>
+<td>32</td>
+<td>0.0</td>
+<td>0xFFFFFFFF</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The signals <code class="docutils literal"><span class="pre">CAN0_SIG_CoolingNeeded</span></code>, <code class="docutils literal"><span class="pre">CAN0_SIG_HeatingNeeded</span></code> and <code class="docutils literal"><span class="pre">CAN0_SIG_TemperingDemand</span></code> are left free for use for application specific development.
+Here, <code class="docutils literal"><span class="pre">CAN0_SIG_CoolingNeeded</span></code> and <code class="docutils literal"><span class="pre">CAN0_SIG_HeatingNeeded</span></code> could be simple ON/OFF flags and <code class="docutils literal"><span class="pre">CAN0_SIG_TemperingDemand</span></code> could be a ‘continuous’ value
+indicating the needed cooling/heating power.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Insulation</strong></td>
+<td><strong>Message ID: 0x1A0</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_InsulationStatus</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_InsulationValue</td>
+<td>8</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The signal <code class="docutils literal"><span class="pre">CAN0_SIG_InsulationStatus</span></code> indicates if the insulation value is greater than the threshold value and  <code class="docutils literal"><span class="pre">CAN0_SIG_InsulationValue</span></code> holds the
+measured insulation value by the insulation monitoring device.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MovMeanPower_0</strong></td>
+<td><strong>Message ID: 0x1D0</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MovMean_Power_1s</td>
+<td>0</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MovMean_Power_5s</td>
+<td>32</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MovMeanPower_1</strong></td>
+<td><strong>Message ID: 0x1D1</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MovMean_Power_10s</td>
+<td>0</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MovMean_Power_30s</td>
+<td>32</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MovMeanPower_2</strong></td>
+<td><strong>Message ID: 0x1D2</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MovMean_Power_60s</td>
+<td>0</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MovMean_Power_config</td>
+<td>32</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>W</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The messages <code class="docutils literal"><span class="pre">CAN0_MovMeanPower_0</span></code>, <code class="docutils literal"><span class="pre">CAN0_MovMeanPower_1</span></code> and <code class="docutils literal"><span class="pre">CAN0_MovMeanPower_2</span></code> provide moving mean values over the different time frames 1s, 5s, 10s, 30s and 60s.
+The signal <code class="docutils literal"><span class="pre">CAN0_SIG_MovMean_Power_config</span></code> can be configured to an arbitrary duration. These messages are currently not backed up with information and provided for
+forward-compatibility only.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MovMeanCurrent_0</strong></td>
+<td><strong>Message ID: 0x1E0</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MovMean_Current_1s</td>
+<td>0</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MovMean_Current_5s</td>
+<td>32</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MovMeanCurrent_1</strong></td>
+<td><strong>Message ID: 0x1E1</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MovMean_Current_10s</td>
+<td>0</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MovMean_Current_30s</td>
+<td>32</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MovMeanCurrent_2</strong></td>
+<td><strong>Message ID: 0x1E2</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_MovMean_Current_60s</td>
+<td>0</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_MovMean_Current_config</td>
+<td>32</td>
+<td>32</td>
+<td>-2500000</td>
+<td>4292467295</td>
+<td>1.0</td>
+<td>-2500000</td>
+<td>mA</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>The messages <code class="docutils literal"><span class="pre">CAN0_MovMeanCurrent_0</span></code>, <code class="docutils literal"><span class="pre">CAN0_MovMeanCurrent_1</span></code> and <code class="docutils literal"><span class="pre">CAN0_MovMeanCurrent_2</span></code> provide moving mean values over the different time frames 1s, 5s, 10s, 30s and 60s.
+The signal <code class="docutils literal"><span class="pre">CAN0_SIG_MovMean_Current_config</span></code> can be configured to an arbitrary duration. These messages are currently not backed up with information and provided for
+forward-compatibility only.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_voltage_M0_0</strong></td>
+<td><strong>Message ID: 0x200</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_valid_0_2</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_0</td>
+<td>8</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_1</td>
+<td>24</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_2</td>
+<td>40</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_voltage_M0_1</strong></td>
+<td><strong>Message ID: 0x201</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_valid_3_5</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_3</td>
+<td>8</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_4</td>
+<td>24</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_5</td>
+<td>40</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_voltage_M0_2</strong></td>
+<td><strong>Message ID: 0x202</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_valid_6_8</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_6</td>
+<td>8</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_7</td>
+<td>24</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_8</td>
+<td>40</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_voltage_M0_3</strong></td>
+<td><strong>Message ID: 0x203</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_valid_9_11</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_9</td>
+<td>8</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_volt_10</td>
+<td>24</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_volt_11</td>
+<td>40</td>
+<td>16</td>
+<td>0.0</td>
+<td>65535</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>mV</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>Three cell voltages are transmitted within one CAN message. The signal <code class="docutils literal"><span class="pre">CAN0_SIG_Modx_volt_valid_x_x</span></code> contains three valid flags (bit 0, 1 and 2) for the voltages transmitted in
+the same messages. 0 –&gt; valid cell voltage, 1 –&gt; invalid cell voltage. Signal <code class="docutils literal"><span class="pre">CAN0_SIG_Mod0_volt_valid_6_8</span></code> for example indicates valid cell voltages with</p>
+<ul class="simple">
+<li>bit[0]: Module 0 cell voltage 6</li>
+<li>bit[0]: Module 0 cell voltage 7</li>
+<li>bit[0]: Module 0 cell voltage 8</li>
+</ul>
+<p>Currently, the valid signals are not backed up with information and provided for forward-compatibility only. Therefore the flags always indicate valid cell voltages.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_temperature_M0_0</strong></td>
+<td><strong>Message ID: 0x210</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_valid_0_2</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_0</td>
+<td>8</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_1</td>
+<td>24</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_2</td>
+<td>40</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_temperature_M0_1</strong></td>
+<td><strong>Message ID: 0x211</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_valid_3_5</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_3</td>
+<td>8</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_4</td>
+<td>24</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_5</td>
+<td>40</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_temperature_M0_2</strong></td>
+<td><strong>Message ID: 0x212</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_valid_6_8</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_6</td>
+<td>8</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_7</td>
+<td>24</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_8</td>
+<td>40</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_Cell_temperature_M0_3</strong></td>
+<td><strong>Message ID: 0x213</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_valid_9_11</td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td>255</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_9</td>
+<td>8</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_Mod0_temp_10</td>
+<td>24</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+<tr class="row-even"><td>CAN0_SIG_Mod0_temp_11</td>
+<td>40</td>
+<td>16</td>
+<td>-128.0</td>
+<td>527.35</td>
+<td>0.01</td>
+<td>-128.0</td>
+<td>°C</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p>Three cell temperatures are transmitted within one CAN message. The signal <code class="docutils literal"><span class="pre">CAN0_SIG_Modx_temp_valid_x_x</span></code> contains three valid flags (bit 0, 1 and 2) for the temperatures transmitted in
+the same messages. 0 –&gt; valid temperature, 1 –&gt; invalid temperature. Signal <code class="docutils literal"><span class="pre">CAN0_SIG_Mod0_temp_valid_6_8</span></code> for example indicates valid cell temperatures with</p>
+<ul class="simple">
+<li>bit[0]: Module 0 cell temperature 6</li>
+<li>bit[0]: Module 0 cell temperature 7</li>
+<li>bit[0]: Module 0 cell temperature 8</li>
+</ul>
+<p>Currently, the valid signals are not backed up with information and provided for forward-compatibility only. Therefore the flags always indicate valid cell voltages.</p>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="19%" />
+<col width="10%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Message: CAN0_MSG_ISENS_TRIG</strong></td>
+<td><strong>Message ID: 0x35B</strong></td>
+<td><strong>DLC: 8</strong></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>Signal name</strong></td>
+<td><strong>Start bit</strong></td>
+<td><strong>Bit length</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+<td><strong>Factor</strong></td>
+<td><strong>Offset</strong></td>
+<td><strong>Unit</strong></td>
+<td><strong>Byteorder</strong></td>
+</tr>
+<tr class="row-odd"><td>CAN0_SIG_ISA_Trigger</td>
+<td>0</td>
+<td>32</td>
+<td>0.0</td>
+<td>0xFFFFFFFF</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>none</td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal"><span class="pre">ISENS_Trigger</span></code> is set to 0x31FFFF and sent via CAN bus to trigger a current sensor measurement cycle. This is the command of the Isabellenhütte sensor to trigger
+a measurement of all internal measurement channels when the sensor is not configured in cyclic mode.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../checking/checking.html" class="btn btn-neutral float-right" title="8. Checking-up foxBMS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../connectors/connectors.html" class="btn btn-neutral" title="6. Connectors Pinout" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

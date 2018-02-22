@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__GENERAL__CONF" kind="group">
+    <compoundname>GENERAL_CONF</compoundname>
+    <title>General Configuration</title>
+    <innerfile refid="general_8h">general.h</innerfile>
+    <innerfile refid="nvic__cfg_8c">nvic_cfg.c</innerfile>
+    <innerfile refid="nvic__cfg_8h">nvic_cfg.h</innerfile>
+    <innerfile refid="stm32f4xx__hal__conf_8h">stm32f4xx_hal_conf.h</innerfile>
+    <innerfile refid="stm32f4xx__hal__msp_8c">stm32f4xx_hal_msp.c</innerfile>
+    <innerfile refid="stm32f4xx__it_8c">stm32f4xx_it.c</innerfile>
+    <innerfile refid="stm32f4xx__it_8h">stm32f4xx_it.h</innerfile>
+    <innerfile refid="system__stm32f4xx_8c">system_stm32f4xx.c</innerfile>
+    <innerfile refid="stm32f4xx__hal__msp_8c">stm32f4xx_hal_msp.c</innerfile>
+    <innerfile refid="stm32f7xx__it_8c">stm32f7xx_it.c</innerfile>
+    <innerfile refid="std__types_8h">std_types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>System related configuration </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

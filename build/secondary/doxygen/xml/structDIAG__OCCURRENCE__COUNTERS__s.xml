@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDIAG__OCCURRENCE__COUNTERS__s" kind="struct" language="C++" prot="public">
+    <compoundname>DIAG_OCCURRENCE_COUNTERS_s</compoundname>
+    <includes refid="diag_8h" local="no">diag.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDIAG__OCCURRENCE__COUNTERS__s_1a48f58f383d70061cbb6264bbfb3d5293" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_OCCURRENCE_COUNTERS_s::GENERALerrcnt[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>GENERALerrcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="69" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__OCCURRENCE__COUNTERS__s_1a9a29fffa9727266146c3cdcf2fe30668" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_OCCURRENCE_COUNTERS_s::CELLMONerrcnt[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>CELLMONerrcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="70" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__OCCURRENCE__COUNTERS__s_1a46c2192a4ff8cf567c59e9ce32b39ca9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_OCCURRENCE_COUNTERS_s::COMerrcnt[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>COMerrcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="71" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__OCCURRENCE__COUNTERS__s_1ab296c17cf54d439634fc2c8e6c62eb7d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_OCCURRENCE_COUNTERS_s::ADCerrcnt[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ADCerrcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Counters for error and warning thresholds </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" line="68" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/diag/diag.h" bodystart="68" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structDIAG__OCCURRENCE__COUNTERS__s_1ab296c17cf54d439634fc2c8e6c62eb7d" prot="public" virt="non-virtual"><scope>DIAG_OCCURRENCE_COUNTERS_s</scope><name>ADCerrcnt</name></member>
+      <member refid="structDIAG__OCCURRENCE__COUNTERS__s_1a9a29fffa9727266146c3cdcf2fe30668" prot="public" virt="non-virtual"><scope>DIAG_OCCURRENCE_COUNTERS_s</scope><name>CELLMONerrcnt</name></member>
+      <member refid="structDIAG__OCCURRENCE__COUNTERS__s_1a46c2192a4ff8cf567c59e9ce32b39ca9" prot="public" virt="non-virtual"><scope>DIAG_OCCURRENCE_COUNTERS_s</scope><name>COMerrcnt</name></member>
+      <member refid="structDIAG__OCCURRENCE__COUNTERS__s_1a48f58f383d70061cbb6264bbfb3d5293" prot="public" virt="non-virtual"><scope>DIAG_OCCURRENCE_COUNTERS_s</scope><name>GENERALerrcnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

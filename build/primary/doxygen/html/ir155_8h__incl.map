@@ -1,0 +1,8 @@
+<map id="ir155.h" name="ir155.h">
+<area shape="rect" id="node2" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="127,80,169,107"/>
+<area shape="rect" id="node7" href="$timer_8h.html" title="Headers for the driver to enable/disable/change the peripheral timers. " alt="" coords="34,80,97,107"/>
+<area shape="rect" id="node3" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="133,155,200,181"/>
+<area shape="rect" id="node5" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="112,229,235,256"/>
+<area shape="rect" id="node6" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU0 (primary) " alt="" coords="259,229,357,256"/>
+<area shape="rect" id="node8" href="$timer__cfg_8h.html" title="Headers for the configuration of the peripheral timers. " alt="" coords="10,155,97,181"/>
+</map>

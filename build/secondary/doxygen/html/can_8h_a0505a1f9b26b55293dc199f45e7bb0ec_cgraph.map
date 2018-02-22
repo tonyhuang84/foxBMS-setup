@@ -1,0 +1,12 @@
+<map id="CAN_Init" name="CAN_Init">
+<area shape="rect" id="node2" href="$can_8c.html#a9d2ac075410a424726befa42b8c9d819" title="Initializes message filtering. " alt="" coords="127,81,229,108"/>
+<area shape="rect" id="node4" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="520,56,624,83"/>
+<area shape="rect" id="node11" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="132,208,224,235"/>
+<area shape="rect" id="node3" href="$can_8c.html#a68dc0bb72e3070c318b5c7b0ca98892a" title="Returns the number of filters that have to be initialized. " alt="" coords="277,5,472,32"/>
+<area shape="rect" id="node10" href="$can_8c.html#a8975fdc25f90009f3de12e5446010eec" title="Returns the next index of wished filter ID setting in CAN_MSG_RX_TYPE_t can_RxMsgs[CAN_NUMBER_OF_RX_I..." alt="" coords="317,107,433,133"/>
+<area shape="rect" id="node5" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="672,56,821,83"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="869,56,992,83"/>
+<area shape="rect" id="node7" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="1041,5,1141,32"/>
+<area shape="rect" id="node8" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="1042,56,1141,83"/>
+<area shape="rect" id="node9" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="1040,107,1143,133"/>
+</map>

@@ -1,0 +1,926 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cansignal__cfg_8h" kind="file" language="C++">
+    <compoundname>cansignal_cfg.h</compoundname>
+    <includes refid="can__cfg_8h" local="yes">can_cfg.h</includes>
+    <includedby refid="cansignal__cfg_8c" local="yes">cansignal_cfg.c</includedby>
+    <includedby refid="cansignal_8h" local="yes">cansignal.h</includedby>
+    <incdepgraph>
+      <node id="457">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="452">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="453" relation="include">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+      </node>
+      <node id="458">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="456">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="460">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="459">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="462">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="463">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="465">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="461">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="unionCANS__messages__t" prot="public">CANS_messages_t</innerclass>
+    <innerclass refid="unionCANS__signals__t" prot="public">CANS_signals_t</innerclass>
+    <innerclass refid="structCANS__signal__s" prot="public">CANS_signal_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__CANSIGNAL_1ga9060669d55a55b34ebfb1228bc33ac66" prot="public" static="no">
+        <name>CANS_TICK_MS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>task timeslot where the CANS main function is called. Repetition time of periodic CAN messages must be multiple of this <simplesect kind="par"><title>Type:</title><para>select(3) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="50" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cansignal__cfg_8h_1a47ab8f56379070261ca015aaa0dd334d" prot="public" static="no">
+        <name>CANS_SENSOR_RESPONSE_TIMEOUT_MS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delay in ms after which it is considered the current sensor is not responding anymore. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="56" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2" prot="public" static="no">
+        <name>CANS_messagesTx_e</name>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a6ff80b0bd1b525e94f06df230fe82455" prot="public">
+          <name>CAN0_MSG_BMS1</name>
+          <briefdescription>
+<para>BMS state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a448596facf4d850622a49f569c3c01f0" prot="public">
+          <name>CAN0_MSG_BMS2</name>
+          <briefdescription>
+<para>Cell Voltages of Cells 0 1 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ab1b8697dfd28fb947f9b2d43e125608c" prot="public">
+          <name>CAN0_MSG_BMS3</name>
+          <briefdescription>
+<para>Cell Voltages of Cells 3 4 5. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a529b71c760aeb66cef467f97bf5cfd8e" prot="public">
+          <name>CAN0_MSG_BMS4</name>
+          <briefdescription>
+<para>Cell Voltages of Cells 6 7 8. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2af1763197d7d4a563ae5a9a394c406b55" prot="public">
+          <name>CAN0_MSG_BMS5</name>
+          <briefdescription>
+<para>Cell Voltages of Cells 9 10 11. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a0dc33ddc9b6cdd1569b3db03e1740cb3" prot="public">
+          <name>CAN0_MSG_BMS6</name>
+          <briefdescription>
+<para>temperture/tempering </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ad42ad927fb2bc17bce7bcdd3ce23cfe0" prot="public">
+          <name>CAN0_MSG_BMS7</name>
+          <briefdescription>
+<para>SOC/SOH. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ab6ef3ad5169f4c7c7a16ebcf2923426a" prot="public">
+          <name>CAN0_MSG_BMS8</name>
+          <briefdescription>
+<para>SOF. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2af14f8adc7d2009649898627ab56b7d77" prot="public">
+          <name>CAN0_MSG_BMS9</name>
+          <briefdescription>
+<para>Isolation/Balancing. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2aa5bca3970ef65052708eab4cd8882398" prot="public">
+          <name>CAN0_MSG_BMS11</name>
+          <briefdescription>
+<para>Temperatures of modules. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a4cfd70b7b76f72b7ba57e6dd421df4f9" prot="public">
+          <name>CAN0_MSG_BMS12</name>
+          <briefdescription>
+<para>Cell Voltages of Cells 12 13 14. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2aa6dfe92d724f10d0beaae4bf2ec55451" prot="public">
+          <name>CAN0_MSG_BMS13</name>
+          <briefdescription>
+<para>Temperatures extended of modules. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a75e919b9d0ace2290d494614b99b01af" prot="public">
+          <name>CAN0_MSG_BMS14</name>
+          <briefdescription>
+<para>Cell Voltages Max Min Average. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for TX CAN messages. Every used TX message needs to get an individual message name. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="62" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="62" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9" prot="public" static="no">
+        <name>CANS_messagesRx_e</name>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a85e44d1bb639235677ba9ed8600a3757" prot="public">
+          <name>CAN0_MSG_BMS10</name>
+          <briefdescription>
+<para>state request </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a2eea236bd61c9076c76c7818cd56d738" prot="public">
+          <name>CAN0_MSG_SW_RESET</name>
+          <briefdescription>
+<para>can message for SW reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9acde0b92bbc5514edee610783909a6b84" prot="public">
+          <name>CAN0_MSG_DOWNLOAD_APPLICATION</name>
+          <briefdescription>
+<para>download new application code via CAN bootloader </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9ae9df40569e9594ac06ae16cf3f55359e" prot="public">
+          <name>CAN0_MSG_ISENS0</name>
+          <briefdescription>
+<para>current sensing </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a02ed68f69d3f3c85a858d4987e992ea8" prot="public">
+          <name>CAN0_MSG_ISENS1</name>
+          <briefdescription>
+<para>current sensor voltage 1 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a4dae46f8b34cf49ab5f97848baa553ed" prot="public">
+          <name>CAN0_MSG_ISENS2</name>
+          <briefdescription>
+<para>current sensor voltage 2 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9aedebd95b31169f76d82fc3961e30c9ee" prot="public">
+          <name>CAN0_MSG_ISENS3</name>
+          <briefdescription>
+<para>current sensor voltage 3 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a70a8d0be873666389f678076f26ddcd5" prot="public">
+          <name>CAN0_MSG_DEBUG</name>
+          <briefdescription>
+<para>debug messages </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a1ed56e0d38e6397fa1dce103647f8643" prot="public">
+          <name>CAN1_MSG_BMS10</name>
+          <briefdescription>
+<para>state request </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a0061a77e5243d29e2af56fd40b072d97" prot="public">
+          <name>CAN1_MSG_SW_RESET</name>
+          <briefdescription>
+<para>can message for SW reset </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9af416b1223d339caf41679192a5d014d7" prot="public">
+          <name>CAN1_MSG_DOWNLOAD_APPLICATION</name>
+          <briefdescription>
+<para>download new application code via CAN bootloader </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a6fd2b260b8792577157a773dfe6037a0" prot="public">
+          <name>CAN1_MSG_ISENS0</name>
+          <briefdescription>
+<para>current sensing </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a990f3ffa166ef44c71c34c1fb674dd56" prot="public">
+          <name>CAN1_MSG_ISENS1</name>
+          <briefdescription>
+<para>current sensor voltage 1 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a10640886d86f84c25474d4292e85b622" prot="public">
+          <name>CAN1_MSG_ISENS2</name>
+          <briefdescription>
+<para>current sensor voltage 2 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a99718d65e027baea353300bc90cf9af4" prot="public">
+          <name>CAN1_MSG_ISENS3</name>
+          <briefdescription>
+<para>current sensor voltage 3 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a4ddb2c53733c955566cd798e27c7f092" prot="public">
+          <name>CAN1_MSG_DEBUG</name>
+          <briefdescription>
+<para>debug messages </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for RX CAN messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="91" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="91" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="enum" id="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701" prot="public" static="no">
+        <name>CANS_CAN0_signalsTx_e</name>
+        <enumvalue id="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701ae27bd24c9ff9f6a948625a8242cb982e" prot="public">
+          <name>CAN0_SIGNAL_NONE</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for CAN0 transmission signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="118" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="cansignal__cfg_8h_1a5c9a69298eda1483fc3e8c37dbb3acbc" prot="public" static="no">
+        <name>CANS_CAN1_signalsTx_e</name>
+        <enumvalue id="cansignal__cfg_8h_1a5c9a69298eda1483fc3e8c37dbb3acbca3ba1668933e268670cc0fd283891836d" prot="public">
+          <name>CAN1_SIGNAL_NONE</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for CAN1 transmission signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="126" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="enum" id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1e" prot="public" static="no">
+        <name>CANS_CAN0_signalsRx_e</name>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea2dbdda37b3788637e5e7c1aa45ea17f6" prot="public">
+          <name>CAN0_SIG_BMS10_Overflow</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea5b78afc9ab348a6ccab013720ac0e7f4" prot="public">
+          <name>CAN0_SIG_BMS10_Request</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea97ca8a205fab525f84c510000a86de3b" prot="public">
+          <name>CAN0_SIG_ISENS0_I_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaa184978c24104c7bbffb3b96f5f8b7d3" prot="public">
+          <name>CAN0_SIG_ISENS0_I_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea89ac08436e36acd17fbff0dd42f08617" prot="public">
+          <name>CAN0_SIG_ISENS0_I_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement I </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea258a2aab1e416cdb15e97ff9a1f82f79" prot="public">
+          <name>CAN0_SIG_ISENS1_U1_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea87aa5d8c77b33e10366f1c6a2719545b" prot="public">
+          <name>CAN0_SIG_ISENS1_U1_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eabbecea22c1e8e561122bce17e0d951ed" prot="public">
+          <name>CAN0_SIG_ISENS1_U1_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement U1 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea0a27582136a0db7a38e75423066e971c" prot="public">
+          <name>CAN0_SIG_ISENS2_U2_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eafa4834ac6d90ae9f006263c4384da68d" prot="public">
+          <name>CAN0_SIG_ISENS2_U2_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaad56681998fd7fed759b71dc1dcb5919" prot="public">
+          <name>CAN0_SIG_ISENS2_U2_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement U2 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea39c1fbb3c788e3c7d8c7db7cdb0057dd" prot="public">
+          <name>CAN0_SIG_ISENS3_U3_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eab79fc03b259f36754c02a179e22d7338" prot="public">
+          <name>CAN0_SIG_ISENS3_U3_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea1dc57373b7d265833163729cc90afa93" prot="public">
+          <name>CAN0_SIG_ISENS3_U3_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement U3 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaf87ffebcd833381be58d8abfc78043fc" prot="public">
+          <name>CAN0_SIG_DEBUG_Data</name>
+          <briefdescription>
+<para>Data of debug message. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for CAN 0 receive signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="134" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="134" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="enum" id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028" prot="public" static="no">
+        <name>CANS_CAN1_signalsRx_e</name>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a33205be003bf19a3d8971c5ca0cf7c3d" prot="public">
+          <name>CAN1_SIG_BMS10_Overflow</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a46dd2b02e51b71473a0f0fb55fd82b1b" prot="public">
+          <name>CAN1_SIG_BMS10_Request</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a549963d5dfa5de15ce8c3420a1029c33" prot="public">
+          <name>CAN1_SIG_ISENS0_I_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aac353e2d32134b3f993596022275f6d8" prot="public">
+          <name>CAN1_SIG_ISENS0_I_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a35ac143de65aa9358dfa47ded740fab5" prot="public">
+          <name>CAN1_SIG_ISENS0_I_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement I </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a7673a8799266e89bd450c84205707812" prot="public">
+          <name>CAN1_SIG_ISENS1_U1_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a9c8b84e63d0cda65d695307a3d1b9249" prot="public">
+          <name>CAN1_SIG_ISENS1_U1_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aaaae0f5b05c6811abe2fd017282d5c69" prot="public">
+          <name>CAN1_SIG_ISENS1_U1_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement U1 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a65887f8388c82fbe1e8aff3f3228d31c" prot="public">
+          <name>CAN1_SIG_ISENS2_U2_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a04164f2d201a6027b7dda035cc6f9267" prot="public">
+          <name>CAN1_SIG_ISENS2_U2_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a604b22b35c4630ca46097e9a3fc20f12" prot="public">
+          <name>CAN1_SIG_ISENS2_U2_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement U2 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a658ae60cb30a5ad447b6383618a2ae98" prot="public">
+          <name>CAN1_SIG_ISENS3_U3_Byte0</name>
+          <briefdescription>
+<para>current sensor measurement type </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a590386951c5da666623f50f8cd146bf5" prot="public">
+          <name>CAN1_SIG_ISENS3_U3_Byte1</name>
+          <briefdescription>
+<para>current sensor counter </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aa8af7f5d994b8a2698d3202b1ca8b53b" prot="public">
+          <name>CAN1_SIG_ISENS3_U3_Measurement</name>
+          <briefdescription>
+<para>current sensor measurement U3 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a1ae307b7c5f2ccac10a94c9ffb4b3f0b" prot="public">
+          <name>CAN1_SIG_DEBUG_Data</name>
+          <briefdescription>
+<para>Data of debug message. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names for CAN 1 receive signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="156" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="156" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="enum" id="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926b" prot="public" static="no">
+        <name>CANS_messageDirection_t</name>
+        <enumvalue id="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926ba9c3b7c1f29703814648758789f2c9845" prot="public">
+          <name>CAN_RX_DIRECTION</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926bab3c34cf40beea34bdd02ec7f33116f35" prot="public">
+          <name>CAN_TX_DIRECTION</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="174" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" bodystart="174" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a00b5c5f6e2c4347b7898ae4cd8946670" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref></type>
+        <definition>const CANS_signal_s cans_CAN0_signals_tx[]</definition>
+        <argsstring>[]</argsstring>
+        <name>cans_CAN0_signals_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array for transmission CAN0 signals definition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="220" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a7441a668581186628ab12dd0ebdd0f7c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref></type>
+        <definition>const CANS_signal_s cans_CAN1_signals_tx[]</definition>
+        <argsstring>[]</argsstring>
+        <name>cans_CAN1_signals_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array for transmission CAN1 signals definition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="225" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1aab49b0b2fd3ee38354c5d64f75416425" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref></type>
+        <definition>const CANS_signal_s cans_CAN0_signals_rx[]</definition>
+        <argsstring>[]</argsstring>
+        <name>cans_CAN0_signals_rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array for received CAN0 signals definition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="230" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a6a25a471299bc5e3290e06a8f79989e7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref></type>
+        <definition>const CANS_signal_s cans_CAN1_signals_rx[]</definition>
+        <argsstring>[]</argsstring>
+        <name>cans_CAN1_signals_rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>array for received CAN1 signals definition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="235" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a76a2b16912c01559b1281c463d4d7a0f" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t cans_CAN0_signals_tx_length</definition>
+        <argsstring></argsstring>
+        <name>cans_CAN0_signals_tx_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the array for the CAN0 tx signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="240" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a1425407d1b20511625b6cd6b340ebd57" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t cans_CAN1_signals_tx_length</definition>
+        <argsstring></argsstring>
+        <name>cans_CAN1_signals_tx_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the array for the CAN1 tx signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="245" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a09fad45966212a86c0470b1608275b42" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t cans_CAN0_signals_rx_length</definition>
+        <argsstring></argsstring>
+        <name>cans_CAN0_signals_rx_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the array for the CAN0 rx signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="250" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cansignal__cfg_8h_1a14f12d8fd481484941df1876cbd63c64" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t cans_CAN1_signals_rx_length</definition>
+        <argsstring></argsstring>
+        <name>cans_CAN1_signals_rx_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the array for the CAN1 rx signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h" line="255" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.c" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the configuration of the messages and signal settings for the CAN driver. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>16.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>CANS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>CANIF_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CANIF_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="can__cfg_8h" kindref="compound">can_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment">//#define<sp/>CANS_TICK_MS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="group__CONFIG__CANSIGNAL_1ga9060669d55a55b34ebfb1228bc33ac66" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CANS_TICK_MS<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>CANS_TICK_MS<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="cansignal__cfg_8h_1a47ab8f56379070261ca015aaa0dd334d" refkind="member"><highlight class="preprocessor">#define<sp/>CANS_SENSOR_RESPONSE_TIMEOUT_MS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Insert<sp/>here<sp/>symbolic<sp/>names<sp/>for<sp/>CAN0<sp/>messages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a6ff80b0bd1b525e94f06df230fe82455" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a6ff80b0bd1b525e94f06df230fe82455" kindref="member">CAN0_MSG_BMS1</ref>,<sp/></highlight></codeline>
+<codeline lineno="66" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a448596facf4d850622a49f569c3c01f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a448596facf4d850622a49f569c3c01f0" kindref="member">CAN0_MSG_BMS2</ref>,<sp/></highlight></codeline>
+<codeline lineno="67" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ab1b8697dfd28fb947f9b2d43e125608c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ab1b8697dfd28fb947f9b2d43e125608c" kindref="member">CAN0_MSG_BMS3</ref>,<sp/></highlight></codeline>
+<codeline lineno="68" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a529b71c760aeb66cef467f97bf5cfd8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a529b71c760aeb66cef467f97bf5cfd8e" kindref="member">CAN0_MSG_BMS4</ref>,<sp/></highlight></codeline>
+<codeline lineno="69" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2af1763197d7d4a563ae5a9a394c406b55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2af1763197d7d4a563ae5a9a394c406b55" kindref="member">CAN0_MSG_BMS5</ref>,<sp/></highlight></codeline>
+<codeline lineno="70" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a0dc33ddc9b6cdd1569b3db03e1740cb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a0dc33ddc9b6cdd1569b3db03e1740cb3" kindref="member">CAN0_MSG_BMS6</ref>,<sp/></highlight></codeline>
+<codeline lineno="71" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ad42ad927fb2bc17bce7bcdd3ce23cfe0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ad42ad927fb2bc17bce7bcdd3ce23cfe0" kindref="member">CAN0_MSG_BMS7</ref>,<sp/></highlight></codeline>
+<codeline lineno="72" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ab6ef3ad5169f4c7c7a16ebcf2923426a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2ab6ef3ad5169f4c7c7a16ebcf2923426a" kindref="member">CAN0_MSG_BMS8</ref>,<sp/></highlight></codeline>
+<codeline lineno="73" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2af14f8adc7d2009649898627ab56b7d77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2af14f8adc7d2009649898627ab56b7d77" kindref="member">CAN0_MSG_BMS9</ref>,<sp/></highlight></codeline>
+<codeline lineno="74" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2aa5bca3970ef65052708eab4cd8882398" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2aa5bca3970ef65052708eab4cd8882398" kindref="member">CAN0_MSG_BMS11</ref>,<sp/></highlight></codeline>
+<codeline lineno="75" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a4cfd70b7b76f72b7ba57e6dd421df4f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a4cfd70b7b76f72b7ba57e6dd421df4f9" kindref="member">CAN0_MSG_BMS12</ref>,<sp/></highlight></codeline>
+<codeline lineno="76" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2aa6dfe92d724f10d0beaae4bf2ec55451" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2aa6dfe92d724f10d0beaae4bf2ec55451" kindref="member">CAN0_MSG_BMS13</ref>,<sp/></highlight></codeline>
+<codeline lineno="77" refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a75e919b9d0ace2290d494614b99b01af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2a75e919b9d0ace2290d494614b99b01af" kindref="member">CAN0_MSG_BMS14</ref>,<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CAN_ISABELLENHUETTE_TRIGGERED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN0_MSG_BMS_CurrentTrigger,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Insert<sp/>here<sp/>symbolic<sp/>names<sp/>for<sp/>CAN1<sp/>messages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2" kindref="member">CANS_messagesTx_e</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Insert<sp/>here<sp/>symbolic<sp/>names<sp/>for<sp/>CAN0<sp/>messages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a85e44d1bb639235677ba9ed8600a3757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a85e44d1bb639235677ba9ed8600a3757" kindref="member">CAN0_MSG_BMS10</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a2eea236bd61c9076c76c7818cd56d738" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a2eea236bd61c9076c76c7818cd56d738" kindref="member">CAN0_MSG_SW_RESET</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9acde0b92bbc5514edee610783909a6b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9acde0b92bbc5514edee610783909a6b84" kindref="member">CAN0_MSG_DOWNLOAD_APPLICATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9ae9df40569e9594ac06ae16cf3f55359e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9ae9df40569e9594ac06ae16cf3f55359e" kindref="member">CAN0_MSG_ISENS0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a02ed68f69d3f3c85a858d4987e992ea8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a02ed68f69d3f3c85a858d4987e992ea8" kindref="member">CAN0_MSG_ISENS1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a4dae46f8b34cf49ab5f97848baa553ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a4dae46f8b34cf49ab5f97848baa553ed" kindref="member">CAN0_MSG_ISENS2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9aedebd95b31169f76d82fc3961e30c9ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9aedebd95b31169f76d82fc3961e30c9ee" kindref="member">CAN0_MSG_ISENS3</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a70a8d0be873666389f678076f26ddcd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a70a8d0be873666389f678076f26ddcd5" kindref="member">CAN0_MSG_DEBUG</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Insert<sp/>here<sp/>symbolic<sp/>names<sp/>for<sp/>CAN1<sp/>messages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a1ed56e0d38e6397fa1dce103647f8643" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a1ed56e0d38e6397fa1dce103647f8643" kindref="member">CAN1_MSG_BMS10</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a0061a77e5243d29e2af56fd40b072d97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a0061a77e5243d29e2af56fd40b072d97" kindref="member">CAN1_MSG_SW_RESET</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9af416b1223d339caf41679192a5d014d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9af416b1223d339caf41679192a5d014d7" kindref="member">CAN1_MSG_DOWNLOAD_APPLICATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a6fd2b260b8792577157a773dfe6037a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a6fd2b260b8792577157a773dfe6037a0" kindref="member">CAN1_MSG_ISENS0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a990f3ffa166ef44c71c34c1fb674dd56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a990f3ffa166ef44c71c34c1fb674dd56" kindref="member">CAN1_MSG_ISENS1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a10640886d86f84c25474d4292e85b622" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a10640886d86f84c25474d4292e85b622" kindref="member">CAN1_MSG_ISENS2</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a99718d65e027baea353300bc90cf9af4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a99718d65e027baea353300bc90cf9af4" kindref="member">CAN1_MSG_ISENS3</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a4ddb2c53733c955566cd798e27c7f092" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9a4ddb2c53733c955566cd798e27c7f092" kindref="member">CAN1_MSG_DEBUG</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9" kindref="member">CANS_messagesRx_e</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701ae27bd24c9ff9f6a948625a8242cb982e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701ae27bd24c9ff9f6a948625a8242cb982e" kindref="member">CAN0_SIGNAL_NONE</ref><sp/>=<sp/>0xFFFF</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701" kindref="member">CANS_CAN0_signalsTx_e</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="cansignal__cfg_8h_1a5c9a69298eda1483fc3e8c37dbb3acbc" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="127" refid="cansignal__cfg_8h_1a5c9a69298eda1483fc3e8c37dbb3acbca3ba1668933e268670cc0fd283891836d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a5c9a69298eda1483fc3e8c37dbb3acbca3ba1668933e268670cc0fd283891836d" kindref="member">CAN1_SIGNAL_NONE</ref><sp/>=<sp/>0xFFFF,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1a5c9a69298eda1483fc3e8c37dbb3acbc" kindref="member">CANS_CAN1_signalsTx_e</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="135" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea2dbdda37b3788637e5e7c1aa45ea17f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea2dbdda37b3788637e5e7c1aa45ea17f6" kindref="member">CAN0_SIG_BMS10_Overflow</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea5b78afc9ab348a6ccab013720ac0e7f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea5b78afc9ab348a6ccab013720ac0e7f4" kindref="member">CAN0_SIG_BMS10_Request</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea97ca8a205fab525f84c510000a86de3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea97ca8a205fab525f84c510000a86de3b" kindref="member">CAN0_SIG_ISENS0_I_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaa184978c24104c7bbffb3b96f5f8b7d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaa184978c24104c7bbffb3b96f5f8b7d3" kindref="member">CAN0_SIG_ISENS0_I_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea89ac08436e36acd17fbff0dd42f08617" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea89ac08436e36acd17fbff0dd42f08617" kindref="member">CAN0_SIG_ISENS0_I_Measurement</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea258a2aab1e416cdb15e97ff9a1f82f79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea258a2aab1e416cdb15e97ff9a1f82f79" kindref="member">CAN0_SIG_ISENS1_U1_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea87aa5d8c77b33e10366f1c6a2719545b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea87aa5d8c77b33e10366f1c6a2719545b" kindref="member">CAN0_SIG_ISENS1_U1_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eabbecea22c1e8e561122bce17e0d951ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eabbecea22c1e8e561122bce17e0d951ed" kindref="member">CAN0_SIG_ISENS1_U1_Measurement</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea0a27582136a0db7a38e75423066e971c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea0a27582136a0db7a38e75423066e971c" kindref="member">CAN0_SIG_ISENS2_U2_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eafa4834ac6d90ae9f006263c4384da68d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eafa4834ac6d90ae9f006263c4384da68d" kindref="member">CAN0_SIG_ISENS2_U2_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaad56681998fd7fed759b71dc1dcb5919" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaad56681998fd7fed759b71dc1dcb5919" kindref="member">CAN0_SIG_ISENS2_U2_Measurement</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea39c1fbb3c788e3c7d8c7db7cdb0057dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea39c1fbb3c788e3c7d8c7db7cdb0057dd" kindref="member">CAN0_SIG_ISENS3_U3_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eab79fc03b259f36754c02a179e22d7338" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eab79fc03b259f36754c02a179e22d7338" kindref="member">CAN0_SIG_ISENS3_U3_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea1dc57373b7d265833163729cc90afa93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1ea1dc57373b7d265833163729cc90afa93" kindref="member">CAN0_SIG_ISENS3_U3_Measurement</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaf87ffebcd833381be58d8abfc78043fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1eaf87ffebcd833381be58d8abfc78043fc" kindref="member">CAN0_SIG_DEBUG_Data</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1e" kindref="member">CANS_CAN0_signalsRx_e</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="157" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a33205be003bf19a3d8971c5ca0cf7c3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a33205be003bf19a3d8971c5ca0cf7c3d" kindref="member">CAN1_SIG_BMS10_Overflow</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a46dd2b02e51b71473a0f0fb55fd82b1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a46dd2b02e51b71473a0f0fb55fd82b1b" kindref="member">CAN1_SIG_BMS10_Request</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a549963d5dfa5de15ce8c3420a1029c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a549963d5dfa5de15ce8c3420a1029c33" kindref="member">CAN1_SIG_ISENS0_I_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aac353e2d32134b3f993596022275f6d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aac353e2d32134b3f993596022275f6d8" kindref="member">CAN1_SIG_ISENS0_I_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a35ac143de65aa9358dfa47ded740fab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a35ac143de65aa9358dfa47ded740fab5" kindref="member">CAN1_SIG_ISENS0_I_Measurement</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a7673a8799266e89bd450c84205707812" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a7673a8799266e89bd450c84205707812" kindref="member">CAN1_SIG_ISENS1_U1_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a9c8b84e63d0cda65d695307a3d1b9249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a9c8b84e63d0cda65d695307a3d1b9249" kindref="member">CAN1_SIG_ISENS1_U1_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aaaae0f5b05c6811abe2fd017282d5c69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aaaae0f5b05c6811abe2fd017282d5c69" kindref="member">CAN1_SIG_ISENS1_U1_Measurement</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a65887f8388c82fbe1e8aff3f3228d31c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a65887f8388c82fbe1e8aff3f3228d31c" kindref="member">CAN1_SIG_ISENS2_U2_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a04164f2d201a6027b7dda035cc6f9267" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a04164f2d201a6027b7dda035cc6f9267" kindref="member">CAN1_SIG_ISENS2_U2_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a604b22b35c4630ca46097e9a3fc20f12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a604b22b35c4630ca46097e9a3fc20f12" kindref="member">CAN1_SIG_ISENS2_U2_Measurement</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a658ae60cb30a5ad447b6383618a2ae98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a658ae60cb30a5ad447b6383618a2ae98" kindref="member">CAN1_SIG_ISENS3_U3_Byte0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a590386951c5da666623f50f8cd146bf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a590386951c5da666623f50f8cd146bf5" kindref="member">CAN1_SIG_ISENS3_U3_Byte1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aa8af7f5d994b8a2698d3202b1ca8b53b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028aa8af7f5d994b8a2698d3202b1ca8b53b" kindref="member">CAN1_SIG_ISENS3_U3_Measurement</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a1ae307b7c5f2ccac10a94c9ffb4b3f0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028a1ae307b7c5f2ccac10a94c9ffb4b3f0b" kindref="member">CAN1_SIG_DEBUG_Data</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1a37b74fc0f60066491693db4542271028" kindref="member">CANS_CAN1_signalsRx_e</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="175" refid="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926ba9c3b7c1f29703814648758789f2c9845" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926ba9c3b7c1f29703814648758789f2c9845" kindref="member">CAN_RX_DIRECTION</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="176" refid="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926bab3c34cf40beea34bdd02ec7f33116f35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926bab3c34cf40beea34bdd02ec7f33116f35" kindref="member">CAN_TX_DIRECTION</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}<sp/><ref refid="cansignal__cfg_8h_1a340516bed70baf9d422da81874b3926b" kindref="member">CANS_messageDirection_t</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="unionCANS__messages__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180" refid="unionCANS__messages__t_1aa436f4dbdec2d83f6abc276bb5930a55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae93daf397f977d7d1a364aabec0fc5c2" kindref="member">CANS_messagesTx_e</ref><sp/><ref refid="unionCANS__messages__t_1aa436f4dbdec2d83f6abc276bb5930a55" kindref="member">Tx</ref>;</highlight></codeline>
+<codeline lineno="181" refid="unionCANS__messages__t_1a3d4520d92092ef068affbfc7d0f7d589" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1a87850e24db2ea06885d1bb80a40a93f9" kindref="member">CANS_messagesRx_e</ref><sp/><ref refid="unionCANS__messages__t_1a3d4520d92092ef068affbfc7d0f7d589" kindref="member">Rx</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}<sp/><ref refid="unionCANS__messages__t" kindref="compound">CANS_messages_t</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="unionCANS__signals__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185" refid="unionCANS__signals__t_1ab0854495aafd5df92e60b02687959283" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701" kindref="member">CANS_CAN0_signalsTx_e</ref><sp/><ref refid="unionCANS__signals__t_1ab0854495aafd5df92e60b02687959283" kindref="member">Tx</ref>;</highlight></codeline>
+<codeline lineno="186" refid="unionCANS__signals__t_1aa0f5cb946411ef90a0d77c6660624c22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1e" kindref="member">CANS_CAN0_signalsRx_e</ref><sp/><ref refid="unionCANS__signals__t_1aa0f5cb946411ef90a0d77c6660624c22" kindref="member">Rx</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}<sp/><ref refid="unionCANS__signals__t" kindref="compound">CANS_signals_t</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="structCANS__signal__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200" refid="structCANS__signal__s_1ad49bf38a21aa3f798a99691d228f8882" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionCANS__messages__t" kindref="compound">CANS_messages_t</ref><sp/><ref refid="structCANS__signal__s_1ad49bf38a21aa3f798a99691d228f8882" kindref="member">msgIdx</ref>;</highlight></codeline>
+<codeline lineno="201" refid="structCANS__signal__s_1a89169c8eea6dd1f792b828b19974d4e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCANS__signal__s_1a89169c8eea6dd1f792b828b19974d4e0" kindref="member">bit_position</ref>;</highlight></codeline>
+<codeline lineno="202" refid="structCANS__signal__s_1a8d3a2074ed029b0ffaea5ba1e10bfa04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCANS__signal__s_1a8d3a2074ed029b0ffaea5ba1e10bfa04" kindref="member">bit_length</ref>;</highlight></codeline>
+<codeline lineno="203" refid="structCANS__signal__s_1a9f7b03efc15a30bcb67e83898526a2e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s_1a9f7b03efc15a30bcb67e83898526a2e7" kindref="member">max</ref>;</highlight></codeline>
+<codeline lineno="204" refid="structCANS__signal__s_1aa64f65fb663c8a05d56d8be16fd05697" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s_1aa64f65fb663c8a05d56d8be16fd05697" kindref="member">min</ref>;</highlight></codeline>
+<codeline lineno="205" refid="structCANS__signal__s_1af6f88d38ca0971aaf347c2742e38dd87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s_1af6f88d38ca0971aaf347c2742e38dd87" kindref="member">factor</ref>;</highlight></codeline>
+<codeline lineno="206" refid="structCANS__signal__s_1a2dad74723d594c7ac8a68b02a6b0d873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s_1a2dad74723d594c7ac8a68b02a6b0d873" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="207" refid="structCANS__signal__s_1a9d74756d7a6e2635e88a4008115004d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s_1a9d74756d7a6e2635e88a4008115004d6" kindref="member">isMuxed</ref>;</highlight></codeline>
+<codeline lineno="208" refid="structCANS__signal__s_1a6c1f7e521f024b9adab2a2a35e311eb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s_1a6c1f7e521f024b9adab2a2a35e311eb0" kindref="member">isMuxor</ref>;</highlight></codeline>
+<codeline lineno="209" refid="structCANS__signal__s_1a50f7a57ce1df66f4e55489e3ac60d84a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCANS__signal__s_1a50f7a57ce1df66f4e55489e3ac60d84a" kindref="member">muxValue</ref>;</highlight></codeline>
+<codeline lineno="210" refid="structCANS__signal__s_1a6ef8551e685928adb838d66b1e0d0026" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionCANS__signals__t" kindref="compound">CANS_signals_t</ref><sp/><ref refid="structCANS__signal__s_1a6ef8551e685928adb838d66b1e0d0026" kindref="member">muxor</ref>;</highlight></codeline>
+<codeline lineno="211" refid="structCANS__signal__s_1a6f6cfe20670b728efee60498bf51e321" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can__cfg_8h_1a2e8b3cf405327f8f944437425dfc2fff" kindref="member">can_callback_funcPtr</ref><sp/><ref refid="structCANS__signal__s_1a6f6cfe20670b728efee60498bf51e321" kindref="member">setter</ref>;</highlight></codeline>
+<codeline lineno="212" refid="structCANS__signal__s_1ab8901c9d328e1d934dde0d7b6760e308" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can__cfg_8h_1a2e8b3cf405327f8f944437425dfc2fff" kindref="member">can_callback_funcPtr</ref><sp/><ref refid="structCANS__signal__s_1ab8901c9d328e1d934dde0d7b6760e308" kindref="member">getter</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}<sp/><ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref><sp/><ref refid="cansignal__cfg_8h_1a00b5c5f6e2c4347b7898ae4cd8946670" kindref="member">cans_CAN0_signals_tx</ref>[];</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref><sp/><ref refid="cansignal__cfg_8h_1a7441a668581186628ab12dd0ebdd0f7c" kindref="member">cans_CAN1_signals_tx</ref>[];</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref><sp/><ref refid="cansignal__cfg_8h_1aab49b0b2fd3ee38354c5d64f75416425" kindref="member">cans_CAN0_signals_rx</ref>[];</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCANS__signal__s" kindref="compound">CANS_signal_s</ref><sp/><ref refid="cansignal__cfg_8h_1a6a25a471299bc5e3290e06a8f79989e7" kindref="member">cans_CAN1_signals_rx</ref>[];</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="cansignal__cfg_8h_1a76a2b16912c01559b1281c463d4d7a0f" kindref="member">cans_CAN0_signals_tx_length</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="cansignal__cfg_8h_1a1425407d1b20511625b6cd6b340ebd57" kindref="member">cans_CAN1_signals_tx_length</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="cansignal__cfg_8h_1a09fad45966212a86c0470b1608275b42" kindref="member">cans_CAN0_signals_rx_length</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="cansignal__cfg_8h_1a14f12d8fd481484941df1876cbd63c64" kindref="member">cans_CAN1_signals_rx_length</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CANIF_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/cansignal_cfg.h"/>
+  </compounddef>
+</doxygen>

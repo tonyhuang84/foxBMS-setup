@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="misc_8h" kind="file" language="C++">
+    <compoundname>misc.h</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includedby refid="diag_8c" local="yes">diag.c</includedby>
+    <includedby refid="misc_8c" local="yes">misc.c</includedby>
+    <incdepgraph>
+      <node id="2200">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="2201" relation="include">
+        </childnode>
+        <childnode refid="2202" relation="include">
+        </childnode>
+      </node>
+      <node id="2201">
+        <label>stdint.h</label>
+      </node>
+      <node id="2202">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2199">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="2200" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2204">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="2205">
+        <label>misc.c</label>
+        <link refid="misc_8c"/>
+      </node>
+      <node id="2203">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="2204" relation="include">
+        </childnode>
+        <childnode refid="2205" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="misc_8h_1a5d1052dd1f18fffd9dd9901271da6c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* U8ToDecascii</definition>
+        <argsstring>(uint8_t *destptr, uint8_t *dataptr, uint8_t minDigits)</argsstring>
+        <name>U8ToDecascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minDigits</declname>
+        </param>
+        <briefdescription>
+<para>U8ToDecascii is a helper function which converts U8 to ASCII. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does some basic conversion stuff to be able to print out numbers/values as their corresponding ASCII.</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="47" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="93" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1a33c4c2eb185185af3f05f127ae2893d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* hex2ascii</definition>
+        <argsstring>(uint8_t *destptr, uint8_t *srcptr, uint8_t len)</argsstring>
+        <name>hex2ascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>srcptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>hex2ascii is a helper function which converts hex input to ASCII. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does some basic conversion stuff to be able to print out numbers/values as their corresponding ASCII.</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="48" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="137" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1a3fb9e77d092ceace73351b75077147df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* U32ToHexascii</definition>
+        <argsstring>(uint8_t *destptr, uint32_t *dataptr)</argsstring>
+        <name>U32ToHexascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <briefdescription>
+<para>U32ToHexascii is a helper function which converts U32 to hex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is just a wrapper for hex2ascii.</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="169" bodyend="172"/>
+        <references refid="misc_8c_1a33c4c2eb185185af3f05f127ae2893d1" compoundref="misc_8c" startline="137" endline="159">hex2ascii</references>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1a298caac49a1f130e8de158cb964c6cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* U16ToHexascii</definition>
+        <argsstring>(uint8_t *destptr, uint16_t *dataptr)</argsstring>
+        <name>U16ToHexascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <briefdescription>
+<para>U16ToHexascii is a helper function which converts U16 to hex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is just a wrapper for hex2ascii.</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="50" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="182" bodyend="185"/>
+        <references refid="misc_8c_1a33c4c2eb185185af3f05f127ae2893d1" compoundref="misc_8c" startline="137" endline="159">hex2ascii</references>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1aa17ef49021a18179420d7244d0553ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* U8ToHexascii</definition>
+        <argsstring>(uint8_t *destptr, uint8_t *dataptr)</argsstring>
+        <name>U8ToHexascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <briefdescription>
+<para>U8ToHexascii is a helper function which converts U16 to hex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is just a wrapper for hex2ascii.</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="51" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="196" bodyend="199"/>
+        <references refid="misc_8c_1a33c4c2eb185185af3f05f127ae2893d1" compoundref="misc_8c" startline="137" endline="159">hex2ascii</references>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1a7394a2407c001661f0e9dfd2a2039b24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* I32ToDecascii</definition>
+        <argsstring>(uint8_t *destptr, int32_t *dataptr)</argsstring>
+        <name>I32ToDecascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <briefdescription>
+<para>I32ToDecascii is a helper function which converts I32 to ASCII. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does some basic conversion stuff to be able to print out numbers/values as their corresponding ASCII.</para><para>Required buffer: at least uint8_t[12]</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="52" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="211" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1aac579941f3143ea7fffd29afd4e502f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t* U16ToDecascii</definition>
+        <argsstring>(uint8_t *destptr, uint16_t *dataptr, uint8_t minDigits)</argsstring>
+        <name>U16ToDecascii</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>destptr</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>dataptr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minDigits</declname>
+        </param>
+        <briefdescription>
+<para>U16ToDecascii is a helper function which converts U16 to ASCII. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does some basic conversion stuff to be able to print out numbers/values as their corresponding ASCII.</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h" line="53" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.c" bodystart="55" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the miscellaneous functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>23.12.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>none </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>MISC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MISC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1a5d1052dd1f18fffd9dd9901271da6c2c" kindref="member">U8ToDecascii</ref>(uint8_t<sp/>*destptr,<sp/>uint8_t<sp/>*dataptr,<sp/>uint8_t<sp/>minDigits);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1a33c4c2eb185185af3f05f127ae2893d1" kindref="member">hex2ascii</ref>(uint8_t<sp/>*destptr,<sp/>uint8_t<sp/>*srcptr,<sp/>uint8_t<sp/>len);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1a3fb9e77d092ceace73351b75077147df" kindref="member">U32ToHexascii</ref>(uint8_t<sp/>*destptr,<sp/>uint32_t<sp/>*dataptr);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1a298caac49a1f130e8de158cb964c6cfd" kindref="member">U16ToHexascii</ref>(uint8_t<sp/>*destptr,<sp/>uint16_t<sp/>*dataptr);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1aa17ef49021a18179420d7244d0553ade" kindref="member">U8ToHexascii</ref>(uint8_t<sp/>*destptr,<sp/>uint8_t<sp/>*dataptr);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1a7394a2407c001661f0e9dfd2a2039b24" kindref="member">I32ToDecascii</ref>(uint8_t<sp/>*destptr,<sp/>int32_t<sp/>*dataptr);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="misc_8h_1aac579941f3143ea7fffd29afd4e502f7" kindref="member">U16ToDecascii</ref>(uint8_t<sp/>*destptr,<sp/>uint16_t<sp/>*dataptr,<sp/>uint8_t<sp/>minDigits);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MISC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/utils/misc.h"/>
+  </compounddef>
+</doxygen>

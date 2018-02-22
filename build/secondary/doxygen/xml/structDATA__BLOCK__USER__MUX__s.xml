@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__USER__MUX__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_USER_MUX_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__USER__MUX__s_1aad5d529bf874c5946fc3ede7bd019fe1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DATA_BLOCK_USER_MUX_s::value[8 *2 *BS_NR_OF_MODULES]</definition>
+        <argsstring>[8 *2 *BS_NR_OF_MODULES]</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>unit: mV (mux voltage input) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="230" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__USER__MUX__s_1a394551bad6ae13e3eede33e9801f6276" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_USER_MUX_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="231" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__USER__MUX__s_1af000e59384c019d42175131b032cf8ad" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_USER_MUX_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="232" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__USER__MUX__s_1a8880146a955031c68b078b1478e083bd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_USER_MUX_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for future use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="233" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of user multiplexer values </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="229" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="229" bodyend="234"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__USER__MUX__s_1a394551bad6ae13e3eede33e9801f6276" prot="public" virt="non-virtual"><scope>DATA_BLOCK_USER_MUX_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__USER__MUX__s_1a8880146a955031c68b078b1478e083bd" prot="public" virt="non-virtual"><scope>DATA_BLOCK_USER_MUX_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__USER__MUX__s_1af000e59384c019d42175131b032cf8ad" prot="public" virt="non-virtual"><scope>DATA_BLOCK_USER_MUX_s</scope><name>timestamp</name></member>
+      <member refid="structDATA__BLOCK__USER__MUX__s_1aad5d529bf874c5946fc3ede7bd019fe1" prot="public" virt="non-virtual"><scope>DATA_BLOCK_USER_MUX_s</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

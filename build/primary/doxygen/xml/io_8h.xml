@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="io_8h" kind="file" language="C++">
+    <compoundname>io.h</compoundname>
+    <includes refid="io__cfg_8h" local="yes">io_cfg.h</includes>
+    <includedby refid="stm32f4xx__it_8c" local="yes">stm32f4xx_it.c</includedby>
+    <includedby refid="stm32f7xx__it_8c" local="yes">stm32f7xx_it.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="spi__cfg_8h" local="yes">spi_cfg.h</includedby>
+    <includedby refid="contactor_8c" local="yes">contactor.c</includedby>
+    <includedby refid="ir155_8h" local="yes">ir155.h</includedby>
+    <includedby refid="can_8c" local="yes">can.c</includedby>
+    <includedby refid="interlock_8c" local="yes">interlock.c</includedby>
+    <includedby refid="io_8c" local="yes">io.c</includedby>
+    <includedby refid="spi_8c" local="yes">spi.c</includedby>
+    <includedby refid="led_8h" local="yes">led.h</includedby>
+    <includedby refid="led_8c" local="yes">led.c</includedby>
+    <incdepgraph>
+      <node id="1502">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1500">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+        <childnode refid="1503" relation="include">
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1501">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="1499">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1500" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1525">
+        <label>ir155.c</label>
+        <link refid="ir155_8c"/>
+      </node>
+      <node id="1524">
+        <label>ir155.h</label>
+        <link refid="ir155_8h"/>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+      </node>
+      <node id="1520">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+      </node>
+      <node id="1519">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+      </node>
+      <node id="1505">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="1522">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="1513" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+      </node>
+      <node id="1511">
+        <label>dma_cfg.c</label>
+        <link refid="dma__cfg_8c"/>
+      </node>
+      <node id="1521">
+        <label>spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="1510">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1506" relation="include">
+        </childnode>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+        <childnode refid="1522" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+      </node>
+      <node id="1514">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="1523">
+        <label>contactor.c</label>
+        <link refid="contactor_8c"/>
+      </node>
+      <node id="1513">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+      </node>
+      <node id="1516">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1506">
+        <label>stm32f7xx_it.c</label>
+        <link refid="stm32f7xx__it_8c"/>
+      </node>
+      <node id="1532">
+        <label>led.c</label>
+        <link refid="led_8c"/>
+      </node>
+      <node id="1530">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+      </node>
+      <node id="1517">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="1515">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1518" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="1507">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1526">
+        <label>isoguard.c</label>
+        <link refid="isoguard_8c"/>
+      </node>
+      <node id="1527">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="1529">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="1504">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1506" relation="include">
+        </childnode>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="1509">
+        <label>spi_cfg.c</label>
+        <link refid="spi__cfg_8c"/>
+      </node>
+      <node id="1508">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>eepr_cfg.c</label>
+        <link refid="eepr__cfg_8c"/>
+      </node>
+      <node id="1531">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="io_8h_1ac1a06f3124939d459db54da1e1c1be29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e IO_Init</definition>
+        <argsstring>(const IO_PIN_CFG_s *io_cfg)</argsstring>
+        <name>IO_Init</name>
+        <param>
+          <type>const <ref refid="structIO__PIN__CFG__s" kindref="compound">IO_PIN_CFG_s</ref> *</type>
+          <declname>io_cfg</declname>
+        </param>
+        <briefdescription>
+<para>Initializes all ports and pins of the microcontroller. </para>        </briefdescription>
+        <detaileddescription>
+<para>The pins of the microcontroller package are initialized by calling <ref refid="io_8h_1ac1a06f3124939d459db54da1e1c1be29" kindref="member">IO_Init()</ref>. The pins are identified by a signal name given in io_cfg_foxbms_mcu0_generated.h. The function gets the configuration of the pins by the array *io_cfg, which is defined is done in <ref refid="io__cfg_8c" kindref="compound">io_cfg.c</ref>. The io_cfg array allows you to set the functionality of the pin in the following order of the <ref refid="structIO__PIN__CFG__s" kindref="compound">IO_PIN_CFG_s</ref> struct:<itemizedlist>
+<listitem><para>pin<itemizedlist>
+<listitem><para>signal name</para></listitem></itemizedlist>
+</para></listitem><listitem><para>mode -input<itemizedlist>
+<listitem><para>output</para></listitem><listitem><para>push-pull</para></listitem><listitem><para>open drain</para></listitem><listitem><para>analog</para></listitem><listitem><para>interrupt<itemizedlist>
+<listitem><para>rising edge</para></listitem><listitem><para>falling edge</para></listitem><listitem><para>rising falling edge</para></listitem></itemizedlist>
+</para></listitem><listitem><para>event<itemizedlist>
+<listitem><para>rising edge</para></listitem><listitem><para>falling edge</para></listitem><listitem><para>rising falling edge</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>logic level<itemizedlist>
+<listitem><para>no pull</para></listitem><listitem><para>pull up</para></listitem><listitem><para>pull down</para></listitem></itemizedlist>
+</para></listitem><listitem><para>speed<itemizedlist>
+<listitem><para>low</para></listitem><listitem><para>medium</para></listitem><listitem><para>fast</para></listitem><listitem><para>high</para></listitem></itemizedlist>
+</para></listitem><listitem><para>alternate functions<itemizedlist>
+<listitem><para>RTC_50Hz</para></listitem><listitem><para>MCO</para></listitem><listitem><para>TAMPER</para></listitem><listitem><para>SWJ (SWD and JTAG)</para></listitem><listitem><para>TRACE</para></listitem><listitem><para>TIM</para></listitem><listitem><para>I2C</para></listitem><listitem><para>SPI</para></listitem><listitem><para>I2S</para></listitem><listitem><para>SAI</para></listitem><listitem><para>USART</para></listitem><listitem><para>UART</para></listitem><listitem><para>CAN</para></listitem><listitem><para>LCD-TFT</para></listitem><listitem><para>OTG</para></listitem></itemizedlist>
+</para></listitem><listitem><para>pin configuration locking<itemizedlist>
+<listitem><para>disable</para></listitem><listitem><para>enable</para></listitem></itemizedlist>
+</para></listitem><listitem><para>default value of the pin<itemizedlist>
+<listitem><para>reset/low</para></listitem><listitem><para>set/high</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>If the define IO_PIN_LOCKING is set in file <ref refid="io__cfg_8h" kindref="compound">io_cfg.h</ref> the pin configuration locking is performed as defined in file <ref refid="io__cfg_8c" kindref="compound">io_cfg.c</ref> at the array <ref refid="structIO__PIN__CFG__s" kindref="compound">IO_PIN_CFG_s</ref> io_cfg.</para><para>The default value of the pin/signal is optional. If the not given the signal is set low.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*io_cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: <ref refid="structIO__PIN__CFG__s" kindref="compound">IO_PIN_CFG_s</ref>)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>retVal (type: STD_RETURN_TYPE_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h" line="133" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.c" bodystart="62" bodyend="138"/>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="io_8c_1a26062eca60f54c2714a50126a1c4f38e" compoundref="io_8c" startline="175" endline="197">IO_ClkInit</references>
+        <references refid="io__cfg_8h_1a2f16382f440ae0d646e70329faf75fe0">io_cfg_length</references>
+        <references refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" compoundref="io__package__cfg_8h" startline="63">IO_NR_OF_PINS_PER_PORT</references>
+        <references refid="structIO__PIN__CFG__s_1a8b93a4d9d0f39314d0bdcea12ef69fc4" compoundref="io__cfg_8h" startline="222">IO_PIN_CFG_s::mode</references>
+        <references refid="structIO__PIN__CFG__s_1ac4a8493a3842cac2a030bef57f5a0bfd" compoundref="io__cfg_8h" startline="223">IO_PIN_CFG_s::pinpull</references>
+        <references refid="structIO__PIN__CFG__s_1a7dfb5d1df8e7fb8a7dd3efa8d8b2cd72" compoundref="io__cfg_8h" startline="224">IO_PIN_CFG_s::speed</references>
+        <references refid="io__cfg_8h_1a35252e3efb73618bf146a2f9a73421afa7e196040a6562e6413dcd9a0e4c6bfdd" compoundref="io__cfg_8h" startline="188">IO_ALTERNATE_NO_ALTERNATE</references>
+        <references refid="structIO__PIN__CFG__s_1a018fdc956f7a72f0c606676055414ec9" compoundref="io__cfg_8h" startline="225">IO_PIN_CFG_s::alternate</references>
+        <references refid="io_8c_1a9d5cd40d150dcb2036bdaa38c5e267b0" compoundref="io_8c" startline="47">IO_GET_GPIOx</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+        <references refid="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a6ff1ba645c25d8065c44b4d5109105a0" compoundref="io__cfg_8h" startline="87">IO_MODE_OUTPUT_PP</references>
+        <references refid="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a146b3d469c6b5bdee5d51e57fda2ffa3" compoundref="io__cfg_8h" startline="88">IO_MODE_OUTPUT_OD</references>
+        <references refid="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a64a09b761f2f7c3dff9437867bf5ed3d" compoundref="io__cfg_8h" startline="89">IO_MODE_AF_PP</references>
+        <references refid="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a78ca4fba58ffdc46271e54eb8ee11c33" compoundref="io__cfg_8h" startline="90">IO_MODE_AF_OD</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11daa6a9bf5c875444b48ed54169d1bae9fc" compoundref="io__cfg_8h" startline="203">IO_PIN_RESET</references>
+        <references refid="portcheck_8c_1ab34f18df31d74c08458d7c6c771bdecb" compoundref="portcheck_8c" startline="71" endline="175">GPIO_Check</references>
+        <references refid="io__cfg_8h_1ad3d550e809a5b88243d336caa78e6206aaf30f06e39b23298b80162f2f0b73967" compoundref="io__cfg_8h" startline="212">IO_HAL_STATUS_ERROR</references>
+        <references refid="io__cfg_8h_1a78e8f11cb8d0a4f36a70db9f3c9034f3a98fcb6f34aebefaf3fd5cff976df8ba9" compoundref="io__cfg_8h" startline="196">IO_PIN_LOCK_ENABLE</references>
+        <references refid="io__cfg_8h_1ad3d550e809a5b88243d336caa78e6206a0a7f155ccdb1a4b6fb8aa595fbc575af" compoundref="io__cfg_8h" startline="211">IO_HAL_STATUS_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1aa0f7f326f4e3dc599c3e47be410a460b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11d" kindref="member">IO_PIN_STATE_e</ref></type>
+        <definition>IO_PIN_STATE_e IO_ReadPin</definition>
+        <argsstring>(IO_PORTS_e pin)</argsstring>
+        <name>IO_ReadPin</name>
+        <param>
+          <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Returns the state of a pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the state/output of the given pin, which is given by its symbolic name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: IO_PORTS_e)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>currentPinState (type: IO_PIN_STATE_e) returns <table rows="3" cols="2"><row>
+<entry thead="yes"><para>currentPinState </para></entry><entry thead="yes"><para>physical pin out  </para></entry></row>
+<row>
+<entry thead="no"><para>GPIO_PIN_SET </para></entry><entry thead="no"><para>high </para></entry></row>
+<row>
+<entry thead="no"><para>GPIO_PIN_RESET </para></entry><entry thead="no"><para>low </para></entry></row>
+</table>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h" line="149" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.c" bodystart="140" bodyend="145"/>
+        <references refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" compoundref="io__package__cfg_8h" startline="63">IO_NR_OF_PINS_PER_PORT</references>
+        <references refid="io_8c_1a9d5cd40d150dcb2036bdaa38c5e267b0" compoundref="io_8c" startline="47">IO_GET_GPIOx</references>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a1709c6b36be8ee2ebaf5e076300b6a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO_WritePin</definition>
+        <argsstring>(IO_PORTS_e pin, IO_PIN_STATE_e requestedPinState)</argsstring>
+        <name>IO_WritePin</name>
+        <param>
+          <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type><ref refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11d" kindref="member">IO_PIN_STATE_e</ref></type>
+          <declname>requestedPinState</declname>
+        </param>
+        <briefdescription>
+<para>Sets the state of a pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the state/output of the given pin, which is given by its symbolic name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: IO_PORTS_e) requested pin to be set</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestedPinState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: IO_PIN_STATE_e) requests <table rows="3" cols="2"><row>
+<entry thead="yes"><para>requestedPinState </para></entry><entry thead="yes"><para>physical pin out  </para></entry></row>
+<row>
+<entry thead="no"><para>GPIO_PIN_SET </para></entry><entry thead="no"><para>high </para></entry></row>
+<row>
+<entry thead="no"><para>GPIO_PIN_RESET </para></entry><entry thead="no"><para>low </para></entry></row>
+</table>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h" line="167" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.c" bodystart="147" bodyend="150"/>
+        <references refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" compoundref="io__package__cfg_8h" startline="63">IO_NR_OF_PINS_PER_PORT</references>
+        <references refid="io_8c_1a9d5cd40d150dcb2036bdaa38c5e267b0" compoundref="io_8c" startline="47">IO_GET_GPIOx</references>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a329d86cd8f053a55229fc51b6f722546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO_TogglePin</definition>
+        <argsstring>(IO_PORTS_e pin)</argsstring>
+        <name>IO_TogglePin</name>
+        <param>
+          <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Toggles the state of a pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: IO_PORTS_e)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h" line="176" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.c" bodystart="152" bodyend="155"/>
+        <references refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" compoundref="io__package__cfg_8h" startline="63">IO_NR_OF_PINS_PER_PORT</references>
+        <references refid="io_8c_1a9d5cd40d150dcb2036bdaa38c5e267b0" compoundref="io_8c" startline="47">IO_GET_GPIOx</references>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a5f441fbc955563e2ca13eec19d353506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO_EXTI_IRQHandler</definition>
+        <argsstring>(IO_PORTS_e pin)</argsstring>
+        <name>IO_EXTI_IRQHandler</name>
+        <param>
+          <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Calls the EXTI_IRQHandler of the given pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: IO_PORTS_e)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h" line="185" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.c" bodystart="157" bodyend="159"/>
+        <references refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" compoundref="io__package__cfg_8h" startline="63">IO_NR_OF_PINS_PER_PORT</references>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a678518fe4684f76b2b9445a3e674e646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IO_EXTI_Callback</definition>
+        <argsstring>(IO_PORTS_e pin)</argsstring>
+        <name>IO_EXTI_Callback</name>
+        <param>
+          <type><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Calls the EXTI_Callback of the given pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: IO_PORTS_e)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h" line="194" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.c" bodystart="161" bodyend="163"/>
+        <references refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" compoundref="io__package__cfg_8h" startline="63">IO_NR_OF_PINS_PER_PORT</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the driver for the I/O ports (pins).. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>26.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>IO</para></simplesect>
+The io-module allows a neat configuration and initialization of the microcontroller pins of the foxbms hardware. The io-module enables an easy read and write access to the microcontroller pins.</para><para>The configuration of the GPIOs is performed through the following parts of the io-module:<itemizedlist>
+<listitem><para><ref refid="io__package__cfg_8h" kindref="compound">config\io_package_cfg.h</ref>:<itemizedlist>
+<listitem><para>If the foxBMS board is used, no changes have to be made my the user.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Configuration file config\io_foxbms_mcu0_cfg.h respectively config.h.h:<itemizedlist>
+<listitem><para>Defines the names of the signals connected to the pins of the STM32F429. The macro used for identification of the pin-port assignment are taken from <ref refid="io__package__cfg_8h" kindref="compound">io_package_cfg.h</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para><ref refid="io__cfg_8h" kindref="compound">config\io_cfg.h</ref>:<itemizedlist>
+<listitem><para>Defines the package type of the STM32F29 used on the board. The list of supported packages of the STM32F429 can be found in <ref refid="io__package__cfg_8h" kindref="compound">io_package_cfg.h</ref>.</para></listitem><listitem><para>Defines if the pin configuration locking of the is enabled.</para></listitem><listitem><para>Includes the pin configuration file io_foxbms_mcu0_cfg.h.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><ref refid="io__cfg_8c" kindref="compound">config\io_cfg.c</ref><itemizedlist>
+<listitem><para>Determines the configuration of each used pin. The configuration is in the io_cfg[] array. The possible configurations of each GPIO are given in the official STM32F29 &lt;a href&quot;http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf&quot;&gt;datasheet. The io-driver DOES NOT check whether your GPIO configuration is valid. </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="54"><highlight class="preprocessor">#ifndef<sp/>IO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io__cfg_8h" kindref="compound">io_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="io_8h_1ac1a06f3124939d459db54da1e1c1be29" kindref="member">IO_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structIO__PIN__CFG__s" kindref="compound">IO_PIN_CFG_s</ref><sp/>*<ref refid="io__cfg_8h_1ac5206e05956c6add725226da867bd23b" kindref="member">io_cfg</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11d" kindref="member">IO_PIN_STATE_e</ref><sp/><ref refid="io_8h_1aa0f7f326f4e3dc599c3e47be410a460b" kindref="member">IO_ReadPin</ref>(<ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/>pin);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1a1709c6b36be8ee2ebaf5e076300b6a93" kindref="member">IO_WritePin</ref>(<ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/>pin,<sp/><ref refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11d" kindref="member">IO_PIN_STATE_e</ref><sp/>requestedPinState);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1a329d86cd8f053a55229fc51b6f722546" kindref="member">IO_TogglePin</ref>(<ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/>pin);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1a5f441fbc955563e2ca13eec19d353506" kindref="member">IO_EXTI_IRQHandler</ref>(<ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/>pin);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1a678518fe4684f76b2b9445a3e674e646" kindref="member">IO_EXTI_Callback</ref>(<ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/>pin);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IO_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/io.h"/>
+  </compounddef>
+</doxygen>

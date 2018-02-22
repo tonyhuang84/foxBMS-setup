@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4d8856850196cbbdc0ad343bec217f84" kind="dir">
+    <compoundname>module</compoundname>
+    <innerdir refid="dir_db2e53a1df42c0630acc37d8a45e03fa">adc</innerdir>
+    <innerdir refid="dir_700fb01b931440d0d5a6c609089f0885">config</innerdir>
+    <innerdir refid="dir_93bff897db6ef997ed04c1c1686e1ac4">intermcu</innerdir>
+    <innerdir refid="dir_0739c2ed2468b7b7b0f107014e611444">timer</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/"/>
+  </compounddef>
+</doxygen>

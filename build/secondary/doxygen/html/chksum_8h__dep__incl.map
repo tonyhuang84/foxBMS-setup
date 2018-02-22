@@ -1,0 +1,5 @@
+<map id="chksum.h" name="chksum.h">
+<area shape="rect" id="node2" href="$main_8c.html" title="Main function. " alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" href="$chksum_8c.html" title="Driver for the checksum calculation. " alt="" coords="91,80,170,107"/>
+<area shape="rect" id="node4" href="$mcu_8c.html" title="Functions for the MCU to manage time and interrupts. " alt="" coords="195,80,253,107"/>
+</map>

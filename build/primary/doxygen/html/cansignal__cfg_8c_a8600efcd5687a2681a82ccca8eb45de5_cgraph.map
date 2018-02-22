@@ -1,0 +1,4 @@
+<map id="cans_getpower" name="cans_getpower">
+<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="169,5,283,32"/>
+<area shape="rect" id="node3" href="$cansignal__cfg_8c.html#a4656bfcfa1fdcdcf07f2f49909f1eeee" title="cans_checkLimits" alt="" coords="163,56,289,83"/>
+</map>

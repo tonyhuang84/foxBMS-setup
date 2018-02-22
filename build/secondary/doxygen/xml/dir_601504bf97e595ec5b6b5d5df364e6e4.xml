@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_601504bf97e595ec5b6b5d5df364e6e4" kind="dir">
+    <compoundname>io</compoundname>
+    <innerfile refid="io_8c">io.c</innerfile>
+    <innerfile refid="io_8h">io.h</innerfile>
+    <innerfile refid="portcheck_8c">portcheck.c</innerfile>
+    <innerfile refid="portcheck_8h">portcheck.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/io/"/>
+  </compounddef>
+</doxygen>

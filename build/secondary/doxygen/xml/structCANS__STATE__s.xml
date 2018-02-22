@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCANS__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>CANS_STATE_s</compoundname>
+    <includes refid="cansignal_8h" local="no">cansignal.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCANS__STATE__s_1a7db4ec6006576dc7a1d63c82802fbcb4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CANS_STATE_s::periodic_enable</definition>
+        <argsstring></argsstring>
+        <name>periodic_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>defines if periodic transmit and receive should run </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" line="50" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__STATE__s_1a15f08f9047985a761cc09ec005e73b4c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CANS_STATE_s::current_sensor_present</definition>
+        <argsstring></argsstring>
+        <name>current_sensor_present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>defines if a current sensor is detected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" line="51" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCANS__STATE__s_1a68d948a0280d50227217d7164ffa4bab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CANS_STATE_s::current_sensor_cc_present</definition>
+        <argsstring></argsstring>
+        <name>current_sensor_cc_present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>defines if a CC info is being sent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" line="52" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains variables relevant for the CAN signal module. </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/cansignal/cansignal.h" bodystart="49" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structCANS__STATE__s_1a68d948a0280d50227217d7164ffa4bab" prot="public" virt="non-virtual"><scope>CANS_STATE_s</scope><name>current_sensor_cc_present</name></member>
+      <member refid="structCANS__STATE__s_1a15f08f9047985a761cc09ec005e73b4c" prot="public" virt="non-virtual"><scope>CANS_STATE_s</scope><name>current_sensor_present</name></member>
+      <member refid="structCANS__STATE__s_1a7db4ec6006576dc7a1d63c82802fbcb4" prot="public" virt="non-virtual"><scope>CANS_STATE_s</scope><name>periodic_enable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

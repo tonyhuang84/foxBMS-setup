@@ -1,0 +1,25 @@
+<map id="ltc.c" name="ltc.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="675,528,749,555"/>
+<area shape="rect" id="node5" href="$database_8h.html" title="Database module header. " alt="" coords="473,304,559,331"/>
+<area shape="rect" id="node8" href="$ltc_8h.html" title="Headers for the driver for the LTC monitoring chip. " alt="" coords="637,80,683,107"/>
+<area shape="rect" id="node10" href="$spi_8h.html" title="Headers for the driver for the serial peripheral interface module (encapsulation of some HAL function..." alt="" coords="396,304,447,331"/>
+<area shape="rect" id="node19" href="$mcu_8h.html" title="Headers for the functions for the MCU to manage time and interrupts. " alt="" coords="800,229,859,256"/>
+<area shape="rect" id="node20" href="$diag_8h.html" title="Diag driver header. " alt="" coords="310,155,367,181"/>
+<area shape="rect" id="node25" href="$os_8h.html" title="Implementation of the tasks used by the system, headers. " alt="" coords="851,80,898,107"/>
+<area shape="rect" id="node27" href="$ltc__pec_8h.html" title="ltc_pec.h" alt="" coords="923,80,997,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="717,603,808,629"/>
+<area shape="rect" id="node6" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="461,379,571,405"/>
+<area shape="rect" id="node7" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="446,453,586,480"/>
+<area shape="rect" id="node9" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC monitoring chip. " alt="" coords="625,155,695,181"/>
+<area shape="rect" id="node18" href="$ltc__defs_8h.html" title="ltc_defs.h" alt="" coords="545,229,623,256"/>
+<area shape="rect" id="node11" href="$spi__cfg_8h.html" title="Headers for the configuration for the serial peripheral interface module. " alt="" coords="193,379,268,405"/>
+<area shape="rect" id="node12" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="97,453,180,480"/>
+<area shape="rect" id="node17" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="207,453,249,480"/>
+<area shape="rect" id="node14" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="147,528,213,555"/>
+<area shape="rect" id="node15" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="52,603,175,629"/>
+<area shape="rect" id="node16" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="199,603,297,629"/>
+<area shape="rect" id="node21" href="$diag__cfg_8h.html" title="Diagnostic module configuration header. " alt="" coords="203,229,285,256"/>
+<area shape="rect" id="node22" href="$diag__id__cfg_8h.html" title="This file contains basic definitions in order to use an abstracted diagnosis. " alt="" coords="169,304,268,331"/>
+<area shape="rect" id="node23" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="97,304,145,331"/>
+<area shape="rect" id="node24" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="97,379,169,405"/>
+</map>

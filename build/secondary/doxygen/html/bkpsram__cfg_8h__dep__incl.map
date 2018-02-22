@@ -1,0 +1,7 @@
+<map id="bkpsram_cfg.h" name="bkpsram_cfg.h">
+<area shape="rect" id="node2" href="$bkpsram__cfg_8c.html" title="Configuration for static backup RAM. " alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$bkpsram_8h.html" title="Headers for the driver for static backup RAM. " alt="" coords="136,80,219,107"/>
+<area shape="rect" id="node4" href="$diag_8c.html" title="Diag driver implementation. " alt="" coords="65,155,122,181"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="Main function. " alt="" coords="147,155,208,181"/>
+<area shape="rect" id="node6" href="$bkpsram_8c.html" title="Driver for static backup RAM. " alt="" coords="232,155,315,181"/>
+</map>

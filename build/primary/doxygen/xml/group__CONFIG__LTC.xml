@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__LTC" kind="group">
+    <compoundname>CONFIG_LTC</compoundname>
+    <title>LTC User configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__LTC_1ga51919404be56d33812e837bcd6adc4b8" prot="public" static="no">
+        <name>SLAVE_BOARD_VERSION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to 1 LTC driver is configured to use foxBMS slave boards version 1.x If set to 2 LTC driver is configured to use foxBMS slave boards version 2.x </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/ltc_cfg.h" line="50" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/ltc_cfg.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration settings for LTC battery monitoring chip driver. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

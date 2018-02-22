@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__MOVING__MEAN__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_MOVING_MEAN_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a004ad0657a84c261b4de6cb23a65e271" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_current_1s</definition>
+        <argsstring></argsstring>
+        <name>movMean_current_1s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current moving mean over the last 1s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="390" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a3cfa2b80fc699d86e23cc74b3b2d3621" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_current_5s</definition>
+        <argsstring></argsstring>
+        <name>movMean_current_5s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current moving mean over the last 5s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="391" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a651bb97e82cfb13b311e7cc0a78f8274" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_current_10s</definition>
+        <argsstring></argsstring>
+        <name>movMean_current_10s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current moving mean over the last 10s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="392" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a3d14dc2d4ef9f9e6fa6fcf02d80148be" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_current_30s</definition>
+        <argsstring></argsstring>
+        <name>movMean_current_30s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current moving mean over the last 30s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="393" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a2373bea413e3595f798c7ec40adfcfd9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_current_60s</definition>
+        <argsstring></argsstring>
+        <name>movMean_current_60s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current moving mean over the last 60s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="394" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a69a32fbb0066b1e6b45d25f35e6ab113" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_current_config</definition>
+        <argsstring></argsstring>
+        <name>movMean_current_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current moving mean over the last configured time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="395" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a38e378f93345a0883235e2232ffc16af" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_power_1s</definition>
+        <argsstring></argsstring>
+        <name>movMean_power_1s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>power moving mean over the last 1s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="396" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1af5dd5913f9d005ff0634e50ecbb20a49" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_power_5s</definition>
+        <argsstring></argsstring>
+        <name>movMean_power_5s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>power moving mean over the last 5s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="397" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a3ba72f27d8f40e4ae42688c6dc4e761d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_power_10s</definition>
+        <argsstring></argsstring>
+        <name>movMean_power_10s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>power moving mean over the last 10s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="398" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1aea019c149f036f7d5cfe1c09102b1367" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_power_30s</definition>
+        <argsstring></argsstring>
+        <name>movMean_power_30s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>power moving mean over the last 30s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="399" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1ab2212879d64cfb9c6e148c16f33877ff" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_power_60s</definition>
+        <argsstring></argsstring>
+        <name>movMean_power_60s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>power moving mean over the last 60s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="400" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1aa3d3294bfedbb936e2b819f756abc3f6" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DATA_BLOCK_MOVING_MEAN_s::movMean_power_config</definition>
+        <argsstring></argsstring>
+        <name>movMean_power_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>power moving mean over the last configured time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="401" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a1c79ed4ddcf2d2d1f40e2590168d29f8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_MOVING_MEAN_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="402" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__MOVING__MEAN__s_1a603a7ba54c4deb7449e94903fc25d2a9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_MOVING_MEAN_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="403" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" line="389" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/database_cfg.h" bodystart="389" bodyend="404"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a651bb97e82cfb13b311e7cc0a78f8274" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_current_10s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a004ad0657a84c261b4de6cb23a65e271" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_current_1s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a3d14dc2d4ef9f9e6fa6fcf02d80148be" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_current_30s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a3cfa2b80fc699d86e23cc74b3b2d3621" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_current_5s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a2373bea413e3595f798c7ec40adfcfd9" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_current_60s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a69a32fbb0066b1e6b45d25f35e6ab113" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_current_config</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a3ba72f27d8f40e4ae42688c6dc4e761d" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_power_10s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a38e378f93345a0883235e2232ffc16af" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_power_1s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1aea019c149f036f7d5cfe1c09102b1367" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_power_30s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1af5dd5913f9d005ff0634e50ecbb20a49" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_power_5s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1ab2212879d64cfb9c6e148c16f33877ff" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_power_60s</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1aa3d3294bfedbb936e2b819f756abc3f6" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>movMean_power_config</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a603a7ba54c4deb7449e94903fc25d2a9" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__MOVING__MEAN__s_1a1c79ed4ddcf2d2d1f40e2590168d29f8" prot="public" virt="non-virtual"><scope>DATA_BLOCK_MOVING_MEAN_s</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['rcc_5fclkinitstruct',['RCC_ClkInitStruct',['../rcc__cfg_8c.html#aadea8a5f7f679414f2abe06e7a2d7ebe',1,'RCC_ClkInitStruct():&#160;rcc_cfg.c'],['../rcc__cfg_8h.html#aadea8a5f7f679414f2abe06e7a2d7ebe',1,'RCC_ClkInitStruct():&#160;rcc_cfg.c']]],
+  ['rcc_5foscinitstruct',['RCC_OscInitStruct',['../rcc__cfg_8c.html#a578bac3b3db8897e7d353d5b56ad3577',1,'RCC_OscInitStruct():&#160;rcc_cfg.c'],['../rcc__cfg_8h.html#a578bac3b3db8897e7d353d5b56ad3577',1,'RCC_OscInitStruct():&#160;rcc_cfg.c']]],
+  ['rdpoi_5frxbuf',['rdpoi_rxbuf',['../uart_8c.html#acd7e8281720586d294888d0a235a2233',1,'uart.c']]],
+  ['rdpoi_5ftxbuf',['rdpoi_txbuf',['../uart_8c.html#a20501e8a7cbb795759e2f047e3ae30f3',1,'uart.c']]],
+  ['rdptr',['RDptr',['../structDATA__BLOCK__ACCESS__s.html#abbba39d578864435d50df35472492728',1,'DATA_BLOCK_ACCESS_s']]],
+  ['readarray',['readArray',['../intermcu_8c.html#a0fd059dd8ed6b78672330c98b245b4db',1,'readArray():&#160;intermcu.c'],['../intermcu_8h.html#a0fd059dd8ed6b78672330c98b245b4db',1,'readArray():&#160;intermcu.c']]],
+  ['readeeprom',['readEEPROM',['../structLTC__CONFIG__s.html#a52e08a4c201d236737906d7dbc95740a',1,'LTC_CONFIG_s']]],
+  ['repetition_5fphase',['repetition_phase',['../structCAN__MSG__TX__TYPE__s.html#a95cd1d14ed1b4410ca876fa1a02e54f7',1,'CAN_MSG_TX_TYPE_s']]],
+  ['repetition_5ftime',['repetition_time',['../structCAN__MSG__TX__TYPE__s.html#a3a839cbdc2ef5128245ffb40533f0e74',1,'CAN_MSG_TX_TYPE_s']]],
+  ['request',['request',['../structDATA__BLOCK__BALANCING__CONTROL__s.html#ab913efbcb804bf4b348e16180e8cd245',1,'DATA_BLOCK_BALANCING_CONTROL_s']]],
+  ['reserved',['reserved',['../structDIAG__CONTACTOR__s.html#ab46ed06f760c17889dc88175627f9dba',1,'DIAG_CONTACTOR_s::reserved()'],['../structBKPSRAM__OPERATING__HOURS__s.html#ac650583a898ce9da1ed91bf13d064ef6',1,'BKPSRAM_OPERATING_HOURS_s::reserved()']]],
+  ['resetcounter',['resetcounter',['../structMAIN__STATUS__s.html#a19f4ac15d06c8305cf518f82dea466c1',1,'MAIN_STATUS_s']]],
+  ['resetsource',['resetsource',['../structMAIN__STATUS__s.html#a90204a528b8a0ffc79f6f03af729ac74',1,'MAIN_STATUS_s']]],
+  ['resetstatus',['resetstatus',['../structCHK__STATUS__s.html#a6521dc94e6294796d78c2c39350b26c3',1,'CHK_STATUS_s']]],
+  ['resistance',['resistance',['../structDATA__BLOCK__ISOMETER__s.html#a21466ab3046820a04e41afb9cd1b7ef2',1,'DATA_BLOCK_ISOMETER_s']]],
+  ['reusagemeasurementmode',['reusageMeasurementMode',['../structLTC__STATE__s.html#a90ab6da38205ec5225c5eda513fff0ec',1,'LTC_STATE_s']]],
+  ['rtc_5fcfg',['rtc_cfg',['../rtc__cfg_8c.html#af1e1ed2455f20c8b28df081c674da995',1,'rtc_cfg():&#160;rtc_cfg.c'],['../rtc__cfg_8h.html#af1e1ed2455f20c8b28df081c674da995',1,'rtc_cfg():&#160;rtc_cfg.c']]],
+  ['rtr',['RTR',['../structCAN__MSG__RX__TYPE.html#ac5de244f09fc4a22cf7388ceb63c193e',1,'CAN_MSG_RX_TYPE::RTR()'],['../structCAN__RX__BUFFERELEMENT.html#ae27e8bffe6baf04dc0c60def9531380d',1,'CAN_RX_BUFFERELEMENT::RTR()']]],
+  ['rx',['Rx',['../unionCANS__messages__t.html#a3d4520d92092ef068affbfc7d0f7d589',1,'CANS_messages_t::Rx()'],['../unionCANS__signals__t.html#aa0f5cb946411ef90a0d77c6660624c22',1,'CANS_signals_t::Rx()']]],
+  ['rxbuf',['rxbuf',['../uart_8c.html#afc42bc53e6ddf077c65cebc4ae71a704',1,'uart.c']]]
+];

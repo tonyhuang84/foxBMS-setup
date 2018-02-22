@@ -1,0 +1,7 @@
+<map id="appltask.c" name="appltask.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="94,229,169,256"/>
+<area shape="rect" id="node5" href="$appltask_8h.html" title="Header for external functions of the application tasks. " alt="" coords="147,80,230,107"/>
+<area shape="rect" id="node7" href="$os_8h.html" title="Implementation of the tasks used by the system, headers. " alt="" coords="240,229,287,256"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,304,186,331"/>
+<area shape="rect" id="node6" href="$appltask__cfg_8h.html" title="Configuration for application tasks. " alt="" coords="135,155,242,181"/>
+</map>

@@ -1,0 +1,127 @@
+<map id="OS_TaskInit" name="OS_TaskInit">
+<area shape="rect" id="node2" href="$enginetask__cfg_8c.html#ac2f41a91ed525e3792d44b13baab99e3" title="creates queues, called before scheduler start " alt="" coords="147,501,287,528"/>
+<area shape="rect" id="node3" href="$enginetask__cfg_8c.html#ae356447f195edd7e3bdf2fc317f49e46" title="creates mutexes, called before scheduler start " alt="" coords="151,552,282,579"/>
+<area shape="rect" id="node4" href="$enginetask__cfg_8c.html#a2c6c4b8deea1c0fe0595434d8079d091" title="creates events, called before scheduler start " alt="" coords="153,603,280,629"/>
+<area shape="rect" id="node5" href="$enginetask__cfg_8c.html#adca639aff16795100f1976d22a1d099d" title="creates cyclic tasks, called before scheduler start " alt="" coords="155,704,278,731"/>
+<area shape="rect" id="node111" href="$appltask_8c.html#a6fa44ea750012fc37aa15130e9a60957" title="creates mutexes, called before scheduler start " alt="" coords="148,755,285,781"/>
+<area shape="rect" id="node112" href="$appltask_8c.html#a3ac355e656e45203b36403b94143dbdd" title="creates mutex, called before scheduler start " alt="" coords="150,805,283,832"/>
+<area shape="rect" id="node113" href="$appltask_8c.html#a850dd1b4a8624221ab29afb4ae0efa41" title="creates cyclic tasks, called before scheduler start " alt="" coords="351,489,481,516"/>
+<area shape="rect" id="node6" href="$os_8c.html#aa80555e4e2cc33cafc73e340ccf09a79" title="Database&#45;Task The task manages the data exchange with the database and must have a higher task priori..." alt="" coords="356,413,476,440"/>
+<area shape="rect" id="node27" href="$os_8c.html#a8f64fac71dfe371cc8b9ac6670519c59" title="cyclic 1ms&#45;Task, preemptive with TSK_Cyclic_10ms() and TSK_Cyclic_100ms(). " alt="" coords="342,1819,490,1845"/>
+<area shape="rect" id="node97" href="$os_8c.html#a48f7b4b1f01ae62f13ad77b21c51cfdb" title="cyclic 10ms&#45;Task, preemptive with TSK_Cyclic_1ms() and TSK_Cyclic_100ms(). " alt="" coords="339,755,493,781"/>
+<area shape="rect" id="node102" href="$os_8c.html#aadee9bc1893bd8fb3a99d60824786e60" title="cyclic 100ms&#45;Task, preemptive with TSK_Cyclic_1ms() and TSK_Cyclic_10ms(). " alt="" coords="335,653,497,680"/>
+<area shape="rect" id="node107" href="$os_8c.html#a760d60acd540f21162c90527bbf59a5e" title="cyclic and event driven handler. " alt="" coords="338,704,494,731"/>
+<area shape="rect" id="node109" href="$os_8c.html#a5b2888a2b67fa092c16c06cf12dbe44e" title="cyclic diagnosis task. " alt="" coords="347,2123,485,2149"/>
+<area shape="rect" id="node7" href="$os_8c.html#a9f0687e02ddc61f131d2c43d4270542f" title="reads non&#45;volatile memory and initializes the sys module " alt="" coords="579,273,689,300"/>
+<area shape="rect" id="node22" href="$database_8c.html#a1585d5c7665504898be0371c5c6295b9" title="trigger of database manager " alt="" coords="589,476,679,503"/>
+<area shape="rect" id="node26" href="$diag_8c.html#af5b8cf38b93979152c6d3d64c6340b03" title="overall system monitoring " alt="" coords="1322,501,1430,528"/>
+<area shape="rect" id="node8" href="$nvic_8c.html#a609f6efbe6a90d1908ae1e3f1a7096fa" title="Initializes and enables interrupts for usage after operating system has started. " alt="" coords="796,273,916,300"/>
+<area shape="rect" id="node9" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="1573,501,1677,528"/>
+<area shape="rect" id="node16" href="$sdram_8h.html#a9c4b12172af5ca9805ff6d8e68cbce6b" title="flexible memory controller (FMC) initialization for SDRAM " alt="" coords="809,324,903,351"/>
+<area shape="rect" id="node17" href="$can_8c.html#a0505a1f9b26b55293dc199f45e7bb0ec" title="Initializes CAN settings and message filtering. " alt="" coords="819,223,893,249"/>
+<area shape="rect" id="node15" href="$nvic_8c.html#abc0deed107f8b105a0f01d890128ac46" title="NVIC_InitEXTI" alt="" coords="1053,324,1155,351"/>
+<area shape="rect" id="node10" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="1777,501,1926,528"/>
+<area shape="rect" id="node11" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="1985,501,2108,528"/>
+<area shape="rect" id="node12" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="2157,451,2257,477"/>
+<area shape="rect" id="node13" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="2158,501,2257,528"/>
+<area shape="rect" id="node14" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="2156,552,2259,579"/>
+<area shape="rect" id="node18" href="$can_8c.html#a9d2ac075410a424726befa42b8c9d819" title="Initializes message filtering. " alt="" coords="1053,121,1155,148"/>
+<area shape="rect" id="node21" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="1058,577,1150,604"/>
+<area shape="rect" id="node19" href="$can_8c.html#a68dc0bb72e3070c318b5c7b0ca98892a" title="Returns the number of filters that have to be initialized. " alt="" coords="1279,121,1473,148"/>
+<area shape="rect" id="node20" href="$can_8c.html#a8975fdc25f90009f3de12e5446010eec" title="Returns the next index of wished filter ID setting in CAN_MSG_RX_TYPE_t can_RxMsgs[CAN_NUMBER_OF_RX_I..." alt="" coords="1318,172,1434,199"/>
+<area shape="rect" id="node23" href="$database_8c.html#a15d2ff576e5aa63eac01df9d81ff4c89" title="Initialization of database manager. " alt="" coords="816,527,896,553"/>
+<area shape="rect" id="node24" href="$diag_8c.html#a7970909aa22bb87427a96c694fbab0e4" title="DIAG_SysMonNotify has to be called in every function using the system monitoring. ..." alt="" coords="1305,831,1447,857"/>
+<area shape="rect" id="node25" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="1553,856,1698,883"/>
+<area shape="rect" id="node28" href="$enginetask_8c.html#a544d886c3c21cf2c0f967e9aa6f7856b" title="Initializes modules that were not initialized before scheduler start. " alt="" coords="1339,2012,1413,2039"/>
+<area shape="rect" id="node33" href="$os_8c.html#a2935ff9d27172624efdc5e36a5bb036c" title="increments the system timer os_timer " alt="" coords="575,1793,693,1820"/>
+<area shape="rect" id="node34" href="$enginetask_8c.html#a68a74af2a1db1cc404f7fe1ecbcb8963" title="Cyclic 1ms task for the LTC measurement. " alt="" coords="555,1844,713,1871"/>
+<area shape="rect" id="node29" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="1568,1599,1683,1625"/>
+<area shape="rect" id="node30" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="1548,1759,1703,1785"/>
+<area shape="rect" id="node31" href="$sys_8c.html#ac8cb702ac8a7ab08c2bbb0890e47613d" title="sets the current state request of the state variable sys_state. " alt="" coords="1548,2012,1703,2039"/>
+<area shape="rect" id="node32" href="$sys_8c.html#a22d27691ab700ab1cf9b360f01e8ae71" title="checks the state requests that are made. " alt="" coords="1765,2012,1937,2039"/>
+<area shape="rect" id="node35" href="$sys_8c.html#a8ee066ca68d286c5a4c1231a6e68bb11" title="trigger function for the SYS driver state machine. " alt="" coords="809,2807,903,2833"/>
+<area shape="rect" id="node49" href="$interlock_8c.html#ab36dc56ba7d336a15ad43fb17da83e62" title="trigger function for the ILCK driver state machine. " alt="" coords="1056,983,1152,1009"/>
+<area shape="rect" id="node56" href="$meas_8c.html#a19e07286226192e32f876733e9d83f6b" title="MEAS_Ctrl" alt="" coords="813,1819,899,1845"/>
+<area shape="rect" id="node57" href="$ltc_8c.html#accb6d35a38500c642797d2f7b32f44cb" title="trigger function for the LTC driver state machine. " alt="" coords="811,1869,901,1896"/>
+<area shape="rect" id="node36" href="$sys_8c.html#a5adfb527b70165a2abfa75a8a80aeace" title="re&#45;entrance check of SYS state machine trigger function " alt="" coords="1023,2959,1185,2985"/>
+<area shape="rect" id="node37" href="$sys_8c.html#a31083c2e05ac5fe029a1a81d54b5f853" title="transfers the current state request to the state machine. " alt="" coords="1013,3009,1195,3036"/>
+<area shape="rect" id="node38" href="$meas_8c.html#a55247d0978a7017843bdb63b1e1c0d3d" title="Makes the initialization request to the LTC state machine. " alt="" coords="1017,2756,1191,2783"/>
+<area shape="rect" id="node43" href="$interlock_8c.html#ab218c092199d1c3999262123352877fc" title="sets the current state request of the state variable ilck_state. " alt="" coords="1298,1337,1454,1364"/>
+<area shape="rect" id="node45" href="$interlock_8c.html#af3194f3e84a7a0a097d9c9c9f6b7330e" title="gets the current state. " alt="" coords="1049,3060,1159,3087"/>
+<area shape="rect" id="node46" href="$bms_8c.html#a40eb276efea852638c5ba83e53569ebc" title="sets the current state request of the state variable bms_state. " alt="" coords="1297,2768,1455,2795"/>
+<area shape="rect" id="node48" href="$bms_8c.html#afcd6e979c7502594e6807d322df11555" title="Returns the current state. " alt="" coords="1049,2908,1159,2935"/>
+<area shape="rect" id="node39" href="$ltc_8c.html#a39ab4baacdb3ae44540e0a69db165094" title="sets the current state request of the state variable ltc_state. " alt="" coords="1301,2717,1451,2744"/>
+<area shape="rect" id="node40" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="1548,2472,1703,2499"/>
+<area shape="rect" id="node41" href="$ltc_8c.html#a59d83a728308a82bca1b6b1e8c442fee" title="checks the state requests that are made. " alt="" coords="1541,2717,1709,2744"/>
+<area shape="rect" id="node42" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="1552,2420,1699,2447"/>
+<area shape="rect" id="node44" href="$interlock_8c.html#af8ab82bd5afbd9735095f98d783246ae" title="checks the state requests that are made. " alt="" coords="1539,1337,1712,1364"/>
+<area shape="rect" id="node47" href="$bms_8c.html#a619db2b25db4bb9b7f5f4564bf6291c9" title="checks the state requests that are made. " alt="" coords="1538,2768,1713,2795"/>
+<area shape="rect" id="node50" href="$interlock_8c.html#a9b1f8f9f507a3e70ba723232679194fb" title="re&#45;entrance check of ILCK state machine trigger function " alt="" coords="1295,1185,1457,1212"/>
+<area shape="rect" id="node51" href="$interlock_8c.html#a191f9311508869785aaf0cd1cd365efe" title="ILCK_CheckFeedback" alt="" coords="1301,1084,1451,1111"/>
+<area shape="rect" id="node55" href="$interlock_8c.html#ac704ecc1dd0b96d61ee0e1cb2d0236b0" title="transfers the current state request to the state machine. " alt="" coords="1285,1135,1467,1161"/>
+<area shape="rect" id="node52" href="$interlock_8c.html#adc35f46e21d1d77f5e4228c906e6590c" title="Reads the feedback pin of the interlock and returns its current value (ILCK_SWITCH_OFF/ILCK_SWITCH_ON..." alt="" coords="1533,983,1717,1009"/>
+<area shape="rect" id="node54" href="$interlock_8c.html#aaef14480a7f7e0c5cfc4223393dd14e7" title="Gets the latest value (TRUE, FALSE) the interlock was set to. " alt="" coords="1535,1084,1715,1111"/>
+<area shape="rect" id="node53" href="$io_8c.html#aa0f7f326f4e3dc599c3e47be410a460b" title="Returns the state of a pin. " alt="" coords="1806,856,1897,883"/>
+<area shape="rect" id="node58" href="$ltc_8c.html#a2c6b4e12d8e3060b3d80f3313ddda46b" title="re&#45;entrance check of LTC state machine trigger function " alt="" coords="1297,2367,1455,2393"/>
+<area shape="rect" id="node59" href="$spi_8c.html#a27af1ec96fd2cb03b6e6739372f8aac3" title="gets the SPI transmit status. " alt="" coords="1025,1996,1183,2023"/>
+<area shape="rect" id="node60" href="$ltc_8c.html#a6f6b3ee5f1e8846fb828c133a6d74dd9" title="transfers the current state request to the state machine. " alt="" coords="1287,2417,1465,2444"/>
+<area shape="rect" id="node61" href="$ltc_8c.html#aef45ef51def6b02fc2d181e0c6aa83b2" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain. " alt="" coords="1027,2604,1181,2631"/>
+<area shape="rect" id="node63" href="$ltc_8c.html#a831928414e85f075f460bbced71451bb" title="LTC_Init" alt="" coords="1069,2857,1139,2884"/>
+<area shape="rect" id="node65" href="$ltc_8c.html#a7ffc056e02aa5c1a9cc8b8ff72b4997a" title="in the database, initializes the fields related to the LTC drivers. " alt="" coords="1023,1945,1185,1972"/>
+<area shape="rect" id="node66" href="$ltc_8c.html#aed8c9c5eb02357fedae1785cf8983bc8" title="LTC_ResetErrorTable" alt="" coords="1031,1185,1177,1212"/>
+<area shape="rect" id="node67" href="$ltc_8c.html#adc70963f6820d9c14f0afedce4a122dd" title="tells the LTC daisy&#45;chain to start measuring the voltage on all cells. " alt="" coords="1003,1236,1205,1263"/>
+<area shape="rect" id="node68" href="$ltc_8c.html#ad4c74acddf900cb21a971ecbcb944556" title="brief missing " alt="" coords="1005,1287,1203,1313"/>
+<area shape="rect" id="node69" href="$spi_8c.html#ac76c884ebda9a3d04a2699ade7dfda9e" title="sets the SPI transmit status. " alt="" coords="1020,1337,1188,1364"/>
+<area shape="rect" id="node70" href="$ltc_8c.html#af9121f13ff04884f857f34e0ee3084db" title="send command to the LTC daisy&#45;chain and receives data from the LTC daisy&#45;chain. " alt="" coords="1070,1388,1138,1415"/>
+<area shape="rect" id="node71" href="$ltc_8c.html#aefda0ed9da9cc8af32aa714fab6b0c74" title="checks if the data received from the daisy&#45;chain is not corrupt. " alt="" coords="1035,2705,1173,2732"/>
+<area shape="rect" id="node72" href="$ltc_8c.html#ad97aed03adcf0b67fcac17d8764bc89e" title="saves the voltage values read from the LTC daisy&#45;chain. " alt="" coords="1013,1439,1195,1465"/>
+<area shape="rect" id="node73" href="$ltc_8c.html#a1e176daa5dc098f6790bdff53b72ebb6" title="stores the measured voltages in the database. " alt="" coords="1311,1708,1441,1735"/>
+<area shape="rect" id="node74" href="$ltc_8c.html#a15bdae5ce62a072ea3ae6032f6822bae" title="stores the measured temperatures and the measured multiplexer feedbacks in the database. " alt="" coords="1297,1860,1455,1887"/>
+<area shape="rect" id="node75" href="$ltc_8c.html#a612a43f8bc6c4b96b942f98277ba7be3" title="gets the measurement initialization status. " alt="" coords="1276,2469,1476,2510"/>
+<area shape="rect" id="node76" href="$ltc_8c.html#a45e69b4206dd5f2b49f9082e9afc745b" title="sets the measurement initialization status. " alt="" coords="1271,2651,1481,2693"/>
+<area shape="rect" id="node77" href="$ltc_8c.html#aa553cebf1019ba4ab514ae3eb72e54d5" title="sends data to the LTC daisy&#45;chain to configure multiplexer channels. " alt="" coords="1032,2351,1176,2377"/>
+<area shape="rect" id="node80" href="$ltc_8c.html#aeddca90bfa7aaacc34a21b9e7210f99f" title="sends 72 clock pulses to the LTC daisy&#45;chain. " alt="" coords="1052,1489,1156,1516"/>
+<area shape="rect" id="node81" href="$ltc_8c.html#a5238af0e752622caaf85ade0ab8baf67" title="checks if the multiplexers acknowledged transmission. " alt="" coords="1037,1540,1171,1567"/>
+<area shape="rect" id="node82" href="$ltc_8c.html#a4b784c9bc145d7b0c2952c058d4cde29" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS. " alt="" coords="1009,1844,1199,1871"/>
+<area shape="rect" id="node83" href="$ltc_8c.html#a293789a68e3df9f7df3b120797c025e8" title="saves the multiplexer values read from the LTC daisy&#45;chain. " alt="" coords="1012,2553,1196,2580"/>
+<area shape="rect" id="node85" href="$ltc_8c.html#a1db8f25aca89b81082539d3ce03baddb" title="LTC_BalanceControl" alt="" coords="1034,2148,1174,2175"/>
+<area shape="rect" id="node87" href="$ltc_8c.html#a0e1a3257f4f6a301717afb391595862e" title="stores the measured balancing feedback values in the database. " alt="" coords="1279,1388,1473,1415"/>
+<area shape="rect" id="node88" href="$ltc_8c.html#ae24f0e85147a23d424c575f05f996381" title="sends data to the LTC daisy&#45;chain to communicate via I2C " alt="" coords="1017,2249,1191,2276"/>
+<area shape="rect" id="node89" href="$ltc_8c.html#aae58ad1c5cb56f73b4b9f50d062b0882" title="saves the temperature value of the external temperature sensors read from the LTC daisy&#45;chain..." alt="" coords="1289,1759,1463,1785"/>
+<area shape="rect" id="node90" href="$ltc_8c.html#a75c802eebfcfabe90c48d2f09ba309d8" title="sends data to the LTC daisy&#45;chain to control the user port expander " alt="" coords="1029,2047,1179,2073"/>
+<area shape="rect" id="node91" href="$ltc_8c.html#a592c47f6c14e3c5a71f0b616cceee2ab" title="saves the received values of the external port expander read from the LTC daisy&#45;chain. " alt="" coords="1277,1809,1475,1836"/>
+<area shape="rect" id="node92" href="$ltc_8c.html#ad110d8c75a4a1422ab2892c3c228180b" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves. " alt="" coords="990,2097,1218,2124"/>
+<area shape="rect" id="node94" href="$ltc_8c.html#a3a248cdd60ec26b2cafc4da530f9f056" title="saves the read values of the external EEPROMs read from the LTC daisy&#45;chain. " alt="" coords="1276,1657,1476,1684"/>
+<area shape="rect" id="node95" href="$ltc_8c.html#a56b63c25a2375a1d29897c173dd160a8" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves. " alt="" coords="989,2199,1219,2225"/>
+<area shape="rect" id="node62" href="$ltc_8c.html#a5e8c752a082dd60f5291b2851ce3ac6a" title="gets the frequency of the SPI clock. " alt="" coords="1313,2600,1439,2627"/>
+<area shape="rect" id="node64" href="$ltc__pec_8c.html#ae9dad9a8929c02631ba7e5d5c3b3d5a6" title="calaculates and returns the CRC15 " alt="" coords="1566,2819,1685,2845"/>
+<area shape="rect" id="node78" href="$ltc_8c.html#ad6964d802efa9eac1ee91f5b8414ad2f" title="configures the data that will be sent to the LTC daisy&#45;chain to configure multiplexer channels..." alt="" coords="1289,2316,1463,2343"/>
+<area shape="rect" id="node79" href="$ltc_8c.html#a66092dc4eb5b34b11d37701763836c41" title="sends command and data to the LTC daisy&#45;chain. " alt="" coords="1343,2249,1409,2276"/>
+<area shape="rect" id="node84" href="$ltc_8c.html#a982449c1ffca81cf00d7cbf725042865" title="converts a raw voltage from multiplexer to a temperature value in Celsius. " alt="" coords="1287,2534,1465,2575"/>
+<area shape="rect" id="node86" href="$ltc_8c.html#a5cd457b3c7e33f5a34fe27d1e2fbd598" title="gets the balancing orders from the database. " alt="" coords="1287,1591,1465,1633"/>
+<area shape="rect" id="node93" href="$ltc_8c.html#af00f29f2d7043b1db3c22730042b26ef" title="configures the data that will be sent to the LTC daisy&#45;chain to read EEPROM on slaves. " alt="" coords="1267,1489,1485,1516"/>
+<area shape="rect" id="node96" href="$ltc_8c.html#ae727a8ed25c6c8e881e7072f667810fb" title="configures the data that will be sent to the LTC daisy&#45;chain to write EEPROM on slaves. " alt="" coords="1267,1961,1485,1988"/>
+<area shape="rect" id="node98" href="$enginetask_8c.html#af6d38da27fba7f2fcaf23578f3d8c9c3" title="Task for system&#45; and bmscontrol and SOX algorithms. " alt="" coords="552,755,716,781"/>
+<area shape="rect" id="node99" href="$led_8c.html#abfc5f852a22844ea0501fad65ed890b7" title="controls the debug LED blinking frequency " alt="" coords="819,628,893,655"/>
+<area shape="rect" id="node101" href="$wdg_8c.html#a945085e57bde99f27c7ecea1c1ec5714" title="refreshes independent watchdog " alt="" coords="783,755,929,781"/>
+<area shape="rect" id="node100" href="$io_8c.html#a329d86cd8f053a55229fc51b6f722546" title="Toggles the state of a pin. " alt="" coords="1055,628,1153,655"/>
+<area shape="rect" id="node103" href="$enginetask_8c.html#a9bf9dee43edcffc12cd87e375e81557a" title="Task for ADC control, balancing control and isolation measurement. " alt="" coords="771,679,941,705"/>
+<area shape="rect" id="node104" href="$adc__ex_8c.html#ae0b9ae6e4ef2dbf771dcc0ea30901ae2" title="determines which kind of measurements are made by the ADCs and stores result in database. " alt="" coords="1066,1084,1142,1111"/>
+<area shape="rect" id="node106" href="$intermcu_8c.html#a02de281de6d8bfac7a9ecf10291778c3" title="Sends one byte via the internal SPI bus connecting both the main MCU and the Safety MCU..." alt="" coords="1051,679,1157,705"/>
+<area shape="rect" id="node105" href="$adc_8c.html#ac74830e9563841944251e6e8c80493d7" title="ADC_Convert" alt="" coords="1327,1287,1425,1313"/>
+<area shape="rect" id="node108" href="$enginetask_8c.html#ab7d4e17991d9361ec23be9d8a16fd8cb" title="Engine Task for handling of events. " alt="" coords="551,704,717,731"/>
+<area shape="rect" id="node110" href="$enginetask_8c.html#a7a2724820b8c6b953d931ef1bb91a7f1" title="Engine Task for diagnosis. " alt="" coords="561,2351,707,2377"/>
+<area shape="rect" id="node114" href="$appltask_8c.html#acae1fd17d7a966f3602cee953ffd3f1b" title="1ms application task " alt="" coords="553,552,715,579"/>
+<area shape="rect" id="node123" href="$appltask_8c.html#a8caa560b3331b3bd9e7c7e07aa1ebf49" title="10ms application task " alt="" coords="549,425,719,452"/>
+<area shape="rect" id="node125" href="$appltask_8c.html#a44ac8a5f23f02c4668369211b2a0a3ae" title="100ms application task " alt="" coords="545,375,723,401"/>
+<area shape="rect" id="node115" href="$group__API__OS.html#ga8eb09b5db377541ef4be8c4345de706f" title="user application task 1 milliseconds " alt="" coords="791,577,921,604"/>
+<area shape="rect" id="node116" href="$bms_8c.html#a954a05b20669dc00663c4f0f2a729fcd" title="trigger function for the SYS driver state machine. " alt="" coords="1055,1033,1153,1060"/>
+<area shape="rect" id="node117" href="$bms_8c.html#aa72909416e548055c772878fcc840f41" title="checks the abidance by the safe operating area " alt="" coords="1303,1033,1449,1060"/>
+<area shape="rect" id="node118" href="$bms_8c.html#a56066efe7af5b7bb9f088caf609acf91" title="checks the abidance by the safe operating area " alt="" coords="1289,932,1463,959"/>
+<area shape="rect" id="node119" href="$bms_8c.html#a86ad335dbd339b3aa926f11f4996ea4d" title="checks the abidance by the safe operating area " alt="" coords="1307,983,1445,1009"/>
+<area shape="rect" id="node120" href="$bms_8c.html#ad5057f08e33ca2d5b01dba9ca55b113b" title="re&#45;entrance check of SYS state machine trigger function " alt="" coords="1295,2199,1457,2225"/>
+<area shape="rect" id="node121" href="$bms_8c.html#adac85d9bf1b7fd02d1a0efbd2c222391" title="transfers the current state request to the state machine. " alt="" coords="1285,2148,1467,2175"/>
+<area shape="rect" id="node122" href="$bms_8c.html#a68ed3a2764fdf9c37992f06e54632b56" title="Checks the errorflags. " alt="" coords="1281,1236,1471,1263"/>
+<area shape="rect" id="node124" href="$group__API__OS.html#gaa93963e368289a593eba35a466035972" title="user application task 10 milliseconds " alt="" coords="787,425,925,452"/>
+<area shape="rect" id="node126" href="$group__API__OS.html#ga884d49f7d9a6623d692558571a0a4277" title="user application task 100 milliseconds " alt="" coords="783,375,929,401"/>
+</map>

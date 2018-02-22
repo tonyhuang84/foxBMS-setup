@@ -1,0 +1,518 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.7. CAN &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../../index.html"/>
+        <link rel="up" title="4. Software Modules" href="../modules.html"/>
+        <link rel="next" title="4.8. CAN Signal" href="../cansignal/cansignal.html"/>
+        <link rel="prev" title="4.6. Diagnosis" href="../diag/diag.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bms/bms.html">4.1. BMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys/sys.html">4.2. System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.3. IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.4. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.5. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../diag/diag.html">4.6. Diagnosis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.7. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cansignal/cansignal.html">4.8. CAN Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ltc/ltc.html">4.9. LTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../balancing/balancing.html">4.10. Balancing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nvm/nvm.html">4.11. NVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../com/com.html">4.12. COM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/uart.html">4.13. UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chksum/chksum.html">4.14. Checksum Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sox/sox.html">4.15. SOX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../isoguard/isoguard.html">4.16. Isoguard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../modules.html">4. Software Modules</a> &raquo;</li>
+        
+      <li>4.7. CAN</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/software_documentation/modules/can/can.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="can">
+<h1>4.7. CAN<a class="headerlink" href="#can" title="Permalink to this headline">¶</a></h1>
+<p>The driver interfaces the CAN networks and supports the CAN protocols version 2.0A and B. It has been designed to manage incoming messages and transmit messages with the help of message buffers. It is highly customizable and works efficiently with a high number of messages and minimum CPU load.</p>
+<div class="section" id="module-files">
+<h2>4.7.1. Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Driver:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\can\can.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\can\can.c</span></code></li>
+</ul>
+</dd>
+<dt>Driver Configuration:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\can_cfg.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\can_cfg.c</span></code></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dependencies">
+<h2>4.7.2. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>CPU:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\mcu\mcu.h</span></code></li>
+</ul>
+</dd>
+<dt>OS:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">src\os\os.h</span></code></li>
+</ul>
+</dd>
+</dl>
+<p>Other dependencies can arise from callback functions in configuration of <code class="docutils literal"><span class="pre">can</span></code> module.</p>
+</div>
+<div class="section" id="detailed-description-of-the-mod-can">
+<h2>4.7.3. Detailed Description of the <code class="docutils literal"><span class="pre">can</span></code> module<a class="headerlink" href="#detailed-description-of-the-mod-can" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="main-features">
+<h3>4.7.3.1. Main Features<a class="headerlink" href="#main-features" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Two CAN nodes (CAN0 and CAN1)</li>
+<li>CAN protocol version 2.0A, B active</li>
+<li>Bit rates up to 1Mbit/s</li>
+</ul>
+</div></blockquote>
+<p>Transmission:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Configurable transmit priority</li>
+<li>Configurable transmit message buffer</li>
+<li>Possible bypassing of transmit message buffer</li>
+<li>Periodic message transmitting</li>
+</ul>
+</div></blockquote>
+<p>Reception:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Identifier list and mask mode featured</li>
+<li>Configurable software receive message buffer</li>
+<li>Possible bypassing of receive message buffer</li>
+</ul>
+</div></blockquote>
+<p>For a detailed overview of the CAN peripheral see source <a class="footnote-reference" href="#id3" id="id1">[1]</a>.</p>
+</div>
+<div class="section" id="file-structure-and-interfaces">
+<h3>4.7.3.2. File Structure and Interfaces<a class="headerlink" href="#file-structure-and-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">can</span></code> module is a one-file module with one-file configuration:
+The module itself consists of one <code class="docutils literal"><span class="pre">can.c</span></code> and its associated <code class="docutils literal"><span class="pre">can.h</span></code> file.
+The configuration is given in <code class="docutils literal"><span class="pre">can_cfg.c</span></code> and its related <code class="docutils literal"><span class="pre">can_cfg.h</span></code> file.</p>
+<p>The external interface to the can module is easy and consists of seven functions and is viewable in <a class="reference internal" href="#can-figure1"><span class="std std-numref">fig. 4.33</span></a>.</p>
+<div class="figure" id="id4">
+<span id="can-figure1"></span><a class="reference internal image-reference" href="../../../_images/can_interface.png"><img alt="../../../_images/can_interface.png" src="../../../_images/can_interface.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.33 </span><span class="caption-text">External CAN Driver interface</span></p>
+</div>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">CAN_Init(void)</span></code></dt>
+<dd>Initializes CAN settings and message filtering</dd>
+<dt><code class="docutils literal"><span class="pre">CAN_TxMsg(CAN_NodeTypeDef_e</span> <span class="pre">canNode,</span> <span class="pre">uint32_t</span> <span class="pre">msgID,</span> <span class="pre">uint8_t*</span> <span class="pre">ptrMsgData,</span> <span class="pre">...</span> <span class="pre">)</span></code></dt>
+<dd>Transmits message directly on the CAN bus</dd>
+<dt><code class="docutils literal"><span class="pre">CAN_Send(CAN_NodeTypeDef_e</span> <span class="pre">canNode,</span> <span class="pre">uint32_t</span> <span class="pre">msgID,</span> <span class="pre">uint8_t*</span> <span class="pre">ptrMsgData,</span> <span class="pre">...</span> <span class="pre">)</span></code></dt>
+<dd>Adds message to transmit buffer</dd>
+<dt><code class="docutils literal"><span class="pre">CAN_TxMsgBuffer(CAN_NodeTypeDef_e</span> <span class="pre">canNode)</span></code></dt>
+<dd>Transmits a CAN message from transmit buffer</dd>
+<dt><code class="docutils literal"><span class="pre">CAN_ReceiveBuffer(CAN_NodeTypeDef_e</span> <span class="pre">canNode,</span> <span class="pre">Can_PduType*</span> <span class="pre">msg)</span></code></dt>
+<dd>Reads a CAN message from RxBuffer</dd>
+<dt><code class="docutils literal"><span class="pre">CAN_SetSleepMode(CAN_NodeTypeDef_e</span> <span class="pre">canNode)</span></code></dt>
+<dd>Set CAN node to sleep mode</dd>
+<dt><code class="docutils literal"><span class="pre">CAN_WakeUp(CAN_NodeTypeDef_e</span> <span class="pre">canNode)</span></code></dt>
+<dd>Wake CAN node up from sleep mode</dd>
+</dl>
+</div>
+<div class="section" id="data-control-flow">
+<h3>4.7.3.3. Data/Control Flow<a class="headerlink" href="#data-control-flow" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Transmission</dt>
+<dd>There are two different possibilities to transmit a message on the CAN bus. Both possibilities are equally correct and transmit the messages via interrupts. The first possibility is to transmit the message directly through the <code class="docutils literal"><span class="pre">CAN_TxMsg</span></code> function. The second possibility is to add the message first with a call of <code class="docutils literal"><span class="pre">CAN_Send</span></code> to the message transmit buffer and then later transmit it with the <code class="docutils literal"><span class="pre">CAN_TxMsgBuffer</span></code> function from the buffer on the CAN bus.</dd>
+<dt>Reception</dt>
+<dd>After a successful reception a messages is either stored in the transmit message buffer or it bypasses the buffer and is directly interpreted during the ISR via callback functions. The buffered messages can be accessed through the <code class="docutils literal"><span class="pre">CAN_ReceiveBuffer</span></code> function.</dd>
+</dl>
+<p>A detailed overview over how the CAN driver software interacts with the hardware is shown in the following flow chart in <a class="reference internal" href="#can-figure2"><span class="std std-numref">fig. 4.34</span></a>.</p>
+<div class="figure" id="id5">
+<span id="can-figure2"></span><a class="reference internal image-reference" href="../../../_images/can_flowchart.png"><img alt="../../../_images/can_flowchart.png" src="../../../_images/can_flowchart.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.34 </span><span class="caption-text">CAN flow chart of the interaction between hardware and software</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>4.7.4. Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>The activation of CAN0 and CAN1 is set in the <code class="docutils literal"><span class="pre">can_cfg.h</span></code> file. Additionally are in this file the message buffer options and the message reception options to be configured.</p>
+<p>The <code class="docutils literal"><span class="pre">can_cfg.c</span></code> file is responsible for the general CAN options (CAN bit-rate, sending behavior). The received messages are to be defined here.</p>
+<p>The interrupt priority of the CAN interrupts is set in the <code class="docutils literal"><span class="pre">nvic_cfg.c</span></code> file.</p>
+<div class="section" id="can-cfg-h">
+<h3>4.7.4.1. can_cfg.h<a class="headerlink" href="#can-cfg-h" title="Permalink to this headline">¶</a></h3>
+<p>The configurable options are</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span> <span class="cm">/* CAN bus baudrate */</span>
+ <span class="c1">//#define CAN_BAUDRATE 1000000</span>
+ <span class="cp">#define CAN_BAUDRATE 500000</span>
+ <span class="c1">//#define CAN_BAUDRATE 250000</span>
+ <span class="c1">//#define CAN_BAUDRATE 125000</span>
+
+ <span class="cm">/* CAN options */</span>
+ <span class="cp">#define CAN_USE_CAN_NODE0                1</span>
+
+ <span class="cm">/* transmit buffer */</span>
+ <span class="cp">#define CAN0_USE_TRANSMIT_BUFFER         1</span>
+ <span class="cp">#define CAN0_TRANSMIT_BUFFER_LENGTH      16</span>
+
+ <span class="cm">/* receive buffer */</span>
+ <span class="cp">#define CAN0_USE_RECEIVE_BUFFER          1</span>
+ <span class="cp">#define CAN0_RECEIVE_BUFFER_LENGTH       16</span>
+
+<span class="cm">/* Number of messages that will bypass the receive buffer and will be interpreted right</span>
+<span class="cm"> * on reception. Set the respective IDs and implement the wished functionality either in</span>
+<span class="cm"> * an individual callback function or in the default STD_RETURN_TYPE_e CAN_BufferBypass(...)</span>
+<span class="cm"> * function in the can.c file. Use bypassing only for important messages because of handling</span>
+<span class="cm"> * during ISR */</span>
+<span class="cp">#define CAN0_BUFFER_BYPASS_NUMBER_OF_IDs 1</span>
+</pre></div>
+</div>
+<p>There are four predefined values for the CAN bus baud-rate and only one define must be enabled at the same time. If another baud-rate is wished, the time quants need to be calculated and then this option can be added in the configuration. If the define <code class="docutils literal"><span class="pre">CAN_USE_CAN_NODE1</span></code> is disabled (i.e., set to zero), all other options of the chosen CAN bus (i.e., CAN0 or CAN1) have no influence on the program execution.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The bypass possibility should be used carefully because the message interpreting is then done in the context of the corresponding ISR-Handler and can lead to a violation of the timing constraints. The recommended setting is to use both buffers and to bypass as little messages as possible.</p>
+</div>
+</div>
+<div class="section" id="can-cfg-c">
+<h3>4.7.4.2. can_cfg.c<a class="headerlink" href="#can-cfg-c" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">CAN_HandleTypeDef</span> <span class="pre">hcan</span></code> configures the CAN bus transfer settings. The default setting is a bit rate of 0.5MHz, automatic bus-off management, automatic wake-up mode, automatic retransition mode, locked receive FIFOs against overrun and an identifier driven transmission of messages. The bitrate is set through the prescaler and two bit segments (BS) and is calculated with the following formula:</p>
+<div class="math">
+\[bitrate = \frac{\frac{CAN\_CLK}{Prescaler}}{SyncSeg+BS1+BS1}\]</div>
+<p>With the STM32F429 this calculates to a default bitrate of:</p>
+<div class="math">
+\[bitrate = \frac{\frac{42MHz}{6}}{1+6+7} = 0.5MHz\]</div>
+<p>The periodic transmit messages are defined in the <code class="docutils literal"><span class="pre">const</span> <span class="pre">CAN_MSG_TX_TYPE_s</span> <span class="pre">can_CAN1_messages_tx[]</span></code> array structs:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">struct</span>  <span class="p">{</span>
+    <span class="kt">uint32_t</span> <span class="n">ID</span><span class="p">;</span>                    <span class="c1">//!&lt; CAN message id</span>
+    <span class="kt">uint8_t</span> <span class="n">DLC</span><span class="p">;</span>                    <span class="c1">//!&lt; CAN message data length code</span>
+    <span class="kt">uint32_t</span> <span class="n">repetition_time</span><span class="p">;</span>       <span class="c1">//!&lt; CAN message cycle time</span>
+    <span class="kt">uint32_t</span> <span class="n">repetition_phase</span><span class="p">;</span>      <span class="c1">//!&lt; CAN message startup (first send) offset</span>
+    <span class="n">can_callback_funcPtr</span> <span class="n">cbk_func</span><span class="p">;</span> <span class="c1">//!&lt; CAN message callback after message is sent or received</span>
+<span class="p">}</span> <span class="n">CAN_MSG_TX_TYPE_s</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Messages that are transmitted asynchronous don’t need to be declared in this struct. Moreover the settings for message reception need to be set in the source file. The received messages are defined in the <code class="docutils literal"><span class="pre">CAN_MSG_RX_TYPE_s</span> <span class="pre">can_RxMsgs[CAN_NUMBER_OF_RX_IDs]</span></code> array structs:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">struct</span> <span class="n">CAN_MSG_RX_TYPE</span> <span class="p">{</span>
+    <span class="kt">uint32_t</span> <span class="n">ID</span><span class="p">;</span>    <span class="c1">// message ID</span>
+    <span class="kt">uint32_t</span> <span class="n">mask</span><span class="p">;</span>  <span class="c1">// mask or 0x0000 to select list mode</span>
+    <span class="kt">uint8_t</span> <span class="n">DLC</span><span class="p">;</span>    <span class="c1">// data length</span>
+    <span class="kt">uint8_t</span> <span class="n">RTR</span><span class="p">;</span>    <span class="c1">// RTR bit</span>
+    <span class="kt">uint8_t</span> <span class="n">fifo</span><span class="p">;</span>   <span class="c1">// selected CAN hardware (CAN_FIFO0 or CAN_FIFO1)</span>
+    <span class="n">STD_RETURN_TYPE_e</span> <span class="p">(</span><span class="o">*</span><span class="n">func</span><span class="p">)(</span><span class="kt">uint32_t</span> <span class="n">ID</span><span class="p">,</span> <span class="kt">uint8_t</span><span class="o">*</span><span class="p">,</span> <span class="kt">uint8_t</span><span class="p">,</span> <span class="kt">uint8_t</span><span class="p">);</span>    <span class="c1">// callback function</span>
+<span class="p">}</span> <span class="n">CAN_MSG_RX_TYPE_s</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Each message can get an individual callback function assigned to. If a message shall bypass the reception buffer and be interpreted right on reception, the message identifier needs to be additionally defined in the <code class="docutils literal"><span class="pre">can_bufferBypass_RxMsgs[]</span></code> array. The callback function of the bypassed message is then automatically called on reception of the message. If no callback function is defined (<code class="docutils literal"><span class="pre">NULL</span></code> in the callback parameter), then the default function <code class="docutils literal"><span class="pre">STD_RETURN_TYPE_e</span> <span class="pre">CAN_BufferBypass(...)</span></code> in the <code class="docutils literal"><span class="pre">can.c</span></code> file is called and the interpretation needs to be implemented there.</p>
+<p>More detailed information is provided in the comments in the source code and the STM32F429 microcontroller reference manual <a class="footnote-reference" href="#id3" id="id2">[1]</a>.</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>4.7.5. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>The following sections describe the usage of the CAN driver.</p>
+<div class="section" id="initialization">
+<h3>4.7.5.1. Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h3>
+<p>The calling hierarchy and the control/data flow of the initialization process is visible in <a class="reference internal" href="#can-figure3"><span class="std std-numref">fig. 4.35</span></a>. The user data input is made in the <code class="docutils literal"><span class="pre">can_cfg.c/h</span></code> files.</p>
+<div class="figure" id="id6">
+<span id="can-figure3"></span><a class="reference internal image-reference" href="../../../_images/can_initialization.png"><img alt="../../../_images/can_initialization.png" src="../../../_images/can_initialization.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.35 </span><span class="caption-text">CAN driver initialization calling hierarchy</span></p>
+</div>
+</div>
+<div class="section" id="send-messages">
+<h3>4.7.5.2. Send Messages<a class="headerlink" href="#send-messages" title="Permalink to this headline">¶</a></h3>
+<p>There are two different possibilities to transmit a message on the CAN bus. Both possibilities are equally correct and transmit the message via interrupt. The first possibility is to transmit the message directly with the <code class="docutils literal"><span class="pre">CAN_TxMsg(...)</span></code> function. The second possibility is to add the message first, with <code class="docutils literal"><span class="pre">CAN_Send(...)</span></code>, to the transmit buffer and then later transmit it buffer with the <code class="docutils literal"><span class="pre">CAN_TxMsgBuffer(...)</span></code> function on the CAN bus.</p>
+<p>The recommended transmission possibility via message buffer is visible in the following sequence diagram in <a class="reference internal" href="#can-figure4"><span class="std std-numref">fig. 4.36</span></a>:</p>
+<div class="figure" id="id7">
+<span id="can-figure4"></span><a class="reference internal image-reference" href="../../../_images/can_tx_sequence.png"><img alt="../../../_images/can_tx_sequence.png" src="../../../_images/can_tx_sequence.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.36 </span><span class="caption-text">CAN driver transmission sequence diagram with buffer usage</span></p>
+</div>
+</div>
+<div class="section" id="receive-messages">
+<h3>4.7.5.3. Receive Messages<a class="headerlink" href="#receive-messages" title="Permalink to this headline">¶</a></h3>
+<p>CAN messages are received after configuring the hardware filter banks. As mentioned above, the reception initialization is based on the receiving messages and generated automatically. After a successful reception the messages are either stored in the receive message buffer or corresponding to the configuration, they bypass the buffer and are directly interpreted. The bypassing is executed during the ISR and therefore, to avoid a violation of timing constraints, as little messages as possible should be bypassed. The buffered messages are interpreted asynchronous to their reception by the function <code class="docutils literal"><span class="pre">CAN_ReceiveBuffer(...)</span></code> from the application layer. If the receive buffer is disabled, then all messages are interpreted right on reception during the ISR.</p>
+<p>The interpreting mechanism is shown in the sequence diagram in <a class="reference internal" href="#can-figure5"><span class="std std-numref">fig. 4.37</span></a>.</p>
+<div class="figure" id="id8">
+<span id="can-figure5"></span><a class="reference internal image-reference" href="../../../_images/can_rx_sequence.png"><img alt="../../../_images/can_rx_sequence.png" src="../../../_images/can_rx_sequence.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.37 </span><span class="caption-text">CAN driver reception sequence diagram</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>4.7.6. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id2">2</a>)</em> Datasheet RM0090 [PDF] <a class="reference external" href="http://www.st.com/web/en/resource/technical/document/reference_manual/DM00031020.pdf">http://www.st.com/web/en/resource/technical/document/reference_manual/DM00031020.pdf</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../cansignal/cansignal.html" class="btn btn-neutral float-right" title="4.8. CAN Signal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../diag/diag.html" class="btn btn-neutral" title="4.6. Diagnosis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<map id="APPL_TSK_Cyclic_1ms" name="APPL_TSK_Cyclic_1ms">
+<area shape="rect" id="node2" href="$group__API__OS.html#ga8eb09b5db377541ef4be8c4345de706f" title="user application task 1 milliseconds " alt="" coords="216,259,347,285"/>
+<area shape="rect" id="node3" href="$diag_8c.html#a7970909aa22bb87427a96c694fbab0e4" title="DIAG_SysMonNotify has to be called in every function using the system monitoring. ..." alt="" coords="573,5,714,32"/>
+<area shape="rect" id="node5" href="$bms_8c.html#a954a05b20669dc00663c4f0f2a729fcd" title="trigger function for the SYS driver state machine. " alt="" coords="395,360,492,387"/>
+<area shape="rect" id="node4" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="812,5,957,32"/>
+<area shape="rect" id="node6" href="$bms_8c.html#aa72909416e548055c772878fcc840f41" title="checks the abidance by the safe operating area " alt="" coords="570,309,717,336"/>
+<area shape="rect" id="node7" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="827,360,942,387"/>
+<area shape="rect" id="node21" href="$bms_8c.html#a56066efe7af5b7bb9f088caf609acf91" title="checks the abidance by the safe operating area " alt="" coords="556,259,731,285"/>
+<area shape="rect" id="node23" href="$bms_8c.html#a86ad335dbd339b3aa926f11f4996ea4d" title="checks the abidance by the safe operating area " alt="" coords="575,208,712,235"/>
+<area shape="rect" id="node24" href="$bms_8c.html#ad5057f08e33ca2d5b01dba9ca55b113b" title="re&#45;entrance check of SYS state machine trigger function " alt="" coords="562,664,725,691"/>
+<area shape="rect" id="node27" href="$bms_8c.html#adac85d9bf1b7fd02d1a0efbd2c222391" title="transfers the current state request to the state machine. " alt="" coords="552,613,735,640"/>
+<area shape="rect" id="node28" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="807,512,962,539"/>
+<area shape="rect" id="node29" href="$bms_8c.html#a68ed3a2764fdf9c37992f06e54632b56" title="Checks the errorflags. " alt="" coords="548,512,739,539"/>
+<area shape="rect" id="node30" href="$bms_8c.html#af72477ca6db619f4d132d0e33c314e31" title="BMS_CheckCANRequests" alt="" coords="555,411,732,437"/>
+<area shape="rect" id="node31" href="$contactor_8c.html#ada308aa02debcd131b6be7cfdff748c2" title="sets the current state request of the state variable cont_state. " alt="" coords="562,715,725,741"/>
+<area shape="rect" id="node33" href="$interlock_8c.html#ab218c092199d1c3999262123352877fc" title="sets the current state request of the state variable ilck_state. " alt="" coords="565,765,721,792"/>
+<area shape="rect" id="node35" href="$bms_8c.html#a8b0aa08ac5895702955e07c15ad7687f" title="BMS_CheckBalancingRequests" alt="" coords="540,461,747,488"/>
+<area shape="rect" id="node36" href="$bal_8c.html#a1e9d7cabf5fbe4f033dc95ed554abd77" title="sets the current state request of the state variable bal_state. " alt="" coords="567,56,720,83"/>
+<area shape="rect" id="node38" href="$contactor_8c.html#ae67a61c958356a5fd0bf3e1b4763aaa1" title="gets the current state. " alt="" coords="585,107,701,133"/>
+<area shape="rect" id="node39" href="$interlock_8c.html#adc35f46e21d1d77f5e4228c906e6590c" title="Reads the feedback pin of the interlock and returns its current value (ILCK_SWITCH_OFF/ILCK_SWITCH_ON..." alt="" coords="551,157,735,184"/>
+<area shape="rect" id="node8" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="833,271,937,297"/>
+<area shape="rect" id="node9" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="1023,245,1172,272"/>
+<area shape="rect" id="node14" href="$diag_8c.html#a4206490ad03fe7468ab8dc56618e1b5b" title="DIAG_ContHandler provides generic contactor switching handling, based on configuration. " alt="" coords="1220,296,1351,323"/>
+<area shape="rect" id="node10" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="1224,245,1347,272"/>
+<area shape="rect" id="node11" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="1428,195,1528,221"/>
+<area shape="rect" id="node12" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="1429,245,1527,272"/>
+<area shape="rect" id="node13" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="1427,296,1529,323"/>
+<area shape="rect" id="node15" href="$bkpsram__cfg_8c.html#a94275ffeb6898188bf4ee07fd6272640" title="Gets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="1399,397,1557,424"/>
+<area shape="rect" id="node17" href="$bkpsram__cfg_8c.html#a55378df5e6e3e5d9e81c41a5238aa7ee" title="Sets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="1399,347,1557,373"/>
+<area shape="rect" id="node16" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="1605,397,1759,424"/>
+<area shape="rect" id="node18" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="1622,347,1742,373"/>
+<area shape="rect" id="node19" href="$eepr__cfg_8c.html#a62ad4bbac7d8b92d7481346b31cf187d" title="sets a dirty flag to indicate that the data of a channel have been changed " alt="" coords="1605,245,1759,272"/>
+<area shape="rect" id="node20" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="1621,296,1743,323"/>
+<area shape="rect" id="node22" href="$batterysystem__cfg_8c.html#aa06ea71be06dc7e07f5769ddd83e15d1" title="Checks current direction, current value as function parameter. " alt="" coords="805,205,964,246"/>
+<area shape="rect" id="node25" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="807,613,962,640"/>
+<area shape="rect" id="node26" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="811,664,958,691"/>
+<area shape="rect" id="node32" href="$contactor_8c.html#a2d058a2544cc6ec8f43566f21541404f" title="checks the state requests that are made. " alt="" coords="795,715,975,741"/>
+<area shape="rect" id="node34" href="$interlock_8c.html#af8ab82bd5afbd9735095f98d783246ae" title="checks the state requests that are made. " alt="" coords="798,765,971,792"/>
+<area shape="rect" id="node37" href="$bal_8c.html#ab7ab439bc4f7c3a35d992cbeec514424" title="checks the state requests that are made. " alt="" coords="799,56,970,83"/>
+<area shape="rect" id="node40" href="$io_8c.html#aa0f7f326f4e3dc599c3e47be410a460b" title="Returns the state of a pin. " alt="" coords="839,153,930,180"/>
+</map>

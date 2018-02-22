@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__SLAVE__CONTROL__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_SLAVE_CONTROL_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a901a7772786119450a2b136d80057001" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SLAVE_CONTROL_s::io_value_out[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>io_value_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data to be written to the port expander </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="199" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1af2a947fdf907432f94c125fa2c62d663" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SLAVE_CONTROL_s::io_value_in[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>io_value_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data read from to the port expander </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="200" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a3246003704589c652b8233f6db467e70" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SLAVE_CONTROL_s::eeprom_value_write[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>eeprom_value_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data to be written to the slave EEPROM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="201" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1ac5f62e343db8ffe65af3751f21767809" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SLAVE_CONTROL_s::eeprom_value_read[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>eeprom_value_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data read from to the slave EEPROM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="202" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1affcc2fa8ea1b48014d141538e6200003" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SLAVE_CONTROL_s::external_sensor_temperature[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>external_sensor_temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>temperature from the external sensor on slave </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="203" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a6c2b110ec6166b3fd2b12662cb98bc1f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SLAVE_CONTROL_s::eeprom_read_address_to_use</definition>
+        <argsstring></argsstring>
+        <name>eeprom_read_address_to_use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>address to read from for slave EEPROM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="204" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a4b5848e440a3c5df34f4f95e9a3fc2f5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SLAVE_CONTROL_s::eeprom_read_address_last_used</definition>
+        <argsstring></argsstring>
+        <name>eeprom_read_address_last_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last address used to read fromfor slave EEPROM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="205" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a02c12b9f3845b729fe870dd58e2f44f9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SLAVE_CONTROL_s::eeprom_write_address_to_use</definition>
+        <argsstring></argsstring>
+        <name>eeprom_write_address_to_use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>address to write to for slave EEPROM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="206" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a47957a1ac697e01199f01b29ff69307b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SLAVE_CONTROL_s::eeprom_write_address_last_used</definition>
+        <argsstring></argsstring>
+        <name>eeprom_write_address_last_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last address used to write to for slave EEPROM </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="207" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a306f6e117b1139cf3edbe5bd57257002" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SLAVE_CONTROL_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="208" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a340dca225c53066898d415b0a734bcad" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_SLAVE_CONTROL_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="209" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__SLAVE__CONTROL__s_1a37ccebe4568370649d7d16118b59cf02" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_SLAVE_CONTROL_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for future use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="210" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="198" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="198" bodyend="211"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a4b5848e440a3c5df34f4f95e9a3fc2f5" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>eeprom_read_address_last_used</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a6c2b110ec6166b3fd2b12662cb98bc1f" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>eeprom_read_address_to_use</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1ac5f62e343db8ffe65af3751f21767809" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>eeprom_value_read</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a3246003704589c652b8233f6db467e70" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>eeprom_value_write</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a47957a1ac697e01199f01b29ff69307b" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>eeprom_write_address_last_used</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a02c12b9f3845b729fe870dd58e2f44f9" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>eeprom_write_address_to_use</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1affcc2fa8ea1b48014d141538e6200003" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>external_sensor_temperature</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1af2a947fdf907432f94c125fa2c62d663" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>io_value_in</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a901a7772786119450a2b136d80057001" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>io_value_out</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a306f6e117b1139cf3edbe5bd57257002" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a37ccebe4568370649d7d16118b59cf02" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__SLAVE__CONTROL__s_1a340dca225c53066898d415b0a734bcad" prot="public" virt="non-virtual"><scope>DATA_BLOCK_SLAVE_CONTROL_s</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

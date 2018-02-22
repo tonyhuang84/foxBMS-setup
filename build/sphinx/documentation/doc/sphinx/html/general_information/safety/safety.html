@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Safety &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="6. Licenses" href="../licenses/licenses.html"/>
+        <link rel="prev" title="4. Motivation" href="../motivation/motivation.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>5. Safety</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/general_information/safety/safety.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="safety">
+<span id="general-information-safety"></span><h1>5. Safety<a class="headerlink" href="#safety" title="Permalink to this headline">¶</a></h1>
+<p>This document describes the hazard risk analysis and assessment done for the foxBMS platform. The content of this document must be read and understood before any tests are done with the foxBMS hardware. All physical quantities and units used in the document are SI based.</p>
+<div class="section" id="hazard-risk-analysis-and-assessment">
+<h2>5.1. Hazard Risk Analysis and Assessment<a class="headerlink" href="#hazard-risk-analysis-and-assessment" title="Permalink to this headline">¶</a></h2>
+<p>The risk analysis and assessment was last performed in May 2017. Following persons were involved:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Name</strong></th>
+<th class="head"><strong>Responsibility</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Vincent Lorentz</td>
+<td>Global project Management</td>
+</tr>
+<tr class="row-odd"><td>Stéphane Koffel</td>
+<td>Technical Project Management</td>
+</tr>
+<tr class="row-even"><td>Martin Wenger</td>
+<td>Hardware Development (BMS-Extension)</td>
+</tr>
+<tr class="row-odd"><td>Radu Schwarz</td>
+<td>Hardware Development (BMS-Master)</td>
+</tr>
+<tr class="row-even"><td>Sebastian Wacker</td>
+<td>Hardware Development (BMS-Slave)</td>
+</tr>
+<tr class="row-odd"><td>Stefan Waldhör</td>
+<td>Software Development</td>
+</tr>
+<tr class="row-even"><td>Müsfik Akdere</td>
+<td>Software Development</td>
+</tr>
+<tr class="row-odd"><td>Johannes Wachtler</td>
+<td>Validation and Tests</td>
+</tr>
+<tr class="row-even"><td>Markus Freund</td>
+<td>Moderation</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="general-description-of-the-foxbms-platform">
+<h2>5.2. General Description of the foxBMS Platform<a class="headerlink" href="#general-description-of-the-foxbms-platform" title="Permalink to this headline">¶</a></h2>
+<p>foxBMS is a research and development platform aimed to be used to develop battery management systems (BMS) for rechargeable energy storage systems based on lithium-ion batteries (LIB) or comparable electrochemical rechargeable accumulator cells (e.g., other chemistries like lithium-sulfur, sodium-ion or even all-solid-state batteries), lithium-ion capacitors (LIC), electric double-layer capacitors (EDLC or supercapacitors). The lithium-ion battery packs or battery modules are a major source of hazards and are not part of the foxBMS platform (see <a class="reference internal" href="#general-information-safety-battery-system"><span class="std std-numref">fig. 5.1</span></a>). The main purposes of the battery management system are charge monitoring and keeping the battery cells in their safe operating area to ensure optimal safety and the longest battery lifetime.</p>
+<div class="figure" id="id1">
+<span id="general-information-safety-battery-system"></span><a class="reference internal image-reference" href="../../_images/hw_system_overview.png"><img alt="../../_images/hw_system_overview.png" src="../../_images/hw_system_overview.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.1 </span><span class="caption-text">foxBMS in the battery system</span></p>
+</div>
+<p>For those tasks, the foxBMS platform is equipped with measurement and control circuits (i.e., BMS-Slave Boards) to monitor the battery cells and to get information about their states. With this, the cell voltages, temperatures and overall battery pack current are measured, and kept in the safe operating area. The battery charge equalization (i.e., balancing) is controlled and fed back to the foxBMS Master Unit. The setup of the system is shown in <a class="reference internal" href="#general-information-safety-battery-system-block-diagram"><span class="std std-numref">fig. 5.2</span></a>.</p>
+<div class="figure" id="id2">
+<span id="general-information-safety-battery-system-block-diagram"></span><a class="reference internal image-reference" href="../../_images/battery_system_block_diagram.png"><img alt="../../_images/battery_system_block_diagram.png" src="../../_images/battery_system_block_diagram.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Block diagram showing the typical topology of a battery system</span></p>
+</div>
+<p>The foxBMS platform uses a passive balancing circuit based on the LTC6804-1/LTC6811-1 multicell battery monitoring integrated circuit. The unique selling point of the foxBMS platform is its virtually unlimited possibilities to be adapted the needs of the user.</p>
+</div>
+<div class="section" id="limits-of-the-foxbms-platform">
+<h2>5.3. Limits of the foxBMS Platform<a class="headerlink" href="#limits-of-the-foxbms-platform" title="Permalink to this headline">¶</a></h2>
+<p>The foxBMS platform consists only of the foxBMS Master Unit with the foxBMS Slave Units and the provided computer software. It does not include battery cells, battery cell models, power contactors, current sensors, fuses, chargers, power supplies, ground fault detector.</p>
+<p>The foxBMS Master Unit and the foxBMS Slave Units have a primary and a secondary side which are separated and galvanically isolated from each other.</p>
+<p>The area of the use of foxBMS must be free of hazardous materials like flammable gases, combustible dust or ignitable dust and fibers. The temperature should be around 20°C and may not exceed the battery cells restrictions given by the battery cell manufacturer (e.g., around 45°C to 60°C, depending on the battery cell chemistry). The operating and storage environment needs to be dry and free of static electricity with air humidity between 35% and 55%.</p>
+<p>The lifetime of the electronics of foxBMS is supposed to be limited to three years since the target application is research and development. During this time, hardware and software updates and bug fixes are to be expected. Besides that, the research or work on the prototypes should be finished after three years.</p>
+<p>The interfaces of the foxBMS Master Unit are:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Connection</strong></th>
+<th class="head"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Supply Voltage DC</td>
+<td>12VDC-24VDC supply input</td>
+</tr>
+<tr class="row-odd"><td>Ground Fault Detector</td>
+<td>Connection for the insulation monitor to detect an error (Bender ISOMETER IR155-3203)</td>
+</tr>
+<tr class="row-even"><td>CAN0</td>
+<td>Galvanically isolated connection on foxBMS Master Unit for additional sensors (IVT-MOD-300)</td>
+</tr>
+<tr class="row-odd"><td>Primary USB</td>
+<td>Galvanically isolated USB connection to microcontroller on the primary side for flashing and communication</td>
+</tr>
+<tr class="row-even"><td>Contactors 0-8</td>
+<td>Power contactors between battery and the supplied load</td>
+</tr>
+<tr class="row-odd"><td>Interlock</td>
+<td>Galvanically isolated connection between the microcontrollers and connector control</td>
+</tr>
+<tr class="row-even"><td>Daisy Chain (Primary/Secondary)</td>
+<td>Connection for the next BMS-Slave Board in the battery system</td>
+</tr>
+<tr class="row-odd"><td>Secondary USB</td>
+<td>Galvanically isolated USB connection to microcontroller on the secondary side for flashing and communication</td>
+</tr>
+<tr class="row-even"><td>CAN1</td>
+<td>Galvanically isolated connection on BMS-Extension Board</td>
+</tr>
+<tr class="row-odd"><td>RS485</td>
+<td>Galvanically isolated RS485 interface as alternative for CAN or USB</td>
+</tr>
+<tr class="row-even"><td>Isolated GPIO</td>
+<td>Galvanically isolated general purpose IO for user specific needs</td>
+</tr>
+<tr class="row-odd"><td>Isolated NOC</td>
+<td>Galvanically isolated Normally Open Contact interface for any purpose left to the user</td>
+</tr>
+<tr class="row-even"><td>Analog Inputs</td>
+<td>Analog inputs for any purpose left to the user</td>
+</tr>
+<tr class="row-odd"><td>SD Card</td>
+<td>Data storage for the primary microcontroller</td>
+</tr>
+</tbody>
+</table>
+<p>The interfaces of the foxBMS Slave Unit are:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Connection</strong></th>
+<th class="head"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>12 Cells</td>
+<td>13 voltage sense connections for 12 cells</td>
+</tr>
+<tr class="row-odd"><td>8+16 Temperatures</td>
+<td>Temperature sensor connection (one for each cell)</td>
+</tr>
+<tr class="row-even"><td>4 Daisy Chains</td>
+<td>Primary and secondary daisy chain connections to the next and to the previous BMS-Slave Board</td>
+</tr>
+</tbody>
+</table>
+<p>The maximum amount of BMS-Slave units depends on the number of battery cells connected to the slaves and the voltage of each cell. The total voltage of the battery pack must never exceed 1500Vdc (continuous and peak). Battery types to be used with the system are lithium-ion batteries or comparable electrochemical rechargeable accumulator cells, lithium-ion capacitors or supercapacitors.</p>
+</div>
+<div class="section" id="targetted-users-of-foxbms">
+<h2>5.4. Targetted Users of foxBMS<a class="headerlink" href="#targetted-users-of-foxbms" title="Permalink to this headline">¶</a></h2>
+<p>The persons who use the foxBMS R&amp;D platform must be electrically skilled according to the IEC. They must also be educated in rechargeable batteries and have knowledge in electrochemistry. With the sum of battery cells exceeding 120VDC, these persons also need to be skilled in live working. It is not enough to be an electrically instructed person. Targeted users of the foxBMS R&amp;D platform are R&amp;D and test engineers working in a well-defined, safe and controlled environment, like a test bay or a test bench. Since these persons assemble the whole system by themselves, they are the only persons who can do the service and the maintenance. The R&amp;D and test engineers are both users and servicers.</p>
+<p>The foxBMS R&amp;D platform is not intended to be used by ordinary persons as they are not well and not enough educated in batteries, or in electrical subjects. This also includes students, handymen, and do-it-yourselfer or DYI enthusiasts who do not fulfil the above requirements.</p>
+</div>
+<div class="section" id="intended-use-of-foxbms">
+<h2>5.5. Intended Use of foxBMS<a class="headerlink" href="#intended-use-of-foxbms" title="Permalink to this headline">¶</a></h2>
+<p>The foxBMS R&amp;D platform is only for lithium-ion batteries or comparable energy storage systems. It is an evaluation kit intended only to professionals and to be used at research and development facilities for such purposes. It is designed for research, development and tests purposes to manage prototypes of lithium-ion-battery systems when developing new products.</p>
+</div>
+<div class="section" id="reasonably-foreseeable-misuse-of-foxbms">
+<h2>5.6. Reasonably Foreseeable Misuse of foxBMS<a class="headerlink" href="#reasonably-foreseeable-misuse-of-foxbms" title="Permalink to this headline">¶</a></h2>
+<p>The foxBMS R&amp;D platform is not intended to be used as a voltage monitoring system of any other electrical systems than battery systems build with battery cells providing a maximum single cell voltage of 5V.</p>
+</div>
+<div class="section" id="phases-throughout-the-system-lifecycle-of-foxbms">
+<h2>5.7. Phases Throughout the System Lifecycle of foxBMS<a class="headerlink" href="#phases-throughout-the-system-lifecycle-of-foxbms" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Development</li>
+<li>Manufacturing</li>
+<li>Packaging</li>
+<li>Transportation</li>
+<li>Assembling</li>
+<li>Initial operation</li>
+<li>Usage (operation)</li>
+<li>Maintenance</li>
+<li>Repair</li>
+<li>Further operation</li>
+<li>Shutting down</li>
+<li>Storage</li>
+<li>Disassembling</li>
+<li>Disposal</li>
+</ol>
+</div>
+<div class="section" id="hazard-zones-of-foxbms">
+<h2>5.8. Hazard Zones of foxBMS<a class="headerlink" href="#hazard-zones-of-foxbms" title="Permalink to this headline">¶</a></h2>
+<p>Only few hazard zones are obvious. One is the foxBMS and the other its environment with the battery system including bus bars, battery cells and other parts. Since the battery system is defined by the user, only a general consideration can be done.</p>
+</div>
+<div class="section" id="risk-assessment">
+<h2>5.9. Risk Assessment<a class="headerlink" href="#risk-assessment" title="Permalink to this headline">¶</a></h2>
+<p>Depending on the countries of the target application, there are different standards to regard. In the European Union, the applicable directives lead to different safety requirements. These have a variety of risk graphs for the risk assessment. Although they are only slightly different they are not adaptable to each other. Since the target country and use of foxBMS is unknown, the users of the system need to do a risk assessment on their own according to their concerns.</p>
+<p>Some European directives that can be relevant for the foxBMS users:</p>
+<ul class="simple">
+<li>General product safety</li>
+<li>Low voltage</li>
+<li>Machinery</li>
+<li>etc…</li>
+</ul>
+<p>Some example of safety standards that might fit the application of the foxBMS users:</p>
+<ul class="simple">
+<li>IEC 61508 (Functional Safety)</li>
+<li>ISO 25119 (Agriculture)</li>
+<li>ISO 26262 (Road Vehicles)</li>
+<li>EN 13849 (Machinery)</li>
+<li>EN 61511 (Process Industry)</li>
+<li>EN 50156 (Furnaces)</li>
+<li>etc…</li>
+</ul>
+<p>A list of standards that might fit to the target application can be found here:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.mpoweruk.com/standards.htm">http://www.mpoweruk.com/standards.htm</a></li>
+</ul>
+</div>
+<div class="section" id="standards">
+<h2>5.10. Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h2>
+<p>In order to use the foxBMS safely, at least the following standards or similar ones should be regarded:</p>
+<ul class="simple">
+<li>DIN VDE 0100-410 (IEC 60364-4-41)</li>
+<li>DIN VDE 0100-600 (IEC 60361-6)</li>
+<li>EN 60529</li>
+<li>EN 50272</li>
+<li>etc…</li>
+</ul>
+<p>Recommended readings:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.mpoweruk.com">http://www.mpoweruk.com</a></li>
+<li><a class="reference external" href="http://batteryuniversity.com">http://batteryuniversity.com</a></li>
+</ul>
+</div>
+<div class="section" id="safety-instructions-before-using-foxbms">
+<h2>5.11. Safety Instructions Before Using foxBMS<a class="headerlink" href="#safety-instructions-before-using-foxbms" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Risk of electric shock. You need to be an electrically skilled person in order to work with batteries and assemble battery systems. Regard IEC 60364-4-41, IEC 60364-6, IEC 60529 (DIN VDE 0100-410, DIN VDE 0100-600, VDE 0470-1).</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Risk of electric shock while assembling, repairing, maintaining, servicing or disassembling the battery system. You need skills in live working in order to work with the battery system and assemble it. Wear personal insulating protective equipment.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/w002_explosionsgefaehrliche_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w002_explosionsgefaehrliche_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w016_giftige_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w016_giftige_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w023_aetzende_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w023_aetzende_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w021_feuergefaehrliche_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w021_feuergefaehrliche_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Risk of fire, explosion and chemical hazards through the battery cells. You need to be a battery skilled person in order to work with the battery system and assemble it. Use safe cells with CID, PTC and OPD. Use the battery system in a confined area. Keep sand, water and fire extinguisher close to the system to fight fire. Regard local fire safety regulations.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/m008_fussschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m008_fussschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m010_schutzkleidung_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m010_schutzkleidung_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m013_gesichtsschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m013_gesichtsschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m014_kopfschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m014_kopfschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">With an electrical short, battery cells will heat up and explode. The short might create an electric arc and cause fire. Do not short-circuit battery cells or batteries. Always cover at least one terminal of the cell or battery and keep the poles away from each other. Watch out while working on the cells or batteries. Do not wear necklaces or jewelry to prevent shorts. Wear personal arc protective equipment (e.g., protection clothes, face protection, protection glasses, protection gloves). Keep other persons in a safe distance.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Battery cells and batteries expand and shrink through thermal differences and through charging and discharging during usage. If the battery cells are too tight and squeezed together, they can get damaged. The movement of the cells will loosen screws that might fall down and create an electrical shortage. A fire might start or other hazards can occur. Leave enough room between the cells and use locknuts.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Electric short and hazards through reversed polarity or wrong connection can occur. Be cautious and prevent battery cells and batteries from wrong connection.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/m004_augenschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m004_augenschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w023_aetzende_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w023_aetzende_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Electrolyte may cause irritation or intoxication and lead to death or threaten your health. Hydrofluoric acid (HF) or phosphane (PH<sub>3</sub>) might develop. Wear eye protection and gloves while working with electrolyte. Regard material safety datasheet (MSDS) from the battery cell manufacturer.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Old and new battery cells, different technologies or capacities of cells may vary very much in both voltage and current. This can lead to an overcurrent or overvoltage same as undervoltage and result in cell or battery damage with dramatic consequences. Do not use old cells or batteries with the system and do not mix cells or batteries of different chemistries or technologies. Change all cells of a battery at the same time. Do not mix cells within the battery. Use only one type of cell throughout the whole system.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/w016_giftige_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w016_giftige_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w021_feuergefaehrliche_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w021_feuergefaehrliche_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w028_brandfoerdernde_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w028_brandfoerdernde_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Developing gas from the battery cells or battery systems may cause fire. Use the battery cells and the battery system only in a good ventilated environment to ensure flammable and toxic gases will be removed in case of degassing of a battery cell.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Overvoltage or reverse polarity at the foxBMS Slave Units can cause an electrical short, fire and following hazards. Use fuses on each cell to prevent overcurrent through the electrical short. The foxBMS Slave Units can take a maximum amount of 12 cells with a voltage sum between 11V and 55V. Beware of the amount of cells and the cell voltage.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/m004_augenschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m004_augenschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w023_aetzende_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w023_aetzende_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Chemicals from the battery might threaten your health. Do not touch chemicals and wear chemical protective gloves and safety goggles. Regard material safety datasheet (MSDS) from the battery cell manufacturer.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">The soldering heat can damage safety parts of the cells or battery. Do not solder anything directly to the cells or battery. Follow the mounting instructions of the manufacturer.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Damaged batteries or cells can cause fire. Use flame retardant materials in your system and keep burnable materials away. Apply a temperature sensor to detect over temperature and keep a fire extinguisher close to the battery system. Do not use damaged cells or batteries.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Parallel cells with an electrical short can cause a large over current and over temperature that bring other hazards with them. Assemble breaking elements between parallel cells to avoid the short current.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Overvoltage or overcurrent through charging or discharging can lead to fire, leakage or explosion. Always use a proper charger for the cells and the batteries and avoid heavy loads and rapid charges and discharges. Remove fully charged battery packs from the charger.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/p008_metallteile_uhren_verboten.png"><img alt="alternate text" class="align-right" src="../../_images/p008_metallteile_uhren_verboten.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Risk of electric shock through an error in the insulation. Use a ground fault detector or an insulation monitor and regard IEC 60364-4-41 and IEC 60364-6 (DIN VDE 0100-410, DIN VDE 0100-600).</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/p008_metallteile_uhren_verboten.png"><img alt="alternate text" class="align-right" src="../../_images/p008_metallteile_uhren_verboten.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Risk of electric shock while working on live parts. Use only insulated tools while assembling, disassembling, maintaining, servicing or dismantling the battery system. Never open battery cells.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/p003_keine_offene_flamme.png"><img alt="alternate text" class="align-right" src="../../_images/p003_keine_offene_flamme.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Explosive or flammable environment around the battery cells or the battery system can start burning or explode. Do not use the battery system in an explosive environment.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<a class="reference internal image-reference" href="../../_images/m016_maske_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m016_maske_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m017_atemschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m017_atemschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Toxic fumes through evaporating electrolyte or other substances through an electrical short may lead to intoxication, chocking or breathing problems. Assemble and disassemble the system carefully and keep gas mask or breathing aid in close environment.</p>
+</div>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<a class="reference internal image-reference" href="../../_images/m008_fussschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m008_fussschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Heavy battery parts can fall on your feet and sharp edges might cut or hurt you. Use solid housing and add handles. Wear personal protective equipment, gloves, shoes and other clothes for working.</p>
+</div>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<a class="reference internal image-reference" href="../../_images/m003_gehoerschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m003_gehoerschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">An electric arc or exploding cell may cause loud noise. Wear ear plugs muffs with other personal protective equipment. Stay out and keep other persons out of the testing area.</p>
+</div>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Soldering material may cause irritation or intoxication and lead to death or threaten your health. Wear gloves while working with soldering materials and wash hands properly afterwards.</p>
+</div>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<a class="reference internal image-reference" href="../../_images/m001_allgemeines_gebotszeichen.png"><img alt="alternate text" class="align-right" src="../../_images/m001_allgemeines_gebotszeichen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Corrosive materials, humidity and gas can lead to corrosion of any part of the system. Failure of electrical or electronic parts especially safety responsible parts may lead to other hazards. Keep the battery system in a dry and clean environment and away from corrosive materials.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<a class="reference internal image-reference" href="../../_images/m004_augenschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m004_augenschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/m009_handschutz_benutzen.png"><img alt="alternate text" class="align-right" src="../../_images/m009_handschutz_benutzen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w023_aetzende_stoffe.png"><img alt="alternate text" class="align-right" src="../../_images/w023_aetzende_stoffe.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Damaged battery cells or batteries may leak electrolyte, especially when pouch battery cells are used and the pouch bag has been damaged. Put a basin underneath for dripping the electrolyte.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<a class="reference internal image-reference" href="../../_images/w026_gefahren_batterien.png"><img alt="alternate text" class="align-right" src="../../_images/w026_gefahren_batterien.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Undervoltage leads to a damaged cell or battery system. Prevent deep discharge. Never charge and use again battery cells or batteries after deep discharge has occurred.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<a class="reference internal image-reference" href="../../_images/m001_allgemeines_gebotszeichen.png"><img alt="alternate text" class="align-right" src="../../_images/m001_allgemeines_gebotszeichen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Cell or battery damage through too low or too high temperature during storage, transportation or usage. Always keep cells or batteries in their valid temperature range. Keep the cells and batteries out of the sun and use heating or cooling to keep the safe temperature range.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<a class="reference internal image-reference" href="../../_images/m001_allgemeines_gebotszeichen.png"><img alt="alternate text" class="align-right" src="../../_images/m001_allgemeines_gebotszeichen.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/p008_metallteile_uhren_verboten.png"><img alt="alternate text" class="align-right" src="../../_images/p008_metallteile_uhren_verboten.png" style="width: 75.0px; height: 75.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/w012_elektrische_spannung.png"><img alt="alternate text" class="align-right" src="../../_images/w012_elektrische_spannung.png" style="width: 75.0px; height: 75.0px;" /></a>
+<p class="last">Battery cells, battery systems, electrical and electronic parts must be stored and disposed properly.</p>
+</div>
+</div>
+<div class="section" id="measures-through-control-with-foxbms">
+<h2>5.12. Measures Through Control with foxBMS<a class="headerlink" href="#measures-through-control-with-foxbms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Detection of cells with over temperature and safe switch off or disconnect.</li>
+<li>Detection of cells with over voltage and safe shut off or disconnect.</li>
+<li>Detection of cells with deep discharge and safe shut off or disconnect charger.</li>
+<li>Detection of ground short (insulation error) with safe switch off or disconnect.</li>
+</ul>
+<p>The recommended structure for failure tolerant systems (1oo2) in EN 13849 is shown in <a class="reference internal" href="#general-information-safety-redundant-system"><span class="std std-numref">fig. 5.3</span></a>:</p>
+<div class="figure align-center" id="id3">
+<span id="general-information-safety-redundant-system"></span><a class="reference internal image-reference" href="../../_images/hw_safety_redundant_system.png"><img alt="../../_images/hw_safety_redundant_system.png" src="../../_images/hw_safety_redundant_system.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Recommended structure for failure tolerant systems (1oo2) in EN 13849</span></p>
+</div>
+<p>With this structure, there are requirements to the reliability of the used hardware. Refer to the standard used. The implemented safety systems might have a common cause failure. Refer to the required standard to check how to minimize this failure.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../licenses/licenses.html" class="btn btn-neutral float-right" title="6. Licenses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../motivation/motivation.html" class="btn btn-neutral" title="4. Motivation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

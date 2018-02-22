@@ -1,0 +1,1595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="diag__cfg_8h" kind="file" language="C++">
+    <compoundname>diag_cfg.h</compoundname>
+    <includes refid="batterysystem__cfg_8h" local="yes">batterysystem_cfg.h</includes>
+    <includes refid="diag__id__cfg_8h" local="yes">diag_id_cfg.h</includes>
+    <includes refid="rtc_8h" local="yes">rtc.h</includes>
+    <includedby refid="diag__cfg_8c" local="yes">diag_cfg.c</includedby>
+    <includedby refid="diag_8h" local="yes">diag.h</includedby>
+    <incdepgraph>
+      <node id="654">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="649">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>stdint.h</label>
+      </node>
+      <node id="644">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="653">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+      </node>
+      <node id="647">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="648">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="645">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+      </node>
+      <node id="652">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="650">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="660">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="670">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="668">
+        <label>bkpsram.c</label>
+        <link refid="bkpsram_8c"/>
+      </node>
+      <node id="667">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="663">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="669">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="662">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="659">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="674">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="673">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="666">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="665">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="671">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="664">
+        <label>nvic.c</label>
+        <link refid="nvic_8c"/>
+      </node>
+      <node id="657">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+      <node id="656">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="658">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="659" relation="include">
+        </childnode>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structDIAG__CODE__s" prot="public">DIAG_CODE_s</innerclass>
+    <innerclass refid="structDIAG__CH__CFG__s" prot="public">DIAG_CH_CFG_s</innerclass>
+    <innerclass refid="structDIAG__DEV__s" prot="public">DIAG_DEV_s</innerclass>
+    <innerclass refid="structDIAG__SYSMON__NOTIFICATION__s" prot="public">DIAG_SYSMON_NOTIFICATION_s</innerclass>
+    <innerclass refid="structDIAG__SYSMON__CH__CFG__s" prot="public">DIAG_SYSMON_CH_CFG_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="diag__cfg_8h_1a4503634cb6dfe35231db67f624f75c9c" prot="public" static="no">
+        <name>DIAG_DATA_IS_VALID</name>
+        <initializer><ref refid="rtc__cfg_8h_1a1d24f8a14bbad21848755603cf2266fe" kindref="member">RTC_BKPDIAG_DATAVALID_VARIABLE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="51" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a14c3e5fc93a347c94c72f8a7a71be8aa" prot="public" static="no">
+        <name>DIAG_ERROR_SENSITIVITY_HIGH</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="53" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aaa67d71fef3cdb444302157917e6517c" prot="public" static="no">
+        <name>DIAG_ERROR_SENSITIVITY_MID</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="54" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a86159137fc861488ffbba20f103ebb49" prot="public" static="no">
+        <name>DIAG_ERROR_SENSITIVITY_LOW</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="55" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1af1adff3b346fd6189ac765feb445e7d2" prot="public" static="no">
+        <name>DIAG_ERROR_VOLTAGE_SENSITIVITY</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="57" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ae62426b6f9196941c5ca1022185c5099" prot="public" static="no">
+        <name>DIAG_ERROR_TEMPERATURE_SENSITIVITY</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="58" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a1ea5309f52cd03b4033836f2ea368c46" prot="public" static="no">
+        <name>DIAG_ERROR_CURRENT_SENSITIVITY</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="59" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a93a47d4edf68f6f8a38e5a537f688a75" prot="public" static="no">
+        <name>DIAG_ERROR_LTC_PEC_SENSITIVITY</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="61" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a08de76371ea081b422a32c907f4db0cd" prot="public" static="no">
+        <name>DIAG_ERROR_LTC_MUX_SENSITIVITY</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="62" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aed304e246d0045e7909fae703d18ed43" prot="public" static="no">
+        <name>DIAG_ERROR_LTC_SPI_SENSITIVITY</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ac88d981cd7878dc5148119186453a541" prot="public" static="no">
+        <name>DIAG_ERROR_CAN_TIMING_SENSITIVITY</name>
+        <initializer>(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="65" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a74d144d6aaff6c6a38a9f643b460556b" prot="public" static="no">
+        <name>DIAG_ERROR_CAN_TIMING_CC_SENSITIVITY</name>
+        <initializer>(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="66" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a82634fba1e82ba651d59e5ea28c660b0" prot="public" static="no">
+        <name>DIAG_ERROR_CAN_SENSOR_SENSITIVITY</name>
+        <initializer>(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="67" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a4f23d607fab34124b666ac492aeb36f8" prot="public" static="no">
+        <name>DIAG_ERROR_MAIN_PLUS_SENSITIVITY</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="69" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ac5a179e4c6686a937be5e5d1c56a1b15" prot="public" static="no">
+        <name>DIAG_ERROR_MAIN_MINUS_SENSITIVITY</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="70" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a2172f4b6d1061aaa2f2703af9f961a68" prot="public" static="no">
+        <name>DIAG_ERROR_PRECHARGE_SENSITIVITY</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="71" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a1eb49a683e90e5646763c1f040effae9" prot="public" static="no">
+        <name>DIAG_ERROR_INTERLOCK_SENSITIVITY</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="73" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1abb87440e8040432a54c19a9f951291c0" prot="public" static="no">
+        <name>DIAG_FAIL_ENTRY_LENGTH</name>
+        <initializer>(50)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of errors that can be logged </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="78" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aa43bd68170702925ece140eb6c314b87" prot="public" static="no">
+        <name>DIAG_MAX_ENTRIES_OF_ERROR</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of the same error that are logged </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="83" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a4bf5850ea83f4eec05164355c4834092" prot="public" static="no">
+        <name>DIAG_FAIL_ENTRY_CONTACTOR_LENGTH</name>
+        <initializer>(50)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of contactor errors that are logged </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="88" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ac05a84b3d35db899d06ad57f03c84870" prot="public" static="no">
+        <name>DIAG_CH_FLASHCHECKSUM</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa44f63bdb27d4e56e7e1c106f69261f37" kindref="member">DIAG_ID_5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="93" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a3dfa8623ef1b2958fe133365996fa381" prot="public" static="no">
+        <name>DIAG_CH_BKPDIAG_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fac253d92b71035efac1a3582b55220f4f" kindref="member">DIAG_ID_6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="94" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aed68c0e94bcf97cee97200d60b64fe4b" prot="public" static="no">
+        <name>DIAG_CH_WATCHDOGRESET_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa1ca8b2b60787f7044d8335ba4ce76993" kindref="member">DIAG_ID_7</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="95" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a99548d8406f95b3249155ccaf61b8c73" prot="public" static="no">
+        <name>DIAG_CH_POSTOSINIT_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa9e910b86607190b1f38c72a0dde6af8d" kindref="member">DIAG_ID_8</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="96" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a0ff3bc8c710050e4712cac31265aa8e0" prot="public" static="no">
+        <name>DIAG_CH_CALIB_EEPR_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa6aac75ae94501ffdc6ef2d71cf2f7463" kindref="member">DIAG_ID_9</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="97" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1acd21d83f3c9be9f8e626670e20cde1f7" prot="public" static="no">
+        <name>DIAG_CH_CAN_INIT_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa68676c6ba29ef7bb9ecfbad24ddb5a07" kindref="member">DIAG_ID_10</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="98" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a784e3f5a94879333b96d6975ea3770c6" prot="public" static="no">
+        <name>DIAG_CH_NVIC_INIT_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa67310dafa3b0a090b0c2b205e9d75418" kindref="member">DIAG_ID_11</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="99" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aafe617d153a4bc64aa03be09899e02ea" prot="public" static="no">
+        <name>DIAG_CH_DIV_BY_ZERO_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa09773aa6c21d7b4398d82139ae4f7aea" kindref="member">DIAG_ID_16</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="102" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ae2b15bb733c9b9844809c0053c83bdb3" prot="public" static="no">
+        <name>DIAG_CH_UNDEF_INSTRUCTION_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8faaa60685f30a1102a051080a5f0e6976e" kindref="member">DIAG_ID_17</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="103" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1abf5ef841ee20ea81b576b327be7530d4" prot="public" static="no">
+        <name>DIAG_CH_DATA_BUS_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa0a7ba2cc4c9455473010c0841b3f5c86" kindref="member">DIAG_ID_18</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="104" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a64aafcb97debcefebec65f34adebccd5" prot="public" static="no">
+        <name>DIAG_CH_INSTRUCTION_BUS_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa114b86c9f06148827db6a436e6f51577" kindref="member">DIAG_ID_19</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="105" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a2cc2c1f8d6cebd0096120187e622ad07" prot="public" static="no">
+        <name>DIAG_CH_HARDFAULT_NOTHANDLED</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa5b5d1702277df79394e6c1ef8e5ddd1a" kindref="member">DIAG_ID_20</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="106" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a28083278fff0ae7b60376d80db78bbce" prot="public" static="no">
+        <name>DIAG_CH_RUNTIME_ERROR_RESERVED_1</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fad0c6c3eeec37a4d01086c5a2cfb89ebe" kindref="member">DIAG_ID_21</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="107" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a11330057c27868618a28cfc72ce77240" prot="public" static="no">
+        <name>DIAG_CH_RUNTIME_ERROR_RESERVED_2</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa293179c5dcec756746a1a11d2f48fc82" kindref="member">DIAG_ID_22</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="108" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1abb7cd1b9f7386fff6bf872278b0c80c8" prot="public" static="no">
+        <name>DIAG_CH_RUNTIME_ERROR_RESERVED_3</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa1a2bfc2ae8628ba466cb8d294a8b3924" kindref="member">DIAG_ID_23</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="109" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a8ec7de1ed3c7769622323697e7881246" prot="public" static="no">
+        <name>DIAG_CH_CONFIGASSERT</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa3ba2f98d1ddee51f6e23473c88ef18f0" kindref="member">DIAG_ID_24</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="110" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1afd8312de6000727175cd665a068fe5ca" prot="public" static="no">
+        <name>DIAG_CH_SYSTEMMONITORING_TIMEOUT</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa170af9ad1f2ce7864fb15195d3e34561" kindref="member">DIAG_ID_25</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="111" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a3344d3250665d8f27247202c839a9eb5" prot="public" static="no">
+        <name>DIAG_CH_CANS_MAX_VALUE_VIOLATE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa7a3acf3d7a9d3ed1129290d48071494f" kindref="member">DIAG_ID_32</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="115" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ae516e16008bfd1f42f080216cbc822a4" prot="public" static="no">
+        <name>DIAG_CH_CANS_MIN_VALUE_VIOLATE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa1970d59019ac16c0a492aa1c85e7276d" kindref="member">DIAG_ID_33</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="116" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a0266ed73d26538b4999bf50b3a1ec739" prot="public" static="no">
+        <name>DIAG_CH_CANS_CAN_MOD_FAILURE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa4ca1347aab4aded368eaf50fd0f7e085" kindref="member">DIAG_ID_34</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="117" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a0a2b73a73b2e69b19f9473b8242bbe96" prot="public" static="no">
+        <name>DIAG_CH_ISOMETER_TIM_ERROR</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa3dd7c4344d7198175cac76a0f7276fab" kindref="member">DIAG_ID_35</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Measured freqeuncy too low or no new value captured during last cycle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="122" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a6b3805d4576749169da4c4be21a91d23" prot="public" static="no">
+        <name>DIAG_CH_ISOMETER_GROUNDERROR</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa2c5e1a07f2f5201c862ce0e2b4831d21" kindref="member">DIAG_ID_36</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ground error detected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="127" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a3b43788e0b67be11fa7367bf45c6263c" prot="public" static="no">
+        <name>DIAG_CH_ISOMETER_ERROR</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa70b5fde8c1f65877b0cfb1cb634bdb42" kindref="member">DIAG_ID_37</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device error, invalid measurement result </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="132" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a0386970ddee5e5b5ff48286b253cdc95" prot="public" static="no">
+        <name>DIAG_CH_ISOMETER_MEAS_INVALID</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa09a23ea33edaacc71457adb5ba2def5f" kindref="member">DIAG_ID_38</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Measurement trustworthy or not, hysteresis to ground error flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="137" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a59a892dcb9d74d62a8d48fc723f646e1" prot="public" static="no">
+        <name>DIAG_CH_CELLVOLTAGE_OVERVOLTAGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa2287bec94ca2cd2a49f899cae48beaad" kindref="member">DIAG_ID_39</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cell voltage limits violated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="142" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a671f42ba4774cc616e7958981138c9b2" prot="public" static="no">
+        <name>DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa5420258de6e7f8ae14fbf68386a45643" kindref="member">DIAG_ID_40</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="143" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a11b45b33f2c3b6b81445471985ca1081" prot="public" static="no">
+        <name>DIAG_CH_TEMP_OVERTEMPERATURE_CHARGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fad0163bacdcb975a47f64b2087616829f" kindref="member">DIAG_ID_41</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temperature limits violated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="148" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a74177f566a31f1126a38e621dcd1ac07" prot="public" static="no">
+        <name>DIAG_CH_TEMP_OVERTEMPERATURE_DISCHARGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa394f8bcd8f28fc3eaa17f2a7953ed03a" kindref="member">DIAG_ID_42</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="149" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a3323286f985cf39bb873e6f2a46c2f57" prot="public" static="no">
+        <name>DIAG_CH_TEMP_UNDERTEMPERATURE_CHARGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa9ed9a5ac724ba0d569682286befd2dd7" kindref="member">DIAG_ID_43</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="150" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ac8fb9561fe3ce4bdf195d1c8672545c4" prot="public" static="no">
+        <name>DIAG_CH_TEMP_UNDERTEMPERATURE_DISCHARGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fafd77f194329f519b9cb9e1f55ba2ca85" kindref="member">DIAG_ID_44</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="151" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1ac6e9148c11106746efe21e07cdb360ca" prot="public" static="no">
+        <name>DIAG_CH_OVERCURRENT_CHARGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fadeb7fb3c8567cb33fd0691595a5bbc4c" kindref="member">DIAG_ID_45</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overcurrent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="156" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aa7dc52ee928b8cf1cc45cfecac801945" prot="public" static="no">
+        <name>DIAG_CH_OVERCURRENT_DISCHARGE</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fabb5304c5cf0b4f5bffa5d2c2259c3e8f" kindref="member">DIAG_ID_46</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="157" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a388b7673ede2627ab3ea99f231e943a8" prot="public" static="no">
+        <name>DIAG_CH_LTC_SPI</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa8f36d61ad37ff792c6eddd7d5e58473b" kindref="member">DIAG_ID_47</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="162" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a64da8f05b3ace88d84a7b0aea35a607b" prot="public" static="no">
+        <name>DIAG_CH_LTC_PEC</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa3b8c2e374ae83d9b7b850ad405f8292a" kindref="member">DIAG_ID_48</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="163" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a2902a67c2135bfed7456ed79a0dec75c" prot="public" static="no">
+        <name>DIAG_CH_LTC_MUX</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa04e3624c1a75a0c1041264a43c3261de" kindref="member">DIAG_ID_49</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="164" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a71cdf76a7750aa26e7b67cbfd2615e67" prot="public" static="no">
+        <name>DIAG_CH_CAN_TIMING</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa1ba95815440894f7e5cc38e688cb2df9" kindref="member">DIAG_ID_50</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN timing not comming </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="171" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1acd788c9e93973bd1cbac3f8bdba3e0dc" prot="public" static="no">
+        <name>DIAG_CH_CAN_CC_RESPONDING</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa669f000505864732a7bffc0c9ae6cee9" kindref="member">DIAG_ID_51</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN C-C not comming </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="175" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a8da7a136ff2c0fac2db6f85b2fa26319" prot="public" static="no">
+        <name>DIAG_CH_CURRENT_SENSOR_RESPONDING</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa4f8e73720b65bd2ff2e34d130e59fef0" kindref="member">DIAG_ID_52</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current sensor not responding anymore </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="179" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a5033e103b8c4a79161577e0eb4edbb4c" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_DAMAGED</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa043285cddf46150708e9cffb48a81ed2" kindref="member">DIAG_ID_64</ref></initializer>
+        <briefdescription>
+<para>Opening contactor at over current. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="186" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a1c035bfb94346c3509e7c01603d08628" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_OPENING</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa5a8204acf88f32525824c48929179360" kindref="member">DIAG_ID_65</ref></initializer>
+        <briefdescription>
+<para>counter for contactor opening </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="191" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1aa1bfdc71aba1d6b54f09c3fbc341f540" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_CLOSING</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa2a96b237e2fb34bbd843ca753099ec6d" kindref="member">DIAG_ID_66</ref></initializer>
+        <briefdescription>
+<para>counter for contactor closing </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="196" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a457376fd8c87e995d6d313af4244baae" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_MAIN_PLUS_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa846abdedaddc783759ad1c6fc9169b20" kindref="member">DIAG_ID_67</ref></initializer>
+        <briefdescription>
+<para>Contactor feedback error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="201" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a47626218d83fb62f3666bc38339e40fe" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_MAIN_MINUS_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa813b883207a348f0d9c1169fd31edfd7" kindref="member">DIAG_ID_68</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="202" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a685d82796d9b75bee09c782251240a75" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_PRECHARGE_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa5c09cc6091a825640a5d4bb127630722" kindref="member">DIAG_ID_69</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="203" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1addf4bf9eabbcdde19e6de5b4dfca84d9" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_CHARGE_MAIN_PLUS_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa65557ac99bf2ea68082d8491be4fd1a3" kindref="member">DIAG_ID_70</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="204" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a159cf3ad6b380a2ff47db760e3177d72" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_CHARGE_MAIN_MINUS_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa0c7dea757b9a9aaa79849d2eef308b92" kindref="member">DIAG_ID_71</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="205" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a8ffc75142993963e08e0dab841b82d40" prot="public" static="no">
+        <name>DIAG_CH_CONTACTOR_CHARGE_PRECHARGE_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fab223fab9b29c5e1ddb81e3e7d72a01aa" kindref="member">DIAG_ID_72</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="206" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a0ea7c3e40cb18d28acff5d4a34da81fc" prot="public" static="no">
+        <name>DIAG_CH_INTERLOCK_FEEDBACK</name>
+        <initializer><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8fa2ba07c34f8a49f578ca15800ecb30767" kindref="member">DIAG_ID_73</ref></initializer>
+        <briefdescription>
+<para>Interlock feedback error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="210" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a8e73566da6a9f3d6b48a248209a9d585" prot="public" static="no">
+        <name>DIAG_CAN_TIMING</name>
+        <initializer><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26ac5b68b2194d24e517dc49711e025a1c2" kindref="member">DIAG_ENABLED</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="223" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="diag__cfg_8h_1a9c9d79cc8c9cec805768206da81e0bda" prot="public" static="no">
+        <name>DIAG_CAN_SENSOR_PRESENT</name>
+        <initializer><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26ac5b68b2194d24e517dc49711e025a1c2" kindref="member">DIAG_ENABLED</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="229" column="13" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26" prot="public" static="no">
+        <name>DIAG_ENABLE_STATE_e</name>
+        <enumvalue id="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26ac5b68b2194d24e517dc49711e025a1c2" prot="public">
+          <name>DIAG_ENABLED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26a35742c6104fc4176a3dfa7002b9f3639" prot="public">
+          <name>DIAG_DISABLED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable state of diagnosis entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="216" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="enum" id="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2" prot="public" static="no">
+        <name>DIAG_TYPE_e</name>
+        <enumvalue id="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a26a5ce014ffce41a84f1eb7189465549" prot="public">
+          <name>DIAG_GENERAL_TYPE</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FC 0x00 - 0x1F </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a98ce642fecdd5c6e36c87e6d30a13892" prot="public">
+          <name>DIAG_CELLMON_TYPE</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FC 0x20 - 0x3F </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a500e8cf3e6b9782f6d7ab790e362587a" prot="public">
+          <name>DIAG_COM_TYPE</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FC 0x40 - 0x5F </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a9a07613a2c11c2f5f532f0ec6f8b7c25" prot="public">
+          <name>DIAG_ADC_TYPE</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FC 0x60 - 0x7F </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2ab50448feddb43176a427531e2ba63a92" prot="public">
+          <name>DIAG_CONT_TYPE</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FC </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagnosis groups failure codes FC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="239" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="239" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="enum" id="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6" prot="public" static="no">
+        <name>DIAG_TYPE_RECORDING_e</name>
+        <enumvalue id="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6a831c677e53a5364003c2bd5deda36c5e" prot="public">
+          <name>DIAG_RECORDING_ENABLED</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>enable diagnosis event recording </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6ac249dfde1eb7387af7e89387bb67e8a3" prot="public">
+          <name>DIAG_RECORDING_DISABLED</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>disable diagnosis event recording </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagnosis recording activation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="251" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="enum" id="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245e" prot="public" static="no">
+        <name>DIAG_SYSMON_TYPE_e</name>
+        <enumvalue id="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245ea7e4f62ace315c93032ad9bcdbd3dee24" prot="public">
+          <name>DIAG_SYSMON_CYCLICTASK</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245ead94ec67113d11a880f6e09f1ea189e7c" prot="public">
+          <name>DIAG_SYSMON_RESERVED</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagnosis types for system monitoring </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="261" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="enum" id="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86" prot="public" static="no">
+        <name>DIAG_SYSMON_HANDLING_TYPE_e</name>
+        <enumvalue id="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86a698f2f744f726644a718039575753999" prot="public">
+          <name>DIAG_SYSMON_HANDLING_DONOTHING</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86a2a86a6b8e28b01dc5c9068000f50b1cf" prot="public">
+          <name>DIAG_SYSMON_HANDLING_SWITCHOFFCONTACTOR</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diagnosis handling type for system monitoring </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="269" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="269" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="enum" id="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89ca" prot="public" static="no">
+        <name>Diag_ReturnType</name>
+        <enumvalue id="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caa015846c72054f5f4f477d906480deba8" prot="public">
+          <name>DIAG_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diagnosis event ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caafc6c061ae7bc4b1feecf7ee0301fb6f0" prot="public">
+          <name>DIAG_NOT_OK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diagnosis event not ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caaf8712b672226a1a081f56a2f9aa0732e" prot="public">
+          <name>DIAG_BUSY</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diagnosis event busy </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>symbolic names for diagnosis </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="278" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="278" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="enum" id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78f" prot="public" static="no">
+        <name>DIAG_SYSMON_MODULE_ID_e</name>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa4ba3cda6fb12ac36bf6be9ca9cae824f" prot="public">
+          <name>DIAG_SYSMON_DATABASE_ID</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for database </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faaeb9258e21c43f5201eda4a0ee1b829c" prot="public">
+          <name>DIAG_SYSMON_SYS_ID</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for sys </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa1c17b9694c7034ae7adff25cab57a91" prot="public">
+          <name>DIAG_SYSMON_BMS_ID</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for bms </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa815c9408befff65fe2c70035419b1d3" prot="public">
+          <name>DIAG_SYSMON_ILCK_ID</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for bms </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa56131cc6b0b25495d9484c5562938a4e" prot="public">
+          <name>DIAG_SYSMON_LTC_ID</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for ltc </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fabee0a8da161783236157594b989171fd" prot="public">
+          <name>DIAG_SYSMON_ISOGUARD_ID</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for ioguard </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa845396d905a4e0f39ea2d7174ab1b69e" prot="public">
+          <name>DIAG_SYSMON_CANS_ID</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for can </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faba34f1f83ce0b7e6be878ad2a84ae29e" prot="public">
+          <name>DIAG_SYSMON_APPL_CYCLIC_1ms</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for application 10ms task </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa336aff0646489aeaf991dac7b49a82f5" prot="public">
+          <name>DIAG_SYSMON_APPL_CYCLIC_10ms</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for application 10ms task </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa0ed318cb2fa3acc3d80911bc37b3d281" prot="public">
+          <name>DIAG_SYSMON_APPL_CYCLIC_100ms</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>diag entry for application 100ms task </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fad503da7985d8f562042b6bb3ca48c61b" prot="public">
+          <name>DIAG_SYSMON_MODULE_ID_MAX</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>end marker do not delete </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>listing of system-relevant tasks or functions which are checked by system monitoring </para>        </briefdescription>
+        <detaileddescription>
+<para>diag_sysmon_ch_cfg[]= </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="290" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" bodystart="290" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="diag__cfg_8h_1a38ec347f2786572d994d5328a5d56373" prot="public" static="no" mutable="no">
+        <type><ref refid="structDIAG__DEV__s" kindref="compound">DIAG_DEV_s</ref></type>
+        <definition>DIAG_DEV_s diag_dev</definition>
+        <argsstring></argsstring>
+        <name>diag_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diag device configuration struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="364" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.c" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="diag__cfg_8h_1adeed727b6bffb1e318576286406cf063" prot="public" static="no" mutable="no">
+        <type><ref refid="structDIAG__SYSMON__CH__CFG__s" kindref="compound">DIAG_SYSMON_CH_CFG_s</ref></type>
+        <definition>DIAG_SYSMON_CH_CFG_s diag_sysmon_ch_cfg[]</definition>
+        <argsstring>[]</argsstring>
+        <name>diag_sysmon_ch_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diag system monitoring struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="369" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.c" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="diag__cfg_8h_1a9bee9f56a48fb0b3172084c58a3265ad" prot="public" static="no" mutable="no">
+        <type><ref refid="structDIAG__CH__CFG__s" kindref="compound">DIAG_CH_CFG_s</ref></type>
+        <definition>DIAG_CH_CFG_s diag_ch_cfg[]</definition>
+        <argsstring>[]</argsstring>
+        <name>diag_ch_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="370" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.c" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="diag__cfg_8h_1a553ba4577e9db33b2e478421cf89fed6" prot="public" static="no" mutable="no">
+        <type><ref refid="structDIAG__CODE__s" kindref="compound">DIAG_CODE_s</ref></type>
+        <definition>DIAG_CODE_s diag_mask</definition>
+        <argsstring></argsstring>
+        <name>diag_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable and Disable of Error Checks for Testing Purposes</para><para>Each Bit enables or disables the diagnosis (checking of) the corresponding failure code FIXME struct isn&apos;t used anywhere in the code at the moment. FIXME delete if not needed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h" line="373" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Diagnostic module configuration header. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>09.11.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>DIAG</para></simplesect>
+In this header filer are the different diag channel defines assigned to different diag IDs.</para><para>Furthermore are the diag error log settings be configured here.. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="38"><highlight class="preprocessor">#ifndef<sp/>DIAG_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="batterysystem__cfg_8h" kindref="compound">batterysystem_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diag__id__cfg_8h" kindref="compound">diag_id_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rtc_8h" kindref="compound">rtc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>throw<sp/>out<sp/>or<sp/>leave<sp/>in?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;contactor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>comment<sp/>on<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="diag__cfg_8h_1a4503634cb6dfe35231db67f624f75c9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_DATA_IS_VALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RTC_BKPDIAG_DATAVALID_VARIABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>First<sp/>=<sp/>0,<sp/>fifth<sp/>=<sp/>5,...?<sp/>should<sp/>be<sp/>sixth<sp/>or<sp/>4!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="diag__cfg_8h_1a14c3e5fc93a347c94c72f8a7a71be8aa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_SENSITIVITY_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)<sp/><sp/><sp/><sp/>//<sp/>logging<sp/>at<sp/>first<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="diag__cfg_8h_1aaa67d71fef3cdb444302157917e6517c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_SENSITIVITY_MID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)<sp/><sp/><sp/><sp/>//<sp/>logging<sp/>at<sp/>fifth<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="diag__cfg_8h_1a86159137fc861488ffbba20f103ebb49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_SENSITIVITY_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)<sp/><sp/><sp/><sp/>//<sp/>logging<sp/>at<sp/>tenth<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="diag__cfg_8h_1af1adff3b346fd6189ac765feb445e7d2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_VOLTAGE_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="diag__cfg_8h_1ae62426b6f9196941c5ca1022185c5099" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_TEMPERATURE_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="diag__cfg_8h_1a1ea5309f52cd03b4033836f2ea368c46" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_CURRENT_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="diag__cfg_8h_1a93a47d4edf68f6f8a38e5a537f688a75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_LTC_PEC_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="diag__cfg_8h_1a08de76371ea081b422a32c907f4db0cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_LTC_MUX_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="diag__cfg_8h_1aed304e246d0045e7909fae703d18ed43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_LTC_SPI_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="diag__cfg_8h_1ac88d981cd7878dc5148119186453a541" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_CAN_TIMING_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="diag__cfg_8h_1a74d144d6aaff6c6a38a9f643b460556b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_CAN_TIMING_CC_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="diag__cfg_8h_1a82634fba1e82ba651d59e5ea28c660b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_CAN_SENSOR_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="diag__cfg_8h_1a4f23d607fab34124b666ac492aeb36f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_MAIN_PLUS_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="diag__cfg_8h_1ac5a179e4c6686a937be5e5d1c56a1b15" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_MAIN_MINUS_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="diag__cfg_8h_1a2172f4b6d1061aaa2f2703af9f961a68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_PRECHARGE_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="diag__cfg_8h_1a1eb49a683e90e5646763c1f040effae9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_ERROR_INTERLOCK_SENSITIVITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="diag__cfg_8h_1abb87440e8040432a54c19a9f951291c0" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_FAIL_ENTRY_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(50)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="diag__cfg_8h_1aa43bd68170702925ece140eb6c314b87" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_MAX_ENTRIES_OF_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="diag__cfg_8h_1a4bf5850ea83f4eec05164355c4834092" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_FAIL_ENTRY_CONTACTOR_LENGTH<sp/><sp/><sp/><sp/>(50)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>simple<sp/>doxygen<sp/>comment<sp/>for<sp/>each<sp/>define?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialization<sp/>and<sp/>startup<sp/>events:<sp/>0-15<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="diag__cfg_8h_1ac05a84b3d35db899d06ad57f03c84870" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_FLASHCHECKSUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="diag__cfg_8h_1a3dfa8623ef1b2958fe133365996fa381" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_BKPDIAG_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="diag__cfg_8h_1aed68c0e94bcf97cee97200d60b64fe4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_WATCHDOGRESET_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="diag__cfg_8h_1a99548d8406f95b3249155ccaf61b8c73" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_POSTOSINIT_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="diag__cfg_8h_1a0ff3bc8c710050e4712cac31265aa8e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CALIB_EEPR_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="diag__cfg_8h_1acd21d83f3c9be9f8e626670e20cde1f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CAN_INIT_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="diag__cfg_8h_1a784e3f5a94879333b96d6975ea3770c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_NVIC_INIT_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>HW-/SW-Runtime<sp/>events:<sp/>16-31<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="diag__cfg_8h_1aafe617d153a4bc64aa03be09899e02ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_DIV_BY_ZERO_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="diag__cfg_8h_1ae2b15bb733c9b9844809c0053c83bdb3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_UNDEF_INSTRUCTION_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_17<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="diag__cfg_8h_1abf5ef841ee20ea81b576b327be7530d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_DATA_BUS_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_18<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="diag__cfg_8h_1a64aafcb97debcefebec65f34adebccd5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_INSTRUCTION_BUS_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_19<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="diag__cfg_8h_1a2cc2c1f8d6cebd0096120187e622ad07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_HARDFAULT_NOTHANDLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_20<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="diag__cfg_8h_1a28083278fff0ae7b60376d80db78bbce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_RUNTIME_ERROR_RESERVED_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_21<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>reserved<sp/>for<sp/>future<sp/>needs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="diag__cfg_8h_1a11330057c27868618a28cfc72ce77240" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_RUNTIME_ERROR_RESERVED_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_22<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>reserved<sp/>for<sp/>future<sp/>needs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="diag__cfg_8h_1abb7cd1b9f7386fff6bf872278b0c80c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_RUNTIME_ERROR_RESERVED_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_23<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>reserved<sp/>for<sp/>future<sp/>needs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="diag__cfg_8h_1a8ec7de1ed3c7769622323697e7881246" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CONFIGASSERT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_24<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="diag__cfg_8h_1afd8312de6000727175cd665a068fe5ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_SYSTEMMONITORING_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_25<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Measurement<sp/>events:<sp/>32-47<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="diag__cfg_8h_1a3344d3250665d8f27247202c839a9eb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CANS_MAX_VALUE_VIOLATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="diag__cfg_8h_1ae516e16008bfd1f42f080216cbc822a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CANS_MIN_VALUE_VIOLATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="diag__cfg_8h_1a0266ed73d26538b4999bf50b3a1ec739" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CANS_CAN_MOD_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_34</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="diag__cfg_8h_1a0a2b73a73b2e69b19f9473b8242bbe96" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_ISOMETER_TIM_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_35<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="diag__cfg_8h_1a6b3805d4576749169da4c4be21a91d23" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_ISOMETER_GROUNDERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_36</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="diag__cfg_8h_1a3b43788e0b67be11fa7367bf45c6263c" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_ISOMETER_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_37</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="diag__cfg_8h_1a0386970ddee5e5b5ff48286b253cdc95" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_ISOMETER_MEAS_INVALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_38</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="diag__cfg_8h_1a59a892dcb9d74d62a8d48fc723f646e1" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CELLVOLTAGE_OVERVOLTAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_39</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="diag__cfg_8h_1a671f42ba4774cc616e7958981138c9b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="diag__cfg_8h_1a11b45b33f2c3b6b81445471985ca1081" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_TEMP_OVERTEMPERATURE_CHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_41</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="diag__cfg_8h_1a74177f566a31f1126a38e621dcd1ac07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_TEMP_OVERTEMPERATURE_DISCHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_42</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="diag__cfg_8h_1a3323286f985cf39bb873e6f2a46c2f57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_TEMP_UNDERTEMPERATURE_CHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_43</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="diag__cfg_8h_1ac8fb9561fe3ce4bdf195d1c8672545c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_TEMP_UNDERTEMPERATURE_DISCHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="diag__cfg_8h_1ac6e9148c11106746efe21e07cdb360ca" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_OVERCURRENT_CHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_45</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="diag__cfg_8h_1aa7dc52ee928b8cf1cc45cfecac801945" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_OVERCURRENT_DISCHARGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_46</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="diag__cfg_8h_1a388b7673ede2627ab3ea99f231e943a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_LTC_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_47<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="diag__cfg_8h_1a64da8f05b3ace88d84a7b0aea35a607b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_LTC_PEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_48<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="diag__cfg_8h_1a2902a67c2135bfed7456ed79a0dec75c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_LTC_MUX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_49<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Communication<sp/>events:<sp/>50-63*/</highlight></codeline>
+<codeline lineno="171" refid="diag__cfg_8h_1a71cdf76a7750aa26e7b67cbfd2615e67" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CAN_TIMING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_50<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="diag__cfg_8h_1acd788c9e93973bd1cbac3f8bdba3e0dc" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CAN_CC_RESPONDING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_51<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="diag__cfg_8h_1a8da7a136ff2c0fac2db6f85b2fa26319" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CURRENT_SENSOR_RESPONDING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_52<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Contactor<sp/>events:<sp/>64-79*/</highlight></codeline>
+<codeline lineno="186" refid="diag__cfg_8h_1a5033e103b8c4a79161577e0eb4edbb4c" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_DAMAGED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="diag__cfg_8h_1a1c035bfb94346c3509e7c01603d08628" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_OPENING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_65</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="diag__cfg_8h_1aa1bfdc71aba1d6b54f09c3fbc341f540" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_CLOSING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_66</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="diag__cfg_8h_1a457376fd8c87e995d6d313af4244baae" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_MAIN_PLUS_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_67</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="diag__cfg_8h_1a47626218d83fb62f3666bc38339e40fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_MAIN_MINUS_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_68</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="diag__cfg_8h_1a685d82796d9b75bee09c782251240a75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_PRECHARGE_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_69</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="diag__cfg_8h_1addf4bf9eabbcdde19e6de5b4dfca84d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_CHARGE_MAIN_PLUS_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_70</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="diag__cfg_8h_1a159cf3ad6b380a2ff47db760e3177d72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_CHARGE_MAIN_MINUS_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_71</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="diag__cfg_8h_1a8ffc75142993963e08e0dab841b82d40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIAG_CH_CONTACTOR_CHARGE_PRECHARGE_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_72</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="diag__cfg_8h_1a0ea7c3e40cb18d28acff5d4a34da81fc" refkind="member"><highlight class="preprocessor">#define<sp/>DIAG_CH_INTERLOCK_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIAG_ID_73</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="217" refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26ac5b68b2194d24e517dc49711e025a1c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26ac5b68b2194d24e517dc49711e025a1c2" kindref="member">DIAG_ENABLED</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="218" refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26a35742c6104fc4176a3dfa7002b9f3639" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26a35742c6104fc4176a3dfa7002b9f3639" kindref="member">DIAG_DISABLED</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26" kindref="member">DIAG_ENABLE_STATE_e</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CHECK_CAN_TIMING==TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="diag__cfg_8h_1a8e73566da6a9f3d6b48a248209a9d585" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DIAG_CAN_TIMING<sp/>DIAG_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DIAG_CAN_TIMING<sp/>DIAG_DISABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CURRENT_SENSOR_PRESENT==TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="diag__cfg_8h_1a9c9d79cc8c9cec805768206da81e0bda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DIAG_CAN_SENSOR_PRESENT<sp/>DIAG_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DIAG_CAN_SENSOR_PRESENT<sp/>DIAG_DISABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>is<sp/>it<sp/>better<sp/>to<sp/>name<sp/>it<sp/>DIAG_GROUP_xxx<sp/>instead<sp/>of<sp/>DIAG_xxx_TYPE<sp/>and</highlight></codeline>
+<codeline lineno="239" refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="240" refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a26a5ce014ffce41a84f1eb7189465549" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a26a5ce014ffce41a84f1eb7189465549" kindref="member">DIAG_GENERAL_TYPE</ref><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241" refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a98ce642fecdd5c6e36c87e6d30a13892" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a98ce642fecdd5c6e36c87e6d30a13892" kindref="member">DIAG_CELLMON_TYPE</ref><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242" refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a500e8cf3e6b9782f6d7ab790e362587a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a500e8cf3e6b9782f6d7ab790e362587a" kindref="member">DIAG_COM_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243" refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a9a07613a2c11c2f5f532f0ec6f8b7c25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2a9a07613a2c11c2f5f532f0ec6f8b7c25" kindref="member">DIAG_ADC_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME<sp/>which<sp/>failure<sp/>codes<sp/>for<sp/>following<sp/>group?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2ab50448feddb43176a427531e2ba63a92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2ab50448feddb43176a427531e2ba63a92" kindref="member">DIAG_CONT_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x08<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2" kindref="member">DIAG_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="252" refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6a831c677e53a5364003c2bd5deda36c5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6a831c677e53a5364003c2bd5deda36c5e" kindref="member">DIAG_RECORDING_ENABLED</ref><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253" refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6ac249dfde1eb7387af7e89387bb67e8a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6ac249dfde1eb7387af7e89387bb67e8a3" kindref="member">DIAG_RECORDING_DISABLED</ref><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6" kindref="member">DIAG_TYPE_RECORDING_e</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>duplicate<sp/>comment<sp/>with<sp/>enum<sp/>DIAG_TYPE_e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>some<sp/>enums<sp/>are<sp/>typedefed<sp/>with<sp/>DIAG...TYPE_e,<sp/>some<sp/>with<sp/>DIAG_TYPE..._e!<sp/>Reconsider<sp/>this</highlight></codeline>
+<codeline lineno="261" refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245e" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="262" refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245ea7e4f62ace315c93032ad9bcdbd3dee24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245ea7e4f62ace315c93032ad9bcdbd3dee24" kindref="member">DIAG_SYSMON_CYCLICTASK</ref><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="263" refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245ead94ec67113d11a880f6e09f1ea189e7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245ead94ec67113d11a880f6e09f1ea189e7c" kindref="member">DIAG_SYSMON_RESERVED</ref><sp/><sp/><sp/><sp/>=<sp/>0x01<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245e" kindref="member">DIAG_SYSMON_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="270" refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86a698f2f744f726644a718039575753999" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86a698f2f744f726644a718039575753999" kindref="member">DIAG_SYSMON_HANDLING_DONOTHING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="271" refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86a2a86a6b8e28b01dc5c9068000f50b1cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86a2a86a6b8e28b01dc5c9068000f50b1cf" kindref="member">DIAG_SYSMON_HANDLING_SWITCHOFFCONTACTOR</ref><sp/><sp/><sp/><sp/>=<sp/>0x01<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86" kindref="member">DIAG_SYSMON_HANDLING_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89ca" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="279" refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caa015846c72054f5f4f477d906480deba8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caa015846c72054f5f4f477d906480deba8" kindref="member">DIAG_OK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="280" refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caafc6c061ae7bc4b1feecf7ee0301fb6f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caafc6c061ae7bc4b1feecf7ee0301fb6f0" kindref="member">DIAG_NOT_OK</ref><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="281" refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caaf8712b672226a1a081f56a2f9aa0732e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89caaf8712b672226a1a081f56a2f9aa0732e" kindref="member">DIAG_BUSY</ref><sp/><sp/><sp/>=<sp/>2<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1a40273dfc7e4689100fa7faabed1c89ca" kindref="member">Diag_ReturnType</ref>;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="291" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa4ba3cda6fb12ac36bf6be9ca9cae824f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa4ba3cda6fb12ac36bf6be9ca9cae824f" kindref="member">DIAG_SYSMON_DATABASE_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="292" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faaeb9258e21c43f5201eda4a0ee1b829c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faaeb9258e21c43f5201eda4a0ee1b829c" kindref="member">DIAG_SYSMON_SYS_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="293" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa1c17b9694c7034ae7adff25cab57a91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa1c17b9694c7034ae7adff25cab57a91" kindref="member">DIAG_SYSMON_BMS_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="294" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa815c9408befff65fe2c70035419b1d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa815c9408befff65fe2c70035419b1d3" kindref="member">DIAG_SYSMON_ILCK_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="295" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa56131cc6b0b25495d9484c5562938a4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa56131cc6b0b25495d9484c5562938a4e" kindref="member">DIAG_SYSMON_LTC_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="296" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fabee0a8da161783236157594b989171fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fabee0a8da161783236157594b989171fd" kindref="member">DIAG_SYSMON_ISOGUARD_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="297" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa845396d905a4e0f39ea2d7174ab1b69e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa845396d905a4e0f39ea2d7174ab1b69e" kindref="member">DIAG_SYSMON_CANS_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="298" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faba34f1f83ce0b7e6be878ad2a84ae29e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faba34f1f83ce0b7e6be878ad2a84ae29e" kindref="member">DIAG_SYSMON_APPL_CYCLIC_1ms</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="299" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa336aff0646489aeaf991dac7b49a82f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa336aff0646489aeaf991dac7b49a82f5" kindref="member">DIAG_SYSMON_APPL_CYCLIC_10ms</ref><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="300" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa0ed318cb2fa3acc3d80911bc37b3d281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa0ed318cb2fa3acc3d80911bc37b3d281" kindref="member">DIAG_SYSMON_APPL_CYCLIC_100ms</ref><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="301" refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fad503da7985d8f562042b6bb3ca48c61b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fad503da7985d8f562042b6bb3ca48c61b" kindref="member">DIAG_SYSMON_MODULE_ID_MAX</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}<sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78f" kindref="member">DIAG_SYSMON_MODULE_ID_e</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>doxygen<sp/>comment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>is<sp/>DIAG_CODE_s<sp/>an<sp/>appropriate<sp/>name<sp/>for<sp/>this?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="structDIAG__CODE__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307" refid="structDIAG__CODE__s_1afc64f3a5b7d8afb1ab2b0dd5342a3d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDIAG__CODE__s_1afc64f3a5b7d8afb1ab2b0dd5342a3d49" kindref="member">GENERALmsk</ref>;</highlight></codeline>
+<codeline lineno="308" refid="structDIAG__CODE__s_1a10424cc144ee83f2085bd84e7ba25bd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDIAG__CODE__s_1a10424cc144ee83f2085bd84e7ba25bd9" kindref="member">CELLMONmsk</ref>;</highlight></codeline>
+<codeline lineno="309" refid="structDIAG__CODE__s_1a8d3384a5fe4f0b1b6fdb13b9be52198f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDIAG__CODE__s_1a8d3384a5fe4f0b1b6fdb13b9be52198f" kindref="member">COMmsk</ref>;</highlight></codeline>
+<codeline lineno="310" refid="structDIAG__CODE__s_1aaf375f7a067a6e9a3d9232401449b322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDIAG__CODE__s_1aaf375f7a067a6e9a3d9232401449b322" kindref="member">ADCmsk</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}<sp/><ref refid="structDIAG__CODE__s" kindref="compound">DIAG_CODE_s</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="structDIAG__CH__CFG__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="318" refid="structDIAG__CH__CFG__s_1a7caa4eef78e24b02539d44980c2e6e15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8f" kindref="member">DIAG_CH_ID_e</ref><sp/><ref refid="structDIAG__CH__CFG__s_1a7caa4eef78e24b02539d44980c2e6e15" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="319" refid="structDIAG__CH__CFG__s_1a61a6dcca3e2be3143111cf1d51c0b649" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>description[40];</highlight></codeline>
+<codeline lineno="320" refid="structDIAG__CH__CFG__s_1a3b081fff2cf3428c615bf377995659a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ac374425569a774aa18a8571c69be37b2" kindref="member">DIAG_TYPE_e</ref><sp/><ref refid="structDIAG__CH__CFG__s_1a3b081fff2cf3428c615bf377995659a7" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="321" refid="structDIAG__CH__CFG__s_1a16c7fee2e801915bb8ea5cc62511a886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structDIAG__CH__CFG__s_1a16c7fee2e801915bb8ea5cc62511a886" kindref="member">thresholds</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="323" refid="structDIAG__CH__CFG__s_1a5c2634dbef9f080de9135cfc3645f1c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6" kindref="member">DIAG_TYPE_RECORDING_e</ref><sp/><ref refid="structDIAG__CH__CFG__s_1a5c2634dbef9f080de9135cfc3645f1c4" kindref="member">enablerecording</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="324" refid="structDIAG__CH__CFG__s_1a560b103411623c3dc045d38a18bc08b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26" kindref="member">DIAG_ENABLE_STATE_e</ref><sp/><ref refid="structDIAG__CH__CFG__s_1a560b103411623c3dc045d38a18bc08b7" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="325" refid="structDIAG__CH__CFG__s_1aafc7b9b9de2d7bc673b0970af3de1bf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*callbackfunc)(<ref refid="diag__id__cfg_8h_1a685609f013e9b75687b2422019115a8f" kindref="member">DIAG_CH_ID_e</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868" kindref="member">DIAG_EVENT_e</ref>);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}<sp/><ref refid="structDIAG__CH__CFG__s" kindref="compound">DIAG_CH_CFG_s</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="structDIAG__DEV__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333" refid="structDIAG__DEV__s_1a8d5f5bb767f92c190d90c987a356014a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structDIAG__DEV__s_1a8d5f5bb767f92c190d90c987a356014a" kindref="member">nr_of_ch</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="334" refid="structDIAG__DEV__s_1afc06a818592ea9f1d0c0daba76beed32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDIAG__CH__CFG__s" kindref="compound">DIAG_CH_CFG_s</ref><sp/>*<ref refid="structDIAG__DEV__s_1afc06a818592ea9f1d0c0daba76beed32" kindref="member">ch_cfg</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}<sp/><ref refid="structDIAG__DEV__s" kindref="compound">DIAG_DEV_s</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="structDIAG__SYSMON__NOTIFICATION__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="341" refid="structDIAG__SYSMON__NOTIFICATION__s_1acbf7acd7204e171458ea299274f95dbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDIAG__SYSMON__NOTIFICATION__s_1acbf7acd7204e171458ea299274f95dbc" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="342" refid="structDIAG__SYSMON__NOTIFICATION__s_1a03d895f319565eabda8554300a889ba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDIAG__SYSMON__NOTIFICATION__s_1a03d895f319565eabda8554300a889ba9" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}<sp/><ref refid="structDIAG__SYSMON__NOTIFICATION__s" kindref="compound">DIAG_SYSMON_NOTIFICATION_s</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="structDIAG__SYSMON__CH__CFG__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="350" refid="structDIAG__SYSMON__CH__CFG__s_1a31032be24237e26954b9750bf9b1020b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78f" kindref="member">DIAG_SYSMON_MODULE_ID_e</ref><sp/><ref refid="structDIAG__SYSMON__CH__CFG__s_1a31032be24237e26954b9750bf9b1020b" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="351" refid="structDIAG__SYSMON__CH__CFG__s_1a7b96e91e2b5cb7478ff57b035288ffbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a35508221b1a3b87c17fe14879c55245e" kindref="member">DIAG_SYSMON_TYPE_e</ref><sp/><ref refid="structDIAG__SYSMON__CH__CFG__s_1a7b96e91e2b5cb7478ff57b035288ffbe" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="352" refid="structDIAG__SYSMON__CH__CFG__s_1a8a511a40f8917e75ccba56ffa3cd2953" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structDIAG__SYSMON__CH__CFG__s_1a8a511a40f8917e75ccba56ffa3cd2953" kindref="member">threshold</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353" refid="structDIAG__SYSMON__CH__CFG__s_1ac7a9056a27bdf7e0fa5c82f00f747ebd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acaeb49dd63a77545a6a491f2d8d02ec6" kindref="member">DIAG_TYPE_RECORDING_e</ref><sp/><ref refid="structDIAG__SYSMON__CH__CFG__s_1ac7a9056a27bdf7e0fa5c82f00f747ebd" kindref="member">enablerecording</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="354" refid="structDIAG__SYSMON__CH__CFG__s_1ae49ea9f00d033fec551e05175a22aba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1a07597fe312930d3d6cbbc3e0fef12a86" kindref="member">DIAG_SYSMON_HANDLING_TYPE_e</ref><sp/><ref refid="structDIAG__SYSMON__CH__CFG__s_1ae49ea9f00d033fec551e05175a22aba9" kindref="member">handlingtype</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="355" refid="structDIAG__SYSMON__CH__CFG__s_1aa7701e2e0463a024d26faa354b5c1eff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag__cfg_8h_1acefad379f91bccc213792bfc98fdbd26" kindref="member">DIAG_ENABLE_STATE_e</ref><sp/><ref refid="structDIAG__SYSMON__CH__CFG__s_1aa7701e2e0463a024d26faa354b5c1eff" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="356" refid="structDIAG__SYSMON__CH__CFG__s_1ac4f294260c6b86961884a17b4f1b07f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*callbackfunc)(<ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78f" kindref="member">DIAG_SYSMON_MODULE_ID_e</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="357"><highlight class="normal">}<sp/><ref refid="structDIAG__SYSMON__CH__CFG__s" kindref="compound">DIAG_SYSMON_CH_CFG_s</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structDIAG__DEV__s" kindref="compound">DIAG_DEV_s</ref><sp/><ref refid="diag__cfg_8h_1a38ec347f2786572d994d5328a5d56373" kindref="member">diag_dev</ref>;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structDIAG__SYSMON__CH__CFG__s" kindref="compound">DIAG_SYSMON_CH_CFG_s</ref><sp/><ref refid="diag__cfg_8h_1adeed727b6bffb1e318576286406cf063" kindref="member">diag_sysmon_ch_cfg</ref>[];</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structDIAG__CH__CFG__s" kindref="compound">DIAG_CH_CFG_s</ref><sp/><sp/><ref refid="diag__cfg_8h_1a9bee9f56a48fb0b3172084c58a3265ad" kindref="member">diag_ch_cfg</ref>[];</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>why<sp/>is<sp/>it<sp/>in<sp/>header<sp/>at<sp/>all?<sp/>and<sp/>why<sp/>is<sp/>it<sp/>in<sp/>code<sp/>at<sp/>all?<sp/>not<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structDIAG__CODE__s" kindref="compound">DIAG_CODE_s</ref><sp/><ref refid="diag__cfg_8h_1a553ba4577e9db33b2e478421cf89fed6" kindref="member">diag_mask</ref>;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DIAG_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/config/diag_cfg.h"/>
+  </compounddef>
+</doxygen>

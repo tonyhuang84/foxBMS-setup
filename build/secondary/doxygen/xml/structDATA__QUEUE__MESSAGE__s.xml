@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__QUEUE__MESSAGE__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_QUEUE_MESSAGE_s</compoundname>
+    <includes refid="database_8h" local="no">database.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__QUEUE__MESSAGE__s_1ac22eac0914ef813c52979308f7488e7b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_QUEUE_MESSAGE_s::u32value</definition>
+        <argsstring></argsstring>
+        <name>u32value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__QUEUE__MESSAGE__s_1af54a5a54c25dd91914cb087414cc7c4f" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* DATA_QUEUE_MESSAGE_s::u32ptr</definition>
+        <argsstring></argsstring>
+        <name>u32ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="50" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DATA_QUEUE_MESSAGE_s::voidptr</definition>
+        <argsstring></argsstring>
+        <name>voidptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="51" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__QUEUE__MESSAGE__s_1a27ab2ea0a108938fce353b69cd6e6cdf" prot="public" static="no" mutable="no">
+        <type>union DATA_QUEUE_MESSAGE_s::@0</type>
+        <definition>union DATA_QUEUE_MESSAGE_s::@0  DATA_QUEUE_MESSAGE_s::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" prot="public" static="no" mutable="no">
+        <type><ref refid="database__cfg_8h_1aeec01bdaeac15bc320a373d4593ac2aa" kindref="member">DATA_BLOCK_ID_TYPE_e</ref></type>
+        <definition>DATA_BLOCK_ID_TYPE_e DATA_QUEUE_MESSAGE_s::blockID</definition>
+        <argsstring></argsstring>
+        <name>blockID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="53" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" prot="public" static="no" mutable="no">
+        <type><ref refid="database__cfg_8h_1a146e0fa1ea9fb5bc6c9033931a141be1" kindref="member">DATA_BLOCK_ACCESS_TYPE_e</ref></type>
+        <definition>DATA_BLOCK_ACCESS_TYPE_e DATA_QUEUE_MESSAGE_s::accesstype</definition>
+        <argsstring></argsstring>
+        <name>accesstype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="54" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" line="46" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/engine/database/database.h" bodystart="46" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structDATA__QUEUE__MESSAGE__s_1a7f90aea9c8268a9cfe75fe56ed2d570d" prot="public" virt="non-virtual"><scope>DATA_QUEUE_MESSAGE_s</scope><name>accesstype</name></member>
+      <member refid="structDATA__QUEUE__MESSAGE__s_1aadfc4149a3671549c4f91d5442961ccb" prot="public" virt="non-virtual"><scope>DATA_QUEUE_MESSAGE_s</scope><name>blockID</name></member>
+      <member refid="structDATA__QUEUE__MESSAGE__s_1af54a5a54c25dd91914cb087414cc7c4f" prot="public" virt="non-virtual"><scope>DATA_QUEUE_MESSAGE_s</scope><name>u32ptr</name></member>
+      <member refid="structDATA__QUEUE__MESSAGE__s_1ac22eac0914ef813c52979308f7488e7b" prot="public" virt="non-virtual"><scope>DATA_QUEUE_MESSAGE_s</scope><name>u32value</name></member>
+      <member refid="structDATA__QUEUE__MESSAGE__s_1a27ab2ea0a108938fce353b69cd6e6cdf" prot="public" virt="non-virtual"><scope>DATA_QUEUE_MESSAGE_s</scope><name>value</name></member>
+      <member refid="structDATA__QUEUE__MESSAGE__s_1a43261554f8d42316f3b7ab2de680d55a" prot="public" virt="non-virtual"><scope>DATA_QUEUE_MESSAGE_s</scope><name>voidptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

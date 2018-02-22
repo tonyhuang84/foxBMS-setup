@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="unionCANS__signals__t" kind="union" language="C++" prot="public">
+    <compoundname>CANS_signals_t</compoundname>
+    <includes refid="cansignal__cfg_8h" local="no">cansignal_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionCANS__signals__t_1ab0854495aafd5df92e60b02687959283" prot="public" static="no" mutable="no">
+        <type><ref refid="cansignal__cfg_8h_1ae5f77a630a6e5da831a285789ee32701" kindref="member">CANS_CAN0_signalsTx_e</ref></type>
+        <definition>CANS_CAN0_signalsTx_e CANS_signals_t::Tx</definition>
+        <argsstring></argsstring>
+        <name>Tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="612" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCANS__signals__t_1aa0f5cb946411ef90a0d77c6660624c22" prot="public" static="no" mutable="no">
+        <type><ref refid="cansignal__cfg_8h_1ab17a7f254041e6ba97221eb5b9bffa1e" kindref="member">CANS_CAN0_signalsRx_e</ref></type>
+        <definition>CANS_CAN0_signalsRx_e CANS_signals_t::Rx</definition>
+        <argsstring></argsstring>
+        <name>Rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="613" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" line="611" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/cansignal_cfg.h" bodystart="611" bodyend="614"/>
+    <listofallmembers>
+      <member refid="unionCANS__signals__t_1aa0f5cb946411ef90a0d77c6660624c22" prot="public" virt="non-virtual"><scope>CANS_signals_t</scope><name>Rx</name></member>
+      <member refid="unionCANS__signals__t_1ab0854495aafd5df92e60b02687959283" prot="public" virt="non-virtual"><scope>CANS_signals_t</scope><name>Tx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

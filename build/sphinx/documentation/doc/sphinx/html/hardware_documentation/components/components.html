@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6. Hardware Safety Components &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="7. Battery Junction Box" href="../bjb/bjb.html"/>
+        <link rel="prev" title="5. Hardware Design Resources" href="../design_resources/design_resources.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>6. Hardware Safety Components</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/hardware_documentation/components/components.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hardware-safety-components">
+<span id="hardware-documentation-components"></span><h1>6. Hardware Safety Components<a class="headerlink" href="#hardware-safety-components" title="Permalink to this headline">¶</a></h1>
+<p>Before using foxBMS Master Unit and the foxBMS Slave Units with lithium-ion batteries, safety must be considered very carefully. The following parts and components are recommended to be used with the foxBMS Master Unit and the foxBMS Slave Units.</p>
+<div class="section" id="dc-battery-pack-fuse">
+<h2>6.1. DC Battery Pack Fuse<a class="headerlink" href="#dc-battery-pack-fuse" title="Permalink to this headline">¶</a></h2>
+<p>When using foxBMS with batteries, a DC fuse in the current path is mandatory. In case of external short circuit of the battery pack, this fuse must be able to break the current at the maximum high-voltage of the complete battery. This DC fuse is a critical safety component and needs to be selected very carefully. The different parameters of the specific battery pack used must be taken into account (e.g., maximum voltage, expected short circuit current, continuous current).</p>
+<p><a class="reference internal" href="#battery-system-block-diagram"><span class="std std-numref">Fig. 6.3</span></a> shows how to set up a basic battery system using these components. In the section <a class="reference internal" href="../bjb/bjb.html#hardware-documentation-bjb"><span class="std std-ref">Battery Junction Box</span></a>, details can be found on how to use these and other components depending on the used battery system.</p>
+<div class="figure" id="id1">
+<span id="battery-system-block-diagram"></span><a class="reference internal image-reference" href="../../_images/battery_system_block_diagram1.png"><img alt="../../_images/battery_system_block_diagram1.png" src="../../_images/battery_system_block_diagram1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Block diagram showing the typical topology of a battery system</span></p>
+</div>
+</div>
+<div class="section" id="power-contactors">
+<h2>6.2. Power Contactors<a class="headerlink" href="#power-contactors" title="Permalink to this headline">¶</a></h2>
+<p>To switching high-current capable batteries, mechanical power contactors (power relays) shall be used. For safety reasons, contactors with auxiliary contacts providing true state feedback are strongly recommended. foxBMS was developed and tested with the contactors of type Gigavac GX14 (GX14BAB: 12V coil voltage and normally open auxiliary contacts), but will probably work with many other contactors. The most important safety parameters are the maximum break current and the maximum allowed voltage to be broken. This must carefully be checked by the user of the foxBMS research and development platform. Further, the pick-up and continuous current of the contactor coil must be checked to be within the foxBMS electrical ratings. Nevertheless, contactors matching the used battery pack specification (e.g., continuous current, maximum voltage, short circuit current) are mandatory.</p>
+</div>
+<div class="section" id="current-sensor">
+<h2>6.3. Current Sensor<a class="headerlink" href="#current-sensor" title="Permalink to this headline">¶</a></h2>
+<p>To measure the battery pack current, CAN based current sensors can be used. The Isabellenhütte IVT-MOD and IVT-S shunt based current sensors were tested with foxBMS. The automotive current sensor IVT-MOD 300 provides a current measurement range of +/-300A and in addition three voltage measurement inputs with a voltage measurement range of +/-600V. Current sensors with higher current measurement ranges are available. Please check the <a class="reference external" href="https://www.isabellenhuette.de/en/home">Isabellenhütte homepage</a> and contact a <a class="reference external" href="https://www.isabellenhuette.de/en/contact">salesperson</a> to get more information. If another CAN based current sensor is used, the embedded software on the BMS-Master Board must be adapted.</p>
+</div>
+<div class="section" id="insulation-monitor">
+<h2>6.4. Insulation Monitor<a class="headerlink" href="#insulation-monitor" title="Permalink to this headline">¶</a></h2>
+<p>foxBMS supports an insulation monitoring device (i.e., also called a ground fault detector) to detect faulty insulation of the battery pack against chassis, ground or or battery pack enclosure. Bender insulation monitor IR155-3203/-3204/-3210 are supported and tested, while IR155-3204 is recommended.
+The Bender ISOMETER IR155-3203/-3204 monitors the insulation resistance between the insulated and active HV-conductors of an electrical drive system (up to 1000VDC) and the reference ground. The fault messages (insulation fault at the HV-system, connection or device error)  will be provided at the integrated and galvanic isolated interface. The interface consists of a status output (called OKHS output) and a measurement output
+(called MHS/MLS output). The status output signalises errors or that the system is error free. The measurement output signalises the actual insulation resistance. Furthermore, it is possible to distinguish between different fault messages and device conditions, which
+are base frequency encoded. For details, consult the corresponding device datasheet or manual. The insulation resistance threshold can be factory programmed, as well as an additional undervoltage threshold. Any violation of thresholds causes an error signal on the status pin.</p>
+<p>According to ECE R-100 the insulation resistance between the high voltage bus and the electrical chassis shall have a minimum value of 100Ohm/V of the working voltage for DC buses, and a minimum value of 500Ohm/V of the working
+voltage for AC buses (e.g., for a 800V system, the insulation resistance threshold should be selected for 400kOhm).</p>
+<p>The following section describes how to test the Bender functionality.</p>
+<div class="section" id="required-hardware">
+<h3>6.4.1. Required Hardware<a class="headerlink" href="#required-hardware" title="Permalink to this headline">¶</a></h3>
+<p>Before starting, following items are needed:</p>
+<ul class="simple">
+<li>BMS-Master Board</li>
+<li>Bender insulation monitor IR155-3204/-3210</li>
+<li>Lauterbach debugger</li>
+<li>Resistors (1kOhm, 220kOhm, 470kOhm, 1MOhm)</li>
+<li>Terminal block for simple wire connection</li>
+<li>This documentation</li>
+</ul>
+</div>
+<div class="section" id="electrical-connections">
+<h3>6.4.2. Electrical Connections<a class="headerlink" href="#electrical-connections" title="Permalink to this headline">¶</a></h3>
+<p>The follwong figure displays the the connectors of the Bender insulation monitor.</p>
+<div class="figure" id="id2">
+<span id="bender-wiring"></span><a class="reference internal image-reference" href="../../_images/bender_wiring.png"><img alt="../../_images/bender_wiring.png" src="../../_images/bender_wiring.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Wiring of the Bender insulation monitor (image source: Bender Datasheet)</span></p>
+</div>
+<p>Connect the Bender as follwing:</p>
+<ul class="simple">
+<li>connect the bender to foxBMS as described in chapter <a class="reference internal" href="../specifications/specifications.html#hardware-documentation-specifications"><span class="std std-ref">Hardware Specifications</span></a></li>
+<li>connect line voltage L-(connector XLA-) to chassis ground (Pin 3 and 4 of connector XK1A)</li>
+<li>connect one of the resistors between chassis ground/line voltage L-(XLA-) and line voltage L+(XLA+)</li>
+</ul>
+<p>Depending on the connected resistor, different insulation values are measured.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../bjb/bjb.html" class="btn btn-neutral float-right" title="7. Battery Junction Box" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../design_resources/design_resources.html" class="btn btn-neutral" title="5. Hardware Design Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

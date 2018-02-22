@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Secondary MCU Source Code Documentation</title>
+    <detaileddescription>
+<para>This manual describes the functions and variables used in the foxBMS software. Four sections can be found:</para><para><itemizedlist>
+<listitem><para>Common Interfaces</para></listitem><listitem><para>Modules</para></listitem><listitem><para>Data structures</para></listitem><listitem><para>Files</para></listitem></itemizedlist>
+</para><para>They can be browsed with the navigation bar on the left.</para><para><heading level="2">Internal References</heading>
+</para><para><heading level="3">Related Documentation References</heading>
+</para><para><table rows="6" cols="2"><row>
+<entry thead="yes"><para><bold>Latest online available documentation</bold> </para></entry><entry thead="yes"><para><bold>Version available if the documentation was locally build</bold> </para></entry></row>
+<row>
+<entry thead="no"><para><simplesect kind="warning"><para>The links to documentaions in this column always points to the latest realsed version on GitHub and your local changes can not be found in that online version. </para></simplesect>
+</para></entry><entry thead="no"><para><simplesect kind="warning"><para>The links to documentaions in this column only exist after building the documentation locally. If this was not done, the link will not work. </para></simplesect>
+</para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://foxbms.readthedocs.io/"><bold>Online</bold> foxBMS General Documentation</ulink> </para></entry><entry thead="no"><para><ulink url="../../../sphinx/documentation/doc/sphinx/html/index.html"><bold>Local</bold> foxBMS General Documentation</ulink> </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://iisb-foxbms.iisb.fraunhofer.de/foxbms/documentation/primary/html/index.html"><bold>Online</bold> Primary MCU Source Code Documentation</ulink> </para></entry><entry thead="no"><para><ulink url="../../../primary/doxygen/html/index.html"><bold>Local</bold> Primary MCU Source Code Documentation</ulink> </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://iisb-foxbms.iisb.fraunhofer.de/foxbms/documentation/secondary/html/index.html"><bold>Online</bold> Secondary MCU Source Code Documentation</ulink> </para></entry><entry thead="no"><para><ulink url="../../../secondary/doxygen/html/index.html"><bold>Local</bold> Secondary MCU Source Code Documentation</ulink> </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://iisb-foxbms.iisb.fraunhofer.de/foxbms/documentation/bootloader/html/index.html"><bold>Online</bold> Bootloader Source Code Documentation</ulink> </para></entry><entry thead="no"><para><ulink url="../../../bootloader/doxygen/html/index.html"><bold>Local</bold> Bootloader Source Code Documentation</ulink> </para></entry></row>
+</table>
+</para><para><heading level="3">User Configurable Options</heading>
+</para><para>Direct access to the user configurable options:<itemizedlist>
+<listitem><para><ref refid="CONFIG_PAGE" kindref="compound">User configurable options</ref></para></listitem></itemizedlist>
+</para><para><heading level="3">Application Programming Interface</heading>
+</para><para>Direct access to the API:<itemizedlist>
+<listitem><para><ref refid="API_PAGE" kindref="compound">User Interfaces (API)</ref></para></listitem></itemizedlist>
+</para><para>Direct access to the source modules:<itemizedlist>
+<listitem><para><ref refid="group__APPLICATION" kindref="compound">Applications</ref></para></listitem><listitem><para><ref refid="group__APPLICATION__CONF" kindref="compound">Application Configuration</ref></para></listitem><listitem><para><ref refid="group__ENGINE" kindref="compound">Engine</ref></para></listitem><listitem><para><ref refid="group__ENGINE__CONF" kindref="compound">Engine Configuration</ref></para></listitem><listitem><para><ref refid="group__GENERAL" kindref="compound">General</ref></para></listitem><listitem><para><ref refid="group__GENERAL__CONF" kindref="compound">General Configuration</ref></para></listitem><listitem><para><ref refid="group__DRIVERS" kindref="compound">Drivers</ref></para></listitem><listitem><para><ref refid="group__DRIVERS__CONF" kindref="compound">Driver Configuration</ref></para></listitem><listitem><para><ref refid="group__UTIL" kindref="compound">Utilities</ref></para></listitem><listitem><para><ref refid="group__UTIL__CONF" kindref="compound">Utility Configuration</ref></para></listitem><listitem><para><ref refid="group__OS" kindref="compound">Operating System</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

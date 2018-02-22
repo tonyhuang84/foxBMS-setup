@@ -1,0 +1,8 @@
+<map id="dma_cfg.h" name="dma_cfg.h">
+<area shape="rect" id="node2" href="$dma__cfg_8c.html" title="Configuration for the DMA module. " alt="" coords="37,80,120,107"/>
+<area shape="rect" id="node3" href="$dma_8h.html" title="Headers for the driver for the DMA module (encapsulation of the init function). " alt="" coords="144,80,203,107"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="Main function. " alt="" coords="5,155,67,181"/>
+<area shape="rect" id="node5" href="$spi__cfg_8c.html" title="Configuration for the serial peripheral interface module. " alt="" coords="91,155,165,181"/>
+<area shape="rect" id="node6" href="$dma_8c.html" title="Driver for the DMA module (encapsulation of the init function). " alt="" coords="189,155,248,181"/>
+<area shape="rect" id="node7" href="$spi_8c.html" title="Driver for the serial peripheral interface module (encapsulation of some HAL functions) ..." alt="" coords="272,155,323,181"/>
+</map>

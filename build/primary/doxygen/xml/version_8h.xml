@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="version_8h" kind="file" language="C++">
+    <compoundname>version.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="version_8c" local="yes">version.c</includedby>
+    <includedby refid="chksum_8h" local="yes">chksum.h</includedby>
+    <includedby refid="chksum_8c" local="yes">chksum.c</includedby>
+    <incdepgraph>
+      <node id="3092">
+        <label>stdint.h</label>
+      </node>
+      <node id="3091">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="3092" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3097">
+        <label>chksum.c</label>
+        <link refid="chksum_8c"/>
+      </node>
+      <node id="3096">
+        <label>chksum.h</label>
+        <link refid="chksum_8h"/>
+        <childnode refid="3094" relation="include">
+        </childnode>
+        <childnode refid="3097" relation="include">
+        </childnode>
+        <childnode refid="3098" relation="include">
+        </childnode>
+      </node>
+      <node id="3098">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="3094">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3095">
+        <label>version.c</label>
+        <link refid="version_8c"/>
+      </node>
+      <node id="3093">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="3094" relation="include">
+        </childnode>
+        <childnode refid="3095" relation="include">
+        </childnode>
+        <childnode refid="3096" relation="include">
+        </childnode>
+        <childnode refid="3097" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structVER__ValidStruct__s" prot="public">VER_ValidStruct_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="version_8h_1a915e42f5aff19bb79fb8d8d91f31a28c" prot="public" static="no">
+        <name>VER_SW_VERSION</name>
+        <initializer><ref refid="general_8h_1ad7a967dd260384e94010b31b1412a0b4" kindref="member">BUILD_VERSION</ref></initializer>
+        <briefdescription>
+<para>Software Version Number. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use Case: uint8_t Version[16] example: &quot;V0.4.0 &quot; ( 15 char + &apos;\0&apos; ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="52" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a6e4037d7a3a7de62e015363b4164b0a9" prot="public" static="no">
+        <name>VER_PROJECT</name>
+        <initializer><ref refid="general_8h_1a55a3744dddc6112219176c22e913520e" kindref="member">BUILD_APPNAME</ref></initializer>
+        <briefdescription>
+<para>Software Project Name Use Case: uint8_t Version[16] example: &quot; foxBMS&quot; ( 15 char + &apos;\0&apos; ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="59" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a26916096c856f2cc4e419cfd3c70173b" prot="public" static="no">
+        <name>VER_BL_BUILD_MAJOR</name>
+        <initializer><ref refid="general_8h_1afa6ec8f3301cbefb0c984b00901dabb4" kindref="member">BUILD_BL_MAJOR</ref></initializer>
+        <briefdescription>
+<para>Bootloader Software Build Major Number (bootloaders value must match to the applications one ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="65" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1ab01f1a3bbd8d8f0062bf646a61e1d554" prot="public" static="no">
+        <name>VER_BL_BUILD_MINOR</name>
+        <initializer><ref refid="general_8h_1a52712d6185b9a6377b972845305a0279" kindref="member">BUILD_BL_MINOR</ref></initializer>
+        <briefdescription>
+<para>Bootloader Software Build Minor Number (bootloaders value must match to the applications one ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="71" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a51ef276ba979da27ba644a3d83f95ab6" prot="public" static="no">
+        <name>VER_BL_BUILD_BUGFIX</name>
+        <initializer><ref refid="general_8h_1a37a1935152146dfe75240f5394e90260" kindref="member">BUILD_BL_BUGFIX</ref></initializer>
+        <briefdescription>
+<para>Bootloader Software Build Bugfix Number (bootloaders value need not match to the applications one ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="77" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a5a0fcaf352c16fa37a865e973e2cc3f5" prot="public" static="no">
+        <name>VER_FLASH_APPL_VALID_MARKER</name>
+        <initializer>0x1122334455667788</initializer>
+        <briefdescription>
+<para>Application Valid Marker in Flash header. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="83" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a5d7b49ebceb84419092605b2ef2d23e4" prot="public" static="no">
+        <name>VER_FLASH_APPL_INVALID_MARKER</name>
+        <initializer>0x8877665544332211</initializer>
+        <briefdescription>
+<para>Application Invalid Marker in Flash header. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="89" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a526f9b9e2e9cff2f85366b5c4aa854d4" prot="public" static="no">
+        <name>VER_FLASH_APPL_NOT_INVALID_MARKER</name>
+        <initializer>0xFFFFFFFFFFFFFFFF</initializer>
+        <briefdescription>
+<para>Application Not Invalid Marker in Flash header (Default Value of erased Flash) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="95" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a001b67e339c017014c9b66e4f6a14d4f" prot="public" static="no">
+        <name>VER_FLASH_BL_STAY_IN_BOOTLOADER_TIME</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+<para>Stay in Bootloader Time (in ms) and wait for download request even if a valid application is available. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="101" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="version_8h_1ac11978714978a4e94f44941f40ba6cdb" prot="public" static="no">
+        <name>VER_BUILDVARIANT_e</name>
+        <enumvalue id="version_8h_1ac11978714978a4e94f44941f40ba6cdbaf1577dcde4b6f35c500b8d08b20adce2" prot="public">
+          <name>VER_BUILDVARIANT_UNKNOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="version_8h_1ac11978714978a4e94f44941f40ba6cdba96095cdbb38972d300fccbb1db0581b4" prot="public">
+          <name>VER_BUILDVARIANT_LABOR</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="version_8h_1ac11978714978a4e94f44941f40ba6cdbaabbea044f699d8a966c2cbdf730417e0" prot="public">
+          <name>VER_BUILDVARIANT_TESTBENCH</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="103" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="version_8h_1a9464f0208c27157a6ef8c11cb483fff1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sflash1[]</definition>
+        <argsstring>[]</argsstring>
+        <name>_sflash1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="version_8h_1aa17974aba09b2f7fa454498337d243f6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _eflash1[]</definition>
+        <argsstring>[]</argsstring>
+        <name>_eflash1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="version_8h_1a5671c5b9aecdc894619cb311e4ceb5c4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _jumpadressvectable[]</definition>
+        <argsstring>[]</argsstring>
+        <name>_jumpadressvectable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="version_8h_1abb9ff426215dd681f7a5137e7ed13ed8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structVER__ValidStruct__s" kindref="compound">VER_ValidStruct_s</ref></type>
+        <definition>const VER_ValidStruct_s ver_sw_validation</definition>
+        <argsstring></argsstring>
+        <name>ver_sw_validation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h" line="159" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions for setting a version number, headers. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>VER </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>VERSION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VERSION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="version_8h_1a9464f0208c27157a6ef8c11cb483fff1" kindref="member">_sflash1</ref>[];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="version_8h_1aa17974aba09b2f7fa454498337d243f6" kindref="member">_eflash1</ref>[];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="version_8h_1a5671c5b9aecdc894619cb311e4ceb5c4" kindref="member">_jumpadressvectable</ref>[];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="version_8h_1a915e42f5aff19bb79fb8d8d91f31a28c" refkind="member"><highlight class="preprocessor">#define<sp/>VER_SW_VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUILD_VERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="version_8h_1a6e4037d7a3a7de62e015363b4164b0a9" refkind="member"><highlight class="preprocessor">#define<sp/>VER_PROJECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUILD_APPNAME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="version_8h_1a26916096c856f2cc4e419cfd3c70173b" refkind="member"><highlight class="preprocessor">#define<sp/>VER_BL_BUILD_MAJOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUILD_BL_MAJOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="version_8h_1ab01f1a3bbd8d8f0062bf646a61e1d554" refkind="member"><highlight class="preprocessor">#define<sp/>VER_BL_BUILD_MINOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUILD_BL_MINOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="version_8h_1a51ef276ba979da27ba644a3d83f95ab6" refkind="member"><highlight class="preprocessor">#define<sp/>VER_BL_BUILD_BUGFIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUILD_BL_BUGFIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="version_8h_1a5a0fcaf352c16fa37a865e973e2cc3f5" refkind="member"><highlight class="preprocessor">#define<sp/>VER_FLASH_APPL_VALID_MARKER<sp/><sp/><sp/><sp/><sp/>0x1122334455667788</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="version_8h_1a5d7b49ebceb84419092605b2ef2d23e4" refkind="member"><highlight class="preprocessor">#define<sp/>VER_FLASH_APPL_INVALID_MARKER<sp/><sp/><sp/><sp/>0x8877665544332211</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="version_8h_1a526f9b9e2e9cff2f85366b5c4aa854d4" refkind="member"><highlight class="preprocessor">#define<sp/>VER_FLASH_APPL_NOT_INVALID_MARKER<sp/><sp/><sp/><sp/><sp/>0xFFFFFFFFFFFFFFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="version_8h_1a001b67e339c017014c9b66e4f6a14d4f" refkind="member"><highlight class="preprocessor">#define<sp/>VER_FLASH_BL_STAY_IN_BOOTLOADER_TIME<sp/><sp/><sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="version_8h_1ac11978714978a4e94f44941f40ba6cdb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104" refid="version_8h_1ac11978714978a4e94f44941f40ba6cdbaf1577dcde4b6f35c500b8d08b20adce2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="version_8h_1ac11978714978a4e94f44941f40ba6cdbaf1577dcde4b6f35c500b8d08b20adce2" kindref="member">VER_BUILDVARIANT_UNKNOWN</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="105" refid="version_8h_1ac11978714978a4e94f44941f40ba6cdba96095cdbb38972d300fccbb1db0581b4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="version_8h_1ac11978714978a4e94f44941f40ba6cdba96095cdbb38972d300fccbb1db0581b4" kindref="member">VER_BUILDVARIANT_LABOR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="106" refid="version_8h_1ac11978714978a4e94f44941f40ba6cdbaabbea044f699d8a966c2cbdf730417e0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="version_8h_1ac11978714978a4e94f44941f40ba6cdbaabbea044f699d8a966c2cbdf730417e0" kindref="member">VER_BUILDVARIANT_TESTBENCH</ref><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="version_8h_1ac11978714978a4e94f44941f40ba6cdb" kindref="member">VER_BUILDVARIANT_e</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="structVER__ValidStruct__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116" refid="structVER__ValidStruct__s_1ab1b36e4a4bfccd40a4ab576e5124ce51" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x00*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structVER__ValidStruct__s_1ab1b36e4a4bfccd40a4ab576e5124ce51" kindref="member">Valid_u64</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>not<sp/>used<sp/>(Application-Validation<sp/>marker)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="structVER__ValidStruct__s_1ac649284075778af02db51c3da0084278" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x08*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structVER__ValidStruct__s_1ac649284075778af02db51c3da0084278" kindref="member">Invalid_u64</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>not<sp/>used<sp/>(Application-Invalidation<sp/>marker)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structVER__ValidStruct__s_1a4668df862c4f9a40eb4c707bbf67cf01" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x10*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a4668df862c4f9a40eb4c707bbf67cf01" kindref="member">Checksum_u32</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>checksum<sp/>for<sp/>validating<sp/>the<sp/>Application<sp/>SW<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="structVER__ValidStruct__s_1a1dc889c8acf22e35a8b01a630fb33f77" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x14*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a1dc889c8acf22e35a8b01a630fb33f77" kindref="member">dummy_3</ref>;</highlight></codeline>
+<codeline lineno="120" refid="structVER__ValidStruct__s_1ac0762a9980cd54680591c1295960ed77" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x18*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>Version[16];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Version:<sp/>&quot;V0.4.0&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structVER__ValidStruct__s_1a51029e41890a9d0428da73111ffb5743" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x28*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>Project[16];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Project:<sp/>&quot;foxBMS&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="structVER__ValidStruct__s_1ac1eb34130b6115cb0882cddede0c827d" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x38*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="version_8h_1ac11978714978a4e94f44941f40ba6cdb" kindref="member">VER_BUILDVARIANT_e</ref><sp/><sp/><ref refid="structVER__ValidStruct__s_1ac1eb34130b6115cb0882cddede0c827d" kindref="member">BuildVariant</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">/*BuildVariant*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="structVER__ValidStruct__s_1ac9459aa67003ce6745089e7092b1bee6" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x39*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>bootloaderVersion[3];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Required<sp/>bootloader<sp/>version<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="structVER__ValidStruct__s_1ad611a3603bd3618f148bbd3cca197dad" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x3C*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structVER__ValidStruct__s_1ad611a3603bd3618f148bbd3cca197dad" kindref="member">enableFlashChecksum</ref>;</highlight></codeline>
+<codeline lineno="125" refid="structVER__ValidStruct__s_1af11c880c3f538817179b4a839245b7a8" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x3D*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structVER__ValidStruct__s_1af11c880c3f538817179b4a839245b7a8" kindref="member">enableBootloader</ref>;</highlight></codeline>
+<codeline lineno="126" refid="structVER__ValidStruct__s_1aeb6e19b3ef084e54c94cfeadcd75c3aa" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x3E*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structVER__ValidStruct__s_1aeb6e19b3ef084e54c94cfeadcd75c3aa" kindref="member">stayinBootloaderTime</ref>;</highlight></codeline>
+<codeline lineno="127" refid="structVER__ValidStruct__s_1a30a96892bc5acc5240ee7e5f38da011c" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x40*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a30a96892bc5acc5240ee7e5f38da011c" kindref="member">dummy_2</ref>;</highlight></codeline>
+<codeline lineno="128" refid="structVER__ValidStruct__s_1a212472806a11627dba7580d0051a72ef" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x44*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a212472806a11627dba7580d0051a72ef" kindref="member">dummy_4</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>memory<sp/>ranges<sp/>for<sp/>checksum<sp/>calculation,<sp/>addresses<sp/>in<sp/>the<sp/>following<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="structVER__ValidStruct__s_1a99fb803c9393430d6df81a0254513820" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x48*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a99fb803c9393430d6df81a0254513820" kindref="member">startaddress</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>address<sp/>at<sp/>which<sp/>Checksum-Test<sp/>starts<sp/>(Start-Address<sp/>of<sp/>Application<sp/>SW)<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structVER__ValidStruct__s_1a25bb7b984176c10061b7db889316e345" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x4C*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a25bb7b984176c10061b7db889316e345" kindref="member">endaddress</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>end<sp/>address<sp/>of<sp/>first<sp/>memory<sp/>range<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structVER__ValidStruct__s_1ac2dea86e5d42fdb732dcd163912e9bd5" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x50*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ac2dea86e5d42fdb732dcd163912e9bd5" kindref="member">jumpadressvectable</ref>;</highlight></codeline>
+<codeline lineno="132" refid="structVER__ValidStruct__s_1a0ec4eb513ee6d652a89e0570773ad2fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a0ec4eb513ee6d652a89e0570773ad2fb" kindref="member">dummy_00b</ref>;</highlight></codeline>
+<codeline lineno="133" refid="structVER__ValidStruct__s_1ad230de1969e8e417fde7d44b669bc065" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x58*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ad230de1969e8e417fde7d44b669bc065" kindref="member">dummy_01a</ref>;</highlight></codeline>
+<codeline lineno="134" refid="structVER__ValidStruct__s_1a6583f0ec47ae1a94eb728745176a5387" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a6583f0ec47ae1a94eb728745176a5387" kindref="member">dummy_01b</ref>;</highlight></codeline>
+<codeline lineno="135" refid="structVER__ValidStruct__s_1ae5247a3eecaf02b11381e9093b6dcb8c" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x60*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ae5247a3eecaf02b11381e9093b6dcb8c" kindref="member">dummy_02a</ref>;</highlight></codeline>
+<codeline lineno="136" refid="structVER__ValidStruct__s_1ad786440db976f00a63fd84b5a0acd3d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ad786440db976f00a63fd84b5a0acd3d3" kindref="member">dummy_02b</ref>;</highlight></codeline>
+<codeline lineno="137" refid="structVER__ValidStruct__s_1a2ac23a8b2abdc52d56271adb9074e1f5" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x68*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a2ac23a8b2abdc52d56271adb9074e1f5" kindref="member">dummy_03a</ref>;</highlight></codeline>
+<codeline lineno="138" refid="structVER__ValidStruct__s_1ae41fed4b57fcf7ebcec18825adf459b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ae41fed4b57fcf7ebcec18825adf459b1" kindref="member">dummy_03b</ref>;</highlight></codeline>
+<codeline lineno="139" refid="structVER__ValidStruct__s_1a6ee3263dd298727aadf945e833e40a52" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x70*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a6ee3263dd298727aadf945e833e40a52" kindref="member">dummy_04a</ref>;</highlight></codeline>
+<codeline lineno="140" refid="structVER__ValidStruct__s_1a57f7e73e7be8f0e6fb28d5ba8d62f627" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a57f7e73e7be8f0e6fb28d5ba8d62f627" kindref="member">dummy_04b</ref>;</highlight></codeline>
+<codeline lineno="141" refid="structVER__ValidStruct__s_1af3f9d815b71d9ae712e1f2d077269274" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x78*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1af3f9d815b71d9ae712e1f2d077269274" kindref="member">dummy_05a</ref>;</highlight></codeline>
+<codeline lineno="142" refid="structVER__ValidStruct__s_1a8a047ab8bd8cedfdd5b1d81f16971a27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a8a047ab8bd8cedfdd5b1d81f16971a27" kindref="member">dummy_05b</ref>;</highlight></codeline>
+<codeline lineno="143" refid="structVER__ValidStruct__s_1a01114de22ba14c4097dc51d6aaae5c4c" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x80*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a01114de22ba14c4097dc51d6aaae5c4c" kindref="member">dummy_06a</ref>;</highlight></codeline>
+<codeline lineno="144" refid="structVER__ValidStruct__s_1aecf1d331fcbb9c2ae4dad785395aa273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1aecf1d331fcbb9c2ae4dad785395aa273" kindref="member">dummy_06b</ref>;</highlight></codeline>
+<codeline lineno="145" refid="structVER__ValidStruct__s_1a445a67957fc110b8491b65d3ecbfda63" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x88*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a445a67957fc110b8491b65d3ecbfda63" kindref="member">dummy_07a</ref>;</highlight></codeline>
+<codeline lineno="146" refid="structVER__ValidStruct__s_1a75a3b759bab109d6e33a457a1dae445d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a75a3b759bab109d6e33a457a1dae445d" kindref="member">dummy_07b</ref>;</highlight></codeline>
+<codeline lineno="147" refid="structVER__ValidStruct__s_1ab7678629c712c399c99a694be0b19fe9" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x90*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ab7678629c712c399c99a694be0b19fe9" kindref="member">dummy_08a</ref>;</highlight></codeline>
+<codeline lineno="148" refid="structVER__ValidStruct__s_1ac7ce156bda6f349e7494e9d20fd8dd31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1ac7ce156bda6f349e7494e9d20fd8dd31" kindref="member">dummy_08b</ref>;</highlight></codeline>
+<codeline lineno="149" refid="structVER__ValidStruct__s_1a8a9b989f26706b31e3d647fe3e3705d2" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0x98*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a8a9b989f26706b31e3d647fe3e3705d2" kindref="member">dummy_09a</ref>;</highlight></codeline>
+<codeline lineno="150" refid="structVER__ValidStruct__s_1a97371334e674d44dc1a12d2034917d23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structVER__ValidStruct__s_1a97371334e674d44dc1a12d2034917d23" kindref="member">dummy_09b</ref>;</highlight></codeline>
+<codeline lineno="151" refid="structVER__ValidStruct__s_1a50ed536dcfb78980601de3c6abee50f2" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0xA0*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>date[12];</highlight></codeline>
+<codeline lineno="152" refid="structVER__ValidStruct__s_1a94620727a2d2cbc6686a8301d101d403" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0xAC*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>time[12];</highlight></codeline>
+<codeline lineno="153" refid="structVER__ValidStruct__s_1ab620ad8db01df55191f9427f87949955" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*0xB8*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>dummy_u64[0x100<sp/>-<sp/>0xB8];</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}<sp/><ref refid="structVER__ValidStruct__s" kindref="compound">VER_ValidStruct_s</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVER__ValidStruct__s" kindref="compound">VER_ValidStruct_s</ref><sp/><ref refid="version_8h_1abb9ff426215dd681f7a5137e7ed13ed8" kindref="member">ver_sw_validation</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>VERSION_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/version.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="chksum_8h" kind="file" language="C++">
+    <compoundname>chksum.h</compoundname>
+    <includes refid="version_8h" local="yes">version.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="chksum_8c" local="yes">chksum.c</includedby>
+    <includedby refid="mcu_8c" local="yes">mcu.c</includedby>
+    <incdepgraph>
+      <node id="658">
+        <label>stdint.h</label>
+      </node>
+      <node id="656">
+        <label>chksum.h</label>
+        <link refid="chksum_8h"/>
+        <childnode refid="657" relation="include">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="661">
+        <label>chksum.c</label>
+        <link refid="chksum_8c"/>
+      </node>
+      <node id="659">
+        <label>chksum.h</label>
+        <link refid="chksum_8h"/>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="660">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCHK__STATUS__s" prot="public">CHK_STATUS_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="chksum_8h_1abe5b9e818972a0114ad155a231cdec8b" prot="public" static="no">
+        <name>CHK_CHECKSUM_STATUS_e</name>
+        <enumvalue id="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba042531d2bba493d9ed8a3bbbf7b76e79" prot="public">
+          <name>CHK_CHECKSUM_FAILED</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba037a9be3b79bbcfff9eca22bb0d8b8f8" prot="public">
+          <name>CHK_CHECKSUM_PASSED</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.h" line="49" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="chksum_8h_1a1e8acf1fdd8f889dde0261dc0cbb9ecb" prot="public" static="no" mutable="no">
+        <type><ref refid="structCHK__STATUS__s" kindref="compound">CHK_STATUS_s</ref></type>
+        <definition>CHK_STATUS_s chk_status</definition>
+        <argsstring></argsstring>
+        <name>chk_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.h" line="63" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="chksum_8h_1a45d3a9fdb49e56d5762df7bc259eb9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t CHK_crc32</definition>
+        <argsstring>(uint8_t *data, uint32_t len)</argsstring>
+        <name>CHK_crc32</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>CHK_crc32 provides crc32 algorithm. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function provides crc32 checksum functionality with hardware support. It has been modified to match the common implementations used in zlib/WinZip/... RCC_CRC_CLK needs to be enabled.</para><para><simplesect kind="return"><para>(type: uint32_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.h" line="75" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.c" bodystart="115" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="chksum_8h_1aba5196e1171f5a56adef0a2aeec49a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CHK_Flashchecksum</definition>
+        <argsstring>(const VER_ValidStruct_s *valid_struct)</argsstring>
+        <name>CHK_Flashchecksum</name>
+        <param>
+          <type>const <ref refid="structVER__ValidStruct__s" kindref="compound">VER_ValidStruct_s</ref> *</type>
+          <declname>valid_struct</declname>
+        </param>
+        <briefdescription>
+<para>CHK_Flashchecksum provides validation for the currently used firmware. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function gets called during startup and validates the currently used firmware by doing a checksum over pre-defined memory areas and compares result with a pre-calculated checksum stored in the flashheader</para><para><simplesect kind="return"><para>(type: uint8_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.h" line="76" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.c" bodystart="78" bodyend="89"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="structVER__ValidStruct__s_1a25bb7b984176c10061b7db889316e345" compoundref="version_8h" startline="130">VER_ValidStruct_s::endaddress</references>
+        <references refid="structVER__ValidStruct__s_1a99fb803c9393430d6df81a0254513820" compoundref="version_8h" startline="129">VER_ValidStruct_s::startaddress</references>
+        <references refid="chksum_8c_1a45d3a9fdb49e56d5762df7bc259eb9e1" compoundref="chksum_8c" startline="115" endline="129">CHK_crc32</references>
+        <references refid="structVER__ValidStruct__s_1a4668df862c4f9a40eb4c707bbf67cf01" compoundref="version_8h" startline="118">VER_ValidStruct_s::Checksum_u32</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the driver for the checksum calculation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>28.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>CHK </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>CHKSUM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHKSUM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="version_8h" kindref="compound">version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="50" refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba042531d2bba493d9ed8a3bbbf7b76e79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba042531d2bba493d9ed8a3bbbf7b76e79" kindref="member">CHK_CHECKSUM_FAILED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFF,</highlight></codeline>
+<codeline lineno="51" refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba037a9be3b79bbcfff9eca22bb0d8b8f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8ba037a9be3b79bbcfff9eca22bb0d8b8f8" kindref="member">CHK_CHECKSUM_PASSED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*...*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><ref refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8b" kindref="member">CHK_CHECKSUM_STATUS_e</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structCHK__STATUS__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58" refid="structCHK__STATUS__s_1a9091f349aa88d3bda660fc4cd9eb7af2" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCHK__STATUS__s_1a9091f349aa88d3bda660fc4cd9eb7af2" kindref="member">checksum</ref>;<sp/></highlight><highlight class="comment">/*<sp/>16<sp/>bit<sp/>checksum<sp/>for<sp/>validating<sp/>the<sp/>Application<sp/>SW<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structCHK__STATUS__s_1a6521dc94e6294796d78c2c39350b26c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCHK__STATUS__s_1a6521dc94e6294796d78c2c39350b26c3" kindref="member">resetstatus</ref>;<sp/></highlight><highlight class="comment">/*<sp/><sp/>last<sp/>reset<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structCHK__STATUS__s_1a0143d7423d2dd3013657b040f17457e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><ref refid="chksum_8h_1abe5b9e818972a0114ad155a231cdec8b" kindref="member">CHK_CHECKSUM_STATUS_e</ref><sp/><sp/><sp/><sp/><ref refid="structCHK__STATUS__s_1a0143d7423d2dd3013657b040f17457e0" kindref="member">checksumstatus</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="structCHK__STATUS__s" kindref="compound">CHK_STATUS_s</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structCHK__STATUS__s" kindref="compound">CHK_STATUS_s</ref><sp/><ref refid="chksum_8h_1a1e8acf1fdd8f889dde0261dc0cbb9ecb" kindref="member">chk_status</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">uint32_t<sp/><ref refid="chksum_8h_1a45d3a9fdb49e56d5762df7bc259eb9e1" kindref="member">CHK_crc32</ref>(uint8_t*<sp/>data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="chksum_8h_1aba5196e1171f5a56adef0a2aeec49a77" kindref="member">CHK_Flashchecksum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVER__ValidStruct__s" kindref="compound">VER_ValidStruct_s</ref><sp/>*valid_struct);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CHKSUM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/chksum/chksum.h"/>
+  </compounddef>
+</doxygen>

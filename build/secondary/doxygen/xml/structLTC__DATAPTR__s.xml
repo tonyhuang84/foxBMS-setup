@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structLTC__DATAPTR__s" kind="struct" language="C++" prot="public">
+    <compoundname>LTC_DATAPTR_s</compoundname>
+    <includes refid="ltc__defs_8h" local="no">ltc_defs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1aa482717e27c98cec52351b2788483f2c" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__CELLVOLTAGE__s" kindref="compound">DATA_BLOCK_CELLVOLTAGE_s</ref> *</type>
+        <definition>DATA_BLOCK_CELLVOLTAGE_s* LTC_DATAPTR_s::cellvoltage</definition>
+        <argsstring></argsstring>
+        <name>cellvoltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="405" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1ad4c94696f411a7bf05ee478b7ea1a58d" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__CELLTEMPERATURE__s" kindref="compound">DATA_BLOCK_CELLTEMPERATURE_s</ref> *</type>
+        <definition>DATA_BLOCK_CELLTEMPERATURE_s* LTC_DATAPTR_s::celltemperature</definition>
+        <argsstring></argsstring>
+        <name>celltemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="406" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1acc29334d03a834e681141316ae2a3d59" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__MINMAX__s" kindref="compound">DATA_BLOCK_MINMAX_s</ref> *</type>
+        <definition>DATA_BLOCK_MINMAX_s* LTC_DATAPTR_s::minmax</definition>
+        <argsstring></argsstring>
+        <name>minmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="407" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1aeb4c8de3d2676764996a76fd9923c352" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__BALANCING__FEEDBACK__s" kindref="compound">DATA_BLOCK_BALANCING_FEEDBACK_s</ref> *</type>
+        <definition>DATA_BLOCK_BALANCING_FEEDBACK_s* LTC_DATAPTR_s::balancing_feedback</definition>
+        <argsstring></argsstring>
+        <name>balancing_feedback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="408" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1a527c6b4186fd8571f38c7cb432b6f98c" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__USER__MUX__s" kindref="compound">DATA_BLOCK_USER_MUX_s</ref> *</type>
+        <definition>DATA_BLOCK_USER_MUX_s* LTC_DATAPTR_s::user_mux</definition>
+        <argsstring></argsstring>
+        <name>user_mux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="409" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1a4f2b090807215b0ab5bbad1ce5a805e1" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__BALANCING__CONTROL__s" kindref="compound">DATA_BLOCK_BALANCING_CONTROL_s</ref> *</type>
+        <definition>DATA_BLOCK_BALANCING_CONTROL_s* LTC_DATAPTR_s::balancing_control</definition>
+        <argsstring></argsstring>
+        <name>balancing_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="410" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1a9e27ccb9b541053df5a0127995a9f756" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__SLAVE__CONTROL__s" kindref="compound">DATA_BLOCK_SLAVE_CONTROL_s</ref> *</type>
+        <definition>DATA_BLOCK_SLAVE_CONTROL_s* LTC_DATAPTR_s::user_io_control</definition>
+        <argsstring></argsstring>
+        <name>user_io_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="411" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1aa7c0153a31c3da0927e0938e3efa96b0" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__OPENWIRE__s" kindref="compound">DATA_BLOCK_OPENWIRE_s</ref> *</type>
+        <definition>DATA_BLOCK_OPENWIRE_s* LTC_DATAPTR_s::openWire_check</definition>
+        <argsstring></argsstring>
+        <name>openWire_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="412" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1a827e981535f805dd20d80508848ae2d1" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__LTC__DEVICE__PARAMETER__s" kindref="compound">DATA_BLOCK_LTC_DEVICE_PARAMETER_s</ref> *</type>
+        <definition>DATA_BLOCK_LTC_DEVICE_PARAMETER_s* LTC_DATAPTR_s::deviceParameter</definition>
+        <argsstring></argsstring>
+        <name>deviceParameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="413" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1aaac38bec8ddfefee66ed8b07eff72c9d" prot="public" static="no" mutable="no">
+        <type><ref refid="structDATA__BLOCK__LTC__ADC__ACCURACY__s" kindref="compound">DATA_BLOCK_LTC_ADC_ACCURACY_s</ref> *</type>
+        <definition>DATA_BLOCK_LTC_ADC_ACCURACY_s* LTC_DATAPTR_s::adcAccuracy</definition>
+        <argsstring></argsstring>
+        <name>adcAccuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="414" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1af6d1133e2029d630e9e3e8a40367c52d" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* LTC_DATAPTR_s::openWire_buffer</definition>
+        <argsstring></argsstring>
+        <name>openWire_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="415" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1a418f56fb2e506a0d78a8784482252745" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* LTC_DATAPTR_s::spi_TX_withPEC</definition>
+        <argsstring></argsstring>
+        <name>spi_TX_withPEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="416" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1ac7f3eec5ab115bd0c0c5fe9e56cd99a0" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* LTC_DATAPTR_s::spi_RX_withPEC</definition>
+        <argsstring></argsstring>
+        <name>spi_RX_withPEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="417" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1a59c3ae0f16f7ded40a7b2455166976a5" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* LTC_DATAPTR_s::GPIOVoltages</definition>
+        <argsstring></argsstring>
+        <name>GPIOVoltages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="418" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLTC__DATAPTR__s_1af72fea474914b1cd9e6b7a62aa15d35f" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* LTC_DATAPTR_s::valid_GPIOPECs</definition>
+        <argsstring></argsstring>
+        <name>valid_GPIOPECs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="419" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct contains pointer to used data buffers </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="130">
+        <label>DATA_BLOCK_OPENWIRE_s</label>
+        <link refid="structDATA__BLOCK__OPENWIRE__s"/>
+      </node>
+      <node id="131">
+        <label>DATA_BLOCK_MINMAX_s</label>
+        <link refid="structDATA__BLOCK__MINMAX__s"/>
+      </node>
+      <node id="124">
+        <label>DATA_BLOCK_LTC_ADC_ACCURACY_s</label>
+        <link refid="structDATA__BLOCK__LTC__ADC__ACCURACY__s"/>
+      </node>
+      <node id="129">
+        <label>DATA_BLOCK_BALANCING_FEEDBACK_s</label>
+        <link refid="structDATA__BLOCK__BALANCING__FEEDBACK__s"/>
+      </node>
+      <node id="128">
+        <label>DATA_BLOCK_USER_MUX_s</label>
+        <link refid="structDATA__BLOCK__USER__MUX__s"/>
+      </node>
+      <node id="122">
+        <label>LTC_DATAPTR_s</label>
+        <link refid="structLTC__DATAPTR__s"/>
+        <childnode refid="123" relation="usage">
+          <edgelabel>celltemperature</edgelabel>
+        </childnode>
+        <childnode refid="124" relation="usage">
+          <edgelabel>adcAccuracy</edgelabel>
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>user_io_control</edgelabel>
+        </childnode>
+        <childnode refid="126" relation="usage">
+          <edgelabel>deviceParameter</edgelabel>
+        </childnode>
+        <childnode refid="127" relation="usage">
+          <edgelabel>balancing_control</edgelabel>
+        </childnode>
+        <childnode refid="128" relation="usage">
+          <edgelabel>user_mux</edgelabel>
+        </childnode>
+        <childnode refid="129" relation="usage">
+          <edgelabel>balancing_feedback</edgelabel>
+        </childnode>
+        <childnode refid="130" relation="usage">
+          <edgelabel>openWire_check</edgelabel>
+        </childnode>
+        <childnode refid="131" relation="usage">
+          <edgelabel>minmax</edgelabel>
+        </childnode>
+        <childnode refid="132" relation="usage">
+          <edgelabel>cellvoltage</edgelabel>
+        </childnode>
+      </node>
+      <node id="125">
+        <label>DATA_BLOCK_SLAVE_CONTROL_s</label>
+        <link refid="structDATA__BLOCK__SLAVE__CONTROL__s"/>
+      </node>
+      <node id="123">
+        <label>DATA_BLOCK_CELLTEMPERATURE_s</label>
+        <link refid="structDATA__BLOCK__CELLTEMPERATURE__s"/>
+      </node>
+      <node id="127">
+        <label>DATA_BLOCK_BALANCING_CONTROL_s</label>
+        <link refid="structDATA__BLOCK__BALANCING__CONTROL__s"/>
+      </node>
+      <node id="132">
+        <label>DATA_BLOCK_CELLVOLTAGE_s</label>
+        <link refid="structDATA__BLOCK__CELLVOLTAGE__s"/>
+      </node>
+      <node id="126">
+        <label>DATA_BLOCK_LTC_DEVICE_PARAMETER_s</label>
+        <link refid="structDATA__BLOCK__LTC__DEVICE__PARAMETER__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" line="404" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/ltc/ltc_defs.h" bodystart="404" bodyend="420"/>
+    <listofallmembers>
+      <member refid="structLTC__DATAPTR__s_1aaac38bec8ddfefee66ed8b07eff72c9d" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>adcAccuracy</name></member>
+      <member refid="structLTC__DATAPTR__s_1a4f2b090807215b0ab5bbad1ce5a805e1" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>balancing_control</name></member>
+      <member refid="structLTC__DATAPTR__s_1aeb4c8de3d2676764996a76fd9923c352" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>balancing_feedback</name></member>
+      <member refid="structLTC__DATAPTR__s_1ad4c94696f411a7bf05ee478b7ea1a58d" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>celltemperature</name></member>
+      <member refid="structLTC__DATAPTR__s_1aa482717e27c98cec52351b2788483f2c" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>cellvoltage</name></member>
+      <member refid="structLTC__DATAPTR__s_1a827e981535f805dd20d80508848ae2d1" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>deviceParameter</name></member>
+      <member refid="structLTC__DATAPTR__s_1a59c3ae0f16f7ded40a7b2455166976a5" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>GPIOVoltages</name></member>
+      <member refid="structLTC__DATAPTR__s_1acc29334d03a834e681141316ae2a3d59" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>minmax</name></member>
+      <member refid="structLTC__DATAPTR__s_1af6d1133e2029d630e9e3e8a40367c52d" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>openWire_buffer</name></member>
+      <member refid="structLTC__DATAPTR__s_1aa7c0153a31c3da0927e0938e3efa96b0" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>openWire_check</name></member>
+      <member refid="structLTC__DATAPTR__s_1ac7f3eec5ab115bd0c0c5fe9e56cd99a0" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>spi_RX_withPEC</name></member>
+      <member refid="structLTC__DATAPTR__s_1a418f56fb2e506a0d78a8784482252745" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>spi_TX_withPEC</name></member>
+      <member refid="structLTC__DATAPTR__s_1a9e27ccb9b541053df5a0127995a9f756" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>user_io_control</name></member>
+      <member refid="structLTC__DATAPTR__s_1a527c6b4186fd8571f38c7cb432b6f98c" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>user_mux</name></member>
+      <member refid="structLTC__DATAPTR__s_1af72fea474914b1cd9e6b7a62aa15d35f" prot="public" virt="non-virtual"><scope>LTC_DATAPTR_s</scope><name>valid_GPIOPECs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

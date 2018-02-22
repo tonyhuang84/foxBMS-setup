@@ -1,0 +1,8 @@
+<map id="adc_cfg.h" name="adc_cfg.h">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="103,80,178,107"/>
+<area shape="rect" id="node5" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="285,80,367,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,155,186,181"/>
+<area shape="rect" id="node7" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="351,155,418,181"/>
+<area shape="rect" id="node8" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="255,229,378,256"/>
+<area shape="rect" id="node9" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="402,229,501,256"/>
+</map>

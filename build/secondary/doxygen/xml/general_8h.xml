@@ -1,0 +1,1141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="general_8h" kind="file" language="C++">
+    <compoundname>general.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="std__types_8h" local="no">std_types.h</includes>
+    <includedby refid="appltask__cfg_8h" local="yes">appltask_cfg.h</includedby>
+    <includedby refid="bms__cfg_8c" local="yes">bms_cfg.c</includedby>
+    <includedby refid="sox__cfg_8c" local="yes">sox_cfg.c</includedby>
+    <includedby refid="sox_8c" local="yes">sox.c</includedby>
+    <includedby refid="appltask_8c" local="yes">appltask.c</includedby>
+    <includedby refid="database__cfg_8c" local="yes">database_cfg.c</includedby>
+    <includedby refid="diag__cfg_8c" local="yes">diag_cfg.c</includedby>
+    <includedby refid="enginetask__cfg_8c" local="yes">enginetask_cfg.c</includedby>
+    <includedby refid="enginetask__cfg_8h" local="yes">enginetask_cfg.h</includedby>
+    <includedby refid="sys__cfg_8c" local="yes">sys_cfg.c</includedby>
+    <includedby refid="diag_8c" local="yes">diag.c</includedby>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="batterysystem__cfg_8h" local="yes">batterysystem_cfg.h</includedby>
+    <includedby refid="nvic__cfg_8c" local="yes">nvic_cfg.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="nvic_8c" local="yes">nvic.c</includedby>
+    <includedby refid="version_8c" local="yes">version.c</includedby>
+    <includedby refid="adc__ex_8c" local="yes">adc_ex.c</includedby>
+    <includedby refid="adc__cfg_8c" local="yes">adc_cfg.c</includedby>
+    <includedby refid="adc__cfg_8h" local="yes">adc_cfg.h</includedby>
+    <includedby refid="bkpsram__cfg_8c" local="yes">bkpsram_cfg.c</includedby>
+    <includedby refid="can__cfg_8c" local="yes">can_cfg.c</includedby>
+    <includedby refid="cansignal__cfg_8c" local="yes">cansignal_cfg.c</includedby>
+    <includedby refid="dma__cfg_8c" local="yes">dma_cfg.c</includedby>
+    <includedby refid="interlock__cfg_8h" local="yes">interlock_cfg.h</includedby>
+    <includedby refid="io__cfg_8c" local="yes">io_cfg.c</includedby>
+    <includedby refid="ltc__cfg_8c" local="yes">ltc_cfg.c</includedby>
+    <includedby refid="ltc__cfg_8h" local="yes">ltc_cfg.h</includedby>
+    <includedby refid="meas__cfg_8c" local="yes">meas_cfg.c</includedby>
+    <includedby refid="rcc__cfg_8c" local="yes">rcc_cfg.c</includedby>
+    <includedby refid="rtc__cfg_8c" local="yes">rtc_cfg.c</includedby>
+    <includedby refid="sdram__cfg_8c" local="yes">sdram_cfg.c</includedby>
+    <includedby refid="spi__cfg_8c" local="yes">spi_cfg.c</includedby>
+    <includedby refid="timer__cfg_8c" local="yes">timer_cfg.c</includedby>
+    <includedby refid="uart__cfg_8c" local="yes">uart_cfg.c</includedby>
+    <includedby refid="intermcu_8c" local="yes">intermcu.c</includedby>
+    <includedby refid="timer_8c" local="yes">timer.c</includedby>
+    <includedby refid="os_8c" local="yes">os.c</includedby>
+    <includedby refid="database_8c" local="yes">database.c</includedby>
+    <includedby refid="adc_8c" local="yes">adc.c</includedby>
+    <includedby refid="can_8c" local="yes">can.c</includedby>
+    <includedby refid="cansignal_8c" local="yes">cansignal.c</includedby>
+    <includedby refid="cansignal_8h" local="yes">cansignal.h</includedby>
+    <includedby refid="chksum_8c" local="yes">chksum.c</includedby>
+    <includedby refid="dma_8c" local="yes">dma.c</includedby>
+    <includedby refid="io_8c" local="yes">io.c</includedby>
+    <includedby refid="portcheck_8c" local="yes">portcheck.c</includedby>
+    <includedby refid="ltc_8c" local="yes">ltc.c</includedby>
+    <includedby refid="ltc__defs_8h" local="yes">ltc_defs.h</includedby>
+    <includedby refid="ltc__pec_8c" local="yes">ltc_pec.c</includedby>
+    <includedby refid="mcu_8c" local="yes">mcu.c</includedby>
+    <includedby refid="mcu_8h" local="yes">mcu.h</includedby>
+    <includedby refid="meas_8c" local="yes">meas.c</includedby>
+    <includedby refid="rcc_8c" local="yes">rcc.c</includedby>
+    <includedby refid="bkpsram_8c" local="yes">bkpsram.c</includedby>
+    <includedby refid="bkpsram_8h" local="yes">bkpsram.h</includedby>
+    <includedby refid="rtc_8c" local="yes">rtc.c</includedby>
+    <includedby refid="spi_8c" local="yes">spi.c</includedby>
+    <includedby refid="uart_8c" local="yes">uart.c</includedby>
+    <includedby refid="led_8c" local="yes">led.c</includedby>
+    <includedby refid="led_8h" local="yes">led.h</includedby>
+    <includedby refid="misc_8c" local="yes">misc.c</includedby>
+    <includedby refid="misc_8h" local="yes">misc.h</includedby>
+    <includedby refid="sdram_8c" local="yes">sdram.c</includedby>
+    <includedby refid="wdg_8c" local="yes">wdg.c</includedby>
+    <incdepgraph>
+      <node id="830">
+        <label>stdint.h</label>
+      </node>
+      <node id="831">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="829">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="834">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="899">
+        <label>dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="833">
+        <label>appltask_cfg.h</label>
+        <link refid="appltask__cfg_8h"/>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+      </node>
+      <node id="847">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="854">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="858" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="860" relation="include">
+        </childnode>
+      </node>
+      <node id="838">
+        <label>bms_cfg.c</label>
+        <link refid="bms__cfg_8c"/>
+      </node>
+      <node id="879">
+        <label>version.c</label>
+        <link refid="version_8c"/>
+      </node>
+      <node id="904">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+      </node>
+      <node id="876">
+        <label>interlock_cfg.c</label>
+        <link refid="interlock__cfg_8c"/>
+      </node>
+      <node id="856">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="860">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+      </node>
+      <node id="911">
+        <label>rtc.c</label>
+        <link refid="rtc_8c"/>
+      </node>
+      <node id="918">
+        <label>wdg.c</label>
+        <link refid="wdg_8c"/>
+      </node>
+      <node id="841">
+        <label>database_cfg.c</label>
+        <link refid="database__cfg_8c"/>
+      </node>
+      <node id="895">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+      </node>
+      <node id="852">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="854" relation="include">
+        </childnode>
+      </node>
+      <node id="908">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="917">
+        <label>sdram.c</label>
+        <link refid="sdram_8c"/>
+      </node>
+      <node id="893">
+        <label>timer_cfg.c</label>
+        <link refid="timer__cfg_8c"/>
+      </node>
+      <node id="902">
+        <label>ltc_pec.c</label>
+        <link refid="ltc__pec_8c"/>
+      </node>
+      <node id="898">
+        <label>chksum.c</label>
+        <link refid="chksum_8c"/>
+      </node>
+      <node id="872">
+        <label>bkpsram.c</label>
+        <link refid="bkpsram_8c"/>
+      </node>
+      <node id="871">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="867">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="903">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="904" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="909">
+        <label>spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="843">
+        <label>enginetask_cfg.c</label>
+        <link refid="enginetask__cfg_8c"/>
+      </node>
+      <node id="844">
+        <label>enginetask_cfg.h</label>
+        <link refid="enginetask__cfg_8h"/>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="845" relation="include">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>uart_cfg.c</label>
+        <link refid="uart__cfg_8c"/>
+      </node>
+      <node id="850">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="852" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+      </node>
+      <node id="837">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="889">
+        <label>rcc_cfg.c</label>
+        <link refid="rcc__cfg_8c"/>
+      </node>
+      <node id="892">
+        <label>spi_cfg.c</label>
+        <link refid="spi__cfg_8c"/>
+      </node>
+      <node id="853">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="907">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+      </node>
+      <node id="855">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+      </node>
+      <node id="882">
+        <label>adc_ex.h</label>
+        <link refid="adc__ex_8h"/>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+      </node>
+      <node id="896">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="851">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="905">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>adc_cfg.c</label>
+        <link refid="adc__cfg_8c"/>
+      </node>
+      <node id="881">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+      </node>
+      <node id="846">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="845">
+        <label>enginetask.h</label>
+        <link refid="enginetask_8h"/>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+      </node>
+      <node id="878">
+        <label>nvic_cfg.c</label>
+        <link refid="nvic__cfg_8c"/>
+      </node>
+      <node id="836">
+        <label>appltask.c</label>
+        <link refid="appltask_8c"/>
+      </node>
+      <node id="835">
+        <label>appltask.h</label>
+        <link refid="appltask_8h"/>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+      </node>
+      <node id="862">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="861">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="901">
+        <label>portcheck.c</label>
+        <link refid="portcheck_8c"/>
+      </node>
+      <node id="886">
+        <label>dma_cfg.c</label>
+        <link refid="dma__cfg_8c"/>
+      </node>
+      <node id="884">
+        <label>adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="883">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="913">
+        <label>led.c</label>
+        <link refid="led_8c"/>
+      </node>
+      <node id="914">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>io_cfg.c</label>
+        <link refid="io__cfg_8c"/>
+      </node>
+      <node id="891">
+        <label>sdram_cfg.c</label>
+        <link refid="sdram__cfg_8c"/>
+      </node>
+      <node id="840">
+        <label>sox.c</label>
+        <link refid="sox_8c"/>
+      </node>
+      <node id="859">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="863">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+      </node>
+      <node id="858">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="877">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="858" relation="include">
+        </childnode>
+      </node>
+      <node id="870">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="869">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="871" relation="include">
+        </childnode>
+      </node>
+      <node id="885">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="912">
+        <label>uart.c</label>
+        <link refid="uart_8c"/>
+      </node>
+      <node id="857">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="897">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+      </node>
+      <node id="873">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="900">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="868">
+        <label>nvic.c</label>
+        <link refid="nvic_8c"/>
+      </node>
+      <node id="832">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+        <childnode refid="848" relation="include">
+        </childnode>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="850" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="860" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+        <childnode refid="916" relation="include">
+        </childnode>
+        <childnode refid="917" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+      </node>
+      <node id="910">
+        <label>rcc.c</label>
+        <link refid="rcc_8c"/>
+      </node>
+      <node id="864">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="842">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+      <node id="865">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+      </node>
+      <node id="848">
+        <label>sys_cfg.c</label>
+        <link refid="sys__cfg_8c"/>
+      </node>
+      <node id="906">
+        <label>sys_cfg.h</label>
+        <link refid="sys__cfg_8h"/>
+        <childnode refid="848" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+      </node>
+      <node id="890">
+        <label>rtc_cfg.c</label>
+        <link refid="rtc__cfg_8c"/>
+      </node>
+      <node id="888">
+        <label>meas_cfg.c</label>
+        <link refid="meas__cfg_8c"/>
+      </node>
+      <node id="849">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="866">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="858" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+      </node>
+      <node id="839">
+        <label>sox_cfg.c</label>
+        <link refid="sox__cfg_8c"/>
+      </node>
+      <node id="915">
+        <label>misc.c</label>
+        <link refid="misc_8c"/>
+      </node>
+      <node id="916">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="915" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga679eab3fdecfc5f43e1fef53249c01ae" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_SAFETY_FEATURES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables software safety features <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="54" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga89c06b53c216a12ed2538629212e5b81" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_FLASHCHECKSUM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables checking of flash checksum at startup. <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="65" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga7cc339bdd5f45d72792a72bd1a44c292" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_BOOTLOADER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables bootloader (wrapper) startup. <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="78" column="11" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga30e4da080d6d0671783c3980c656ab08" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_UART</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables Mini-USB: USART3 peripheral (serial interface) <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="89" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1gacf3fbe35f3934bb2add2c81cf792a718" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_RS485</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables RS485: USART2 peripheral (serial interface) <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="99" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga5557d8f0159d32fa290d4e1bcfb9890b" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_NVRAM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables NVRAM <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="111" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1gaf4e2074cbb860a7b71a1080466fc52f9" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_COM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables COM module. <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="122" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga4ec0ba675be7a28e9a1e4f6041dfbe8e" prot="public" static="no">
+        <name>BUILD_MODULE_DEBUGPRINTF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables printf debugging with serial interface <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="133" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga78cf3c00c1f34a4561781b724e9ad942" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_RTC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables RTC peripheral (Real Time Clock) <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="143" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__GENERAL_1ga34a4f2426b4a62e24332b9d7c57c8944" prot="public" static="no">
+        <name>BUILD_MODULE_ENABLE_WATCHDOG</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enables MCU Watchdog <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="155" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a8ff6f31228cc580fcc5ee7908bb72347" prot="public" static="no">
+        <name>BUILD_MODULE_IMPORT_CELL_DATASHEET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="160" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1ac1a99a08b33f30c0e510376bc4d7f337" prot="public" static="no">
+        <name>STR</name>
+        <param><defname>TESTMACRO</defname></param>
+        <initializer>#TESTMACRO</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="162" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a37dfd976df9d7d4d6065546750eecc18" prot="public" static="no">
+        <name>XSTR</name>
+        <param><defname>TESTMACRO</defname></param>
+        <initializer><ref refid="general_8h_1ac1a99a08b33f30c0e510376bc4d7f337" kindref="member">STR</ref>(TESTMACRO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="163" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1ad7a967dd260384e94010b31b1412a0b4" prot="public" static="no">
+        <name>BUILD_VERSION</name>
+        <initializer>&quot;    0.5&quot;                /*strlen: 16 (15 + &apos;/0&apos;) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="166" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a55a3744dddc6112219176c22e913520e" prot="public" static="no">
+        <name>BUILD_APPNAME</name>
+        <initializer>&quot;foxbms &quot;                /*strlen: 16 (15 + &apos;/0&apos;) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="170" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a5b1cd441c22b22d7422c719762eeb7ff" prot="public" static="no">
+        <name>BUILD_VENDOR</name>
+        <initializer>&quot;Fraunhofer IISB&quot;        /*strlen: 16 (15 + &apos;/0&apos;) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="174" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1afa6ec8f3301cbefb0c984b00901dabb4" prot="public" static="no">
+        <name>BUILD_BL_MAJOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="178" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a52712d6185b9a6377b972845305a0279" prot="public" static="no">
+        <name>BUILD_BL_MINOR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="182" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a37a1935152146dfe75240f5394e90260" prot="public" static="no">
+        <name>BUILD_BL_BUGFIX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="186" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="general_8h_1a83595b15415afda90c3683b1ee8934ed" prot="public" static="no">
+        <name>MEM_BKP_SRAM</name>
+        <initializer><ref refid="version_8c_1a187cf1d0cbe54fb98915eb3920c3e12d" kindref="member">__attribute__</ref>((section (&quot;.BKP_RAMSection&quot;)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A variable defined as <computeroutput>(type) MEM_BKP_SRAM (name)</computeroutput> will be stored in the RAM which is backuped by a button cell. Therefore as long as the power supply is not disconnected, the variable value will be stored during e.g. restarts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" line="198" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Settings for the system. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>25.02.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>none</para></simplesect>
+e.g., enable modules, set software version </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#ifndef<sp/>GENERAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="std__types_8h" kindref="compound">std_types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_SAFETY_FEATURES<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="group__CONFIG__GENERAL_1ga679eab3fdecfc5f43e1fef53249c01ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_SAFETY_FEATURES<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group__CONFIG__GENERAL_1ga89c06b53c216a12ed2538629212e5b81" refkind="member"><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_FLASHCHECKSUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_FLASHCHECKSUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_BOOTLOADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="group__CONFIG__GENERAL_1ga7cc339bdd5f45d72792a72bd1a44c292" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_BOOTLOADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_UART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="group__CONFIG__GENERAL_1ga30e4da080d6d0671783c3980c656ab08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_UART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="group__CONFIG__GENERAL_1gacf3fbe35f3934bb2add2c81cf792a718" refkind="member"><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_RS485<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_RS485<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_NVRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="group__CONFIG__GENERAL_1ga5557d8f0159d32fa290d4e1bcfb9890b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_NVRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_COM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="group__CONFIG__GENERAL_1gaf4e2074cbb860a7b71a1080466fc52f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_COM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_DEBUGPRINTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="group__CONFIG__GENERAL_1ga4ec0ba675be7a28e9a1e4f6041dfbe8e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_MODULE_DEBUGPRINTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="group__CONFIG__GENERAL_1ga78cf3c00c1f34a4561781b724e9ad942" refkind="member"><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_RTC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_RTC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group__CONFIG__GENERAL_1ga34a4f2426b4a62e24332b9d7c57c8944" refkind="member"><highlight class="preprocessor">#define<sp/>BUILD_MODULE_ENABLE_WATCHDOG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#define<sp/>BUILD_MODULE_ENABLE_WATCHDOG<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>BUILD_MODULE_IMPORT_CELL_DATASHEET<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="general_8h_1a8ff6f31228cc580fcc5ee7908bb72347" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_MODULE_IMPORT_CELL_DATASHEET<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="general_8h_1ac1a99a08b33f30c0e510376bc4d7f337" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR(TESTMACRO)<sp/>#TESTMACRO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="general_8h_1a37dfd976df9d7d4d6065546750eecc18" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XSTR(TESTMACRO)<sp/>STR(TESTMACRO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILD_VERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="general_8h_1ad7a967dd260384e94010b31b1412a0b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<sp/><sp/><sp/><sp/>0.5&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*strlen:<sp/>16<sp/>(15<sp/>+<sp/>&apos;/0&apos;)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILD_APPNAME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="general_8h_1a55a3744dddc6112219176c22e913520e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_APPNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;foxbms<sp/>&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*strlen:<sp/>16<sp/>(15<sp/>+<sp/>&apos;/0&apos;)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILD_VENDOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="general_8h_1a5b1cd441c22b22d7422c719762eeb7ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_VENDOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Fraunhofer<sp/>IISB&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*strlen:<sp/>16<sp/>(15<sp/>+<sp/>&apos;/0&apos;)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILD_BL_MAJOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="general_8h_1afa6ec8f3301cbefb0c984b00901dabb4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_BL_MAJOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILD_BL_MINOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="general_8h_1a52712d6185b9a6377b972845305a0279" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_BL_MINOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILD_BL_BUGFIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="general_8h_1a37a1935152146dfe75240f5394e90260" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUILD_BL_BUGFIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#pragma<sp/>message<sp/>XSTR(BUILD_VERSION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#pragma<sp/>message<sp/>XSTR(BUILD_APPNAME)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#pragma<sp/>message<sp/>XSTR(BUILD_VENDOR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="general_8h_1a83595b15415afda90c3683b1ee8934ed" refkind="member"><highlight class="preprocessor">#define<sp/>MEM_BKP_SRAM<sp/><sp/><sp/><sp/>__attribute__((section<sp/>(&quot;.BKP_RAMSection&quot;)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GENERAL_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/general/config/general.h"/>
+  </compounddef>
+</doxygen>

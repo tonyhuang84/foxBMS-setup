@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Hardware Overview &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="3. Slave 12-Cell v2.x.x" href="../slave_v2.x/slave_12cell_v2_x.html"/>
+        <link rel="prev" title="1. Hardware Specifications" href="../specifications/specifications.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Hardware Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/hardware_documentation/overview/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hardware-overview">
+<span id="hardware-documentation-overview"></span><h1>2. Hardware Overview<a class="headerlink" href="#hardware-overview" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the hardware modules used in foxBMS. <a class="reference internal" href="#master-block-diagram"><span class="std std-numref">Fig. 2.6</span></a> shows a block diagram of the foxBMS Master Unit with all its components.</p>
+<div class="figure" id="id8">
+<span id="master-block-diagram"></span><a class="reference internal image-reference" href="../../_images/master_block_diagram.png"><img alt="../../_images/master_block_diagram.png" src="../../_images/master_block_diagram.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.6 </span><span class="caption-text">foxBMS Master Unit hardware block diagram</span></p>
+</div>
+<div class="section" id="supply-0-primary">
+<h2>2.1. Supply 0 (primary)<a class="headerlink" href="#supply-0-primary" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id9">
+<span id="supply0"></span><a class="reference internal image-reference" href="../../_images/supply0.png"><img alt="../../_images/supply0.png" src="../../_images/supply0.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.7 </span><span class="caption-text">Supply for all circuit parts related to the primary part of foxBMS</span></p>
+</div>
+<p>The external supply for the BMS-Master Board is divided in a part supplying the interlock circuit, the contactors (<code class="docutils literal"><span class="pre">SUPPLY_EXT2</span></code>), and the rest of the circuit (<code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code>) as shown in <a class="reference internal" href="#supply0"><span class="std std-numref">Fig. 2.7</span></a> . The foxBMS Master Unit can be supplied with a voltage between 12V and 24V DC. The primary part of the foxBMS is isolated from <code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code> by an isolating DC/DC converter (IC202). The 5V output of the DC/DC converter is stepped down to 3.3V by an LM1085 LDO (IC201). The output of IC201 (+3.3V_0) supplies the primary microcontroller MCU0 and the related circuits.</p>
+</div>
+<div class="section" id="supply-1-secondary">
+<h2>2.2. Supply 1 (secondary)<a class="headerlink" href="#supply-1-secondary" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id10">
+<span id="supply1"></span><a class="reference internal image-reference" href="../../_images/supply1.png"><img alt="../../_images/supply1.png" src="../../_images/supply1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.8 </span><span class="caption-text">Supply for all circuit parts related to the secondary part of foxBMS</span></p>
+</div>
+<p>The secondary part of foxBMS is also supplied by <code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code> as shown in <a class="reference internal" href="#supply1"><span class="std std-numref">Fig. 2.8</span></a>. Also the secondary part of the BMS-Master Board is isolated from <code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code> by an isolating DC/DC converter (IC302). The 5V output of the DC/DC converter is stepped down to 3.3V by an LM1085 LDO (IC301). The output of IC301 (+3.3V_1) supplies the secondary microcontroller MCU1 and the related circuits.</p>
+</div>
+<div class="section" id="mcu0-primary">
+<h2>2.3. MCU0 (primary)<a class="headerlink" href="#mcu0-primary" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id11">
+<span id="mcu0-boot-rst"></span><a class="reference internal image-reference" href="../../_images/mcu0_boot_rst.png"><img alt="../../_images/mcu0_boot_rst.png" src="../../_images/mcu0_boot_rst.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.9 </span><span class="caption-text">Boot and reset circuit for the primary microcontroller</span></p>
+</div>
+<p><a class="reference internal" href="#mcu0-boot-rst"><span class="std std-numref">Fig. 2.9</span></a> shows the boot and reset related circuits of the primary microcontroller MCU0. MCU0 can be manually reset by push button S401. Please note that the housing has to be opened to reach S401, therefore resetting MCU0 by means of S401 is intended for use in a laboratory setting/debugging situation.</p>
+<div class="figure" id="id12">
+<span id="mcu0-adc-ref"></span><a class="reference internal image-reference" href="../../_images/mcu0_adc_ref.png"><img alt="../../_images/mcu0_adc_ref.png" src="../../_images/mcu0_adc_ref.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.10 </span><span class="caption-text">ADC reference voltage for the primary microcontroller</span></p>
+</div>
+<p>The ADCs of the primary microcontroller MCU0 are supplied with a 2.5V reference voltage provided by an ADR3425 (IC401) as shown in  <a class="reference internal" href="#mcu0-adc-ref"><span class="std std-numref">Fig. 2.10</span></a>.</p>
+<div class="figure" id="id13">
+<span id="mcu0-osc"></span><a class="reference internal image-reference" href="../../_images/mcu0_osc.png"><img alt="../../_images/mcu0_osc.png" src="../../_images/mcu0_osc.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.11 </span><span class="caption-text">Clock circuits of the primary microcontroller</span></p>
+</div>
+<p>The primary microcontroller MCU0 is clocked by an 8MHz oscillator as shown in <a class="reference internal" href="#mcu0-osc"><span class="std std-numref">Fig. 2.11</span></a>. An separate oscillator (Q402) is used to clock the RTC (real time clock) integrated in MCU0.</p>
+</div>
+<div class="section" id="interface-between-mcu0-and-mcu1">
+<h2>2.4. Interface between MCU0 and MCU1<a class="headerlink" href="#interface-between-mcu0-and-mcu1" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id14">
+<span id="mcu-to-mcu-if"></span><a class="reference internal image-reference" href="../../_images/mcu_to_mcu_if.png"><img alt="../../_images/mcu_to_mcu_if.png" src="../../_images/mcu_to_mcu_if.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.12 </span><span class="caption-text">Interface between primary and secondary microcontroller</span></p>
+</div>
+<p>Besides being linked over the common interlock line, the primary and secondary microcontroller also have a common SPI data interface. The secondary microcontroller MCU1 acts as the master in the SPI communication. The interface is isolated using an ADUM3401 as shown in <a class="reference internal" href="#mcu-to-mcu-if"><span class="std std-numref">Fig. 2.12</span></a>.</p>
+</div>
+<div class="section" id="interface-to-bender-isometer">
+<h2>2.5. Interface to Bender ISOMETER<a class="headerlink" href="#interface-to-bender-isometer" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id15">
+<span id="bender"></span><a class="reference internal image-reference" href="../../_images/bender.png"><img alt="../../_images/bender.png" src="../../_images/bender.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.13 </span><span class="caption-text">Interface to the Bender ISOMETER</span></p>
+</div>
+<p>The BMS-Master Board supports Bender ISOMETER IR155-3203/-3204/-3210. Two inputs are provided: one for a PWM coded diagnostic signal and one for a simple status signal (OK or NOK) as shown in <a class="reference internal" href="#bender"><span class="std std-numref">Fig. 2.13</span></a>. The Bender ISOMETER is supplied <code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code> and may be switched on or off (lowside) by the BMS-Master Board. The input signals are limited to  level of 5V with Zener diodes D701 and D702. In order adapt the interface for use with a IR155-3204/-3210 device, the solder jumper R705 has to be removed. The input signals are isolated from the microcontoller by an ADUM3301 (IC702).</p>
+</div>
+<div class="section" id="can0">
+<h2>2.6. CAN0<a class="headerlink" href="#can0" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id16">
+<span id="id1"></span><a class="reference internal image-reference" href="../../_images/can0.png"><img alt="../../_images/can0.png" src="../../_images/can0.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.14 </span><span class="caption-text">Circuit of the CAN interface (CAN0)</span></p>
+</div>
+<p>The CAN0 interface is intended to connect additional sensors, such as the Isabellenhütte IVT-MOD-300 current sensor to the foxBMS Master Unit and the foxBMS Master Unit to other devices such as a test bench control unit or an HMI unit. The circuit in <a class="reference internal" href="#id1"><span class="std std-numref">Fig. 2.14</span></a> shown the input circuit consisting of protection diode D801, common mode choke L801, C804, and termination resistors R801 and R802. The CAN transceiver TJA1052 provides isolation and can be put to sleep by the primary microcontroller MCU0 via an CPC1008N optocoupler (IC803). The external part of the CAN0 interface is supplied by <code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code>.</p>
+</div>
+<div class="section" id="interlock">
+<h2>2.7. Interlock<a class="headerlink" href="#interlock" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id17">
+<span id="id2"></span><a class="reference internal image-reference" href="../../_images/interlock.png"><img alt="../../_images/interlock.png" src="../../_images/interlock.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.15 </span><span class="caption-text">Interlock circuit</span></p>
+</div>
+<p>The primary and secondary microcontroller share a common interlock line as shown in <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 2.15</span></a>. The interlock line is isolated from both microcontrollers MCU0 and MCU1 by optocouplers. The interlock line is supplied with 10mA by a current source (LM317 - IC901). It can be interrupted by the primary microcontroller MCU0 via optocoupler IC902 and can be read back by MCU0 via optocoupler IC903. The secondary microcontroller MCU1 can interrupt the interlock line via IC904 and read the interlock status via IC905. The 10mA cause a voltage drop on R906, which turns on MOSFET T901. T901 switches the common ground of all contactors (connected to the BMS-Master Board and BMS-Extension Board). Therefore, when the interlock line is interrupted, the contactors are no longer supplied and open.</p>
+</div>
+<div class="section" id="contactors">
+<h2>2.8. Contactors<a class="headerlink" href="#contactors" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id18">
+<span id="id3"></span><a class="reference internal image-reference" href="../../_images/contactors.png"><img alt="../../_images/contactors.png" src="../../_images/contactors.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.16 </span><span class="caption-text">Contactor circuit, exemplarily shown for contactor0</span></p>
+</div>
+<p>The foxBMS Master Unit can control up to 9 contactors: 6 on the BMS-Master Board and 3 on the BMS-Extension Board. The according control and feedback circuit is exemplarily shown  for contactor 0 in <a class="reference internal" href="#id3"><span class="std std-numref">Fig. 2.16</span></a>. The contactor is switched on and off by an AQV25G2S photoMOS (IC1001) by the primary microcontroller MCU0. Every contactor channel is protected with slow blowing fuse (F1001) type Schurter UMT-250 630mA (3403.0164.xx). The free wheeling diode D1001 is not populated. It has to be inserted when contactors are used, that do not provide an internal free wheeling diode. The contactor interface also supports a feedback functionality for contactors with auxiliary contacts. The contactor status can be read back by MCU0 via an ADUM3300 (IC1103).</p>
+</div>
+<div class="section" id="isolated-usb-interface-primary-and-secondary">
+<h2>2.9. Isolated USB interface (primary and secondary)<a class="headerlink" href="#isolated-usb-interface-primary-and-secondary" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id19">
+<span id="usb"></span><a class="reference internal image-reference" href="../../_images/usb.png"><img alt="../../_images/usb.png" src="../../_images/usb.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.17 </span><span class="caption-text">USB interface circuit</span></p>
+</div>
+<p>Both mircocontrollers MCU0 and MCU1 provide an isolated USB interface, as exemplarily shown for MCU0 in <a class="reference internal" href="#usb"><span class="std std-numref">Fig. 2.17</span></a>. A FT231XS-R interface IC (IC1402) converts the USB signal to UART, which can easily be interfaced by the microcontroller. The UART signals are isolated by an ADUM3401 isolation IC (IC1403). The USB interface can be used to flash the microcontroller and for communication.</p>
+</div>
+<div class="section" id="eeprom">
+<h2>2.10. EEPROM<a class="headerlink" href="#eeprom" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id20">
+<span id="id4"></span><a class="reference internal image-reference" href="../../_images/eeprom.png"><img alt="../../_images/eeprom.png" src="../../_images/eeprom.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.18 </span><span class="caption-text">EEPROM, exemplarily shown for the MCU0</span></p>
+</div>
+<p>The BMS-Master Board provides an 2MB EEPROM for data storage for the primary and secondary MCU (see <a class="reference internal" href="#id4"><span class="std std-numref">Fig. 2.18</span></a>). It uses an SPI interface, which is shared with the SD-Card, which is also connected to MCU0.</p>
+</div>
+<div class="section" id="isolated-rs485-interface">
+<h2>2.11. Isolated RS485 Interface<a class="headerlink" href="#isolated-rs485-interface" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id21">
+<span id="rs485"></span><a class="reference internal image-reference" href="../../_images/rs485.png"><img alt="../../_images/rs485.png" src="../../_images/rs485.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.19 </span><span class="caption-text">Isolated RS485 interface circuit</span></p>
+</div>
+<p>On the BMS-Extension Board an isolated RS458 interface is provided. It can be used to communicate with the foxBMS Master Unit as an alternative to the CAN interface or the UART over USB interface. Moreover, via this interface, monitoring circuits (slaves) using RS485 instead of CAN or another proprietary communication protocol can be connected to the foxBMS Master Unit. <a class="reference internal" href="#rs485"><span class="std std-numref">Fig. 2.19</span></a> shows the RS485 interface schematic. The external part of the circuit is supplied via a voltage applied to pins 5 (7V - 20V) and 6 (GND) of connector X1301. The external supply voltage is also available on pin 1 (GND) and pin 4. IC1301 provides 5V supply voltage for the transceiver (IC1302) and the external side of the isolator (IC1303). The transceiver (LT1785) features a receiver enable (!RE) and a driver enable (DE) functionality, which can be controlled by the primary microcontroller via the signals <code class="docutils literal"><span class="pre">RS485_MCU0_NRE</span></code> and <code class="docutils literal"><span class="pre">RS485_MCU0_DE</span></code> respectively. For data transmission the signals <code class="docutils literal"><span class="pre">RS485_MCU0_TX</span></code> and <code class="docutils literal"><span class="pre">RS485_MCU0_RX</span></code> are used. The data signals are available on connector X1301 pins 1 and 2. The data signals and the enable signals are galvanically isolated from the BMS-Master Board by an ADUM3401 isolator IC.</p>
+</div>
+<div class="section" id="isolated-normally-open-contacts-isonoc">
+<h2>2.12. Isolated Normally Open Contacts (isoNOC)<a class="headerlink" href="#isolated-normally-open-contacts-isonoc" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id22">
+<span id="iso-noc"></span><a class="reference internal image-reference" href="../../_images/iso_noc.png"><img alt="../../_images/iso_noc.png" src="../../_images/iso_noc.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.20 </span><span class="caption-text">Isolated normally open contacts (<code class="docutils literal"><span class="pre">ISONOC0</span></code> examplarily)</span></p>
+</div>
+<p>The BMS-Extension Board provides 6 normally open contacts (<code class="docutils literal"><span class="pre">ISONOC0</span></code> to <code class="docutils literal"><span class="pre">ISONOC5</span></code>) for multi-purpose use. Their function is exemplarily described for ISONOC channel0 ( shown in <a class="reference internal" href="#iso-noc"><span class="std std-numref">Fig. 2.20</span></a>). Isolation and switching functionality are realized by AQV25G2S photoMOS (IC2001). The photoMOS are controlled by a MOSFET (T2001), which again is switched by the primary microcontroller (<code class="docutils literal"><span class="pre">ISONOC0_CONTROL</span></code>). The photoMOS is configured for a maximum load current of 6A at 50V. Diode D1002 is optionally and not populated by default. Both power terminals of the photoMOS are available on connector X2001 as <code class="docutils literal"><span class="pre">ISONOC0_POSITIVE</span></code> and <code class="docutils literal"><span class="pre">ISONOC0_POSITIVE</span></code> on consecutive pins 1 and 2.</p>
+</div>
+<div class="section" id="analog-inputs">
+<h2>2.13. Analog Inputs<a class="headerlink" href="#analog-inputs" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id23">
+<span id="id5"></span><a class="reference internal image-reference" href="../../_images/analog_inputs.png"><img alt="../../_images/analog_inputs.png" src="../../_images/analog_inputs.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.21 </span><span class="caption-text">Non isolated analog inputs (analog channel 0 exemplarily)</span></p>
+</div>
+<p>For the acquisition of analog data, there are 5 ADC channels (<code class="docutils literal"><span class="pre">ANALOG_IN_CH0</span></code> - <code class="docutils literal"><span class="pre">ANALOG_IN_CH4</span></code>) available on BMS-Extension Board board. <a class="reference internal" href="#id5"><span class="std std-numref">Fig. 2.21</span></a> shows the input circuit for channel 0. The analog input of the microcontroller (<code class="docutils literal"><span class="pre">ADC_MCU0_CH0</span></code>) is protected by diode D1701, which clamps the input voltage to 3.3V. By default R1701 is shorted with jumper, while R1702 is 7.75kOhm and C1701 is 100nF. The analog input channels are available on connector X1701. A reference voltage of 2.5V is provided by IC1701 (ADR3425), which can supply a total load current up to +10mA and sink up −3mA. The reference voltage is available in X1701 next to every analog input pin. Pin 11 and 12 are connected to GND.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The analog inputs are not isolated. They are referenced to the same potential as the primary microcontroller.</p>
+</div>
+</div>
+<div class="section" id="isolated-gpio">
+<h2>2.14. Isolated GPIO<a class="headerlink" href="#isolated-gpio" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id24">
+<span id="id6"></span><a class="reference internal image-reference" href="../../_images/isolated_gpio.png"><img alt="../../_images/isolated_gpio.png" src="../../_images/isolated_gpio.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.22 </span><span class="caption-text">Isolated GPIOs (Input 0 and 1; Output 0 and 1 shown exemplarily)</span></p>
+</div>
+<p>The BMS-Extension Board provides 4 isolated inputs and 4 isolated outputs for general purpose (shown in <a class="reference internal" href="#id6"><span class="std std-numref">Fig. 2.22</span></a> ). Two ADUM3402 (IC1902 and IC1903) are used for isolation. Their external side of is supplied by <code class="docutils literal"><span class="pre">SUPPLX_EXT0</span></code> via a 78L05F linear voltage regulator (IC1901). The inputs are equipped with a 10kOhm pull down resistor. All isolated GPIOs are available on the connector X1901 pins 1 to 8. Pins 9 and 10 of X1901 are connected to <code class="docutils literal"><span class="pre">GND_EXT0</span></code>.</p>
+</div>
+<div class="section" id="sd-card">
+<h2>2.15. SD Card<a class="headerlink" href="#sd-card" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id25">
+<span id="id7"></span><a class="reference internal image-reference" href="../../_images/sd_card.png"><img alt="../../_images/sd_card.png" src="../../_images/sd_card.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.23 </span><span class="caption-text">SD Card</span></p>
+</div>
+<p>On the BMS-Extension Board also a SD card slot can be found. It is directly connected to the Data Storage SPI of the primary microcontroller. <a class="reference internal" href="#id7"><span class="std std-numref">Fig. 2.23</span></a> shows the schematic. Via the signal <code class="docutils literal"><span class="pre">SDCARD_SUPPLY_CONTROL</span></code> (primary microcontroller) the supply voltage of the SD card can be switched on and off.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../slave_v2.x/slave_12cell_v2_x.html" class="btn btn-neutral float-right" title="3. Slave 12-Cell v2.x.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../specifications/specifications.html" class="btn btn-neutral" title="1. Hardware Specifications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

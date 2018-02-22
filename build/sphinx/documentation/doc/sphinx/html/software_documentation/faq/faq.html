@@ -1,0 +1,1281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>8. Software FAQ and HOWTOs &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="prev" title="7. Software Style Guide" href="../styleguide/styleguide.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>8. Software FAQ and HOWTOs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/software_documentation/faq/faq.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-faq-and-howtos">
+<span id="software-documentation-faq"></span><h1>8. Software FAQ and HOWTOs<a class="headerlink" href="#software-faq-and-howtos" title="Permalink to this headline">¶</a></h1>
+<p>This sections shows different kind of actions related to the software.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#how-to-start-foxbms-if-no-messages-are-sent-by-can" id="id2">How to start foxBMS if no messages are sent by CAN?</a></li>
+<li><a class="reference internal" href="#how-to-create-a-task-and-change-its-priority-and-period" id="id3">How to create a task and change its priority and period?</a></li>
+<li><a class="reference internal" href="#how-to-add-a-software-module-and-take-it-into-account-with-waf" id="id4">How to add a software module and take it into account with WAF?</a></li>
+<li><a class="reference internal" href="#how-to-change-the-multiplexer-measurement-sequence-for-the-ltc-driver" id="id5">How to change the multiplexer measurement sequence for the LTC driver?</a></li>
+<li><a class="reference internal" href="#how-to-change-the-relation-between-voltages-read-by-multiplexer-via-ltc-and-temperatures" id="id6">How to change the relation between voltages read by multiplexer via LTC6804-1/LTC6811-1 and temperatures?</a></li>
+<li><a class="reference internal" href="#how-to-configure-the-mcu-clock" id="id7">How to configure the MCU clock?</a></li>
+<li><a class="reference internal" href="#how-to-configure-the-ltc-and-spi-clocks" id="id8">How to configure the LTC6804-1/LTC6811-1 and SPI clocks?</a></li>
+<li><a class="reference internal" href="#how-to-configure-the-can-clock" id="id9">How to configure the CAN clock?</a></li>
+<li><a class="reference internal" href="#how-to-configure-and-drive-i-o-ports" id="id10">How to configure and drive I/O ports?</a></li>
+<li><a class="reference internal" href="#how-to-add-and-configure-interrupts" id="id11">How to add and configure interrupts?</a></li>
+<li><a class="reference internal" href="#how-to-add-a-database-entry-and-to-read-write-it" id="id12">How to add a database entry and to read/write it?</a></li>
+<li><a class="reference internal" href="#how-to-store-data-in-the-backup-sram-of-the-mcu" id="id13">How to store data in the backup SRAM of the MCU?</a></li>
+<li><a class="reference internal" href="#how-to-manually-add-can-entries-transmit-and-receive-and-to-change-the-transmit-time-period" id="id14">How to manually add CAN entries (transmit and receive) and to change the transmit time period?</a></li>
+<li><a class="reference internal" href="#how-to-adapt-the-can-module-when-less-than-12-battery-cells-temperature-sensors-per-module-are-used" id="id15">How to adapt the CAN module when less than 12 battery cells/temperature sensors per module are used?</a></li>
+<li><a class="reference internal" href="#how-to-adapt-the-can-module-when-less-or-more-than-8-battery-modules-are-used" id="id16">How to adapt the CAN module when less or more than 8 battery modules are used?</a></li>
+<li><a class="reference internal" href="#how-to-change-the-blink-period-of-the-indicator-leds" id="id17">How to change the blink period of the indicator LEDs?</a></li>
+<li><a class="reference internal" href="#how-to-add-an-entry-for-the-diag-module" id="id18">How to add an entry for the diag module?</a></li>
+<li><a class="reference internal" href="#how-to-configure-contactors-without-feedback" id="id19">How to configure contactors without feedback?</a></li>
+<li><a class="reference internal" href="#how-to-simply-trigger-events-via-can" id="id20">How to simply trigger events via CAN?</a></li>
+<li><a class="reference internal" href="#how-to-start-stop-balancing-the-battery-cells" id="id21">How to start/stop balancing the battery cells?</a></li>
+<li><a class="reference internal" href="#how-to-set-the-initial-soc-value-via-can" id="id22">How to set the initial SOC value via CAN?</a></li>
+<li><a class="reference internal" href="#how-to-configure-the-voltage-inputs" id="id23">How to configure the voltage inputs?</a></li>
+<li><a class="reference internal" href="#how-to-add-remove-temperature-sensors" id="id24">How to add/remove temperature sensors?</a></li>
+<li><a class="reference internal" href="#how-to-change-the-resolution-of-the-temperature-values-stored" id="id25">How to change the resolution of the temperature values stored?</a></li>
+<li><a class="reference internal" href="#how-to-enable-and-disable-the-checksum" id="id26">How to enable and disable the checksum?</a></li>
+<li><a class="reference internal" href="#how-to-call-a-user-function-to-implement-a-specific-algorithm" id="id27">How to call a user function to implement a specific algorithm?</a></li>
+</ul>
+</div>
+<div class="section" id="how-to-start-foxbms-if-no-messages-are-sent-by-can">
+<span id="faq-current-sensor"></span><h2><a class="toc-backref" href="#id2">8.1. How to start foxBMS if no messages are sent by CAN?</a><a class="headerlink" href="#how-to-start-foxbms-if-no-messages-are-sent-by-can" title="Permalink to this headline">¶</a></h2>
+<p>If no current sensor is connected to foxBMS, it will not start. This default behavior can be changed by setting the switch</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define CURRENT_SENSOR_PRESENT               TRUE</span>
+</pre></div>
+</div>
+<p>to <code class="docutils literal"><span class="pre">FALSE</span></code> as explaned in <a class="reference internal" href="../defines/defines.html#software-documentation-defines"><span class="std std-ref">Important Switches in Code</span></a>.</p>
+</div>
+<div class="section" id="how-to-create-a-task-and-change-its-priority-and-period">
+<h2><a class="toc-backref" href="#id3">8.2. How to create a task and change its priority and period?</a><a class="headerlink" href="#how-to-create-a-task-and-change-its-priority-and-period" title="Permalink to this headline">¶</a></h2>
+<p>First, declare a new task configuration in the <code class="docutils literal"><span class="pre">appltask_cfg.h</span></code> file:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* Task configuration of the 10ms application task</span>
+<span class="cm">*/</span>
+<span class="k">extern</span> <span class="n">BMS_Task_Definition_s</span> <span class="n">appl_tskdef_10ms</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The task configuration is a struct of type <code class="docutils literal"><span class="pre">BMS_Task_Definition_s</span></code> and defined as follows:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* struct for FreeRTOS task definition</span>
+<span class="cm">*/</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">uint32_t</span> <span class="n">Phase</span><span class="p">;</span>          <span class="cm">/*!&lt; (ms)                                 */</span>
+    <span class="kt">uint32_t</span> <span class="n">CycleTime</span><span class="p">;</span>      <span class="cm">/*!&lt; (ms)                                 */</span>
+    <span class="n">OS_PRIORITY_e</span> <span class="n">Priority</span><span class="p">;</span>  <span class="cm">/*!&lt;                                      */</span>
+    <span class="kt">uint32_t</span> <span class="n">Stacksize</span><span class="p">;</span>      <span class="cm">/*!&lt;  Defines the size, in words, of the</span>
+<span class="cm">                                   stack allocated to the idle task.   */</span>
+<span class="p">}</span> <span class="n">BMS_Task_Definition_s</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Phase:     phase offset of the task in ms</li>
+<li>CycleTime: cycle time of the task in ms</li>
+<li>Stacksize: stack size allocated to the task</li>
+<li>Priority: task priority for scheduling</li>
+</ul>
+<p>The task priorities are defined by CMSIS and consist of seven priorities:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">enum</span>  <span class="p">{</span>
+  <span class="n">osPriorityIdle</span>          <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span>          <span class="c1">// /&lt; priority: idle (lowest)</span>
+  <span class="n">osPriorityLow</span>           <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>          <span class="c1">// /&lt; priority: low</span>
+  <span class="n">osPriorityBelowNormal</span>   <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>          <span class="c1">// /&lt; priority: below normal</span>
+  <span class="n">osPriorityNormal</span>        <span class="o">=</span>  <span class="mi">0</span><span class="p">,</span>          <span class="c1">// /&lt; priority: normal (default)</span>
+  <span class="n">osPriorityAboveNormal</span>   <span class="o">=</span> <span class="o">+</span><span class="mi">1</span><span class="p">,</span>          <span class="c1">// /&lt; priority: above normal</span>
+  <span class="n">osPriorityHigh</span>          <span class="o">=</span> <span class="o">+</span><span class="mi">2</span><span class="p">,</span>          <span class="c1">// /&lt; priority: high</span>
+  <span class="n">osPriorityRealtime</span>      <span class="o">=</span> <span class="o">+</span><span class="mi">3</span><span class="p">,</span>          <span class="c1">// /&lt; priority: realtime (highest)</span>
+  <span class="n">osPriorityError</span>         <span class="o">=</span>  <span class="mh">0x84</span>        <span class="c1">// /&lt; system cannot determine priority</span>
+                                         <span class="c1">//    or thread has illegal priority</span>
+<span class="p">}</span> <span class="n">osPriority</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The priorities <code class="docutils literal"><span class="pre">osPriorityRealtime</span></code>, <code class="docutils literal"><span class="pre">osPriorityHigh</span></code>, <code class="docutils literal"><span class="pre">osPriorityAboveNormal</span></code> and <code class="docutils literal"><span class="pre">osPriorityNormal</span></code> are already used by the foxBMS engine and therefore should not be used. In conlusion the priorities <code class="docutils literal"><span class="pre">osPriorityBelowNormal</span></code> and <code class="docutils literal"><span class="pre">osPriorityLow</span></code> shall be used.</p>
+<p>Second, add the task configuration in the <code class="docutils literal"><span class="pre">appltask_cfg.c</span></code> file:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * predefined 10ms task for user code</span>
+<span class="cm"> */</span>
+<span class="n">BMS_Task_Definition_s</span> <span class="n">appl_tskdef_10ms</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span>   <span class="mi">10</span><span class="p">,</span> <span class="n">osPriorityBelowNormal</span><span class="p">,</span> <span class="mi">512</span><span class="o">/</span><span class="mi">4</span> <span class="p">};</span>
+</pre></div>
+</div>
+<p>Third, declare a task handle and a task function in the ´´appltask.c/h´´ file:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span> <span class="cm">/**</span>
+<span class="cm">  *  Definition of task handle 10ms task</span>
+<span class="cm">  */</span>
+ <span class="n">xTaskHandle</span> <span class="n">appl_handle_tsk_10ms</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief   10ms engine application task</span>
+<span class="cm">  */</span>
+ <span class="k">extern</span> <span class="kt">void</span> <span class="nf">APPL_TSK_Cyclic_100ms</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The task initialization and creation is done in the function <code class="docutils literal"><span class="pre">APPL_CreateTask()</span></code> in the <code class="docutils literal"><span class="pre">appltask.c</span></code> file. Before assigning the task handle to the newly created task, a new thread needs to be defined for the operating system. This is done by a call of the function <code class="docutils literal"><span class="pre">osThreadDef(name,</span> <span class="pre">thread,</span> <span class="pre">priority,</span> <span class="pre">instances,</span> <span class="pre">stacksz)</span></code>. The function parameters are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>name: name of the function that represents the task</li>
+<li>thread: os_pthread-pointer to the function that represents the task</li>
+<li>priority: initial priority of the thread function</li>
+<li>instances: number of possible thread instances (0 -&gt; only one instance)</li>
+<li>stacksize</li>
+</ul>
+</div></blockquote>
+<p>The task handle is now, with a call of <code class="docutils literal"><span class="pre">osThreadCreate</span></code>, assigned to the task.</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="c1">// Cyclic Task 10ms</span>
+<span class="n">osThreadDef</span><span class="p">(</span><span class="n">APPL_TSK_Cyclic_10ms</span><span class="p">,</span> <span class="p">(</span><span class="n">os_pthread</span> <span class="p">)</span><span class="n">APPL_TSK_Cyclic_10ms</span><span class="p">,</span>
+        <span class="n">appl_tskdef_10ms</span><span class="p">.</span><span class="n">Priority</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">appl_tskdef_10ms</span><span class="p">.</span><span class="n">Stacksize</span><span class="p">);</span>
+<span class="n">appl_handle_tsk_10ms</span> <span class="o">=</span> <span class="n">osThreadCreate</span><span class="p">(</span><span class="n">osThread</span><span class="p">(</span><span class="n">APPL_TSK_Cyclic_10ms</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The implementation of the task should be done like shown in the following example:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">APPL_TSK_Cyclic_10ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">os_boot</span> <span class="o">!=</span> <span class="n">OS_SYSTEM_RUNNING</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">osDelayUntil</span><span class="p">(</span><span class="n">os_schedulerstarttime</span><span class="p">,</span> <span class="n">appl_tskdef_10ms</span><span class="p">.</span><span class="n">Phase</span><span class="p">);</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+   <span class="p">{</span>
+        <span class="kt">uint32_t</span> <span class="n">currentTime</span> <span class="o">=</span> <span class="n">osKernelSysTick</span><span class="p">();</span>
+
+        <span class="n">APPL_Cyclic_10ms</span><span class="p">();</span>
+
+        <span class="n">osDelayUntil</span><span class="p">(</span><span class="n">currentTime</span><span class="p">,</span> <span class="n">appl_tskdef_10ms</span><span class="p">.</span><span class="n">CycleTime</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="simple">
+<li>Every task should have the while loop <code class="docutils literal"><span class="pre">while(os_boot</span> <span class="pre">!=</span> <span class="pre">OS_SYSTEM_RUNNING)</span></code> at the beginning of the funtion. This prevents the task from being executed before foxBMS is completely initialized.</li>
+<li><code class="docutils literal"><span class="pre">osDelayUntil(os_schedulerstarttime,</span> <span class="pre">appl_tskdef_10ms.Phase)</span></code> sets the wished phase offset of the task</li>
+<li>Tasks in FreeRTOS should never finish. Therefore, the actual task implementation is done in a <code class="docutils literal"><span class="pre">while(1)</span></code>-loop</li>
+<li><code class="docutils literal"><span class="pre">APPL_TSK_Cyclic_10ms</span></code> serves as wrapper function for task implementation in <code class="docutils literal"><span class="pre">APPL_Cyclic_10ms()</span></code></li>
+<li>The call of <code class="docutils literal"><span class="pre">osDelayUntil(currentTime,</span> <span class="pre">appl_tskdef_10ms.CycleTime)</span></code> sets the task in blocked state until the cycle time until the next period arrives</li>
+<li>Every task should be secured by the system monitoring module (<code class="docutils literal"><span class="pre">DIAG_SysMonNotify()</span></code>)</li>
+<li>foxBMS provides two default tasks for user applications with a periods of 10ms and 100ms</li>
+</ul>
+<div class="last highlight-C"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">APPL_Cyclic_10ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">DIAG_SysMonNotify</span><span class="p">(</span><span class="n">DIAG_SYSMON_APPL_CYCLIC_10ms</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>        <span class="c1">// task is running, state = ok</span>
+
+    <span class="cm">/* User specific implementations:   */</span>
+    <span class="cm">/*   ...                            */</span>
+    <span class="cm">/*   ...                            */</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-add-a-software-module-and-take-it-into-account-with-waf">
+<h2><a class="toc-backref" href="#id4">8.3. How to add a software module and take it into account with WAF?</a><a class="headerlink" href="#how-to-add-a-software-module-and-take-it-into-account-with-waf" title="Permalink to this headline">¶</a></h2>
+<p>The steps to follow are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Creation of a new subfolder (for example <code class="docutils literal"><span class="pre">mymodule</span></code>) in one of the existing source folders <code class="docutils literal"><span class="pre">application</span></code>, <code class="docutils literal"><span class="pre">engine</span></code>, <code class="docutils literal"><span class="pre">general</span></code>, <code class="docutils literal"><span class="pre">module</span></code>, <code class="docutils literal"><span class="pre">module/utils</span></code>)</li>
+<li>Copy of all source files to the newly created subfolder</li>
+<li>Modification of the wscript file located in the chosen existing source folder, to add the new module. For example, to add a software module in the <code class="docutils literal"><span class="pre">application</span></code> folder, in the <code class="docutils literal"><span class="pre">includes</span></code> section of the wscript, the following new line has to be added:</li>
+</ul>
+</div></blockquote>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bld</span><span class="o">.</span><span class="n">srcnode</span><span class="o">.</span><span class="n">abspath</span><span class="p">(),</span> <span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;application&#39;</span><span class="p">,</span> <span class="s1">&#39;mymodule&#39;</span><span class="p">),</span>
+</pre></div>
+</div>
+<p>In case the new software module has to be used in another existing module, the same line has to be added in the wscript file corresponding to the existing module where it is imported.</p>
+</div>
+<div class="section" id="how-to-change-the-multiplexer-measurement-sequence-for-the-ltc-driver">
+<h2><a class="toc-backref" href="#id5">8.4. How to change the multiplexer measurement sequence for the LTC driver?</a><a class="headerlink" href="#how-to-change-the-multiplexer-measurement-sequence-for-the-ltc-driver" title="Permalink to this headline">¶</a></h2>
+<p>The sequence is defined in <code class="docutils literal"><span class="pre">module/config/ltc_cfg.c</span></code>, via the array <code class="docutils literal"><span class="pre">LTC_MUX_CH_CFG_t</span> <span class="pre">ltc_mux_seq_main_ch1[]</span></code>, which contains a concatenation of elements like:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+   <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+   <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+   <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+   <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>There are 4 multiplexers with IDs from 0 to 3 on the foxBMS Slave Units. The multiplexer is chosen with the variable <code class="docutils literal"><span class="pre">muxID</span></code>. Each multiplexer has 8 channels, chosen with the variable <code class="docutils literal"><span class="pre">muxCh</span></code> (between 0 and 7). Channel 0xFF means that the multiplexer is disabled (i.e., high-impedance mode: none of the 8 inputs is connected to the output). With the code sequence shown above, multiplexer is first disabled, then channel 0 of multiplexer 2 is read, then channel 1 of multiplexer 2 is read.</p>
+<p>Typically, multiplexer 0 and 1 are used for temperature measurement, and multiplexer 2 and 3 are used for balancing feedback (i.e., monitor if a cell is being balanced or not). As a consequence, by default, measurements of multiplexer 0 and 1 are stored in a database structure of type <code class="docutils literal"><span class="pre">DATA_BLOCK_CELLTEMPERATURE_s</span></code> and measurement of multiplexer 2 and 3 are stored in a database structure of type <code class="docutils literal"><span class="pre">DATA_BLOCK_BALANCING_FEEDBACK_s</span></code>.</p>
+<p>For temperature measurements, the variable <code class="docutils literal"><span class="pre">uint8_t</span> <span class="pre">ltc_muxsensortemperatur_cfg[6]</span></code> contains the look-up table between temperature sensors and cells: the first entry defines the temperature sensor number assigned to the first cell, the second entry defines the temperature sensor number assigned to the second cell, and so on. If no look-up table is needed, this array should simply be filled with integers increasing from 0 to number of temperature sensors minus 1. In this example, <code class="docutils literal"><span class="pre">muxsensortemperaturmain_cfg[6]</span></code> has a size of 6 because it is the default number of temperature sensors supported by the foxBMS Slave Units. This must be adapted at two places:</p>
+<blockquote>
+<div><ul class="simple">
+<li>In <code class="docutils literal"><span class="pre">module/config/ltc_cfg.c</span></code>, where the variable is defined</li>
+<li>In <code class="docutils literal"><span class="pre">module/config/ltc_cfg.h</span></code>, in the declaration <code class="docutils literal"><span class="pre">extern</span> <span class="pre">uint8_t</span> <span class="pre">ltc_muxsensortemperatur_cfg[6]</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="how-to-change-the-relation-between-voltages-read-by-multiplexer-via-ltc-and-temperatures">
+<span id="sw-faq-temperature-sensors"></span><h2><a class="toc-backref" href="#id6">8.5. How to change the relation between voltages read by multiplexer via LTC6804-1/LTC6811-1 and temperatures?</a><a class="headerlink" href="#how-to-change-the-relation-between-voltages-read-by-multiplexer-via-ltc-and-temperatures" title="Permalink to this headline">¶</a></h2>
+<p>The function <code class="docutils literal"><span class="pre">float</span> <span class="pre">LTC_Convert_MuxVoltages_to_Temperatures(float</span> <span class="pre">Vout)</span></code> is defined in <code class="docutils literal"><span class="pre">ltc.c</span></code>. It gets a voltage as input and returns a temperature. It can simply be changed to meet the application needs.</p>
+<p>To get the function converting the measured voltage to temperature, the following procedure can be followed if a Negative Temperature Coefficient resistor (NTC) is used :</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Create a spreadsheet (e.g., in Microsoft Excel)</li>
+<li>In the datasheet of the NTC, take the table giving the resistance versus the temperature</li>
+<li>In the spreadsheet, define three columns:<ul>
+<li>Temperature value (read from the NTC datasheet)</li>
+<li>Corresponding resistance value (read from the NTC datasheet)</li>
+<li>Voltage value provided by the voltage divider calculated with the NTC resistance for each temperature value. On the foxBMS Slave Unit, the voltage divider is formed by a 20kOhm resistor in series with the NTC, with a 3V power supply, as shown in <a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html#slave-voltage-divider"><span class="std std-ref">Cell Temperature Connector on the foxBMS Slave Units</span></a></li>
+</ul>
+</li>
+<li>Plot the temperature versus the corresponding measured voltage value (i.e., first column versus third column in the spreadsheet)</li>
+<li>Fit a polynomial function to the plotted curve (e.g., by using Microsoft Excel)</li>
+<li>Implement the polynom in <code class="docutils literal"><span class="pre">float</span> <span class="pre">LTC_Convert_MuxVoltages_to_Temperatures(float</span> <span class="pre">Vout)</span></code></li>
+</ol>
+</div></blockquote>
+<p>The function <code class="docutils literal"><span class="pre">float</span> <span class="pre">LTC_Convert_MuxVoltages_to_Temperatures(float</span> <span class="pre">Vout)</span></code> gets a voltage as input and outputs the corresponding temperature.</p>
+</div>
+<div class="section" id="how-to-configure-the-mcu-clock">
+<h2><a class="toc-backref" href="#id7">8.6. How to configure the MCU clock?</a><a class="headerlink" href="#how-to-configure-the-mcu-clock" title="Permalink to this headline">¶</a></h2>
+<p>The configuration is defined in <code class="docutils literal"><span class="pre">module/config/rcc_cfg.c</span></code> via two structures:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">RCC_OscInitTypeDef</span> <span class="n">RCC_OscInitStruct</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">OscillatorType</span> <span class="o">=</span> <span class="n">RCC_OSCILLATORTYPE_HSE</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">HSEState</span> <span class="o">=</span> <span class="n">RCC_HSE_ON</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">PLL</span><span class="p">.</span><span class="n">PLLState</span> <span class="o">=</span> <span class="n">RCC_PLL_ON</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">PLL</span><span class="p">.</span><span class="n">PLLSource</span> <span class="o">=</span> <span class="n">RCC_PLLSOURCE_HSE</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">PLL</span><span class="p">.</span><span class="n">PLLM</span> <span class="o">=</span> <span class="n">RCC_PLL_M</span><span class="p">,</span>    <span class="c1">// Oscillator Clock: 8MHz -&gt; (8Mhz / 8) * 336 / 2 -&gt; 168MHz</span>
+    <span class="p">.</span><span class="n">PLL</span><span class="p">.</span><span class="n">PLLN</span> <span class="o">=</span> <span class="n">RCC_PLL_N</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">PLL</span><span class="p">.</span><span class="n">PLLP</span> <span class="o">=</span> <span class="n">RCC_PLL_P</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">PLL</span><span class="p">.</span><span class="n">PLLQ</span> <span class="o">=</span> <span class="n">RCC_PLL_Q</span>     <span class="c1">// Oscillator Clock: 8MHz -&gt; (8Mhz / 8) * 336 / 7   -&gt; 48MHz</span>
+<span class="p">};</span>
+
+<span class="n">RCC_ClkInitTypeDef</span> <span class="n">RCC_ClkInitStruct</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">ClockType</span> <span class="o">=</span> <span class="n">RCC_CLOCKTYPE_SYSCLK</span><span class="o">|</span><span class="n">RCC_CLOCKTYPE_HCLK</span><span class="o">|</span><span class="n">RCC_CLOCKTYPE_PCLK1</span><span class="o">|</span><span class="n">RCC_CLOCKTYPE_PCLK2</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">SYSCLKSource</span> <span class="o">=</span> <span class="n">RCC_SYSCLKSOURCE_PLLCLK</span><span class="p">,</span>    <span class="c1">// System Clock Source: PLL-Clock</span>
+                                                <span class="c1">// (Cortex-Core, AHB-Bus, DMA, memory)</span>
+    <span class="p">.</span><span class="n">AHBCLKDivider</span> <span class="o">=</span> <span class="n">RCC_AHBCLKDivider</span><span class="p">,</span>         <span class="c1">// Div=1 , AHB  CLOCK: 168MHz</span>
+    <span class="p">.</span><span class="n">APB1CLKDivider</span> <span class="o">=</span> <span class="n">RCC_APB1CLKDivider</span><span class="p">,</span>       <span class="c1">// Div=4 , APB1 CLOCK:  42MHz</span>
+    <span class="p">.</span><span class="n">APB2CLKDivider</span> <span class="o">=</span> <span class="n">RCC_APB2CLKDivider</span>        <span class="c1">// Div=2 , APB2 CLOCK:  84MHz</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#systemclocks"><span class="std std-numref">Fig. 8.1</span></a> shows a summary of the system clocks, with the variables defined via the structures and their effect (either as divider or multiplier).</p>
+<div class="figure" id="id1">
+<span id="systemclocks"></span><a class="reference internal image-reference" href="../../_images/system_clocks.png"><img alt="../../_images/system_clocks.png" src="../../_images/system_clocks.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Clock system of the microcontroller used in foxBMS</span></p>
+</div>
+<p>On the BMS-Master Board, a 8MHz oscillator is used as clock source. It should be noted that some of the multipliers/dividers can take all integers values in a certain range, while others can only take a specific set of values. The values must be defined so that the clock values are within the allowed ranges. These are defined in the microcontroller datasheet.</p>
+</div>
+<div class="section" id="how-to-configure-the-ltc-and-spi-clocks">
+<h2><a class="toc-backref" href="#id8">8.7. How to configure the LTC6804-1/LTC6811-1 and SPI clocks?</a><a class="headerlink" href="#how-to-configure-the-ltc-and-spi-clocks" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="docutils literal"><span class="pre">module/config/ltc_cfg.h</span></code>, the macro <code class="docutils literal"><span class="pre">#define</span> <span class="pre">SPI_HANDLE_LTC</span> <span class="pre">&amp;spi_devices[0]</span></code> is defined. It points to a SPI handle: this SPI device will be used for the communication with the LTC6804-1/LTC6811-1. SPI handles are defined in <code class="docutils literal"><span class="pre">module/config/spi_cfg.c</span></code>. Depending on the SPI device chosen, the clock used will be peripheral clock 1 or 2 (this information is found in the STM32F4 datasheet). The clock used by the SPI device is obtained after division of the peripheral clock frequency. In the SPI handle, the value for the divider is defined via <code class="docutils literal"><span class="pre">.Init.BaudRatePrescaler</span> <span class="pre">=</span> <span class="pre">SPI_BAUDRATEPRESCALER_128</span></code>. In the LTC6804-1/LTC6811-1 driver, the SPI frequency is read directly via a HAL function and all timings are adapted automatically. The user must only ensure that the SPI frequency used for the LTC6804-1/LTC6811-1 is not higher than 1MHz. This is the maximal frequency allowed for the LTC6804-1/LTC6811-1 communication (as defined in the LTC6804-1/LTC6811-1 datasheet).</p>
+</div>
+<div class="section" id="how-to-configure-the-can-clock">
+<h2><a class="toc-backref" href="#id9">8.8. How to configure the CAN clock?</a><a class="headerlink" href="#how-to-configure-the-can-clock" title="Permalink to this headline">¶</a></h2>
+<p>If the APB1 (Peripheral) clock changes, the CAN timing has to be adapted according to the following formula:</p>
+<div class="math">
+\[ \begin{align}\begin{aligned}\text{clock}_\text{CAN} = \frac{\text{APB1}}{(\text{prescaler} + \text{timequantums})}\\\text{timequantums} = 1 + \text{timequantumsBS1} + \text{timequantumsBS2}\end{aligned}\end{align} \]</div>
+<p>The timequantums (TQ) are constrained to specific discrete values by the STM32 microcontroller.</p>
+<p><strong>Sample Configurations</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="20%" />
+<col width="23%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>CAN clock</td>
+<td>APB1</td>
+<td>Prescaler</td>
+<td>BS1</td>
+<td>BS2</td>
+</tr>
+<tr class="row-even"><td>1.0 MHz</td>
+<td>42 MHz</td>
+<td>3</td>
+<td>6 TQ</td>
+<td>7 TQ</td>
+</tr>
+<tr class="row-odd"><td>1.0 MHz</td>
+<td>32 MHz</td>
+<td>4</td>
+<td>5 TQ</td>
+<td>2 TQ</td>
+</tr>
+<tr class="row-even"><td>0.5 MHz</td>
+<td>42 MHz</td>
+<td>6</td>
+<td>6 TQ</td>
+<td>7 TQ</td>
+</tr>
+<tr class="row-odd"><td>0.5 MHz</td>
+<td>32 MHz</td>
+<td>8</td>
+<td>5 TQ</td>
+<td>2 TQ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p>change the relevant low level driver handle in file /modules/config/can_cfg.c</p>
+<p><code class="docutils literal"><span class="pre">CAN_HandleTypeDef</span> <span class="pre">hcan1</span></code> or <code class="docutils literal"><span class="pre">CAN_HandleTypeDef</span> <span class="pre">hcan2</span></code></p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">Prescaler</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>        <span class="c1">// CAN_CLOCK = APB1 = 42 MHz</span>
+                            <span class="c1">// resulting CAN speed: APB1/prescaler/sumOfTimequants</span>
+                            <span class="c1">// sum: 1tq for sync + BS1 + BS2</span>
+<span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">BS1</span> <span class="o">=</span> <span class="n">CAN_BS1_6TQ</span><span class="p">,</span>    <span class="c1">// --&gt; CAN = 42 MHz/(3*14) = 1.0 MHz</span>
+<span class="p">.</span><span class="n">Init</span><span class="p">.</span><span class="n">BS2</span> <span class="o">=</span> <span class="n">CAN_BS2_7TQ</span><span class="p">,</span>
+</pre></div>
+</div>
+<div class="math">
+\[ \begin{align}\begin{aligned}\text{timequantums} = 1 + 6 + 7 = 14\\\text{clock}_{CAN} = \frac{42.0\text{\MHz}}{(3 \cdot  14)} = 1.0 \text{\MHz}\end{aligned}\end{align} \]</div>
+<p>Further details can be found in STM32F4 datasheet.</p>
+</div>
+<div class="section" id="how-to-configure-and-drive-i-o-ports">
+<h2><a class="toc-backref" href="#id10">8.9. How to configure and drive I/O ports?</a><a class="headerlink" href="#how-to-configure-and-drive-i-o-ports" title="Permalink to this headline">¶</a></h2>
+<p>The pin configuration of the hardware is is defined in <code class="docutils literal"><span class="pre">const</span> <span class="pre">IO_PIN_CFG_s</span> <span class="pre">io_cfg[]</span></code> in the file <code class="docutils literal"><span class="pre">module/config/io_cfg.c</span></code> with entries like:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">PIN_MCU_0_BMS_INTERFACE_SPI_MISO</span><span class="p">,</span> <span class="n">IO_MODE_AF_PP</span><span class="p">,</span> <span class="n">IO_PIN_NOPULL</span><span class="p">,</span>
+ <span class="n">IO_SPEED_HIGH</span><span class="p">,</span> <span class="n">IO_ALTERNATE_AF5_SPI1</span><span class="p">,</span> <span class="n">IO_PIN_LOCK_ENABLE</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>The parameters are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Pin: Defines the pin name (defined in <code class="docutils literal"><span class="pre">module/config/io_mcu0_cfg.h</span></code>).</li>
+<li>Mode: The possibilities of the mode are defined in <code class="docutils literal"><span class="pre">module/config</span> <span class="pre">io_cfg.c</span></code> via the enum type <code class="docutils literal"><span class="pre">IO_PIN_MODES_e</span></code>. Often used modes are <code class="docutils literal"><span class="pre">IO_MODE_AF_PP</span></code> for use of one alternate function of the pin, <code class="docutils literal"><span class="pre">IO_MODE_INPUT</span></code> to use the pin as an input, <code class="docutils literal"><span class="pre">IO_MODE_OUTPUT_PP</span></code> to use the pin as an output with push-pull functionality.</li>
+<li>Pinpull: Defines wether the pin is used without pull-up or pull-down (<code class="docutils literal"><span class="pre">IO_PIN_NOPULL</span></code>), to use the pin with pull-up (<code class="docutils literal"><span class="pre">IO_PIN_PULLUP</span></code>) or to use the pin with pull-down (<code class="docutils literal"><span class="pre">IO_PIN_PULLDOWN</span></code>).</li>
+<li>Speed: Defines the speed of the pin (<code class="docutils literal"><span class="pre">IO_SPEED_LOW</span></code>, <code class="docutils literal"><span class="pre">IO_SPEED_MEDIUM</span></code>, <code class="docutils literal"><span class="pre">IO_SPEED_FAST</span></code> or <code class="docutils literal"><span class="pre">IO_SPEED_HIGH</span></code>).</li>
+<li>Alternate: Defines if the signal/pin uses an alternate function or not. If no alternate function is used this is set to <code class="docutils literal"><span class="pre">IO_ALTERNATE_NO_ALTERNATE</span></code>. If the signal/pin uses a alternate function one can choose from the possibilities from the enumeration <code class="docutils literal"><span class="pre">IO_PIN_ALTERNATE_e</span></code> in <code class="docutils literal"><span class="pre">module/config/io_cfg.h</span></code>.</li>
+<li>Pinlock: <code class="docutils literal"><span class="pre">IO_PIN_LOCK_DISABLE</span></code> or <code class="docutils literal"><span class="pre">IO_PIN_LOCK_ENABLE</span></code> to disable or enable pin locking.</li>
+<li>Initvalue: Sets the initial state of the pin in case of an output pin; The pin is set to <code class="docutils literal"><span class="pre">IO_PIN_RESET</span></code> for 0/low and to <code class="docutils literal"><span class="pre">IO_PIN_SET</span></code> for 1/high. If no value is given for a output pin it is set to low.</li>
+</ul>
+</div></blockquote>
+<p>As explained above, the signal names are to be defined in <code class="docutils literal"><span class="pre">module/config/io_mcu0_cfg.h</span></code> with macros like:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define PIN_MCU_0_BMS_INTERFACE_SPI_MISO IO_PA_6</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal"><span class="pre">IO_Px_y</span></code> corresponds to the physical pin on the MCU, with <code class="docutils literal"><span class="pre">x</span></code> the port (e.g., A,B,C) and <code class="docutils literal"><span class="pre">y</span></code> the pin number on the port (e.g., 0,1,2).</p>
+<p>This configuration is initialized in <code class="docutils literal"><span class="pre">main.c</span></code> with the function call <code class="docutils literal"><span class="pre">IO_Init(&amp;io_cfg[0])</span></code>.</p>
+<p>Pins configured as output are driven with the function with <code class="docutils literal"><span class="pre">IO_PIN_RESET</span></code> or <code class="docutils literal"><span class="pre">IO_PIN_SET</span></code> to set the pin to low or high. Example (The signal/pin name corresponds to the one defined in <code class="docutils literal"><span class="pre">module/config/io_mcu0_cfg.h</span></code>).:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">IO_WritePin</span><span class="p">(</span><span class="n">PIN_MCU_0_BMS_INTERFACE_SPI_MISO</span><span class="p">,</span> <span class="n">IO_PIN_RESET</span><span class="p">);</span>     <span class="c1">// set pin low</span>
+<span class="n">IO_WritePin</span><span class="p">(</span><span class="n">PIN_MCU_0_TO_MCU_1_INTERFACE_SPI_MISO</span><span class="p">,</span> <span class="n">IO_PIN_SET</span><span class="p">);</span>  <span class="c1">// set pin high</span>
+</pre></div>
+</div>
+<p>The states of pins configured as input are read with the <code class="docutils literal"><span class="pre">IO_ReadPin(&lt;Signalname&gt;)</span></code> function. The function returns <code class="docutils literal"><span class="pre">IO_PIN_RESET</span></code> or <code class="docutils literal"><span class="pre">IO_PIN_SET</span></code> (0 or 1). Example with the signal/pin name corresponding to the one defined in <code class="docutils literal"><span class="pre">module/config/io_mcu0_cfg.h</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">IO_PIN_STATE_e</span> <span class="n">pinstate</span> <span class="o">=</span> <span class="n">IO_PIN_RESET</span><span class="p">;</span>
+<span class="n">pinstate</span> <span class="o">=</span> <span class="n">IO_ReadPin</span><span class="p">(</span><span class="n">PIN_MCU_0_BMS_INTERFACE_SPI_NSS</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-add-and-configure-interrupts">
+<h2><a class="toc-backref" href="#id11">8.10. How to add and configure interrupts?</a><a class="headerlink" href="#how-to-add-and-configure-interrupts" title="Permalink to this headline">¶</a></h2>
+<p>The interrupt configuration can be found in <code class="docutils literal"><span class="pre">general/config/nvic_cfg.c</span></code> via the variable <code class="docutils literal"><span class="pre">NVIC_InitStruct_s</span> <span class="pre">nvic_interrupts[]</span></code>, which contains entries of the form:
+<code class="docutils literal"><span class="pre">{</span> <span class="pre">DMA2_Stream2_IRQn,</span> <span class="pre">2,</span> <span class="pre">NVIC_IRQ_LOCK_ENABLE,</span> <span class="pre">NVIC_IRQ_ENABLE</span> <span class="pre">}</span></code></p>
+<p>The configuration parameters are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Symbolic name of interrupt source (as defined in the system file stm32f429xx.h)</li>
+<li>Interrupt priority: number between 0 and 15, a lower number means a higher priority</li>
+<li>Parameter irqlock: if set to <code class="docutils literal"><span class="pre">NVIC_IRQ_LOCK_ENABLE</span></code>, the interrupt is locked according to the initial state and cannot be modified by the interface functions <code class="docutils literal"><span class="pre">NVIC_EnableInterrupts()</span></code> or <code class="docutils literal"><span class="pre">NVIC_DisableInterrupts()</span></code></li>
+<li>Initial state of interrupt source: set to <code class="docutils literal"><span class="pre">NVIC_IRQ_ENABLE</span></code> to get the interrupt enabled by the initialization function. In case of <code class="docutils literal"><span class="pre">NVIC_IRQ_DISABLE</span></code>, the interrupt must be activated by calling <code class="docutils literal"><span class="pre">NVIC_EnableInterrupts()</span></code> after the initialization</li>
+</ul>
+</div></blockquote>
+<p>In <code class="docutils literal"><span class="pre">general/config/stm32f4xx_it.c</span></code>, a corresponding callback function must be defined (for example <code class="docutils literal"><span class="pre">void</span> <span class="pre">DMA2_Stream2_IRQHandler(void)</span></code> for DMA stream 2 of DMA device 2). It will be called when the interrupt is triggered.</p>
+<p>For a proper operation, the interrupt handling (callback function) has to execute the following steps:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Clear the pending interrupt with for example <code class="docutils literal"><span class="pre">HAL_NVIC_ClearPendingIRQ(DMA2_Stream2_IRQn)</span></code></li>
+<li>Call the HAL IRQ handler (or a custom handler) with for example: <code class="docutils literal"><span class="pre">HAL_DMA_IRQHandler(&amp;dma_devices[0])</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Interrupt routines with interrupt priority above the maximum FreeRTOS configuration level (<code class="docutils literal"><span class="pre">configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY</span></code>) must not call FreeRTOS API functions. These interrupts are real-time interrupts, which are bypassing the operating system. Interrupt routines with interrupt priority equal or lower than this maximum level must call the corresponding FreeRTOS API functions with ending <code class="docutils literal"><span class="pre">...._FROM_ISR()</span></code>.</p>
+</div>
+<p>Check the documentation (datasheet, reference manual) of the interrupt source for additional steps.</p>
+</div>
+<div class="section" id="how-to-add-a-database-entry-and-to-read-write-it">
+<span id="database-entry"></span><h2><a class="toc-backref" href="#id12">8.11. How to add a database entry and to read/write it?</a><a class="headerlink" href="#how-to-add-a-database-entry-and-to-read-write-it" title="Permalink to this headline">¶</a></h2>
+<p>The example of the entry for cell voltages is taken. In <code class="docutils literal"><span class="pre">engine/config/database_cfg.h</span></code>, the definition of a block must be added <code class="docutils literal"><span class="pre">#define</span> <span class="pre">DATA_BLOCK_ID_CELLVOLTAGE</span> <span class="pre">DATA_BLOCK_1</span></code> with one available block. The blocks are defined via the following enumeration:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">enum</span> <span class="p">{</span>
+    <span class="n">DATA_BLOCK1</span>        <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK2</span>        <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK3</span>        <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK4</span>        <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK5</span>        <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK6</span>        <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK7</span>        <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK8</span>        <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK9</span>        <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK10</span>       <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK11</span>       <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="n">DATA_BLOCK_MAX</span>      <span class="o">=</span> <span class="n">DATA_MAX_BLOCK_NR</span><span class="p">,</span>
+<span class="p">}</span> <span class="n">DATA_BLOCK_ID_TYPE_e</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>If more than <code class="docutils literal"><span class="pre">DATA_BLOCK_MAX</span></code> blocks are needed, it must be changed in the defines:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define DATA_MAX_BLOCK_NR                11</span>
+<span class="cp">#define DATA_MAX_USED_BLOCK_NR           11</span>
+</pre></div>
+</div>
+<p>A structure must then be declared for the block ID created:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cm">/*  data structure declaration of DATA_BLOCK_ID_CELLVOLTAGE */</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">uint16_t</span>      <span class="n">voltage</span><span class="p">[</span><span class="n">NR_OF_BAT_CELLS</span><span class="p">];</span>    <span class="c1">//unit: mV</span>
+    <span class="kt">uint32_t</span>      <span class="n">previous_timestamp</span><span class="p">;</span>
+    <span class="kt">uint32_t</span>      <span class="n">timestamp</span><span class="p">;</span>
+    <span class="kt">uint8_t</span>       <span class="n">state</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">DATA_BLOCK_CELLVOLTAGE_s</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>This structure can contain all the data needed for the entry. In <code class="docutils literal"><span class="pre">engine/config/database_cfg.c</span></code>, a variable with the structure type must be declared
+<code class="docutils literal"><span class="pre">DATA_BLOCK_CELLVOLTAGE_s</span> <span class="pre">data_block_cellvoltage[DOUBLE_BUFFERING]</span></code>. The user can choose <code class="docutils literal"><span class="pre">SINGLE_BUFFERING</span></code> or <code class="docutils literal"><span class="pre">DOUBLE_BUFFERING</span></code>. The last step is to add an entry in the structure <code class="docutils literal"><span class="pre">DATA_BASE_HEADER_s</span>&#160; <span class="pre">data_base_header[]</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">data_block_cellvoltage</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+<span class="k">sizeof</span><span class="p">(</span><span class="n">DATA_BLOCK_CELLVOLTAGE_s</span><span class="p">),</span>
+<span class="n">DOUBLE_BUFFERING</span><span class="p">,</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>With either <code class="docutils literal"><span class="pre">SINGLE_BUFFERING</span></code> or <code class="docutils literal"><span class="pre">DOUBLE_BUFFERING</span></code> (the same as in the structure declaration).
+When access to the created database entry is needed, a local variable with the corresponding type must be created in the module where it is needed:
+<code class="docutils literal"><span class="pre">DATA_BLOCK_CELLVOLTAGE_s</span> <span class="pre">cellvoltage;</span></code></p>
+<p>Access to a data field is made with the usual C-syntax: <code class="docutils literal"><span class="pre">cellvoltage.voltage[i]</span></code></p>
+<p>Getting the data from the database in the local variable is made via: <code class="docutils literal"><span class="pre">DATA_GetTable(&amp;cellvoltage,DATA_BLOCK_ID_CELLVOLTAGE)</span></code></p>
+<p>Storing data from the local variable to the database is made via: <code class="docutils literal"><span class="pre">DATA_StoreDataBlock(&amp;cellvoltage,DATA_BLOCK_ID_CELLVOLTAGE)</span></code></p>
+</div>
+<div class="section" id="how-to-store-data-in-the-backup-sram-of-the-mcu">
+<h2><a class="toc-backref" href="#id13">8.12. How to store data in the backup SRAM of the MCU?</a><a class="headerlink" href="#how-to-store-data-in-the-backup-sram-of-the-mcu" title="Permalink to this headline">¶</a></h2>
+<p>The STM32F4 has 4kB Backup SRAM. Variables can be stored there with the keywork <code class="docutils literal"><span class="pre">MEM_BKP_SRAM</span></code> which is defined in <code class="docutils literal"><span class="pre">src/general/config/global.h</span></code>.</p>
+<p>Example:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define DIAG_FAIL_ENTRY_LENGTH (50)</span>
+<span class="n">DIAG_ERROR_ENTRY_s</span> <span class="n">MEM_BKP_SRAM</span> <span class="n">diag_memory</span><span class="p">[</span><span class="n">DIAG_FAIL_ENTRY_LENGTH</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-manually-add-can-entries-transmit-and-receive-and-to-change-the-transmit-time-period">
+<span id="faq-can-manually-add"></span><h2><a class="toc-backref" href="#id14">8.13. How to manually add CAN entries (transmit and receive) and to change the transmit time period?</a><a class="headerlink" href="#how-to-manually-add-can-entries-transmit-and-receive-and-to-change-the-transmit-time-period" title="Permalink to this headline">¶</a></h2>
+<p>Several steps have to be done to add a transmit message and signal (message and signal in receive direction in parentheses):</p>
+<p>File: <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.h</span></code></p>
+<ol class="arabic simple">
+<li>The message name must be added. For TX, i.e., transmit data, a message entry must be added in the enumeration <code class="docutils literal"><span class="pre">CANS_messagesTx_e</span></code>: (RX, i.e., receive, <code class="docutils literal"><span class="pre">CANS_messagesRx_e</span></code>)</li>
+<li>Then one or more signal names must be added in the enumeration <code class="docutils literal"><span class="pre">CANS_signalsTx_e</span></code> (<code class="docutils literal"><span class="pre">CANS_signalsRx_e</span></code>)</li>
+</ol>
+<p>File: <code class="docutils literal"><span class="pre">module/config/can_cfg.c</span></code></p>
+<ol class="arabic simple" start="3">
+<li>The CAN message must be defined</li>
+</ol>
+<p>3.1. In case a TX message should be defined - add the message for CAN0 or CAN1 in the respective array (const CAN_MSG_TX_TYPE_s can_CANx_messages_tx). The message looks
+like <code class="docutils literal"><span class="pre">{</span> <span class="pre">0x123,</span> <span class="pre">8,</span> <span class="pre">100,</span> <span class="pre">20,</span> <span class="pre">NULL_PTR</span> <span class="pre">}</span></code></p>
+<blockquote>
+<div><p>The parameters are:</p>
+<ul class="simple">
+<li>Message ID (11bit standard identifier used in foxBMS)</li>
+<li>Data Length Code (i.e., number of bytes), usually 8</li>
+<li>Transmit period in ms: must be multiple of <code class="docutils literal"><span class="pre">CANS_TICK_MS</span></code></li>
+<li>Delay in ms for sending the message the first time: must be multiple of <code class="docutils literal"><span class="pre">CANS_TICK_MS</span></code></li>
+<li>A function pointer to be called after transmission, <code class="docutils literal"><span class="pre">NULL_PTR</span></code> if nothing needs to be done</li>
+</ul>
+</div></blockquote>
+<p>3.2 If a RX message needs to be configured, the message for CAN0 or CAN1 must be added in the respective array (CAN_MSG_RX_TYPE_s can0_RxMsgs[]). The message looks like <code class="docutils literal"><span class="pre">{</span> <span class="pre">0x123,</span> <span class="pre">0xFFFF,</span> <span class="pre">8,</span> <span class="pre">0,</span> <span class="pre">CAN_FIFO0,</span> <span class="pre">NULL</span> <span class="pre">}</span></code></p>
+<blockquote>
+<div><p>The parameters are:</p>
+<ul class="simple">
+<li>Message ID (11bit standard identifier used in foxBMS)</li>
+<li>Mask for the CAN hardware filter (Select mask or use 0x0000 to select list mode)</li>
+<li>Data Length Code (i.e., number of bytes), usually 8</li>
+<li>Hardware receive FIFO (CAN_FIFO0 or CAN_FIFO1)</li>
+<li>function pointer to be called after reception, usually NULL_PTR to do nothing because signals with respective function pointers are used</li>
+</ul>
+</div></blockquote>
+<p>File: <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.c</span></code></p>
+<ol class="arabic simple" start="4">
+<li>Then the signals added in the header must be added in the .c file and in <code class="docutils literal"><span class="pre">const</span> <span class="pre">CANS_signal_s</span> <span class="pre">cans_CANx_signals_tx[]</span></code> (<code class="docutils literal"><span class="pre">const</span> <span class="pre">CANS_signal_s</span> <span class="pre">cans_CANx_signals_rx[NR_SIGNALS_RX]</span></code>).</li>
+</ol>
+<blockquote>
+<div><p>A signal looks like:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">CANS_MSG_Name</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getsignaldata</span>
+</pre></div>
+</div>
+<p>The parameters are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Symbolic name of the message containing the signal (defined in <code class="docutils literal"><span class="pre">CANS_messagesTx_e</span></code>, in the header file)</li>
+<li>Start bit of signal</li>
+<li>Signal length in bits</li>
+<li>Minimum value (float)</li>
+<li>Maximum value (float)</li>
+<li>Scaling factor (float)</li>
+<li>Scaling offset (float)</li>
+<li>Callback function for setter (when CAN msg is received) (<code class="docutils literal"><span class="pre">NULL_PTR</span></code> if no function needed, e.g., for transmit)</li>
+<li>Callback function gor getter (when CAN msg is transmitted) (<code class="docutils literal"><span class="pre">NULL_PTR</span></code> if no function needed, e.g., for receive only)</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>The callback functions must be declared and implemented in <code class="docutils literal"><span class="pre">cansignal_cfg.c</span></code>.</li>
+</ol>
+</div>
+<div class="section" id="how-to-adapt-the-can-module-when-less-than-12-battery-cells-temperature-sensors-per-module-are-used">
+<span id="faq-can-lessthan12cells"></span><h2><a class="toc-backref" href="#id15">8.14. How to adapt the CAN module when less than 12 battery cells/temperature sensors per module are used?</a><a class="headerlink" href="#how-to-adapt-the-can-module-when-less-than-12-battery-cells-temperature-sensors-per-module-are-used" title="Permalink to this headline">¶</a></h2>
+<p>Five adaptions are necessary when removing unused battery cell voltages or temperatures This procedure is executed exemplarily
+for 9 cell voltages and 5 temperature sensors:</p>
+<ol class="arabic simple">
+<li>Adapt struct <code class="docutils literal"><span class="pre">const</span> <span class="pre">CAN_MSG_TX_TYPE_s</span> <span class="pre">can_CAN0_messages_tx[]</span></code> in file <code class="docutils literal"><span class="pre">module/config/can_cfg.c</span></code>:</li>
+</ol>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="mh">0x200</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell voltages module 0 cells 0 1 2</span>
+<span class="p">{</span> <span class="mh">0x201</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell voltages module 0 cells 3 4 5</span>
+<span class="p">{</span> <span class="mh">0x202</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell voltages module 0 cells 6 7 8</span>
+<span class="p">{</span> <span class="mh">0x203</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell voltages module 0 cells 9 10 11</span>
+
+<span class="p">{</span> <span class="mh">0x210</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell temperatures module 0 cells 0 1 2</span>
+<span class="p">{</span> <span class="mh">0x211</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell temperatures module 0 cells 3 4 5</span>
+<span class="p">{</span> <span class="mh">0x212</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell temperatures module 0 cells 6 7 8</span>
+<span class="p">{</span> <span class="mh">0x213</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">NULL_PTR</span> <span class="p">},</span>  <span class="c1">//!&lt; Cell temperatures module 0 cells 9 10 11</span>
+</pre></div>
+</div>
+<p>Remove all unused CAN message depending on the number of used cells/sensors. In the example case remove cell voltage message 0x203
+because we transmit only cell voltages 0-8. Additionally remove cell temperature message 0x212 and 0x213 because we only use
+temperatures 0-4. Repeat this process for all modules.</p>
+<ol class="arabic simple" start="2">
+<li>Adapt enum <code class="docutils literal"><span class="pre">CANS_messagesTx_e</span></code> in file <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.h</span></code>:</li>
+</ol>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">CAN0_MSG_Mod0_Cellvolt_0</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell voltages 0-2</span>
+<span class="n">CAN0_MSG_Mod0_Cellvolt_1</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell voltages 3-5</span>
+<span class="n">CAN0_MSG_Mod0_Cellvolt_2</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell voltages 6-8</span>
+<span class="n">CAN0_MSG_Mod0_Cellvolt_3</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell voltages 9-11</span>
+
+<span class="n">CAN0_MSG_Mod0_Celltemp_0</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell temperatures 0-2</span>
+<span class="n">CAN0_MSG_Mod0_Celltemp_1</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell temperatures 3-5</span>
+<span class="n">CAN0_MSG_Mod0_Celltemp_2</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell temperatures 6-8</span>
+<span class="n">CAN0_MSG_Mod0_Celltemp_3</span><span class="p">,</span>  <span class="c1">//!&lt; Module 0 Cell temperatures 9-11</span>
+</pre></div>
+</div>
+<p>Remove all unused enmus depending on the number of used cells/sensors. In the example case remove enum <code class="docutils literal"><span class="pre">CAN0_MSG_Mod0_Cellvolt_3</span></code>
+because we transmit only cell voltages 0-8. Additionally remove cell temperature enum <code class="docutils literal"><span class="pre">CAN0_MSG_Mod0_Celltemp_2</span></code> and
+<code class="docutils literal"><span class="pre">CAN0_MSG_Mod0_Celltemp_3</span></code> because we only use temperatures 0-4. Repeat this process for all modules.</p>
+<ol class="arabic simple" start="3">
+<li>Adapt enum <code class="docutils literal"><span class="pre">CANS_CAN0_signalsTx_e</span></code> in file <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.h</span></code>:</li>
+</ol>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">CAN0_SIG_Mod0_volt_valid_0_2</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_0</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_1</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_2</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_valid_3_5</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_3</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_4</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_5</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_valid_6_8</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_6</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_7</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_8</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_valid_9_11</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_9</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_10</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_volt_11</span><span class="p">,</span>
+
+<span class="n">CAN0_SIG_Mod0_temp_valid_0_2</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_0</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_1</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_2</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_valid_3_5</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_3</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_4</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_5</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_valid_6_8</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_6</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_7</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_8</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_valid_9_11</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_9</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_10</span><span class="p">,</span>
+<span class="n">CAN0_SIG_Mod0_temp_11</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Remove all unused enmus depending on the number of used cells/sensors. In the example case remove enums <code class="docutils literal"><span class="pre">CAN0_SIG_Mod0_volt_valid_9_11</span></code>
+to <code class="docutils literal"><span class="pre">CAN0_SIG_Mod0_volt_11</span></code> because we transmit only cell voltages 0-8. Additionally remove cell temperature enums <code class="docutils literal"><span class="pre">CAN0_SIG_Mod0_temp_5</span></code>
+to CAN0_SIG_Mod0_temp_11 because we only use temperatures 0-4. Repeat this process for all modules.</p>
+<ol class="arabic simple" start="4">
+<li>Adapt struct <code class="docutils literal"><span class="pre">const</span> <span class="pre">CANS_signal_s</span> <span class="pre">cans_CAN0_signals_tx[]</span></code> in file <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.c</span></code>:</li>
+</ol>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="c1">// Module 0 cell voltages</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_0</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_0_2</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_0</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_0</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_0</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_1</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_0</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_2</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_3_5</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_1</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_3</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_1</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_4</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_1</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_5</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_2</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_6_8</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_2</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_6</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_2</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_7</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_2</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_8</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_3</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_9_11</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_3</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_9</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_3</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_10</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Cellvolt_3</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFFFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_getvolt</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_11</span>
+
+<span class="c1">// Module 0 cell temperatures</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_0</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_0_2</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_0</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_0</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_0</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_1</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_0</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_2</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_1</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_3_5</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_1</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_3</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_1</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_4</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_1</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_5</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_2</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_6_8</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_2</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_6</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_2</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_7</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_2</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_8</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_3</span><span class="p">},</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xFF</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_volt_valid_9_11</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_3</span><span class="p">},</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_9</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_3</span><span class="p">},</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_10</span>
+<span class="p">{</span> <span class="p">{</span><span class="n">CAN0_MSG_Mod0_Celltemp_3</span><span class="p">},</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mf">527.35</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">NULL_PTR</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cans_gettemp</span> <span class="p">},</span>  <span class="c1">//!&lt; CAN0_SIG_Mod0_temp_11</span>
+</pre></div>
+</div>
+<p>Remove all unused struct entries depending on the number of used cells/sensors. Repeat this process for all modules.</p>
+<ol class="arabic simple" start="5">
+<li>Adapt functions <code class="docutils literal"><span class="pre">cans_getvolt</span></code> and <code class="docutils literal"><span class="pre">cans_gettemp</span></code> in file <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.c</span></code>:</li>
+</ol>
+<p>Remove all case-statements for which the signals have been deleted in the previous steps.</p>
+</div>
+<div class="section" id="how-to-adapt-the-can-module-when-less-or-more-than-8-battery-modules-are-used">
+<span id="faq-can-lessthan8modules"></span><h2><a class="toc-backref" href="#id16">8.15. How to adapt the CAN module when less or more than 8 battery modules are used?</a><a class="headerlink" href="#how-to-adapt-the-can-module-when-less-or-more-than-8-battery-modules-are-used" title="Permalink to this headline">¶</a></h2>
+<p>When less than 8 modules are used, the same procedure as described in <a class="reference internal" href="#faq-can-lessthan8modules"><span class="std std-ref">How to adapt the CAN module when less or more than 8 battery modules are used?</span></a> must be used but only the unused
+modules instead of unused cell voltages/temperatures must be deleted. If additional modules should be added also follow these instructions
+but instead of deleting these signals and CAN messages add the wished number of new messages.</p>
+<p>Morover an adaption of the functions  <code class="docutils literal"><span class="pre">cans_getvolt</span></code> and <code class="docutils literal"><span class="pre">cans_gettemp</span></code> in file <code class="docutils literal"><span class="pre">module/config/cansignal_cfg.c</span></code> is necessary:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="c1">// Determine module and cell number</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod0_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod0_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod1_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod1_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod2_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod2_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod3_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod3_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod4_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod4_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod5_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod5_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod6_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod6_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod7_volt_valid_0_2</span> <span class="o">&lt;</span> <span class="n">CANS_MODULSIGNALS_VOLT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modIdx</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+    <span class="n">cellIdx</span> <span class="o">=</span> <span class="n">sigIdx</span> <span class="o">-</span> <span class="n">CAN0_SIG_Mod7_volt_valid_0_2</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This if statement performs a module detection to allocate the correct cell voltage to the respective CAN message. This statement
+needs to be shortened/extended depending on the number of used modules. The same method is used to allocate the cell temperatures
+and thus needs to be adapted as well.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The define CANS_MODULSIGNALS_TEMP is calculated as followed:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define CANS_MODULSIGNALS_TEMP  (CAN0_SIG_Mod1_volt_valid_0_2 - CAN0_SIG_Mod0_temp_valid_0_2)</span>
+</pre></div>
+</div>
+<p>When only one module is used this define needs to be redefined on the next signal used after the last temperature signal of
+module 0. If no signal is defined after the module 0 temperature signals use the last defined temperature signal. For the
+default configuration of foxBMS this could look like this:</p>
+<div class="last highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define CANS_MODULSIGNALS_TEMP  ((CAN0_SIG_Mod0_temp_11 - CAN0_SIG_Mod0_temp_valid_0_2) + 1)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-change-the-blink-period-of-the-indicator-leds">
+<h2><a class="toc-backref" href="#id17">8.16. How to change the blink period of the indicator LEDs?</a><a class="headerlink" href="#how-to-change-the-blink-period-of-the-indicator-leds" title="Permalink to this headline">¶</a></h2>
+<p>It is defined via the three variables in <code class="docutils literal"><span class="pre">module/utils/led.c</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">led_0_nbr_of_blink</span></code></li>
+<li><code class="docutils literal"><span class="pre">led_1_nbr_of_blink</span></code></li>
+<li><code class="docutils literal"><span class="pre">led_blink_time</span></code></li>
+</ul>
+</div></blockquote>
+<p>Currently the three variables are set directly in the function <code class="docutils literal"><span class="pre">LED_Ctrl()</span></code>. If desired or needed, the three values can be read from the database and so set elsewhere in the code.</p>
+<p>The time is set in ms via <code class="docutils literal"><span class="pre">led_blink_time</span></code>. The LED cycle is divided in two periods, T0 and T1. Each of both periods lasts <code class="docutils literal"><span class="pre">led_blink_time</span></code> ms. During T0, LED0 is on or blinks and LED1 is off. During T1, LED0 is off and LED1 is on or blinks. The behavior described as ‘’is on or blinks’’ is defined via <code class="docutils literal"><span class="pre">led_0_nbr_of_blink</span></code> for LED0 and via <code class="docutils literal"><span class="pre">led_1_nbr_of_blink</span></code> for LED1. If <code class="docutils literal"><span class="pre">led_0_nbr_of_blink</span></code> is set to 1, LED0 is on during T0. If <code class="docutils literal"><span class="pre">led_0_nbr_of_blink</span></code> is set to n greater than 1, LED0 will blink n times during T1. For example, if the period is set to 3000ms and <code class="docutils literal"><span class="pre">led_0_nbr_of_blink</span></code> set to 3, LED0 will have the following behavior during T0:</p>
+<blockquote>
+<div><ul class="simple">
+<li>On for 500ms</li>
+<li>Off for 500ms</li>
+<li>On for 500ms</li>
+<li>Off for 500ms</li>
+<li>On for 500ms</li>
+<li>Off for 500ms</li>
+</ul>
+</div></blockquote>
+<p>The behavior is the same for LED1 with <code class="docutils literal"><span class="pre">led_1_nbr_of_blink</span></code>. With this functionality, each LED can blink independently n times. If each LED can blink up to 4 times, the LEDs can visually give 16 different messages.</p>
+<p>The adjustment of the blink period is provided to make reading by the user easier: for higher number of blinks, the blink period can be made longer: for example, it is easier to count 4 blinks in 3s than 4 blinks in 1s).</p>
+</div>
+<div class="section" id="how-to-add-an-entry-for-the-diag-module">
+<h2><a class="toc-backref" href="#id18">8.17. How to add an entry for the diag module?</a><a class="headerlink" href="#how-to-add-an-entry-for-the-diag-module" title="Permalink to this headline">¶</a></h2>
+<p>Adding a new sensitivity level is done in <code class="docutils literal"><span class="pre">src/engine/config/diag_cfg.h</span></code> by adding a new <code class="docutils literal"><span class="pre">#define</span></code> in:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define DIAG_ERROR_SENSITIVITY_HIGH        (0)   </span><span class="c1">// logging at first event</span>
+<span class="cp">#define DIAG_ERROR_SENSITIVITY_MID         (5)   </span><span class="c1">// logging at fifth event</span>
+<span class="cp">#define DIAG_ERROR_SENSITIVITY_LOW         (10)  </span><span class="c1">// logging at tenth event</span>
+<span class="cp">#define DIAG_ERROR_SENSITIVITY_CUSTOM      (100) </span><span class="c1">// logging at 100th event</span>
+</pre></div>
+</div>
+<p>and errors can be defined:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define     DIAG_CH_CUSTOM_FAILURE             DIAG_ID_XX</span>
+</pre></div>
+</div>
+<p>and the error is then added in <code class="docutils literal"><span class="pre">DIAG_CH_CFG_s</span>&#160; <span class="pre">diag_ch_cfg[]</span></code> in file <code class="docutils literal"><span class="pre">src/engine/config/diag_cfg.c</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DIAG_CH_CFG_s</span>  <span class="n">diag_ch_cfg</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="p">{</span><span class="n">DIAG_CH_CUSTOM_FAILURE</span><span class="p">,</span>        <span class="n">DIAG_GENERAL_TYPE</span><span class="p">,</span> <span class="n">DIAG_ERROR_SENSITIVITY_HIGH</span><span class="p">,</span>
+  <span class="n">DIAG_RECORDING_ENABLED</span><span class="p">,</span> <span class="n">DIAG_ENABLED</span><span class="p">,</span> <span class="n">dummyfu</span><span class="p">},</span>
+</pre></div>
+</div>
+<p>The number of logged error events can be changed by modifying the value of the macro:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define DIAG_FAIL_ENTRY_LENGTH               (50)    </span><span class="c1">// Number of errors that can be logged</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The diag module is a powerfull module for general error handling. The user has to be aware of timings when using custom diag entries. As example how to use this module correct syscontrol is choosen.
+- The function <code class="docutils literal"><span class="pre">SYSCTRL_Trigger()</span></code> is called in the 10ms task (<code class="docutils literal"><span class="pre">ENG_TSK_Cyclic_10ms()</span></code>), meaning every 10ms this function must be executed.
+- In the diagnosis-module header <code class="docutils literal"><span class="pre">diag_cfg.h</span></code> there is the enum <code class="docutils literal"><span class="pre">DIAG_SYSMON_MODULE_ID_e</span></code> for the different error types that are handeled by the diagnosismodule. For syscontrol errors there is <code class="docutils literal"><span class="pre">DIAG_SYSMON_SYSCTRL_ID</span></code>.
+- In the diagnosis-module source <code class="docutils literal"><span class="pre">diag_cfg.c</span></code> there is the <code class="docutils literal"><span class="pre">diag_sysmon_ch_cfg[]</span></code> array assigning timings to this error, in this case 20ms.</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">DIAG_SYSMON_SYSCTRL_ID</span><span class="p">,</span> <span class="n">DIAG_SYSMON_CYCLICTASK</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span>
+<span class="n">DIAG_RECORDING_ENABLED</span><span class="p">,</span> <span class="n">DIAG_ENABLED</span><span class="p">,</span> <span class="n">dummyfu2</span><span class="p">},</span>
+</pre></div>
+</div>
+<p>This means every time <code class="docutils literal"><span class="pre">SYSCTRL_Trigger()</span></code> is called, the function indicating <cite>syscontrol is running</cite> has to be exectued. If this is not done, the diagnosis module will set the syscontrol to the error state. Therefore, the user must set up functions, which are wanted to be supervised by the diagnosis module, and that they are still running, in this way:</p>
+<div class="last highlight-C"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">SYSCTRL_Trigger</span><span class="p">(</span><span class="n">SYSCTRL_TRIG_EVENT_e</span> <span class="n">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">DIAG_SysMonNotify</span><span class="p">(</span><span class="n">DIAG_SYSMON_SYSCTRL_ID</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>    <span class="c1">// task is running, therefore</span>
+                            <span class="c1">// reset state to 0</span>
+    <span class="cm">/* user code */</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-configure-contactors-without-feedback">
+<h2><a class="toc-backref" href="#id19">8.18. How to configure contactors without feedback?</a><a class="headerlink" href="#how-to-configure-contactors-without-feedback" title="Permalink to this headline">¶</a></h2>
+<p>In the file <code class="docutils literal"><span class="pre">src/module/config/contactor_cfg.c</span></code>, the contactors are defined with:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">CONT_CFG_s</span> <span class="n">cont_contactors_cfg</span><span class="p">[</span><span class="n">NR_OF_CONTACTORS</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span><span class="n">CONT_PLUS_MAIN_CONTROL</span><span class="p">,</span>        <span class="n">CONT_PLUS_MAIN_FEEDBACK</span><span class="p">,</span>        <span class="n">CONT_FEEDBACK_NORMALLY_OPEN</span><span class="p">},</span>
+        <span class="p">{</span><span class="n">CONT_PLUS_PRECHARGE_CONTROL</span><span class="p">,</span>   <span class="n">CONT_PLUS_PRECHARGE_FEEDBACK</span><span class="p">,</span>   <span class="n">CONT_FEEDBACK_NORMALLY_OPEN</span><span class="p">},</span>
+        <span class="p">{</span><span class="n">CONT_MINUS_MAIN_CONTROL</span><span class="p">,</span>       <span class="n">CONT_MINUS_MAIN_FEEDBACK</span><span class="p">,</span>       <span class="n">CONT_FEEDBACK_NORMALLY_OPEN</span><span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>The following change must be made to configure a contactor without feedback. In this case, the precharge contactor is taken as example:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">CONT_PLUS_PRECHARGE_CONTROL</span><span class="p">,</span>   <span class="n">CONT_HAS_NO_FEEDBACK</span><span class="p">,</span>   <span class="n">CONT_FEEDBACK_TYPE_DONT_CARE</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>With this configuration, the feedback value will always be equal to the expected value for the precharge contactor. This configuration should not be used without precautions since the safety level will be reduced.</p>
+</div>
+<div class="section" id="how-to-simply-trigger-events-via-can">
+<span id="can-debug-message"></span><h2><a class="toc-backref" href="#id20">8.19. How to simply trigger events via CAN?</a><a class="headerlink" href="#how-to-simply-trigger-events-via-can" title="Permalink to this headline">¶</a></h2>
+<p>The CAN message with ID 0x100 is considered as a <cite>debug message</cite>. If received, the function <code class="docutils literal"><span class="pre">cans_setdebug()</span></code> defined in <code class="docutils literal"><span class="pre">cansignal_cfc.c</span></code> is called. There, a switch case is used on the first byte (byte0) of the message to define what to do. This means that 256 actions are possible, and that 7 bytes remain to transfer data in the debug message.</p>
+</div>
+<div class="section" id="how-to-start-stop-balancing-the-battery-cells">
+<h2><a class="toc-backref" href="#id21">8.20. How to start/stop balancing the battery cells?</a><a class="headerlink" href="#how-to-start-stop-balancing-the-battery-cells" title="Permalink to this headline">¶</a></h2>
+<p>Currently, this is done by sending the debug message with the first byte (byte0) equal to 14 (0x0E). If the second byte is set to 1, balancing will start. If set to 0, balancing stops. The third byte corresponds to the threshold for balancing. The minimum voltage is determined at pack level, and every cell whose voltage is greater than minimum+threshold is balanced.</p>
+</div>
+<div class="section" id="how-to-set-the-initial-soc-value-via-can">
+<h2><a class="toc-backref" href="#id22">8.21. How to set the initial SOC value via CAN?</a><a class="headerlink" href="#how-to-set-the-initial-soc-value-via-can" title="Permalink to this headline">¶</a></h2>
+<p>This is done via the debug message with the first byte (byte0) equal to 11 (0x0B). The SOC is defined via the next two bytes (i.e., on 16bit: byte1 byte2). The SOC is given in 0.01% unit, which means that the 16bit number should be comprised between 0 and 10000. If a smaller value is given, the SOC will be set to 0%. If a greater value is given, SOC will be set to 100%.</p>
+</div>
+<div class="section" id="how-to-configure-the-voltage-inputs">
+<span id="faq-voltage-input-configuration"></span><h2><a class="toc-backref" href="#id23">8.22. How to configure the voltage inputs?</a><a class="headerlink" href="#how-to-configure-the-voltage-inputs" title="Permalink to this headline">¶</a></h2>
+<p>This number is changed in <code class="docutils literal"><span class="pre">batterysystem_cfg.h</span></code> with the define <code class="docutils literal"><span class="pre">BS_NR_OF_BAT_CELLS_PER_MODULE</span></code>. In addition, the variable</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_voltage_input_used</span><span class="p">[</span><span class="n">BS_MAX_SUPPORTED_CELLS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>must be adapted, too, in <code class="docutils literal"><span class="pre">ltc_cfg.c</span></code>.</p>
+<p>It has the size of <code class="docutils literal"><span class="pre">BS_MAX_SUPPORTED_CELLS</span></code>. If a cell voltage is connected to the LTC IC input, <code class="docutils literal"><span class="pre">1</span></code> must be written in the table. Otherwise, <code class="docutils literal"><span class="pre">0</span></code> must be written.</p>
+<p>For instance, if 5 cells are connected to inputs <code class="docutils literal"><span class="pre">0</span></code>, <code class="docutils literal"><span class="pre">2</span></code>, <code class="docutils literal"><span class="pre">5</span></code>, <code class="docutils literal"><span class="pre">7</span></code>, <code class="docutils literal"><span class="pre">11</span></code>,</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define BS_NR_OF_BAT_CELLS_PER_MODULE               5</span>
+</pre></div>
+</div>
+<p>must be used and</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_voltage_input_used</span><span class="p">[</span><span class="n">BS_MAX_SUPPORTED_CELLS</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">1</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">1</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">1</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">0</span> <span class="p">,</span>
+    <span class="mi">1</span> <span class="p">,</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>must be defined. The number of <code class="docutils literal"><span class="pre">1</span></code> in the table must be equal to <code class="docutils literal"><span class="pre">BS_NR_OF_BAT_CELLS_PER_MODULE</span></code>.</p>
+</div>
+<div class="section" id="how-to-add-remove-temperature-sensors">
+<span id="faq-temperature-sensor-configuration"></span><h2><a class="toc-backref" href="#id24">8.23. How to add/remove temperature sensors?</a><a class="headerlink" href="#how-to-add-remove-temperature-sensors" title="Permalink to this headline">¶</a></h2>
+<p>To add one temperature sensor, the first step is to change:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define NR_OF_TEMP_SENSORS_PER_MODULE           6</span>
+</pre></div>
+</div>
+<p>to:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define NR_OF_TEMP_SENSORS_PER_MODULE           7</span>
+</pre></div>
+</div>
+<p>in <code class="docutils literal"><span class="pre">global.h</span></code>.</p>
+<p>However, this obvious step is not sufficient.</p>
+<p>In <code class="docutils literal"><span class="pre">ltc_cfg.c</span></code>, the variable <code class="docutils literal"><span class="pre">LTC_MUX_CH_CFG_s</span> <span class="pre">ltc_mux_seq_main_ch1[]</span></code> which indicates the channel sequence to read on the multiplexer has to be modified. One sensor channel on one multiplexer has to be added. In this example, on the multiplexer with the ID 0 and channel 6 is read additionally.</p>
+<p>Concretely:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>      <span class="c1">//configure the multiplexer to be used</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>      <span class="c1">//configure input to ne used on the selected multiplexer</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>must be used instead of:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mh">0xFF</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>Then the look-up table must be modified: it allows defining the correspondence between multiplexer channel and sensor order in the temperature array. By default, the mapping keeps the same order. In the previous example:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_muxsensortemperatur_cfg</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 0 = mux 0, ch 0 */</span>
+    <span class="mi">2</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 1 = mux 0, ch 1 */</span>
+    <span class="mi">3</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 2 = mux 0, ch 2 */</span>
+    <span class="mi">4</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 3 = mux 0, ch 3 */</span>
+    <span class="mi">5</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 4 = mux 0, ch 4 */</span>
+    <span class="mi">6</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 5 = mux 0, ch 5 */</span>
+    <span class="c1">//7-1 ,     /*!&lt; index 6 = mux 0, ch 6 */</span>
+    <span class="c1">//8-1 ,     /*!&lt; index 7 = mux 0, ch 7 */</span>
+    <span class="c1">//9-1 ,     /*!&lt; index 8 = mux 1, ch 0 */</span>
+    <span class="c1">//10-1 ,    /*!&lt; index 9 = mux 1, ch 1 */</span>
+    <span class="c1">//11-1 ,    /*!&lt; index 10 = mux 1, ch 2 */</span>
+    <span class="c1">//12-1 ,    /*!&lt; index 11 = mux 1, ch 3 */</span>
+    <span class="c1">//13-1 ,    /*!&lt; index 12 = mux 1, ch 4 */</span>
+    <span class="c1">//14-1 ,    /*!&lt; index 13 = mux 1, ch 5 */</span>
+    <span class="c1">//15-1 ,    /*!&lt; index 14 = mux 1, ch 6 */</span>
+    <span class="c1">//16-1      /*!&lt; index 15 = mux 1, ch 7 */</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>must be changed to:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_muxsensortemperatur_cfg</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 0 = mux 0, ch 0 */</span>
+    <span class="mi">2</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 1 = mux 0, ch 1 */</span>
+    <span class="mi">3</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 2 = mux 0, ch 2 */</span>
+    <span class="mi">4</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 3 = mux 0, ch 3 */</span>
+    <span class="mi">5</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 4 = mux 0, ch 4 */</span>
+    <span class="mi">6</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>       <span class="cm">/*!&lt; index 5 = mux 0, ch 5 */</span>
+    <span class="mi">7</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>     <span class="cm">/*!&lt; index 6 = mux 0, ch 6 */</span>
+    <span class="c1">//8-1 ,     /*!&lt; index 7 = mux 0, ch 7 */</span>
+    <span class="c1">//9-1 ,     /*!&lt; index 8 = mux 1, ch 0 */</span>
+    <span class="c1">//10-1 ,    /*!&lt; index 9 = mux 1, ch 1 */</span>
+    <span class="c1">//11-1 ,    /*!&lt; index 10 = mux 1, ch 2 */</span>
+    <span class="c1">//12-1 ,    /*!&lt; index 11 = mux 1, ch 3 */</span>
+    <span class="c1">//13-1 ,    /*!&lt; index 12 = mux 1, ch 4 */</span>
+    <span class="c1">//14-1 ,    /*!&lt; index 13 = mux 1, ch 5 */</span>
+    <span class="c1">//15-1 ,    /*!&lt; index 14 = mux 1, ch 6 */</span>
+    <span class="c1">//16-1      /*!&lt; index 15 = mux 1, ch 7 */</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>A last step has to be done in <code class="docutils literal"><span class="pre">ltc_cfg.h</span></code>: adjust the size of the array, by changing:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_muxsensortemperatur_cfg</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>into:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">extern</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_muxsensortemperatur_cfg</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>The same procedure must be used to remove a temperature sensor.</p>
+</div>
+<div class="section" id="how-to-change-the-resolution-of-the-temperature-values-stored">
+<h2><a class="toc-backref" href="#id25">8.24. How to change the resolution of the temperature values stored?</a><a class="headerlink" href="#how-to-change-the-resolution-of-the-temperature-values-stored" title="Permalink to this headline">¶</a></h2>
+<p>The scaling of the raw values read from the LTC6804-1/LTC6811-1 is made in <code class="docutils literal"><span class="pre">ltc.c</span></code>, in the function <code class="docutils literal"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">LTC_SaveTemperatures_SaveBalancingFeedback(void)</span></code>. First, the raw data are read from the SPI buffer with:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">val_ui</span><span class="o">=*</span><span class="p">((</span><span class="kt">uint16_t</span> <span class="o">*</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">LTC_MultiplexerVoltages</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="p">((</span><span class="n">LTC_NUMBER_OF_LTC_PER_MODULE</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">LTC_N_MUX_CHANNELS_PER_LTC</span><span class="p">)</span><span class="o">+</span><span class="n">muxseqptr</span><span class="o">-&gt;</span><span class="n">muxID</span><span class="o">*</span><span class="n">LTC_N_MUX_CHANNELS_PER_MUX</span><span class="o">+</span><span class="n">muxseqptr</span><span class="o">-&gt;</span><span class="n">muxCh</span><span class="p">)]));</span>
+</pre></div>
+</div>
+<p>Then the raw data are scaled and are available in Volt:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">val_fl</span> <span class="o">=</span> <span class="p">((</span><span class="kt">float</span><span class="p">)(</span><span class="n">val_ui</span><span class="p">))</span><span class="o">*</span><span class="mf">100e-6</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Then the read voltage is converted into a temperature with a look-up table:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">val_si</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int16_t</span><span class="p">)(</span><span class="n">LTC_Convert_MuxVoltages_to_Temperatures</span><span class="p">(</span><span class="n">val_fl</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>The last step is to store the temperature into a <code class="docutils literal"><span class="pre">sint16</span></code> variable:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">ltc_celltemperature</span><span class="p">.</span><span class="n">temperature</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="p">(</span><span class="n">NR_OF_TEMP_SENSORS_PER_MODULE</span><span class="p">)</span><span class="o">+</span><span class="n">sensor_idx</span><span class="p">]</span><span class="o">=</span><span class="n">val_si</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>At this step, the resolution can be changed. For instance, m°C could be stored instead of °C.</p>
+</div>
+<div class="section" id="how-to-enable-and-disable-the-checksum">
+<span id="faq-checksum"></span><h2><a class="toc-backref" href="#id26">8.25. How to enable and disable the checksum?</a><a class="headerlink" href="#how-to-enable-and-disable-the-checksum" title="Permalink to this headline">¶</a></h2>
+<p>The checksum mechanism is enabled via the following define in the file <code class="docutils literal"><span class="pre">general.h</span></code>:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define BUILD_MODULE_ENABLE_FLASHCHECKSUM 1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-call-a-user-function-to-implement-a-specific-algorithm">
+<h2><a class="toc-backref" href="#id27">8.26. How to call a user function to implement a specific algorithm?</a><a class="headerlink" href="#how-to-call-a-user-function-to-implement-a-specific-algorithm" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\application\config\appltask_cfg.c</span></code>, the user function must simply be called in one of the periodic user function:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">APPL_Cyclic_1ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="kt">void</span> <span class="n">APPL_Cyclic_10ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="kt">void</span> <span class="n">APPL_Cyclic_100ms</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>depending on the periodicity needed. The user function can access system data via the database.</p>
+<p>For instance, to access the voltages, a structure must be declared with</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DATA_BLOCK_CELLVOLTAGE_s</span> <span class="n">voltages</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The data is retrieved from the database with</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DATA_GetTable</span><span class="p">(</span><span class="o">&amp;</span><span class="n">voltages</span><span class="p">,</span> <span class="n">DATA_BLOCK_ID_CELLVOLTAGE</span><span class="p">);</span>
+<span class="n">myvoltage</span> <span class="o">=</span> <span class="n">voltages</span><span class="p">.</span><span class="n">voltage</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>The field <code class="docutils literal"><span class="pre">voltages.timestamp</span></code> is updated with the system timestamp (in ms) everytime new voltages are written in the database. This timestamp can be used to check if the voltages have been updated.</p>
+<p>To store the results, an entry must be created in the database, as explained in <a class="reference internal" href="#database-entry"><span class="std std-ref">How to add a database entry and to read/write it?</span></a>.</p>
+<p>Once the results are stored in the database, they can for instance be sent by CAN.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../styleguide/styleguide.html" class="btn btn-neutral" title="7. Software Style Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

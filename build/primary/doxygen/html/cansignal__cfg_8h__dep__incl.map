@@ -1,0 +1,9 @@
+<map id="cansignal_cfg.h" name="cansignal_cfg.h">
+<area shape="rect" id="node2" href="$cansignal__cfg_8c.html" title="Configuration of the messages and signal settings for the CAN driver. " alt="" coords="84,80,196,107"/>
+<area shape="rect" id="node3" href="$cansignal_8h.html" title="Headers for the messages and signal settings for the CAN driver. " alt="" coords="220,80,308,107"/>
+<area shape="rect" id="node4" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node5" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="137,155,191,181"/>
+<area shape="rect" id="node6" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="216,155,312,181"/>
+<area shape="rect" id="node7" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="337,155,383,181"/>
+<area shape="rect" id="node8" href="$cansignal_8c.html" title="Messages and signal settings for the CAN driver. " alt="" coords="408,155,496,181"/>
+</map>

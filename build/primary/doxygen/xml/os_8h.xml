@@ -1,0 +1,1046 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="os_8h" kind="file" language="C++">
+    <compoundname>os.h</compoundname>
+    <includes local="yes">cmsis_os.h</includes>
+    <includedby refid="bms_8c" local="yes">bms.c</includedby>
+    <includedby refid="appltask__cfg_8h" local="yes">appltask_cfg.h</includedby>
+    <includedby refid="appltask_8c" local="yes">appltask.c</includedby>
+    <includedby refid="enginetask__cfg_8h" local="yes">enginetask_cfg.h</includedby>
+    <includedby refid="diag_8c" local="yes">diag.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="eepr__cfg_8c" local="yes">eepr_cfg.c</includedby>
+    <includedby refid="eepr_8c" local="yes">eepr.c</includedby>
+    <includedby refid="os_8c" local="yes">os.c</includedby>
+    <includedby refid="database_8c" local="yes">database.c</includedby>
+    <includedby refid="can_8c" local="yes">can.c</includedby>
+    <includedby refid="cansignal_8c" local="yes">cansignal.c</includedby>
+    <includedby refid="ltc_8c" local="yes">ltc.c</includedby>
+    <includedby refid="mcu_8c" local="yes">mcu.c</includedby>
+    <includedby refid="uart_8c" local="yes">uart.c</includedby>
+    <incdepgraph>
+      <node id="2285">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="2284">
+        <label>os.h</label>
+        <link refid="os_8h"/>
+        <childnode refid="2285" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2297">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="2298">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="2305">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="2296">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="2295">
+        <label>enginetask.h</label>
+        <link refid="enginetask_8h"/>
+        <childnode refid="2296" relation="include">
+        </childnode>
+        <childnode refid="2292" relation="include">
+        </childnode>
+        <childnode refid="2297" relation="include">
+        </childnode>
+      </node>
+      <node id="2294">
+        <label>enginetask_cfg.c</label>
+        <link refid="enginetask__cfg_8c"/>
+      </node>
+      <node id="2293">
+        <label>enginetask_cfg.h</label>
+        <link refid="enginetask__cfg_8h"/>
+        <childnode refid="2294" relation="include">
+        </childnode>
+        <childnode refid="2295" relation="include">
+        </childnode>
+      </node>
+      <node id="2291">
+        <label>appltask.c</label>
+        <link refid="appltask_8c"/>
+      </node>
+      <node id="2290">
+        <label>appltask.h</label>
+        <link refid="appltask_8h"/>
+        <childnode refid="2291" relation="include">
+        </childnode>
+        <childnode refid="2292" relation="include">
+        </childnode>
+      </node>
+      <node id="2304">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="2299">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2306">
+        <label>uart.c</label>
+        <link refid="uart_8c"/>
+      </node>
+      <node id="2301">
+        <label>eepr.c</label>
+        <link refid="eepr_8c"/>
+      </node>
+      <node id="2303">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="2302">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="2287">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="2292">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="2286">
+        <label>os.h</label>
+        <link refid="os_8h"/>
+        <childnode refid="2287" relation="include">
+        </childnode>
+        <childnode refid="2288" relation="include">
+        </childnode>
+        <childnode refid="2291" relation="include">
+        </childnode>
+        <childnode refid="2293" relation="include">
+        </childnode>
+        <childnode refid="2298" relation="include">
+        </childnode>
+        <childnode refid="2299" relation="include">
+        </childnode>
+        <childnode refid="2300" relation="include">
+        </childnode>
+        <childnode refid="2301" relation="include">
+        </childnode>
+        <childnode refid="2292" relation="include">
+        </childnode>
+        <childnode refid="2297" relation="include">
+        </childnode>
+        <childnode refid="2302" relation="include">
+        </childnode>
+        <childnode refid="2303" relation="include">
+        </childnode>
+        <childnode refid="2304" relation="include">
+        </childnode>
+        <childnode refid="2305" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2300">
+        <label>eepr_cfg.c</label>
+        <link refid="eepr__cfg_8c"/>
+      </node>
+      <node id="2289">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="2288">
+        <label>appltask_cfg.h</label>
+        <link refid="appltask__cfg_8h"/>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2290" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structOS__TIMER__s" prot="public">OS_TIMER_s</innerclass>
+    <innerclass refid="structBMS__Task__Definition__s" prot="public">BMS_Task_Definition_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="os_8h_1a2613925a0f0d7d908305000c5af2348a" prot="public" static="no">
+        <name>OS_ENG_NUM_OF_MUTEXES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of mutexes for the engine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="44" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="os_8h_1a7c8d128afb728ffb7dba1e469a710dcd" prot="public" static="no">
+        <name>OS_ENG_NUM_OF_EVENTS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of events for the ENINGE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="48" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="os_8h_1a819b0f8eec90b25f40d8fdaa5f959696" prot="public" static="no">
+        <name>OS_APPL_NUM_OF_MUTEXES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of mutexes for the application </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="53" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="os_8h_1ac46e3665e43cb8bae7f954caa1784dcd" prot="public" static="no">
+        <name>OS_APPL_NUM_OF_EVENTS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of events for the application </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="57" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="os_8h_1a427aefb6050b0dbe21548451ed9a912a" prot="public" static="no">
+        <name>OS_PRIORITY_e</name>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aadb4505f8b698afe6e733e06a9a733c79" prot="public">
+          <name>OS_PRIORITY_IDLE</name>
+          <initializer>= osPriorityIdle</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: idle (lowest) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aad227e0ce9e9a1cf55565e8a78e8390b3" prot="public">
+          <name>OS_PRIORITY_LOW</name>
+          <initializer>= osPriorityLow</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: low </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aadb24f6a9fb6d21bbe7d0d0e04eb5c646" prot="public">
+          <name>OS_PRIORITY_BELOW_NORMAL</name>
+          <initializer>= osPriorityBelowNormal</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: below normal </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aa900f8f9e7a177c27c47724492ffc88a1" prot="public">
+          <name>OS_PRIORITY_NORMAL</name>
+          <initializer>= osPriorityNormal</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: normal (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aaee126666c3c614c365267239481805f2" prot="public">
+          <name>OS_PRIORITY_ABOVE_NORMAL</name>
+          <initializer>= osPriorityAboveNormal</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: above normal </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aa0773ab3e27c3bf6e8641c06b52d7fd0b" prot="public">
+          <name>OS_PRIORITY_HIGH</name>
+          <initializer>= osPriorityHigh</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: high </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aac68c8b2f3afc32a7d6439c809bf70b58" prot="public">
+          <name>OS_PRIORITY_ABOVE_HIGH</name>
+          <initializer>= osPriorityRealtime</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: above high </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aa3ce3b7c836cad4235126b92bc21c177c" prot="public">
+          <name>OS_PRIORITY_VERY_HIGH</name>
+          <initializer>= osPriorityRealtime+1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: very high </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aa8d95bec60b6f2e2c1a46426000d5fb13" prot="public">
+          <name>OS_PRIORITY_BELOW_REALTIME</name>
+          <initializer>= osPriorityRealtime+2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: below realtime </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aaa8d0802f2e49f6e25a5150ff5e4dde39" prot="public">
+          <name>OS_PRIORITY_REALTIME</name>
+          <initializer>= osPriorityRealtime+3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>priority: realtime (highest) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a427aefb6050b0dbe21548451ed9a912aaf6a512f8b94fd7933f7f66106e25b6d2" prot="public">
+          <name>OS_PRIORITY_ERROR</name>
+          <initializer>= osPriorityError</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>system cannot determine priority or thread has illegal priority </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>typedef for thread priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="62" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="62" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="os_8h_1a704c877baf1e90bab13ca745627a42fb" prot="public" static="no">
+        <name>OS_BOOT_STATE_e</name>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba46e4da94eb0a0d0943a8a9f25424cc1f" prot="public">
+          <name>OS_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba2077d31d88c2af4e7cf51c93a35c7731" prot="public">
+          <name>OS_ENG_CREATE_QUEUES</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbab30a2d0385602f13448cb36660cab949" prot="public">
+          <name>OS_ENG_CREATE_MUTEX</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba460481803fba51a5d762761dfe911d49" prot="public">
+          <name>OS_ENG_CREATE_EVENT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba350250fb87e00ef401b1ba88b6210c1c" prot="public">
+          <name>OS_ENG_CREATE_TASKS</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba2690077fe08b599e901f961bf1900f64" prot="public">
+          <name>OS_APPL_CREATE_MUTEX</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba3f96fe12c247965bb35bb0428ff9d356" prot="public">
+          <name>OS_APPL_CREATE_EVENT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbaacf28b10f6af0bc92783f0042305c155" prot="public">
+          <name>OS_APPL_CREATE_TASKS</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbabf41c3e9dcbc7f738c85795717233cbb" prot="public">
+          <name>OS_INIT_PREOS</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba5fdaa81e6b823aecc71ceaf3bdcd9287" prot="public">
+          <name>OS_INIT_OSRESOURCES</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbac3f7d7b3e7cfd298c12c6cfdea05907b" prot="public">
+          <name>OS_INIT_OSSTARTKERNEL</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbafdaa6d873ad05e293ab03ab356e05af4" prot="public">
+          <name>OS_RUNNING</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba2fb9f998e211259bc91fc15e3bfc939d" prot="public">
+          <name>OS_EEPR_INIT</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba0cd71f4c8ffec9cc447bb85341e5ff7c" prot="public">
+          <name>OS_BMS_INIT</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" prot="public">
+          <name>OS_SYSTEM_RUNNING</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>system is running </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbad2a90c458aaf4c8829b9608d02a8783f" prot="public">
+          <name>OS_SAFETY_FEATURE_ENABLED</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fbad36e8509d66529f4fb436bd338d6d7dc" prot="public">
+          <name>OS_SAFETY_FEATURE_DISABLED</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a704c877baf1e90bab13ca745627a42fba7458099df9099b4b6c937b0e9af1069b" prot="public">
+          <name>OS_INIT_OS_FATALERROR_SCHEDULE</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>error in scheduler </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enum of OS boot states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="79" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="79" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="os_8h_1a678816f0fa819b21b557a7908b391ad3" prot="public" static="no">
+        <name>ECU_OPERATION_MODE_e</name>
+        <enumvalue id="os_8h_1a678816f0fa819b21b557a7908b391ad3a541c42797b77ab5c9946b134f39a3a81" prot="public">
+          <name>ECU_UNDEFINED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ecu mode is undefined </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a678816f0fa819b21b557a7908b391ad3a8d35641a9a1a270c04a7a665f3a63c4c" prot="public">
+          <name>ECU_NORMAL_MODE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ecu mode is ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a678816f0fa819b21b557a7908b391ad3a7ae3e8bee23f5d7dee958413cbd222f7" prot="public">
+          <name>ECU_CALIBARION_MODE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ecu is in calibration </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="os_8h_1a678816f0fa819b21b557a7908b391ad3a63d9d14433c407238155d19ee801525c" prot="public">
+          <name>ECU_TEST_MODE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>actually not implemented </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enum of ECU operation modes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="103" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" bodystart="103" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="os_8h_1adb8d62335b1b8a020f5cf5d6c4e51924" prot="public" static="no" mutable="no">
+        <type><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fb" kindref="member">OS_BOOT_STATE_e</ref></type>
+        <definition>volatile OS_BOOT_STATE_e os_boot</definition>
+        <argsstring></argsstring>
+        <name>os_boot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="134" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1ad858422b7a211f094e302688c3f98917" prot="public" static="no" mutable="no">
+        <type><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fb" kindref="member">OS_BOOT_STATE_e</ref></type>
+        <definition>volatile OS_BOOT_STATE_e os_safety_state</definition>
+        <argsstring></argsstring>
+        <name>os_safety_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="135" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1a68b2b486b62b629bdf9e645fd5e6069f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t os_schedulerstarttime</definition>
+        <argsstring></argsstring>
+        <name>os_schedulerstarttime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scheduler &quot;zero&quot; time for task phase control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="136" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1aa87bfae31fe8a496099cd9dfa2aecdf9" prot="public" static="no" mutable="no">
+        <type><ref refid="structOS__TIMER__s" kindref="compound">OS_TIMER_s</ref></type>
+        <definition>volatile OS_TIMER_s os_timer</definition>
+        <argsstring></argsstring>
+        <name>os_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="137" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1ad09b29681762c4ab580e528cee5709a8" prot="public" static="no" mutable="no">
+        <type>osMutexId</type>
+        <definition>osMutexId ENG_Mutexes[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ENG_Mutexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1afda80bd44f017fdc4dd451b3e67a4186" prot="public" static="no" mutable="no">
+        <type>EventGroupHandle_t</type>
+        <definition>EventGroupHandle_t ENG_Events[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ENG_Events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1ad38d93b2038d1df9cb0d58eb0dd1213c" prot="public" static="no" mutable="no">
+        <type>osMutexId</type>
+        <definition>osMutexId APPL_Mutexes[]</definition>
+        <argsstring>[]</argsstring>
+        <name>APPL_Mutexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="os_8h_1a5da5f8c955e333eac7843cea68c4ddc7" prot="public" static="no" mutable="no">
+        <type>EventGroupHandle_t</type>
+        <definition>EventGroupHandle_t APPL_Events[]</definition>
+        <argsstring>[]</argsstring>
+        <name>APPL_Events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="os_8h_1a6f5422e600224458a5f0c216f534db57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TaskInit</definition>
+        <argsstring>()</argsstring>
+        <name>OS_TaskInit</name>
+        <briefdescription>
+<para>Initialization the RTOS interface. </para>        </briefdescription>
+        <detaileddescription>
+<para>The initialization functions inits mutexes, eventgroups and tasks.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="154" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="75" bodyend="104"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2077d31d88c2af4e7cf51c93a35c7731" compoundref="os_8h" startline="81">OS_ENG_CREATE_QUEUES</references>
+        <references refid="enginetask__cfg_8c_1ac2f41a91ed525e3792d44b13baab99e3" compoundref="enginetask__cfg_8c" startline="94" endline="104">ENG_CreateQueues</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab30a2d0385602f13448cb36660cab949" compoundref="os_8h" startline="82">OS_ENG_CREATE_MUTEX</references>
+        <references refid="enginetask__cfg_8c_1ae356447f195edd7e3bdf2fc317f49e46" compoundref="enginetask__cfg_8c" startline="106" endline="108">ENG_CreateMutex</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba460481803fba51a5d762761dfe911d49" compoundref="os_8h" startline="83">OS_ENG_CREATE_EVENT</references>
+        <references refid="enginetask__cfg_8c_1a2c6c4b8deea1c0fe0595434d8079d091" compoundref="enginetask__cfg_8c" startline="110" endline="112">ENG_CreateEvent</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba350250fb87e00ef401b1ba88b6210c1c" compoundref="os_8h" startline="84">OS_ENG_CREATE_TASKS</references>
+        <references refid="enginetask__cfg_8c_1adca639aff16795100f1976d22a1d099d" compoundref="enginetask__cfg_8c" startline="114" endline="144">ENG_CreateTask</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2690077fe08b599e901f961bf1900f64" compoundref="os_8h" startline="85">OS_APPL_CREATE_MUTEX</references>
+        <references refid="appltask_8c_1a6fa44ea750012fc37aa15130e9a60957" compoundref="appltask_8c" startline="70" endline="72">APPL_CreateMutex</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba3f96fe12c247965bb35bb0428ff9d356" compoundref="os_8h" startline="86">OS_APPL_CREATE_EVENT</references>
+        <references refid="appltask_8c_1a3ac355e656e45203b36403b94143dbdd" compoundref="appltask_8c" startline="74" endline="76">APPL_CreateEvent</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbaacf28b10f6af0bc92783f0042305c155" compoundref="os_8h" startline="87">OS_APPL_CREATE_TASKS</references>
+        <references refid="appltask_8c_1a850dd1b4a8624221ab29afb4ae0efa41" compoundref="appltask_8c" startline="78" endline="94">APPL_CreateTask</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1ace849181954b143dc0187c632605da86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_IdleTask</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_IdleTask</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>OS_IdleTask, called by <ref refid="os_8h_1a97fd430f36f8b065226e2bff9bad1de5" kindref="member">vApplicationIdleHook()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="160" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="257" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a97fd430f36f8b065226e2bff9bad1de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vApplicationIdleHook</definition>
+        <argsstring>(void)</argsstring>
+        <name>vApplicationIdleHook</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Hook function for the idle task. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="167" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="106" bodyend="109"/>
+        <references refid="os_8c_1ace849181954b143dc0187c632605da86" compoundref="os_8c" startline="257" endline="259">OS_IdleTask</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a9f0687e02ddc61f131d2c43d4270542f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_PostOSInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_PostOSInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>reads non-volatile memory and initializes the sys module </para>        </briefdescription>
+        <detaileddescription>
+<para>Start up at scheduler start, called from 1ms-Task before the 1ms cyclic execution</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="176" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="228" bodyend="255"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbafdaa6d873ad05e293ab03ab356e05af4" compoundref="os_8h" startline="91">OS_RUNNING</references>
+        <references refid="nvic_8c_1a609f6efbe6a90d1908ae1e3f1a7096fa" compoundref="nvic_8c" startline="114" endline="173">NVIC_PostOsInit</references>
+        <references refid="sdram_8h_1a9c4b12172af5ca9805ff6d8e68cbce6b">SDRAM_Init</references>
+        <references refid="can_8c_1a0505a1f9b26b55293dc199f45e7bb0ec" compoundref="can_8c" startline="171" endline="226">CAN_Init</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2fb9f998e211259bc91fc15e3bfc939d" compoundref="os_8h" startline="92">OS_EEPR_INIT</references>
+        <references refid="eepr__cfg_8c_1ae2c079158d0210850505e7567f0c75bf" compoundref="eepr__cfg_8c" startline="530" endline="561">EEPR_Init</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="450" endline="484">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1a99548d8406f95b3249155ccaf61b8c73" compoundref="diag__cfg_8h" startline="96">DIAG_CH_POSTOSINIT_FAILURE</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fba0cd71f4c8ffec9cc447bb85341e5ff7c" compoundref="os_8h" startline="93">OS_BMS_INIT</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1aa80555e4e2cc33cafc73e340ccf09a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TSK_Engine</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TSK_Engine</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Database-Task The task manages the data exchange with the database and must have a higher task priority than any task using the database. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="185" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="112" bodyend="123"/>
+        <references refid="os_8c_1a9f0687e02ddc61f131d2c43d4270542f" compoundref="os_8c" startline="228" endline="255">OS_PostOSInit</references>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="database_8c_1a1585d5c7665504898be0371c5c6295b9" compoundref="database_8c" startline="108" endline="192">DATA_Task</references>
+        <references refid="diag_8c_1af5b8cf38b93979152c6d3d64c6340b03" compoundref="diag_8c" startline="745" endline="799">DIAG_SysMon</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a8f64fac71dfe371cc8b9ac6670519c59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TSK_Cyclic_1ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TSK_Cyclic_1ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>cyclic 1ms-Task, preemptive with TSK_Cyclic_10ms() and TSK_Cyclic_100ms(). </para>        </briefdescription>
+        <detaileddescription>
+<para>The Task calls OsStartUp() in the very beginning, this is the first active Task. Then the Task is delayed by a phase as defined in eng_tskdef_cyclic_1ms.Phase (in milliseconds). After the phase delay, the cyclic execution starts, the entry time is saved in currentTime. After one cycle, the Task is set to sleep until entry time + eng_tskdef_cyclic_1ms.CycleTime (in milliseconds). The Task calls Job_1ms(), Job_2ms() and Job_5ms().</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="198" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="126" bodyend="150"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1adb03983fbd5d3091532895d08f6a4e5a" compoundref="os_8c" startline="63">eng_init</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="enginetask_8c_1a544d886c3c21cf2c0f967e9aa6f7856b" compoundref="enginetask_8c" startline="62" endline="108">ENG_Init</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="enginetask__cfg_8c_1a593e4d302e6eafde29900e03198aa45a" compoundref="enginetask__cfg_8c" startline="50">eng_tskdef_cyclic_1ms</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="os_8c_1a2935ff9d27172624efdc5e36a5bb036c" compoundref="os_8c" startline="270" endline="302">OS_TimerTrigger</references>
+        <references refid="bkpsram__cfg_8c_1a5243c86d998c18dac5d84e67a5031a1b" compoundref="bkpsram__cfg_8c" startline="147" endline="179">NVM_OperatingHoursTrigger</references>
+        <references refid="enginetask_8c_1a68a74af2a1db1cc404f7fe1ecbcb8963" compoundref="enginetask_8c" startline="110" endline="117">ENG_TSK_Cyclic_1ms</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a48f7b4b1f01ae62f13ad77b21c51cfdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TSK_Cyclic_10ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TSK_Cyclic_10ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>cyclic 10ms-Task, preemptive with TSK_Cyclic_1ms() and TSK_Cyclic_100ms(). </para>        </briefdescription>
+        <detaileddescription>
+<para>Task is delayed by a phase as defined in eng_tskdef_cyclic_10ms.Phase (in milliseconds). After the phase delay, the cyclic execution starts, the entry time is saved in currentTime. After one cycle, the Task is set to sleep until entry time + eng_tskdef_cyclic_10ms.CycleTime (in milliseconds). The task calls Job_10ms() and Job_50ms().</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="210" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="153" bodyend="170"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="enginetask__cfg_8c_1a54c9e843832aef3241680f632afd3824" compoundref="enginetask__cfg_8c" startline="51">eng_tskdef_cyclic_10ms</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="enginetask_8c_1af6d38da27fba7f2fcaf23578f3d8c9c3" compoundref="enginetask_8c" startline="119" endline="131">ENG_TSK_Cyclic_10ms</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1aadee9bc1893bd8fb3a99d60824786e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TSK_Cyclic_100ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TSK_Cyclic_100ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>cyclic 100ms-Task, preemptive with TSK_Cyclic_1ms() and TSK_Cyclic_10ms(). </para>        </briefdescription>
+        <detaileddescription>
+<para>Task is delayed by a phase as defined in eng_tskdef_cyclic_100ms.Phase (in milliseconds). After the phase delay, the cyclic execution starts, the entry time is saved in currentTime. After one cycle, the Task is set to sleep until entry time + eng_tskdef_cyclic_100ms.CycleTime (in milliseconds). The task calls Job_100ms(), Job_500ms() and Job_1s().</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="222" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="172" bodyend="188"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="enginetask__cfg_8c_1a0810f0eaa4d2f19d5360450406602a6a" compoundref="enginetask__cfg_8c" startline="52">eng_tskdef_cyclic_100ms</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="enginetask_8c_1a9bf9dee43edcffc12cd87e375e81557a" compoundref="enginetask_8c" startline="133" endline="147">ENG_TSK_Cyclic_100ms</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a760d60acd540f21162c90527bbf59a5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TSK_EventHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TSK_EventHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>cyclic and event driven handler. </para>        </briefdescription>
+        <detaileddescription>
+<para>Task configurations (cycle and delay time) are specified by eng_tskdef_eventhandler.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="232" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="191" bodyend="206"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="enginetask__cfg_8c_1a4b651a123340fea402ee74ee3feeb2dc" compoundref="enginetask__cfg_8c" startline="53">eng_tskdef_eventhandler</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="enginetask_8c_1ab7d4e17991d9361ec23be9d8a16fd8cb" compoundref="enginetask_8c" startline="150" endline="152">ENG_TSK_EventHandler</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a5b2888a2b67fa092c16c06cf12dbe44e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TSK_Diagnosis</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TSK_Diagnosis</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>cyclic diagnosis task. </para>        </briefdescription>
+        <detaileddescription>
+<para>Task configurations (cycle and delay time) are specified by eng_tskdef_diagnosis.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="242" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="208" bodyend="224"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="enginetask__cfg_8c_1ade347e641157ad2a0ffc994ccafb4b3a" compoundref="enginetask__cfg_8c" startline="54">eng_tskdef_diagnosis</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="enginetask_8c_1a7a2724820b8c6b953d931ef1bb91a7f1" compoundref="enginetask_8c" startline="154" endline="156">ENG_TSK_Diagnosis</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a3678d1ab3c96402d191ac3ce6edcefba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t OS_Check_Context</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_Check_Context</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>auxiliary function to distinguish OS Task from an ISR </para>        </briefdescription>
+        <detaileddescription>
+<para>checks the function context: task (thread) mode or interrupt (handler) mode</para><para><simplesect kind="return"><para>0 when OS-Task, 0x1 when ISR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="252" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="304" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a5573d7c2221a3f3b9cfe5c109603b441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TaskEnter_Critical</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TaskEnter_Critical</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enter Critical interface function for use in FreeRTOS-Tasks and FreeRTOS-ISR. </para>        </briefdescription>
+        <detaileddescription>
+<para>checks the function context (task/thread mode or interrupt (handler) mode) and calls the corresponding enter-critical function</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="263" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="317" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="os_8h_1a7e5b7892152952d2109c89baa0add1a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OS_TaskExit_Critical</definition>
+        <argsstring>(void)</argsstring>
+        <name>OS_TaskExit_Critical</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Exit Critical interface function for use in FreeRTOS-Tasks and FreeRTOS-ISR. </para>        </briefdescription>
+        <detaileddescription>
+<para>checks the function context (task/thread mode or interrupt (handler) mode) and calls the corresponding exit-critical function</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h" line="274" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.c" bodystart="330" bodyend="341"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementation of the tasks used by the system, headers. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>27.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>OS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>OS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmsis_os.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight></codeline>
+<codeline lineno="44" refid="os_8h_1a2613925a0f0d7d908305000c5af2348a" refkind="member"><highlight class="preprocessor">#define<sp/>OS_ENG_NUM_OF_MUTEXES<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="os_8h_1a7c8d128afb728ffb7dba1e469a710dcd" refkind="member"><highlight class="preprocessor">#define<sp/>OS_ENG_NUM_OF_EVENTS<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="os_8h_1a819b0f8eec90b25f40d8fdaa5f959696" refkind="member"><highlight class="preprocessor">#define<sp/>OS_APPL_NUM_OF_MUTEXES<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="os_8h_1ac46e3665e43cb8bae7f954caa1784dcd" refkind="member"><highlight class="preprocessor">#define<sp/>OS_APPL_NUM_OF_EVENTS<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aadb4505f8b698afe6e733e06a9a733c79" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aadb4505f8b698afe6e733e06a9a733c79" kindref="member">OS_PRIORITY_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityIdle,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aad227e0ce9e9a1cf55565e8a78e8390b3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aad227e0ce9e9a1cf55565e8a78e8390b3" kindref="member">OS_PRIORITY_LOW</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityLow,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aadb24f6a9fb6d21bbe7d0d0e04eb5c646" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aadb24f6a9fb6d21bbe7d0d0e04eb5c646" kindref="member">OS_PRIORITY_BELOW_NORMAL</ref><sp/><sp/><sp/>=<sp/>osPriorityBelowNormal,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa900f8f9e7a177c27c47724492ffc88a1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa900f8f9e7a177c27c47724492ffc88a1" kindref="member">OS_PRIORITY_NORMAL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityNormal,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aaee126666c3c614c365267239481805f2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aaee126666c3c614c365267239481805f2" kindref="member">OS_PRIORITY_ABOVE_NORMAL</ref><sp/><sp/><sp/>=<sp/>osPriorityAboveNormal,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa0773ab3e27c3bf6e8641c06b52d7fd0b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa0773ab3e27c3bf6e8641c06b52d7fd0b" kindref="member">OS_PRIORITY_HIGH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityHigh,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aac68c8b2f3afc32a7d6439c809bf70b58" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aac68c8b2f3afc32a7d6439c809bf70b58" kindref="member">OS_PRIORITY_ABOVE_HIGH</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityRealtime,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa3ce3b7c836cad4235126b92bc21c177c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa3ce3b7c836cad4235126b92bc21c177c" kindref="member">OS_PRIORITY_VERY_HIGH</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityRealtime+1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa8d95bec60b6f2e2c1a46426000d5fb13" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aa8d95bec60b6f2e2c1a46426000d5fb13" kindref="member">OS_PRIORITY_BELOW_REALTIME</ref><sp/>=<sp/>osPriorityRealtime+2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aaa8d0802f2e49f6e25a5150ff5e4dde39" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aaa8d0802f2e49f6e25a5150ff5e4dde39" kindref="member">OS_PRIORITY_REALTIME</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityRealtime+3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aaf6a512f8b94fd7933f7f66106e25b6d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912aaf6a512f8b94fd7933f7f66106e25b6d2" kindref="member">OS_PRIORITY_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>osPriorityError<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912a" kindref="member">OS_PRIORITY_e</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="os_8h_1a704c877baf1e90bab13ca745627a42fb" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="80" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba46e4da94eb0a0d0943a8a9f25424cc1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba46e4da94eb0a0d0943a8a9f25424cc1f" kindref="member">OS_OFF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2077d31d88c2af4e7cf51c93a35c7731" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2077d31d88c2af4e7cf51c93a35c7731" kindref="member">OS_ENG_CREATE_QUEUES</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab30a2d0385602f13448cb36660cab949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab30a2d0385602f13448cb36660cab949" kindref="member">OS_ENG_CREATE_MUTEX</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba460481803fba51a5d762761dfe911d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba460481803fba51a5d762761dfe911d49" kindref="member">OS_ENG_CREATE_EVENT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba350250fb87e00ef401b1ba88b6210c1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba350250fb87e00ef401b1ba88b6210c1c" kindref="member">OS_ENG_CREATE_TASKS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2690077fe08b599e901f961bf1900f64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2690077fe08b599e901f961bf1900f64" kindref="member">OS_APPL_CREATE_MUTEX</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba3f96fe12c247965bb35bb0428ff9d356" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba3f96fe12c247965bb35bb0428ff9d356" kindref="member">OS_APPL_CREATE_EVENT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbaacf28b10f6af0bc92783f0042305c155" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbaacf28b10f6af0bc92783f0042305c155" kindref="member">OS_APPL_CREATE_TASKS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbabf41c3e9dcbc7f738c85795717233cbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbabf41c3e9dcbc7f738c85795717233cbb" kindref="member">OS_INIT_PREOS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba5fdaa81e6b823aecc71ceaf3bdcd9287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba5fdaa81e6b823aecc71ceaf3bdcd9287" kindref="member">OS_INIT_OSRESOURCES</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbac3f7d7b3e7cfd298c12c6cfdea05907b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbac3f7d7b3e7cfd298c12c6cfdea05907b" kindref="member">OS_INIT_OSSTARTKERNEL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbafdaa6d873ad05e293ab03ab356e05af4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbafdaa6d873ad05e293ab03ab356e05af4" kindref="member">OS_RUNNING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2fb9f998e211259bc91fc15e3bfc939d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba2fb9f998e211259bc91fc15e3bfc939d" kindref="member">OS_EEPR_INIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba0cd71f4c8ffec9cc447bb85341e5ff7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba0cd71f4c8ffec9cc447bb85341e5ff7c" kindref="member">OS_BMS_INIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>13,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" kindref="member">OS_SYSTEM_RUNNING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>14,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad2a90c458aaf4c8829b9608d02a8783f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad2a90c458aaf4c8829b9608d02a8783f" kindref="member">OS_SAFETY_FEATURE_ENABLED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="96" refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad36e8509d66529f4fb436bd338d6d7dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbad36e8509d66529f4fb436bd338d6d7dc" kindref="member">OS_SAFETY_FEATURE_DISABLED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="97" refid="os_8h_1a704c877baf1e90bab13ca745627a42fba7458099df9099b4b6c937b0e9af1069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fba7458099df9099b4b6c937b0e9af1069b" kindref="member">OS_INIT_OS_FATALERROR_SCHEDULE</ref><sp/><sp/><sp/><sp/>=<sp/>0x80,<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fb" kindref="member">OS_BOOT_STATE_e</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="os_8h_1a678816f0fa819b21b557a7908b391ad3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104" refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a541c42797b77ab5c9946b134f39a3a81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a541c42797b77ab5c9946b134f39a3a81" kindref="member">ECU_UNDEFINED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a8d35641a9a1a270c04a7a665f3a63c4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a8d35641a9a1a270c04a7a665f3a63c4c" kindref="member">ECU_NORMAL_MODE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a7ae3e8bee23f5d7dee958413cbd222f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a7ae3e8bee23f5d7dee958413cbd222f7" kindref="member">ECU_CALIBARION_MODE</ref><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a63d9d14433c407238155d19ee801525c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a678816f0fa819b21b557a7908b391ad3a63d9d14433c407238155d19ee801525c" kindref="member">ECU_TEST_MODE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}<sp/><ref refid="os_8h_1a678816f0fa819b21b557a7908b391ad3" kindref="member">ECU_OPERATION_MODE_e</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="structOS__TIMER__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114" refid="structOS__TIMER__s_1a76083e4eee94f37324478b8cc2c0c01e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structOS__TIMER__s_1a76083e4eee94f37324478b8cc2c0c01e" kindref="member">Timer_1ms</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="structOS__TIMER__s_1aba1a640ede3ed9b99b7a40447ec13917" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structOS__TIMER__s_1aba1a640ede3ed9b99b7a40447ec13917" kindref="member">Timer_10ms</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="structOS__TIMER__s_1ad89c3f7586f482ce0316a4b70444ca65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structOS__TIMER__s_1ad89c3f7586f482ce0316a4b70444ca65" kindref="member">Timer_100ms</ref>;<sp/></highlight></codeline>
+<codeline lineno="117" refid="structOS__TIMER__s_1afb7037d90ef5ac004b414ad4cda66887" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structOS__TIMER__s_1afb7037d90ef5ac004b414ad4cda66887" kindref="member">Timer_sec</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="structOS__TIMER__s_1a6e0521201d5b6957d7e1f4e4072dd0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structOS__TIMER__s_1a6e0521201d5b6957d7e1f4e4072dd0d4" kindref="member">Timer_min</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="structOS__TIMER__s_1ab8f203f52cafc7e660a0f16e9232658e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structOS__TIMER__s_1ab8f203f52cafc7e660a0f16e9232658e" kindref="member">Timer_h</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="structOS__TIMER__s_1abbac9c91aad0cb76d871fe7fcf3bc21e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structOS__TIMER__s_1abbac9c91aad0cb76d871fe7fcf3bc21e" kindref="member">Timer_d</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/><ref refid="structOS__TIMER__s" kindref="compound">OS_TIMER_s</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="structBMS__Task__Definition__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127" refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" kindref="member">Phase</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" kindref="member">CycleTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8h_1a427aefb6050b0dbe21548451ed9a912a" kindref="member">OS_PRIORITY_e</ref><sp/><ref refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" kindref="member">Priority</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" kindref="member">Stacksize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/><ref refid="structBMS__Task__Definition__s" kindref="compound">BMS_Task_Definition_s</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fb" kindref="member">OS_BOOT_STATE_e</ref><sp/><ref refid="os_8h_1adb8d62335b1b8a020f5cf5d6c4e51924" kindref="member">os_boot</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fb" kindref="member">OS_BOOT_STATE_e</ref><sp/><ref refid="os_8h_1ad858422b7a211f094e302688c3f98917" kindref="member">os_safety_state</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="os_8h_1a68b2b486b62b629bdf9e645fd5e6069f" kindref="member">os_schedulerstarttime</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><sp/><ref refid="structOS__TIMER__s" kindref="compound">OS_TIMER_s</ref><sp/><ref refid="os_8h_1aa87bfae31fe8a496099cd9dfa2aecdf9" kindref="member">os_timer</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>osMutexId<sp/><ref refid="os_8h_1ad09b29681762c4ab580e528cee5709a8" kindref="member">ENG_Mutexes</ref>[];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>EventGroupHandle_t<sp/><ref refid="os_8h_1afda80bd44f017fdc4dd451b3e67a4186" kindref="member">ENG_Events</ref>[];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>osMutexId<sp/><ref refid="os_8h_1ad38d93b2038d1df9cb0d58eb0dd1213c" kindref="member">APPL_Mutexes</ref>[];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>EventGroupHandle_t<sp/><ref refid="os_8h_1a5da5f8c955e333eac7843cea68c4ddc7" kindref="member">APPL_Events</ref>[];</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a6f5422e600224458a5f0c216f534db57" kindref="member">OS_TaskInit</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1ace849181954b143dc0187c632605da86" kindref="member">OS_IdleTask</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a97fd430f36f8b065226e2bff9bad1de5" kindref="member">vApplicationIdleHook</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a9f0687e02ddc61f131d2c43d4270542f" kindref="member">OS_PostOSInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1aa80555e4e2cc33cafc73e340ccf09a79" kindref="member">OS_TSK_Engine</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a8f64fac71dfe371cc8b9ac6670519c59" kindref="member">OS_TSK_Cyclic_1ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a48f7b4b1f01ae62f13ad77b21c51cfdb" kindref="member">OS_TSK_Cyclic_10ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1aadee9bc1893bd8fb3a99d60824786e60" kindref="member">OS_TSK_Cyclic_100ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a760d60acd540f21162c90527bbf59a5e" kindref="member">OS_TSK_EventHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a5b2888a2b67fa092c16c06cf12dbe44e" kindref="member">OS_TSK_Diagnosis</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="os_8h_1a3678d1ab3c96402d191ac3ce6edcefba" kindref="member">OS_Check_Context</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a5573d7c2221a3f3b9cfe5c109603b441" kindref="member">OS_TaskEnter_Critical</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="os_8h_1a7e5b7892152952d2109c89baa0add1a8" kindref="member">OS_TaskExit_Critical</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>OS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/os/os.h"/>
+  </compounddef>
+</doxygen>

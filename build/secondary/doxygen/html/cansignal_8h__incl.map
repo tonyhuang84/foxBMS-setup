@@ -1,0 +1,10 @@
+<map id="cansignal.h" name="cansignal.h">
+<area shape="rect" id="node2" href="$cansignal__cfg_8h.html" title="Headers for the configuration of the messages and signal settings for the CAN driver. " alt="" coords="124,80,236,107"/>
+<area shape="rect" id="node9" href="$general_8h.html" title="Settings for the system. " alt="" coords="260,80,335,107"/>
+<area shape="rect" id="node3" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module. " alt="" coords="141,155,219,181"/>
+<area shape="rect" id="node4" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="139,229,221,256"/>
+<area shape="rect" id="node6" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="147,304,213,331"/>
+<area shape="rect" id="node7" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="52,379,175,405"/>
+<area shape="rect" id="node8" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="199,379,297,405"/>
+<area shape="rect" id="node11" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="344,155,435,181"/>
+</map>

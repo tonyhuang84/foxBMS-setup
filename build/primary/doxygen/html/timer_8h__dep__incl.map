@@ -1,0 +1,9 @@
+<map id="timer.h" name="timer.h">
+<area shape="rect" id="node2" href="$stm32f4xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$stm32f7xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="136,80,243,107"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="Main function. " alt="" coords="267,80,328,107"/>
+<area shape="rect" id="node5" href="$ir155_8h.html" title="Headers for the driver for the isolation monitoring. " alt="" coords="352,80,413,107"/>
+<area shape="rect" id="node8" href="$timer_8c.html" title="Driver to enable/disable/change the peripheral timers. " alt="" coords="438,80,501,107"/>
+<area shape="rect" id="node6" href="$ir155_8c.html" title="Driver for the isolation monitoring. " alt="" coords="304,155,365,181"/>
+<area shape="rect" id="node7" href="$isoguard_8c.html" title="Driver for the isolation monitoring. " alt="" coords="389,155,472,181"/>
+</map>

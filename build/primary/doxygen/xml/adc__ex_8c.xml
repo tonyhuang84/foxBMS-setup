@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="adc__ex_8c" kind="file" language="C++">
+    <compoundname>adc_ex.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="adc__ex_8h" local="yes">adc_ex.h</includes>
+    <includes refid="database_8h" local="yes">database.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includes refid="mcu_8h" local="yes">mcu.h</includes>
+    <incdepgraph>
+      <node id="49">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>stdint.h</label>
+      </node>
+      <node id="53">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>adc_ex.h</label>
+        <link refid="adc__ex_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="45">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="50">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" prot="public" static="no">
+        <name>ADC_CONVERT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="55" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1a60854c291308a8cbf3883c4a48683930" prot="public" static="no">
+        <name>ADC_WAITFORCONVERSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="56" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1a873df2e5077d32749df9f024c20c0bfa" prot="public" static="no">
+        <name>ADC_STOREDATA</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="57" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1ae75e2bd36efb4e2e2e417f588a4466d6" prot="public" static="no">
+        <name>ADC_VBAT_VOLTAGE_DIVIDER</name>
+        <initializer>4.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="60" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1aafd1484f15bbff39ca3a735bef868231" prot="public" static="no">
+        <name>ADC_FULL_RANGE</name>
+        <initializer>4095.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="61" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1a88f4d14071805ed24a8e2fb780718e59" prot="public" static="no">
+        <name>ADC_VREF_EXT</name>
+        <initializer>2.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="62" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1aa6d62e92fb29e034961e1d80462c9c06" prot="public" static="no">
+        <name>ADC_V25</name>
+        <initializer>0.76</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc__ex_8c_1a4c8b60a8aedc57d7676e7ecebeb6dfc3" prot="public" static="no">
+        <name>ADC_AVG_SLOPE</name>
+        <initializer>2.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="64" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" prot="public" static="yes" mutable="no">
+        <type>ADC_ChannelConfTypeDef</type>
+        <definition>ADC_ChannelConfTypeDef adc_cfg</definition>
+        <argsstring></argsstring>
+        <name>adc_cfg</name>
+        <initializer>= {
+    .Channel = ADC_CHANNEL_VBAT,
+    .Rank = 1,
+    .SamplingTime = ADC_SAMPLETIME_3CYCLES,
+    .Offset = 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="67" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc__ex_8c_1a114b604125ef87b73e052db48a641b21" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDATA__BLOCK__ADC__s" kindref="compound">DATA_BLOCK_ADC_s</ref></type>
+        <definition>DATA_BLOCK_ADC_s adc_tab</definition>
+        <argsstring></argsstring>
+        <name>adc_tab</name>
+        <initializer>= {
+    .vbat = 0,
+    .vbat_previous_timestamp = 0,
+    .vbat_timestamp = 0,
+    .temperature = 0.0,
+    .temperature_previous_timestamp = 0,
+    .temperature_timestamp = 0,
+    .state_vbat = 0,
+    .state_temperature = 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t adc_conversion_state</definition>
+        <argsstring></argsstring>
+        <name>adc_conversion_state</name>
+        <initializer>= <ref refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" kindref="member">ADC_CONVERT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="85" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="adc__ex_8c_1ae0b9ae6e4ef2dbf771dcc0ea30901ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_Ctrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>ADC_Ctrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>determines which kind of measurements are made by the ADCs and stores result in database. </para>        </briefdescription>
+        <detaileddescription>
+<para>It alternates between measurement of the voltage of the backup battery and the voltage of the internal temperature sensor. It starts the conversion with <ref refid="adc_8c_1ac74830e9563841944251e6e8c80493d7" kindref="member">ADC_Convert()</ref>. If the conversion is completed, the result is stored in the database.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="91" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="91" bodyend="120"/>
+        <references refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" compoundref="adc__ex_8c" startline="67">adc_cfg</references>
+        <references refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" compoundref="adc__ex_8c" startline="85">adc_conversion_state</references>
+        <references refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" compoundref="adc__ex_8c" startline="55">ADC_CONVERT</references>
+        <references refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" compoundref="adc__cfg_8c" startline="48">adc_devices</references>
+        <references refid="adc_8c_1ac74830e9563841944251e6e8c80493d7" compoundref="adc_8c" startline="82" endline="85">ADC_Convert</references>
+        <references refid="adc__ex_8c_1a60854c291308a8cbf3883c4a48683930" compoundref="adc__ex_8c" startline="56">ADC_WAITFORCONVERSION</references>
+        <references refid="adc__ex_8c_1a873df2e5077d32749df9f024c20c0bfa" compoundref="adc__ex_8c" startline="57">ADC_STOREDATA</references>
+        <references refid="database_8c_1a71c46da113f917afb39cc80c56e598be" compoundref="database_8c" startline="78" endline="105">DATA_StoreDataBlock</references>
+        <references refid="database__cfg_8h_1a776724cf046d57fbe92e31d9ba3f300c" compoundref="database__cfg_8h" startline="124">DATA_BLOCK_ID_ADC</references>
+      </memberdef>
+      <memberdef kind="function" id="adc__ex_8c_1a9297a848610654bf5ca8e6e68032bd07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_ADC_ConvCpltCallback</definition>
+        <argsstring>(ADC_HandleTypeDef *AdcHandle)</argsstring>
+        <name>HAL_ADC_ConvCpltCallback</name>
+        <param>
+          <type>ADC_HandleTypeDef *</type>
+          <declname>AdcHandle</declname>
+        </param>
+        <briefdescription>
+<para>callback function to the ADC conversion. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is called automatically when an ADC conversion is complete. Before getting the converted value, it stops the ADC with HAL_ADC_Stop_IT(). Then it gets the converted raw value with HAL_ADC_GetValue(). The raw value is then scaled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>AdcHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to ADC hardware handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" line="123" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c" bodystart="123" bodyend="150"/>
+        <references refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" compoundref="adc__ex_8c" startline="67">adc_cfg</references>
+        <references refid="adc__ex_8c_1a88f4d14071805ed24a8e2fb780718e59" compoundref="adc__ex_8c" startline="62">ADC_VREF_EXT</references>
+        <references refid="adc__ex_8c_1ae75e2bd36efb4e2e2e417f588a4466d6" compoundref="adc__ex_8c" startline="60">ADC_VBAT_VOLTAGE_DIVIDER</references>
+        <references refid="adc__ex_8c_1aafd1484f15bbff39ca3a735bef868231" compoundref="adc__ex_8c" startline="61">ADC_FULL_RANGE</references>
+        <references refid="structDATA__BLOCK__ADC__s_1a00a79557e8d65efc2ea87af36e9e5943" compoundref="database__cfg_8h" startline="263">DATA_BLOCK_ADC_s::vbat</references>
+        <references refid="structDATA__BLOCK__ADC__s_1a07fb0bf8dab12718aff389966418989a" compoundref="database__cfg_8h" startline="264">DATA_BLOCK_ADC_s::vbat_previous_timestamp</references>
+        <references refid="structDATA__BLOCK__ADC__s_1ae3660d7cd376eed1b6ae8871b5c212b5" compoundref="database__cfg_8h" startline="265">DATA_BLOCK_ADC_s::vbat_timestamp</references>
+        <references refid="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" compoundref="mcu_8c" startline="164" endline="166">MCU_GetTimeStamp</references>
+        <references refid="structDATA__BLOCK__ADC__s_1a9040c2e126bd5c8aba511fbe7a2bea09" compoundref="database__cfg_8h" startline="269">DATA_BLOCK_ADC_s::state_vbat</references>
+        <references refid="adc__ex_8c_1aa6d62e92fb29e034961e1d80462c9c06" compoundref="adc__ex_8c" startline="63">ADC_V25</references>
+        <references refid="adc__ex_8c_1a4c8b60a8aedc57d7676e7ecebeb6dfc3" compoundref="adc__ex_8c" startline="64">ADC_AVG_SLOPE</references>
+        <references refid="structDATA__BLOCK__ADC__s_1a39e7879f2fe42e2a3cd706ee4711fad3" compoundref="database__cfg_8h" startline="266">DATA_BLOCK_ADC_s::temperature</references>
+        <references refid="structDATA__BLOCK__ADC__s_1a99a411496f1e1f8e9f998e1237bbbca0" compoundref="database__cfg_8h" startline="267">DATA_BLOCK_ADC_s::temperature_previous_timestamp</references>
+        <references refid="structDATA__BLOCK__ADC__s_1acd4cb5da5aa867694930aa3d201b55ba" compoundref="database__cfg_8h" startline="268">DATA_BLOCK_ADC_s::temperature_timestamp</references>
+        <references refid="structDATA__BLOCK__ADC__s_1a8ad87a37a6ae543152122977ad9851a3" compoundref="database__cfg_8h" startline="270">DATA_BLOCK_ADC_s::state_temperature</references>
+        <references refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" compoundref="adc__ex_8c" startline="85">adc_conversion_state</references>
+        <references refid="adc__ex_8c_1a873df2e5077d32749df9f024c20c0bfa" compoundref="adc__ex_8c" startline="57">ADC_STOREDATA</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Driver for the analog to digital converter. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>23.10.2017 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>ADC</para></simplesect>
+This external ADC module provides support for analog/digital conversion. It must be initialized during startup. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="39"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc__ex_8h" kindref="compound">adc_ex.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="database_8h" kindref="compound">database.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu_8h" kindref="compound">mcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_CONVERT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="adc__ex_8c_1a60854c291308a8cbf3883c4a48683930" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_WAITFORCONVERSION<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="adc__ex_8c_1a873df2e5077d32749df9f024c20c0bfa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_STOREDATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macros<sp/>for<sp/>converting<sp/>voltage<sp/>-&gt;<sp/>temperature<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="adc__ex_8c_1ae75e2bd36efb4e2e2e417f588a4466d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_VBAT_VOLTAGE_DIVIDER<sp/><sp/><sp/><sp/>4.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="adc__ex_8c_1aafd1484f15bbff39ca3a735bef868231" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_FULL_RANGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4095.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>12bit<sp/>adc<sp/>converter<sp/>--&gt;<sp/>range<sp/>[0,<sp/>...,<sp/>4095]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="adc__ex_8c_1a88f4d14071805ed24a8e2fb780718e59" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_VREF_EXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="adc__ex_8c_1aa6d62e92fb29e034961e1d80462c9c06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_V25<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.76</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="adc__ex_8c_1a4c8b60a8aedc57d7676e7ecebeb6dfc3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_AVG_SLOPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ADC_ChannelConfTypeDef<sp/><ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>.Channel<sp/>=<sp/>ADC_CHANNEL_VBAT,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>.Rank<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>.SamplingTime<sp/>=<sp/>ADC_SAMPLETIME_3CYCLES,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>.Offset<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="adc__ex_8c_1a114b604125ef87b73e052db48a641b21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDATA__BLOCK__ADC__s" kindref="compound">DATA_BLOCK_ADC_s</ref><sp/><ref refid="adc__ex_8c_1a114b604125ef87b73e052db48a641b21" kindref="member">adc_tab</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structDATA__BLOCK__ADC__s_1a00a79557e8d65efc2ea87af36e9e5943" kindref="member">vbat</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>.vbat_previous_timestamp<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>.vbat_timestamp<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>.temperature<sp/>=<sp/>0.0,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>.temperature_previous_timestamp<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>.temperature_timestamp<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>.state_vbat<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>.state_temperature<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>=<sp/><ref refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" kindref="member">ADC_CONVERT</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="adc__ex_8h_1ae0b9ae6e4ef2dbf771dcc0ea30901ae2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc__ex_8c_1ae0b9ae6e4ef2dbf771dcc0ea30901ae2" kindref="member">ADC_Ctrl</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>vbat<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.Rank<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.SamplingTime<sp/>=<sp/>ADC_SAMPLETIME_3CYCLES;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.Offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Alternate<sp/>ADC<sp/>conversion<sp/>between<sp/>temperature<sp/>sensor<sp/>and<sp/>battery<sp/>voltage<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>==<sp/><ref refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" kindref="member">ADC_CONVERT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vbat<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbat<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.Channel<sp/>=<sp/>ADC_CHANNEL_VBAT;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vbat<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbat<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.Channel<sp/>=<sp/>ADC_CHANNEL_TEMPSENSOR;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>==<sp/><ref refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" kindref="member">ADC_CONVERT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>ADC<sp/>Channel<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_ADC_ConfigChannel(&amp;<ref refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" kindref="member">adc_devices</ref>[0],<sp/>&amp;<ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>conversion<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adc_8c_1ac74830e9563841944251e6e8c80493d7" kindref="member">ADC_Convert</ref>(&amp;<ref refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" kindref="member">adc_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>=<sp/><ref refid="adc__ex_8c_1a60854c291308a8cbf3883c4a48683930" kindref="member">ADC_WAITFORCONVERSION</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>==<sp/><ref refid="adc__ex_8c_1a873df2e5077d32749df9f024c20c0bfa" kindref="member">ADC_STOREDATA</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Store<sp/>data<sp/>in<sp/>database<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="database_8c_1a71c46da113f917afb39cc80c56e598be" kindref="member">DATA_StoreDataBlock</ref>(&amp;adc_tab,<sp/><ref refid="database__cfg_8h_1a776724cf046d57fbe92e31d9ba3f300c" kindref="member">DATA_BLOCK_ID_ADC</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>=<sp/><ref refid="adc__ex_8c_1af5e02006ffedb8243af9f3b2a3b62c3b" kindref="member">ADC_CONVERT</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="adc__ex_8h_1a9297a848610654bf5ca8e6e68032bd07" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc__ex_8c_1a9297a848610654bf5ca8e6e68032bd07" kindref="member">HAL_ADC_ConvCpltCallback</ref>(ADC_HandleTypeDef*<sp/>AdcHandle)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>raw_voltage<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaled_voltage<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaled_temperature<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>interrupt<sp/>and<sp/>stop<sp/>ADC<sp/>conversion<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_ADC_Stop_IT(AdcHandle);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>raw_voltage<sp/>=<sp/>HAL_ADC_GetValue(AdcHandle);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.Channel<sp/>==<sp/>ADC_CHANNEL_VBAT)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled_voltage<sp/>=<sp/>((float)(raw_voltage)*(<ref refid="adc__ex_8c_1a88f4d14071805ed24a8e2fb780718e59" kindref="member">ADC_VREF_EXT</ref>)*<ref refid="adc__ex_8c_1ae75e2bd36efb4e2e2e417f588a4466d6" kindref="member">ADC_VBAT_VOLTAGE_DIVIDER</ref>)/(<ref refid="adc__ex_8c_1aafd1484f15bbff39ca3a735bef868231" kindref="member">ADC_FULL_RANGE</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1a00a79557e8d65efc2ea87af36e9e5943" kindref="member">vbat</ref><sp/>=<sp/>scaled_voltage;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1a07fb0bf8dab12718aff389966418989a" kindref="member">vbat_previous_timestamp</ref><sp/>=<sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1ae3660d7cd376eed1b6ae8871b5c212b5" kindref="member">vbat_timestamp</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1ae3660d7cd376eed1b6ae8871b5c212b5" kindref="member">vbat_timestamp</ref><sp/>=<sp/><ref refid="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" kindref="member">MCU_GetTimeStamp</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1a9040c2e126bd5c8aba511fbe7a2bea09" kindref="member">state_vbat</ref>++;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="adc__ex_8c_1a3b8b4a705b8bc95ca679b78290aab991" kindref="member">adc_cfg</ref>.Channel<sp/>==<sp/>ADC_CHANNEL_TEMPSENSOR)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled_voltage<sp/>=<sp/>((float)(raw_voltage)*(1000.0*(float)(<ref refid="adc__ex_8c_1a88f4d14071805ed24a8e2fb780718e59" kindref="member">ADC_VREF_EXT</ref>)))/(<ref refid="adc__ex_8c_1aafd1484f15bbff39ca3a735bef868231" kindref="member">ADC_FULL_RANGE</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled_temperature<sp/>=<sp/>(scaled_voltage<sp/>-<sp/><ref refid="adc__ex_8c_1aa6d62e92fb29e034961e1d80462c9c06" kindref="member">ADC_V25</ref>)/(1000.0*<ref refid="adc__ex_8c_1a4c8b60a8aedc57d7676e7ecebeb6dfc3" kindref="member">ADC_AVG_SLOPE</ref>)<sp/>+<sp/>25.0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1a39e7879f2fe42e2a3cd706ee4711fad3" kindref="member">temperature</ref><sp/>=<sp/>scaled_temperature;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1a99a411496f1e1f8e9f998e1237bbbca0" kindref="member">temperature_previous_timestamp</ref><sp/>=<sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1acd4cb5da5aa867694930aa3d201b55ba" kindref="member">temperature_timestamp</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1acd4cb5da5aa867694930aa3d201b55ba" kindref="member">temperature_timestamp</ref><sp/>=<sp/><ref refid="mcu_8c_1a09e5f493b1f3dc15a07b7b72ad69cede" kindref="member">MCU_GetTimeStamp</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_tab.<ref refid="structDATA__BLOCK__ADC__s_1a8ad87a37a6ae543152122977ad9851a3" kindref="member">state_temperature</ref>++;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc__ex_8c_1a0dc4e39514ff4801522fe9af4b1465b0" kindref="member">adc_conversion_state</ref><sp/>=<sp/><ref refid="adc__ex_8c_1a873df2e5077d32749df9f024c20c0bfa" kindref="member">ADC_STOREDATA</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/adc/adc_ex.c"/>
+  </compounddef>
+</doxygen>

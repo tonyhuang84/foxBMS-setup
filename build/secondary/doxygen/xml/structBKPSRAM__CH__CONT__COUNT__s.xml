@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structBKPSRAM__CH__CONT__COUNT__s" kind="struct" language="C++" prot="public">
+    <compoundname>BKPSRAM_CH_CONT_COUNT_s</compoundname>
+    <includes refid="bkpsram__cfg_8h" local="no">bkpsram_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBKPSRAM__CH__CONT__COUNT__s_1af889604d81b43a90d79591c322109622" prot="public" static="no" mutable="no">
+        <type><ref refid="structDIAG__CONTACTOR__s" kindref="compound">DIAG_CONTACTOR_s</ref></type>
+        <definition>DIAG_CONTACTOR_s BKPSRAM_CH_CONT_COUNT_s::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="87" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__CH__CONT__COUNT__s_1a403791183176475332edfdc20292b7fe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BKPSRAM_CH_CONT_COUNT_s::checksum</definition>
+        <argsstring></argsstring>
+        <name>checksum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="88" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>BKPSRAM_CH_CONT_COUNT_s</label>
+        <link refid="structBKPSRAM__CH__CONT__COUNT__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DIAG_CONTACTOR_s</label>
+        <link refid="structDIAG__CONTACTOR__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="86" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="86" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structBKPSRAM__CH__CONT__COUNT__s_1a403791183176475332edfdc20292b7fe" prot="public" virt="non-virtual"><scope>BKPSRAM_CH_CONT_COUNT_s</scope><name>checksum</name></member>
+      <member refid="structBKPSRAM__CH__CONT__COUNT__s_1af889604d81b43a90d79591c322109622" prot="public" virt="non-virtual"><scope>BKPSRAM_CH_CONT_COUNT_s</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

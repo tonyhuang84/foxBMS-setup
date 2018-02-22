@@ -1,0 +1,4 @@
+<map id="CAN_TxMsgBuffer" name="CAN_TxMsgBuffer">
+<area shape="rect" id="node2" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="181,5,336,32"/>
+<area shape="rect" id="node3" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="185,56,332,83"/>
+</map>

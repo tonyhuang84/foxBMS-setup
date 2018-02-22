@@ -1,0 +1,9 @@
+<map id="adc_cfg.h" name="adc_cfg.h">
+<area shape="rect" id="node2" href="$adc__ex_8h.html" title="adc_ex.h" alt="" coords="25,80,100,107"/>
+<area shape="rect" id="node5" href="$adc__cfg_8c.html" title="Configuration for the analog to digital converter. " alt="" coords="125,80,203,107"/>
+<area shape="rect" id="node6" href="$adc_8h.html" title="Header for the driver for the analog to digital converter. " alt="" coords="227,80,282,107"/>
+<area shape="rect" id="node3" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node4" href="$adc__ex_8c.html" title="Driver for the analog to digital converter. " alt="" coords="125,155,200,181"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Main function. " alt="" coords="224,155,285,181"/>
+<area shape="rect" id="node8" href="$adc_8c.html" title="Driver for the analog to digital converter. " alt="" coords="310,155,365,181"/>
+</map>

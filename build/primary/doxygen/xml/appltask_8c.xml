@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="appltask_8c" kind="file" language="C++">
+    <compoundname>appltask.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="appltask_8h" local="yes">appltask.h</includes>
+    <includes refid="os_8h" local="yes">os.h</includes>
+    <incdepgraph>
+      <node id="65">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>stdint.h</label>
+      </node>
+      <node id="71">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="64">
+        <label>appltask.c</label>
+        <link refid="appltask_8c"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>appltask.h</label>
+        <link refid="appltask_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="70">
+        <label>os.h</label>
+        <link refid="os_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>appltask_cfg.h</label>
+        <link refid="appltask__cfg_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="appltask_8c_1a896d4861f7b177634398fb9c46d45ef7" prot="public" static="yes" mutable="no">
+        <type>xTaskHandle</type>
+        <definition>xTaskHandle appl_handle_tsk_1ms</definition>
+        <argsstring></argsstring>
+        <name>appl_handle_tsk_1ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definition of task handle 1 milliseconds task </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="53" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="appltask_8c_1a6c4fddad873bf878108470ad08d1886f" prot="public" static="yes" mutable="no">
+        <type>xTaskHandle</type>
+        <definition>xTaskHandle appl_handle_tsk_10ms</definition>
+        <argsstring></argsstring>
+        <name>appl_handle_tsk_10ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definition of task handle 10 milliseconds task </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="58" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="appltask_8c_1a047d7f8a901164babf4a1e66e9322d56" prot="public" static="yes" mutable="no">
+        <type>xTaskHandle</type>
+        <definition>xTaskHandle appl_handle_tsk_100ms</definition>
+        <argsstring></argsstring>
+        <name>appl_handle_tsk_100ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definition of task handle 100 milliseconds task </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="63" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="appltask_8c_1a6fa44ea750012fc37aa15130e9a60957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_CreateMutex</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_CreateMutex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>creates mutexes, called before scheduler start </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="70" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="appltask_8c_1a3ac355e656e45203b36403b94143dbdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_CreateEvent</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_CreateEvent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>creates mutex, called before scheduler start </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="appltask_8c_1a850dd1b4a8624221ab29afb4ae0efa41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_CreateTask</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_CreateTask</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>creates cyclic tasks, called before scheduler start </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="78" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="78" bodyend="94"/>
+        <references refid="appltask_8c_1acae1fd17d7a966f3602cee953ffd3f1b" compoundref="appltask_8c" startline="96" endline="112">APPL_TSK_Cyclic_1ms</references>
+        <references refid="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" compoundref="appltask__cfg_8c" startline="70">appl_tskdef_1ms</references>
+        <references refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" compoundref="os_8h" startline="129">BMS_Task_Definition_s::Priority</references>
+        <references refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" compoundref="os_8h" startline="130">BMS_Task_Definition_s::Stacksize</references>
+        <references refid="appltask_8c_1a896d4861f7b177634398fb9c46d45ef7" compoundref="appltask_8c" startline="53">appl_handle_tsk_1ms</references>
+        <references refid="appltask_8c_1a8caa560b3331b3bd9e7c7e07aa1ebf49" compoundref="appltask_8c" startline="114" endline="130">APPL_TSK_Cyclic_10ms</references>
+        <references refid="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" compoundref="appltask__cfg_8c" startline="75">appl_tskdef_10ms</references>
+        <references refid="appltask_8c_1a6c4fddad873bf878108470ad08d1886f" compoundref="appltask_8c" startline="58">appl_handle_tsk_10ms</references>
+        <references refid="appltask_8c_1a44ac8a5f23f02c4668369211b2a0a3ae" compoundref="appltask_8c" startline="132" endline="148">APPL_TSK_Cyclic_100ms</references>
+        <references refid="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" compoundref="appltask__cfg_8c" startline="80">appl_tskdef_100ms</references>
+        <references refid="appltask_8c_1a047d7f8a901164babf4a1e66e9322d56" compoundref="appltask_8c" startline="63">appl_handle_tsk_100ms</references>
+      </memberdef>
+      <memberdef kind="function" id="appltask_8c_1acae1fd17d7a966f3602cee953ffd3f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_TSK_Cyclic_1ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_TSK_Cyclic_1ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>1ms application task </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="96" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="96" bodyend="112"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" compoundref="appltask__cfg_8c" startline="70">appl_tskdef_1ms</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="group__API__OS_1ga8eb09b5db377541ef4be8c4345de706f" compoundref="appltask__cfg_8c" startline="85" endline="94">APPL_Cyclic_1ms</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="appltask_8c_1a8caa560b3331b3bd9e7c7e07aa1ebf49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_TSK_Cyclic_10ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_TSK_Cyclic_10ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>10ms application task </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="114" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="114" bodyend="130"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" compoundref="appltask__cfg_8c" startline="75">appl_tskdef_10ms</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="group__API__OS_1gaa93963e368289a593eba35a466035972" compoundref="appltask__cfg_8c" startline="96" endline="117">APPL_Cyclic_10ms</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="appltask_8c_1a44ac8a5f23f02c4668369211b2a0a3ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_TSK_Cyclic_100ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_TSK_Cyclic_100ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>100ms application task </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" line="132" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c" bodystart="132" bodyend="148"/>
+        <references refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" compoundref="os_8c" startline="60">os_boot</references>
+        <references refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" compoundref="os_8h" startline="94">OS_SYSTEM_RUNNING</references>
+        <references refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" compoundref="os_8c" startline="68">os_schedulerstarttime</references>
+        <references refid="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" compoundref="appltask__cfg_8c" startline="80">appl_tskdef_100ms</references>
+        <references refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" compoundref="os_8h" startline="127">BMS_Task_Definition_s::Phase</references>
+        <references refid="group__API__OS_1ga884d49f7d9a6623d692558571a0a4277" compoundref="appltask__cfg_8c" startline="119" endline="219">APPL_Cyclic_100ms</references>
+        <references refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" compoundref="os_8h" startline="128">BMS_Task_Definition_s::CycleTime</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function calls within application tasks. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>27.08.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>APPL </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="appltask_8h" kindref="compound">appltask.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="os_8h" kindref="compound">os.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="appltask_8c_1a896d4861f7b177634398fb9c46d45ef7" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>xTaskHandle<sp/><ref refid="appltask_8c_1a896d4861f7b177634398fb9c46d45ef7" kindref="member">appl_handle_tsk_1ms</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="appltask_8c_1a6c4fddad873bf878108470ad08d1886f" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>xTaskHandle<sp/><ref refid="appltask_8c_1a6c4fddad873bf878108470ad08d1886f" kindref="member">appl_handle_tsk_10ms</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="appltask_8c_1a047d7f8a901164babf4a1e66e9322d56" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>xTaskHandle<sp/><ref refid="appltask_8c_1a047d7f8a901164babf4a1e66e9322d56" kindref="member">appl_handle_tsk_100ms</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="appltask_8h_1a6fa44ea750012fc37aa15130e9a60957" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="appltask_8c_1a6fa44ea750012fc37aa15130e9a60957" kindref="member">APPL_CreateMutex</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="appltask_8h_1a3ac355e656e45203b36403b94143dbdd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="appltask_8c_1a3ac355e656e45203b36403b94143dbdd" kindref="member">APPL_CreateEvent</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="appltask_8h_1a850dd1b4a8624221ab29afb4ae0efa41" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="appltask_8c_1a850dd1b4a8624221ab29afb4ae0efa41" kindref="member">APPL_CreateTask</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cyclic<sp/>Task<sp/>1ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>osThreadDef(<ref refid="appltask_8c_1acae1fd17d7a966f3602cee953ffd3f1b" kindref="member">APPL_TSK_Cyclic_1ms</ref>,<sp/>(os_pthread<sp/>)<ref refid="appltask_8c_1acae1fd17d7a966f3602cee953ffd3f1b" kindref="member">APPL_TSK_Cyclic_1ms</ref>,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" kindref="member">appl_tskdef_1ms</ref>.<ref refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" kindref="member">Priority</ref>,<sp/>0,<sp/><ref refid="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" kindref="member">appl_tskdef_1ms</ref>.<ref refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" kindref="member">Stacksize</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="appltask_8c_1a896d4861f7b177634398fb9c46d45ef7" kindref="member">appl_handle_tsk_1ms</ref><sp/>=<sp/>osThreadCreate(osThread(APPL_TSK_Cyclic_1ms),<sp/>NULL);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cyclic<sp/>Task<sp/>10ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>osThreadDef(<ref refid="appltask_8c_1a8caa560b3331b3bd9e7c7e07aa1ebf49" kindref="member">APPL_TSK_Cyclic_10ms</ref>,<sp/>(os_pthread<sp/>)<ref refid="appltask_8c_1a8caa560b3331b3bd9e7c7e07aa1ebf49" kindref="member">APPL_TSK_Cyclic_10ms</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" kindref="member">appl_tskdef_10ms</ref>.<ref refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" kindref="member">Priority</ref>,<sp/>0,<sp/><ref refid="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" kindref="member">appl_tskdef_10ms</ref>.<ref refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" kindref="member">Stacksize</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="appltask_8c_1a6c4fddad873bf878108470ad08d1886f" kindref="member">appl_handle_tsk_10ms</ref><sp/>=<sp/>osThreadCreate(osThread(APPL_TSK_Cyclic_10ms),<sp/>NULL);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cyclic<sp/>Task<sp/>100ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>osThreadDef(<ref refid="appltask_8c_1a44ac8a5f23f02c4668369211b2a0a3ae" kindref="member">APPL_TSK_Cyclic_100ms</ref>,<sp/>(os_pthread<sp/>)<ref refid="appltask_8c_1a44ac8a5f23f02c4668369211b2a0a3ae" kindref="member">APPL_TSK_Cyclic_100ms</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" kindref="member">appl_tskdef_100ms</ref>.<ref refid="structBMS__Task__Definition__s_1a7e3d9de1443283361b4d8de67aaaddbc" kindref="member">Priority</ref>,<sp/>0,<sp/><ref refid="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" kindref="member">appl_tskdef_100ms</ref>.<ref refid="structBMS__Task__Definition__s_1a7068f2dc5b07495a5a3fccc7e75c2a18" kindref="member">Stacksize</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="appltask_8c_1a047d7f8a901164babf4a1e66e9322d56" kindref="member">appl_handle_tsk_100ms</ref><sp/>=<sp/>osThreadCreate(osThread(APPL_TSK_Cyclic_100ms),<sp/>NULL);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="appltask_8h_1acae1fd17d7a966f3602cee953ffd3f1b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="appltask_8c_1acae1fd17d7a966f3602cee953ffd3f1b" kindref="member">APPL_TSK_Cyclic_1ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" kindref="member">os_boot</ref><sp/>!=<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" kindref="member">OS_SYSTEM_RUNNING</ref>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>osDelayUntil(&amp;<ref refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" kindref="member">os_schedulerstarttime</ref>,<sp/><ref refid="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" kindref="member">appl_tskdef_1ms</ref>.<ref refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" kindref="member">Phase</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>currentTime<sp/>=<sp/>osKernelSysTick();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__OS_1ga8eb09b5db377541ef4be8c4345de706f" kindref="member">APPL_Cyclic_1ms</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>osDelayUntil(&amp;currentTime,<sp/><ref refid="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" kindref="member">appl_tskdef_1ms</ref>.<ref refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" kindref="member">CycleTime</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="appltask_8h_1a8caa560b3331b3bd9e7c7e07aa1ebf49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="appltask_8c_1a8caa560b3331b3bd9e7c7e07aa1ebf49" kindref="member">APPL_TSK_Cyclic_10ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" kindref="member">os_boot</ref><sp/>!=<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" kindref="member">OS_SYSTEM_RUNNING</ref>)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>osDelayUntil(&amp;<ref refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" kindref="member">os_schedulerstarttime</ref>,<sp/><ref refid="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" kindref="member">appl_tskdef_10ms</ref>.<ref refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" kindref="member">Phase</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>currentTime<sp/>=<sp/>osKernelSysTick();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__OS_1gaa93963e368289a593eba35a466035972" kindref="member">APPL_Cyclic_10ms</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>osDelayUntil(&amp;currentTime,<sp/><ref refid="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" kindref="member">appl_tskdef_10ms</ref>.<ref refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" kindref="member">CycleTime</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="appltask_8h_1a44ac8a5f23f02c4668369211b2a0a3ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="appltask_8c_1a44ac8a5f23f02c4668369211b2a0a3ae" kindref="member">APPL_TSK_Cyclic_100ms</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="os_8c_1adb8d62335b1b8a020f5cf5d6c4e51924" kindref="member">os_boot</ref><sp/>!=<sp/><ref refid="os_8h_1a704c877baf1e90bab13ca745627a42fbab6422df04846c1726af32ee967e03aae" kindref="member">OS_SYSTEM_RUNNING</ref>)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>osDelayUntil(&amp;<ref refid="os_8c_1a68b2b486b62b629bdf9e645fd5e6069f" kindref="member">os_schedulerstarttime</ref>,<sp/><ref refid="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" kindref="member">appl_tskdef_100ms</ref>.<ref refid="structBMS__Task__Definition__s_1a313c13307905805e7423a1b544b927d0" kindref="member">Phase</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>currentTime<sp/>=<sp/>osKernelSysTick();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__OS_1ga884d49f7d9a6623d692558571a0a4277" kindref="member">APPL_Cyclic_100ms</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>osDelayUntil(&amp;currentTime,<sp/><ref refid="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" kindref="member">appl_tskdef_100ms</ref>.<ref refid="structBMS__Task__Definition__s_1af0eb3f1fa27cd6f22e34583cbb9eab08" kindref="member">CycleTime</ref>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/task/appltask.c"/>
+  </compounddef>
+</doxygen>

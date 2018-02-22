@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4c2e71ab474792482229e7267429b603" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_756051271f0e921bef26196a96e84760">application</innerdir>
+    <innerdir refid="dir_69c2a273b7fe6d14353831450732ddc8">engine</innerdir>
+    <innerdir refid="dir_d75140234428fa1c830d5199c94b05ea">general</innerdir>
+    <innerdir refid="dir_4d8856850196cbbdc0ad343bec217f84">module</innerdir>
+    <innerdir refid="dir_1a838f52d9275fd0617ddbeb41aafef9">os</innerdir>
+    <innerfile refid="doxygen_8h">doxygen.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/"/>
+  </compounddef>
+</doxygen>

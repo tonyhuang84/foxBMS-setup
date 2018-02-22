@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Important Switches in Code &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="4. Software Modules" href="../modules/modules.html"/>
+        <link rel="prev" title="2. Software Overview" href="../overview/overview.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>3. Important Switches in Code</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/software_documentation/defines/defines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="important-switches-in-code">
+<span id="software-documentation-defines"></span><h1>3. Important Switches in Code<a class="headerlink" href="#important-switches-in-code" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="system-relevant-switches">
+<h2>3.1. System Relevant Switches<a class="headerlink" href="#system-relevant-switches" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\general\config\batterysystem_cfg.h</span></code>, three important switches are defined.</p>
+<p>The switch</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define CURRENT_SENSOR_PRESENT               TRUE</span>
+</pre></div>
+</div>
+<p>is by default set to <code class="docutils literal"><span class="pre">TRUE</span></code>. In this configuration, the <code class="docutils literal"><span class="pre">SYS</span></code> statmachine will go into an error state during startup if no current sensor is detected. The switch must be set to <code class="docutils literal"><span class="pre">FALSE</span></code> for foxBMS to start without current sensor.</p>
+<p>The switch</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define CHECK_CAN_TIMING                     TRUE</span>
+</pre></div>
+</div>
+<p>is set to <code class="docutils literal"><span class="pre">TRUE</span></code> by default. In this configuration, the <code class="docutils literal"><span class="pre">BMS</span></code> statemachine will go into an error state if no requests are made periodically per CAN with a period of 100ms. When the switch is set to <code class="docutils literal"><span class="pre">FALSE</span></code>, the check is not made.</p>
+<p>The switch</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define BALANCING_DEFAULT_INACTIVE           TRUE</span>
+</pre></div>
+</div>
+<p>is set to <code class="docutils literal"><span class="pre">TRUE</span></code> by default. This prevents any balancing. In order for balancing to be possiblem the switch must be set to <code class="docutils literal"><span class="pre">FALSE</span></code>.</p>
+</div>
+<div class="section" id="battery-cell-relevant-switches">
+<h2>3.2. Battery Cell Relevant Switches<a class="headerlink" href="#battery-cell-relevant-switches" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\general\config\batterycell_cfg.h</span></code>, the Safe Operating Area for the cells is defined:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Upper and lower voltage</li>
+<li>Upper and lower temperature for charging</li>
+<li>Upper and lower temperature for discharging</li>
+<li>Upper current for charging and discharging</li>
+</ul>
+</div></blockquote>
+<p>The battery cell capacity is also defined with</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="cp">#define BC_CAPACITY 3500</span>
+</pre></div>
+</div>
+<p>The unit is mAh.</p>
+</div>
+<div class="section" id="deactivating-cell-tests">
+<h2>3.3. Deactivating Cell Tests<a class="headerlink" href="#deactivating-cell-tests" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\engine\config\diag_cfc.c</span></code>, the structure</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DIAG_CH_CFG_s</span>  <span class="n">diag_ch_cfg</span><span class="p">[]</span>
+</pre></div>
+</div>
+<p>allows disabling the checks made by the <code class="docutils literal"><span class="pre">diag</span></code> module. Disabling is made by replacing</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DIAG_RECORDING_ENABLED</span><span class="p">,</span> <span class="n">DIAG_ENABLED</span>
+</pre></div>
+</div>
+<p>with</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DIAG_RECORDING_DISABLED</span><span class="p">,</span> <span class="n">DIAG_DISABLED</span>
+</pre></div>
+</div>
+<p>Important checks are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">CELLVOLTAGE_OVERVOLTAGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">CELLVOLTAGE_UNDERVOLTAGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">OVERTEMPERATURE_CHARGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">OVERTEMPERATURE_DISCHARGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">UNDERTEMPERATURE_CHARGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">UNDERTEMPERATURE_DISCHARGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">OVERCURRENT_CHARGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">OVERCURRENT_DISCHARGE</span></code></li>
+<li><code class="docutils literal"><span class="pre">LTC_PEC</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Setting the cell limits is safety relevant and must be done with care.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Working without configuring the right battery cell voltage limits is dangerous and should never be done when real batteries are connected, since they may burn and explode when overcharged or shorted.</strong></p>
+</div>
+</div>
+<div class="section" id="usig-current-counter-from-current-sensor">
+<h2>3.4. Usig Current Counter from Current Sensor<a class="headerlink" href="#usig-current-counter-from-current-sensor" title="Permalink to this headline">¶</a></h2>
+<p>Current-counting can now be made using the current sensor. foxBMS will detect automatically is the corresponding datais being sent by the current sensor. If yes, the hardware current-counter from the sensor is used. If not, the software integrator is used.</p>
+</div>
+<div class="section" id="defining-the-convention-for-the-current-direction">
+<h2>3.5. Defining the Convention for the Current Direction<a class="headerlink" href="#defining-the-convention-for-the-current-direction" title="Permalink to this headline">¶</a></h2>
+<p>Two functions have been defined in <code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\general\config\batterycell_cfg.h</span></code> to test the current direction conveniently.</p>
+<p>The first one</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">BS_CURRENT_DIRECTION_e</span> <span class="nf">BS_CheckCurrent_Direction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>gets the current from the database and returns <code class="docutils literal"><span class="pre">BS_CURRENT_DISCHARGE</span></code> if a discharge current is flowing throug the battery, <code class="docutils literal"><span class="pre">BS_CURRENT_CHARGE</span></code> otherwise.</p>
+<p>The second one</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">BS_CURRENT_DIRECTION_e</span> <span class="nf">BS_CheckCurrentValue_Direction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>functions the same way. The only difference is that is does not get the current value from the database but uses the value passed to the function.</p>
+<p>The define <code class="docutils literal"><span class="pre">POSITIVE_DISCHARGE_CURRENT</span></code> is used to define the current direction convention:</p>
+<blockquote>
+<div><ul class="simple">
+<li>if set to <code class="docutils literal"><span class="pre">TRUE</span></code>, discharge currents are positive</li>
+<li>if set to <code class="docutils literal"><span class="pre">FALSE</span></code>, charge currents are positive</li>
+</ul>
+</div></blockquote>
+<p>This define affect the calculation in the <code class="docutils literal"><span class="pre">SOX</span></code> module too.</p>
+</div>
+<div class="section" id="complete-list-of-switches">
+<h2>3.6. Complete List of Switches<a class="headerlink" href="#complete-list-of-switches" title="Permalink to this headline">¶</a></h2>
+<p>A complete list of switches can be found here:</p>
+<ul>
+<li><p class="first">The online version of the latest released version is found here:</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation always points to the latest realsed version on Github
+and the local changes can not be found in that online version.</p>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://iisb-foxbms.iisb.fraunhofer.de/foxbms/documentation/primary/html/CONFIG_PAGE.html">Online documentation: Primary switches</a></li>
+<li><a class="reference external" href="https://iisb-foxbms.iisb.fraunhofer.de/foxbms/documentation/secondary/html/CONFIG_PAGE.html">Online documentation: Secondary switches</a></li>
+</ul>
+</li>
+<li><p class="first">If the project was compiled locally, this documentation can be accesed here:</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This only exists after building the documentation locally. If this was not done, the link
+will not work.</p>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="../../../../../../../primary/doxygen/html/CONFIG_PAGE.html">Local documentation: Primary switches</a></li>
+<li><a class="reference external" href="../../../../../../../secondary/doxygen/html/CONFIG_PAGE.html">Local documentation: Secondary switches</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../modules/modules.html" class="btn btn-neutral float-right" title="4. Software Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../overview/overview.html" class="btn btn-neutral" title="2. Software Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

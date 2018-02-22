@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDATA__BLOCK__CELLTEMPERATURE__s" kind="struct" language="C++" prot="public">
+    <compoundname>DATA_BLOCK_CELLTEMPERATURE_s</compoundname>
+    <includes refid="database__cfg_8h" local="no">database_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDATA__BLOCK__CELLTEMPERATURE__s_1a527fcd857de6c720920e9ab9be80fa34" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t DATA_BLOCK_CELLTEMPERATURE_s::temperature[BS_NR_OF_TEMP_SENSORS]</definition>
+        <argsstring>[BS_NR_OF_TEMP_SENSORS]</argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>unit: degree Celsius </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="162" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__CELLTEMPERATURE__s_1a416cbb9b059a5e489482c5535a469c59" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DATA_BLOCK_CELLTEMPERATURE_s::valid_temperaturePECs[BS_NR_OF_MODULES]</definition>
+        <argsstring>[BS_NR_OF_MODULES]</argsstring>
+        <name>valid_temperaturePECs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bitmask if PEC was okay. 0-&gt;ok, 1-&gt;error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="163" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__CELLTEMPERATURE__s_1a8095fc504a27d1de13fcdf1267e09569" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_CELLTEMPERATURE_s::previous_timestamp</definition>
+        <argsstring></argsstring>
+        <name>previous_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of last database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="164" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__CELLTEMPERATURE__s_1a302b4fb05f625436391e2571f4add0be" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DATA_BLOCK_CELLTEMPERATURE_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of database entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="165" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDATA__BLOCK__CELLTEMPERATURE__s_1ab04ecd49a84626fba27d47375247ad1d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DATA_BLOCK_CELLTEMPERATURE_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for future use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="166" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>data block struct of cell temperatures </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" line="161" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/database_cfg.h" bodystart="161" bodyend="167"/>
+    <listofallmembers>
+      <member refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a8095fc504a27d1de13fcdf1267e09569" prot="public" virt="non-virtual"><scope>DATA_BLOCK_CELLTEMPERATURE_s</scope><name>previous_timestamp</name></member>
+      <member refid="structDATA__BLOCK__CELLTEMPERATURE__s_1ab04ecd49a84626fba27d47375247ad1d" prot="public" virt="non-virtual"><scope>DATA_BLOCK_CELLTEMPERATURE_s</scope><name>state</name></member>
+      <member refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a527fcd857de6c720920e9ab9be80fa34" prot="public" virt="non-virtual"><scope>DATA_BLOCK_CELLTEMPERATURE_s</scope><name>temperature</name></member>
+      <member refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a302b4fb05f625436391e2571f4add0be" prot="public" virt="non-virtual"><scope>DATA_BLOCK_CELLTEMPERATURE_s</scope><name>timestamp</name></member>
+      <member refid="structDATA__BLOCK__CELLTEMPERATURE__s_1a416cbb9b059a5e489482c5535a469c59" prot="public" virt="non-virtual"><scope>DATA_BLOCK_CELLTEMPERATURE_s</scope><name>valid_temperaturePECs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

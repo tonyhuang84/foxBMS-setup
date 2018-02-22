@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3caeb6bb210153be1eff2b23f8059fca" kind="dir">
+    <compoundname>sox</compoundname>
+    <innerfile refid="sox_8c">sox.c</innerfile>
+    <innerfile refid="sox_8h">sox.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/"/>
+  </compounddef>
+</doxygen>

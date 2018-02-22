@@ -1,0 +1,19 @@
+<map id="meas.c" name="meas.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="49,528,124,555"/>
+<area shape="rect" id="node5" href="$meas_8h.html" title="Headers for the driver for the measurements needed by the BMS (e.g., I,V,T). " alt="" coords="219,80,285,107"/>
+<area shape="rect" id="node7" href="$ltc_8h.html" title="Headers for the driver for the LTC monitoring chip. " alt="" coords="111,80,158,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="131,603,221,629"/>
+<area shape="rect" id="node6" href="$meas__cfg_8h.html" title="meas configuration header " alt="" coords="227,155,317,181"/>
+<area shape="rect" id="node8" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC monitoring chip. " alt="" coords="81,155,151,181"/>
+<area shape="rect" id="node18" href="$ltc__defs_8h.html" title="ltc_defs.h" alt="" coords="161,229,239,256"/>
+<area shape="rect" id="node9" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="94,453,234,480"/>
+<area shape="rect" id="node10" href="$spi_8h.html" title="Headers for the driver for the serial peripheral interface module (encapsulation of some HAL function..." alt="" coords="331,304,381,331"/>
+<area shape="rect" id="node11" href="$spi__cfg_8h.html" title="Headers for the configuration for the serial peripheral interface module. " alt="" coords="335,379,409,405"/>
+<area shape="rect" id="node12" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="331,453,413,480"/>
+<area shape="rect" id="node17" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="437,453,480,480"/>
+<area shape="rect" id="node14" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="364,528,431,555"/>
+<area shape="rect" id="node15" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="305,603,428,629"/>
+<area shape="rect" id="node16" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="452,603,551,629"/>
+<area shape="rect" id="node19" href="$database_8h.html" title="Database module header. " alt="" coords="157,304,243,331"/>
+<area shape="rect" id="node20" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="145,379,255,405"/>
+</map>

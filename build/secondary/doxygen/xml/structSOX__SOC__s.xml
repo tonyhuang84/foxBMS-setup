@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structSOX__SOC__s" kind="struct" language="C++" prot="public">
+    <compoundname>SOX_SOC_s</compoundname>
+    <includes refid="sox_8h" local="no">sox.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSOX__SOC__s_1a4634b3a0701f0f4e0f7b23e387bcf66c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOC_s::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>minimum SOC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="57" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOC__s_1ab32d26c1d7b560dcd60c1e3790dedb8e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOC_s::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maximum SOC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="58" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__SOC__s_1a15edf10b11bdeed51c478c20142610cc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_SOC_s::mean</definition>
+        <argsstring></argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mean SOC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="59" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>state of charge (SOC). Since SOC is voltage dependent, three different values are used, min, max and mean SOC defined as a float number between 0.0 and 100.0 (0% and 100%) </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" line="56" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/sox/sox.h" bodystart="56" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structSOX__SOC__s_1ab32d26c1d7b560dcd60c1e3790dedb8e" prot="public" virt="non-virtual"><scope>SOX_SOC_s</scope><name>max</name></member>
+      <member refid="structSOX__SOC__s_1a15edf10b11bdeed51c478c20142610cc" prot="public" virt="non-virtual"><scope>SOX_SOC_s</scope><name>mean</name></member>
+      <member refid="structSOX__SOC__s_1a4634b3a0701f0f4e0f7b23e387bcf66c" prot="public" virt="non-virtual"><scope>SOX_SOC_s</scope><name>min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

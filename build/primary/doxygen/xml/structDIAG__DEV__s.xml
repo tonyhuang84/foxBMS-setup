@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDIAG__DEV__s" kind="struct" language="C++" prot="public">
+    <compoundname>DIAG_DEV_s</compoundname>
+    <includes refid="diag__cfg_8h" local="no">diag_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDIAG__DEV__s_1a8d5f5bb767f92c190d90c987a356014a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_DEV_s::nr_of_ch</definition>
+        <argsstring></argsstring>
+        <name>nr_of_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of entries in <ref refid="structDIAG__CH__CFG__s" kindref="compound">DIAG_CH_CFG_s</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" line="334" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__DEV__s_1afc06a818592ea9f1d0c0daba76beed32" prot="public" static="no" mutable="no">
+        <type><ref refid="structDIAG__CH__CFG__s" kindref="compound">DIAG_CH_CFG_s</ref> *</type>
+        <definition>DIAG_CH_CFG_s* DIAG_DEV_s::ch_cfg</definition>
+        <argsstring></argsstring>
+        <name>ch_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to diag channel config struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" line="335" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct for device Configuration of diag module </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="104">
+        <label>DIAG_DEV_s</label>
+        <link refid="structDIAG__DEV__s"/>
+        <childnode refid="105" relation="usage">
+          <edgelabel>ch_cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="105">
+        <label>DIAG_CH_CFG_s</label>
+        <link refid="structDIAG__CH__CFG__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" line="333" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" bodystart="333" bodyend="336"/>
+    <listofallmembers>
+      <member refid="structDIAG__DEV__s_1afc06a818592ea9f1d0c0daba76beed32" prot="public" virt="non-virtual"><scope>DIAG_DEV_s</scope><name>ch_cfg</name></member>
+      <member refid="structDIAG__DEV__s_1a8d5f5bb767f92c190d90c987a356014a" prot="public" virt="non-virtual"><scope>DIAG_DEV_s</scope><name>nr_of_ch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

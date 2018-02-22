@@ -1,0 +1,5 @@
+<map id="MEAS_IsFirstMeasurementCycleFinished" name="MEAS_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="node2" href="$ltc_8c.html#a612a43f8bc6c4b96b942f98277ba7be3" title="gets the measurement initialization status. " alt="" coords="268,23,468,65"/>
+<area shape="rect" id="node3" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="516,5,671,32"/>
+<area shape="rect" id="node4" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="520,56,667,83"/>
+</map>

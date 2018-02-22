@@ -1,0 +1,951 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="contactor_8h" kind="file" language="C++">
+    <compoundname>contactor.h</compoundname>
+    <includes refid="contactor__cfg_8h" local="yes">contactor_cfg.h</includes>
+    <includedby refid="bms_8c" local="yes">bms.c</includedby>
+    <includedby refid="bms__cfg_8h" local="yes">bms_cfg.h</includedby>
+    <includedby refid="sys__cfg_8h" local="yes">sys_cfg.h</includedby>
+    <includedby refid="sys_8c" local="yes">sys.c</includedby>
+    <includedby refid="enginetask_8c" local="yes">enginetask.c</includedby>
+    <includedby refid="contactor_8c" local="yes">contactor.c</includedby>
+    <incdepgraph>
+      <node id="696">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>stdint.h</label>
+      </node>
+      <node id="701">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="694">
+        <label>contactor_cfg.h</label>
+        <link refid="contactor__cfg_8h"/>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>contactor.h</label>
+        <link refid="contactor_8h"/>
+        <childnode refid="694" relation="include">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="700">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="698">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="695">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="696" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="709">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="714">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>bms_cfg.c</label>
+        <link refid="bms__cfg_8c"/>
+      </node>
+      <node id="705">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="708">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="716">
+        <label>contactor.c</label>
+        <link refid="contactor_8c"/>
+      </node>
+      <node id="703">
+        <label>contactor.h</label>
+        <link refid="contactor_8h"/>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="713">
+        <label>sys_cfg.c</label>
+        <link refid="sys__cfg_8c"/>
+      </node>
+      <node id="712">
+        <label>sys_cfg.h</label>
+        <link refid="sys__cfg_8h"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+      </node>
+      <node id="704">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="706">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="707">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCONT__STATE__s" prot="public">CONT_STATE_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" prot="public" static="no">
+        <name>CONT_STATEMACH_e</name>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a0c70c37bb7f9c35fdb03241c6b24e6f8" prot="public">
+          <name>CONT_STATEMACH_UNINITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6def21c1cb4e11d3a884eac05812a30c" prot="public">
+          <name>CONT_STATEMACH_INITIALIZATION</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a8b4b99183eaa00cc99608c9378d09fce" prot="public">
+          <name>CONT_STATEMACH_INITIALIZED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3aa8615ad2c5950b9888df73afbcd66e9d" prot="public">
+          <name>CONT_STATEMACH_IDLE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a2b9ff639fa9daed730461a3f615b5226" prot="public">
+          <name>CONT_STATEMACH_STANDBY</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6a32931d445f3fa519ba43b0fc1557e7" prot="public">
+          <name>CONT_STATEMACH_PRECHARGE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a9bc9bd84064351137f9100a8a01e9aeb" prot="public">
+          <name>CONT_STATEMACH_NORMAL</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a5037d040603f7527d46b4a23749a3863" prot="public">
+          <name>CONT_STATEMACH_CHARGE_PRECHARGE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a4e5351ae3edf4046f40fb35cae1306f6" prot="public">
+          <name>CONT_STATEMACH_CHARGE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3af66f3ed6c53aed5c5e213b02224ae5ce" prot="public">
+          <name>CONT_STATEMACH_UNDEFINED</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>undefined state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3ad0250a5a8ea760cdf2f51138e1c01773" prot="public">
+          <name>CONT_STATEMACH_RESERVED1</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>reserved state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a180d97284df45a227d91ca63abec0b3e" prot="public">
+          <name>CONT_STATEMACH_ERROR</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error-State: </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>States of the CONT state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="121" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="121" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="enum" id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58" prot="public" static="no">
+        <name>CONT_STATEMACH_SUB_e</name>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a16ba39b6d1d4c386195ef655f7c182e8" prot="public">
+          <name>CONT_ENTRY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate entry state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a23c27d8968ef43e1cb254a0f5dd54f9f" prot="public">
+          <name>CONT_OPEN_FIRST_CONTACTOR</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Open-sequence: first contactor </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5189d16430eec373e7ce3038397759ca" prot="public">
+          <name>CONT_OPEN_SECOND_CONTACTOR_MINUS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Open-sequence: second contactor </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a27950889fdc8fe2960f9f1fca38768b1" prot="public">
+          <name>CONT_OPEN_SECOND_CONTACTOR_PLUS</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Open-sequence: second contactor </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58ab571ae5a1f7366d0816028ded1ba9b0e" prot="public">
+          <name>CONT_STANDBY</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substate stanby </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58adcb79f3a913f42a7d8ffb0419c47a241" prot="public">
+          <name>CONT_PRECHARGE_CLOSE_MINUS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Begin of precharge sequence: close main minus </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a76a5d77c646bbc4a26023385ff629c9c" prot="public">
+          <name>CONT_PRECHARGE_CLOSE_PRECHARGE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Next step of precharge sequence: close precharge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a0d684462238d30d3cd8b0342bafeced9" prot="public">
+          <name>CONT_PRECHARGE_CLOSE_PLUS</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Next step of precharge sequence: close main plus </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5c88e1ba3eda05615bebbcb3132aacd2" prot="public">
+          <name>CONT_PRECHARGE_CHECK_VOLTAGES</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Next step of precharge sequence: check if voltages OK </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a1926ecec09b33e31b86aae78d0896590" prot="public">
+          <name>CONT_PRECHARGE_OPEN_PRECHARGE</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Next step of precharge sequence: open precharge </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Substates of the CONT state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="140" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="140" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="enum" id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" prot="public" static="no">
+        <name>CONT_STATE_REQUEST_e</name>
+        <enumvalue id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aaccfc4a81d5179235454c5eeb3d64ee9" prot="public">
+          <name>CONT_STATE_INIT_REQUEST</name>
+          <initializer>= CONT_STATEMACH_INITIALIZATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa703ceb4238d8338194df6b390cf67d9" prot="public">
+          <name>CONT_STATE_STANDBY_REQUEST</name>
+          <initializer>= CONT_STATEMACH_STANDBY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2abe9b2b4bb1a6a550912982342329cd58" prot="public">
+          <name>CONT_STATE_NORMAL_REQUEST</name>
+          <initializer>= CONT_STATEMACH_NORMAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a01cfd2e78163015fc9ae3de97c45f5e4" prot="public">
+          <name>CONT_STATE_CHARGE_REQUEST</name>
+          <initializer>= CONT_STATEMACH_CHARGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa8b0bdf04245ee5032db6deb70d910bc" prot="public">
+          <name>CONT_STATE_ERROR_REQUEST</name>
+          <initializer>= CONT_STATEMACH_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a582ee896ca93b0a532328df41b4e448b" prot="public">
+          <name>CONT_STATE_NO_REQUEST</name>
+          <initializer>= CONT_STATEMACH_RESERVED1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State requests for the CONT statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="156" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="156" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="enum" id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111e" prot="public" static="no">
+        <name>CONT_RETURN_TYPE_e</name>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5a2a057f1180e2cf332d26dc02b4a253" prot="public">
+          <name>CONT_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea531cb5d198135dc257650a83ed6d633e" prot="public">
+          <name>CONT_BUSY_OK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CONT under load <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea468cc2110d0c1d5486278e0e41111444" prot="public">
+          <name>CONT_REQUEST_PENDING</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requested to be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eaaef2187aaaa124a3eaecd854c7b68c17" prot="public">
+          <name>CONT_REQUEST_IMPOSSIBLE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>requested not possible </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea9ec1380fa6f3837d8d6e283f1e496337" prot="public">
+          <name>CONT_ILLEGAL_REQUEST</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request can not be executed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea678a1dcb8becaa22aa9fbd312ea9b799" prot="public">
+          <name>CONT_INIT_ERROR</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error state: Source: Initialization </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eaedca04faf69a75637ab12eba6ebcadd6" prot="public">
+          <name>CONT_OK_FROM_ERROR</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Return from error <ndash/>&gt; ok </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5b1ba20522db16a494e9ca61c2c10eeb" prot="public">
+          <name>CONT_ERROR</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>General error state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eac161ccadcb61f3ac1db3d002bf7bc192" prot="public">
+          <name>CONT_ALREADY_INITIALIZED</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initialization of LTC already finished </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea3e9a3a690178ca045b5a14912d43515b" prot="public">
+          <name>CONT_ILLEGAL_TASK_TYPE</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Illegal </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible return values when state requests are made to the CONT statemachine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="168" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="168" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="contactor_8h_1a35c32529cb2bc28f84d5bc1e7b911293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CONT_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>CONT_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks the configuration of the contactor-module. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>retVal (type: STD_RETURN_TYPE_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1a87532f84507ab93724ecbbc4dd93e3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref></type>
+        <definition>CONT_ELECTRICAL_STATE_TYPE_s CONT_GetContactorSetValue</definition>
+        <argsstring>(CONT_NAMES_e contactor)</argsstring>
+        <name>CONT_GetContactorSetValue</name>
+        <param>
+          <type><ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059" kindref="member">CONT_NAMES_e</ref></type>
+          <declname>contactor</declname>
+        </param>
+        <briefdescription>
+<para>Gets the latest value (TRUE, FALSE) the contactors were set to. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: CONT_NAMES_e)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns CONT_SWITCH_OFF or CONT_SWITCH_ON </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="59" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="110" bodyend="116"/>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="contactor__cfg_8c_1aec4ad2db194c0165117ea9a5d2738d79" compoundref="contactor__cfg_8c" startline="52">cont_contactor_states</references>
+        <references refid="structCONT__ELECTRICAL__STATE__s_1a260fd18e87fe58c6ae25dab8b6317ea1" compoundref="contactor__cfg_8h" startline="270">CONT_ELECTRICAL_STATE_s::set</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1a5fa608300553cdf59688e1e60b5e3f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref></type>
+        <definition>CONT_ELECTRICAL_STATE_TYPE_s CONT_GetContactorFeedback</definition>
+        <argsstring>(CONT_NAMES_e contactor)</argsstring>
+        <name>CONT_GetContactorFeedback</name>
+        <param>
+          <type><ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059" kindref="member">CONT_NAMES_e</ref></type>
+          <declname>contactor</declname>
+        </param>
+        <briefdescription>
+<para>Reads the feedback pin of every contactor and returns its current value (CONT_SWITCH_OFF/CONT_SWITCH_ON). </para>        </briefdescription>
+        <detaileddescription>
+<para>If the contactor has a feedback pin the measured feedback is returned. If the contactor has no feedback pin, it is assumed that after a certain time the contactor has reached the requested state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: CONT_NAMES_e)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>measuredContactorState (type: CONT_ELECTRICAL_STATE_TYPE_s) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="119" bodyend="155"/>
+        <references refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceaf60b81b9b4d5da999e1ea5ede3c43119" compoundref="contactor__cfg_8h" startline="244">CONT_SWITCH_UNDEF</references>
+        <references refid="contactor__cfg_8h_1a038c69a22bf936df1d5673d1e136738fa04be725f28860665e0a47e9e6c52ef10" compoundref="contactor__cfg_8h" startline="266">CONT_HAS_NO_FEEDBACK</references>
+        <references refid="contactor__cfg_8c_1a3e957b848a72b0ff952a9ccb140ae537" compoundref="contactor__cfg_8c" startline="41">cont_contactors_config</references>
+        <references refid="contactor__cfg_8c_1aec4ad2db194c0165117ea9a5d2738d79" compoundref="contactor__cfg_8c" startline="52">cont_contactor_states</references>
+        <references refid="structCONT__ELECTRICAL__STATE__s_1a260fd18e87fe58c6ae25dab8b6317ea1" compoundref="contactor__cfg_8h" startline="270">CONT_ELECTRICAL_STATE_s::set</references>
+        <references refid="contactor__cfg_8h_1a038c69a22bf936df1d5673d1e136738fa45b085b8f014f617659149568971e3e4" compoundref="contactor__cfg_8h" startline="264">CONT_FEEDBACK_NORMALLY_OPEN</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11daa6a9bf5c875444b48ed54169d1bae9fc" compoundref="io__cfg_8h" startline="203">IO_PIN_RESET</references>
+        <references refid="io_8c_1aa0f7f326f4e3dc599c3e47be410a460b" compoundref="io_8c" startline="140" endline="145">IO_ReadPin</references>
+        <references refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaecea8f07393113924b8b78cde8ce58a864cd" compoundref="contactor__cfg_8h" startline="243">CONT_SWITCH_ON</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+        <references refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceabf21f522aaba8c0b43c6987c3f82fdf9" compoundref="contactor__cfg_8h" startline="242">CONT_SWITCH_OFF</references>
+        <references refid="contactor__cfg_8h_1a038c69a22bf936df1d5673d1e136738faf512cd18c6069bb875adb17f147ffbbc" compoundref="contactor__cfg_8h" startline="265">CONT_FEEDBACK_NORMALLY_CLOSED</references>
+        <references refid="structCONT__ELECTRICAL__STATE__s_1a3d23cb590ff7e8b9a1bf17478d58ff14" compoundref="contactor__cfg_8h" startline="271">CONT_ELECTRICAL_STATE_s::feedback</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1ab176f339a77de0ed6e2eefb47974ff8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CONT_AcquireContactorFeedbacks</definition>
+        <argsstring>(void)</argsstring>
+        <name>CONT_AcquireContactorFeedbacks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reads the feedback pins of all contactors and updates the contactors_cfg[] array with their current states. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns E_OK if all feedbacks could be acquired (type: STD_RETURN_TYPE_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="82" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="158" bodyend="167"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="contactor__cfg_8c_1ac7645f11ebe38fc9233a79184c3d6397" compoundref="contactor__cfg_8c" startline="63">cont_contactors_config_length</references>
+        <references refid="contactor__cfg_8c_1aec4ad2db194c0165117ea9a5d2738d79" compoundref="contactor__cfg_8c" startline="52">cont_contactor_states</references>
+        <references refid="structCONT__ELECTRICAL__STATE__s_1a3d23cb590ff7e8b9a1bf17478d58ff14" compoundref="contactor__cfg_8h" startline="271">CONT_ELECTRICAL_STATE_s::feedback</references>
+        <references refid="contactor_8c_1a5fa608300553cdf59688e1e60b5e3f6d" compoundref="contactor_8c" startline="119" endline="155">CONT_GetContactorFeedback</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1a0943d21ca71b1061982894195be96fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CONT_SetContactorState</definition>
+        <argsstring>(CONT_NAMES_e contactor, CONT_ELECTRICAL_STATE_TYPE_s requestedContactorState)</argsstring>
+        <name>CONT_SetContactorState</name>
+        <param>
+          <type><ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059" kindref="member">CONT_NAMES_e</ref></type>
+          <declname>contactor</declname>
+        </param>
+        <param>
+          <type><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref></type>
+          <declname>requestedContactorState</declname>
+        </param>
+        <briefdescription>
+<para>Sets the contactor state to its requested state, if the contactor is at that time not in the requested state. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the new state was already requested, but not reached (meaning the measured feedback does not return the requested state), there are two states: it can be still ok (E_OK), because the contactor has some time left to get physically in the requested state (passed time since the request is lower than the limit) or it can be not ok (E_NOT_OK), because there is timing violation, i.e. the contactor has surpassed the maximum time for getting in the requested state. It returns E_OK if the requested state was successfully set or if the contactor was at the requested state before.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: CONT_NAMES_e) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestedContactorState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(type: CONT_ELECTRICAL_STATE_TYPE_s)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>retVal (type: STD_RETURN_TYPE_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="101" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="169" bodyend="199"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaecea8f07393113924b8b78cde8ce58a864cd" compoundref="contactor__cfg_8h" startline="243">CONT_SWITCH_ON</references>
+        <references refid="contactor__cfg_8c_1aec4ad2db194c0165117ea9a5d2738d79" compoundref="contactor__cfg_8c" startline="52">cont_contactor_states</references>
+        <references refid="structCONT__ELECTRICAL__STATE__s_1a260fd18e87fe58c6ae25dab8b6317ea1" compoundref="contactor__cfg_8h" startline="270">CONT_ELECTRICAL_STATE_s::set</references>
+        <references refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" compoundref="io_8c" startline="147" endline="150">IO_WritePin</references>
+        <references refid="contactor__cfg_8c_1a3e957b848a72b0ff952a9ccb140ae537" compoundref="contactor__cfg_8c" startline="41">cont_contactors_config</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11da1147ec98546e2e04cba09c4e6e4ff2e3" compoundref="io__cfg_8h" startline="204">IO_PIN_SET</references>
+        <references refid="diag_8h_1a55d0865d598a27a1bb18d386171cfd93adf22fbfe2a3d7a0dfc7335ab7d20e888" compoundref="diag_8h" startline="46">DIAG_HANDLER_RETURN_OK</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="450" endline="484">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1aa1bfdc71aba1d6b54f09c3fbc341f540" compoundref="diag__cfg_8h" startline="196">DIAG_CH_CONTACTOR_CLOSING</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" compoundref="diag__id__cfg_8h" startline="43">DIAG_EVENT_OK</references>
+        <references refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceabf21f522aaba8c0b43c6987c3f82fdf9" compoundref="contactor__cfg_8h" startline="242">CONT_SWITCH_OFF</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" compoundref="database__cfg_8h" startline="123">DATA_BLOCK_ID_CURRENT</references>
+        <references refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" compoundref="database__cfg_8h" startline="240">DATA_BLOCK_CURRENT_s::current</references>
+        <references refid="group__CONFIG__CONTACTOR_1ga4cd53889f01de0ef4052dc1a58003c50" compoundref="contactor__cfg_8h" startline="71">BAD_SWITCHOFF_CURRENT_POS</references>
+        <references refid="group__CONFIG__CONTACTOR_1gac364c7cf5a33e8a69ff5dc3e6b8eb79f" compoundref="contactor__cfg_8h" startline="88">BAD_SWITCHOFF_CURRENT_NEG</references>
+        <references refid="diag__cfg_8h_1a5033e103b8c4a79161577e0eb4edbb4c" compoundref="diag__cfg_8h" startline="186">DIAG_CH_CONTACTOR_DAMAGED</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="diag__cfg_8h_1a1c035bfb94346c3509e7c01603d08628" compoundref="diag__cfg_8h" startline="191">DIAG_CH_CONTACTOR_OPENING</references>
+        <references refid="io__cfg_8h_1a810cb4986f0729a97af72c3c80cdd11daa6a9bf5c875444b48ed54169d1bae9fc" compoundref="io__cfg_8h" startline="203">IO_PIN_RESET</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1a4ecb75068e6d93d855acdace72c657fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>STD_RETURN_TYPE_e CONT_SwitchAllContactorsOff</definition>
+        <argsstring>(void)</argsstring>
+        <name>CONT_SwitchAllContactorsOff</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Iterates over the contactor array and switches all contactors off. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>E_OK if all contactors were opened, E_NOT_OK if not all contactors could be opened (type: STD_RETURN_TYPE_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="110" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="202" bodyend="221"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="contactor__cfg_8c_1ac7645f11ebe38fc9233a79184c3d6397" compoundref="contactor__cfg_8c" startline="63">cont_contactors_config_length</references>
+        <references refid="contactor_8c_1a0943d21ca71b1061982894195be96fe9" compoundref="contactor_8c" startline="169" endline="199">CONT_SetContactorState</references>
+        <references refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceabf21f522aaba8c0b43c6987c3f82fdf9" compoundref="contactor__cfg_8h" startline="242">CONT_SWITCH_OFF</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="group__CONFIG__BATTERYSYSTEM_1gad2afbed51c59fa4b3a43169ab83f1fc7" compoundref="batterysystem__cfg_8h" startline="156">BS_NR_OF_CONTACTORS</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1ada308aa02debcd131b6be7cfdff748c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111e" kindref="member">CONT_RETURN_TYPE_e</ref></type>
+        <definition>CONT_RETURN_TYPE_e CONT_SetStateRequest</definition>
+        <argsstring>(CONT_STATE_REQUEST_e statereq)</argsstring>
+        <name>CONT_SetStateRequest</name>
+        <param>
+          <type><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" kindref="member">CONT_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable cont_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine,e.g, start voltage measurement, read result of voltage measurement, re-initialization. It calls <ref refid="contactor_8c_1a2d058a2544cc6ec8f43566f21541404f" kindref="member">CONT_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>request to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CONT_OK if a state request was made, CONT_STATE_NO_REQUEST if no state request was made </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="202" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="318" bodyend="330"/>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a582ee896ca93b0a532328df41b4e448b" compoundref="contactor_8h" startline="162">CONT_STATE_NO_REQUEST</references>
+        <references refid="contactor_8c_1a2d058a2544cc6ec8f43566f21541404f" compoundref="contactor_8c" startline="344" endline="381">CONT_CheckStateRequest</references>
+        <references refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5a2a057f1180e2cf332d26dc02b4a253" compoundref="contactor_8h" startline="169">CONT_OK</references>
+        <references refid="structCONT__STATE__s_1a06bc7cc6f626790dd9f273645ad47794" compoundref="contactor_8h" startline="187">CONT_STATE_s::statereq</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1ae67a61c958356a5fd0bf3e1b4763aaa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref></type>
+        <definition>CONT_STATEMACH_e CONT_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>CONT_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the CONT state machine.</para><para><simplesect kind="return"><para>current state, taken from CONT_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="203" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="278" bodyend="280"/>
+        <references refid="structCONT__STATE__s_1a2e31f68fba0e31aea565b5bd6b1060ad" compoundref="contactor_8h" startline="188">CONT_STATE_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="contactor_8h_1a8b14c37988e970b1cce9ca18c1e3f09c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CONT_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>CONT_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the CONT driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the CONT state machine. It must be called time-triggered, every 1ms. It exits without effect, if the function call is a reentrance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="204" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.c" bodystart="391" bodyend="822"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a582ee896ca93b0a532328df41b4e448b" compoundref="contactor_8h" startline="162">CONT_STATE_NO_REQUEST</references>
+        <references refid="contactor_8c_1a56ffcb5f5f963a8a71dbd6c11b84d8b1" compoundref="contactor_8c" startline="237" endline="248">CONT_CheckReEntrance</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="802" endline="811">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fad54b8794b2d7e510c253f88f13998f0a" compoundref="diag__cfg_8h" startline="294">DIAG_SYSMON_CONT_ID</references>
+        <references refid="structCONT__STATE__s_1a2e31f68fba0e31aea565b5bd6b1060ad" compoundref="contactor_8h" startline="188">CONT_STATE_s::state</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a0c70c37bb7f9c35fdb03241c6b24e6f8" compoundref="contactor_8h" startline="123">CONT_STATEMACH_UNINITIALIZED</references>
+        <references refid="contactor_8c_1a2b2ba5d5312f7ea19245ce7012fa38d5" compoundref="contactor_8c" startline="829" endline="922">CONT_CheckFeedback</references>
+        <references refid="structCONT__STATE__s_1a987c37e12eb768b4cdad4a2ee69b6783" compoundref="contactor_8h" startline="193">CONT_STATE_s::OscillationCounter</references>
+        <references refid="structCONT__STATE__s_1a657e5d4d48260b32595c794715075259" compoundref="contactor_8h" startline="195">CONT_STATE_s::PrechargeTimeOut</references>
+        <references refid="structCONT__STATE__s_1ae61bbc48ea7b6e9b37d393d2d3e33961" compoundref="contactor_8h" startline="186">CONT_STATE_s::timer</references>
+        <references refid="structCONT__STATE__s_1ad71b991be3e5dea59d0039b253c675c0" compoundref="contactor_8h" startline="196">CONT_STATE_s::triggerentry</references>
+        <references refid="contactor_8c_1a232f0f791751cad851411972418eba31" compoundref="contactor_8c" startline="293" endline="302">CONT_TransferStateRequest</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aaccfc4a81d5179235454c5eeb3d64ee9" compoundref="contactor_8h" startline="157">CONT_STATE_INIT_REQUEST</references>
+        <references refid="contactor_8c_1abd2223fec6d197a70b6f05f63eb19d64" compoundref="contactor_8c" startline="52">CONT_SAVELASTSTATES</references>
+        <references refid="contactor__cfg_8h_1a651954ad899605ef56510a4f64bdd151" compoundref="contactor__cfg_8h" startline="171">CONT_STATEMACH_SHORTTIME_MS</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6def21c1cb4e11d3a884eac05812a30c" compoundref="contactor_8h" startline="124">CONT_STATEMACH_INITIALIZATION</references>
+        <references refid="structCONT__STATE__s_1a1623cf548cd3b38b42119d3b7b2d5a44" compoundref="contactor_8h" startline="189">CONT_STATE_s::substate</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a16ba39b6d1d4c386195ef655f7c182e8" compoundref="contactor_8h" startline="141">CONT_ENTRY</references>
+        <references refid="structCONT__STATE__s_1aeee6f16c0cdb49e60ff3c1c7d5c2d5c6" compoundref="contactor_8h" startline="192">CONT_STATE_s::ErrRequestCounter</references>
+        <references refid="contactor_8c_1a55899b3cdd63b890572355d7931b7498" compoundref="contactor_8c" startline="55">CONT_OPENALLCONTACTORS</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a8b4b99183eaa00cc99608c9378d09fce" compoundref="contactor_8h" startline="125">CONT_STATEMACH_INITIALIZED</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3aa8615ad2c5950b9888df73afbcd66e9d" compoundref="contactor_8h" startline="126">CONT_STATEMACH_IDLE</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a2b9ff639fa9daed730461a3f615b5226" compoundref="contactor_8h" startline="127">CONT_STATEMACH_STANDBY</references>
+        <references refid="contactor__cfg_8h_1a61c8a548f84de651049b1d9898459d89" compoundref="contactor__cfg_8h" startline="146">CONT_OSCILLATION_LIMIT</references>
+        <references refid="contactor_8c_1a757ea698e2c9845babe21845508732b2" compoundref="contactor_8c" startline="63">CONT_OPENPRECHARGE</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a23c27d8968ef43e1cb254a0f5dd54f9f" compoundref="contactor_8h" startline="142">CONT_OPEN_FIRST_CONTACTOR</references>
+        <references refid="batterysystem__cfg_8c_1ab63a3ee8060ce339fd0eaf6029981512" compoundref="batterysystem__cfg_8c" startline="46" endline="68">BS_CheckCurrent_Direction</references>
+        <references refid="batterysystem__cfg_8h_1aeded56ef229255f5f5dd51380a4ebc21a37639319fbfdbf01d77c9fd1532ab80c" compoundref="batterysystem__cfg_8h" startline="51">BS_CURRENT_DISCHARGE</references>
+        <references refid="contactor_8c_1a4e6433345c56594670d7ba6c35d09750" compoundref="contactor_8c" startline="60">CONT_OPENPLUS</references>
+        <references refid="contactor__cfg_8h_1a52292a92cc4a3650e02ea643129c70d6" compoundref="contactor__cfg_8h" startline="158">CONT_DELAY_BETWEEN_OPENING_CONTACTORS_MS</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5189d16430eec373e7ce3038397759ca" compoundref="contactor_8h" startline="143">CONT_OPEN_SECOND_CONTACTOR_MINUS</references>
+        <references refid="contactor_8c_1a4901fef6e42f60132971f7106c0bccbc" compoundref="contactor_8c" startline="57">CONT_OPENMINUS</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a27950889fdc8fe2960f9f1fca38768b1" compoundref="contactor_8h" startline="144">CONT_OPEN_SECOND_CONTACTOR_PLUS</references>
+        <references refid="contactor__cfg_8h_1aaac17aeede58ab55741dcb74e4e4db7b" compoundref="contactor__cfg_8h" startline="164">CONT_DELAY_AFTER_OPENING_SECOND_CONTACTORS_MS</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58ab571ae5a1f7366d0816028ded1ba9b0e" compoundref="contactor_8h" startline="145">CONT_STANDBY</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa703ceb4238d8338194df6b390cf67d9" compoundref="contactor_8h" startline="158">CONT_STATE_STANDBY_REQUEST</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2abe9b2b4bb1a6a550912982342329cd58" compoundref="contactor_8h" startline="159">CONT_STATE_NORMAL_REQUEST</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6a32931d445f3fa519ba43b0fc1557e7" compoundref="contactor_8h" startline="128">CONT_STATEMACH_PRECHARGE</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a01cfd2e78163015fc9ae3de97c45f5e4" compoundref="contactor_8h" startline="160">CONT_STATE_CHARGE_REQUEST</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a5037d040603f7527d46b4a23749a3863" compoundref="contactor_8h" startline="130">CONT_STATEMACH_CHARGE_PRECHARGE</references>
+        <references refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa8b0bdf04245ee5032db6deb70d910bc" compoundref="contactor_8h" startline="161">CONT_STATE_ERROR_REQUEST</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a180d97284df45a227d91ca63abec0b3e" compoundref="contactor_8h" startline="134">CONT_STATEMACH_ERROR</references>
+        <references refid="structCONT__STATE__s_1a6bf569c0d14c9293b6fa5a79793b4fd1" compoundref="contactor_8h" startline="194">CONT_STATE_s::PrechargeTryCounter</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58adcb79f3a913f42a7d8ffb0419c47a241" compoundref="contactor_8h" startline="146">CONT_PRECHARGE_CLOSE_MINUS</references>
+        <references refid="contactor__cfg_8h_1a5b2fa13c01278965f16085cc58a29528" compoundref="contactor__cfg_8h" startline="184">CONT_PRECHARGE_TIMEOUT_MS</references>
+        <references refid="contactor_8c_1a2e510d4a85844481f6ae40826eff68e1" compoundref="contactor_8c" startline="58">CONT_CLOSEMINUS</references>
+        <references refid="contactor__cfg_8h_1af35e30d0de03ff76f0379bf35f7e97a6" compoundref="contactor__cfg_8h" startline="189">CONT_STATEMACH_WAIT_AFTER_CLOSING_MINUS_MS</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a76a5d77c646bbc4a26023385ff629c9c" compoundref="contactor_8h" startline="147">CONT_PRECHARGE_CLOSE_PRECHARGE</references>
+        <references refid="contactor_8c_1a679f02fbf8938d4e461c87e143abd911" compoundref="contactor_8c" startline="64">CONT_CLOSEPRECHARGE</references>
+        <references refid="contactor__cfg_8h_1a21f9d9c086c7caae82b8455d577b24e5" compoundref="contactor__cfg_8h" startline="195">CONT_STATEMACH_WAIT_AFTER_CLOSING_PRECHARGE_MS</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5c88e1ba3eda05615bebbcb3132aacd2" compoundref="contactor_8h" startline="149">CONT_PRECHARGE_CHECK_VOLTAGES</references>
+        <references refid="contactor_8c_1abfad29249a69b705b160c291b54064ee" compoundref="contactor_8c" startline="930" endline="956">CONT_CheckVoltages</references>
+        <references refid="contactor_8c_1a0c4178a5f1444f3cb72885c5f2fca172" compoundref="contactor_8c" startline="61">CONT_CLOSEPLUS</references>
+        <references refid="contactor__cfg_8h_1a0d906b226c505d1486b18d8061b45a35" compoundref="contactor__cfg_8h" startline="201">CONT_STATEMACH_WAIT_AFTER_CLOSING_PLUS_MS</references>
+        <references refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a1926ecec09b33e31b86aae78d0896590" compoundref="contactor_8h" startline="150">CONT_PRECHARGE_OPEN_PRECHARGE</references>
+        <references refid="contactor__cfg_8h_1a85f767efdba01d204e8c80a1441e0414" compoundref="contactor__cfg_8h" startline="152">CONT_PRECHARGE_TRIES</references>
+        <references refid="contactor__cfg_8h_1ac4eed0cc024d023d39f5b4a2e38f30f6" compoundref="contactor__cfg_8h" startline="177">CONT_STATEMACH_TIMEAFTERPRECHARGEFAIL_MS</references>
+        <references refid="contactor__cfg_8h_1a719559b6fea9e5e093523b80a12ed973" compoundref="contactor__cfg_8h" startline="207">CONT_STATEMACH_WAIT_AFTER_OPENING_PRECHARGE_MS</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a9bc9bd84064351137f9100a8a01e9aeb" compoundref="contactor_8h" startline="129">CONT_STATEMACH_NORMAL</references>
+        <references refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a4e5351ae3edf4046f40fb35cae1306f6" compoundref="contactor_8h" startline="131">CONT_STATEMACH_CHARGE</references>
+        <references refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5b1ba20522db16a494e9ca61c2c10eeb" compoundref="contactor_8h" startline="176">CONT_ERROR</references>
+        <references refid="structCONT__STATE__s_1afbb91f120818253fa16172f4187e974a" compoundref="contactor_8h" startline="197">CONT_STATE_s::counter</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Headers for the driver for the contactors. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>23.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>CONT </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>CONTACTOR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTACTOR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="contactor__cfg_8h" kindref="compound">contactor_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="contactor_8h_1a35c32529cb2bc28f84d5bc1e7b911293" kindref="member">CONT_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref><sp/><ref refid="contactor_8h_1a87532f84507ab93724ecbbc4dd93e3c5" kindref="member">CONT_GetContactorSetValue</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059" kindref="member">CONT_NAMES_e</ref><sp/>contactor);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref><sp/><ref refid="contactor_8h_1a5fa608300553cdf59688e1e60b5e3f6d" kindref="member">CONT_GetContactorFeedback</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059" kindref="member">CONT_NAMES_e</ref><sp/>contactor);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="contactor_8h_1ab176f339a77de0ed6e2eefb47974ff8f" kindref="member">CONT_AcquireContactorFeedbacks</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059" kindref="member">CONT_NAMES_e</ref><sp/>contactor,<sp/><ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaece" kindref="member">CONT_ELECTRICAL_STATE_TYPE_s</ref><sp/>requestedContactorState);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="contactor_8h_1a4ecb75068e6d93d855acdace72c657fb" kindref="member">CONT_SwitchAllContactorsOff</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Init-Sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a0c70c37bb7f9c35fdb03241c6b24e6f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a0c70c37bb7f9c35fdb03241c6b24e6f8" kindref="member">CONT_STATEMACH_UNINITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6def21c1cb4e11d3a884eac05812a30c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6def21c1cb4e11d3a884eac05812a30c" kindref="member">CONT_STATEMACH_INITIALIZATION</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a8b4b99183eaa00cc99608c9378d09fce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a8b4b99183eaa00cc99608c9378d09fce" kindref="member">CONT_STATEMACH_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3aa8615ad2c5950b9888df73afbcd66e9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3aa8615ad2c5950b9888df73afbcd66e9d" kindref="member">CONT_STATEMACH_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a2b9ff639fa9daed730461a3f615b5226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a2b9ff639fa9daed730461a3f615b5226" kindref="member">CONT_STATEMACH_STANDBY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6a32931d445f3fa519ba43b0fc1557e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6a32931d445f3fa519ba43b0fc1557e7" kindref="member">CONT_STATEMACH_PRECHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a9bc9bd84064351137f9100a8a01e9aeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a9bc9bd84064351137f9100a8a01e9aeb" kindref="member">CONT_STATEMACH_NORMAL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a5037d040603f7527d46b4a23749a3863" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a5037d040603f7527d46b4a23749a3863" kindref="member">CONT_STATEMACH_CHARGE_PRECHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a4e5351ae3edf4046f40fb35cae1306f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a4e5351ae3edf4046f40fb35cae1306f6" kindref="member">CONT_STATEMACH_CHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3af66f3ed6c53aed5c5e213b02224ae5ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3af66f3ed6c53aed5c5e213b02224ae5ce" kindref="member">CONT_STATEMACH_UNDEFINED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3ad0250a5a8ea760cdf2f51138e1c01773" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3ad0250a5a8ea760cdf2f51138e1c01773" kindref="member">CONT_STATEMACH_RESERVED1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x80,<sp/></highlight></codeline>
+<codeline lineno="134" refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a180d97284df45a227d91ca63abec0b3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a180d97284df45a227d91ca63abec0b3e" kindref="member">CONT_STATEMACH_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0xF0,<sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="141" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a16ba39b6d1d4c386195ef655f7c182e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a16ba39b6d1d4c386195ef655f7c182e8" kindref="member">CONT_ENTRY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a23c27d8968ef43e1cb254a0f5dd54f9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a23c27d8968ef43e1cb254a0f5dd54f9f" kindref="member">CONT_OPEN_FIRST_CONTACTOR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5189d16430eec373e7ce3038397759ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5189d16430eec373e7ce3038397759ca" kindref="member">CONT_OPEN_SECOND_CONTACTOR_MINUS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a27950889fdc8fe2960f9f1fca38768b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a27950889fdc8fe2960f9f1fca38768b1" kindref="member">CONT_OPEN_SECOND_CONTACTOR_PLUS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58ab571ae5a1f7366d0816028ded1ba9b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58ab571ae5a1f7366d0816028ded1ba9b0e" kindref="member">CONT_STANDBY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58adcb79f3a913f42a7d8ffb0419c47a241" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58adcb79f3a913f42a7d8ffb0419c47a241" kindref="member">CONT_PRECHARGE_CLOSE_MINUS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a76a5d77c646bbc4a26023385ff629c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a76a5d77c646bbc4a26023385ff629c9c" kindref="member">CONT_PRECHARGE_CLOSE_PRECHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a0d684462238d30d3cd8b0342bafeced9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a0d684462238d30d3cd8b0342bafeced9" kindref="member">CONT_PRECHARGE_CLOSE_PLUS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5c88e1ba3eda05615bebbcb3132aacd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a5c88e1ba3eda05615bebbcb3132aacd2" kindref="member">CONT_PRECHARGE_CHECK_VOLTAGES</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a1926ecec09b33e31b86aae78d0896590" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58a1926ecec09b33e31b86aae78d0896590" kindref="member">CONT_PRECHARGE_OPEN_PRECHARGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/><ref refid="contactor_8h_1af6ae0e083df30983ccca5816d5eaae58" kindref="member">CONT_STATEMACH_SUB_e</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="157" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aaccfc4a81d5179235454c5eeb3d64ee9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aaccfc4a81d5179235454c5eeb3d64ee9" kindref="member">CONT_STATE_INIT_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a6def21c1cb4e11d3a884eac05812a30c" kindref="member">CONT_STATEMACH_INITIALIZATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa703ceb4238d8338194df6b390cf67d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa703ceb4238d8338194df6b390cf67d9" kindref="member">CONT_STATE_STANDBY_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a2b9ff639fa9daed730461a3f615b5226" kindref="member">CONT_STATEMACH_STANDBY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2abe9b2b4bb1a6a550912982342329cd58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2abe9b2b4bb1a6a550912982342329cd58" kindref="member">CONT_STATE_NORMAL_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a9bc9bd84064351137f9100a8a01e9aeb" kindref="member">CONT_STATEMACH_NORMAL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a01cfd2e78163015fc9ae3de97c45f5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a01cfd2e78163015fc9ae3de97c45f5e4" kindref="member">CONT_STATE_CHARGE_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a4e5351ae3edf4046f40fb35cae1306f6" kindref="member">CONT_STATEMACH_CHARGE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa8b0bdf04245ee5032db6deb70d910bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2aa8b0bdf04245ee5032db6deb70d910bc" kindref="member">CONT_STATE_ERROR_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3a180d97284df45a227d91ca63abec0b3e" kindref="member">CONT_STATEMACH_ERROR</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a582ee896ca93b0a532328df41b4e448b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2a582ee896ca93b0a532328df41b4e448b" kindref="member">CONT_STATE_NO_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3ad0250a5a8ea760cdf2f51138e1c01773" kindref="member">CONT_STATEMACH_RESERVED1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}<sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" kindref="member">CONT_STATE_REQUEST_e</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="169" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5a2a057f1180e2cf332d26dc02b4a253" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5a2a057f1180e2cf332d26dc02b4a253" kindref="member">CONT_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea531cb5d198135dc257650a83ed6d633e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea531cb5d198135dc257650a83ed6d633e" kindref="member">CONT_BUSY_OK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea468cc2110d0c1d5486278e0e41111444" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea468cc2110d0c1d5486278e0e41111444" kindref="member">CONT_REQUEST_PENDING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eaaef2187aaaa124a3eaecd854c7b68c17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eaaef2187aaaa124a3eaecd854c7b68c17" kindref="member">CONT_REQUEST_IMPOSSIBLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea9ec1380fa6f3837d8d6e283f1e496337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea9ec1380fa6f3837d8d6e283f1e496337" kindref="member">CONT_ILLEGAL_REQUEST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea678a1dcb8becaa22aa9fbd312ea9b799" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea678a1dcb8becaa22aa9fbd312ea9b799" kindref="member">CONT_INIT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eaedca04faf69a75637ab12eba6ebcadd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eaedca04faf69a75637ab12eba6ebcadd6" kindref="member">CONT_OK_FROM_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5b1ba20522db16a494e9ca61c2c10eeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea5b1ba20522db16a494e9ca61c2c10eeb" kindref="member">CONT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eac161ccadcb61f3ac1db3d002bf7bc192" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111eac161ccadcb61f3ac1db3d002bf7bc192" kindref="member">CONT_ALREADY_INITIALIZED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>30,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea3e9a3a690178ca045b5a14912d43515b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111ea3e9a3a690178ca045b5a14912d43515b" kindref="member">CONT_ILLEGAL_TASK_TYPE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>99,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}<sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111e" kindref="member">CONT_RETURN_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="structCONT__STATE__s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186" refid="structCONT__STATE__s_1ae61bbc48ea7b6e9b37d393d2d3e33961" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structCONT__STATE__s_1ae61bbc48ea7b6e9b37d393d2d3e33961" kindref="member">timer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187" refid="structCONT__STATE__s_1a06bc7cc6f626790dd9f273645ad47794" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" kindref="member">CONT_STATE_REQUEST_e</ref><sp/><ref refid="structCONT__STATE__s_1a06bc7cc6f626790dd9f273645ad47794" kindref="member">statereq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188" refid="structCONT__STATE__s_1a2e31f68fba0e31aea565b5bd6b1060ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref><sp/><ref refid="structCONT__STATE__s_1a2e31f68fba0e31aea565b5bd6b1060ad" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189" refid="structCONT__STATE__s_1a1623cf548cd3b38b42119d3b7b2d5a44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCONT__STATE__s_1a1623cf548cd3b38b42119d3b7b2d5a44" kindref="member">substate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190" refid="structCONT__STATE__s_1ad08d6753f0e2e70dbda595af4cc9f564" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref><sp/><ref refid="structCONT__STATE__s_1ad08d6753f0e2e70dbda595af4cc9f564" kindref="member">laststate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191" refid="structCONT__STATE__s_1a8133f7ad1aa0b8010714b29becef4273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCONT__STATE__s_1a8133f7ad1aa0b8010714b29becef4273" kindref="member">lastsubstate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192" refid="structCONT__STATE__s_1aeee6f16c0cdb49e60ff3c1c7d5c2d5c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCONT__STATE__s_1aeee6f16c0cdb49e60ff3c1c7d5c2d5c6" kindref="member">ErrRequestCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193" refid="structCONT__STATE__s_1a987c37e12eb768b4cdad4a2ee69b6783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structCONT__STATE__s_1a987c37e12eb768b4cdad4a2ee69b6783" kindref="member">OscillationCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194" refid="structCONT__STATE__s_1a6bf569c0d14c9293b6fa5a79793b4fd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCONT__STATE__s_1a6bf569c0d14c9293b6fa5a79793b4fd1" kindref="member">PrechargeTryCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195" refid="structCONT__STATE__s_1a657e5d4d48260b32595c794715075259" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structCONT__STATE__s_1a657e5d4d48260b32595c794715075259" kindref="member">PrechargeTimeOut</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="structCONT__STATE__s_1ad71b991be3e5dea59d0039b253c675c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCONT__STATE__s_1ad71b991be3e5dea59d0039b253c675c0" kindref="member">triggerentry</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197" refid="structCONT__STATE__s_1afbb91f120818253fa16172f4187e974a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structCONT__STATE__s_1afbb91f120818253fa16172f4187e974a" kindref="member">counter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}<sp/><ref refid="structCONT__STATE__s" kindref="compound">CONT_STATE_s</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="contactor_8h_1a871a57f9808d9f15999fe5bfe4cc111e" kindref="member">CONT_RETURN_TYPE_e</ref><sp/><ref refid="contactor_8h_1ada308aa02debcd131b6be7cfdff748c2" kindref="member">CONT_SetStateRequest</ref>(<ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" kindref="member">CONT_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref><sp/><ref refid="contactor_8h_1ae67a61c958356a5fd0bf3e1b4763aaa1" kindref="member">CONT_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="contactor_8h_1a8b14c37988e970b1cce9ca18c1e3f09c" kindref="member">CONT_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONTACTOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h"/>
+  </compounddef>
+</doxygen>

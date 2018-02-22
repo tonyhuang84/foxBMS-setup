@@ -1,0 +1,4 @@
+<map id="CONT_AcquireContactorFeedbacks" name="CONT_AcquireContactorFeedbacks">
+<area shape="rect" id="node2" href="$contactor_8c.html#a5fa608300553cdf59688e1e60b5e3f6d" title="Reads the feedback pin of every contactor and returns its current value (CONT_SWITCH_OFF/CONT_SWITCH_..." alt="" coords="281,5,480,32"/>
+<area shape="rect" id="node3" href="$io_8c.html#aa0f7f326f4e3dc599c3e47be410a460b" title="Returns the state of a pin. " alt="" coords="528,5,619,32"/>
+</map>

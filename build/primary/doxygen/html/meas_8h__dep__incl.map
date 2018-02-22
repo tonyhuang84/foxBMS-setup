@@ -1,0 +1,6 @@
+<map id="meas.h" name="meas.h">
+<area shape="rect" id="node2" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="137,80,191,107"/>
+<area shape="rect" id="node4" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="216,80,312,107"/>
+<area shape="rect" id="node5" href="$meas_8c.html" title="Driver for the measurements needed by the BMS (e.g., I,V,T). " alt="" coords="337,80,402,107"/>
+</map>

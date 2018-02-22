@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.9. LTC &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../../index.html"/>
+        <link rel="up" title="4. Software Modules" href="../modules.html"/>
+        <link rel="next" title="4.10. Balancing" href="../balancing/balancing.html"/>
+        <link rel="prev" title="4.8. CAN Signal" href="../cansignal/cansignal.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bms/bms.html">4.1. BMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys/sys.html">4.2. System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.3. IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.4. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.5. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../diag/diag.html">4.6. Diagnosis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../can/can.html">4.7. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cansignal/cansignal.html">4.8. CAN Signal</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.9. LTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../balancing/balancing.html">4.10. Balancing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nvm/nvm.html">4.11. NVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../com/com.html">4.12. COM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/uart.html">4.13. UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chksum/chksum.html">4.14. Checksum Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sox/sox.html">4.15. SOX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../isoguard/isoguard.html">4.16. Isoguard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../modules.html">4. Software Modules</a> &raquo;</li>
+        
+      <li>4.9. LTC</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/software_documentation/modules/ltc/ltc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ltc">
+<h1>4.9. LTC<a class="headerlink" href="#ltc" title="Permalink to this headline">¶</a></h1>
+<p>The driver communicates with the LTC6804-1/LTC6811-1 monitoring ICs in daisy-chain configuration. The ICs are used to:</p>
+<blockquote>
+<div><ul class="simple">
+<li>measure the battery cell voltages</li>
+<li>measure the voltages directly on the GPIOs</li>
+<li>measure the voltage of up to 32 inputs via I2C-driven multiplexer</li>
+<li>enable passive balancing of the connected battery cells</li>
+</ul>
+</div></blockquote>
+<p>The slave version is configured in <code class="docutils literal"><span class="pre">src\module\config\ltc_cfg.h</span></code> by the define <code class="docutils literal"><span class="pre">SLAVE_BOARD_VERSION</span></code>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">SLAVE_BOARD_VERSION</span></code> must be set to <code class="docutils literal"><span class="pre">1</span></code> if version 1.xx of the foxBMS Slaves is used.</li>
+<li><code class="docutils literal"><span class="pre">SLAVE_BOARD_VERSION</span></code> must be set to <code class="docutils literal"><span class="pre">2</span></code> if version 2.xx of the foxBMS Slaves is used. Version 2.xx is the default configuration.</li>
+</ul>
+</div></blockquote>
+<div class="section" id="module-files">
+<h2>4.9.1. Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Driver:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\ltc\ltc.c</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\ltc\ltc.h</span></code></li>
+</ul>
+</dd>
+<dt>Driver Configuration:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\ltc_cfg.c</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\module\config\ltc_cfg.h</span></code></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dependencies">
+<h2>4.9.2. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\mcu\mcu.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-primary\src\engine\diag\diag.h</span></code></li>
+<li><code class="docutils literal"><span class="pre">embedded-software\mcu-common\src\module\spi\spi.h</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="detailed-description-of-the-mod-ltc">
+<h2>4.9.3. Detailed Description of the <code class="docutils literal"><span class="pre">ltc</span></code> module<a class="headerlink" href="#detailed-description-of-the-mod-ltc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="state-machine">
+<h3>4.9.3.1. State Machine<a class="headerlink" href="#state-machine" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">ltc</span></code> module is implemented as a state machine. The operation of the state machine is described in <a class="reference internal" href="#ltc-figure1"><span class="std std-numref">fig. 4.39</span></a>.</p>
+<div class="figure" id="id2">
+<span id="ltc-figure1"></span><a class="reference internal image-reference" href="../../../_images/ltc.png"><img alt="../../../_images/ltc.png" src="../../../_images/ltc.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.39 </span><span class="caption-text">LTC6804-1/LTC6811-1 internal state machine</span></p>
+</div>
+<p>After initialization, the state machine goes in a measurement loop:</p>
+<blockquote>
+<div><ul class="simple">
+<li>measure voltages</li>
+<li>read measured voltages</li>
+<li>select multiplexer input</li>
+<li>measure selected input</li>
+<li>read multiplexer input</li>
+<li>check state requests</li>
+<li>balance cells</li>
+</ul>
+</div></blockquote>
+<p>The function <code class="docutils literal"><span class="pre">LTC_SetStateRequest()</span></code> is used to make these state requests to the LTC6804-1/LTC6811-1 state machine.</p>
+<p>If more than one multiplexer input is configured, only one is measured per measurement cycle. The next one is measured during the next cycle. When the last configured multiplexer input is reached, the sequence starts over.</p>
+</div>
+<div class="section" id="results-retrieval-and-balancing-orders">
+<h3>4.9.3.2. Results Retrieval and Balancing Orders<a class="headerlink" href="#results-retrieval-and-balancing-orders" title="Permalink to this headline">¶</a></h3>
+<p>The results of the measurements are written in the database. The balancing is made according to the control variable set in the database.
+The corresponding variables are:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">DATA_BLOCK_CELLVOLTAGE_s</span>         <span class="n">ltc_cellvoltage</span><span class="p">;</span> <span class="c1">//cell voltages</span>
+<span class="n">DATA_BLOCK_CELLTEMPERATURE_s</span>     <span class="n">ltc_celltemperature</span><span class="p">;</span> <span class="c1">//cell temperature</span>
+<span class="n">DATA_BLOCK_MINMAX_s</span>              <span class="n">ltc_minmax</span><span class="p">;</span> <span class="c1">//minimum and maximum values at battery pack</span>
+                                             <span class="c1">//level for voltages and temperatures</span>
+<span class="n">DATA_BLOCK_BALANCING_FEEDBACK_s</span>  <span class="n">ltc_balancing_feedback</span><span class="p">;</span> <span class="c1">//result from balancing feedback</span>
+                                                         <span class="c1">//(is at least one cell being balanced)</span>
+<span class="n">DATA_BLOCK_BALANCING_CONTROL_s</span>   <span class="n">ltc_balancing_control</span><span class="p">;</span> <span class="c1">//balancing orders read from database</span>
+<span class="n">DATA_BLOCK_SLAVE_CONTROL_s</span>       <span class="n">ltc_slave_control</span><span class="p">;</span>    <span class="c1">//features on slave controlled by I2C</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="possible-state-requests">
+<h3>4.9.3.3. Possible state requests<a class="headerlink" href="#possible-state-requests" title="Permalink to this headline">¶</a></h3>
+<p>Folowing actions can be requested:</p>
+<blockquote>
+<div><ul class="simple">
+<li>write to IO port-expander</li>
+<li>read to IO port-expander</li>
+<li>read external temperature sensor on slave</li>
+<li>read global balancing feedback</li>
+<li>read from external slave EEPROM</li>
+<li>write to external slave EEPROM</li>
+</ul>
+</div></blockquote>
+<p>The corresponding requests are made with the following functions from the <code class="docutils literal"><span class="pre">measurement</span></code> module.</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="kt">uint8_t</span> <span class="nf">MEAS_Request_IO_Write</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">uint8_t</span> <span class="nf">MEAS_Request_IO_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">uint8_t</span> <span class="nf">MEAS_Request_Temperature_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">uint8_t</span> <span class="nf">MEAS_Request_BalancingFeedback_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">uint8_t</span> <span class="nf">MEAS_Request_EEPROM_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">uint8_t</span> <span class="nf">MEAS_Request_EEPROM_Write</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Before reading from the EEPROM, the address must be written to <code class="docutils literal"><span class="pre">eeprom_read_address_to_use</span></code> in the database block <code class="docutils literal"><span class="pre">DATA_BLOCK_SLAVE_CONTROL_s</span></code>. The result is stored in <code class="docutils literal"><span class="pre">eeprom_value_read</span></code> in the database block <code class="docutils literal"><span class="pre">DATA_BLOCK_SLAVE_CONTROL_s</span></code>. Once the read operation has been performed, the value <code class="docutils literal"><span class="pre">0xFFFFFFFF</span></code> is stored in <code class="docutils literal"><span class="pre">eeprom_read_address_to_use</span></code>.</p>
+<p>Before writing to the EEPROM, the address must be written to <code class="docutils literal"><span class="pre">eeprom_write_address_to_use</span></code> in the block <code class="docutils literal"><span class="pre">DATA_BLOCK_SLAVE_CONTROL_s</span></code>.  The data to be written must be stored in <code class="docutils literal"><span class="pre">eeprom_value_write</span></code> in the database block <code class="docutils literal"><span class="pre">DATA_BLOCK_SLAVE_CONTROL_s</span></code> before issuing the write request. Once the write operation has been performed, the value <code class="docutils literal"><span class="pre">0xFFFFFFFF</span></code> is stored in <code class="docutils literal"><span class="pre">eeprom_write_address_to_use</span></code>.</p>
+</div>
+<div class="section" id="measurement-frequency">
+<h3>4.9.3.4. Measurement frequency<a class="headerlink" href="#measurement-frequency" title="Permalink to this headline">¶</a></h3>
+<p>When no requests are made, with 8 modules and 12 cell voltages, in normal measurement mode, a measurement cycle takes no more than 20ms. As a consequence, a measurement frequency of 50Hz can be achieved for the voltages.</p>
+<p>If requests are made, the measurement cycle can last longer (e.g., access to the EEPROM on the slaves needs more time).</p>
+</div>
+</div>
+<div class="section" id="configuration-of-the-mod-ltc">
+<h2>4.9.4. Configuration of the <code class="docutils literal"><span class="pre">ltc</span></code> module<a class="headerlink" href="#configuration-of-the-mod-ltc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spi-interface">
+<h3>4.9.4.1. SPI Interface<a class="headerlink" href="#spi-interface" title="Permalink to this headline">¶</a></h3>
+<p>In <code class="docutils literal"><span class="pre">ltc_cfg.h</span></code>, the SPI devices used by the LTC6804-1/LTC6811-1 is defined by the macro <code class="docutils literal"><span class="pre">SPI_HANDLE_LTC</span></code>. The SPI handle must be chosen from the list <code class="docutils literal"><span class="pre">SPI_HandleTypeDef</span> <span class="pre">spi_devices[]</span></code> in <code class="docutils literal"><span class="pre">spi_cfg.c</span></code>. The frequency of the used SPI must be adjusted with the configuration in <code class="docutils literal"><span class="pre">spi_cfg.c</span></code>, so that the frequency is not higher than 1MHz. This is the maximum allowed frequency for the LTC6804-1/LTC6811-1 IC. The function <code class="docutils literal"><span class="pre">LTC_SetTransferTimes()</span></code> sets the waiting times used for the <code class="docutils literal"><span class="pre">ltc</span></code> module automatically at startup. It uses <code class="docutils literal"><span class="pre">LTC_GetSPIClock()</span></code> to get the SPI clock frequency automatically.</p>
+</div>
+<div class="section" id="measurement-mode-and-channel-selection">
+<h3>4.9.4.2. Measurement Mode and Channel Selection<a class="headerlink" href="#measurement-mode-and-channel-selection" title="Permalink to this headline">¶</a></h3>
+<p>Three measurement modes are available for the voltage measurements:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Normal</li>
+<li>Filtered</li>
+<li>Fast</li>
+</ul>
+</div></blockquote>
+<p>These modes are defined in the LTC6804-1/LTC6811-1 datasheet <a class="reference internal" href="#ltc-datasheet" id="id1">[ltc_datasheet]</a>. For cell voltage measurements, the macro <code class="docutils literal"><span class="pre">VOLTAGE_MEASUREMENT_MODE</span></code> is defined in <code class="docutils literal"><span class="pre">ltc_cfg.h</span></code>. For multiplexers measurement, the macro <code class="docutils literal"><span class="pre">GPIO_MEASUREMENT_MODE</span></code> is defined in <code class="docutils literal"><span class="pre">ltc_cfg.h</span></code>.</p>
+</div>
+<div class="section" id="changing-the-number-of-cell-voltages">
+<h3>4.9.4.3. Changing the number of cell voltages<a class="headerlink" href="#changing-the-number-of-cell-voltages" title="Permalink to this headline">¶</a></h3>
+<p>This number is changed in <code class="docutils literal"><span class="pre">batterysystem_cfg.h</span></code> with the define <code class="docutils literal"><span class="pre">BS_NR_OF_BAT_CELLS_PER_MODULE</span></code>.</p>
+<p>In addition, the variable</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">ltc_voltage_input_used</span><span class="p">[</span><span class="n">BS_MAX_SUPPORTED_CELLS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>must be adapted, too, in <code class="docutils literal"><span class="pre">ltc_cfg.c</span></code>.</p>
+<p>It has the size of <code class="docutils literal"><span class="pre">BS_MAX_SUPPORTED_CELLS</span></code>. If a cell voltage is connected to the LTC IC input, <code class="docutils literal"><span class="pre">1</span></code> must be written in the table. Otherwise, <code class="docutils literal"><span class="pre">0</span></code> must be written. More details can be found in the software FAQ: <a class="reference internal" href="../../faq/faq.html#faq-voltage-input-configuration"><span class="std std-ref">How to configure the voltage inputs?</span></a>.</p>
+</div>
+<div class="section" id="multiplexer-sequence">
+<h3>4.9.4.4. Multiplexer Sequence<a class="headerlink" href="#multiplexer-sequence" title="Permalink to this headline">¶</a></h3>
+<p>In case of single GPIO measurements, the multiplexer sequence to be read is defined in <code class="docutils literal"><span class="pre">ltc_cfg.c</span></code> with the variable <code class="docutils literal"><span class="pre">LTC_MUX_CH_CFG_t</span> <span class="pre">ltc_mux_seq_main_ch1[]</span></code>. It is a list of elements of the following form:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">.</span><span class="n">muxID</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">muxCh</span>    <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>where the multiplexer to select (muxID, can be 0, 1, 2 or 3) and the channel to select (muxCh, from 0 to 7) are defined. Channel 0xFF means that the multiplexer is turned off. This is used to avoid two or more multiplexers to have their outputs in a low-impedance state at the same time.</p>
+</div>
+<div class="section" id="temperature-sensor-assignment">
+<h3>4.9.4.5. Temperature Sensor Assignment<a class="headerlink" href="#temperature-sensor-assignment" title="Permalink to this headline">¶</a></h3>
+<p>For temperature sensors, the variable is used to give the correspondence between the channel measured and the index used:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">uint8</span> <span class="n">ltc_muxsensortemperaturmain_cfg</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span>
+<span class="p">{</span>    <span class="mi">8</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 0</span>
+    <span class="mi">7</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 1</span>
+    <span class="mi">6</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 2</span>
+    <span class="mi">5</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 3</span>
+    <span class="mi">4</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 4</span>
+    <span class="mi">3</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 5</span>
+    <span class="mi">2</span><span class="o">-</span><span class="mi">1</span> <span class="p">,</span>  <span class="c1">//channel 6</span>
+    <span class="mi">1</span><span class="o">-</span><span class="mi">1</span>   <span class="c1">//channel 7</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In the above example, channel 0 of the multiplexer corresponds to temperature sensor 8. If muxseqptr is the multiplexer sequence of type <code class="docutils literal"><span class="pre">LTC_MUX_CH_CFG_t</span></code> as defined above, the sensor index is retrieved in the variable <code class="docutils literal"><span class="pre">sensor_idx</span></code> via:</p>
+<div class="highlight-C"><div class="highlight"><pre><span></span><span class="n">sensor_idx</span> <span class="o">=</span> <span class="n">ltc_muxsensortemperaturmain_cfg</span><span class="p">[</span><span class="n">muxseqptr</span><span class="o">-&gt;</span><span class="n">muxCh</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>More detailed information on the configueration of the temperature sensors can be found in the software FAQ: <a class="reference internal" href="../../faq/faq.html#faq-temperature-sensor-configuration"><span class="std std-ref">How to add/remove temperature sensors?</span></a>.</p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>4.9.5. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<table class="docutils citation" frame="void" id="ltc-datasheet" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[ltc_datasheet]</a></td><td>LTC6804 Datasheet <a class="reference external" href="http://www.linear.com/product/LTC6804-1">http://www.linear.com/product/LTC6804-1</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../balancing/balancing.html" class="btn btn-neutral float-right" title="4.10. Balancing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../cansignal/cansignal.html" class="btn btn-neutral" title="4.8. CAN Signal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

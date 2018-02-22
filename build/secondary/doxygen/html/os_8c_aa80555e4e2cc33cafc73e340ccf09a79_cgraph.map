@@ -1,0 +1,22 @@
+<map id="OS_TSK_Engine" name="OS_TSK_Engine">
+<area shape="rect" id="node2" href="$os_8c.html#a9f0687e02ddc61f131d2c43d4270542f" title="reads non&#45;volatile memory and initializes the sys module " alt="" coords="173,131,284,157"/>
+<area shape="rect" id="node17" href="$database_8c.html#a1585d5c7665504898be0371c5c6295b9" title="trigger of database manager " alt="" coords="183,244,274,271"/>
+<area shape="rect" id="node21" href="$diag_8c.html#af5b8cf38b93979152c6d3d64c6340b03" title="overall system monitoring " alt="" coords="349,333,457,360"/>
+<area shape="rect" id="node3" href="$nvic_8c.html#a609f6efbe6a90d1908ae1e3f1a7096fa" title="Initializes and enables interrupts for usage after operating system has started. " alt="" coords="343,29,463,56"/>
+<area shape="rect" id="node4" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="957,156,1061,183"/>
+<area shape="rect" id="node11" href="$sdram_8h.html#a9c4b12172af5ca9805ff6d8e68cbce6b" title="flexible memory controller (FMC) initialization for SDRAM " alt="" coords="356,131,449,157"/>
+<area shape="rect" id="node12" href="$can_8c.html#a0505a1f9b26b55293dc199f45e7bb0ec" title="Initializes CAN settings and message filtering. " alt="" coords="366,181,439,208"/>
+<area shape="rect" id="node10" href="$nvic_8c.html#abc0deed107f8b105a0f01d890128ac46" title="NVIC_InitEXTI" alt="" coords="543,29,645,56"/>
+<area shape="rect" id="node5" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="1109,156,1259,183"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="1307,156,1429,183"/>
+<area shape="rect" id="node7" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="1479,105,1579,132"/>
+<area shape="rect" id="node8" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="1479,156,1578,183"/>
+<area shape="rect" id="node9" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="1477,207,1580,233"/>
+<area shape="rect" id="node13" href="$can_8c.html#a9d2ac075410a424726befa42b8c9d819" title="Initializes message filtering. " alt="" coords="543,181,645,208"/>
+<area shape="rect" id="node16" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="548,232,640,259"/>
+<area shape="rect" id="node14" href="$can_8c.html#a68dc0bb72e3070c318b5c7b0ca98892a" title="Returns the number of filters that have to be initialized. " alt="" coords="715,232,909,259"/>
+<area shape="rect" id="node15" href="$can_8c.html#a8975fdc25f90009f3de12e5446010eec" title="Returns the next index of wished filter ID setting in CAN_MSG_RX_TYPE_t can_RxMsgs[CAN_NUMBER_OF_RX_I..." alt="" coords="754,283,870,309"/>
+<area shape="rect" id="node18" href="$database_8c.html#a15d2ff576e5aa63eac01df9d81ff4c89" title="Initialization of database manager. " alt="" coords="363,232,443,259"/>
+<area shape="rect" id="node19" href="$diag_8c.html#a7970909aa22bb87427a96c694fbab0e4" title="DIAG_SysMonNotify has to be called in every function using the system monitoring. ..." alt="" coords="332,283,473,309"/>
+<area shape="rect" id="node20" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="521,283,667,309"/>
+</map>

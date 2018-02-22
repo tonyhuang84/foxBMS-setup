@@ -1,0 +1,14 @@
+<map id="sox_cfg.h" name="sox_cfg.h">
+<area shape="rect" id="node2" href="$sox__cfg_8c.html" title="Configuration for SOX. " alt="" coords="81,80,160,107"/>
+<area shape="rect" id="node3" href="$sox_8h.html" title="Header for SOX module, responsible for calculation of current derating and of SOC. " alt="" coords="184,80,239,107"/>
+<area shape="rect" id="node4" href="$sox_8c.html" title="SOX module responsible for calculation of current derating and of SOC. " alt="" coords="5,155,60,181"/>
+<area shape="rect" id="node5" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="84,155,139,181"/>
+<area shape="rect" id="node6" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="163,155,259,181"/>
+<area shape="rect" id="node7" href="$bkpsram__cfg_8h.html" title="Headers for the configuration for static backup RAM. " alt="" coords="283,155,390,181"/>
+<area shape="rect" id="node13" href="$cansignal__cfg_8c.html" title="Configuration of the messages and signal settings for the CAN driver. " alt="" coords="414,155,526,181"/>
+<area shape="rect" id="node8" href="$bkpsram__cfg_8c.html" title="Configuration for static backup RAM. " alt="" coords="223,229,330,256"/>
+<area shape="rect" id="node9" href="$bkpsram_8h.html" title="Headers for the driver for static backup RAM. " alt="" coords="354,229,437,256"/>
+<area shape="rect" id="node10" href="$diag_8c.html" title="Diag driver implementation. " alt="" coords="283,304,340,331"/>
+<area shape="rect" id="node11" href="$main_8c.html" title="Main function. " alt="" coords="365,304,426,331"/>
+<area shape="rect" id="node12" href="$bkpsram_8c.html" title="Driver for static backup RAM. " alt="" coords="450,304,533,331"/>
+</map>

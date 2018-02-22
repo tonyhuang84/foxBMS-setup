@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__API__OS" kind="group">
+    <compoundname>API_OS</compoundname>
+    <title>Operating System Interfaces</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__API__OS_1ga79422773dfeb6f6748962253ef8e0e42" prot="public" static="no" mutable="no">
+        <type><ref refid="structBMS__Task__Definition__s" kindref="compound">BMS_Task_Definition_s</ref></type>
+        <definition>BMS_Task_Definition_s appl_tskdef_1ms</definition>
+        <argsstring></argsstring>
+        <name>appl_tskdef_1ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Task configuration of the 1ms application task</para><para>predefined 1ms task for user code </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.h" line="50" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__API__OS_1gaacd3e97d73ac8bc4e118c3c3a29040ea" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structBMS__Task__Definition__s" kindref="compound">BMS_Task_Definition_s</ref></type>
+        <definition>const BMS_Task_Definition_s appl_tskdef_10ms</definition>
+        <argsstring></argsstring>
+        <name>appl_tskdef_10ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Task configuration of the 10ms application task</para><para>predefined 10ms task for user code </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.h" line="56" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__API__OS_1ga86037a0f8f56fd6e9419f0f7ac6f04e3" prot="public" static="no" mutable="no">
+        <type><ref refid="structBMS__Task__Definition__s" kindref="compound">BMS_Task_Definition_s</ref></type>
+        <definition>BMS_Task_Definition_s appl_tskdef_100ms</definition>
+        <argsstring></argsstring>
+        <name>appl_tskdef_100ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Task configuration of the 100ms application task</para><para>predefined 100ms task for user code </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.h" line="62" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__API__OS_1ga8eb09b5db377541ef4be8c4345de706f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_Cyclic_1ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_Cyclic_1ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>user application task 1 milliseconds </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.h" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.c" bodystart="60" bodyend="69"/>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faba34f1f83ce0b7e6be878ad2a84ae29e" compoundref="diag__cfg_8h" startline="298">DIAG_SYSMON_APPL_CYCLIC_1ms</references>
+        <references refid="bms_8c_1a954a05b20669dc00663c4f0f2a729fcd" compoundref="bms_8c" startline="191" endline="323">BMS_Trigger</references>
+      </memberdef>
+      <memberdef kind="function" id="group__API__OS_1gaa93963e368289a593eba35a466035972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_Cyclic_10ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_Cyclic_10ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>user application task 10 milliseconds </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.h" line="80" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.c" bodystart="71" bodyend="78"/>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa336aff0646489aeaf991dac7b49a82f5" compoundref="diag__cfg_8h" startline="299">DIAG_SYSMON_APPL_CYCLIC_10ms</references>
+      </memberdef>
+      <memberdef kind="function" id="group__API__OS_1ga884d49f7d9a6623d692558571a0a4277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APPL_Cyclic_100ms</definition>
+        <argsstring>(void)</argsstring>
+        <name>APPL_Cyclic_100ms</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>user application task 100 milliseconds </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.h" line="88" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/config/appltask_cfg.c" bodystart="80" bodyend="88"/>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78fa0ed318cb2fa3acc3d80911bc37b3d281" compoundref="diag__cfg_8h" startline="300">DIAG_SYSMON_APPL_CYCLIC_100ms</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the provided interfaces to FreeRTOS in the foxBMS software </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

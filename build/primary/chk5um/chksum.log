@@ -1,0 +1,15 @@
+************************************************************************
+* Configuration:                                                       *
+* Project type:         bms                                            *
+* Hex file path:        embedded-software\mcu-primary\src\general\foxbms.hex*
+* Flashsize:            0x200000 (2097152)                             *
+* Flash header address: 0xfff00 (1048320)                              *
+* Begin address:        0xfff48 (1048392)                              *
+* End address:          0xfff4c (1048396)                              *
+* Checksum address:     0xfff10 (1048336)                              *
+* Checksum algorithm:   crc32                                          *
+* Crc polynomial:       0x04C11DB7                                     *
+* 32-bit SW-Chksum:     0x85A4E910                                     *
+************************************************************************
+* Checksum tool successful                                             *
+************************************************************************

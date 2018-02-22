@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_083936b7cf9cca823e079c0810597aa4" kind="dir">
+    <compoundname>STM32F7xx</compoundname>
+    <innerfile refid="STM32F7xx_2mcu__cfg_8h">STM32F7xx/mcu_cfg.h</innerfile>
+    <innerfile refid="stm32f7xx__hal__conf_8h">stm32f7xx_hal_conf.h</innerfile>
+    <innerfile refid="stm32f7xx__hal__msp_8c">stm32f7xx_hal_msp.c</innerfile>
+    <innerfile refid="stm32f7xx__it_8c">stm32f7xx_it.c</innerfile>
+    <innerfile refid="stm32f7xx__it_8h">stm32f7xx_it.h</innerfile>
+    <innerfile refid="system__stm32f7xx_8c">system_stm32f7xx.c</innerfile>
+    <innerfile refid="system__stm32f7xx_8h">system_stm32f7xx.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F7xx/"/>
+  </compounddef>
+</doxygen>

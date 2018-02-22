@@ -1,0 +1,5 @@
+<map id="CAN2_SCE_IRQHandler" name="CAN2_SCE_IRQHandler">
+<area shape="rect" id="node2" href="$can_8c.html#a9820425942a5c033cca31ddbe7101ff9" title="Handles CAN error interrupt request. " alt="" coords="216,31,373,57"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="421,5,567,32"/>
+<area shape="rect" id="node4" href="$can_8c.html#aa4dbf86d1f59d72beeb24bffd2269b75" title="Error occured callback. " alt="" coords="427,56,561,83"/>
+</map>

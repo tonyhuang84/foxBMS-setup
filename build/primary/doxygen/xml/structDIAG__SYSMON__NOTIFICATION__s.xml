@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDIAG__SYSMON__NOTIFICATION__s" kind="struct" language="C++" prot="public">
+    <compoundname>DIAG_SYSMON_NOTIFICATION_s</compoundname>
+    <includes refid="diag__cfg_8h" local="no">diag_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDIAG__SYSMON__NOTIFICATION__s_1acbf7acd7204e171458ea299274f95dbc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_SYSMON_NOTIFICATION_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" line="342" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__SYSMON__NOTIFICATION__s_1a03d895f319565eabda8554300a889ba9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DIAG_SYSMON_NOTIFICATION_s::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timestamp of state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" line="343" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>state (in summary) used for task or function notification </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" line="341" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/config/diag_cfg.h" bodystart="341" bodyend="344"/>
+    <listofallmembers>
+      <member refid="structDIAG__SYSMON__NOTIFICATION__s_1acbf7acd7204e171458ea299274f95dbc" prot="public" virt="non-virtual"><scope>DIAG_SYSMON_NOTIFICATION_s</scope><name>state</name></member>
+      <member refid="structDIAG__SYSMON__NOTIFICATION__s_1a03d895f319565eabda8554300a889ba9" prot="public" virt="non-virtual"><scope>DIAG_SYSMON_NOTIFICATION_s</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

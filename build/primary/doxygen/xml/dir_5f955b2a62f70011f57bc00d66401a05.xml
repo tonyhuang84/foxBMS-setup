@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_5f955b2a62f70011f57bc00d66401a05" kind="dir">
+    <compoundname>application</compoundname>
+    <innerdir refid="dir_49ea1d7874be23ce3818a775d4e6afe4">bal</innerdir>
+    <innerdir refid="dir_08fe7d980e84cfc3342061f738cbf40b">bms</innerdir>
+    <innerdir refid="dir_15cfd8337af43c1e7d6cab500aebe887">com</innerdir>
+    <innerdir refid="dir_2bcb45b6509a0036b0d72cd2cab15ce4">config</innerdir>
+    <innerdir refid="dir_c7699fdd60b56ac32404ee69cbbb67da">sox</innerdir>
+    <innerdir refid="dir_d33b6ed8cfef8c2ee869031883fee264">task</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCONT__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>CONT_STATE_s</compoundname>
+    <includes refid="contactor_8h" local="no">contactor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCONT__STATE__s_1ae61bbc48ea7b6e9b37d393d2d3e33961" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CONT_STATE_s::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time in ms before the state machine processes the next state, e.g. in counts of 1ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="186" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a06bc7cc6f626790dd9f273645ad47794" prot="public" static="no" mutable="no">
+        <type><ref refid="contactor_8h_1a9674a5ca06aec12ee65319cafc074ca2" kindref="member">CONT_STATE_REQUEST_e</ref></type>
+        <definition>CONT_STATE_REQUEST_e CONT_STATE_s::statereq</definition>
+        <argsstring></argsstring>
+        <name>statereq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current state request made to the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="187" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a2e31f68fba0e31aea565b5bd6b1060ad" prot="public" static="no" mutable="no">
+        <type><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref></type>
+        <definition>CONT_STATEMACH_e CONT_STATE_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state of Driver State Machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="188" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a1623cf548cd3b38b42119d3b7b2d5a44" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CONT_STATE_s::substate</definition>
+        <argsstring></argsstring>
+        <name>substate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current substate of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="189" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1ad08d6753f0e2e70dbda595af4cc9f564" prot="public" static="no" mutable="no">
+        <type><ref refid="contactor_8h_1aaa38e85434f818334d26909c1bfa3ce3" kindref="member">CONT_STATEMACH_e</ref></type>
+        <definition>CONT_STATEMACH_e CONT_STATE_s::laststate</definition>
+        <argsstring></argsstring>
+        <name>laststate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous state of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="190" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a8133f7ad1aa0b8010714b29becef4273" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CONT_STATE_s::lastsubstate</definition>
+        <argsstring></argsstring>
+        <name>lastsubstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous substate of the state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="191" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1aeee6f16c0cdb49e60ff3c1c7d5c2d5c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CONT_STATE_s::ErrRequestCounter</definition>
+        <argsstring></argsstring>
+        <name>ErrRequestCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counts the number of illegal requests to the LTC state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="192" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a987c37e12eb768b4cdad4a2ee69b6783" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CONT_STATE_s::OscillationCounter</definition>
+        <argsstring></argsstring>
+        <name>OscillationCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timeout to prevent oscillation of contactors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="193" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a6bf569c0d14c9293b6fa5a79793b4fd1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CONT_STATE_s::PrechargeTryCounter</definition>
+        <argsstring></argsstring>
+        <name>PrechargeTryCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>timeout to prevent oscillation of contactors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="194" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1a657e5d4d48260b32595c794715075259" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CONT_STATE_s::PrechargeTimeOut</definition>
+        <argsstring></argsstring>
+        <name>PrechargeTimeOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time to wait when precharge has been closed for voltages to settle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="195" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1ad71b991be3e5dea59d0039b253c675c0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CONT_STATE_s::triggerentry</definition>
+        <argsstring></argsstring>
+        <name>triggerentry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>counter for re-entrance protection (function running flag) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="196" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCONT__STATE__s_1afbb91f120818253fa16172f4187e974a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CONT_STATE_s::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>general purpose counter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="197" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all the variables relevant for the CONT state machine. The user can get the current state of the CONT state machine with this variable </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" line="185" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/contactor/contactor.h" bodystart="185" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structCONT__STATE__s_1afbb91f120818253fa16172f4187e974a" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>counter</name></member>
+      <member refid="structCONT__STATE__s_1aeee6f16c0cdb49e60ff3c1c7d5c2d5c6" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>ErrRequestCounter</name></member>
+      <member refid="structCONT__STATE__s_1ad08d6753f0e2e70dbda595af4cc9f564" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>laststate</name></member>
+      <member refid="structCONT__STATE__s_1a8133f7ad1aa0b8010714b29becef4273" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>lastsubstate</name></member>
+      <member refid="structCONT__STATE__s_1a987c37e12eb768b4cdad4a2ee69b6783" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>OscillationCounter</name></member>
+      <member refid="structCONT__STATE__s_1a657e5d4d48260b32595c794715075259" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>PrechargeTimeOut</name></member>
+      <member refid="structCONT__STATE__s_1a6bf569c0d14c9293b6fa5a79793b4fd1" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>PrechargeTryCounter</name></member>
+      <member refid="structCONT__STATE__s_1a2e31f68fba0e31aea565b5bd6b1060ad" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>state</name></member>
+      <member refid="structCONT__STATE__s_1a06bc7cc6f626790dd9f273645ad47794" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>statereq</name></member>
+      <member refid="structCONT__STATE__s_1a1623cf548cd3b38b42119d3b7b2d5a44" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>substate</name></member>
+      <member refid="structCONT__STATE__s_1ae61bbc48ea7b6e9b37d393d2d3e33961" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>timer</name></member>
+      <member refid="structCONT__STATE__s_1ad71b991be3e5dea59d0039b253c675c0" prot="public" virt="non-virtual"><scope>CONT_STATE_s</scope><name>triggerentry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

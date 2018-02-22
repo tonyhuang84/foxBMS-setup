@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__CONFIG__IO" kind="group">
+    <compoundname>CONFIG_IO</compoundname>
+    <title>IO User configuration</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__CONFIG__IO_1gac19ab9f7a1c55f3717a21b37a956b6c6" prot="public" static="no">
+        <name>IO_PIN_MODES_e</name>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a6915f2e2eba7ce8397a3e3c90742a08d" prot="public">
+          <name>IO_MODE_INPUT</name>
+          <initializer>= GPIO_MODE_INPUT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as input </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a6ff1ba645c25d8065c44b4d5109105a0" prot="public">
+          <name>IO_MODE_OUTPUT_PP</name>
+          <initializer>= GPIO_MODE_OUTPUT_PP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as output with push-pull </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a146b3d469c6b5bdee5d51e57fda2ffa3" prot="public">
+          <name>IO_MODE_OUTPUT_OD</name>
+          <initializer>= GPIO_MODE_OUTPUT_OD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as output with open-drain </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a64a09b761f2f7c3dff9437867bf5ed3d" prot="public">
+          <name>IO_MODE_AF_PP</name>
+          <initializer>= GPIO_MODE_AF_PP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as alternate function with push-pull </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a78ca4fba58ffdc46271e54eb8ee11c33" prot="public">
+          <name>IO_MODE_AF_OD</name>
+          <initializer>= GPIO_MODE_AF_OD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as alternate function with open-drain </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a71ed50bc1951a3d69348bbe8362419f3" prot="public">
+          <name>IO_MODE_ANALOG</name>
+          <initializer>= GPIO_MODE_ANALOG</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as analog pin </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a2f9f4f453f2d5a6e3f772dbb1c68e8be" prot="public">
+          <name>IO_MODE_IT_RISING</name>
+          <initializer>= GPIO_MODE_IT_RISING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as interrupt at rising edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6ac6dcf31ebc33c52e3cdb6b33ea3dcdb6" prot="public">
+          <name>IO_MODE_IT_FALLING</name>
+          <initializer>= GPIO_MODE_IT_FALLING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as interrupt at falling edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a026930229e0c26d1e1b58ef043e8e787" prot="public">
+          <name>IO_MODE_IT_RISING_FALLING</name>
+          <initializer>= GPIO_MODE_IT_RISING_FALLING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as interrupt at rising/falling edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6aebc3560175cbff6c297aedcbfffed88c" prot="public">
+          <name>IO_MODE_EVT_RISING</name>
+          <initializer>= GPIO_MODE_EVT_RISING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as event mode at rising edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a32c52f3992a62be33fcb403b3a4f8553" prot="public">
+          <name>IO_MODE_EVT_FALLLING</name>
+          <initializer>= GPIO_MODE_EVT_FALLING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as event mode at falling edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__CONFIG__IO_1ggac19ab9f7a1c55f3717a21b37a956b6c6a66203e2dc6d443759df5bca3bfd68d22" prot="public">
+          <name>IO_MODE_EVT_RISING_FALLING</name>
+          <initializer>= GPIO_MODE_EVT_RISING_FALLING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The pin is used as event mode at rising/falling edge </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>description if port locking is enabled, one can specify in the io_cfg[] array each pin configuration as locked/unlocked. <simplesect kind="par"><title>Type:</title><para>toggle </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>True Enables pin locking globally. If this macro is not defined, pin locking can not be activated. symbolic names for possible modes of the pins </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/io_cfg.h" line="85" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/io_cfg.h" bodystart="85" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" prot="public" static="no">
+        <name>IO_NR_OF_PINS_PER_PORT</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nr. of pins per port must always be set to 16 <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>16 Number of pins per port at the microcontroller. This number is fixed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/io_package_cfg.h" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/io_package_cfg.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__IO_1ga3e2b5843ed88d3b68e97b4c94334ff09" prot="public" static="no">
+        <name>IO_PACKAGE_LQFP176</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>specify the type of microcontroller used</para><para><simplesect kind="par"><title>Type:</title><para>switch(3) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>2 Defines the used microcontroller package. The user can choose between<itemizedlist>
+<listitem><para>IO_PACKAGE_LQFP100</para></listitem><listitem><para>IO_PACKAGE_LQFP144</para></listitem><listitem><para>IO_PACKAGE_LQFP176</para></listitem></itemizedlist>
+</para></simplesect>
+by using foxygen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/io_package_cfg.h" line="87" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/io_package_cfg.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the configuration of the GPIO pins contained in the MCU. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

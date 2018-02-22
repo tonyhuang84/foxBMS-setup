@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structRTC__CFG__s" kind="struct" language="C++" prot="public">
+    <compoundname>RTC_CFG_s</compoundname>
+    <includes refid="rtc__cfg_8h" local="no">rtc_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structRTC__CFG__s_1a3263da6cf782098a9d981a4906cd46b7" prot="public" static="no" mutable="no">
+        <type>RCC_OscInitTypeDef</type>
+        <definition>RCC_OscInitTypeDef RTC_CFG_s::oscInitStruct</definition>
+        <argsstring></argsstring>
+        <name>oscInitStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clock configuration of RTCs clock source </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="53" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRTC__CFG__s_1acf77d1c9faca629c76dab462044dafb9" prot="public" static="no" mutable="no">
+        <type>RCC_PeriphCLKInitTypeDef</type>
+        <definition>RCC_PeriphCLKInitTypeDef RTC_CFG_s::clkInitStruct</definition>
+        <argsstring></argsstring>
+        <name>clkInitStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clock source of RTC: RTCClk can be derived from HSE (ext. crystal), LSE (ext. crystal), LSI (internal RC oscillator) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="54" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRTC__CFG__s_1ad63d0115a94defd263b4691d29b64463" prot="public" static="no" mutable="no">
+        <type>RTC_InitTypeDef</type>
+        <definition>RTC_InitTypeDef RTC_CFG_s::initconfig</definition>
+        <argsstring></argsstring>
+        <name>initconfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC configuration: hour format, prescaler,... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="55" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRTC__CFG__s_1aa33e740d6d8af8e4f8a6335261878d35" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTC_CFG_s::timeformat</definition>
+        <argsstring></argsstring>
+        <name>timeformat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>date and time format configuration (binary or BCD) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="56" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRTC__CFG__s_1a18ed0f76527f3632d212fe052a07eb1c" prot="public" static="no" mutable="no">
+        <type>RTC_TimeTypeDef</type>
+        <definition>RTC_TimeTypeDef RTC_CFG_s::defaultTime</definition>
+        <argsstring></argsstring>
+        <name>defaultTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default time configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="57" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRTC__CFG__s_1a038c7af73ade7a78f54093f5dee3d75c" prot="public" static="no" mutable="no">
+        <type>RTC_DateTypeDef</type>
+        <definition>RTC_DateTypeDef RTC_CFG_s::defaultDate</definition>
+        <argsstring></argsstring>
+        <name>defaultDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default date configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="58" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct for the initialization and configuration of RTC </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" line="52" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/rtc_cfg.h" bodystart="52" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structRTC__CFG__s_1acf77d1c9faca629c76dab462044dafb9" prot="public" virt="non-virtual"><scope>RTC_CFG_s</scope><name>clkInitStruct</name></member>
+      <member refid="structRTC__CFG__s_1a038c7af73ade7a78f54093f5dee3d75c" prot="public" virt="non-virtual"><scope>RTC_CFG_s</scope><name>defaultDate</name></member>
+      <member refid="structRTC__CFG__s_1a18ed0f76527f3632d212fe052a07eb1c" prot="public" virt="non-virtual"><scope>RTC_CFG_s</scope><name>defaultTime</name></member>
+      <member refid="structRTC__CFG__s_1ad63d0115a94defd263b4691d29b64463" prot="public" virt="non-virtual"><scope>RTC_CFG_s</scope><name>initconfig</name></member>
+      <member refid="structRTC__CFG__s_1a3263da6cf782098a9d981a4906cd46b7" prot="public" virt="non-virtual"><scope>RTC_CFG_s</scope><name>oscInitStruct</name></member>
+      <member refid="structRTC__CFG__s_1aa33e740d6d8af8e4f8a6335261878d35" prot="public" virt="non-virtual"><scope>RTC_CFG_s</scope><name>timeformat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

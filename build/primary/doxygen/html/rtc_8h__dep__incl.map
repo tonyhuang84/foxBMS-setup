@@ -1,0 +1,42 @@
+<map id="rtc.h" name="rtc.h">
+<area shape="rect" id="node2" href="$diag__cfg_8h.html" title="Diagnostic module configuration header. " alt="" coords="1273,80,1354,107"/>
+<area shape="rect" id="node8" href="$diag_8c.html" title="Diag driver implementation. " alt="" coords="1654,379,1711,405"/>
+<area shape="rect" id="node32" href="$bkpsram_8c.html" title="Driver for static backup RAM. " alt="" coords="1736,379,1819,405"/>
+<area shape="rect" id="node40" href="$main_8h.html" title="Main function header. " alt="" coords="1825,155,1887,181"/>
+<area shape="rect" id="node41" href="$rtc_8c.html" title="Driver for the real time clock. " alt="" coords="1875,80,1923,107"/>
+<area shape="rect" id="node3" href="$diag__cfg_8c.html" title="Diagnostic module configuration. " alt="" coords="1273,155,1354,181"/>
+<area shape="rect" id="node4" href="$diag_8h.html" title="Diag driver header. " alt="" coords="793,155,850,181"/>
+<area shape="rect" id="node5" href="$bal_8c.html" title="Driver for the Balancing module. " alt="" coords="192,229,243,256"/>
+<area shape="rect" id="node6" href="$bms_8c.html" title="bms driver implementation " alt="" coords="1096,229,1155,256"/>
+<area shape="rect" id="node7" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="5,677,112,704"/>
+<area shape="rect" id="node9" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="205,677,259,704"/>
+<area shape="rect" id="node10" href="$stm32f4xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="848,603,955,629"/>
+<area shape="rect" id="node11" href="$stm32f7xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="1148,603,1255,629"/>
+<area shape="rect" id="node12" href="$main_8c.html" title="Main function. " alt="" coords="1603,603,1664,629"/>
+<area shape="rect" id="node13" href="$nvic_8c.html" title="Functions for setting and enabling interrupts. " alt="" coords="113,229,167,256"/>
+<area shape="rect" id="node14" href="$bkpsram__cfg_8h.html" title="Headers for the configuration for static backup RAM. " alt="" coords="1447,229,1553,256"/>
+<area shape="rect" id="node26" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="727,677,774,704"/>
+<area shape="rect" id="node27" href="$cansignal_8c.html" title="Messages and signal settings for the CAN driver. " alt="" coords="317,677,405,704"/>
+<area shape="rect" id="node29" href="$can_8c.html" title="Driver for the CAN module. " alt="" coords="617,603,671,629"/>
+<area shape="rect" id="node30" href="$eepr_8c.html" title="Driver for the storage in the EEPROM memory. " alt="" coords="1289,453,1348,480"/>
+<area shape="rect" id="node33" href="$contactor_8c.html" title="Driver for the contactors. " alt="" coords="419,229,506,256"/>
+<area shape="rect" id="node34" href="$ir155_8c.html" title="Driver for the isolation monitoring. " alt="" coords="531,229,592,256"/>
+<area shape="rect" id="node35" href="$isoguard_8c.html" title="Driver for the isolation monitoring. " alt="" coords="616,229,699,256"/>
+<area shape="rect" id="node36" href="$database_8c.html" title="Database module implementation. " alt="" coords="723,229,810,256"/>
+<area shape="rect" id="node37" href="$interlock_8c.html" title="Driver for the interlock. " alt="" coords="835,229,917,256"/>
+<area shape="rect" id="node38" href="$ltc_8c.html" title="Driver for the LTC monitoring chip. " alt="" coords="942,229,989,256"/>
+<area shape="rect" id="node39" href="$mcu_8c.html" title="Functions for the MCU to manage time and interrupts. " alt="" coords="1013,229,1072,256"/>
+<area shape="rect" id="node15" href="$bkpsram__cfg_8c.html" title="Configuration for static backup RAM. " alt="" coords="1372,453,1479,480"/>
+<area shape="rect" id="node16" href="$eepr__cfg_8h.html" title="Header for the configuration for the driver for the storage in the EEPROM memory. ..." alt="" coords="1459,304,1541,331"/>
+<area shape="rect" id="node31" href="$bkpsram_8h.html" title="Headers for the driver for static backup RAM. " alt="" coords="1565,304,1648,331"/>
+<area shape="rect" id="node17" href="$eepr__cfg_8c.html" title="Configuration for the driver for the storage in the EEPROM memory. " alt="" coords="1736,453,1819,480"/>
+<area shape="rect" id="node18" href="$eepr_8h.html" title="Headers for the driver for the storage in the EEPROM memory. " alt="" coords="1469,379,1528,405"/>
+<area shape="rect" id="node19" href="$sox_8c.html" title="SOX module responsible for calculation of current derating and of SOC. " alt="" coords="1606,453,1661,480"/>
+<area shape="rect" id="node20" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module. " alt="" coords="1503,453,1582,480"/>
+<area shape="rect" id="node21" href="$can__cfg_8c.html" title="Configuration for the CAN module. " alt="" coords="1503,528,1582,555"/>
+<area shape="rect" id="node22" href="$cansignal__cfg_8h.html" title="Headers for the configuration of the messages and signal settings for the CAN driver. " alt="" coords="480,528,592,555"/>
+<area shape="rect" id="node28" href="$can_8h.html" title="Header for the driver for the CAN module. " alt="" coords="733,528,787,555"/>
+<area shape="rect" id="node23" href="$cansignal__cfg_8c.html" title="Configuration of the messages and signal settings for the CAN driver. " alt="" coords="480,603,592,629"/>
+<area shape="rect" id="node24" href="$cansignal_8h.html" title="Headers for the messages and signal settings for the CAN driver. " alt="" coords="317,603,405,629"/>
+<area shape="rect" id="node25" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="548,677,644,704"/>
+</map>

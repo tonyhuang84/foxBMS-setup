@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_754fb47b24e557c437218f32bcf1c609" kind="dir">
+    <compoundname>rtc</compoundname>
+    <innerfile refid="bkpsram_8c">bkpsram.c</innerfile>
+    <innerfile refid="bkpsram_8h">bkpsram.h</innerfile>
+    <innerfile refid="rtc_8c">rtc.c</innerfile>
+    <innerfile refid="rtc_8h">rtc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/rtc/"/>
+  </compounddef>
+</doxygen>

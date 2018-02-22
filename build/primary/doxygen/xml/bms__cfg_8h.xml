@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="bms__cfg_8h" kind="file" language="C++">
+    <compoundname>bms_cfg.h</compoundname>
+    <includes refid="mcu_8h" local="yes">mcu.h</includes>
+    <includes refid="contactor_8h" local="yes">contactor.h</includes>
+    <includedby refid="bms_8h" local="yes">bms.h</includedby>
+    <includedby refid="bms__cfg_8c" local="yes">bms_cfg.c</includedby>
+    <incdepgraph>
+      <node id="423">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>stdint.h</label>
+      </node>
+      <node id="422">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="427">
+        <label>contactor_cfg.h</label>
+        <link refid="contactor__cfg_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>contactor.h</label>
+        <link refid="contactor_8h"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="430">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="425">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="428">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="438">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="440">
+        <label>bms_cfg.c</label>
+        <link refid="bms__cfg_8c"/>
+      </node>
+      <node id="433">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="439">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="435">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="434">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__BMS_1gac2ae229e872b85bae7317473b927fdc8" prot="public" static="no">
+        <name>BMS_TEST_CELL_SOF_LIMITS</name>
+        <initializer><ref refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>checking if current is in SOF limits of cells. Set FALSE for test without checking against SOF derating. <simplesect kind="par"><title>Type:</title><para>select(2) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="52" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a623d42db4b4d647ea577f5ee2c16992b" prot="public" static="no">
+        <name>BMS_REQ_ID_NOREQ</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="60" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" prot="public" static="no">
+        <name>BMS_REQ_ID_STANDBY</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN signal to go to STANDBY state (ready, but no contactors closed) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>8 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="72" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" prot="public" static="no">
+        <name>BMS_REQ_ID_NORMAL</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN signal to go to NORMAL state (contactors closing procedure) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>3 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="84" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gaaad264c5e922187cdb569e1cbe7db4a9" prot="public" static="no">
+        <name>BMS_REQ_ID_CHARGE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN signal to go to CHARGE state (contactors closing procedure) <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>4 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="96" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a22aedd0ed2957809aa6acba9efe7338a" prot="public" static="no">
+        <name>BMS_BAL_NO_REQUEST</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="100" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga19abde76bf30e3906a7e03b4ccc325aa" prot="public" static="no">
+        <name>BMS_BAL_INACTIVE_OVERRIDE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN to deactivate balancing with override <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>8 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="112" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga481a9d9de12a177d936471a05b335f6d" prot="public" static="no">
+        <name>BMS_BAL_OUT_OF_OVERRIDE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN to go out of override mode <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>8 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="124" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga9b58a029e76a67df65ac7b11921d7b50" prot="public" static="no">
+        <name>BMS_BAL_ACTIVE_OVERRIDE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>this is the ID that should be requested via CAN to activate balancing with override <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>8 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>0&lt;=x </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="136" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" prot="public" static="no">
+        <name>BMS_STATEMACH_SHORTTIME_MS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine short time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="142" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" prot="public" static="no">
+        <name>BMS_STATEMACH_MEDIUMTIME_MS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine medium time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="147" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a4409acb53e6a5f164efafdff8e6b256a" prot="public" static="no">
+        <name>BMS_STATEMACH_LONGTIME_MS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine long time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="152" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a09a8abf3f6ceb92b0e8246a8b8ca94e3" prot="public" static="no">
+        <name>BMS_STATEMACH_VERYLONGTIME_MS</name>
+        <initializer>2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BMS statemachine very long time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="157" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga67b6663770c7f235fa045649286278dd" prot="public" static="no">
+        <name>BMS_SELFPOWERONCHECK_TIMEOUT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="171" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga01d7e471386cf41c6a5b97ab1e184d02" prot="public" static="no">
+        <name>BMS_SELFAWAKECHECK_TIMEOUT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="184" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga222c89eb614e2e8f58bfb142ed284028" prot="public" static="no">
+        <name>BMS_IDLE_TIMEOUT</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>50 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[40,60] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="198" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gaf0da7287cb9b874642e2a94fbd13f023" prot="public" static="no">
+        <name>BMS_PRECHARGE_VOLTAGE_THRESHOLD</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>V </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="211" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga2be5c2dffed30d25f64e4a74e0730f2b" prot="public" static="no">
+        <name>BMS_PRECHARGE_CURRENT_THRESHOLD</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>10 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[5,15] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>mA </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="224" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga3f50e0a1a12b4618c20f638770abb5a7" prot="public" static="no">
+        <name>BMS_PRECHARGE_TIMEOUT</name>
+        <initializer>600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>600 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[500,700] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="237" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga1324e4115fc243ed4a39fc0f49a85491" prot="public" static="no">
+        <name>BMS_TIMER_MAINMINUS</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>100 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[50,150] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="250" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1ga350a6eb4eeb03c2091f3310412fedc01" prot="public" static="no">
+        <name>BMS_TIMER_MAINPRECHARGE</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>200 </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[150,250] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="263" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__BMS_1gafc76899157a024b0b0684b7ccf30139d" prot="public" static="no">
+        <name>BMS_TIMER_MAINPLUS</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>50 </para></simplesect>
+<simplesect kind="par"><title>Range:</title><para>[40,60] </para></simplesect>
+<simplesect kind="par"><title>Unit:</title><para>10*ms </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="276" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a42b1dba02f1766c8747dca68bbac31f6" prot="public" static="no">
+        <name>BMS_GETSELFCHECK_STATE</name>
+        <param></param>
+        <initializer><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" kindref="member">BMS_CHECK_OK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="278" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a4c22d4ae2cf34c1ca35a8b316217b2af" prot="public" static="no">
+        <name>BMS_GETPOWERONSELFCHECK_STATE</name>
+        <param></param>
+        <initializer><ref refid="bms_8h_1a3443a7897961ac867c0b03e3baae58dca3feae96d8bb1bd83d9aa1c549644f466" kindref="member">BMS_CHECK_OK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="279" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a79ccaee80dfcccb5f735066ddf5fbc48" prot="public" static="no">
+        <name>BMS_CHECKPRECHARGE</name>
+        <param></param>
+        <initializer>BMS_CheckPrecharge()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="280" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1acf29c646cf1774ff6ccaf92a267a6618" prot="public" static="no">
+        <name>BMS_ALL_CONTACTORS_OFF</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a4ecb75068e6d93d855acdace72c657fb" kindref="member">CONT_SwitchAllContactorsOff</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="286" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a81a71d28435e7d2d43dce4360bc56a03" prot="public" static="no">
+        <name>BMS_CONT_MAINMINUS_ON</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059a61da5ff07a6e32e18be2418997ad5caa" kindref="member">CONT_MINUS_MAIN</ref>, <ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaecea8f07393113924b8b78cde8ce58a864cd" kindref="member">CONT_SWITCH_ON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="288" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a0a66665747164642514cea70a4519c38" prot="public" static="no">
+        <name>BMS_CONT_MAINMINUS_OFF</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059a61da5ff07a6e32e18be2418997ad5caa" kindref="member">CONT_MINUS_MAIN</ref>, <ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceabf21f522aaba8c0b43c6987c3f82fdf9" kindref="member">CONT_SWITCH_OFF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="289" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1ac92bc42d2208263fb3d7102414fc60eb" prot="public" static="no">
+        <name>BMS_CONT_MAINPRECHARGE_ON</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059ab01a6b0209de04e7dab5528eaf3e60fc" kindref="member">CONT_PLUS_PRECHARGE</ref>, <ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaecea8f07393113924b8b78cde8ce58a864cd" kindref="member">CONT_SWITCH_ON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="291" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a114361058feb85ff5b961f8b4af5c81b" prot="public" static="no">
+        <name>BMS_CONT_MAINPRECHARGE_OFF</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059ab01a6b0209de04e7dab5528eaf3e60fc" kindref="member">CONT_PLUS_PRECHARGE</ref>, <ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceabf21f522aaba8c0b43c6987c3f82fdf9" kindref="member">CONT_SWITCH_OFF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="292" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1aeec9c009c615d6a0f59ee635d814f7e2" prot="public" static="no">
+        <name>BMS_CONT_MAINPLUS_ON</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059a7ad5980d7873b1b54cc909a221417aaf" kindref="member">CONT_PLUS_MAIN</ref>, <ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaecea8f07393113924b8b78cde8ce58a864cd" kindref="member">CONT_SWITCH_ON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="294" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bms__cfg_8h_1a2d4e9d9d6bf7b39e1e603a2792cfa664" prot="public" static="no">
+        <name>BMS_CONT_MAINPLUS_OFF</name>
+        <param></param>
+        <initializer><ref refid="contactor_8h_1a0943d21ca71b1061982894195be96fe9" kindref="member">CONT_SetContactorState</ref>(<ref refid="contactor__cfg_8h_1ad3001e23508eea2b1835071f01dc8059a7ad5980d7873b1b54cc909a221417aaf" kindref="member">CONT_PLUS_MAIN</ref>, <ref refid="contactor__cfg_8h_1ac320315886e746cc7d7efa7c56edaeceabf21f522aaba8c0b43c6987c3f82fdf9" kindref="member">CONT_SWITCH_OFF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" line="295" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>bms driver configuration header </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>BMS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>BMS_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu_8h" kindref="compound">mcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="contactor_8h" kindref="compound">contactor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">//<sp/>#define<sp/>BMS_TEST_CELL_SOF_LIMITS<sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="group__CONFIG__BMS_1gac2ae229e872b85bae7317473b927fdc8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_TEST_CELL_SOF_LIMITS<sp/>FALSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="bms__cfg_8h_1a623d42db4b4d647ea577f5ee2c16992b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_REQ_ID_NOREQ<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_REQ_ID_STANDBY<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_REQ_ID_NORMAL<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="group__CONFIG__BMS_1gaaad264c5e922187cdb569e1cbe7db4a9" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_REQ_ID_CHARGE<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="bms__cfg_8h_1a22aedd0ed2957809aa6acba9efe7338a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_BAL_NO_REQUEST<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="group__CONFIG__BMS_1ga19abde76bf30e3906a7e03b4ccc325aa" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_BAL_INACTIVE_OVERRIDE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="group__CONFIG__BMS_1ga481a9d9de12a177d936471a05b335f6d" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_BAL_OUT_OF_OVERRIDE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="group__CONFIG__BMS_1ga9b58a029e76a67df65ac7b11921d7b50" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_BAL_ACTIVE_OVERRIDE<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_STATEMACH_SHORTTIME_MS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_STATEMACH_MEDIUMTIME_MS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="bms__cfg_8h_1a4409acb53e6a5f164efafdff8e6b256a" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_STATEMACH_LONGTIME_MS<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="bms__cfg_8h_1a09a8abf3f6ceb92b0e8246a8b8ca94e3" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_STATEMACH_VERYLONGTIME_MS<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="group__CONFIG__BMS_1ga67b6663770c7f235fa045649286278dd" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_SELFPOWERONCHECK_TIMEOUT<sp/><sp/><sp/><sp/>10<sp/>//<sp/>100ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="group__CONFIG__BMS_1ga01d7e471386cf41c6a5b97ab1e184d02" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_SELFAWAKECHECK_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/>10<sp/>//<sp/>100ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="group__CONFIG__BMS_1ga222c89eb614e2e8f58bfb142ed284028" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_IDLE_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>500<sp/>//<sp/>5s<sp/>timeout<sp/>to<sp/>go<sp/>to<sp/>sleep<sp/>or<sp/>power<sp/>off<sp/>in<sp/>idle<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="group__CONFIG__BMS_1gaf0da7287cb9b874642e2a94fbd13f023" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_PRECHARGE_VOLTAGE_THRESHOLD<sp/>10<sp/>//<sp/>V</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="group__CONFIG__BMS_1ga2be5c2dffed30d25f64e4a74e0730f2b" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_PRECHARGE_CURRENT_THRESHOLD<sp/>10<sp/>//<sp/>mA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="group__CONFIG__BMS_1ga3f50e0a1a12b4618c20f638770abb5a7" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_PRECHARGE_TIMEOUT<sp/>600<sp/>//<sp/>6s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="group__CONFIG__BMS_1ga1324e4115fc243ed4a39fc0f49a85491" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_TIMER_MAINMINUS<sp/>100<sp/>//<sp/>1s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="group__CONFIG__BMS_1ga350a6eb4eeb03c2091f3310412fedc01" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_TIMER_MAINPRECHARGE<sp/>200<sp/>//<sp/>2s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="group__CONFIG__BMS_1gafc76899157a024b0b0684b7ccf30139d" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_TIMER_MAINPLUS<sp/>50<sp/>//<sp/>500ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="bms__cfg_8h_1a42b1dba02f1766c8747dca68bbac31f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_GETSELFCHECK_STATE()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMS_CHECK_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>function<sp/>could<sp/>return:<sp/>BMS_CHECK_NOT_OK<sp/>or<sp/>OK<sp/>BMS_CHECK_BUSY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="bms__cfg_8h_1a4c22d4ae2cf34c1ca35a8b316217b2af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_GETPOWERONSELFCHECK_STATE()<sp/><sp/><sp/><sp/><sp/>BMS_CHECK_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>function<sp/>could<sp/>return:<sp/>BMS_CHECK_NOT_OK<sp/>or<sp/>OK<sp/>BMS_CHECK_BUSY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="bms__cfg_8h_1a79ccaee80dfcccb5f735066ddf5fbc48" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CHECKPRECHARGE()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMS_CheckPrecharge()<sp/><sp/><sp/><sp/>//<sp/>DIAG_CheckPrecharge()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*<sp/>Mapping<sp/>the<sp/>marcos<sp/>from<sp/>the<sp/>contactor-module<sp/>to</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*<sp/>bms-macros.</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="bms__cfg_8h_1acf29c646cf1774ff6ccaf92a267a6618" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_ALL_CONTACTORS_OFF()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SwitchAllContactorsOff()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="bms__cfg_8h_1a81a71d28435e7d2d43dce4360bc56a03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_MAINMINUS_ON()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_MINUS_MAIN,<sp/>CONT_SWITCH_ON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="bms__cfg_8h_1a0a66665747164642514cea70a4519c38" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_MAINMINUS_OFF()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_MINUS_MAIN,<sp/>CONT_SWITCH_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="bms__cfg_8h_1ac92bc42d2208263fb3d7102414fc60eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_MAINPRECHARGE_ON()<sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_PLUS_PRECHARGE,<sp/>CONT_SWITCH_ON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="bms__cfg_8h_1a114361058feb85ff5b961f8b4af5c81b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_MAINPRECHARGE_OFF()<sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_PLUS_PRECHARGE,<sp/>CONT_SWITCH_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="bms__cfg_8h_1aeec9c009c615d6a0f59ee635d814f7e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_MAINPLUS_ON()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_PLUS_MAIN,<sp/>CONT_SWITCH_ON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="bms__cfg_8h_1a2d4e9d9d6bf7b39e1e603a2792cfa664" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_MAINPLUS_OFF()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_PLUS_MAIN,<sp/>CONT_SWITCH_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BS_SEPARATE_POWERLINES<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_CHARGE_MAINMINUS_ON()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_CHARGE_MINUS_MAIN,<sp/>CONT_SWITCH_ON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_CHARGE_MAINMINUS_OFF()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_CHARGE_MINUS_MAIN,<sp/>CONT_SWITCH_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_CHARGE_MAINPRECHARGE_ON()<sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_CHARGE_PLUS_PRECHARGE,<sp/>CONT_SWITCH_ON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_CHARGE_MAINPRECHARGE_OFF()<sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_CHARGE_PLUS_PRECHARGE,<sp/>CONT_SWITCH_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_CHARGE_MAINPLUS_ON()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_CHARGE_PLUS_MAIN,<sp/>CONT_SWITCH_ON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BMS_CONT_CHARGE_MAINPLUS_OFF()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONT_SetContactorState(CONT_CHARGE_PLUS_MAIN,<sp/>CONT_SWITCH_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>BS_SEPARATE_POWERLINES<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BMS_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/config/bms_cfg.h"/>
+  </compounddef>
+</doxygen>

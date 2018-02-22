@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structBKPSRAM__CH__NVSOC__s" kind="struct" language="C++" prot="public">
+    <compoundname>BKPSRAM_CH_NVSOC_s</compoundname>
+    <includes refid="bkpsram__cfg_8h" local="no">bkpsram_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBKPSRAM__CH__NVSOC__s_1a65047bb55b85ae256f77d55373657a9c" prot="public" static="no" mutable="no">
+        <type><ref refid="structSOX__SOC__s" kindref="compound">SOX_SOC_s</ref></type>
+        <definition>SOX_SOC_s BKPSRAM_CH_NVSOC_s::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="82" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBKPSRAM__CH__NVSOC__s_1adb69ed42e7549a068c8b221788c6caeb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t BKPSRAM_CH_NVSOC_s::checksum</definition>
+        <argsstring></argsstring>
+        <name>checksum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="83" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>state of charge voltages, since soc is voltage dependent, three different values are calculated, min, max and mean, number of opening/closing events of the contactors, checksum over soc data and switching events </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>BKPSRAM_CH_NVSOC_s</label>
+        <link refid="structBKPSRAM__CH__NVSOC__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOX_SOC_s</label>
+        <link refid="structSOX__SOC__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" line="81" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/bkpsram_cfg.h" bodystart="81" bodyend="84"/>
+    <listofallmembers>
+      <member refid="structBKPSRAM__CH__NVSOC__s_1adb69ed42e7549a068c8b221788c6caeb" prot="public" virt="non-virtual"><scope>BKPSRAM_CH_NVSOC_s</scope><name>checksum</name></member>
+      <member refid="structBKPSRAM__CH__NVSOC__s_1a65047bb55b85ae256f77d55373657a9c" prot="public" virt="non-virtual"><scope>BKPSRAM_CH_NVSOC_s</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

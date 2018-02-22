@@ -1,0 +1,5 @@
+<map id="SOC_Init_Lookup_Table" name="SOC_Init_Lookup_Table">
+<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="235,5,349,32"/>
+<area shape="rect" id="node3" href="$sox_8c.html#aa7ee4abe43b4d7db4a2581133839345e" title="look&#45;up table for SOC initialization (mean, min and max). " alt="" coords="216,56,368,83"/>
+<area shape="rect" id="node4" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="215,107,369,133"/>
+</map>

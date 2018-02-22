@@ -1,0 +1,1504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="io__package__cfg_8h" kind="file" language="C++">
+    <compoundname>io_package_cfg.h</compoundname>
+    <includedby refid="io__cfg_8h" local="yes">io_cfg.h</includedby>
+    <invincdepgraph>
+      <node id="1297">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="1288">
+        <label>dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="1303">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="1286">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1288" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+      </node>
+      <node id="1255">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+        <childnode refid="1256" relation="include">
+        </childnode>
+      </node>
+      <node id="1332">
+        <label>interlock_cfg.c</label>
+        <link refid="interlock__cfg_8c"/>
+      </node>
+      <node id="1274">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="1319">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1314" relation="include">
+        </childnode>
+      </node>
+      <node id="1331">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="1332" relation="include">
+        </childnode>
+        <childnode refid="1333" relation="include">
+        </childnode>
+      </node>
+      <node id="1273">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+      </node>
+      <node id="1308">
+        <label>rtc.c</label>
+        <link refid="rtc_8c"/>
+      </node>
+      <node id="1292">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+      </node>
+      <node id="1330">
+        <label>wdg.c</label>
+        <link refid="wdg_8c"/>
+      </node>
+      <node id="1317">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+      </node>
+      <node id="1316">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+      </node>
+      <node id="1329">
+        <label>sdram.c</label>
+        <link refid="sdram_8c"/>
+      </node>
+      <node id="1321">
+        <label>timer_cfg.c</label>
+        <link refid="timer__cfg_8c"/>
+      </node>
+      <node id="1320">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+      </node>
+      <node id="1327">
+        <label>chksum.c</label>
+        <link refid="chksum_8c"/>
+      </node>
+      <node id="1302">
+        <label>bkpsram.c</label>
+        <link refid="bkpsram_8c"/>
+      </node>
+      <node id="1301">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="1261">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1307">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1299" relation="include">
+        </childnode>
+      </node>
+      <node id="1289">
+        <label>spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="1311">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+      </node>
+      <node id="1324">
+        <label>uart_cfg.c</label>
+        <link refid="uart__cfg_8c"/>
+      </node>
+      <node id="1323">
+        <label>uart_cfg.h</label>
+        <link refid="uart__cfg_8h"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+        <childnode refid="1325" relation="include">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="1281">
+        <label>rcc_cfg.c</label>
+        <link refid="rcc__cfg_8c"/>
+      </node>
+      <node id="1280">
+        <label>rcc_cfg.h</label>
+        <link refid="rcc__cfg_8h"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+      </node>
+      <node id="1287">
+        <label>spi_cfg.c</label>
+        <link refid="spi__cfg_8c"/>
+      </node>
+      <node id="1310">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1327" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1330" relation="include">
+        </childnode>
+      </node>
+      <node id="1276">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="1267">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+      </node>
+      <node id="1265">
+        <label>adc_ex.h</label>
+        <link refid="adc__ex_8h"/>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+      </node>
+      <node id="1318">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="1322">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="1268">
+        <label>adc_cfg.c</label>
+        <link refid="adc__cfg_8c"/>
+      </node>
+      <node id="1264">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+      </node>
+      <node id="1266">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1259">
+        <label>nvic_cfg.c</label>
+        <link refid="nvic__cfg_8c"/>
+      </node>
+      <node id="1258">
+        <label>nvic_cfg.h</label>
+        <link refid="nvic__cfg_8h"/>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="1312">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1314" relation="include">
+        </childnode>
+      </node>
+      <node id="1328">
+        <label>portcheck.c</label>
+        <link refid="portcheck_8c"/>
+      </node>
+      <node id="1339">
+        <label>portcheck.h</label>
+        <link refid="portcheck_8h"/>
+        <childnode refid="1336" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+      </node>
+      <node id="1285">
+        <label>dma_cfg.c</label>
+        <link refid="dma__cfg_8c"/>
+      </node>
+      <node id="1270">
+        <label>adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="1284">
+        <label>dma_cfg.h</label>
+        <link refid="dma__cfg_8h"/>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+      </node>
+      <node id="1269">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+      </node>
+      <node id="1338">
+        <label>led.c</label>
+        <link refid="led_8c"/>
+      </node>
+      <node id="1337">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+      </node>
+      <node id="1334">
+        <label>io_cfg.c</label>
+        <link refid="io__cfg_8c"/>
+      </node>
+      <node id="1256">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1331" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1335" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+      </node>
+      <node id="1309">
+        <label>sdram_cfg.c</label>
+        <link refid="sdram__cfg_8c"/>
+      </node>
+      <node id="1305">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="1314">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="1333">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="1299">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+      </node>
+      <node id="1272">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="1271">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+      </node>
+      <node id="1326">
+        <label>uart.c</label>
+        <link refid="uart_8c"/>
+      </node>
+      <node id="1325">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1326" relation="include">
+        </childnode>
+      </node>
+      <node id="1277">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="1275">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1279">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="1278">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1336">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="1335">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1336" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+      </node>
+      <node id="1262">
+        <label>nvic.c</label>
+        <link refid="nvic_8c"/>
+      </node>
+      <node id="1260">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+      </node>
+      <node id="1283">
+        <label>rcc.c</label>
+        <link refid="rcc_8c"/>
+      </node>
+      <node id="1282">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="1294">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+      <node id="1293">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+      </node>
+      <node id="1291">
+        <label>rtc_cfg.c</label>
+        <link refid="rtc__cfg_8c"/>
+      </node>
+      <node id="1290">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1298">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="1295">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" prot="public" static="no">
+        <name>IO_NR_OF_PINS_PER_PORT</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nr. of pins per port must always be set to 16 <simplesect kind="par"><title>Type:</title><para>int </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>16 Number of pins per port at the microcontroller. This number is fixed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONFIG__IO_1ga60cf186cad68a1a6d353b2338b60ff59" prot="public" static="no">
+        <name>IO_PACKAGE_LQFP100</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>specify the type of microcontroller used</para><para><simplesect kind="par"><title>Type:</title><para>switch(3) </para></simplesect>
+<simplesect kind="par"><title>Default:</title><para>2 Defines the used microcontroller package. The user can choose between<itemizedlist>
+<listitem><para>IO_PACKAGE_LQFP100</para></listitem><listitem><para>IO_PACKAGE_LQFP144</para></listitem><listitem><para>IO_PACKAGE_LQFP176</para></listitem></itemizedlist>
+</para></simplesect>
+by using foxygen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h" line="85" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" prot="public" static="no">
+        <name>IO_PORTS_e</name>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adc73d9c04844f4fcb70667156fa8d1b9" prot="public">
+          <name>IO_PA_0</name>
+          <initializer>=   0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a573b66db67822e36bdb4041945ed1dd1" prot="public">
+          <name>IO_PA_1</name>
+          <initializer>=   1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afe2c084a96aa363658f862357c22da7c" prot="public">
+          <name>IO_PA_2</name>
+          <initializer>=   2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7b6c2d0b9aa154a96c9fd269623a13f1" prot="public">
+          <name>IO_PA_3</name>
+          <initializer>=   3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acebdba1f4185c451a51aae587e18b663" prot="public">
+          <name>IO_PA_4</name>
+          <initializer>=   4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a36e42f608734e1f50a7b67d16151beec" prot="public">
+          <name>IO_PA_5</name>
+          <initializer>=   5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ef47bbba82aa2fbcd068591b31c4daa" prot="public">
+          <name>IO_PA_6</name>
+          <initializer>=   6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6c3da68afafe76d68a5e36fa211c245a" prot="public">
+          <name>IO_PA_7</name>
+          <initializer>=   7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac9da7d156f803acfc18d36d4f4cc3eb3" prot="public">
+          <name>IO_PA_8</name>
+          <initializer>=   8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acb4f46a96b9bec247a1f976b75175928" prot="public">
+          <name>IO_PA_9</name>
+          <initializer>=   9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae67563f96d7daf3d98d95145ee7e8578" prot="public">
+          <name>IO_PA_10</name>
+          <initializer>=   10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abe490e3af915a7aa1e0374dc1566f0c4" prot="public">
+          <name>IO_PA_11</name>
+          <initializer>=   11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae5a1fe166a743a22c1e190638840682d" prot="public">
+          <name>IO_PA_12</name>
+          <initializer>=   12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aef3d093bb8e2b2f78b465f3de0ead927" prot="public">
+          <name>IO_PA_13</name>
+          <initializer>=   13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a613bb09c72dc22a629a5c897a4de4b22" prot="public">
+          <name>IO_PA_14</name>
+          <initializer>=   14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af2e2fb74cff209e443754a45f0d62b17" prot="public">
+          <name>IO_PA_15</name>
+          <initializer>=   15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port A, Pin 15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a864838895417df3dd2128a416098b6c7" prot="public">
+          <name>IO_PB_0</name>
+          <initializer>=   16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8d112f1e15d4b26ce887223804e9cb47" prot="public">
+          <name>IO_PB_1</name>
+          <initializer>=   17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae33b69d8ad1a66707b852d83904e0523" prot="public">
+          <name>IO_PB_2</name>
+          <initializer>=   18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab595bf6830e34233a97f1c24c391e75c" prot="public">
+          <name>IO_PB_3</name>
+          <initializer>=   19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a280f933d5ef822e4e1747a9f0f2bc694" prot="public">
+          <name>IO_PB_4</name>
+          <initializer>=   20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a3f4449c4b48e05df63daea5947e45ac6" prot="public">
+          <name>IO_PB_5</name>
+          <initializer>=   21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a01480927de6dafe3615153ef416e6e9f" prot="public">
+          <name>IO_PB_6</name>
+          <initializer>=   22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70add9a696b82ff1f1d30d2e8645d46b545" prot="public">
+          <name>IO_PB_7</name>
+          <initializer>=   23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7743498c3c1f7e60486b53eb86b539b7" prot="public">
+          <name>IO_PB_8</name>
+          <initializer>=   24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a68349cd308611457e0676c35af275588" prot="public">
+          <name>IO_PB_9</name>
+          <initializer>=   25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a028ae9a5fb5937e25d1910ad4256159b" prot="public">
+          <name>IO_PB_10</name>
+          <initializer>=   26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70affe3b6bf12e490859bbb04cf2fd55a1d" prot="public">
+          <name>IO_PB_11</name>
+          <initializer>=   27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adf1ed96c99823107b8903b572537ee33" prot="public">
+          <name>IO_PB_12</name>
+          <initializer>=   28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afa8b5203b305ffc07701d9ffeed4fba4" prot="public">
+          <name>IO_PB_13</name>
+          <initializer>=   29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8cce0facdb0f2b9d85453222f6ef7894" prot="public">
+          <name>IO_PB_14</name>
+          <initializer>=   30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70accb32328ced050359434f97a2ba3e350" prot="public">
+          <name>IO_PB_15</name>
+          <initializer>=   31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port B, Pin 15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af4fde2f27f0293ded9ec0982e53b0e05" prot="public">
+          <name>IO_PC_0</name>
+          <initializer>=   32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8ff64b89c05ae940089a42b00763e802" prot="public">
+          <name>IO_PC_1</name>
+          <initializer>=   33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a00b9a2e3d7f26d370de0e8f8b139c1f9" prot="public">
+          <name>IO_PC_2</name>
+          <initializer>=   34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa229d465386009cde651e26ec63bb8a8" prot="public">
+          <name>IO_PC_3</name>
+          <initializer>=   35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae85b55fb271bb22078919105123ed60d" prot="public">
+          <name>IO_PC_4</name>
+          <initializer>=   36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7d034f90f1ad748efd6a2822917f053e" prot="public">
+          <name>IO_PC_5</name>
+          <initializer>=   37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acc7d402f20180dd690abc315fc81f3cc" prot="public">
+          <name>IO_PC_6</name>
+          <initializer>=   38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac6e2e5db40c5539a4a14323d8e12b96e" prot="public">
+          <name>IO_PC_7</name>
+          <initializer>=   39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aaa867e167c24c45eb20b46b06549c168" prot="public">
+          <name>IO_PC_8</name>
+          <initializer>=   40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afdb6df12ad84e09fbb06bbc807b50d8e" prot="public">
+          <name>IO_PC_9</name>
+          <initializer>=   41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa820ab9da82a87c386ee116d3f6f45b0" prot="public">
+          <name>IO_PC_10</name>
+          <initializer>=   42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a802a373a60d37b4cb9a9a3d262063fff" prot="public">
+          <name>IO_PC_11</name>
+          <initializer>=   43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa3becc6489b0e34444f362c7b4c53ab2" prot="public">
+          <name>IO_PC_12</name>
+          <initializer>=   44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af08ab46a18ba3b4e6e7a89131e683b27" prot="public">
+          <name>IO_PC_13</name>
+          <initializer>=   45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4cd6c4ecce458ea14dea4e54a538acc9" prot="public">
+          <name>IO_PC_14</name>
+          <initializer>=   46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac62a732b955d0f96aae17edb2339e0d8" prot="public">
+          <name>IO_PC_15</name>
+          <initializer>=   47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port C, Pin 15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a697941ada482ec4aec3ff6c32725bbb0" prot="public">
+          <name>IO_PD_0</name>
+          <initializer>=   48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4b10d495ed8db76f93b4f8e32651f9b4" prot="public">
+          <name>IO_PD_1</name>
+          <initializer>=   49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a96d1e81bd30d51697621d346d510ee59" prot="public">
+          <name>IO_PD_2</name>
+          <initializer>=   50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a05a3869c8e76693380e0f020f98ca13a" prot="public">
+          <name>IO_PD_3</name>
+          <initializer>=   51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abbcd6869a05251d02b42b555eb4e5903" prot="public">
+          <name>IO_PD_4</name>
+          <initializer>=   52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae291ac93f9ea3dfc63a2afbbb8f09b19" prot="public">
+          <name>IO_PD_5</name>
+          <initializer>=   53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a265a98d16b1d74f7f6cc547fa65a7daf" prot="public">
+          <name>IO_PD_6</name>
+          <initializer>=   54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ecd20523af6d5a371240226df9b788a" prot="public">
+          <name>IO_PD_7</name>
+          <initializer>=   55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a16f0d771e1b1a36e1fcdbe4a0d0fd614" prot="public">
+          <name>IO_PD_8</name>
+          <initializer>=   56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6db2340b37843bf68fddbf6a51c73252" prot="public">
+          <name>IO_PD_9</name>
+          <initializer>=   57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4176d319b923c7b445e0eb07f87e41f6" prot="public">
+          <name>IO_PD_10</name>
+          <initializer>=   58</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a81b5d22b09dcf9bac3af01ffb89a594c" prot="public">
+          <name>IO_PD_11</name>
+          <initializer>=   59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4cb844299a958f658f3e38fda8e8fec5" prot="public">
+          <name>IO_PD_12</name>
+          <initializer>=   60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab4077b80a35fa5ccaef77ffda285fa01" prot="public">
+          <name>IO_PD_13</name>
+          <initializer>=   61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a2f50d208fa50dc415642b3872d60e675" prot="public">
+          <name>IO_PD_14</name>
+          <initializer>=   62</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab4c05e712665616e0ae7e07c3e950ced" prot="public">
+          <name>IO_PD_15</name>
+          <initializer>=   63</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port D, Pin 15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac4e8e74c15bcd522f804c0df4d244abd" prot="public">
+          <name>IO_PE_0</name>
+          <initializer>=   64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adeae0b0130c044d14c5062cb4d72e14d" prot="public">
+          <name>IO_PE_1</name>
+          <initializer>=   65</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab326cc35418ee8738bf1ddc086a559f0" prot="public">
+          <name>IO_PE_2</name>
+          <initializer>=   66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a71e63c7820b7f5fe3245654ddbe7c9ef" prot="public">
+          <name>IO_PE_3</name>
+          <initializer>=   67</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aeadcbf753782330672de6fd694cfdd6e" prot="public">
+          <name>IO_PE_4</name>
+          <initializer>=   68</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a28129324396f82f334ab6b70e0d548fc" prot="public">
+          <name>IO_PE_5</name>
+          <initializer>=   69</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae823cc6a24bb9c2a1267cae9dd11ae40" prot="public">
+          <name>IO_PE_6</name>
+          <initializer>=   70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a75660899a36ffbe90a166b82ded2414a" prot="public">
+          <name>IO_PE_7</name>
+          <initializer>=   71</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4ca0340cdf4233b3c6486ae4a0844830" prot="public">
+          <name>IO_PE_8</name>
+          <initializer>=   72</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6526c7197b4c92198e8ab6919ef8ce24" prot="public">
+          <name>IO_PE_9</name>
+          <initializer>=   73</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a2e2c2287e91eb81c33bfcaa4c30989f7" prot="public">
+          <name>IO_PE_10</name>
+          <initializer>=   74</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6287c9943de3cf8f68d2ffbd773d8fe7" prot="public">
+          <name>IO_PE_11</name>
+          <initializer>=   75</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8fa5f9ca45521b882112bfd811e27eec" prot="public">
+          <name>IO_PE_12</name>
+          <initializer>=   76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af1e4e10397ce9388ad62e84b41a20f48" prot="public">
+          <name>IO_PE_13</name>
+          <initializer>=   77</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7f55c57f126db470940de7f9170dfcb4" prot="public">
+          <name>IO_PE_14</name>
+          <initializer>=   78</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a09d1f626dd3f05fa3f9df64bb66695ca" prot="public">
+          <name>IO_PE_15</name>
+          <initializer>=   79</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port E, Pin 15 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>symbolic names of the pins at the microcontroller </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h" line="94" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h" bodystart="94" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>configuration header of the io-module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>07.10.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>IO <hruler/>
+ <heading level="1">Configuration of the GPIOs </heading>
+</para></simplesect>
+</para><para>The <ref refid="io__package__cfg_8h" kindref="compound">io_package_cfg.h</ref> assigns a name of each GPIO available on the specific package to a unique, ascending number starting 0, e.g. the first pin at the port A gets the name IO_PA_0 = 0, the second IO_PA_1 = 1, ... With this unique number for each pin it is possible to calculate from every pin name the corresponding port (by integer division) and corresponding pin (by modulo division). </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="44"><highlight class="preprocessor">#ifndef<sp/>IO_PACKAGE_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PACKAGE_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight></codeline>
+<codeline lineno="63" refid="group__CONFIG__IO_1ga3e7c9de2efad3f1755daab43bfdbe9fe" refkind="member"><highlight class="preprocessor">#define<sp/>IO_NR_OF_PINS_PER_PORT<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="group__CONFIG__IO_1ga60cf186cad68a1a6d353b2338b60ff59" refkind="member"><highlight class="preprocessor">#define<sp/>IO_PACKAGE_LQFP100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IO_PACKAGE_LQFP144</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IO_PACKAGE_LQFP176</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(IO_PACKAGE_LQFP100)<sp/>||<sp/>defined(IO_PACKAGE_LQFP144)<sp/>||<sp/>defined(IO_PACKAGE_LQFP176)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="95" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adc73d9c04844f4fcb70667156fa8d1b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adc73d9c04844f4fcb70667156fa8d1b9" kindref="member">IO_PA_0</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a573b66db67822e36bdb4041945ed1dd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a573b66db67822e36bdb4041945ed1dd1" kindref="member">IO_PA_1</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afe2c084a96aa363658f862357c22da7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afe2c084a96aa363658f862357c22da7c" kindref="member">IO_PA_2</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7b6c2d0b9aa154a96c9fd269623a13f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7b6c2d0b9aa154a96c9fd269623a13f1" kindref="member">IO_PA_3</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acebdba1f4185c451a51aae587e18b663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acebdba1f4185c451a51aae587e18b663" kindref="member">IO_PA_4</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>4,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a36e42f608734e1f50a7b67d16151beec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a36e42f608734e1f50a7b67d16151beec" kindref="member">IO_PA_5</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>5,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ef47bbba82aa2fbcd068591b31c4daa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ef47bbba82aa2fbcd068591b31c4daa" kindref="member">IO_PA_6</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>6,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6c3da68afafe76d68a5e36fa211c245a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6c3da68afafe76d68a5e36fa211c245a" kindref="member">IO_PA_7</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>7,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac9da7d156f803acfc18d36d4f4cc3eb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac9da7d156f803acfc18d36d4f4cc3eb3" kindref="member">IO_PA_8</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>8,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acb4f46a96b9bec247a1f976b75175928" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acb4f46a96b9bec247a1f976b75175928" kindref="member">IO_PA_9</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>9,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae67563f96d7daf3d98d95145ee7e8578" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae67563f96d7daf3d98d95145ee7e8578" kindref="member">IO_PA_10</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>10,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abe490e3af915a7aa1e0374dc1566f0c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abe490e3af915a7aa1e0374dc1566f0c4" kindref="member">IO_PA_11</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>11,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae5a1fe166a743a22c1e190638840682d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae5a1fe166a743a22c1e190638840682d" kindref="member">IO_PA_12</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>12,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aef3d093bb8e2b2f78b465f3de0ead927" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aef3d093bb8e2b2f78b465f3de0ead927" kindref="member">IO_PA_13</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>13,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a613bb09c72dc22a629a5c897a4de4b22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a613bb09c72dc22a629a5c897a4de4b22" kindref="member">IO_PA_14</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>14,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af2e2fb74cff209e443754a45f0d62b17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af2e2fb74cff209e443754a45f0d62b17" kindref="member">IO_PA_15</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>15,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a864838895417df3dd2128a416098b6c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a864838895417df3dd2128a416098b6c7" kindref="member">IO_PB_0</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>16,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8d112f1e15d4b26ce887223804e9cb47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8d112f1e15d4b26ce887223804e9cb47" kindref="member">IO_PB_1</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>17,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae33b69d8ad1a66707b852d83904e0523" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae33b69d8ad1a66707b852d83904e0523" kindref="member">IO_PB_2</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>18,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab595bf6830e34233a97f1c24c391e75c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab595bf6830e34233a97f1c24c391e75c" kindref="member">IO_PB_3</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>19,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a280f933d5ef822e4e1747a9f0f2bc694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a280f933d5ef822e4e1747a9f0f2bc694" kindref="member">IO_PB_4</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>20,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a3f4449c4b48e05df63daea5947e45ac6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a3f4449c4b48e05df63daea5947e45ac6" kindref="member">IO_PB_5</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>21,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a01480927de6dafe3615153ef416e6e9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a01480927de6dafe3615153ef416e6e9f" kindref="member">IO_PB_6</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>22,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70add9a696b82ff1f1d30d2e8645d46b545" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70add9a696b82ff1f1d30d2e8645d46b545" kindref="member">IO_PB_7</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>23,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7743498c3c1f7e60486b53eb86b539b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7743498c3c1f7e60486b53eb86b539b7" kindref="member">IO_PB_8</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>24,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a68349cd308611457e0676c35af275588" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a68349cd308611457e0676c35af275588" kindref="member">IO_PB_9</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>25,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a028ae9a5fb5937e25d1910ad4256159b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a028ae9a5fb5937e25d1910ad4256159b" kindref="member">IO_PB_10</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>26,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70affe3b6bf12e490859bbb04cf2fd55a1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70affe3b6bf12e490859bbb04cf2fd55a1d" kindref="member">IO_PB_11</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>27,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adf1ed96c99823107b8903b572537ee33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adf1ed96c99823107b8903b572537ee33" kindref="member">IO_PB_12</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>28,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afa8b5203b305ffc07701d9ffeed4fba4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afa8b5203b305ffc07701d9ffeed4fba4" kindref="member">IO_PB_13</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>29,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8cce0facdb0f2b9d85453222f6ef7894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8cce0facdb0f2b9d85453222f6ef7894" kindref="member">IO_PB_14</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>30,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70accb32328ced050359434f97a2ba3e350" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70accb32328ced050359434f97a2ba3e350" kindref="member">IO_PB_15</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>31,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af4fde2f27f0293ded9ec0982e53b0e05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af4fde2f27f0293ded9ec0982e53b0e05" kindref="member">IO_PC_0</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>32,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8ff64b89c05ae940089a42b00763e802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8ff64b89c05ae940089a42b00763e802" kindref="member">IO_PC_1</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>33,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a00b9a2e3d7f26d370de0e8f8b139c1f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a00b9a2e3d7f26d370de0e8f8b139c1f9" kindref="member">IO_PC_2</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>34,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa229d465386009cde651e26ec63bb8a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa229d465386009cde651e26ec63bb8a8" kindref="member">IO_PC_3</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>35,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae85b55fb271bb22078919105123ed60d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae85b55fb271bb22078919105123ed60d" kindref="member">IO_PC_4</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>36,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7d034f90f1ad748efd6a2822917f053e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7d034f90f1ad748efd6a2822917f053e" kindref="member">IO_PC_5</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>37,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acc7d402f20180dd690abc315fc81f3cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acc7d402f20180dd690abc315fc81f3cc" kindref="member">IO_PC_6</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>38,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac6e2e5db40c5539a4a14323d8e12b96e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac6e2e5db40c5539a4a14323d8e12b96e" kindref="member">IO_PC_7</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>39,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aaa867e167c24c45eb20b46b06549c168" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aaa867e167c24c45eb20b46b06549c168" kindref="member">IO_PC_8</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>40,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afdb6df12ad84e09fbb06bbc807b50d8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afdb6df12ad84e09fbb06bbc807b50d8e" kindref="member">IO_PC_9</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>41,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa820ab9da82a87c386ee116d3f6f45b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa820ab9da82a87c386ee116d3f6f45b0" kindref="member">IO_PC_10</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>42,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a802a373a60d37b4cb9a9a3d262063fff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a802a373a60d37b4cb9a9a3d262063fff" kindref="member">IO_PC_11</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>43,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa3becc6489b0e34444f362c7b4c53ab2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa3becc6489b0e34444f362c7b4c53ab2" kindref="member">IO_PC_12</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>44,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af08ab46a18ba3b4e6e7a89131e683b27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af08ab46a18ba3b4e6e7a89131e683b27" kindref="member">IO_PC_13</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>45,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4cd6c4ecce458ea14dea4e54a538acc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4cd6c4ecce458ea14dea4e54a538acc9" kindref="member">IO_PC_14</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>46,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac62a732b955d0f96aae17edb2339e0d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac62a732b955d0f96aae17edb2339e0d8" kindref="member">IO_PC_15</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>47,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a697941ada482ec4aec3ff6c32725bbb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a697941ada482ec4aec3ff6c32725bbb0" kindref="member">IO_PD_0</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>48,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4b10d495ed8db76f93b4f8e32651f9b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4b10d495ed8db76f93b4f8e32651f9b4" kindref="member">IO_PD_1</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>49,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a96d1e81bd30d51697621d346d510ee59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a96d1e81bd30d51697621d346d510ee59" kindref="member">IO_PD_2</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>50,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a05a3869c8e76693380e0f020f98ca13a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a05a3869c8e76693380e0f020f98ca13a" kindref="member">IO_PD_3</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>51,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abbcd6869a05251d02b42b555eb4e5903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abbcd6869a05251d02b42b555eb4e5903" kindref="member">IO_PD_4</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>52,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae291ac93f9ea3dfc63a2afbbb8f09b19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae291ac93f9ea3dfc63a2afbbb8f09b19" kindref="member">IO_PD_5</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>53,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a265a98d16b1d74f7f6cc547fa65a7daf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a265a98d16b1d74f7f6cc547fa65a7daf" kindref="member">IO_PD_6</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>54,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ecd20523af6d5a371240226df9b788a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ecd20523af6d5a371240226df9b788a" kindref="member">IO_PD_7</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>55,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a16f0d771e1b1a36e1fcdbe4a0d0fd614" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a16f0d771e1b1a36e1fcdbe4a0d0fd614" kindref="member">IO_PD_8</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>56,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6db2340b37843bf68fddbf6a51c73252" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6db2340b37843bf68fddbf6a51c73252" kindref="member">IO_PD_9</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>57,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4176d319b923c7b445e0eb07f87e41f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4176d319b923c7b445e0eb07f87e41f6" kindref="member">IO_PD_10</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>58,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a81b5d22b09dcf9bac3af01ffb89a594c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a81b5d22b09dcf9bac3af01ffb89a594c" kindref="member">IO_PD_11</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>59,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4cb844299a958f658f3e38fda8e8fec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4cb844299a958f658f3e38fda8e8fec5" kindref="member">IO_PD_12</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>60,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab4077b80a35fa5ccaef77ffda285fa01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab4077b80a35fa5ccaef77ffda285fa01" kindref="member">IO_PD_13</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>61,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a2f50d208fa50dc415642b3872d60e675" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a2f50d208fa50dc415642b3872d60e675" kindref="member">IO_PD_14</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>62,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab4c05e712665616e0ae7e07c3e950ced" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab4c05e712665616e0ae7e07c3e950ced" kindref="member">IO_PD_15</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>63,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac4e8e74c15bcd522f804c0df4d244abd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ac4e8e74c15bcd522f804c0df4d244abd" kindref="member">IO_PE_0</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>64,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adeae0b0130c044d14c5062cb4d72e14d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adeae0b0130c044d14c5062cb4d72e14d" kindref="member">IO_PE_1</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>65,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab326cc35418ee8738bf1ddc086a559f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab326cc35418ee8738bf1ddc086a559f0" kindref="member">IO_PE_2</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>66,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a71e63c7820b7f5fe3245654ddbe7c9ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a71e63c7820b7f5fe3245654ddbe7c9ef" kindref="member">IO_PE_3</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>67,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aeadcbf753782330672de6fd694cfdd6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aeadcbf753782330672de6fd694cfdd6e" kindref="member">IO_PE_4</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>68,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a28129324396f82f334ab6b70e0d548fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a28129324396f82f334ab6b70e0d548fc" kindref="member">IO_PE_5</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>69,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae823cc6a24bb9c2a1267cae9dd11ae40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae823cc6a24bb9c2a1267cae9dd11ae40" kindref="member">IO_PE_6</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>70,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a75660899a36ffbe90a166b82ded2414a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a75660899a36ffbe90a166b82ded2414a" kindref="member">IO_PE_7</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>71,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4ca0340cdf4233b3c6486ae4a0844830" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4ca0340cdf4233b3c6486ae4a0844830" kindref="member">IO_PE_8</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>72,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6526c7197b4c92198e8ab6919ef8ce24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6526c7197b4c92198e8ab6919ef8ce24" kindref="member">IO_PE_9</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>73,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a2e2c2287e91eb81c33bfcaa4c30989f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a2e2c2287e91eb81c33bfcaa4c30989f7" kindref="member">IO_PE_10</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>74,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6287c9943de3cf8f68d2ffbd773d8fe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6287c9943de3cf8f68d2ffbd773d8fe7" kindref="member">IO_PE_11</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>75,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8fa5f9ca45521b882112bfd811e27eec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8fa5f9ca45521b882112bfd811e27eec" kindref="member">IO_PE_12</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>76,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af1e4e10397ce9388ad62e84b41a20f48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70af1e4e10397ce9388ad62e84b41a20f48" kindref="member">IO_PE_13</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>77,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7f55c57f126db470940de7f9170dfcb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7f55c57f126db470940de7f9170dfcb4" kindref="member">IO_PE_14</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>78,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a09d1f626dd3f05fa3f9df64bb66695ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a09d1f626dd3f05fa3f9df64bb66695ca" kindref="member">IO_PE_15</ref><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>79<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor">#endif<sp/>//<sp/>IO_PACKAGE_LQFP100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(IO_PACKAGE_LQFP144)<sp/>||<sp/>defined(IO_PACKAGE_LQFP176)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_0<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>80,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_1<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>81,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_2<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>82,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_3<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>83,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_4<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>84,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_5<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>85,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_6<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>86,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_7<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>87,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_8<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>88,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_9<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>89,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_10<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>90,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_11<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>91,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_12<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>92,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_13<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>93,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_14<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>94,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PF_15<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>95,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_0<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>96,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_1<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>97,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_2<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>98,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_3<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>99,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_4<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>100,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_5<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>101,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_6<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>102,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_7<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>103,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_8<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>104,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_9<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>105,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_10<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>106,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_11<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>107,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_12<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>108,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_13<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>109,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_14<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>110,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PG_15<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>111,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_0<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>112,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_1<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>113<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor">#endif<sp/>//<sp/>IO_PACKAGE_LQFP144</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(IO_PACKAGE_LQFP176)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_2<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>114,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_3<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>115,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_4<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>116,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_5<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>117,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_6<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>118,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_7<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>119,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_8<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>120,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_9<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>121,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_10<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>122,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_11<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>123,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_12<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>124,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_13<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>125,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_14<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>126,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PH_15<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>127,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_0<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>128,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_1<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>129,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_2<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>130,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_3<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>131,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_4<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>132,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_5<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>133,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_6<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>134,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_7<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>135,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_8<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>136,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_9<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>137,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_10<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>138,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>IO_PI_11<sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>139<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor">#endif<sp/>//<sp/>IO_PACKAGE_LQFP176</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}<sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IO_PACKAGE_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_package_cfg.h"/>
+  </compounddef>
+</doxygen>

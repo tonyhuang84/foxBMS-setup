@@ -1,0 +1,56 @@
+<map id="OS_TSK_Engine" name="OS_TSK_Engine">
+<area shape="rect" id="node2" href="$os_8c.html#a9f0687e02ddc61f131d2c43d4270542f" title="reads non&#45;volatile memory and initializes the sys module " alt="" coords="173,727,284,753"/>
+<area shape="rect" id="node48" href="$database_8c.html#a1585d5c7665504898be0371c5c6295b9" title="trigger of database manager " alt="" coords="533,1107,623,1133"/>
+<area shape="rect" id="node52" href="$diag_8c.html#af5b8cf38b93979152c6d3d64c6340b03" title="overall system monitoring " alt="" coords="741,1056,849,1083"/>
+<area shape="rect" id="node3" href="$nvic_8c.html#a609f6efbe6a90d1908ae1e3f1a7096fa" title="Initializes and enables interrupts for usage after operating system has started. " alt="" coords="332,752,452,779"/>
+<area shape="rect" id="node4" href="$group__API__DIAG.html#gaf3e14f837ad6b7df26392f0164a8a0bd" title="DIAG_Handler provides generic error handling, based on diagnosis group.This function calls the handle..." alt="" coords="1935,803,2039,829"/>
+<area shape="rect" id="node18" href="$sdram_8h.html#a9c4b12172af5ca9805ff6d8e68cbce6b" title="flexible memory controller (FMC) initialization for SDRAM " alt="" coords="345,651,439,677"/>
+<area shape="rect" id="node19" href="$can_8c.html#a0505a1f9b26b55293dc199f45e7bb0ec" title="Initializes CAN settings and message filtering. " alt="" coords="1253,853,1326,880"/>
+<area shape="rect" id="node24" href="$eepr__cfg_8c.html#ae2c079158d0210850505e7567f0c75bf" title="requests the initialization of the eeprom and triggers the state machine until eeprom is in IDLE&#45;Mode..." alt="" coords="351,347,433,373"/>
+<area shape="rect" id="node17" href="$nvic_8c.html#abc0deed107f8b105a0f01d890128ac46" title="NVIC_InitEXTI" alt="" coords="527,803,629,829"/>
+<area shape="rect" id="node5" href="$diag_8c.html#ac6d010cd0f6962d7f0cc5ff4abf03d09" title="DIAG_GeneralHandler provides generic error handling, based on configuration. " alt="" coords="2115,803,2264,829"/>
+<area shape="rect" id="node10" href="$diag_8c.html#a4206490ad03fe7468ab8dc56618e1b5b" title="DIAG_ContHandler provides generic contactor switching handling, based on configuration. " alt="" coords="2124,752,2255,779"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="2330,853,2453,880"/>
+<area shape="rect" id="node7" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="2545,784,2645,811"/>
+<area shape="rect" id="node8" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="2546,847,2645,873"/>
+<area shape="rect" id="node9" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="2544,904,2647,931"/>
+<area shape="rect" id="node11" href="$bkpsram__cfg_8c.html#a94275ffeb6898188bf4ee07fd6272640" title="Gets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="2312,651,2471,677"/>
+<area shape="rect" id="node13" href="$bkpsram__cfg_8c.html#a55378df5e6e3e5d9e81c41a5238aa7ee" title="Sets the number of opening/closing events of the contactors saved in the backup SRAM. " alt="" coords="2313,701,2470,728"/>
+<area shape="rect" id="node12" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="2519,600,2672,627"/>
+<area shape="rect" id="node14" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="2535,727,2655,753"/>
+<area shape="rect" id="node15" href="$eepr__cfg_8c.html#a62ad4bbac7d8b92d7481346b31cf187d" title="sets a dirty flag to indicate that the data of a channel have been changed " alt="" coords="2519,93,2672,120"/>
+<area shape="rect" id="node16" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="2534,676,2657,703"/>
+<area shape="rect" id="node20" href="$can_8c.html#a9d2ac075410a424726befa42b8c9d819" title="Initializes message filtering. " alt="" coords="1471,853,1573,880"/>
+<area shape="rect" id="node23" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="1476,904,1568,931"/>
+<area shape="rect" id="node21" href="$can_8c.html#a68dc0bb72e3070c318b5c7b0ca98892a" title="Returns the number of filters that have to be initialized. " alt="" coords="1665,853,1860,880"/>
+<area shape="rect" id="node22" href="$can_8c.html#a8975fdc25f90009f3de12e5446010eec" title="Returns the next index of wished filter ID setting in CAN_MSG_RX_TYPE_t can_RxMsgs[CAN_NUMBER_OF_RX_I..." alt="" coords="1705,904,1821,931"/>
+<area shape="rect" id="node25" href="$eepr__cfg_8h.html#aefac79ed7e71cac9d3211a712fad2461" title="requests a state change to be handled by eeprom state machine (used by external modules) ..." alt="" coords="1207,296,1371,323"/>
+<area shape="rect" id="node26" href="$eepr__cfg_8h.html#a6f557dc8e24353ebbece6b57485501ca" title="returns actual state of EEPROM state machine " alt="" coords="1231,195,1348,221"/>
+<area shape="rect" id="node27" href="$eepr_8c.html#af4db18407693f62fa9a7375faf679f0b" title="cyclic trigger of EEPROM State Machine, trigger cycle: 1ms trigger timer in units of 1ms ..." alt="" coords="1237,397,1341,424"/>
+<area shape="rect" id="node38" href="$eepr__cfg_8c.html#a75ad38a70e241b1332c0c4d8e965a1e1" title="Updates the EEPROM data if bkpsram data are valid, otherwise uses the valid EEPROM data to update Bkp..." alt="" coords="500,245,656,272"/>
+<area shape="rect" id="node43" href="$eepr__cfg_8c.html#af9c4f7773244cbd5552ed3ca5cdd4ae5" title="EEPR_SetDefaultValue" alt="" coords="1908,93,2067,120"/>
+<area shape="rect" id="node28" href="$eepr_8c.html#a8f1741b06c7cda83122e37621662b182" title="updates the current state after checking once again if the transition is allowed and sets all the var..." alt="" coords="1427,549,1617,576"/>
+<area shape="rect" id="node31" href="$eepr_8c.html#a4dabafe26ed71c3743ee152a5bffa261" title="initialization of external Serial EEPROM device (AT25128N) " alt="" coords="1441,195,1603,221"/>
+<area shape="rect" id="node32" href="$eepr_8c.html#a2be64b1f4f4a113201aad0a964fcd284" title="transition function for error states " alt="" coords="1457,245,1587,272"/>
+<area shape="rect" id="node33" href="$eepr_8c.html#a7667e8a2a765f34aef34706e7cd04c35" title="sets the startaddress and the endaddress of the hardware&#45;protected area " alt="" coords="1443,296,1601,323"/>
+<area shape="rect" id="node34" href="$eepr_8c.html#a7661222fa4bbfa9a24729b25f2bd4fb9" title="writes the protection bytes BP0 and BP1 into EEPROM " alt="" coords="1441,347,1603,373"/>
+<area shape="rect" id="node35" href="$eepr_8c.html#a08c47dedce99b557dfff5e6e5b2751e1" title="EEPROM state is reset to state after initialization. " alt="" coords="1442,397,1602,424"/>
+<area shape="rect" id="node36" href="$eepr_8c.html#a748f31cbac8ed800d212ca6068f82092" title="reads &quot;byte_len&quot; of bytes from EEPROM memory starting at &quot;address&quot; and saving data in &quot;byteptr&quot; ..." alt="" coords="1451,448,1593,475"/>
+<area shape="rect" id="node37" href="$eepr_8c.html#acfb186591420e305ab1fe067d823f1e9" title="EEPR_WriteMemory" alt="" coords="1451,499,1593,525"/>
+<area shape="rect" id="node29" href="$eepr_8c.html#aab7b97a818e044d5be21a00339c77f91" title="checks if the transition from one state to another one is allowed " alt="" coords="1672,499,1853,525"/>
+<area shape="rect" id="node30" href="$eepr_8c.html#acc65df9d4443765a13bd9c19173cc402" title="sends error message and clears the error event " alt="" coords="1685,549,1840,576"/>
+<area shape="rect" id="node39" href="$eepr__cfg_8c.html#a7f5c064d10a65e3caae373059e6d30e3" title="copys the data of one channel from eeprom into the bkpsrams " alt="" coords="959,245,1128,272"/>
+<area shape="rect" id="node42" href="$eepr__cfg_8c.html#a201f101dd5a4b7654bc741474223d572" title="EEPR_FormatCheck" alt="" coords="724,195,867,221"/>
+<area shape="rect" id="node44" href="$eepr__cfg_8c.html#a7c5a68313b315c4d1fe54f8207a3fcc5" title="copys the data of one channel from bkpsram into the eeprom " alt="" coords="935,296,1152,323"/>
+<area shape="rect" id="node46" href="$eepr__cfg_8c.html#a8fe6b93853b3ce21a335df080d464b67" title="handles the data exchange between eeprom and bkpsram checks if the bkpsram data are valid..." alt="" coords="704,347,887,373"/>
+<area shape="rect" id="node40" href="$eepr_8c.html#adcdc5dd08f67b2009c5273e506d2441b" title="calculates the maximum writetime for a specific channel " alt="" coords="1209,144,1369,171"/>
+<area shape="rect" id="node41" href="$eepr__cfg_8c.html#a5f92c515fa55d80886bd904624fe1343" title="removes the dirty flag to indicate that the eeprom was actualized " alt="" coords="1200,245,1379,272"/>
+<area shape="rect" id="node45" href="$eepr_8c.html#aeaffe20963e63e157b7a75cb1dc871f3" title="calculates the maximum readtime for a specific channel " alt="" coords="1209,347,1370,373"/>
+<area shape="rect" id="node47" href="$eepr__cfg_8c.html#adcc7dc37b46611ee42b1b9c9106898ad" title="EEPR_delete_bkpsrambuffer" alt="" coords="949,347,1137,373"/>
+<area shape="rect" id="node49" href="$database_8c.html#a15d2ff576e5aa63eac01df9d81ff4c89" title="Initialization of database manager. " alt="" coords="755,1157,835,1184"/>
+<area shape="rect" id="node50" href="$diag_8c.html#a7970909aa22bb87427a96c694fbab0e4" title="DIAG_SysMonNotify has to be called in every function using the system monitoring. ..." alt="" coords="725,1107,866,1133"/>
+<area shape="rect" id="node51" href="$mcu_8c.html#a09e5f493b1f3dc15a07b7b72ad69cede" title="returns OS based system tick value. " alt="" coords="971,1107,1116,1133"/>
+<area shape="rect" id="node53" href="$contactor_8c.html#a4ecb75068e6d93d855acdace72c657fb" title="Iterates over the contactor array and switches all contactors off. " alt="" coords="945,980,1142,1007"/>
+<area shape="rect" id="node54" href="$contactor_8c.html#a0943d21ca71b1061982894195be96fe9" title="Sets the contactor state to its requested state, if the contactor is at that time not in the requeste..." alt="" coords="1204,967,1375,993"/>
+<area shape="rect" id="node55" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="1465,955,1579,981"/>
+</map>

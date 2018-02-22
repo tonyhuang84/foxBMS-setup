@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="bms_8c" kind="file" language="C++">
+    <compoundname>bms.c</compoundname>
+    <includes refid="bms_8h" local="yes">bms.h</includes>
+    <includes refid="interlock_8h" local="yes">interlock.h</includes>
+    <includes refid="os_8h" local="yes">os.h</includes>
+    <includes refid="diag_8h" local="yes">diag.h</includes>
+    <includes refid="database_8h" local="yes">database.h</includes>
+    <includes refid="batterycell__cfg_8h" local="yes">batterycell_cfg.h</includes>
+    <includes refid="batterysystem__cfg_8h" local="yes">batterysystem_cfg.h</includes>
+    <incdepgraph>
+      <node id="291">
+        <label>database.h</label>
+        <link refid="database_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="271">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>stdint.h</label>
+      </node>
+      <node id="292">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="278">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>os.h</label>
+        <link refid="os_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="269">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>batterycell_cfg.h</label>
+        <link refid="batterycell__cfg_8h"/>
+      </node>
+      <node id="276">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="288">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="273">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="290">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bms_8c_1a0a644403eff866e62f1689c8085d9634" prot="public" static="no">
+        <name>BMS_SAVELASTSTATES</name>
+        <param></param>
+        <initializer>bms_state.laststate = bms_state.state; \
+                                bms_state.lastsubstate = bms_state.substate;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the last state and the last substate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="48" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bms_8c_1ae4936f9fbb2aa16d116c51904b79826d" prot="public" static="yes" mutable="no">
+        <type><ref refid="structBMS__STATE__s" kindref="compound">BMS_STATE_s</ref></type>
+        <definition>BMS_STATE_s bms_state</definition>
+        <argsstring></argsstring>
+        <name>bms_state</name>
+        <initializer>= {
+    .timer                  = 0,
+    .statereq               = <ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>,
+    .state                  = <ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>,
+    .substate               = <ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>,
+    .laststate              = <ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>,
+    .lastsubstate           = 0,
+    .triggerentry           = 0,
+    .ErrRequestCounter      = 0,
+    .counter                = 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contains the state of the contactor state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="56" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref></type>
+        <definition>static BMS_RETURN_TYPE_e BMS_CheckStateRequest</definition>
+        <argsstring>(BMS_STATE_REQUEST_e statereq)</argsstring>
+        <name>BMS_CheckStateRequest</name>
+        <param>
+          <type><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>checks the state requests that are made. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks the validity of the state requests. The results of the checked is returned immediately.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state request to be checked</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result of the state request that was made, taken from BMS_RETURN_TYPE_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="70" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="170" bodyend="189"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593ad478e86d9beb5e5f4f4572459a20557c" compoundref="bms_8h" startline="129">BMS_STATE_ERROR_REQUEST</references>
+        <references refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" compoundref="bms_8h" startline="138">BMS_OK</references>
+        <references refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" compoundref="bms_8h" startline="154">BMS_STATE_s::statereq</references>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" compoundref="bms_8h" startline="128">BMS_STATE_INIT_REQUEST</references>
+        <references refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" compoundref="bms_8h" startline="155">BMS_STATE_s::state</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" compoundref="bms_8h" startline="93">BMS_STATEMACH_UNINITIALIZED</references>
+        <references refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba46c142fedcf2b6d215a3c6ced6d031c5" compoundref="bms_8h" startline="142">BMS_ALREADY_INITIALIZED</references>
+        <references refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba7a0d090a526d2ee0ab21c868bd74e13e" compoundref="bms_8h" startline="141">BMS_ILLEGAL_REQUEST</references>
+        <references refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba2359a5fcc8a330f656014bf1e90a7c61" compoundref="bms_8h" startline="140">BMS_REQUEST_PENDING</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1a939d41677bf361560c510c75b10f0b69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref></type>
+        <definition>static BMS_STATE_REQUEST_e BMS_GetStateRequest</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_GetStateRequest</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state request. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the SYS state machine.</para><para><simplesect kind="return"><para>current state request, taken from BMS_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="71" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="111" bodyend="119"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="311" endline="322">OS_TaskEnter_Critical</references>
+        <references refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" compoundref="bms_8h" startline="154">BMS_STATE_s::statereq</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="324" endline="335">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref></type>
+        <definition>static BMS_STATE_REQUEST_e BMS_TransferStateRequest</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_TransferStateRequest</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>transfers the current state request to the state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function takes the current state request from cont_state and transfers it to th state machine. It resets the value from cont_state to BMS_STATE_NO_REQUEST</para><para><simplesect kind="return"><para>retVal current state request, taken from BMS_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="134" bodyend="142"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="311" endline="322">OS_TaskEnter_Critical</references>
+        <references refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" compoundref="bms_8h" startline="154">BMS_STATE_s::statereq</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="324" endline="335">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t BMS_CheckReEntrance</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_CheckReEntrance</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>re-entrance check of SYS state machine trigger function </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is not re-entrant and should only be called time- or event-triggered. It increments the triggerentry counter from the state variable ltc_state. It should never be called by two different processes, so if it is the case, triggerentry should never be higher than 0 when this function is called.</para><para><simplesect kind="return"><para>retval 0 if no further instance of the function is active, 0xff else </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="73" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="92" bodyend="102"/>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="311" endline="322">OS_TaskEnter_Critical</references>
+        <references refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" compoundref="bms_8h" startline="160">BMS_STATE_s::triggerentry</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="324" endline="335">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1af72477ca6db619f4d132d0e33c314e31" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t BMS_CheckCANRequests</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_CheckCANRequests</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="328" bodyend="343"/>
+        <references refid="bms__cfg_8h_1a623d42db4b4d647ea577f5ee2c16992b" compoundref="bms__cfg_8h" startline="90">BMS_REQ_ID_NOREQ</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a0b445280174407a1a20ae8a173aeb6b9" compoundref="database__cfg_8h" startline="125">DATA_BLOCK_ID_STATEREQUEST</references>
+        <references refid="structDATA__BLOCK__STATEREQUEST__s_1adddc57fa75078eec60dc2f7150382b34" compoundref="database__cfg_8h" startline="279">DATA_BLOCK_STATEREQUEST_s::state_request</references>
+        <references refid="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" compoundref="bms__cfg_8h" startline="102">BMS_REQ_ID_STANDBY</references>
+        <references refid="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" compoundref="bms__cfg_8h" startline="114">BMS_REQ_ID_NORMAL</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref></type>
+        <definition>static STD_RETURN_TYPE_e BMS_CheckAnyErrorFlagSet</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_CheckAnyErrorFlagSet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks the errorflags. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks all the error flags from the database and returns an error if at least onee is set.</para><para><simplesect kind="return"><para>E_OK if no error flag is set, otherwise E_NOT_OK </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="75" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="460" bodyend="491"/>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a3692160bb5c67925e83710d276f461e0" compoundref="database__cfg_8h" startline="132">DATA_BLOCK_ID_SYSTEMSTATE</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7b024f6b6a4b7a6ce810bd74dace5ca2" compoundref="database__cfg_8h" startline="362">DATA_BLOCK_SYSTEMSTATE_s::main_plus</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a2fa34d1754746002656d6128fe7cc0e9" compoundref="database__cfg_8h" startline="363">DATA_BLOCK_SYSTEMSTATE_s::main_minus</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1ab3f7223d2dac2b04aac52922627daebf" compoundref="database__cfg_8h" startline="364">DATA_BLOCK_SYSTEMSTATE_s::precharge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a9d8c8548158ddc4ec5ae9173444780b2" compoundref="database__cfg_8h" startline="368">DATA_BLOCK_SYSTEMSTATE_s::interlock</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1ae305a8e91af7b7170735620488f84c54" compoundref="database__cfg_8h" startline="370">DATA_BLOCK_SYSTEMSTATE_s::over_current_charge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1aff26ef82bdc252d113bd8b058d049c19" compoundref="database__cfg_8h" startline="371">DATA_BLOCK_SYSTEMSTATE_s::over_current_discharge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1aff5effe89b6c9bc43e011568e7a59350" compoundref="database__cfg_8h" startline="372">DATA_BLOCK_SYSTEMSTATE_s::over_voltage</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7768775aa99c709ddf879e039bbe758c" compoundref="database__cfg_8h" startline="373">DATA_BLOCK_SYSTEMSTATE_s::under_voltage</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a9928ac5403b13b2ff38901a90c52c52f" compoundref="database__cfg_8h" startline="376">DATA_BLOCK_SYSTEMSTATE_s::over_temperature_charge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1af9961ee24200c03f71576b3bd09c0407" compoundref="database__cfg_8h" startline="374">DATA_BLOCK_SYSTEMSTATE_s::over_temperature_discharge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7dd881b691d4a505efdc101b76e19168" compoundref="database__cfg_8h" startline="377">DATA_BLOCK_SYSTEMSTATE_s::under_temperature_charge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1aa930903b80cf7ebdc6f366b0f2365bc0" compoundref="database__cfg_8h" startline="375">DATA_BLOCK_SYSTEMSTATE_s::under_temperature_discharge</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1ab6a881179199d7533f590da9c6f1e5ed" compoundref="database__cfg_8h" startline="378">DATA_BLOCK_SYSTEMSTATE_s::crc_error</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1aedeaf1b1d78773e8967b98ad17744b80" compoundref="database__cfg_8h" startline="379">DATA_BLOCK_SYSTEMSTATE_s::mux_error</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7e8c2c03be767ca7fc9ac2b0016e3fcc" compoundref="database__cfg_8h" startline="380">DATA_BLOCK_SYSTEMSTATE_s::spi_error</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a5bff7c9cae7d4cd80cf7835812e3e099" compoundref="database__cfg_8h" startline="361">DATA_BLOCK_SYSTEMSTATE_s::currentsensorresponding</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a587d1e15a430a022b042292610529fe1" compoundref="database__cfg_8h" startline="382">DATA_BLOCK_SYSTEMSTATE_s::can_timing_cc</references>
+        <references refid="structDATA__BLOCK__SYSTEMSTATE__s_1a36e0279b629eb4e225a000cb0bd6f27d" compoundref="database__cfg_8h" startline="381">DATA_BLOCK_SYSTEMSTATE_s::can_timing</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" compoundref="std__types_8h" startline="58">E_OK</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1aa72909416e548055c772878fcc840f41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void BMS_CheckVoltages</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_CheckVoltages</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>checks the abidance by the safe operating area </para>        </briefdescription>
+        <detaileddescription>
+<para>verify for cell voltage measurements (U), if minimum and maximum values are out of range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="76" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="353" bodyend="369"/>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" compoundref="database__cfg_8h" startline="126">DATA_BLOCK_ID_MINMAX</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a630951b27b688dfc25874ad4c4bd835f" compoundref="database__cfg_8h" startline="296">DATA_BLOCK_MINMAX_s::voltage_max</references>
+        <references refid="group__CONFIG__BATTERYCELL_1gac8ce10ba9f885c57798d47ac5a3fdfe2" compoundref="batterycell__cfg_8h" startline="104">BC_VOLTMAX</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="449" endline="481">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1a59a892dcb9d74d62a8d48fc723f646e1" compoundref="diag__cfg_8h" startline="142">DIAG_CH_CELLVOLTAGE_OVERVOLTAGE</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" compoundref="diag__id__cfg_8h" startline="43">DIAG_EVENT_OK</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1ab9f24e98d980212dd9b88664091d8ec7" compoundref="database__cfg_8h" startline="292">DATA_BLOCK_MINMAX_s::voltage_min</references>
+        <references refid="group__CONFIG__BATTERYCELL_1gaf575d94060cd6470a61a6796e74beb27" compoundref="batterycell__cfg_8h" startline="128">BC_VOLTMIN</references>
+        <references refid="diag__cfg_8h_1a671f42ba4774cc616e7958981138c9b2" compoundref="diag__cfg_8h" startline="143">DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void BMS_CheckTemperatures</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_CheckTemperatures</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>checks the abidance by the safe operating area </para>        </briefdescription>
+        <detaileddescription>
+<para>verify for cell temperature measurements (T), if minimum and maximum values are out of range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="77" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="377" bodyend="411"/>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" compoundref="database__cfg_8h" startline="123">DATA_BLOCK_ID_CURRENT</references>
+        <references refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" compoundref="database__cfg_8h" startline="126">DATA_BLOCK_ID_MINMAX</references>
+        <references refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" compoundref="database__cfg_8h" startline="240">DATA_BLOCK_CURRENT_s::current</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a99c93ff1bbbe54351c2137702c79c8a5" compoundref="database__cfg_8h" startline="304">DATA_BLOCK_MINMAX_s::temperature_max</references>
+        <references refid="group__CONFIG__BATTERYCELL_1ga2095686e6e3f462b6a9ae975e1b66414" compoundref="batterycell__cfg_8h" startline="52">BC_TEMPMAX_DISCHARGE</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="449" endline="481">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1a74177f566a31f1126a38e621dcd1ac07" compoundref="diag__cfg_8h" startline="149">DIAG_CH_TEMP_OVERTEMPERATURE_DISCHARGE</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" compoundref="diag__id__cfg_8h" startline="43">DIAG_EVENT_OK</references>
+        <references refid="group__CONFIG__BATTERYCELL_1ga38fa01536e20a0dbd91b8cf24edb97e0" compoundref="batterycell__cfg_8h" startline="78">BC_TEMPMAX_CHARGE</references>
+        <references refid="diag__cfg_8h_1a11b45b33f2c3b6b81445471985ca1081" compoundref="diag__cfg_8h" startline="148">DIAG_CH_TEMP_OVERTEMPERATURE_CHARGE</references>
+        <references refid="structDATA__BLOCK__MINMAX__s_1a1e425dd6a1805b873e0ec266f265bfea" compoundref="database__cfg_8h" startline="301">DATA_BLOCK_MINMAX_s::temperature_min</references>
+        <references refid="group__CONFIG__BATTERYCELL_1ga0116684b2063f1c24c8744c3cbf76b3a" compoundref="batterycell__cfg_8h" startline="65">BC_TEMPMIN_DISCHARGE</references>
+        <references refid="diag__cfg_8h_1ac8fb9561fe3ce4bdf195d1c8672545c4" compoundref="diag__cfg_8h" startline="151">DIAG_CH_TEMP_UNDERTEMPERATURE_DISCHARGE</references>
+        <references refid="group__CONFIG__BATTERYCELL_1ga9f0aef8143e610412ee0db1d0e1122b8" compoundref="batterycell__cfg_8h" startline="91">BC_TEMPMIN_CHARGE</references>
+        <references refid="diag__cfg_8h_1a3323286f985cf39bb873e6f2a46c2f57" compoundref="diag__cfg_8h" startline="150">DIAG_CH_TEMP_UNDERTEMPERATURE_CHARGE</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void BMS_CheckCurrent</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_CheckCurrent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>checks the abidance by the safe operating area </para>        </briefdescription>
+        <detaileddescription>
+<para>verify for cell current measurements (I), if minimum and maximum values are out of range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="78" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="422" bodyend="451"/>
+        <references refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" compoundref="database_8c" startline="195" endline="225">DATA_GetTable</references>
+        <references refid="database__cfg_8h_1a544725397c540c2c2f7881bac5519d74" compoundref="database__cfg_8h" startline="120">DATA_BLOCK_ID_SOX</references>
+        <references refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" compoundref="database__cfg_8h" startline="123">DATA_BLOCK_ID_CURRENT</references>
+        <references refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" compoundref="database__cfg_8h" startline="240">DATA_BLOCK_CURRENT_s::current</references>
+        <references refid="structDATA__BLOCK__SOX__s_1a25f121909faa5a6ac0221c720b936a14" compoundref="database__cfg_8h" startline="179">DATA_BLOCK_SOX_s::sof_continuous_charge</references>
+        <references refid="structDATA__BLOCK__SOX__s_1ad049d59e18d1e91b467eb6ad41887ac3" compoundref="database__cfg_8h" startline="180">DATA_BLOCK_SOX_s::sof_continuous_discharge</references>
+        <references refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="std__types_8h" startline="43">FALSE</references>
+        <references refid="group__CONFIG__BATTERYCELL_1gac9972664f0ffea757192cae81cceeff6" compoundref="batterycell__cfg_8h" startline="154">BC_CURRENTMAX_CHARGE</references>
+        <references refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" compoundref="diag_8c" startline="449" endline="481">DIAG_Handler</references>
+        <references refid="diag__cfg_8h_1ac6e9148c11106746efe21e07cdb360ca" compoundref="diag__cfg_8h" startline="156">DIAG_CH_OVERCURRENT_CHARGE</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" compoundref="diag__id__cfg_8h" startline="44">DIAG_EVENT_NOK</references>
+        <references refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" compoundref="std__types_8h" startline="40">NULL_PTR</references>
+        <references refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" compoundref="diag__id__cfg_8h" startline="43">DIAG_EVENT_OK</references>
+        <references refid="group__CONFIG__BATTERYCELL_1ga17367c184f1619ff5e320e43ac5af8f5" compoundref="batterycell__cfg_8h" startline="141">BC_CURRENTMAX_DISCHARGE</references>
+        <references refid="diag__cfg_8h_1aa7dc52ee928b8cf1cc45cfecac801945" compoundref="diag__cfg_8h" startline="157">DIAG_CH_OVERCURRENT_DISCHARGE</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1afcd6e979c7502594e6807d322df11555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref></type>
+        <definition>BMS_STATEMACH_e BMS_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the SYS state machine.</para><para><simplesect kind="return"><para>current state, taken from BMS_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="122" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="122" bodyend="124"/>
+        <references refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" compoundref="bms_8h" startline="155">BMS_STATE_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1a40eb276efea852638c5ba83e53569ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref></type>
+        <definition>BMS_RETURN_TYPE_e BMS_SetStateRequest</definition>
+        <argsstring>(BMS_STATE_REQUEST_e statereq)</argsstring>
+        <name>BMS_SetStateRequest</name>
+        <param>
+          <type><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable bms_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine,e.g, start voltage measurement, read result of voltage measurement, re-initialization. It calls <ref refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" kindref="member">BMS_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state request to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>current state request, taken from BMS_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="146" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="146" bodyend="158"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" compoundref="os_8c" startline="311" endline="322">OS_TaskEnter_Critical</references>
+        <references refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" compoundref="bms_8c" startline="170" endline="189">BMS_CheckStateRequest</references>
+        <references refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" compoundref="bms_8h" startline="138">BMS_OK</references>
+        <references refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" compoundref="bms_8h" startline="154">BMS_STATE_s::statereq</references>
+        <references refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" compoundref="os_8c" startline="324" endline="335">OS_TaskExit_Critical</references>
+      </memberdef>
+      <memberdef kind="function" id="bms_8c_1a954a05b20669dc00663c4f0f2a729fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BMS_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>BMS_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the SYS driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the SYS state machine. It must be called time-triggered, every 1ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" line="191" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c" bodystart="191" bodyend="323"/>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" compoundref="bms_8h" startline="130">BMS_STATE_NO_REQUEST</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa1c17b9694c7034ae7adff25cab57a91" compoundref="diag__cfg_8h" startline="293">DIAG_SYSMON_BMS_ID</references>
+        <references refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" compoundref="bms_8h" startline="155">BMS_STATE_s::state</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" compoundref="bms_8h" startline="93">BMS_STATEMACH_UNINITIALIZED</references>
+        <references refid="bms_8c_1aa72909416e548055c772878fcc840f41" compoundref="bms_8c" startline="353" endline="369">BMS_CheckVoltages</references>
+        <references refid="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" compoundref="bms_8c" startline="377" endline="411">BMS_CheckTemperatures</references>
+        <references refid="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" compoundref="bms_8c" startline="422" endline="451">BMS_CheckCurrent</references>
+        <references refid="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" compoundref="bms_8c" startline="92" endline="102">BMS_CheckReEntrance</references>
+        <references refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" compoundref="bms_8h" startline="153">BMS_STATE_s::timer</references>
+        <references refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" compoundref="bms_8h" startline="160">BMS_STATE_s::triggerentry</references>
+        <references refid="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" compoundref="bms_8c" startline="134" endline="142">BMS_TransferStateRequest</references>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" compoundref="bms_8h" startline="128">BMS_STATE_INIT_REQUEST</references>
+        <references refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" compoundref="bms_8c" startline="48">BMS_SAVELASTSTATES</references>
+        <references refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" compoundref="bms__cfg_8h" startline="134">BMS_STATEMACH_SHORTTIME_MS</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" compoundref="bms_8h" startline="94">BMS_STATEMACH_INITIALIZATION</references>
+        <references refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" compoundref="bms_8h" startline="156">BMS_STATE_s::substate</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" compoundref="bms_8h" startline="112">BMS_ENTRY</references>
+        <references refid="structBMS__STATE__s_1aa887635fef363b58d693ea1c4f88e7ac" compoundref="bms_8h" startline="159">BMS_STATE_s::ErrRequestCounter</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" compoundref="bms_8h" startline="95">BMS_STATEMACH_INITIALIZED</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" compoundref="bms_8h" startline="97">BMS_STATEMACH_STANDBY</references>
+        <references refid="interlock_8c_1ab218c092199d1c3999262123352877fc" compoundref="interlock_8c" startline="236" endline="248">ILCK_SetStateRequest</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" compoundref="interlock_8h" startline="136">ILCK_STATE_CLOSE_REQUEST</references>
+        <references refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" compoundref="bms__cfg_8h" startline="140">BMS_STATEMACH_MEDIUMTIME_MS</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" compoundref="bms_8h" startline="113">BMS_CHECK_ERROR_FLAGS_INTERLOCK</references>
+        <references refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" compoundref="bms_8c" startline="460" endline="491">BMS_CheckAnyErrorFlagSet</references>
+        <references refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" compoundref="std__types_8h" startline="59">E_NOT_OK</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" compoundref="bms_8h" startline="104">BMS_STATEMACH_ERROR</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" compoundref="bms_8h" startline="114">BMS_INTERLOCK_CHECKED</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" compoundref="bms_8h" startline="116">BMS_CHECK_ERROR_FLAGS</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3a661b3d706ce5932f009cfe176f67199d" compoundref="interlock_8h" startline="135">ILCK_STATE_OPEN_REQUEST</references>
+        <references refid="batterysystem__cfg_8h_1a144a967d8c4a938ea18ac9fae3055264" compoundref="batterysystem__cfg_8h" startline="51">SECONDARY_OUT_OF_ERROR_STATE</references>
+        <references refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" compoundref="std__types_8h" startline="42">TRUE</references>
+        <references refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea8dd5047f9389d49e31232b47e4924a13" compoundref="bms_8h" startline="120">BMS_CHECK_INTERLOCK_CLOSE_AFTER_ERROR</references>
+        <references refid="structBMS__STATE__s_1a278b998c12d1c5ab6f8d291c067f936a" compoundref="bms_8h" startline="161">BMS_STATE_s::counter</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>bms driver implementation </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>BMS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bms_8h" kindref="compound">bms.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="interlock_8h" kindref="compound">interlock.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="os_8h" kindref="compound">os.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diag_8h" kindref="compound">diag.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="database_8h" kindref="compound">database.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="batterycell__cfg_8h" kindref="compound">batterycell_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="batterysystem__cfg_8h" kindref="compound">batterysystem_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" refkind="member"><highlight class="preprocessor">#define<sp/>BMS_SAVELASTSTATES()<sp/><sp/><sp/><sp/>bms_state.laststate<sp/>=<sp/>bms_state.state;<sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.lastsubstate<sp/>=<sp/>bms_state.substate;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="bms_8c_1ae4936f9fbb2aa16d116c51904b79826d" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structBMS__STATE__s" kindref="compound">BMS_STATE_s</ref><sp/><ref refid="bms_8c_1ae4936f9fbb2aa16d116c51904b79826d" kindref="member">bms_state</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>.statereq<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>.state<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>.substate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>.laststate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>.lastsubstate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>.triggerentry<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>.ErrRequestCounter<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>.counter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref><sp/><ref refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" kindref="member">BMS_CheckStateRequest</ref>(<ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/><ref refid="bms_8c_1a939d41677bf361560c510c75b10f0b69" kindref="member">BMS_GetStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/><ref refid="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" kindref="member">BMS_TransferStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" kindref="member">BMS_CheckReEntrance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="bms_8c_1af72477ca6db619f4d132d0e33c314e31" kindref="member">BMS_CheckCANRequests</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" kindref="member">BMS_CheckAnyErrorFlagSet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1aa72909416e548055c772878fcc840f41" kindref="member">BMS_CheckVoltages</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" kindref="member">BMS_CheckTemperatures</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" kindref="member">BMS_CheckCurrent</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" kindref="member">BMS_CheckReEntrance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>retval<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" kindref="member">OS_TaskEnter_Critical</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!bms_state.<ref refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" kindref="member">triggerentry</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" kindref="member">triggerentry</ref>++;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retval<sp/>=<sp/>0xFF;<sp/><sp/></highlight><highlight class="comment">//<sp/>multiple<sp/>calls<sp/>of<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" kindref="member">OS_TaskExit_Critical</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retval);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="bms_8c_1a939d41677bf361560c510c75b10f0b69" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/><ref refid="bms_8c_1a939d41677bf361560c510c75b10f0b69" kindref="member">BMS_GetStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>retval<sp/>=<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" kindref="member">OS_TaskEnter_Critical</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>retval<sp/><sp/><sp/><sp/>=<sp/>bms_state.<ref refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" kindref="member">statereq</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" kindref="member">OS_TaskExit_Critical</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retval);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="bms_8h_1afcd6e979c7502594e6807d322df11555" refkind="member"><highlight class="normal"><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref><sp/><ref refid="bms_8c_1afcd6e979c7502594e6807d322df11555" kindref="member">BMS_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/><ref refid="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" kindref="member">BMS_TransferStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>retval<sp/>=<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" kindref="member">OS_TaskEnter_Critical</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>retval<sp/><sp/><sp/><sp/>=<sp/>bms_state.<ref refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" kindref="member">statereq</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" kindref="member">statereq</ref><sp/>=<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" kindref="member">OS_TaskExit_Critical</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retval);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="bms_8h_1a40eb276efea852638c5ba83e53569ebc" refkind="member"><highlight class="normal"><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref><sp/><ref refid="bms_8c_1a40eb276efea852638c5ba83e53569ebc" kindref="member">BMS_SetStateRequest</ref>(<ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>statereq)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref><sp/>retVal<sp/>=<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a5573d7c2221a3f3b9cfe5c109603b441" kindref="member">OS_TaskEnter_Critical</ref>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" kindref="member">BMS_CheckStateRequest</ref>(statereq);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(retVal<sp/>==<sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" kindref="member">BMS_OK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" kindref="member">statereq</ref><sp/>=<sp/>statereq;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="os_8c_1a7e5b7892152952d2109c89baa0add1a8" kindref="member">OS_TaskExit_Critical</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retVal);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621b" kindref="member">BMS_RETURN_TYPE_e</ref><sp/><ref refid="bms_8c_1a619db2b25db4bb9b7f5f4564bf6291c9" kindref="member">BMS_CheckStateRequest</ref>(<ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>statereq)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593ad478e86d9beb5e5f4f4572459a20557c" kindref="member">BMS_STATE_ERROR_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" kindref="member">BMS_OK</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1a037f3822caa88a33351e3227b605f585" kindref="member">statereq</ref><sp/>==<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>only<sp/>allowed<sp/>from<sp/>the<sp/>uninitialized<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" kindref="member">BMS_STATE_INIT_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>==<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba07f465ec76fe75d8e8996e74b14a5164" kindref="member">BMS_OK</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba46c142fedcf2b6d215a3c6ced6d031c5" kindref="member">BMS_ALREADY_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba7a0d090a526d2ee0ab21c868bd74e13e" kindref="member">BMS_ILLEGAL_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ae4f50e4e18c4ae4043372dd4e6d4621ba2359a5fcc8a330f656014bf1e90a7c61" kindref="member">BMS_REQUEST_PENDING</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="bms_8h_1a954a05b20669dc00663c4f0f2a729fcd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1a954a05b20669dc00663c4f0f2a729fcd" kindref="member">BMS_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593" kindref="member">BMS_STATE_REQUEST_e</ref><sp/>statereq<sp/>=<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" kindref="member">DIAG_SysMonNotify</ref>(<ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faa1c17b9694c7034ae7adff25cab57a91" kindref="member">DIAG_SYSMON_BMS_ID</ref>,<sp/>0);<sp/><sp/></highlight><highlight class="comment">//<sp/>task<sp/>is<sp/>running,<sp/>state<sp/>=<sp/>ok</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>!=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1aa72909416e548055c772878fcc840f41" kindref="member">BMS_CheckVoltages</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" kindref="member">BMS_CheckTemperatures</ref>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" kindref="member">BMS_CheckCurrent</ref>();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>re-entrance<sp/>of<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bms_8c_1ad5057f08e33ca2d5b01dba9ca55b113b" kindref="member">BMS_CheckReEntrance</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(--bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" kindref="member">triggerentry</ref>--;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>handle<sp/>state<sp/>machine<sp/>only<sp/>if<sp/>timer<sp/>has<sp/>elapsed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****Happens<sp/>every<sp/>time<sp/>the<sp/>state<sp/>machine<sp/>is<sp/>triggered**************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************UNINITIALIZED***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6671089e84548f231c67ab4a8d329c7c" kindref="member">BMS_STATEMACH_UNINITIALIZED</ref>:</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>waiting<sp/>for<sp/>Initialization<sp/>Request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statereq<sp/>=<sp/><ref refid="bms_8c_1adac85d9bf1b7fd02d1a0efbd2c222391" kindref="member">BMS_TransferStateRequest</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" kindref="member">BMS_STATE_INIT_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" kindref="member">BMS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" kindref="member">BMS_STATEMACH_INITIALIZATION</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a751fae9f8552ede47b823a69c503bc4b" kindref="member">BMS_STATE_NO_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>actual<sp/>request<sp/>pending<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1aa887635fef363b58d693ea1c4f88e7ac" kindref="member">ErrRequestCounter</ref>++;<sp/><sp/></highlight><highlight class="comment">//<sp/>illegal<sp/>request<sp/>pending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZATION**********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a8fe6f87e32adf7e91041e53d5344c8de" kindref="member">BMS_STATEMACH_INITIALIZATION</ref>:</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" kindref="member">BMS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CONT_SetStateRequest(CONT_STATE_INIT_REQUEST);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" kindref="member">BMS_STATEMACH_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZED*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67acac1281847cf0ab9b6ce91e271718558" kindref="member">BMS_STATEMACH_INITIALIZED</ref>:</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" kindref="member">BMS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" kindref="member">BMS_STATEMACH_STANDBY</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************STANDBY*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" kindref="member">BMS_STATEMACH_STANDBY</ref>:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" kindref="member">BMS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>==<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>){</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interlock_8c_1ab218c092199d1c3999262123352877fc" kindref="member">ILCK_SetStateRequest</ref>(<ref refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" kindref="member">ILCK_STATE_CLOSE_REQUEST</ref>);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" kindref="member">BMS_STATEMACH_MEDIUMTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" kindref="member">BMS_CHECK_ERROR_FLAGS_INTERLOCK</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>==<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eac2adc744dea63985bf559c9d6a59065d" kindref="member">BMS_CHECK_ERROR_FLAGS_INTERLOCK</ref>){</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" kindref="member">BMS_CheckAnyErrorFlagSet</ref>()<sp/>==<sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>){</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" kindref="member">BMS_STATEMACH_ERROR</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" kindref="member">BMS_INTERLOCK_CHECKED</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>==<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea58fd9938d3d3a6b1760656a0106d5b5c" kindref="member">BMS_INTERLOCK_CHECKED</ref>){</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" kindref="member">BMS_CHECK_ERROR_FLAGS</ref>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>==<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" kindref="member">BMS_CHECK_ERROR_FLAGS</ref>){</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" kindref="member">BMS_CheckAnyErrorFlagSet</ref>()<sp/>==<sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>){</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1afff88bcfd928b58063e0a80c69f96faf" kindref="member">BMS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" kindref="member">BMS_STATEMACH_ERROR</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************ERROR*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a6913831b32865528ec4d754556efcc20" kindref="member">BMS_STATEMACH_ERROR</ref>:</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a0a644403eff866e62f1689c8085d9634" kindref="member">BMS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>==<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>){</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interlock_8c_1ab218c092199d1c3999262123352877fc" kindref="member">ILCK_SetStateRequest</ref>(<ref refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3a661b3d706ce5932f009cfe176f67199d" kindref="member">ILCK_STATE_OPEN_REQUEST</ref>);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" kindref="member">BMS_STATEMACH_MEDIUMTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" kindref="member">BMS_CHECK_ERROR_FLAGS</ref>;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>==<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382eaa9664d7586cde41ef01b19cb0cff37e3" kindref="member">BMS_CHECK_ERROR_FLAGS</ref>){</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" kindref="member">BMS_CheckAnyErrorFlagSet</ref>()<sp/>==<sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>){</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>stay<sp/>already<sp/>in<sp/>requested<sp/>state,<sp/>nothing<sp/>to<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="batterysystem__cfg_8h_1a144a967d8c4a938ea18ac9fae3055264" kindref="member">SECONDARY_OUT_OF_ERROR_STATE</ref><sp/>==<sp/><ref refid="std__types_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kindref="member">TRUE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interlock_8c_1ab218c092199d1c3999262123352877fc" kindref="member">ILCK_SetStateRequest</ref>(<ref refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" kindref="member">ILCK_STATE_CLOSE_REQUEST</ref>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a45b63d1538a00900fa3df47762400560" kindref="member">timer</ref><sp/>=<sp/><ref refid="bms__cfg_8h_1a882f1ad2fc64760b40bf8fbb15e4a7aa" kindref="member">BMS_STATEMACH_MEDIUMTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea8dd5047f9389d49e31232b47e4924a13" kindref="member">BMS_CHECK_INTERLOCK_CLOSE_AFTER_ERROR</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1ab4d93d4b9002c26dac8ca44eb8163697" kindref="member">state</ref><sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" kindref="member">BMS_STATEMACH_STANDBY</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1affa3d289a18c58524d78e3cfe1bb976f" kindref="member">substate</ref><sp/>=<sp/><ref refid="bms_8h_1a9e00663cb2a3d43ac6513517e5f0382ea4cd35ec45e5f86efc86f864192d96b9c" kindref="member">BMS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight><highlight class="comment">//<sp/>end<sp/>switch(bms_state.state)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a53ecbe05a7ea6d875f75401f7ef7f8a5" kindref="member">triggerentry</ref>--;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>bms_state.<ref refid="structBMS__STATE__s_1a278b998c12d1c5ab6f8d291c067f936a" kindref="member">counter</ref>++;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Static<sp/>functions<sp/>=====================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="bms_8c_1af72477ca6db619f4d132d0e33c314e31" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="bms_8c_1af72477ca6db619f4d132d0e33c314e31" kindref="member">BMS_CheckCANRequests</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>retVal<sp/>=<sp/><ref refid="bms__cfg_8h_1a623d42db4b4d647ea577f5ee2c16992b" kindref="member">BMS_REQ_ID_NOREQ</ref>;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__STATEREQUEST__s" kindref="compound">DATA_BLOCK_STATEREQUEST_s</ref><sp/>request;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;request,<sp/><ref refid="database__cfg_8h_1a0b445280174407a1a20ae8a173aeb6b9" kindref="member">DATA_BLOCK_ID_STATEREQUEST</ref>);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(request.<ref refid="structDATA__BLOCK__STATEREQUEST__s_1adddc57fa75078eec60dc2f7150382b34" kindref="member">state_request</ref><sp/>==<sp/><ref refid="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" kindref="member">BMS_REQ_ID_STANDBY</ref>){</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="group__CONFIG__BMS_1ga1171af6e3d18231f1926ae1e02503a66" kindref="member">BMS_REQ_ID_STANDBY</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(request.<ref refid="structDATA__BLOCK__STATEREQUEST__s_1adddc57fa75078eec60dc2f7150382b34" kindref="member">state_request</ref><sp/>==<sp/><ref refid="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" kindref="member">BMS_REQ_ID_NORMAL</ref>){</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="group__CONFIG__BMS_1gad4a01723b32c24dac9b40e8ca94fb4a8" kindref="member">BMS_REQ_ID_NORMAL</ref>;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="bms_8c_1aa72909416e548055c772878fcc840f41" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1aa72909416e548055c772878fcc840f41" kindref="member">BMS_CheckVoltages</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__MINMAX__s" kindref="compound">DATA_BLOCK_MINMAX_s</ref><sp/>minmax;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;minmax,<sp/><ref refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" kindref="member">DATA_BLOCK_ID_MINMAX</ref>);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minmax.<ref refid="structDATA__BLOCK__MINMAX__s_1a630951b27b688dfc25874ad4c4bd835f" kindref="member">voltage_max</ref><sp/>&gt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1gac8ce10ba9f885c57798d47ac5a3fdfe2" kindref="member">BC_VOLTMAX</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a59a892dcb9d74d62a8d48fc723f646e1" kindref="member">DIAG_CH_CELLVOLTAGE_OVERVOLTAGE</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,<sp/>0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a59a892dcb9d74d62a8d48fc723f646e1" kindref="member">DIAG_CH_CELLVOLTAGE_OVERVOLTAGE</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,<sp/>0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minmax.<ref refid="structDATA__BLOCK__MINMAX__s_1ab9f24e98d980212dd9b88664091d8ec7" kindref="member">voltage_min</ref><sp/>&lt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1gaf575d94060cd6470a61a6796e74beb27" kindref="member">BC_VOLTMIN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a671f42ba4774cc616e7958981138c9b2" kindref="member">DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,<sp/>0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a671f42ba4774cc616e7958981138c9b2" kindref="member">DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,<sp/>0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1a56066efe7af5b7bb9f088caf609acf91" kindref="member">BMS_CheckTemperatures</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__MINMAX__s" kindref="compound">DATA_BLOCK_MINMAX_s</ref><sp/>minmax;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__CURRENT__s" kindref="compound">DATA_BLOCK_CURRENT_s</ref><sp/>curr_tab;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;curr_tab,<sp/><ref refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" kindref="member">DATA_BLOCK_ID_CURRENT</ref>);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;minmax,<sp/><ref refid="database__cfg_8h_1a4179f99cbdf90152fa6731d5b08acbd6" kindref="member">DATA_BLOCK_ID_MINMAX</ref>);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref>&gt;=0.0){</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minmax.<ref refid="structDATA__BLOCK__MINMAX__s_1a99c93ff1bbbe54351c2137702c79c8a5" kindref="member">temperature_max</ref><sp/>&gt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1ga2095686e6e3f462b6a9ae975e1b66414" kindref="member">BC_TEMPMAX_DISCHARGE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a74177f566a31f1126a38e621dcd1ac07" kindref="member">DIAG_CH_TEMP_OVERTEMPERATURE_DISCHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a74177f566a31f1126a38e621dcd1ac07" kindref="member">DIAG_CH_TEMP_OVERTEMPERATURE_DISCHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minmax.<ref refid="structDATA__BLOCK__MINMAX__s_1a99c93ff1bbbe54351c2137702c79c8a5" kindref="member">temperature_max</ref><sp/>&gt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1ga38fa01536e20a0dbd91b8cf24edb97e0" kindref="member">BC_TEMPMAX_CHARGE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a11b45b33f2c3b6b81445471985ca1081" kindref="member">DIAG_CH_TEMP_OVERTEMPERATURE_CHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a11b45b33f2c3b6b81445471985ca1081" kindref="member">DIAG_CH_TEMP_OVERTEMPERATURE_CHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref>&gt;=0.0){</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minmax.<ref refid="structDATA__BLOCK__MINMAX__s_1a1e425dd6a1805b873e0ec266f265bfea" kindref="member">temperature_min</ref><sp/>&lt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1ga0116684b2063f1c24c8744c3cbf76b3a" kindref="member">BC_TEMPMIN_DISCHARGE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1ac8fb9561fe3ce4bdf195d1c8672545c4" kindref="member">DIAG_CH_TEMP_UNDERTEMPERATURE_DISCHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1ac8fb9561fe3ce4bdf195d1c8672545c4" kindref="member">DIAG_CH_TEMP_UNDERTEMPERATURE_DISCHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minmax.<ref refid="structDATA__BLOCK__MINMAX__s_1a1e425dd6a1805b873e0ec266f265bfea" kindref="member">temperature_min</ref><sp/>&lt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1ga9f0aef8143e610412ee0db1d0e1122b8" kindref="member">BC_TEMPMIN_CHARGE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a3323286f985cf39bb873e6f2a46c2f57" kindref="member">DIAG_CH_TEMP_UNDERTEMPERATURE_CHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a3323286f985cf39bb873e6f2a46c2f57" kindref="member">DIAG_CH_TEMP_UNDERTEMPERATURE_CHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422" refid="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bms_8c_1a86ad335dbd339b3aa926f11f4996ea4d" kindref="member">BMS_CheckCurrent</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__SOX__s" kindref="compound">DATA_BLOCK_SOX_s</ref><sp/>sof_tab;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__CURRENT__s" kindref="compound">DATA_BLOCK_CURRENT_s</ref><sp/>curr_tab;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;sof_tab,<sp/><ref refid="database__cfg_8h_1a544725397c540c2c2f7881bac5519d74" kindref="member">DATA_BLOCK_ID_SOX</ref>);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;curr_tab,<sp/><ref refid="database__cfg_8h_1a8f42993f5e17a2d234df914e08d9e3a9" kindref="member">DATA_BLOCK_ID_CURRENT</ref>);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>MEAS_TEST_CELL_SOF_LIMITS<sp/>==<sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref><sp/>&lt;<sp/>(-1000*(sof_tab.<ref refid="structDATA__BLOCK__SOX__s_1a25f121909faa5a6ac0221c720b936a14" kindref="member">sof_continuous_charge</ref>)))<sp/>||</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref><sp/>&gt;<sp/>(1000*sof_tab.<ref refid="structDATA__BLOCK__SOX__s_1ad049d59e18d1e91b467eb6ad41887ac3" kindref="member">sof_continuous_discharge</ref>))))<sp/>{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="std__types_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref>&lt;0.0){</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(-curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref><sp/>&gt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1gac9972664f0ffea757192cae81cceeff6" kindref="member">BC_CURRENTMAX_CHARGE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1ac6e9148c11106746efe21e07cdb360ca" kindref="member">DIAG_CH_OVERCURRENT_CHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1ac6e9148c11106746efe21e07cdb360ca" kindref="member">DIAG_CH_OVERCURRENT_CHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr_tab.<ref refid="structDATA__BLOCK__CURRENT__s_1abe562fdb013652a32a8d1da374093206" kindref="member">current</ref><sp/>&gt;<sp/><ref refid="group__CONFIG__BATTERYCELL_1ga17367c184f1619ff5e320e43ac5af8f5" kindref="member">BC_CURRENTMAX_DISCHARGE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1aa7dc52ee928b8cf1cc45cfecac801945" kindref="member">DIAG_CH_OVERCURRENT_DISCHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1aa7dc52ee928b8cf1cc45cfecac801945" kindref="member">DIAG_CH_OVERCURRENT_DISCHARGE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868af6dc8eb4f6ae8e000e83ec9486007807" kindref="member">DIAG_EVENT_OK</ref>,0,<sp/><ref refid="std__types_8h_1a530f11a96e508d171d28564c8dc20942" kindref="member">NULL_PTR</ref>);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460" refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/><ref refid="bms_8c_1a68ed3a2764fdf9c37992f06e54632b56" kindref="member">BMS_CheckAnyErrorFlagSet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398" kindref="member">STD_RETURN_TYPE_e</ref><sp/>retVal<sp/>=<sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDATA__BLOCK__SYSTEMSTATE__s" kindref="compound">DATA_BLOCK_SYSTEMSTATE_s</ref><sp/>error_flags;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="database_8c_1ace052ca2c5098dcade967992ecebc8bf" kindref="member">DATA_GetTable</ref>(&amp;error_flags,<sp/><ref refid="database__cfg_8h_1a3692160bb5c67925e83710d276f461e0" kindref="member">DATA_BLOCK_ID_SYSTEMSTATE</ref>);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7b024f6b6a4b7a6ce810bd74dace5ca2" kindref="member">main_plus</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a2fa34d1754746002656d6128fe7cc0e9" kindref="member">main_minus</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1ab3f7223d2dac2b04aac52922627daebf" kindref="member">precharge</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a9d8c8548158ddc4ec5ae9173444780b2" kindref="member">interlock</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1ae305a8e91af7b7170735620488f84c54" kindref="member">over_current_charge</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1aff26ef82bdc252d113bd8b058d049c19" kindref="member">over_current_discharge</ref><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1aff5effe89b6c9bc43e011568e7a59350" kindref="member">over_voltage</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7768775aa99c709ddf879e039bbe758c" kindref="member">under_voltage</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a9928ac5403b13b2ff38901a90c52c52f" kindref="member">over_temperature_charge</ref><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1af9961ee24200c03f71576b3bd09c0407" kindref="member">over_temperature_discharge</ref><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7dd881b691d4a505efdc101b76e19168" kindref="member">under_temperature_charge</ref><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1aa930903b80cf7ebdc6f366b0f2365bc0" kindref="member">under_temperature_discharge</ref><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1ab6a881179199d7533f590da9c6f1e5ed" kindref="member">crc_error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1aedeaf1b1d78773e8967b98ad17744b80" kindref="member">mux_error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a7e8c2c03be767ca7fc9ac2b0016e3fcc" kindref="member">spi_error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a5bff7c9cae7d4cd80cf7835812e3e099" kindref="member">currentsensorresponding</ref><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a587d1e15a430a022b042292610529fe1" kindref="member">can_timing_cc</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>||</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_flags.<ref refid="structDATA__BLOCK__SYSTEMSTATE__s_1a36e0279b629eb4e225a000cb0bd6f27d" kindref="member">can_timing</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398a15b95ea81a76501d167f9beca795cb0e" kindref="member">E_NOT_OK</ref>;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="std__types_8h_1a15c0d7d047c476ea033586165d49d398ab7f63f013a1b30e2bba00534c6f0477c" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/application/bms/bms.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bd5b8ea0b2b39ea037a56df5d94a299c" kind="dir">
+    <compoundname>spi</compoundname>
+    <innerfile refid="spi_8c">spi.c</innerfile>
+    <innerfile refid="spi_8h">spi.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/src/module/spi/"/>
+  </compounddef>
+</doxygen>

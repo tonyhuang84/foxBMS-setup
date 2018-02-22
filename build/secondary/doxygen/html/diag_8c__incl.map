@@ -1,0 +1,26 @@
+<map id="diag.c" name="diag.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="617,453,692,480"/>
+<area shape="rect" id="node5" href="$diag_8h.html" title="Diag driver header. " alt="" coords="435,229,493,256"/>
+<area shape="rect" id="node9" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="177,379,225,405"/>
+<area shape="rect" id="node16" href="$os_8h.html" title="Implementation of the tasks used by the system, headers. " alt="" coords="822,80,869,107"/>
+<area shape="rect" id="node18" href="$mcu_8h.html" title="Headers for the functions for the MCU to manage time and interrupts. " alt="" coords="297,229,356,256"/>
+<area shape="rect" id="node19" href="$bkpsram_8h.html" title="Headers for the driver for static backup RAM. " alt="" coords="505,80,588,107"/>
+<area shape="rect" id="node24" href="$bms_8h.html" title="bms driver header " alt="" coords="304,80,363,107"/>
+<area shape="rect" id="node26" href="$misc_8h.html" title="Headers for the miscellaneous functions. " alt="" coords="675,229,736,256"/>
+<area shape="rect" id="node27" href="$uart_8h.html" title="Headers for the driver for the UART. " alt="" coords="110,155,165,181"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="557,528,648,555"/>
+<area shape="rect" id="node6" href="$diag__cfg_8h.html" title="Diagnostic module configuration header. " alt="" coords="381,304,462,331"/>
+<area shape="rect" id="node7" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="454,379,594,405"/>
+<area shape="rect" id="node8" href="$diag__id__cfg_8h.html" title="This file contains basic definitions in order to use an abstracted diagnosis. " alt="" coords="331,379,429,405"/>
+<area shape="rect" id="node10" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="217,453,289,480"/>
+<area shape="rect" id="node11" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="139,528,221,555"/>
+<area shape="rect" id="node13" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="147,603,213,629"/>
+<area shape="rect" id="node14" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="52,677,175,704"/>
+<area shape="rect" id="node15" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="199,677,297,704"/>
+<area shape="rect" id="node20" href="$bkpsram__cfg_8h.html" title="Headers for the configuration for static backup RAM. " alt="" coords="493,155,600,181"/>
+<area shape="rect" id="node21" href="$sox_8h.html" title="Header for SOX module, responsible for calculation of current derating and of SOC. " alt="" coords="531,229,586,256"/>
+<area shape="rect" id="node23" href="$main_8h.html" title="Main function header. " alt="" coords="295,304,356,331"/>
+<area shape="rect" id="node22" href="$sox__cfg_8h.html" title="Configuration header for SOX. " alt="" coords="538,304,617,331"/>
+<area shape="rect" id="node25" href="$bms__cfg_8h.html" title="bms driver configuration header " alt="" coords="285,155,368,181"/>
+<area shape="rect" id="node28" href="$uart__cfg_8h.html" title="Headers for the configuration for the UART. " alt="" coords="90,304,169,331"/>
+</map>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structCanPdu" kind="struct" language="C++" prot="public">
+    <compoundname>CanPdu</compoundname>
+    <includes refid="can__cfg_8h" local="no">can_cfg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCanPdu_1a48b318e9c9d489d854840700cb92d177" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CanPdu::sdu[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>sdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" line="373" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCanPdu_1ab63a04613a09801d1babf73861fb1b26" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CanPdu::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" line="374" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCanPdu_1a11b3ccf3bb1e8f402b99a471ea316b29" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CanPdu::dlc</definition>
+        <argsstring></argsstring>
+        <name>dlc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" line="375" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" line="372" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/can_cfg.h" bodystart="372" bodyend="376"/>
+    <listofallmembers>
+      <member refid="structCanPdu_1a11b3ccf3bb1e8f402b99a471ea316b29" prot="public" virt="non-virtual"><scope>CanPdu</scope><name>dlc</name></member>
+      <member refid="structCanPdu_1ab63a04613a09801d1babf73861fb1b26" prot="public" virt="non-virtual"><scope>CanPdu</scope><name>id</name></member>
+      <member refid="structCanPdu_1a48b318e9c9d489d854840700cb92d177" prot="public" virt="non-virtual"><scope>CanPdu</scope><name>sdu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

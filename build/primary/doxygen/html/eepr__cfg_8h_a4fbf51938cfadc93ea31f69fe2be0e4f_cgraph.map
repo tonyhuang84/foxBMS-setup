@@ -1,0 +1,5 @@
+<map id="EEPR_SetChannelData" name="EEPR_SetChannelData">
+<area shape="rect" id="node2" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="225,5,378,32"/>
+<area shape="rect" id="node3" href="$eepr__cfg_8h.html#aefac79ed7e71cac9d3211a712fad2461" title="requests a state change to be handled by eeprom state machine (used by external modules) ..." alt="" coords="219,56,383,83"/>
+<area shape="rect" id="node4" href="$eepr__cfg_8c.html#a5f92c515fa55d80886bd904624fe1343" title="removes the dirty flag to indicate that the eeprom was actualized " alt="" coords="212,107,391,133"/>
+</map>

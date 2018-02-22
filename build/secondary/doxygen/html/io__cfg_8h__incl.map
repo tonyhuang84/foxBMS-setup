@@ -1,0 +1,5 @@
+<map id="io_cfg.h" name="io_cfg.h">
+<area shape="rect" id="node2" href="$mcu__cfg_8h.html" title="Configuration of the used controller. " alt="" coords="23,80,105,107"/>
+<area shape="rect" id="node4" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="129,80,252,107"/>
+<area shape="rect" id="node5" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU1 (secondary). " alt="" coords="276,80,375,107"/>
+</map>

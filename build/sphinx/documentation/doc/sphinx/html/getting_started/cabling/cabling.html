@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Cabling foxBMS &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="6. Connectors Pinout" href="../connectors/connectors.html"/>
+        <link rel="prev" title="4. Eclipse Workspace Setup and Flashing" href="../eclipse_workspace/eclipse_workspace.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>5. Cabling foxBMS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/getting_started/cabling/cabling.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cabling-foxbms">
+<span id="getting-started-cabling"></span><h1>5. Cabling foxBMS<a class="headerlink" href="#cabling-foxbms" title="Permalink to this headline">¶</a></h1>
+<p>In the preceeding sections, the foxBMS Master Unit has been connected to the power supply and the foxBMS firmware flashed on the MCU0 and MCU1. This section describes the foxBMS hardware in more details and how to connect the foxBMS Master Unit to the foxBMS Slave Units that perform the cell voltage and temperature measurements. The CAN communication is also described.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When the connection is made between the foxBMS Master Unit and the foxBMS Slave Units, both primary and secondary isoSPI daisy chains have to be connected.</p>
+</div>
+<div class="section" id="convention-for-connector-numbering">
+<h2>5.1. Convention for Connector Numbering<a class="headerlink" href="#convention-for-connector-numbering" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#connector-convention"><span class="std std-numref">Fig. 5.4</span></a> presents the convention for the connector numbering. It is used throughout
+the documentation.</p>
+<div class="figure" id="id3">
+<span id="connector-convention"></span><a class="reference internal image-reference" href="../../_images/connector_viewing_direction.png"><img alt="../../_images/connector_viewing_direction.png" src="../../_images/connector_viewing_direction.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.4 </span><span class="caption-text">Supply connector pin out, receptable - rear view, header - front view (image source: MOLEX)</span></p>
+</div>
+<p>There are two types of connectors:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Header</li>
+<li>Receptable, plugged into the header</li>
+</ul>
+</div></blockquote>
+<p>The numbering shown on the left in <a class="reference internal" href="#connector-convention"><span class="std std-numref">fig. 5.4</span></a> is always valid when viewing in the direction indicated by the arrow with the indication <code class="docutils literal"><span class="pre">viewing</span> <span class="pre">direction</span></code>. This must be taken into account when crimping the receptables.</p>
+</div>
+<div class="section" id="global-description-of-the-foxbms-hardware">
+<h2>5.2. Global Description of the foxBMS Hardware<a class="headerlink" href="#global-description-of-the-foxbms-hardware" title="Permalink to this headline">¶</a></h2>
+<p>The foxBMS system can be mounted in a metal housing, shown in <a class="reference internal" href="#housing"><span class="std std-numref">fig. 5.5</span></a>.</p>
+<div class="figure" id="id4">
+<span id="housing"></span><a class="reference internal image-reference" href="../../_images/foxbms_housing.jpg"><img alt="../../_images/foxbms_housing.jpg" src="../../_images/foxbms_housing.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.5 </span><span class="caption-text">foxBMS Master Unit housing</span></p>
+</div>
+<p>In this configuration, the top plate can be removed to have access to the foxBMS electronic boards. This is done by unscrewing the four screws holding the top plate.</p>
+<p>The open housing is shown in <a class="reference internal" href="#housing-open"><span class="std std-numref">fig. 5.6</span></a>.</p>
+<div class="figure" id="id5">
+<span id="housing-open"></span><a class="reference internal image-reference" href="../../_images/foxbms_housing_open.jpg"><img alt="../../_images/foxbms_housing_open.jpg" src="../../_images/foxbms_housing_open.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.6 </span><span class="caption-text">foxBMS Master Unit housing, top plate removed</span></p>
+</div>
+<p>The boards can be removed from the housing. The boards without housing are shown in <a class="reference internal" href="#foxbms-stack"><span class="std std-numref">fig. 5.7</span></a>. To start, it is not necessary to remove the boards from the housing, but it is helpful to be able to look at the LEDs located on the BMS-Master Board.</p>
+<div class="figure" id="id6">
+<span id="foxbms-stack"></span><a class="reference internal image-reference" href="../../_images/foxbms_stack.jpg"><img alt="../../_images/foxbms_stack.jpg" src="../../_images/foxbms_stack.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.7 </span><span class="caption-text">foxBMS board stack removed from the housing (both BMS-Master Board and BMS-Interface Board are shown)</span></p>
+</div>
+<p><a class="reference internal" href="#housing-detail"><span class="std std-numref">Fig. 5.8</span></a> shows how to put the boards back in the housing.</p>
+<div class="figure" id="id7">
+<span id="housing-detail"></span><a class="reference internal image-reference" href="../../_images/foxbms_housing_detail.jpg"><img alt="../../_images/foxbms_housing_detail.jpg" src="../../_images/foxbms_housing_detail.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Introduction of the board stack in the foxBMS Master Unit housing</span></p>
+</div>
+</div>
+<div class="section" id="detailed-description-of-the-hardware-parts">
+<h2>5.3. Detailed Description of the Hardware Parts<a class="headerlink" href="#detailed-description-of-the-hardware-parts" title="Permalink to this headline">¶</a></h2>
+<p>The heart of foxBMS is the BMS-Master Board, shown in <a class="reference internal" href="#foxbms-master"><span class="std std-numref">fig. 5.9</span></a>.</p>
+<div class="figure" id="id8">
+<span id="foxbms-master"></span><a class="reference internal image-reference" href="../../_images/foxbms_master_annotations.jpg"><img alt="../../_images/foxbms_master_annotations.jpg" src="../../_images/foxbms_master_annotations.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.9 </span><span class="caption-text">foxBMS BMS-Master Board</span></p>
+</div>
+<p>As shown in <a class="reference internal" href="#foxbms-master"><span class="std std-numref">fig. 5.9</span></a>, the BMS-Master Board has two microcontroller units (MCU):</p>
+<blockquote>
+<div><ul class="simple">
+<li>Primary (also called MCU0)</li>
+<li>Secondary (also called MCU1)</li>
+</ul>
+</div></blockquote>
+<p>Primary is the MCU where the foxBMS software is run. The secondary MCU is present for redundant safety when developing software code on the primary MCU.</p>
+<p>Each MCU has a set of LEDs, as shown in <a class="reference internal" href="#foxbms-master"><span class="std std-numref">fig. 5.9</span></a>:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Power LED</li>
+<li>Red indicator LED</li>
+<li>Green indicator LED</li>
+</ul>
+</div></blockquote>
+<p>The power LED must lit when power is supplied to the BMS-Master Board, and the indicator LEDs should blink, except during flashing of software on the MCU.</p>
+<p>If a debugger is used, it must be connected to the debug port (i.e., JTAG-interface) corresponding to the MCU being used.</p>
+<p>An extension board named BMS-Extension Board is present under the BMS-Master Board and is shown in <a class="reference internal" href="#foxbms-extension"><span class="std std-numref">fig. 5.10</span></a>).</p>
+<div class="figure" id="id9">
+<span id="foxbms-extension"></span><a class="reference internal image-reference" href="../../_images/foxbms_extension.jpg"><img alt="../../_images/foxbms_extension.jpg" src="../../_images/foxbms_extension.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.10 </span><span class="caption-text">foxBMS BMS-Extension Board</span></p>
+</div>
+<p>It is used to provide more I/O and interfaces than with the BMS-Master Board alone.</p>
+<p>The BMS-Interface Board is located on top of the BMS-Master Board (shown in <a class="reference internal" href="#foxbms-interface"><span class="std std-numref">fig. 5.11</span></a>).</p>
+<div class="figure align-center" id="id10">
+<span id="foxbms-interface"></span><a class="reference internal image-reference" href="../../_images/foxbms_interface.jpg"><img alt="../../_images/foxbms_interface.jpg" src="../../_images/foxbms_interface.jpg" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.11 </span><span class="caption-text">foxBMS BMS-Interface Board</span></p>
+</div>
+<p>Its purpose is to convert the signals sent by the Serial Peripheral Interface (SPI) of the BMS-Master Board to the first BMS-Slave Board in the daisy by using a proprietary isoSPI interface from Linear Technology.</p>
+<p>An example of a BMS-Slave Board is shown in <a class="reference internal" href="#foxbms-slave"><span class="std std-numref">fig. 5.12</span></a>.</p>
+<div class="figure" id="id11">
+<span id="foxbms-slave"></span><a class="reference internal image-reference" href="../../_images/foxbms_slave.jpg"><img alt="../../_images/foxbms_slave.jpg" src="../../_images/foxbms_slave.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.12 </span><span class="caption-text">foxBMS BMS-Slave Board</span></p>
+</div>
+<p>The BMS-Slave Board is based on the LTC6804-1/LTC6811-1 battery cell monitoring chip. More information on the LTC6804-1/LTC6811-1 integrated circuit can be found in the datasheet (<a class="reference internal" href="#ltc-datasheet6804" id="id1">[ltc_datasheet6804]</a> and <a class="reference internal" href="#ltc-datasheet6811" id="id2">[ltc_datasheet6811]</a>). It supervises up to 12 battery cells connected in series. It performs voltage measurements, temperature measurements and passive cell balancing. In the daisy chain, the BMS-Slave Boards are connected via differential pair cables.</p>
+<p>The BMS-Slave Board is not designed to be used in a specific housing.</p>
+</div>
+<div class="section" id="use-of-foxbms-in-a-battery-system">
+<h2>5.4. Use of foxBMS in a Battery System<a class="headerlink" href="#use-of-foxbms-in-a-battery-system" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#hw-description"><span class="std std-numref">Fig. 5.13</span></a> present the organization of the hardware. The system consists of <span class="math">\(n\)</span> battery modules and <span class="math">\(m\)</span> BMS-Slave Boards. Each BMS-Slave Board is connected to a battery module, where it measures cell voltages and cell temperatures. The BMS-Slave Boards are connected in a daisy chain configuration: when a data package is sent to the daisy chain, it is first received by slave 1, which transmits it to slave 2 and so on until the data package is received by the last BMS-Slave Board.</p>
+<div class="figure" id="id12">
+<span id="hw-description"></span><a class="reference internal image-reference" href="../../_images/hw_system_overview1.png"><img alt="../../_images/hw_system_overview1.png" src="../../_images/hw_system_overview1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.13 </span><span class="caption-text">foxBMS in the battery system</span></p>
+</div>
+<p>The BMS-Interface Board converts the messages sent by the BMS-Master Board so that they can be transmitted to the daisy chain and vice versa.</p>
+<p>The foxBMS Master Unit communicates with the current sensor (for instance, Isabellenhuette IVT-MOD or IVT-S) via CAN.</p>
+<p>Communication with the control unit (for instance, a personal computer), is also made via CAN.</p>
+</div>
+<div class="section" id="hardware-setup-of-the-bms-master-and-the-bms-slave">
+<h2>5.5. Hardware Setup of the BMS-Master Board and the BMS-Slave Board<a class="headerlink" href="#hardware-setup-of-the-bms-master-and-the-bms-slave" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#foxbmsfront-quickstart"><span class="std std-numref">Fig. 5.14</span></a> presents all the connectors of the BMS-Master Board.</p>
+<div class="figure" id="id13">
+<span id="foxbmsfront-quickstart"></span><a class="reference internal image-reference" href="../../_images/foxbms_front.png"><img alt="../../_images/foxbms_front.png" src="../../_images/foxbms_front.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.14 </span><span class="caption-text">Front view of the foxBMS Master, indicating the location of each header</span></p>
+</div>
+<p>The connectors needed for this quickstart guide are indicated in the following parts.</p>
+<div class="section" id="connecting-the-bms-slave-to-the-bms-master">
+<h3>5.5.1. Connecting the BMS-Slave Board to the BMS-Master Board<a class="headerlink" href="#connecting-the-bms-slave-to-the-bms-master" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When the connection is made between the BMS-Master Board and the BMS-Slave Board, two communication lines
+have to be connected: the primary and the secondary daisy chain.</p>
+</div>
+<p>If  a BMS-Slave Board with a hardware version <code class="docutils literal"><span class="pre">2.x.x</span></code> (green color) is used, section <a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html#hw-slave-12cell-v2-x"><span class="std std-ref">Slave 12-Cell v2.x.x</span></a> must be used for pin assignments and cabling instructions. For slave hardware versions <code class="docutils literal"><span class="pre">1.x.x</span></code> (red color), section <a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html#hw-slave-12cell-v1-x"><span class="std std-ref">Slave 12-Cell v1.x.x</span></a> must be used.</p>
+</div>
+<div class="section" id="can-connector">
+<h3>5.5.2. CAN Connector<a class="headerlink" href="#can-connector" title="Permalink to this headline">¶</a></h3>
+<p>The connector indicated as <code class="docutils literal"><span class="pre">CAN</span> <span class="pre">0</span></code> in <a class="reference internal" href="#foxbmsfront-quickstart"><span class="std std-numref">fig. 5.14</span></a> must be used on the BMS-Master Board. Its layout
+is described in <a class="reference internal" href="#master-can"><span class="std std-numref">table 5.1</span></a>.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_4pin.png"><img alt="../../_images/connector_4pin.png" src="../../_images/connector_4pin.png" style="width: 10%;" /></a>
+</div>
+<span id="master-can"></span><table border="1" class="docutils" id="id14">
+<caption><span class="caption-number">Table 5.1 </span><span class="caption-text">Master CAN connection</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="11%" />
+<col width="24%" />
+<col width="34%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>GND_EXT0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>NC</td>
+<td>–</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>CAN0_L</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>CAN0_H</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Ground of CAN0 is shared with supply ground <code class="docutils literal"><span class="pre">GND_EXT0</span></code>. CAN0 is isolated from the MCU0 via the isolated CAN transceiver TJA1052. The CAN transceiver may be put into standby mode by MCU0.</p>
+</div>
+</div>
+<div class="section" id="communication-with-the-bms-master">
+<h2>5.6. Communication with the BMS-Master Board<a class="headerlink" href="#communication-with-the-bms-master" title="Permalink to this headline">¶</a></h2>
+<p>Once foxBMS is running, CAN messages should be sent.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>A periodic state request must be made to the system by sending a message with ID 0x152 on the bus CAN periodically.</strong>
+If not, the system will go into an error state. The period must be 100ms. More information on state requests can be found in the section <a class="reference internal" href="../communicating/communicating.html#getting-started-communicating-can"><span class="std std-ref">Communicating over CAN</span></a>. Typically the request <cite>Standby state</cite> can be made.</p>
+</div>
+<p>If voltages have been applied to the voltage connector, they are sent with the message IDs 0x550, 0x551, 0x552 and 0x553. Details can be found in the section <a class="reference internal" href="../communicating/communicating.html#getting-started-communicating-can"><span class="std std-ref">Communicating over CAN</span></a>.</p>
+<p>If temperature sensors have been connected and the conversion function changed in the software, temperature are sent with the messages with IDs 0x353 and 0x354. Details can be found in the section <a class="reference internal" href="../communicating/communicating.html#getting-started-communicating-can"><span class="std std-ref">Communicating over CAN</span></a>.</p>
+</div>
+<div class="section" id="current-sensor-configuration">
+<h2>5.7. Current Sensor Configuration<a class="headerlink" href="#current-sensor-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Further information on the current sensor tested with foxBMS can be found in the <a class="reference external" href="http://www.isabellenhuette.de/uploads/media/IVT_Modular_datasheet_1.20_02.pdf">datasheet of the current sensor</a>.
+By default, foxBMS uses the factory defaults of the current sensor, which works in cyclic (non-triggered) mode.
+Another possibility tested with foxBMS is to use the current sensor in triggered mode. For this, the current sensor IVT-MOD from Isabellenhütte has to be reprogrammed. The changes compared to factory default are then:</p>
+<blockquote>
+<div><ul class="simple">
+<li>The CAN Message IDs was changed</li>
+<li>The triggered measurement mode was activated</li>
+</ul>
+</div></blockquote>
+<p>The two following parts sum up the differences between factory setup and triggered setup tested with foxBMS.</p>
+<div class="section" id="factory-default">
+<h3>5.7.1. Factory Default<a class="headerlink" href="#factory-default" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>CAN IDs<ul>
+<li>0x411 (dec: 1041) Command</li>
+<li>0x521 (dec: 1313) Current Measurement</li>
+<li>0x522 (dec: 1314) Voltage Measurement 1</li>
+<li>0x523 (dec: 1315) Voltage Measurement 2</li>
+<li>0x524 (dec: 1316) Voltage Measurement 3</li>
+<li>0x511 (dec: 1297) Response</li>
+</ul>
+</li>
+<li>Measurement Mode: Cyclic (Disabled and Triggered are other possible modes)</li>
+</ul>
+</div>
+<div class="section" id="after-configuration">
+<h3>5.7.2. After Configuration<a class="headerlink" href="#after-configuration" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>CAN IDs<ul>
+<li>0x35B (dec: 859) Command</li>
+<li>0x35C (dec: 860) Current Measurement</li>
+<li>0x35D (dec: 861) Voltage Measurement 1</li>
+<li>0x35E (dec: 862) Voltage Measurement 2</li>
+<li>0x35F (dec: 863) Voltage Measurement 3</li>
+<li>0x7FF (dec: 2047) Response</li>
+</ul>
+</li>
+<li>Measurement Mode: Triggered</li>
+</ul>
+</div>
+</div>
+<div class="section" id="hardware-related-frequently-asked-questions">
+<h2>5.8. Hardware Related Frequently Asked Questions<a class="headerlink" href="#hardware-related-frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="are-the-schematic-and-layout-source-files-available">
+<h3>5.8.1. Are the schematic and layout source files available?<a class="headerlink" href="#are-the-schematic-and-layout-source-files-available" title="Permalink to this headline">¶</a></h3>
+<p>Yes, the complete foxBMS schematic and layout files are available in EAGLE format on GitHub. Refer to the HTML documentation section <a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html#hardware-design-resources"><span class="std std-ref">Hardware Design Resources</span></a>.</p>
+</div>
+<div class="section" id="have-both-mcu0-and-mcu1-to-be-connected">
+<h3>5.8.2. Have both MCU0 and MCU1 to be Connected?<a class="headerlink" href="#have-both-mcu0-and-mcu1-to-be-connected" title="Permalink to this headline">¶</a></h3>
+<p>Yes, they should always tbe connected and configured to provide redundant monitoring and improved safety during software development in prototyping applications.</p>
+<table class="docutils citation" frame="void" id="ltc-datasheet6804" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[ltc_datasheet6804]</a></td><td>LTC6804 Datasheet <a class="reference external" href="http://cds.linear.com/docs/en/datasheet/680412fb.pdf">http://cds.linear.com/docs/en/datasheet/680412fb.pdf</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="ltc-datasheet6811" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[ltc_datasheet6811]</a></td><td>LTC6811 Datasheet <a class="reference external" href="http://cds.linear.com/docs/en/datasheet/68111f.pdf">http://cds.linear.com/docs/en/datasheet/68111f.pdf</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../connectors/connectors.html" class="btn btn-neutral float-right" title="6. Connectors Pinout" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../eclipse_workspace/eclipse_workspace.html" class="btn btn-neutral" title="4. Eclipse Workspace Setup and Flashing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

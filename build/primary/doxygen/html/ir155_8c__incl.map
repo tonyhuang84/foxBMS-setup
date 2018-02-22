@@ -1,0 +1,17 @@
+<map id="ir155.c" name="ir155.c">
+<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="64,304,139,331"/>
+<area shape="rect" id="node5" href="$ir155_8h.html" title="Headers for the driver for the isolation monitoring. " alt="" coords="469,155,531,181"/>
+<area shape="rect" id="node13" href="$diag_8h.html" title="Diag driver header. " alt="" coords="214,80,271,107"/>
+<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="5,379,96,405"/>
+<area shape="rect" id="node6" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="568,229,611,256"/>
+<area shape="rect" id="node11" href="$timer_8h.html" title="Headers for the driver to enable/disable/change the peripheral timers. " alt="" coords="469,229,531,256"/>
+<area shape="rect" id="node7" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="568,304,635,331"/>
+<area shape="rect" id="node9" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="520,379,643,405"/>
+<area shape="rect" id="node10" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU0 (primary) " alt="" coords="667,379,765,405"/>
+<area shape="rect" id="node12" href="$timer__cfg_8h.html" title="Headers for the configuration of the peripheral timers. " alt="" coords="457,304,543,331"/>
+<area shape="rect" id="node14" href="$diag__cfg_8h.html" title="Diagnostic module configuration header. " alt="" coords="226,155,307,181"/>
+<area shape="rect" id="node15" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="85,229,225,256"/>
+<area shape="rect" id="node16" href="$diag__id__cfg_8h.html" title="This file contains basic definitions in order to use an abstracted diagnosis. " alt="" coords="249,229,348,256"/>
+<area shape="rect" id="node17" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="372,229,420,256"/>
+<area shape="rect" id="node18" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="360,304,432,331"/>
+</map>

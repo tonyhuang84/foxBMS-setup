@@ -1,0 +1,10 @@
+<map id="OS_TSK_Cyclic_100ms" name="OS_TSK_Cyclic_100ms">
+<area shape="rect" id="node2" href="$enginetask_8c.html#a9bf9dee43edcffc12cd87e375e81557a" title="Task for ADC control, balancing control and isolation measurement. " alt="" coords="216,132,387,159"/>
+<area shape="rect" id="node3" href="$adc__ex_8c.html#ae0b9ae6e4ef2dbf771dcc0ea30901ae2" title="determines which kind of measurements are made by the ADCs and stores result in database. " alt="" coords="450,31,526,57"/>
+<area shape="rect" id="node6" href="$io_8c.html#a329d86cd8f053a55229fc51b6f722546" title="Toggles the state of a pin. " alt="" coords="439,81,537,108"/>
+<area shape="rect" id="node7" href="$io_8c.html#aa0f7f326f4e3dc599c3e47be410a460b" title="Returns the state of a pin. " alt="" coords="443,132,533,159"/>
+<area shape="rect" id="node8" href="$intermcu_8c.html#a02de281de6d8bfac7a9ecf10291778c3" title="Sends one byte via the internal SPI bus connecting both the main MCU and the Safety MCU..." alt="" coords="435,183,541,209"/>
+<area shape="rect" id="node9" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="442,233,534,260"/>
+<area shape="rect" id="node4" href="$adc_8c.html#ac74830e9563841944251e6e8c80493d7" title="ADC_Convert" alt="" coords="617,5,716,32"/>
+<area shape="rect" id="node5" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="589,56,744,83"/>
+</map>

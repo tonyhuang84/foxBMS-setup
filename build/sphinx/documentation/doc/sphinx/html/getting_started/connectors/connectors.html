@@ -1,0 +1,966 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6. Connectors Pinout &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="7. Communicating with foxBMS" href="../communicating/communicating.html"/>
+        <link rel="prev" title="5. Cabling foxBMS" href="../cabling/cabling.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eclipse_workspace/eclipse_workspace.html">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>6. Connectors Pinout</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/getting_started/connectors/connectors.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="connectors-pinout">
+<span id="getting-started-connectors"></span><h1>6. Connectors Pinout<a class="headerlink" href="#connectors-pinout" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the pinout of all connectors on the foxBMS Master Unit.</p>
+<div class="section" id="overview-of-the-connectors-on-the-master">
+<h2>6.1. Overview of the Connectors on the foxBMS Master Unit<a class="headerlink" href="#overview-of-the-connectors-on-the-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id1">
+<span id="foxbmsfront"></span><a class="reference internal image-reference" href="../../_images/foxbms_front1.png"><img alt="../../_images/foxbms_front1.png" src="../../_images/foxbms_front1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Front view of the foxBMS Master Unit indicating the location of each pin header</span></p>
+</div>
+<p>foxBMS uses only Molex Micro-Fit 3.0 type connectors, except for USB. A comprehensive set of connectors and crimps is supplied with foxBMS to start connecting immediately. In case crimps or housings are missing, they are commonly available at major distributors.</p>
+<p>Molex Micro-Fit 3.0 Crimps Part Number: 46235-0001 (Farnell 2284551)</p>
+<p>Molex Micro-Fit 3.0 Connectors:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="45%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin Count</th>
+<th class="head">Molex Housing Part Number</th>
+<th class="head">Farnell Order Number</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>2</td>
+<td>43025-0200</td>
+<td>672889</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>43025-0400</td>
+<td>672890</td>
+</tr>
+<tr class="row-even"><td>6</td>
+<td>43025-0600</td>
+<td>672907</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>43025-1000</td>
+<td>672920</td>
+</tr>
+<tr class="row-even"><td>12</td>
+<td>43025-1200</td>
+<td>629285</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>43025-1600</td>
+<td>9961321</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../../_images/connector_viewing_direction1.png"><img alt="../../_images/connector_viewing_direction1.png" src="../../_images/connector_viewing_direction1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Defined viewing direction for the connector pin out; receptable - rear view; header - front view (image source: MOLEX)</span></p>
+</div>
+</div>
+<div class="section" id="supply-x201-on-bms-master">
+<h2>6.2. Supply (X201 on BMS-Master Board)<a class="headerlink" href="#supply-x201-on-bms-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_6pin.png"><img alt="../../_images/connector_6pin.png" src="../../_images/connector_6pin.png" style="width: 10%;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="32%" />
+<col width="29%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>SUPPLY_EXT2</td>
+<td>Input</td>
+<td>12 - 24V</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>SUPPLY_EXT2</td>
+<td>Input</td>
+<td>12 - 24V</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>GND_EXT2</td>
+<td>Input</td>
+<td>GND</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>SUPPLY_EXT0</td>
+<td>Input</td>
+<td>12 - 24V</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>GND_EXT0</td>
+<td>Input</td>
+<td>GND</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>GND_EXT2</td>
+<td>Input</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">SUPPLY_EXT0</span></code> / <code class="docutils literal"><span class="pre">GND_EXT0</span></code>: Microcontroller supply and insulation monitoring devices supply</li>
+<li><code class="docutils literal"><span class="pre">SUPPLY_EXT2</span></code> / <code class="docutils literal"><span class="pre">GND_EXT2</span></code>: Contactor supply and interlock supply</li>
+</ul>
+</div>
+<div class="section" id="can0-x801-on-bms-master">
+<h2>6.3. CAN0  (X801 on BMS-Master Board)<a class="headerlink" href="#can0-x801-on-bms-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_4pin1.png"><img alt="../../_images/connector_4pin1.png" src="../../_images/connector_4pin1.png" style="width: 50.0px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="24%" />
+<col width="34%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>GND_EXT0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>NC</td>
+<td>–</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>CAN0_L</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>CAN0_H</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Ground of CAN0 is shared with supply ground <code class="docutils literal"><span class="pre">GND_EXT0</span></code>. CAN0 is isolated from the MCU0 via the isolated CAN transceiver TJA1052. The CAN transceiver may be put into standby mode by MCU0.</p>
+</div>
+<div class="section" id="can1-x801-on-bms-extension">
+<h2>6.4. CAN1 (X801 on BMS-Extension Board)<a class="headerlink" href="#can1-x801-on-bms-extension" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_4pin1.png"><img alt="../../_images/connector_4pin1.png" src="../../_images/connector_4pin1.png" style="width: 50.0px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="29%" />
+<col width="32%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>GND_EXT1</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>SUPPLY_EXT1</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>CAN1_L</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>CAN1_H</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>CAN1 has to be supplied externally (<code class="docutils literal"><span class="pre">GND_EXT1</span></code> / <code class="docutils literal"><span class="pre">SUPPLY_EXT1</span></code>) with 12 - 24V. CAN1 is isolated from the MCU0 via the isolated CAN transceiver TJA1052. The CAN transceiver may be put into standby mode by MCU0.</p>
+</div>
+<div class="section" id="insulation-monitor-bender-isometer-x701-on-bms-master">
+<h2>6.5. Insulation Monitor (Bender ISOMETER) (X701  on BMS-Master Board)<a class="headerlink" href="#insulation-monitor-bender-isometer-x701-on-bms-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_4pin1.png"><img alt="../../_images/connector_4pin1.png" src="../../_images/connector_4pin1.png" style="width: 50.0px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%" />
+<col width="25%" />
+<col width="15%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>BENDER_NEGATIVE_SUPPLY</td>
+<td>Output</td>
+<td>Supply to insulation monitoring device</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>SUPPLY_EXT0</td>
+<td>Output</td>
+<td>Supply to insulation monitoring device</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>BENDER_OK_EXT</td>
+<td>Input</td>
+<td>Status signal of insulation monitoring device</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>BENDER_PWM_EXT</td>
+<td>Input</td>
+<td>Insulation monitoring device diagnostic signal</td>
+</tr>
+</tbody>
+</table>
+<p>This interface is intended to be used with a Bender insulation monitoring device. Bender ISOMETER IR155-3203/-3204/-3210 are supported. The Bender ISOMETER is supplied and may be switched on or off (lowside) by the foxBMS Master Unit. By factory, the foxBMS Master Unit is configured to operate with the Bender ISOMETER IR155-3204/-3210. In order to operate with the Bender ISOMETER IR155-3203, Jumper R705 must be removed on BMS-Master Board. For more details, check the schematic of the BMS-Master Board in section <a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html#hardware-design-resources"><span class="std std-ref">Hardware Design Resources</span></a>.</p>
+</div>
+<div class="section" id="contactors-x1201-x1206-on-bms-master-and-x1201-x1203-on-bms-extension">
+<h2>6.6. Contactors (X1201 - X1206 on BMS-Master Board and X1201 - X1203 on BMS-Extension Board)<a class="headerlink" href="#contactors-x1201-x1206-on-bms-master-and-x1201-x1203-on-bms-extension" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_4pin1.png"><img alt="../../_images/connector_4pin1.png" src="../../_images/connector_4pin1.png" style="width: 50.0px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="5%" />
+<col width="28%" />
+<col width="16%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>GND_EXT0</td>
+<td>–</td>
+<td>Contactor auxiliary contact</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>CONTACTOR_X_FEEDBACK_EXT</td>
+<td>–</td>
+<td>Contactor auxiliary contact</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>CONTACTOR_X_COIL_POS</td>
+<td>Output</td>
+<td>Positive contactor coil supply</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>CONTACTORS_COMMON_NEG</td>
+<td>Output</td>
+<td>Negative contactor coil supply</td>
+</tr>
+</tbody>
+</table>
+<p>All contactor connectors share one common ground. This common ground is switched lowside by the interlock circuit. Opening the interlock loop deactivates the contactor supply and opens all contactors. A contactor auxiliary contact may be read by connecting the auxiliary contact to the corresponding pins of the contactor connector.</p>
+<p>Freewheeling diodes are not populated on the PCB, since some contactors like the Gigavac GX16 have built-in diodes and should not be used with additional external freewheeling diodes in parallel. If the used contactors do not have built-in freewheeling diodes, freewheeling diodes must be added to protect the contactor control circuitry. The load current is limited by the optically isolated power switch AQV25G2S (6A continuous load). Every contactor connector is fused with an onboard slow blow fuse type Schurter UMT-250 630mA (3403.0164.xx).</p>
+</div>
+<div class="section" id="interlock-x901-on-bms-master">
+<h2>6.7. Interlock (X901 on BMS-Master Board)<a class="headerlink" href="#interlock-x901-on-bms-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_2pin.png"><img alt="../../_images/connector_2pin.png" src="../../_images/connector_2pin.png" style="width: 26.2px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="5%" />
+<col width="28%" />
+<col width="16%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>INTERLOCK_IN</td>
+<td>Input</td>
+<td>–</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>INTERLOCK_OUT</td>
+<td>Output</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<p>The interlock circuit has a built-in current source, adjusted to 10mA constant current. In fault conditions, all contactors are opened by opening the interlock circuit. If the interlock circuit is externally opened, the contactor supply is deactivated immediately. This circuit has no effect on the foxBMS supply or communication interfaces.</p>
+</div>
+<div class="section" id="daisy-chain-primary-and-secondary-x1601-on-bms-master">
+<h2>6.8. Daisy Chain - Primary and Secondary (X1601 on BMS-Master Board)<a class="headerlink" href="#daisy-chain-primary-and-secondary-x1601-on-bms-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_16pin.png"><img alt="../../_images/connector_16pin.png" src="../../_images/connector_16pin.png" style="width: 196.2px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>OUT+ (Secondary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>OUT- (Secondary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>OUT+ (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>OUT- (Primary LTC6804-1/LTC6811-1)</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>NC</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>NC</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>NC</td>
+</tr>
+</tbody>
+</table>
+<p>Please note that this connector pin out is only valid when the BMS-Interface Board with the LTC6820 interfacing IC to the LTC6804-1/LTC6811-1.</p>
+</div>
+<div class="section" id="rs485-x1301-on-bms-extension">
+<h2>6.9. RS485 (X1301 on BMS-Extension Board)<a class="headerlink" href="#rs485-x1301-on-bms-extension" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_6pin.png"><img alt="../../_images/connector_6pin.png" src="../../_images/connector_6pin.png" style="width: 73.8px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="32%" />
+<col width="29%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>GND_EXT2</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>RS485_A</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>RS485_B</td>
+<td>Input/Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>SUPPLY_EXT2</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>SUPPLY_EXT2</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>GND_EXT2</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>The RS485 interface uses the ESD rugged transceiver LT1785. Moreover, the interface is galvanically isolated. An external supply has to be provided (12 - 24V).</p>
+</div>
+<div class="section" id="isolated-gpio-x1901-on-bms-extension">
+<h2>6.10. Isolated GPIO (X1901 on BMS-Extension Board)<a class="headerlink" href="#isolated-gpio-x1901-on-bms-extension" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_10pin.png"><img alt="../../_images/connector_10pin.png" src="../../_images/connector_10pin.png" style="width: 125.0px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="32%" />
+<col width="29%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ISOGPIO_IN0</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>ISOGPIO_IN1</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ISOGPIO_IN2</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ISOGPIO_IN3</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>ISOGPIO_OUT0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>ISOGPIO_OUT1</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>ISOGPIO_OUT2</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>ISOGPIO_OUT3</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>GND_EXT0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>GND_EXT0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>The BMS-Extension Board provides 4 isolated general purpose inputs and 4 isolated general purpose outputs. The GPIOs are isolated by an ADUM3402 (i.e., ESD rugged version of the ADUM1402). The inputs are equipped with 10kOhm pull down resistors and are intended for a maximum input voltage of 5V. The output voltage is also 5V. An external supply is not needed.</p>
+</div>
+<div class="section" id="isolated-normally-open-contacts-isonoc-x2001-on-bms-extension">
+<h2>6.11. Isolated Normally Open Contacts - isoNOC (X2001 on BMS-Extension Board)<a class="headerlink" href="#isolated-normally-open-contacts-isonoc-x2001-on-bms-extension" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_12pin.png"><img alt="../../_images/connector_12pin.png" src="../../_images/connector_12pin.png" style="width: 148.8px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="42%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ISONOC0_POSITIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>ISONOC1_POSITIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ISONOC2_POSITIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ISONOC3_POSITIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>ISONOC4_POSITIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>ISONOC5_POSITIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>ISONOC0_NEGATIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>ISONOC1_NEGATIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>ISONOC2_NEGATIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>ISONOC3_NEGATIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>ISONOC4_NEGATIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>ISONOC5_NEGATIVE</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>The BMS-Extension Board features 6 isolated normally open contacts. The load current of each channel is limited by the optically isolated power switch AQV25G2S. The channels are not fused, however freewheeling diodes type GF1B are installed on board.</p>
+</div>
+<div class="section" id="analog-inputs-x1701-on-bms-master">
+<h2>6.12. Analog Inputs (X1701 on BMS-Master Board)<a class="headerlink" href="#analog-inputs-x1701-on-bms-master" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/connector_12pin.png"><img alt="../../_images/connector_12pin.png" src="../../_images/connector_12pin.png" style="width: 148.8px; height: 62.6px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="42%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Direction</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>V_REF</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>ANALOG_IN_CH0</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>V_REF</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ANALOG_IN_CH1</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>V_REF</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>ANALOG_IN_CH2</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>V_REF</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>ANALOG_IN_CH3</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>V_REF</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>ANALOG_IN_CH4</td>
+<td>Input</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>GND0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>GND0</td>
+<td>Output</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>On the BMS-Extension Board 4 nonisolated analog inputs to MCU0 are available. For applications using NTCs as temperature sensors, also a reference voltage of 2.5V is provided. The maximum input voltage is limited to 3.3V and is Zener protected. For further information on the input circuit, please refer to the foxBMS <a class="reference internal" href="../../hardware_documentation/overview/overview.html#hardware-documentation-overview"><span class="std std-ref">Hardware Overview</span></a> and to the foxBMS <a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html#hardware-design-resources"><span class="std std-ref">Hardware Design Resources</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../communicating/communicating.html" class="btn btn-neutral float-right" title="7. Communicating with foxBMS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../cabling/cabling.html" class="btn btn-neutral" title="5. Cabling foxBMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

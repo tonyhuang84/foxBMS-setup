@@ -1,0 +1,1053 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="io__mcu__cfg_8h" kind="file" language="C++">
+    <compoundname>io_mcu_cfg.h</compoundname>
+    <includedby refid="io__cfg_8h" local="yes">io_cfg.h</includedby>
+    <invincdepgraph>
+      <node id="1211">
+        <label>appltask_cfg.c</label>
+        <link refid="appltask__cfg_8c"/>
+      </node>
+      <node id="1202">
+        <label>dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="1217">
+        <label>database.c</label>
+        <link refid="database_8c"/>
+      </node>
+      <node id="1200">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1246">
+        <label>interlock_cfg.c</label>
+        <link refid="interlock__cfg_8c"/>
+      </node>
+      <node id="1188">
+        <label>cansignal_cfg.c</label>
+        <link refid="cansignal__cfg_8c"/>
+      </node>
+      <node id="1233">
+        <label>ltc_defs.h</label>
+        <link refid="ltc__defs_8h"/>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+      </node>
+      <node id="1187">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>rtc.c</label>
+        <link refid="rtc_8c"/>
+      </node>
+      <node id="1206">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+      </node>
+      <node id="1244">
+        <label>wdg.c</label>
+        <link refid="wdg_8c"/>
+      </node>
+      <node id="1231">
+        <label>intermcu.c</label>
+        <link refid="intermcu_8c"/>
+      </node>
+      <node id="1230">
+        <label>intermcu.h</label>
+        <link refid="intermcu_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>sdram.c</label>
+        <link refid="sdram_8c"/>
+      </node>
+      <node id="1235">
+        <label>timer_cfg.c</label>
+        <link refid="timer__cfg_8c"/>
+      </node>
+      <node id="1234">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+      </node>
+      <node id="1241">
+        <label>chksum.c</label>
+        <link refid="chksum_8c"/>
+      </node>
+      <node id="1216">
+        <label>bkpsram.c</label>
+        <link refid="bkpsram_8c"/>
+      </node>
+      <node id="1215">
+        <label>bkpsram.h</label>
+        <link refid="bkpsram_8h"/>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+      </node>
+      <node id="1220">
+        <label>mcu.c</label>
+        <link refid="mcu_8c"/>
+      </node>
+      <node id="1175">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1221">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1203">
+        <label>spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="1225">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1238">
+        <label>uart_cfg.c</label>
+        <link refid="uart__cfg_8c"/>
+      </node>
+      <node id="1237">
+        <label>uart_cfg.h</label>
+        <link refid="uart__cfg_8h"/>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+      </node>
+      <node id="1177">
+        <label>os.c</label>
+        <link refid="os_8c"/>
+      </node>
+      <node id="1195">
+        <label>rcc_cfg.c</label>
+        <link refid="rcc__cfg_8c"/>
+      </node>
+      <node id="1194">
+        <label>rcc_cfg.h</label>
+        <link refid="rcc__cfg_8h"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1195" relation="include">
+        </childnode>
+        <childnode refid="1196" relation="include">
+        </childnode>
+      </node>
+      <node id="1201">
+        <label>spi_cfg.c</label>
+        <link refid="spi__cfg_8c"/>
+      </node>
+      <node id="1224">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1234" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+      </node>
+      <node id="1190">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="1181">
+        <label>adc_ex.c</label>
+        <link refid="adc__ex_8c"/>
+      </node>
+      <node id="1169">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+        <childnode refid="1170" relation="include">
+        </childnode>
+      </node>
+      <node id="1179">
+        <label>adc_ex.h</label>
+        <link refid="adc__ex_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+      </node>
+      <node id="1232">
+        <label>timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="1236">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+      </node>
+      <node id="1210">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+      <node id="1182">
+        <label>adc_cfg.c</label>
+        <link refid="adc__cfg_8c"/>
+      </node>
+      <node id="1178">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+      </node>
+      <node id="1180">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1173">
+        <label>nvic_cfg.c</label>
+        <link refid="nvic__cfg_8c"/>
+      </node>
+      <node id="1172">
+        <label>nvic_cfg.h</label>
+        <link refid="nvic__cfg_8h"/>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>ltc_cfg.c</label>
+        <link refid="ltc__cfg_8c"/>
+      </node>
+      <node id="1226">
+        <label>ltc_cfg.h</label>
+        <link refid="ltc__cfg_8h"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+      </node>
+      <node id="1242">
+        <label>portcheck.c</label>
+        <link refid="portcheck_8c"/>
+      </node>
+      <node id="1253">
+        <label>portcheck.h</label>
+        <link refid="portcheck_8h"/>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>dma_cfg.c</label>
+        <link refid="dma__cfg_8c"/>
+      </node>
+      <node id="1184">
+        <label>adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="1198">
+        <label>dma_cfg.h</label>
+        <link refid="dma__cfg_8h"/>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+      </node>
+      <node id="1183">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>led.c</label>
+        <link refid="led_8c"/>
+      </node>
+      <node id="1251">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+      </node>
+      <node id="1248">
+        <label>io_cfg.c</label>
+        <link refid="io__cfg_8c"/>
+      </node>
+      <node id="1170">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1245" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1249" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+      </node>
+      <node id="1223">
+        <label>sdram_cfg.c</label>
+        <link refid="sdram__cfg_8c"/>
+      </node>
+      <node id="1219">
+        <label>ltc.c</label>
+        <link refid="ltc_8c"/>
+      </node>
+      <node id="1228">
+        <label>ltc.h</label>
+        <link refid="ltc_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1229" relation="include">
+        </childnode>
+      </node>
+      <node id="1218">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="1247">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+      </node>
+      <node id="1214">
+        <label>bkpsram_cfg.c</label>
+        <link refid="bkpsram__cfg_8c"/>
+      </node>
+      <node id="1213">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+      </node>
+      <node id="1186">
+        <label>can_cfg.c</label>
+        <link refid="can__cfg_8c"/>
+      </node>
+      <node id="1185">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+      </node>
+      <node id="1240">
+        <label>uart.c</label>
+        <link refid="uart_8c"/>
+      </node>
+      <node id="1239">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>cansignal.c</label>
+        <link refid="cansignal_8c"/>
+      </node>
+      <node id="1189">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1193">
+        <label>can.c</label>
+        <link refid="can_8c"/>
+      </node>
+      <node id="1192">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1250">
+        <label>io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="1249">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+      </node>
+      <node id="1176">
+        <label>nvic.c</label>
+        <link refid="nvic_8c"/>
+      </node>
+      <node id="1174">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+      </node>
+      <node id="1197">
+        <label>rcc.c</label>
+        <link refid="rcc_8c"/>
+      </node>
+      <node id="1196">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+      </node>
+      <node id="1229">
+        <label>meas.c</label>
+        <link refid="meas_8c"/>
+      </node>
+      <node id="1208">
+        <label>diag_cfg.c</label>
+        <link refid="diag__cfg_8c"/>
+      </node>
+      <node id="1207">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+      </node>
+      <node id="1205">
+        <label>rtc_cfg.c</label>
+        <link refid="rtc__cfg_8c"/>
+      </node>
+      <node id="1204">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+      </node>
+      <node id="1212">
+        <label>diag.c</label>
+        <link refid="diag_8c"/>
+      </node>
+      <node id="1209">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a7799e1d8b31f7370f32b1ced6d2e94b7" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TRACECLK</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ab326cc35418ee8738bf1ddc086a559f0" kindref="member">IO_PE_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="47" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a1ab860d02aed274b7c42c76983269054" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TRACED0</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a71e63c7820b7f5fe3245654ddbe7c9ef" kindref="member">IO_PE_3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="48" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ab3687e273c868b2a40d4839552310f06" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TRACED1</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aeadcbf753782330672de6fd694cfdd6e" kindref="member">IO_PE_4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="49" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ab7ccd51bf0f47e76127d62bb986b1e11" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TRACED2</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a28129324396f82f334ab6b70e0d548fc" kindref="member">IO_PE_5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="50" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a1928e65f4e6cdce92543dede0f7afc26" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TRACED3</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae823cc6a24bb9c2a1267cae9dd11ae40" kindref="member">IO_PE_6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="51" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a4f102116d44ce80215f516908b47856b" prot="public" static="no">
+        <name>IO_PIN_MCU_1_DEBUG_LED_1</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a00b9a2e3d7f26d370de0e8f8b139c1f9" kindref="member">IO_PC_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="56" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a1241ca0fbe187e51aacaf7255e94e217" prot="public" static="no">
+        <name>IO_PIN_MCU_1_DEBUG_LED_0</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa229d465386009cde651e26ec63bb8a8" kindref="member">IO_PC_3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="57" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a384955c6bf33de64a72d6590c8ba234a" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_SPI_NSS</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70acebdba1f4185c451a51aae587e18b663" kindref="member">IO_PA_4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="62" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a8dccf131da850b3b53cec7a1534d398e" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_SPI_SCK</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a36e42f608734e1f50a7b67d16151beec" kindref="member">IO_PA_5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="63" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a474e0cb806d0a290ad1806b39e169c5e" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_SPI_MISO</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a7ef47bbba82aa2fbcd068591b31c4daa" kindref="member">IO_PA_6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="64" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a8773259830ad76ac7b7b760def6df508" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_SPI_MOSI</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a6c3da68afafe76d68a5e36fa211c245a" kindref="member">IO_PA_7</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="65" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1aad018acce4b05de5203b765ee2966a07" prot="public" static="no">
+        <name>IO_PIN_MCU_1_USART_TX</name>
+        <initializer>IO_PB10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="67" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a79ce7af35706623eb67f92f21c7199be" prot="public" static="no">
+        <name>IO_PIN_MCU_1_USART_RX</name>
+        <initializer>IO_PB11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="68" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a783b749d6a533123da24bcbd7b98d123" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_NSS</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adf1ed96c99823107b8903b572537ee33" kindref="member">IO_PB_12</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="70" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a8dc8e5a287083085808d2d5e9bda45c5" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_SCK</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a05a3869c8e76693380e0f020f98ca13a" kindref="member">IO_PD_3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="71" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ab1f58c3207b7e21a8c3c23f048c54d0b" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_MOSI</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a8cce0facdb0f2b9d85453222f6ef7894" kindref="member">IO_PB_14</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="72" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ad0d3eacb787885929c984db64cde5b36" prot="public" static="no">
+        <name>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_MISO</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70accb32328ced050359434f97a2ba3e350" kindref="member">IO_PB_15</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="73" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a9b1fc874968fe5609643a7bfa69e70fe" prot="public" static="no">
+        <name>IO_PIN_MCU_1_INTERLOCK_CONTROL</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abbcd6869a05251d02b42b555eb4e5903" kindref="member">IO_PD_4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="81" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a33b8a32e8052edac24e0bbf98aa06126" prot="public" static="no">
+        <name>IO_PIN_MCU_1_INTERLOCK_FEEDBACK</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae291ac93f9ea3dfc63a2afbbb8f09b19" kindref="member">IO_PD_5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="82" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1afff4dd7f42b1342eeba724f175565f72" prot="public" static="no">
+        <name>IO_PIN_MCU_1_CAN_0_TRANS_STANDBY_CONTROL</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa3becc6489b0e34444f362c7b4c53ab2" kindref="member">IO_PC_12</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="88" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ab8dcba66cadb7183addeeff9ea4278d5" prot="public" static="no">
+        <name>IO_PIN_MCU_1_CAN_0_TX</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70afa8b5203b305ffc07701d9ffeed4fba4" kindref="member">IO_PB_13</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="89" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a7b17b609f462817d1559569874bf843f" prot="public" static="no">
+        <name>IO_PIN_MCU_1_CAN_0_RX</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a3f4449c4b48e05df63daea5947e45ac6" kindref="member">IO_PB_5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="90" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ac12f8b1be863563c1818774ace2b8a15" prot="public" static="no">
+        <name>IO_PIN_MCU_1_FTDI_TX</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70abe490e3af915a7aa1e0374dc1566f0c4" kindref="member">IO_PA_11</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="92" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a3c1ea0a4f89b7ab52916ed8bac738570" prot="public" static="no">
+        <name>IO_PIN_MCU_1_FTDI_RX</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70ae5a1fe166a743a22c1e190638840682d" kindref="member">IO_PA_12</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="93" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a749c127a1c40be07c3efbdb19277207d" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_0</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a96d1e81bd30d51697621d346d510ee59" kindref="member">IO_PD_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="95" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a376ae3ab716aa3ac1b0e1852644e0123" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_1</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a4b10d495ed8db76f93b4f8e32651f9b4" kindref="member">IO_PD_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="96" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a64cedff0a4e27b47b595b2d52dd4f700" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_2</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a697941ada482ec4aec3ff6c32725bbb0" kindref="member">IO_PD_0</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="97" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1ac24c7c325ac23da227cf8bc4635aa830" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_3</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa3becc6489b0e34444f362c7b4c53ab2" kindref="member">IO_PC_12</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="98" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1aa01122a0cec90c90c3865236ab521bce" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_4</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70a802a373a60d37b4cb9a9a3d262063fff" kindref="member">IO_PC_11</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="99" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="io__mcu__cfg_8h_1a12d107d8bb9e36e088450eba5e8ce6c0" prot="public" static="no">
+        <name>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_5</name>
+        <initializer><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70aa820ab9da82a87c386ee116d3f6f45b0" kindref="member">IO_PC_10</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" line="100" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration for the I/O ports for MCU1 (secondary). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>18.01.2016 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>IO_PIN_MCU_1</para></simplesect>
+This file describes the names of the signals connected to the given hardware pin at the cpu. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>IO_MCU1_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_MCU1_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*Trace</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="io__mcu__cfg_8h_1a7799e1d8b31f7370f32b1ced6d2e94b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TRACECLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PE_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="io__mcu__cfg_8h_1a1ab860d02aed274b7c42c76983269054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TRACED0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PE_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="io__mcu__cfg_8h_1ab3687e273c868b2a40d4839552310f06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TRACED1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PE_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="io__mcu__cfg_8h_1ab7ccd51bf0f47e76127d62bb986b1e11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TRACED2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PE_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="io__mcu__cfg_8h_1a1928e65f4e6cdce92543dede0f7afc26" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TRACED3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PE_6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*Debug<sp/>LEDs</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="io__mcu__cfg_8h_1a4f102116d44ce80215f516908b47856b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_DEBUG_LED_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PC_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="io__mcu__cfg_8h_1a1241ca0fbe187e51aacaf7255e94e217" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_DEBUG_LED_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PC_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*Interfaces</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="io__mcu__cfg_8h_1a384955c6bf33de64a72d6590c8ba234a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_SPI_NSS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PA_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="io__mcu__cfg_8h_1a8dccf131da850b3b53cec7a1534d398e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_SPI_SCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PA_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="io__mcu__cfg_8h_1a474e0cb806d0a290ad1806b39e169c5e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_SPI_MISO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PA_6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="io__mcu__cfg_8h_1a8773259830ad76ac7b7b760def6df508" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_SPI_MOSI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PA_7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="io__mcu__cfg_8h_1aad018acce4b05de5203b765ee2966a07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_USART_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PB10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="io__mcu__cfg_8h_1a79ce7af35706623eb67f92f21c7199be" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_USART_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PB11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="io__mcu__cfg_8h_1a783b749d6a533123da24bcbd7b98d123" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_NSS<sp/><sp/><sp/><sp/><sp/><sp/>IO_PB_12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="io__mcu__cfg_8h_1a8dc8e5a287083085808d2d5e9bda45c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_SCK<sp/><sp/><sp/><sp/><sp/><sp/>IO_PD_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="io__mcu__cfg_8h_1ab1f58c3207b7e21a8c3c23f048c54d0b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_MOSI<sp/><sp/><sp/><sp/><sp/>IO_PB_14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="io__mcu__cfg_8h_1ad0d3eacb787885929c984db64cde5b36" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_TO_MCU_0_INTERFACE_SPI_MISO<sp/><sp/><sp/><sp/><sp/>IO_PB_15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*Interlock<sp/>and<sp/>Feedback<sp/>Pins</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="io__mcu__cfg_8h_1a9b1fc874968fe5609643a7bfa69e70fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_INTERLOCK_CONTROL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PD_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="io__mcu__cfg_8h_1a33b8a32e8052edac24e0bbf98aa06126" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_INTERLOCK_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PD_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*Interfaces</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="io__mcu__cfg_8h_1afff4dd7f42b1342eeba724f175565f72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_CAN_0_TRANS_STANDBY_CONTROL<sp/><sp/><sp/><sp/><sp/>IO_PC_12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="io__mcu__cfg_8h_1ab8dcba66cadb7183addeeff9ea4278d5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_CAN_0_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PB_13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="io__mcu__cfg_8h_1a7b17b609f462817d1559569874bf843f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_CAN_0_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PB_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="io__mcu__cfg_8h_1ac12f8b1be863563c1818774ace2b8a15" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_FTDI_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PA_11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="io__mcu__cfg_8h_1a3c1ea0a4f89b7ab52916ed8bac738570" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_FTDI_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PA_12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="io__mcu__cfg_8h_1a749c127a1c40be07c3efbdb19277207d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PD_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="io__mcu__cfg_8h_1a376ae3ab716aa3ac1b0e1852644e0123" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PD_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="io__mcu__cfg_8h_1a64cedff0a4e27b47b595b2d52dd4f700" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PD_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="io__mcu__cfg_8h_1ac24c7c325ac23da227cf8bc4635aa830" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PC_12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="io__mcu__cfg_8h_1aa01122a0cec90c90c3865236ab521bce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PC_11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="io__mcu__cfg_8h_1a12d107d8bb9e36e088450eba5e8ce6c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_PIN_MCU_1_BMS_INTERFACE_0_GPIO_5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PC_10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>IO_MCU1_CFG_H_</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/module/config/io_mcu_cfg.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="IO_Init" name="IO_Init">
+<area shape="rect" id="node2" href="$io_8c.html#a26062eca60f54c2714a50126a1c4f38e" title="IO_ClkInit() activates the port clocks of the used package. " alt="" coords="122,5,201,32"/>
+<area shape="rect" id="node3" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="115,56,207,83"/>
+<area shape="rect" id="node4" href="$portcheck_8c.html#ab34f18df31d74c08458d7c6c771bdecb" title="Checks the GPIOx peripheral according to the specified parameters in the GPIO_Init. " alt="" coords="112,107,211,133"/>
+</map>

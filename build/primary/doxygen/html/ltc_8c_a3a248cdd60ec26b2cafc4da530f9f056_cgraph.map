@@ -1,0 +1,4 @@
+<map id="LTC_EEPROMSaveReadValue" name="LTC_EEPROMSaveReadValue">
+<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="273,5,388,32"/>
+<area shape="rect" id="node3" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="253,56,408,83"/>
+</map>

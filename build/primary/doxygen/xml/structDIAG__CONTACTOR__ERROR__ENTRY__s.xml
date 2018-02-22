@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structDIAG__CONTACTOR__ERROR__ENTRY__s" kind="struct" language="C++" prot="public">
+    <compoundname>DIAG_CONTACTOR_ERROR_ENTRY_s</compoundname>
+    <includes refid="diag_8h" local="no">diag.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a31f2a92f5adaa44d6fd0969125606bce" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::JJ</definition>
+        <argsstring></argsstring>
+        <name>JJ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="103" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a81e0cc3afea5a9475869776b6f4b5c4e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::MM</definition>
+        <argsstring></argsstring>
+        <name>MM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="104" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a47c241fa929a40adfeb75f436b1ba3b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::DD</definition>
+        <argsstring></argsstring>
+        <name>DD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="105" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a9a3544061380af96eed296e2dd6faf52" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::hh</definition>
+        <argsstring></argsstring>
+        <name>hh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="106" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1af33090746c7958174a9cf8631a1d5a85" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::mm</definition>
+        <argsstring></argsstring>
+        <name>mm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="107" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1ac8190e650e3b7ddde3fa554201418237" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="108" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a16891baf66bb898ec97f9cd2b8c10b52" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DIAG_CONTACTOR_ERROR_ENTRY_s::contactor</definition>
+        <argsstring></argsstring>
+        <name>contactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="111" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a4d0dac741179d25008d25bafabd0beba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DIAG_CONTACTOR_ERROR_ENTRY_s::openingCurrent</definition>
+        <argsstring></argsstring>
+        <name>openingCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="112" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>structure of failure code entry record for contactor </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" line="102" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/engine/diag/diag.h" bodystart="102" bodyend="113"/>
+    <listofallmembers>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a16891baf66bb898ec97f9cd2b8c10b52" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>contactor</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a47c241fa929a40adfeb75f436b1ba3b4" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>DD</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a9a3544061380af96eed296e2dd6faf52" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>hh</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a31f2a92f5adaa44d6fd0969125606bce" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>JJ</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1af33090746c7958174a9cf8631a1d5a85" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>mm</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a81e0cc3afea5a9475869776b6f4b5c4e" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>MM</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1a4d0dac741179d25008d25bafabd0beba" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>openingCurrent</name></member>
+      <member refid="structDIAG__CONTACTOR__ERROR__ENTRY__s_1ac8190e650e3b7ddde3fa554201418237" prot="public" virt="non-virtual"><scope>DIAG_CONTACTOR_ERROR_ENTRY_s</scope><name>ss</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

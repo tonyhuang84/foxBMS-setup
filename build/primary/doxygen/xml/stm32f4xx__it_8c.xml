@@ -1,0 +1,1164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="stm32f4xx__it_8c" kind="file" language="C++">
+    <compoundname>stm32f4xx_it.c</compoundname>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="stm32f4xx__it_8h" local="yes">stm32f4xx_it.h</includes>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes local="yes">cmsis_os.h</includes>
+    <includes refid="dma_8h" local="yes">dma.h</includes>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <includes refid="can_8h" local="yes">can.h</includes>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+    <includes refid="diag_8h" local="yes">diag.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="mcu_8h" local="yes">mcu.h</includes>
+    <includes refid="io_8h" local="yes">io.h</includes>
+    <incdepgraph>
+      <node id="2816">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="2817" relation="include">
+        </childnode>
+      </node>
+      <node id="2806">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="2807" relation="include">
+        </childnode>
+        <childnode refid="2808" relation="include">
+        </childnode>
+      </node>
+      <node id="2805">
+        <label>stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+        <childnode refid="2806" relation="include">
+        </childnode>
+        <childnode refid="2809" relation="include">
+        </childnode>
+        <childnode refid="2811" relation="include">
+        </childnode>
+        <childnode refid="2815" relation="include">
+        </childnode>
+        <childnode refid="2816" relation="include">
+        </childnode>
+        <childnode refid="2818" relation="include">
+        </childnode>
+        <childnode refid="2824" relation="include">
+        </childnode>
+        <childnode refid="2835" relation="include">
+        </childnode>
+        <childnode refid="2831" relation="include">
+        </childnode>
+        <childnode refid="2837" relation="include">
+        </childnode>
+        <childnode refid="2839" relation="include">
+        </childnode>
+        <childnode refid="2841" relation="include">
+        </childnode>
+        <childnode refid="2820" relation="include">
+        </childnode>
+      </node>
+      <node id="2809">
+        <label>stm32f4xx_it.h</label>
+        <link refid="stm32f4xx__it_8h"/>
+        <childnode refid="2810" relation="include">
+        </childnode>
+      </node>
+      <node id="2812">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="2813" relation="include">
+        </childnode>
+        <childnode refid="2814" relation="include">
+        </childnode>
+      </node>
+      <node id="2807">
+        <label>stdint.h</label>
+      </node>
+      <node id="2831">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="2832" relation="include">
+        </childnode>
+        <childnode refid="2833" relation="include">
+        </childnode>
+      </node>
+      <node id="2817">
+        <label>dma_cfg.h</label>
+        <link refid="dma__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+      </node>
+      <node id="2841">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="2806" relation="include">
+        </childnode>
+      </node>
+      <node id="2822">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="2838">
+        <label>adc_cfg.h</label>
+        <link refid="adc__cfg_8h"/>
+        <childnode refid="2806" relation="include">
+        </childnode>
+        <childnode refid="2814" relation="include">
+        </childnode>
+      </node>
+      <node id="2818">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="2819" relation="include">
+        </childnode>
+      </node>
+      <node id="2839">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="2840" relation="include">
+        </childnode>
+      </node>
+      <node id="2815">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="2836">
+        <label>uart_cfg.h</label>
+        <link refid="uart__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+      </node>
+      <node id="2832">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="2833" relation="include">
+        </childnode>
+        <childnode refid="2834" relation="include">
+        </childnode>
+        <childnode refid="2812" relation="include">
+        </childnode>
+      </node>
+      <node id="2821">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+        <childnode refid="2822" relation="include">
+        </childnode>
+        <childnode refid="2823" relation="include">
+        </childnode>
+      </node>
+      <node id="2830">
+        <label>sox_cfg.h</label>
+        <link refid="sox__cfg_8h"/>
+      </node>
+      <node id="2840">
+        <label>timer_cfg.h</label>
+        <link refid="timer__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+      </node>
+      <node id="2829">
+        <label>sox.h</label>
+        <link refid="sox_8h"/>
+        <childnode refid="2830" relation="include">
+        </childnode>
+      </node>
+      <node id="2837">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="2838" relation="include">
+        </childnode>
+      </node>
+      <node id="2823">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="2828">
+        <label>bkpsram_cfg.h</label>
+        <link refid="bkpsram__cfg_8h"/>
+        <childnode refid="2829" relation="include">
+        </childnode>
+        <childnode refid="2831" relation="include">
+        </childnode>
+        <childnode refid="2811" relation="include">
+        </childnode>
+      </node>
+      <node id="2811">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2812" relation="include">
+        </childnode>
+      </node>
+      <node id="2814">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="2808">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2810">
+        <label>stm32f4xx.h</label>
+      </node>
+      <node id="2835">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="2836" relation="include">
+        </childnode>
+      </node>
+      <node id="2813">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+      </node>
+      <node id="2826">
+        <label>eepr.h</label>
+        <link refid="eepr_8h"/>
+        <childnode refid="2827" relation="include">
+        </childnode>
+      </node>
+      <node id="2824">
+        <label>can.h</label>
+        <link refid="can_8h"/>
+        <childnode refid="2825" relation="include">
+        </childnode>
+      </node>
+      <node id="2825">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+        <childnode refid="2826" relation="include">
+        </childnode>
+      </node>
+      <node id="2820">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2821" relation="include">
+        </childnode>
+      </node>
+      <node id="2834">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="2819">
+        <label>spi_cfg.h</label>
+        <link refid="spi__cfg_8h"/>
+        <childnode refid="2814" relation="include">
+        </childnode>
+        <childnode refid="2820" relation="include">
+        </childnode>
+      </node>
+      <node id="2827">
+        <label>eepr_cfg.h</label>
+        <link refid="eepr__cfg_8h"/>
+        <childnode refid="2828" relation="include">
+        </childnode>
+        <childnode refid="2829" relation="include">
+        </childnode>
+      </node>
+      <node id="2833">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="2806" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a6ad7a5e3ee69cb6db6a6b9111ba898bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NMI_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>NMI_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles NMI exception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="89" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a2bffc10d5bd4106753b7c30e86903bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardFault_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>HardFault_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles Hard Fault exception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="98" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="98" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a3150f74512510287a942624aa9b44cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MemManage_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>MemManage_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles Memory Manage exception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="196" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="196" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a850cefb17a977292ae5eb4cafa9976c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BusFault_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>BusFault_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles Bus Fault exception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="210" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="210" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a1d98923de2ed6b7309b66f9ba2971647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UsageFault_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>UsageFault_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles Usage Fault exception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="223" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="223" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1adbdfb05858cc36fc520974df37ec3cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DebugMon_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>DebugMon_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles Debug Monitor exception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="247" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="247" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1ab5e09814056d617c521549e542639b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SysTick_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>SysTick_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles SysTick Handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="268" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="268" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1af98ac8adc0ee3edc95863fab9bc77a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN1_TX_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN1_TX_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles PPP interrupt request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="291" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a4dcf621094d563287c456f7aa751e86b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN1_RX0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN1_RX0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="296" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1aa1a82ca3e49421333b17a4ec6996d03d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN1_RX1_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN1_RX1_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="301" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a8a8136b4640f219eef7e98372993186b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN1_SCE_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN1_SCE_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="306" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a46d75e5fffda9d9f8746c969a178ac96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN0_TX_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN0_TX_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="311" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="311" bodyend="314"/>
+        <references refid="can_8c_1a539bc7c8da4f1a8724915582aaf4dee5" compoundref="can_8c" startline="574" endline="585">CAN_TX_IRQHandler</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1ad053fbbc542c8064b8c181d07a073c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN0_RX0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN0_RX0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="316" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="316" bodyend="319"/>
+        <references refid="can_8c_1a79338c20357e7247284f0009552d93e2" compoundref="can_8c" startline="588" endline="600">CAN_RX_IRQHandler</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a346c99c3cd1d3dbdd50a793de81cc6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN0_RX1_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN0_RX1_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="321" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="321" bodyend="324"/>
+        <references refid="can_8c_1a79338c20357e7247284f0009552d93e2" compoundref="can_8c" startline="588" endline="600">CAN_RX_IRQHandler</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1ac805ce49209efda32d7decd96d3570c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN0_SCE_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN0_SCE_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="326" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="326" bodyend="329"/>
+        <references refid="can_8c_1a9820425942a5c033cca31ddbe7101ff9" compoundref="can_8c" startline="602" endline="725">CAN_Error_IRQHandler</references>
+        <references refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" compoundref="can_8h" startline="72">CAN_NODE0</references>
+        <references refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" compoundref="can__cfg_8c" startline="62">hcan0</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1ad7366f9eed119e113cd18e124723fe1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI6_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>SPI6_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles SPI6 global interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="335" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="335" bodyend="343"/>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a68d8880cd80cb17a2501487c3d649ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI2_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>SPI2_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function handles SPI2 global interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="366" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="366" bodyend="374"/>
+        <references refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" compoundref="spi__cfg_8c" startline="52">spi_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1aaf6ce196dde98712e1223b99766e06c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA2_Stream0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>DMA2_Stream0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt-handler for DMA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="381" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="381" bodyend="385"/>
+        <references refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" compoundref="dma__cfg_8c" startline="49">dma_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1adab6f3e22e90bd5b1ceebb98022abdf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA2_Stream1_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>DMA2_Stream1_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt-handler for DMA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="392" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="392" bodyend="397"/>
+        <references refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" compoundref="dma__cfg_8c" startline="49">dma_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a7e367d7c7b74485c4c75cdef30ad01e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA2_Stream2_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>DMA2_Stream2_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt-handler for DMA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="405" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="405" bodyend="409"/>
+        <references refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" compoundref="dma__cfg_8c" startline="49">dma_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a877135f6494d6923d6f6ec32d75d9eeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DMA2_Stream3_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>DMA2_Stream3_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt-handler for DMA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="416" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="416" bodyend="421"/>
+        <references refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" compoundref="dma__cfg_8c" startline="49">dma_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a0d108a3468b2051548183ee5ca2158a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART3_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>USART3_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt-handler for USART3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="428" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="428" bodyend="434"/>
+        <references refid="uart_8c_1ac308c1e7bd9c48ff894bdfee4fc0685d" compoundref="uart_8c" startline="231" endline="354">HAL_UART_CustomIRQHandler</references>
+        <references refid="uart__cfg_8c_1a982ee7c2007d1f058e78f05a70995216" compoundref="uart__cfg_8c" startline="48">uart_cfg</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a0ca6fd0e6f77921dd1123539857ba0a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART2_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>USART2_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt-handler for USART2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="441" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="441" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a06406eadf297fa89a6eaf9586b227a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>ADC_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="451" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="451" bodyend="456"/>
+        <references refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" compoundref="adc__cfg_8c" startline="48">adc_devices</references>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1ac8e51d2183b5230cbd5481f8867adce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM3_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>TIM3_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="458" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="458" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f4xx__it_8c_1a738473a5b43f6c92b80ce1d3d6f77ed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EXTI15_10_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>EXTI15_10_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" line="465" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c" bodystart="465" bodyend="503"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src\stm32f4xx_it.c. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>STMicroelectronics </para></simplesect>
+<simplesect kind="date"><para>2016</para></simplesect>
+<simplesect kind="author"><para>MCD Application Team </para></simplesect>
+<simplesect kind="version"><para>V1.0.3 </para></simplesect>
+<simplesect kind="date"><para>06-May-2016 Main Interrupt Service Routines. This file provides template for all exceptions handler and peripherals interrupt service routine.</para></simplesect>
+<simplesect kind="attention"><para></para></simplesect>
+<heading level="2"><center><copy/> COPYRIGHT(c) 2016 STMicroelectronics</center></heading>
+</para><para>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of STMicroelectronics nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="49"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>recommended<sp/>include<sp/>order<sp/>of<sp/>header<sp/>files:</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>1.<sp/><sp/><sp/><sp/>include<sp/>general.h</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>2.<sp/><sp/><sp/><sp/>include<sp/>module&apos;s<sp/>own<sp/>header</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>3...<sp/><sp/>other<sp/>headers</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32f4xx__it_8h" kindref="compound">stm32f4xx_it.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmsis_os.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dma_8h" kindref="compound">dma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="can_8h" kindref="compound">can.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="uart_8h" kindref="compound">uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diag_8h" kindref="compound">diag.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcu_8h" kindref="compound">mcu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io_8h" kindref="compound">io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cortex-M4<sp/>Processor<sp/>Interruption<sp/>and<sp/>Exception<sp/>Handlers<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="stm32f7xx__it_8h_1a6ad7a5e3ee69cb6db6a6b9111ba898bc" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a6ad7a5e3ee69cb6db6a6b9111ba898bc" kindref="member">NMI_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="stm32f7xx__it_8h_1a2bffc10d5bd4106753b7c30e86903bea" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a2bffc10d5bd4106753b7c30e86903bea" kindref="member">HardFault_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>faultaddress;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>note:<sp/>MSP<sp/>Stack<sp/>will<sp/>be<sp/>changed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>lr_register;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sp_register;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>caller_addr_at_stack;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Go<sp/>to<sp/>infinite<sp/>loop<sp/>when<sp/>Hard<sp/>Fault<sp/>exception<sp/>occurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32F4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>__ASM<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;mov<sp/>%0,<sp/>r14&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;=r&quot;</highlight><highlight class="normal"><sp/>(lr_register)<sp/>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>VOID_FUNC_VOID<sp/>fuptr;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>fuptr<sp/>=<sp/>(VOID_FUNC_VOID)(0xB0000020);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>fuptr();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>EXC_RETURN<sp/>at<sp/>exception<sp/>entry<sp/>to<sp/>identify<sp/>the<sp/>used<sp/>stack<sp/>(MSP<sp/>or<sp/>PSP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lr_register==<sp/>0xFFFFFFFD)<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>to<sp/>Thread<sp/>mode,<sp/>exception<sp/>return<sp/>uses<sp/>non-floating-point<sp/>state<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>PSP<sp/>and<sp/>execution<sp/>uses<sp/>PSP<sp/>after<sp/>return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sp_register<sp/>=<sp/>__get_PSP();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lr_register==<sp/>0xFFFFFFF1)<sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>to<sp/>Handler<sp/>mode,<sp/>exception<sp/>return<sp/>uses<sp/>non-floating-point<sp/>state<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MSP<sp/>and<sp/>execution<sp/>uses<sp/>MSP<sp/>after<sp/>return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sp_register<sp/>=<sp/>__get_MSP()<sp/>+<sp/>0x20;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>becaose<sp/>of<sp/>function<sp/>local<sp/>variables<sp/>stack<sp/>will<sp/>be<sp/>changed<sp/>in<sp/>MSP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a5943b0d92ff8d84db14d732ae1bd5855" kindref="member">Val0</ref><sp/>=<sp/>SCB-&gt;CFSR;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>division<sp/>by<sp/>zero<sp/>exception<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SCB-&gt;CFSR<sp/>&amp;=<sp/>0x02000000)<sp/></highlight><highlight class="comment">//FLAG:<sp/>DIVBYZERO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>caller_addr_at_stack<sp/>=<sp/>sp_register<sp/>+<sp/>0x18;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a938305d4c5620ed4171fd5e3301ede08" kindref="member">Val1</ref><sp/>=<sp/>*(uint32_t*)caller_addr_at_stack;<sp/><sp/></highlight><highlight class="comment">//<sp/>report<sp/>instruction<sp/>address<sp/>where<sp/>division<sp/>has<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1aafe617d153a4bc64aa03be09899e02ea" kindref="member">DIAG_CH_DIV_BY_ZERO_FAILURE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/>NULL);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SCB-&gt;CFSR<sp/>&amp;=<sp/>0x00010000)<sp/></highlight><highlight class="comment">//FLAG:<sp/>UNDEFINSTR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>by<sp/>undefined<sp/>instruction<sp/>in<sp/>memory:<sp/>&quot;0xF7F0A000&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>caller_addr_at_stack<sp/>=<sp/>sp_register+0x18;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a938305d4c5620ed4171fd5e3301ede08" kindref="member">Val1</ref><sp/>=<sp/>*(uint32_t*)caller_addr_at_stack;<sp/><sp/></highlight><highlight class="comment">//<sp/>report<sp/>instruction<sp/>address<sp/>with<sp/>undefined<sp/>instruction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1ae2b15bb733c9b9844809c0053c83bdb3" kindref="member">DIAG_CH_UNDEF_INSTRUCTION_FAILURE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/>NULL);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>data<sp/>bus<sp/>error<sp/>occured<sp/>or<sp/>data<sp/>access<sp/>violation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SCB-&gt;CFSR<sp/>&amp;=<sp/>0x00000202)<sp/></highlight><highlight class="comment">//FLAG:<sp/>PRECIS<sp/>ERR<sp/>or<sp/>DACC<sp/>VIOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>by<sp/>data<sp/>pointer<sp/>to<sp/>address<sp/>area<sp/>0x04000000,<sp/>0xb0000000...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>caller_addr_at_stack<sp/>=<sp/>sp_register+0x18;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a938305d4c5620ed4171fd5e3301ede08" kindref="member">Val1</ref><sp/>=<sp/>*(uint32_t*)(caller_addr_at_stack);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>report<sp/>instruction<sp/>address<sp/>where<sp/>data<sp/>bus<sp/>error<sp/>has<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>faultaddress<sp/>=<sp/>SCB-&gt;BFAR;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SCB-&gt;CFSR<sp/>&amp;=<sp/>0x00008000)<sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>BFAR<sp/>(reported<sp/>Bus<sp/>Fault<sp/>Address)<sp/>is<sp/>valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a76767ef58700f4ddd44dc3bda4204539" kindref="member">Val2</ref><sp/>=<sp/>faultaddress;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>report<sp/>bus<sp/>address<sp/>being<sp/>accessed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1abf5ef841ee20ea81b576b327be7530d4" kindref="member">DIAG_CH_DATA_BUS_FAILURE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,0,<sp/>NULL);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>instruction<sp/>bus<sp/>error<sp/>occured<sp/>or<sp/>instruction<sp/>access<sp/>violation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SCB-&gt;CFSR<sp/>&amp;=<sp/>0x00000101)<sp/></highlight><highlight class="comment">//FLAG:<sp/>IBUS<sp/>ERR<sp/>or<sp/>IACC<sp/>VIOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>by<sp/>using<sp/>function<sp/>pointer<sp/>to<sp/>address<sp/>area<sp/>0x04000000,<sp/>0xb0000000...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>caller_addr_at_stack<sp/>=<sp/>(sp_register+0x18);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a938305d4c5620ed4171fd5e3301ede08" kindref="member">Val1</ref><sp/>=<sp/>*(uint32_t*)(caller_addr_at_stack);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>report<sp/>instruction<sp/>address<sp/>where<sp/>instruction<sp/>bus<sp/>error<sp/>has<sp/>occured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>faultaddress<sp/>=<sp/>SCB-&gt;BFAR;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(SCB-&gt;CFSR<sp/>&amp;=<sp/>0x00008000)<sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>BFAR<sp/>(reported<sp/>Bus<sp/>Fault<sp/>Address)<sp/>is<sp/>valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a928cbc648b996be809389ff62f196cbf" kindref="member">diag_fc</ref>.<ref refid="structDIAG__FAILURECODE__s_1a76767ef58700f4ddd44dc3bda4204539" kindref="member">Val2</ref><sp/>=<sp/>faultaddress;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>report<sp/>bus<sp/>address<sp/>being<sp/>accessed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a64aafcb97debcefebec65f34adebccd5" kindref="member">DIAG_CH_INSTRUCTION_BUS_FAILURE</ref>,<ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,<sp/>0,<sp/>NULL);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__API__DIAG_1gaf3e14f837ad6b7df26392f0164a8a0bd" kindref="member">DIAG_Handler</ref>(<ref refid="diag__cfg_8h_1a2cc2c1f8d6cebd0096120187e622ad07" kindref="member">DIAG_CH_HARDFAULT_NOTHANDLED</ref>,<sp/><ref refid="diag__id__cfg_8h_1a1cf4ebb501b8762842208748e9f44868a5d181c9c635e48349f8b78ed23749482" kindref="member">DIAG_EVENT_NOK</ref>,<sp/>0,<sp/>NULL);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="stm32f7xx__it_8h_1a3150f74512510287a942624aa9b44cc5" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a3150f74512510287a942624aa9b44cc5" kindref="member">MemManage_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Go<sp/>to<sp/>infinite<sp/>loop<sp/>when<sp/>Memory<sp/>Manage<sp/>exception<sp/>occurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="stm32f7xx__it_8h_1a850cefb17a977292ae5eb4cafa9976c3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a850cefb17a977292ae5eb4cafa9976c3" kindref="member">BusFault_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Go<sp/>to<sp/>infinite<sp/>loop<sp/>when<sp/>Bus<sp/>Fault<sp/>exception<sp/>occurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="stm32f7xx__it_8h_1a1d98923de2ed6b7309b66f9ba2971647" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a1d98923de2ed6b7309b66f9ba2971647" kindref="member">UsageFault_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Go<sp/>to<sp/>infinite<sp/>loop<sp/>when<sp/>Usage<sp/>Fault<sp/>exception<sp/>occurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>this<sp/>function<sp/>is<sp/>implemented<sp/>by<sp/>FreeRTOS<sp/>in<sp/>port.c:<sp/>macro<sp/>vPortSVCHandler<sp/>*/</highlight></codeline>
+<codeline lineno="238"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8h_1a3e5ddb3df0d62f2dc357e64a3f04a6ce" kindref="member">SVC_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="stm32f7xx__it_8h_1adbdfb05858cc36fc520974df37ec3cb0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1adbdfb05858cc36fc520974df37ec3cb0" kindref="member">DebugMon_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>this<sp/>function<sp/>is<sp/>implemented<sp/>by<sp/>FreeRTOS<sp/>in<sp/>port.c:<sp/>macro<sp/>xPortPendSVHandler<sp/>*/</highlight></codeline>
+<codeline lineno="258"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8h_1a6303e1f258cbdc1f970ce579cc015623" kindref="member">PendSV_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="stm32f7xx__it_8h_1ab5e09814056d617c521549e542639b7e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1ab5e09814056d617c521549e542639b7e" kindref="member">SysTick_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>osSystickHandler();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>HAL_IncTick();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32F4xx<sp/>Peripherals<sp/>Interrupt<sp/>Handlers<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Add<sp/>here<sp/>the<sp/>Interrupt<sp/>Handler<sp/>for<sp/>the<sp/>used<sp/>peripheral(s)<sp/>(PPP),<sp/>for<sp/>the<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>available<sp/>peripheral<sp/>interrupt<sp/>handler&apos;s<sp/>name<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>startup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>file<sp/>(startup_stm32f4xx.s).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="comment">/*void<sp/>PPP_IRQHandler(void)</highlight></codeline>
+<codeline lineno="287"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="288"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="stm32f4xx__it_8h_1af98ac8adc0ee3edc95863fab9bc77a29" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1af98ac8adc0ee3edc95863fab9bc77a29" kindref="member">CAN1_TX_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a539bc7c8da4f1a8724915582aaf4dee5" kindref="member">CAN_TX_IRQHandler</ref>(&amp;<ref refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" kindref="member">hcan1</ref>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="stm32f4xx__it_8h_1a4dcf621094d563287c456f7aa751e86b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a4dcf621094d563287c456f7aa751e86b" kindref="member">CAN1_RX0_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a79338c20357e7247284f0009552d93e2" kindref="member">CAN_RX_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" kindref="member">CAN_NODE1</ref>,<sp/>&amp;<ref refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" kindref="member">hcan1</ref>);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="stm32f4xx__it_8h_1aa1a82ca3e49421333b17a4ec6996d03d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1aa1a82ca3e49421333b17a4ec6996d03d" kindref="member">CAN1_RX1_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a79338c20357e7247284f0009552d93e2" kindref="member">CAN_RX_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" kindref="member">CAN_NODE1</ref>,<sp/>&amp;<ref refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" kindref="member">hcan1</ref>);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="stm32f4xx__it_8h_1a8a8136b4640f219eef7e98372993186b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a8a8136b4640f219eef7e98372993186b" kindref="member">CAN1_SCE_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a9820425942a5c033cca31ddbe7101ff9" kindref="member">CAN_Error_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63abc0d575858a83648dda892612d224388" kindref="member">CAN_NODE1</ref>,<sp/>&amp;<ref refid="can__cfg_8c_1a1618d731d18d69e906e8a357b7cd3c8d" kindref="member">hcan1</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="stm32f4xx__it_8h_1a46d75e5fffda9d9f8746c969a178ac96" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a46d75e5fffda9d9f8746c969a178ac96" kindref="member">CAN0_TX_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a539bc7c8da4f1a8724915582aaf4dee5" kindref="member">CAN_TX_IRQHandler</ref>(&amp;<ref refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" kindref="member">hcan0</ref>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="stm32f4xx__it_8h_1ad053fbbc542c8064b8c181d07a073c1f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1ad053fbbc542c8064b8c181d07a073c1f" kindref="member">CAN0_RX0_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a79338c20357e7247284f0009552d93e2" kindref="member">CAN_RX_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" kindref="member">CAN_NODE0</ref>,<sp/>&amp;<ref refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" kindref="member">hcan0</ref>);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="stm32f4xx__it_8h_1a346c99c3cd1d3dbdd50a793de81cc6e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a346c99c3cd1d3dbdd50a793de81cc6e6" kindref="member">CAN0_RX1_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a79338c20357e7247284f0009552d93e2" kindref="member">CAN_RX_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" kindref="member">CAN_NODE0</ref>,<sp/>&amp;<ref refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" kindref="member">hcan0</ref>);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="stm32f4xx__it_8h_1ac805ce49209efda32d7decd96d3570c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1ac805ce49209efda32d7decd96d3570c8" kindref="member">CAN0_SCE_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="can_8c_1a9820425942a5c033cca31ddbe7101ff9" kindref="member">CAN_Error_IRQHandler</ref>(<ref refid="can_8h_1ac88c60b085cc1aaf0589a38ea2f62e63af7bc162482d27661c97627000ba67e20" kindref="member">CAN_NODE0</ref>,<sp/>&amp;<ref refid="can__cfg_8c_1ad481c533767bb0629c33ffa48f9a02f2" kindref="member">hcan0</ref>);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>1<sp/><sp/><sp/>//<sp/>FIXME<sp/>nötig?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="stm32f4xx__it_8c_1ad7366f9eed119e113cd18e124723fe1a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1ad7366f9eed119e113cd18e124723fe1a" kindref="member">SPI6_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI6_IRQn<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI6_IRQn<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>HAL_NVIC_ClearPendingIRQ(SPI6_IRQn);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/>HAL_SPI_IRQHandler(&amp;<ref refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" kindref="member">spi_devices</ref>[1]);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0<sp/><sp/><sp/>//<sp/>FIXME<sp/>kann<sp/>gelöscht<sp/>werden?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SPI4_IRQHandler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI4_IRQn<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI4_IRQn<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/>HAL_NVIC_ClearPendingIRQ(SPI4_IRQn);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>HAL_SPI_IRQHandler(&amp;<ref refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" kindref="member">spi_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI4_IRQn<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI4_IRQn<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="stm32f4xx__it_8c_1a68d8880cd80cb17a2501487c3d649ea1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a68d8880cd80cb17a2501487c3d649ea1" kindref="member">SPI2_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SPI2_IRQn<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SPI2_IRQn<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/>HAL_NVIC_ClearPendingIRQ(SPI2_IRQn);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/>HAL_SPI_IRQHandler(&amp;<ref refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" kindref="member">spi_devices</ref>[2]);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="stm32f4xx__it_8c_1aaf6ce196dde98712e1223b99766e06c0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1aaf6ce196dde98712e1223b99766e06c0" kindref="member">DMA2_Stream0_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_NVIC_ClearPendingIRQ(DMA2_Stream0_IRQn);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_DMA_IRQHandler(&amp;<ref refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" kindref="member">dma_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392" refid="stm32f4xx__it_8c_1adab6f3e22e90bd5b1ceebb98022abdf2" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1adab6f3e22e90bd5b1ceebb98022abdf2" kindref="member">DMA2_Stream1_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_NVIC_ClearPendingIRQ(DMA2_Stream1_IRQn);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_DMA_IRQHandler(&amp;<ref refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" kindref="member">dma_devices</ref>[1]);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="stm32f4xx__it_8c_1a7e367d7c7b74485c4c75cdef30ad01e1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a7e367d7c7b74485c4c75cdef30ad01e1" kindref="member">DMA2_Stream2_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="406"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_NVIC_ClearPendingIRQ(DMA2_Stream2_IRQn);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_DMA_IRQHandler(&amp;<ref refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" kindref="member">dma_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416" refid="stm32f4xx__it_8c_1a877135f6494d6923d6f6ec32d75d9eeb" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a877135f6494d6923d6f6ec32d75d9eeb" kindref="member">DMA2_Stream3_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="417"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_NVIC_ClearPendingIRQ(DMA2_Stream3_IRQn);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_DMA_IRQHandler(&amp;<ref refid="dma__cfg_8c_1a047a1ed4b82b079a8375784693e9a148" kindref="member">dma_devices</ref>[1]);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428" refid="stm32f4xx__it_8c_1a0d108a3468b2051548183ee5ca2158a0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a0d108a3468b2051548183ee5ca2158a0" kindref="member">USART3_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="429"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_UART</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ac308c1e7bd9c48ff894bdfee4fc0685d" kindref="member">HAL_UART_CustomIRQHandler</ref>(&amp;<ref refid="uart__cfg_8c_1a982ee7c2007d1f058e78f05a70995216" kindref="member">uart_cfg</ref>[0]);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441" refid="stm32f4xx__it_8c_1a0ca6fd0e6f77921dd1123539857ba0a8" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a0ca6fd0e6f77921dd1123539857ba0a8" kindref="member">USART2_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="442"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>BUILD_MODULE_ENABLE_RS485</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>akdere</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HAL_UART_CustomIRQHandler(&amp;huart2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451" refid="stm32f4xx__it_8c_1a06406eadf297fa89a6eaf9586b227a69" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a06406eadf297fa89a6eaf9586b227a69" kindref="member">ADC_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="452"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/>HAL_NVIC_ClearPendingIRQ(ADC_IRQn);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/>HAL_ADC_IRQHandler(&amp;<ref refid="adc__cfg_8c_1a8a085313ab4bf252ddc725e3b29a9ccf" kindref="member">adc_devices</ref>[0]);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458" refid="stm32f4xx__it_8h_1ac8e51d2183b5230cbd5481f8867adce9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1ac8e51d2183b5230cbd5481f8867adce9" kindref="member">TIM3_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="timer_8c_1a1728b0d3578c206e515f0f3ec2f44bd2" kindref="member">TIM_IRQHandler</ref>();</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo:<sp/>do<sp/>something<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="stm32f7xx__it_8h_1a738473a5b43f6c92b80ce1d3d6f77ed9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stm32f4xx__it_8c_1a738473a5b43f6c92b80ce1d3d6f77ed9" kindref="member">EXTI15_10_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>toggle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="eepr__cfg_8c_1a052c6d6c4fd9b6fe5b2c4330b1376e57" kindref="member">cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HAL<sp/>Treiber</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_12)<sp/>!=<sp/>RESET)</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_12);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="io_8c_1aa0f7f326f4e3dc599c3e47be410a460b" kindref="member">IO_ReadPin</ref>(<ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70adf1ed96c99823107b8903b572537ee33" kindref="member">IO_PB_12</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>high<sp/>level<sp/>-&gt;<sp/>rising<sp/>edge<sp/>occurred</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" kindref="member">IO_WritePin</ref>(<ref refid="io__mcu__cfg_8h_1a993d83495bde576840aa09a525d5426c" kindref="member">IO_PIN_MCU_0_TO_FPGA_INTERFACE_SPI_NSS</ref>,<sp/>SET);</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(toggle<sp/>%<sp/>2<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" kindref="member">spi_devices</ref>[2].Instance-&gt;DR<sp/>=<sp/>0x33;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" kindref="member">IO_WritePin</ref>(<ref refid="io__mcu__cfg_8h_1a3afe808f2a652fa033e7238ade19d265" kindref="member">IO_PIN_MCU_0_DEBUG_LED_1</ref>,<sp/>SET);</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="spi__cfg_8c_1a090bd651a060ce23ceba57762f2ef0b3" kindref="member">spi_devices</ref>[2].Instance-&gt;DR<sp/>=<sp/>0x55;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" kindref="member">IO_WritePin</ref>(<ref refid="io__mcu__cfg_8h_1a3afe808f2a652fa033e7238ade19d265" kindref="member">IO_PIN_MCU_0_DEBUG_LED_1</ref>,<sp/>RESET);</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnt++;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cnt<sp/>==<sp/>500)<sp/>{</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>toggle++;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>low<sp/>level<sp/>-&gt;<sp/>falling<sp/>edge<sp/>occurred</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="io_8c_1a1709c6b36be8ee2ebaf5e076300b6a93" kindref="member">IO_WritePin</ref>(<ref refid="io__mcu__cfg_8h_1a993d83495bde576840aa09a525d5426c" kindref="member">IO_PIN_MCU_0_TO_FPGA_INTERFACE_SPI_NSS</ref>,<sp/>RESET);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight><highlight class="comment">/************************<sp/>(C)<sp/>COPYRIGHT<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/general/config/STM32F4xx/stm32f4xx_it.c"/>
+  </compounddef>
+</doxygen>

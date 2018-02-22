@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_aa3a13fe27059d859adb95d92abf7173" kind="dir">
+    <compoundname>mcu-common</compoundname>
+    <innerdir refid="dir_f63b5a945dc5aad5409e37a45ec3b277">src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-common/"/>
+  </compounddef>
+</doxygen>

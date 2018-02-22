@@ -1,0 +1,7 @@
+<map id="cans_setdebug" name="cans_setdebug">
+<area shape="rect" id="node2" href="$sox_8c.html#a19c20347185aaa61f4bd404b9f0619cd" title="sets SOC value with a parameter between 0.0 and 100.0. " alt="" coords="166,56,277,83"/>
+<area shape="rect" id="node4" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="327,107,481,133"/>
+<area shape="rect" id="node6" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="164,157,279,184"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#aa7a3020dbc1fb1110a8c41a2989f25b0" title="disables interrupts and returns prior state (enabled or disabled) " alt="" coords="344,5,464,32"/>
+<area shape="rect" id="node5" href="$mcu_8c.html#a74382aca8f0a3c77df269579204ee9b1" title="restores interrupts to given state (enable or disable) " alt="" coords="343,56,465,83"/>
+</map>

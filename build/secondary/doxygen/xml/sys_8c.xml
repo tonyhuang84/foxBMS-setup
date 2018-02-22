@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sys_8c" kind="file" language="C++">
+    <compoundname>sys.c</compoundname>
+    <includes refid="sys_8h" local="yes">sys.h</includes>
+    <includes refid="bms_8h" local="yes">bms.h</includes>
+    <includes refid="meas_8h" local="yes">meas.h</includes>
+    <includes refid="cansignal_8h" local="yes">cansignal.h</includes>
+    <includes refid="interlock_8h" local="yes">interlock.h</includes>
+    <includes local="yes">cmsis_os.h</includes>
+    <includes refid="diag_8h" local="yes">diag.h</includes>
+    <includes refid="database__cfg_8h" local="yes">database_cfg.h</includes>
+    <includes refid="sox_8h" local="yes">sox.h</includes>
+    <incdepgraph>
+      <node id="2260">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="2251">
+        <label>bms_cfg.h</label>
+        <link refid="bms__cfg_8h"/>
+        <childnode refid="2246" relation="include">
+        </childnode>
+      </node>
+      <node id="2263">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="2264" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+        <childnode refid="2247" relation="include">
+        </childnode>
+      </node>
+      <node id="2255">
+        <label>cansignal_cfg.h</label>
+        <link refid="cansignal__cfg_8h"/>
+        <childnode refid="2256" relation="include">
+        </childnode>
+      </node>
+      <node id="2269">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2257" relation="include">
+        </childnode>
+      </node>
+      <node id="2248">
+        <label>stdint.h</label>
+      </node>
+      <node id="2271">
+        <label>database_cfg.h</label>
+        <link refid="database__cfg_8h"/>
+        <childnode refid="2264" relation="include">
+        </childnode>
+      </node>
+      <node id="2246">
+        <label>mcu.h</label>
+        <link refid="mcu_8h"/>
+        <childnode refid="2247" relation="include">
+        </childnode>
+      </node>
+      <node id="2265">
+        <label>cmsis_os.h</label>
+      </node>
+      <node id="2264">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="2247" relation="include">
+        </childnode>
+      </node>
+      <node id="2257">
+        <label>mcu_cfg.h</label>
+        <link refid="mcu__cfg_8h"/>
+        <childnode refid="2258" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+      </node>
+      <node id="2243">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+        <childnode refid="2244" relation="include">
+        </childnode>
+        <childnode refid="2250" relation="include">
+        </childnode>
+        <childnode refid="2252" relation="include">
+        </childnode>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2262" relation="include">
+        </childnode>
+        <childnode refid="2265" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2272" relation="include">
+        </childnode>
+      </node>
+      <node id="2244">
+        <label>sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="2245" relation="include">
+        </childnode>
+      </node>
+      <node id="2261">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="2250">
+        <label>bms.h</label>
+        <link refid="bms_8h"/>
+        <childnode refid="2251" relation="include">
+        </childnode>
+      </node>
+      <node id="2259">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="2257" relation="include">
+        </childnode>
+        <childnode refid="2260" relation="include">
+        </childnode>
+        <childnode refid="2261" relation="include">
+        </childnode>
+      </node>
+      <node id="2272">
+        <label>sox.h</label>
+        <link refid="sox_8h"/>
+        <childnode refid="2273" relation="include">
+        </childnode>
+      </node>
+      <node id="2262">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="2263" relation="include">
+        </childnode>
+      </node>
+      <node id="2256">
+        <label>can_cfg.h</label>
+        <link refid="can__cfg_8h"/>
+        <childnode refid="2257" relation="include">
+        </childnode>
+      </node>
+      <node id="2249">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="2254">
+        <label>cansignal.h</label>
+        <link refid="cansignal_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+        <childnode refid="2247" relation="include">
+        </childnode>
+      </node>
+      <node id="2268">
+        <label>diag_id_cfg.h</label>
+        <link refid="diag__id__cfg_8h"/>
+      </node>
+      <node id="2247">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="2248" relation="include">
+        </childnode>
+        <childnode refid="2249" relation="include">
+        </childnode>
+      </node>
+      <node id="2252">
+        <label>meas.h</label>
+        <link refid="meas_8h"/>
+        <childnode refid="2253" relation="include">
+        </childnode>
+      </node>
+      <node id="2267">
+        <label>diag_cfg.h</label>
+        <link refid="diag__cfg_8h"/>
+        <childnode refid="2264" relation="include">
+        </childnode>
+        <childnode refid="2268" relation="include">
+        </childnode>
+        <childnode refid="2269" relation="include">
+        </childnode>
+      </node>
+      <node id="2258">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="2245">
+        <label>sys_cfg.h</label>
+        <link refid="sys__cfg_8h"/>
+        <childnode refid="2246" relation="include">
+        </childnode>
+      </node>
+      <node id="2270">
+        <label>rtc_cfg.h</label>
+        <link refid="rtc__cfg_8h"/>
+        <childnode refid="2257" relation="include">
+        </childnode>
+      </node>
+      <node id="2253">
+        <label>meas_cfg.h</label>
+        <link refid="meas__cfg_8h"/>
+      </node>
+      <node id="2266">
+        <label>diag.h</label>
+        <link refid="diag_8h"/>
+        <childnode refid="2267" relation="include">
+        </childnode>
+        <childnode refid="2264" relation="include">
+        </childnode>
+      </node>
+      <node id="2273">
+        <label>sox_cfg.h</label>
+        <link refid="sox__cfg_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sys_8c_1adff4586b24979a9052b7088b4f214b09" prot="public" static="no">
+        <name>SYS_SAVELASTSTATES</name>
+        <param></param>
+        <initializer>sys_state.laststate=sys_state.state; \
+                                sys_state.lastsubstate = sys_state.substate</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the last state and the last substate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="50" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="sys_8c_1ac9248ec49275e6d662fc39ca806f538a" prot="public" static="yes" mutable="no">
+        <type><ref refid="structSYS__STATE__s" kindref="compound">SYS_STATE_s</ref></type>
+        <definition>SYS_STATE_s sys_state</definition>
+        <argsstring></argsstring>
+        <name>sys_state</name>
+        <initializer>= {
+    .timer                  = 0,
+    .statereq               = <ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>,
+    .state                  = <ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref>,
+    .substate               = <ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>,
+    .laststate              = <ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref>,
+    .lastsubstate           = 0,
+    .triggerentry           = 0,
+    .ErrRequestCounter      = 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contains the state of the contactor state machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="59" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref></type>
+        <definition>static SYS_RETURN_TYPE_e SYS_CheckStateRequest</definition>
+        <argsstring>(SYS_STATE_REQUEST_e statereq)</argsstring>
+        <name>SYS_CheckStateRequest</name>
+        <param>
+          <type><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>checks the state requests that are made. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks the validity of the state requests. The results of the checked is returned immediately.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state request to be checked</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>result of the state request that was made, taken from SYS_RETURN_TYPE_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="179" bodyend="198"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbdac6063298bb5d68d4dc782c0bb2f9f83a" compoundref="sys_8h" startline="137">SYS_STATE_ERROR_REQUEST</references>
+        <references refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" compoundref="sys_8h" startline="146">SYS_OK</references>
+        <references refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" compoundref="sys_8h" startline="162">SYS_STATE_s::statereq</references>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="138">SYS_STATE_NO_REQUEST</references>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" compoundref="sys_8h" startline="136">SYS_STATE_INIT_REQUEST</references>
+        <references refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" compoundref="sys_8h" startline="163">SYS_STATE_s::state</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" compoundref="sys_8h" startline="93">SYS_STATEMACH_UNINITIALIZED</references>
+        <references refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23acda6bd24072d7164fdd7942c03bebfab" compoundref="sys_8h" startline="150">SYS_ALREADY_INITIALIZED</references>
+        <references refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23afd97d5744272ecf8ffaa7ed7ba56b7e2" compoundref="sys_8h" startline="149">SYS_ILLEGAL_REQUEST</references>
+        <references refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23aa7b023d3323aacffa88109c32b5ffa35" compoundref="sys_8h" startline="148">SYS_REQUEST_PENDING</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8c_1ae498bf8b82c22c2b4f9ce47d902c1518" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref></type>
+        <definition>static SYS_STATE_REQUEST_e SYS_GetStateRequest</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_GetStateRequest</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state request. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the SYS state machine.</para><para><simplesect kind="return"><para>retval current state request, taken from SYS_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="73" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="115" bodyend="123"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="138">SYS_STATE_NO_REQUEST</references>
+        <references refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" compoundref="sys_8h" startline="162">SYS_STATE_s::statereq</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref></type>
+        <definition>static SYS_STATE_REQUEST_e SYS_TransferStateRequest</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_TransferStateRequest</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>transfers the current state request to the state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function takes the current state request from cont_state and transfers it to the state machine. It resets the value from cont_state to SYS_STATE_NO_REQUEST</para><para><simplesect kind="return"><para>retVal current state request, taken from SYS_STATE_REQUEST_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="74" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="140" bodyend="149"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="138">SYS_STATE_NO_REQUEST</references>
+        <references refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" compoundref="sys_8h" startline="162">SYS_STATE_s::statereq</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t SYS_CheckReEntrance</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_CheckReEntrance</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>re-entrance check of SYS state machine trigger function </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is not re-entrant and should only be called time- or event-triggered. It increments the triggerentry counter from the state variable ltc_state. It should never be called by two different processes, so if it is the case, triggerentry should never be higher than 0 when this function is called.</para><para><simplesect kind="return"><para>retval 0 if no further instance of the function is active, 0xff else </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="75" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="91" bodyend="103"/>
+        <references refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" compoundref="sys_8h" startline="169">SYS_STATE_s::triggerentry</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8c_1afdcd41d850170687d575bdfed59fd172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref></type>
+        <definition>SYS_STATEMACH_e SYS_GetState</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_GetState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>gets the current state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used in the functioning of the SYS state machine.</para><para><simplesect kind="return"><para>current state, taken from SYS_STATEMACH_e </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="126" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="126" bodyend="128"/>
+        <references refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" compoundref="sys_8h" startline="163">SYS_STATE_s::state</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8c_1ac8cb702ac8a7ab08c2bbb0890e47613d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref></type>
+        <definition>SYS_RETURN_TYPE_e SYS_SetStateRequest</definition>
+        <argsstring>(SYS_STATE_REQUEST_e statereq)</argsstring>
+        <name>SYS_SetStateRequest</name>
+        <param>
+          <type><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref></type>
+          <declname>statereq</declname>
+        </param>
+        <briefdescription>
+<para>sets the current state request of the state variable sys_state. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is used to make a state request to the state machine, e.g., start voltage measurement, read result of voltage measurement, re-initialization. It calls <ref refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" kindref="member">SYS_CheckStateRequest()</ref> to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statereq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state requested to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the request was successfully set, it returns the SYS_OK, else the current state of requests ( type SYS_STATE_REQUEST_e) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="153" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="153" bodyend="165"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="138">SYS_STATE_NO_REQUEST</references>
+        <references refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" compoundref="sys_8c" startline="179" endline="198">SYS_CheckStateRequest</references>
+        <references refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" compoundref="sys_8h" startline="146">SYS_OK</references>
+        <references refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" compoundref="sys_8h" startline="162">SYS_STATE_s::statereq</references>
+      </memberdef>
+      <memberdef kind="function" id="sys_8c_1a8ee066ca68d286c5a4c1231a6e68bb11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SYS_Trigger</definition>
+        <argsstring>(void)</argsstring>
+        <name>SYS_Trigger</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>trigger function for the SYS driver state machine. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function contains the sequence of events in the SYS state machine. It must be called time-triggered, every 1ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" line="201" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c" bodystart="201" bodyend="347"/>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" compoundref="sys_8h" startline="138">SYS_STATE_NO_REQUEST</references>
+        <references refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48ae480eb9f365b0f6c3a870efef0c18e4f" compoundref="interlock_8h" startline="107">ILCK_STATEMACH_UNDEFINED</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4d2e2e631943fa2467315f78711cdfcb" compoundref="bms_8h" startline="102">BMS_STATEMACH_UNDEFINED</references>
+        <references refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" compoundref="diag_8c" startline="709" endline="718">DIAG_SysMonNotify</references>
+        <references refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faaeb9258e21c43f5201eda4a0ee1b829c" compoundref="diag__cfg_8h" startline="292">DIAG_SYSMON_SYS_ID</references>
+        <references refid="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" compoundref="sys_8c" startline="91" endline="103">SYS_CheckReEntrance</references>
+        <references refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" compoundref="sys_8h" startline="161">SYS_STATE_s::timer</references>
+        <references refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" compoundref="sys_8h" startline="169">SYS_STATE_s::triggerentry</references>
+        <references refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" compoundref="sys_8h" startline="163">SYS_STATE_s::state</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" compoundref="sys_8h" startline="93">SYS_STATEMACH_UNINITIALIZED</references>
+        <references refid="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" compoundref="sys_8c" startline="140" endline="149">SYS_TransferStateRequest</references>
+        <references refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" compoundref="sys_8h" startline="136">SYS_STATE_INIT_REQUEST</references>
+        <references refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" compoundref="sys_8c" startline="50">SYS_SAVELASTSTATES</references>
+        <references refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" compoundref="sys__cfg_8h" startline="45">SYS_STATEMACH_SHORTTIME_MS</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" compoundref="sys_8h" startline="94">SYS_STATEMACH_INITIALIZATION</references>
+        <references refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" compoundref="sys_8h" startline="164">SYS_STATE_s::substate</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" compoundref="sys_8h" startline="115">SYS_ENTRY</references>
+        <references refid="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" compoundref="sys_8h" startline="167">SYS_STATE_s::ErrRequestCounter</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" compoundref="sys_8h" startline="95">SYS_STATEMACH_INITIALIZED</references>
+        <references refid="meas_8c_1a55247d0978a7017843bdb63b1e1c0d3d" compoundref="meas_8c" startline="134" endline="143">MEAS_StartMeasurement</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" compoundref="sys_8h" startline="97">SYS_STATEMACH_INITIALIZE_INTERLOCK</references>
+        <references refid="interlock_8c_1ab218c092199d1c3999262123352877fc" compoundref="interlock_8c" startline="236" endline="248">ILCK_SetStateRequest</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3ad2ff63664a017a544d334fc60563e238" compoundref="interlock_8h" startline="134">ILCK_STATE_INIT_REQUEST</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" compoundref="sys_8h" startline="118">SYS_WAIT_INITIALIZATION_INTERLOCK</references>
+        <references refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" compoundref="sys_8h" startline="168">SYS_STATE_s::InitCounter</references>
+        <references refid="interlock_8c_1af3194f3e84a7a0a097d9c9c9f6b7330e" compoundref="interlock_8c" startline="196" endline="198">ILCK_GetState</references>
+        <references refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48a6b24ec397fceb6f826aeb74ec1229fee" compoundref="interlock_8h" startline="104">ILCK_STATEMACH_WAIT_FIRST_REQUEST</references>
+        <references refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" compoundref="interlock_8h" startline="136">ILCK_STATE_CLOSE_REQUEST</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" compoundref="sys_8h" startline="103">SYS_STATEMACH_INITIALIZE_MISC</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" compoundref="sys_8h" startline="107">SYS_STATEMACH_ERROR</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca6a8dffd37e60346691e6414607f656fa" compoundref="sys_8h" startline="125">SYS_ILCK_INIT_ERROR</references>
+        <references refid="sys__cfg_8h_1affae1efb96a2215859df22755d2412e5" compoundref="sys__cfg_8h" startline="51">SYS_STATEMACH_MEDIUMTIME_MS</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" compoundref="sys_8h" startline="100">SYS_STATEMACH_INITIALIZE_BMS</references>
+        <references refid="bms_8c_1a40eb276efea852638c5ba83e53569ebc" compoundref="bms_8c" startline="146" endline="158">BMS_SetStateRequest</references>
+        <references refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" compoundref="bms_8h" startline="128">BMS_STATE_INIT_REQUEST</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" compoundref="sys_8h" startline="121">SYS_WAIT_INITIALIZATION_BMS</references>
+        <references refid="bms_8c_1afcd6e979c7502594e6807d322df11555" compoundref="bms_8c" startline="122" endline="124">BMS_GetState</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67adcd5ff5a0f825e8441925c5ee7da8b88" compoundref="bms_8h" startline="96">BMS_STATEMACH_IDLE</references>
+        <references refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" compoundref="bms_8h" startline="97">BMS_STATEMACH_STANDBY</references>
+        <references refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" compoundref="sys_8h" startline="101">SYS_STATEMACH_RUNNING</references>
+        <references refid="sys_8h_1a023839e44707acf6190c0d061c54700cac900f01d8306f7accb0fbe7b73d7e5ad" compoundref="sys_8h" startline="126">SYS_BMS_INIT_ERROR</references>
+        <references refid="sys__cfg_8h_1ad1c8d5f0b85a642687eeb90e37fcdbee" compoundref="sys__cfg_8h" startline="57">SYS_STATEMACH_LONGTIME_MS</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sys driver implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>21.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>SYS </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sys_8h" kindref="compound">sys.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bms_8h" kindref="compound">bms.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="meas_8h" kindref="compound">meas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cansignal_8h" kindref="compound">cansignal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="interlock_8h" kindref="compound">interlock.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;cmsis_os.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diag_8h" kindref="compound">diag.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="database__cfg_8h" kindref="compound">database_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sox_8h" kindref="compound">sox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" refkind="member"><highlight class="preprocessor">#define<sp/>SYS_SAVELASTSTATES()<sp/><sp/><sp/><sp/>sys_state.laststate=sys_state.state;<sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.lastsubstate<sp/>=<sp/>sys_state.substate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="sys_8c_1ac9248ec49275e6d662fc39ca806f538a" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structSYS__STATE__s" kindref="compound">SYS_STATE_s</ref><sp/><ref refid="sys_8c_1ac9248ec49275e6d662fc39ca806f538a" kindref="member">sys_state</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>.statereq<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>.state<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref>,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>.substate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>.laststate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>.lastsubstate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>.triggerentry<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>.ErrRequestCounter<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref><sp/><ref refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" kindref="member">SYS_CheckStateRequest</ref>(<ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>statereq);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/><ref refid="sys_8c_1ae498bf8b82c22c2b4f9ce47d902c1518" kindref="member">SYS_GetStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/><ref refid="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" kindref="member">SYS_TransferStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" kindref="member">SYS_CheckReEntrance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" kindref="member">SYS_CheckReEntrance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>retval<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>taskENTER_CRITICAL();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sys_state.<ref refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" kindref="member">triggerentry</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" kindref="member">triggerentry</ref>++;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retval<sp/>=<sp/>0xFF;<sp/><sp/></highlight><highlight class="comment">//<sp/>multiple<sp/>calls<sp/>of<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>taskEXIT_CRITICAL();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retval;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="sys_8c_1ae498bf8b82c22c2b4f9ce47d902c1518" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/><ref refid="sys_8c_1ae498bf8b82c22c2b4f9ce47d902c1518" kindref="member">SYS_GetStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>retval<sp/>=<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>taskENTER_CRITICAL();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>retval<sp/><sp/><sp/><sp/>=<sp/>sys_state.<ref refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" kindref="member">statereq</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>taskEXIT_CRITICAL();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retval);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="sys_8h_1afdcd41d850170687d575bdfed59fd172" refkind="member"><highlight class="normal"><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341d" kindref="member">SYS_STATEMACH_e</ref><sp/><ref refid="sys_8c_1afdcd41d850170687d575bdfed59fd172" kindref="member">SYS_GetState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/><ref refid="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" kindref="member">SYS_TransferStateRequest</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>retval<sp/>=<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>taskENTER_CRITICAL();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>retval<sp/><sp/><sp/><sp/>=<sp/>sys_state.<ref refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" kindref="member">statereq</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" kindref="member">statereq</ref><sp/>=<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>taskEXIT_CRITICAL();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retval);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="sys_8h_1ac8cb702ac8a7ab08c2bbb0890e47613d" refkind="member"><highlight class="normal"><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref><sp/><ref refid="sys_8c_1ac8cb702ac8a7ab08c2bbb0890e47613d" kindref="member">SYS_SetStateRequest</ref>(<ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>statereq)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref><sp/>retVal<sp/>=<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>taskENTER_CRITICAL();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>retVal<sp/>=<sp/><ref refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" kindref="member">SYS_CheckStateRequest</ref>(statereq);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(retVal<sp/>==<sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" kindref="member">SYS_OK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" kindref="member">statereq</ref><sp/><sp/>=<sp/>statereq;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>taskEXIT_CRITICAL();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(retVal);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23" kindref="member">SYS_RETURN_TYPE_e</ref><sp/><ref refid="sys_8c_1a22d27691ab700ab1cf9b360f01e8ae71" kindref="member">SYS_CheckStateRequest</ref>(<ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>statereq)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbdac6063298bb5d68d4dc782c0bb2f9f83a" kindref="member">SYS_STATE_ERROR_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" kindref="member">SYS_OK</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1a4216f66f879c707d3ea2c73df6a6a4fc" kindref="member">statereq</ref><sp/>==<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>only<sp/>allowed<sp/>from<sp/>the<sp/>uninitialized<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" kindref="member">SYS_STATE_INIT_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>==<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23a73549811398467bd167122d02e4a803e" kindref="member">SYS_OK</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23acda6bd24072d7164fdd7942c03bebfab" kindref="member">SYS_ALREADY_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23afd97d5744272ecf8ffaa7ed7ba56b7e2" kindref="member">SYS_ILLEGAL_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1a0d798831633d6d8e177fe4957a4daf23aa7b023d3323aacffa88109c32b5ffa35" kindref="member">SYS_REQUEST_PENDING</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="sys_8h_1a8ee066ca68d286c5a4c1231a6e68bb11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sys_8c_1a8ee066ca68d286c5a4c1231a6e68bb11" kindref="member">SYS_Trigger</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>STD_RETURN_TYPE_e<sp/>retVal=E_OK;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbd" kindref="member">SYS_STATE_REQUEST_e</ref><sp/>statereq<sp/>=<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48" kindref="member">ILCK_STATEMACH_e</ref><sp/>ilckstate<sp/>=<sp/><ref refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48ae480eb9f365b0f6c3a870efef0c18e4f" kindref="member">ILCK_STATEMACH_UNDEFINED</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67" kindref="member">BMS_STATEMACH_e</ref><sp/>bmsstate<sp/>=<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a4d2e2e631943fa2467315f78711cdfcb" kindref="member">BMS_STATEMACH_UNDEFINED</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="diag_8c_1a7970909aa22bb87427a96c694fbab0e4" kindref="member">DIAG_SysMonNotify</ref>(<ref refid="diag__cfg_8h_1ab8bcd0c1c3cbdf47eae14308b979a78faaeb9258e21c43f5201eda4a0ee1b829c" kindref="member">DIAG_SYSMON_SYS_ID</ref>,<sp/>0);<sp/><sp/></highlight><highlight class="comment">//<sp/>task<sp/>is<sp/>running,<sp/>state<sp/>=<sp/>ok</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>re-entrance<sp/>of<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="sys_8c_1a5adfb527b70165a2abfa75a8a80aeace" kindref="member">SYS_CheckReEntrance</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(--sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" kindref="member">triggerentry</ref>--;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>handle<sp/>state<sp/>machine<sp/>only<sp/>if<sp/>timer<sp/>has<sp/>elapsed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****Happens<sp/>every<sp/>time<sp/>the<sp/>state<sp/>machine<sp/>is<sp/>triggered**************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************UNINITIALIZED***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da360fbf7bbe11febb7d2e60ce2556951a" kindref="member">SYS_STATEMACH_UNINITIALIZED</ref>:</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>waiting<sp/>for<sp/>Initialization<sp/>Request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statereq<sp/>=<sp/><ref refid="sys_8c_1a31083c2e05ac5fe029a1a81d54b5f853" kindref="member">SYS_TransferStateRequest</ref>();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda23b302d077e4e7b309160197ffc6c7c9" kindref="member">SYS_STATE_INIT_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" kindref="member">SYS_STATEMACH_INITIALIZATION</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(statereq<sp/>==<sp/><ref refid="sys_8h_1a0dc0032c535919759fd08fc274373cbda100f361204ee8cdd4e246fe1b3c98a5c" kindref="member">SYS_STATE_NO_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>actual<sp/>request<sp/>pending<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a23548e51f05c836ad34571632c4c1048" kindref="member">ErrRequestCounter</ref>++;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>illegal<sp/>request<sp/>pending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZATION**********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da59399bae87d264cb7e4943a96abae620" kindref="member">SYS_STATEMACH_INITIALIZATION</ref>:</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initializations<sp/>done<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" kindref="member">SYS_STATEMACH_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZED*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da81e4db9fbc0134d4fbaac002258fdc48" kindref="member">SYS_STATEMACH_INITIALIZED</ref>:</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="meas_8c_1a55247d0978a7017843bdb63b1e1c0d3d" kindref="member">MEAS_StartMeasurement</ref>();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" kindref="member">SYS_STATEMACH_INITIALIZE_INTERLOCK</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZE<sp/>INTERLOCK*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341daf558c8babb4ef85fe2d142e416217a50" kindref="member">SYS_STATEMACH_INITIALIZE_INTERLOCK</ref>:</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>==<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interlock_8c_1ab218c092199d1c3999262123352877fc" kindref="member">ILCK_SetStateRequest</ref>(<ref refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3ad2ff63664a017a544d334fc60563e238" kindref="member">ILCK_STATE_INIT_REQUEST</ref>);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" kindref="member">SYS_WAIT_INITIALIZATION_INTERLOCK</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>==<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca987d1a4bc091e4efd0b0b683d400fa5d" kindref="member">SYS_WAIT_INITIALIZATION_INTERLOCK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ilckstate<sp/>=<sp/><ref refid="interlock_8c_1af3194f3e84a7a0a097d9c9c9f6b7330e" kindref="member">ILCK_GetState</ref>();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ilckstate<sp/>==<sp/><ref refid="interlock_8h_1a0413d738674a5adbf67f553078a91d48a6b24ec397fceb6f826aeb74ec1229fee" kindref="member">ILCK_STATEMACH_WAIT_FIRST_REQUEST</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interlock_8c_1ab218c092199d1c3999262123352877fc" kindref="member">ILCK_SetStateRequest</ref>(<ref refid="interlock_8h_1af038945395ac5b8eaafffa41b614f3c3aec6a10813ac8289eb4b4aab7cdb706de" kindref="member">ILCK_STATE_CLOSE_REQUEST</ref>);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" kindref="member">SYS_STATEMACH_INITIALIZE_MISC</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref><sp/>&gt;<sp/>1000)<sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" kindref="member">SYS_STATEMACH_ERROR</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca6a8dffd37e60346691e6414607f656fa" kindref="member">SYS_ILCK_INIT_ERROR</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref>++;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZED_MISC*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341da6843eded689a969715ed33fd0e06698a" kindref="member">SYS_STATEMACH_INITIALIZE_MISC</ref>:</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1affae1efb96a2215859df22755d2412e5" kindref="member">SYS_STATEMACH_MEDIUMTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" kindref="member">SYS_STATEMACH_INITIALIZE_BMS</ref>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************INITIALIZE<sp/>BMS*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dad7155b9b3a0fc79dd8e03e825ff45d9b" kindref="member">SYS_STATEMACH_INITIALIZE_BMS</ref>:</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>==<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>){</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bms_8c_1a40eb276efea852638c5ba83e53569ebc" kindref="member">BMS_SetStateRequest</ref>(<ref refid="bms_8h_1a83cf77f74949b62d97e29f9be722f593a7986696e31cf222fd86649df14a72783" kindref="member">BMS_STATE_INIT_REQUEST</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" kindref="member">SYS_WAIT_INITIALIZATION_BMS</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>==<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700ca84366d043421325eb4e383106d28ca9a" kindref="member">SYS_WAIT_INITIALIZATION_BMS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmsstate<sp/>=<sp/><ref refid="bms_8c_1afcd6e979c7502594e6807d322df11555" kindref="member">BMS_GetState</ref>();</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bmsstate<sp/>==<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67adcd5ff5a0f825e8441925c5ee7da8b88" kindref="member">BMS_STATEMACH_IDLE</ref><sp/>||<sp/>bmsstate<sp/>==<sp/><ref refid="bms_8h_1ad5dcf7dee29f085e2fc0073fededfa67a236f1716dacfc5c154c654c8e03a657f" kindref="member">BMS_STATEMACH_STANDBY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" kindref="member">SYS_STATEMACH_RUNNING</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cadaa5ae57a017ff786e926b485994bf73" kindref="member">SYS_ENTRY</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sys_state.<ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref><sp/>&gt;<sp/>1000)<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1ab664cc36ef6467269dc2cbd7608c5283" kindref="member">state</ref><sp/>=<sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" kindref="member">SYS_STATEMACH_ERROR</ref>;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1afd2c21db7523d58f1e4620c3844cc337" kindref="member">substate</ref><sp/>=<sp/><ref refid="sys_8h_1a023839e44707acf6190c0d061c54700cac900f01d8306f7accb0fbe7b73d7e5ad" kindref="member">SYS_BMS_INIT_ERROR</ref>;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1a9200d3088552d56d8aaf6e25a932c5e6" kindref="member">SYS_STATEMACH_SHORTTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6763ce709c9fbef5889d5c380a307dad" kindref="member">InitCounter</ref>++;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************RUNNNIG*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab2d2b2d904fa7edb1c89c9eb91f2312c" kindref="member">SYS_STATEMACH_RUNNING</ref>:</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1ad1c8d5f0b85a642687eeb90e37fcdbee" kindref="member">SYS_STATEMACH_LONGTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************ERROR*************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="sys_8h_1ac9cfe6c6c0c5675125ff820d03f4341dab8342d78779b8780b34fe681c0f02804" kindref="member">SYS_STATEMACH_ERROR</ref>:</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="sys_8c_1adff4586b24979a9052b7088b4f214b09" kindref="member">SYS_SAVELASTSTATES</ref>();</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a0835ed90c74ff56cede978e187e97e2b" kindref="member">timer</ref><sp/>=<sp/><ref refid="sys__cfg_8h_1ad1c8d5f0b85a642687eeb90e37fcdbee" kindref="member">SYS_STATEMACH_LONGTIME_MS</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight><highlight class="comment">//<sp/>end<sp/>switch(sys_state.state)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>sys_state.<ref refid="structSYS__STATE__s_1a6dda999f6c794ea6ce08635776221f45" kindref="member">triggerentry</ref>--;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-secondary/src/engine/sys/sys.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="interlock__cfg_8h" kind="file" language="C++">
+    <compoundname>interlock_cfg.h</compoundname>
+    <includes refid="batterysystem__cfg_8h" local="yes">batterysystem_cfg.h</includes>
+    <includes refid="io__cfg_8h" local="yes">io_cfg.h</includes>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includedby refid="interlock__cfg_8c" local="yes">interlock_cfg.c</includedby>
+    <includedby refid="interlock_8h" local="yes">interlock.h</includedby>
+    <incdepgraph>
+      <node id="1435">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="1436" relation="include">
+        </childnode>
+        <childnode refid="1437" relation="include">
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>stdint.h</label>
+      </node>
+      <node id="1440">
+        <label>io_package_cfg.h</label>
+        <link refid="io__package__cfg_8h"/>
+      </node>
+      <node id="1433">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1438" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1438">
+        <label>io_cfg.h</label>
+        <link refid="io__cfg_8h"/>
+        <childnode refid="1439" relation="include">
+        </childnode>
+        <childnode refid="1440" relation="include">
+        </childnode>
+        <childnode refid="1441" relation="include">
+        </childnode>
+      </node>
+      <node id="1441">
+        <label>io_mcu_cfg.h</label>
+        <link refid="io__mcu__cfg_8h"/>
+      </node>
+      <node id="1439">
+        <label>mcu_cfg.h</label>
+      </node>
+      <node id="1437">
+        <label>std_types.h</label>
+        <link refid="std__types_8h"/>
+      </node>
+      <node id="1434">
+        <label>batterysystem_cfg.h</label>
+        <link refid="batterysystem__cfg_8h"/>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1446">
+        <label>sys.c</label>
+        <link refid="sys_8c"/>
+      </node>
+      <node id="1443">
+        <label>interlock_cfg.c</label>
+        <link refid="interlock__cfg_8c"/>
+      </node>
+      <node id="1442">
+        <label>interlock_cfg.h</label>
+        <link refid="interlock__cfg_8h"/>
+        <childnode refid="1443" relation="include">
+        </childnode>
+        <childnode refid="1444" relation="include">
+        </childnode>
+      </node>
+      <node id="1447">
+        <label>enginetask.c</label>
+        <link refid="enginetask_8c"/>
+      </node>
+      <node id="1448">
+        <label>interlock.c</label>
+        <link refid="interlock_8c"/>
+      </node>
+      <node id="1444">
+        <label>interlock.h</label>
+        <link refid="interlock_8h"/>
+        <childnode refid="1445" relation="include">
+        </childnode>
+        <childnode refid="1446" relation="include">
+        </childnode>
+        <childnode refid="1447" relation="include">
+        </childnode>
+        <childnode refid="1448" relation="include">
+        </childnode>
+      </node>
+      <node id="1445">
+        <label>bms.c</label>
+        <link refid="bms_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structILCK__ELECTRICAL__STATE__s" prot="public">ILCK_ELECTRICAL_STATE_s</innerclass>
+    <innerclass refid="structILCK__CONFIG__s" prot="public">ILCK_CONFIG_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="interlock__cfg_8h_1a6a4566eacfe83e631987b57b6c6d0939" prot="public" static="no">
+        <name>ILCK_INTERLOCK_CONTROL</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1aafed8499564be81811cb4a6d7191d6ef" kindref="member">IO_PIN_MCU_0_INTERLOCK_CONTROL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="52" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="interlock__cfg_8h_1a3c9bfe30802e3914d559dca9f724ef2b" prot="public" static="no">
+        <name>ILCK_INTERLOCK_FEEDBACK</name>
+        <initializer><ref refid="io__mcu__cfg_8h_1acd2c73068bc2e3bf9f36edc989f71a33" kindref="member">IO_PIN_MCU_0_INTERLOCK_FEEDBACK</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the pin where interlock feedback pin is connected to the mcu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="56" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="interlock__cfg_8h_1af76cb3035c0aa0306bbc73b6688665c4" prot="public" static="no">
+        <name>ILCK_STATEMACH_SHORTTIME_MS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ILCK statemachine short time definition in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="64" column="9" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297" prot="public" static="no">
+        <name>ILCK_CURRENT_DIRECTION_e</name>
+        <enumvalue id="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297a9ffc852c8d4398af5db9485065a2a85a" prot="public">
+          <name>ILCK_CURRENT_CHARGE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297a6a9bdcaec50f4d36ac841a55cc0a86e0" prot="public">
+          <name>ILCK_CURRENT_DISCHARGE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Symbolic names for current flow direction in the battery </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="72" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" prot="public" static="no">
+        <name>ILCK_ELECTRICAL_STATE_TYPE_s</name>
+        <enumvalue id="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346ac2beed225eea58b4985fd9d06c6628fb" prot="public">
+          <name>ILCK_SWITCH_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contactor off <ndash/>&gt; Contactor is open </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346a363b42d49acb513df72333e6374f2c47" prot="public">
+          <name>ILCK_SWITCH_ON</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contactor on <ndash/>&gt; Contactor is closed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346a858ec30512597f31c5fef4ca9c068137" prot="public">
+          <name>ILCK_SWITCH_UNDEF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Contactor undefined <ndash/>&gt; Contactor state not known </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Symbolic names for contactors&apos; possible states </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="80" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="enum" id="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5" prot="public" static="no">
+        <name>ILCK_FEEDBACK_TYPE_e</name>
+        <enumvalue id="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5ad103fafbadffa8abf68a04a5aaa0bd0e" prot="public">
+          <name>ILCK_FEEDBACK_NORMALLY_OPEN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Feedback line of a contactor is normally open </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5a48d34c52512e950929d1fdbc38924de2" prot="public">
+          <name>ILCK_FEEDBACK_NORMALLY_CLOSED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Feedback line of a contactor is normally closed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5a347afa82c4eb963816d3c49dd4c12687" prot="public">
+          <name>ILCK_FEEDBACK_TYPE_DONT_CARE</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Feedback line of the contactor is not used </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Symbolic names defining the electric behavior of the contactor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="89" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" bodystart="89" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="interlock__cfg_8h_1ac57e189466d66c635b289c49b64c1de3" prot="public" static="no" mutable="no">
+        <type><ref refid="structILCK__CONFIG__s" kindref="compound">ILCK_CONFIG_s</ref></type>
+        <definition>ILCK_CONFIG_s ilck_interlock_config</definition>
+        <argsstring></argsstring>
+        <name>ilck_interlock_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="106" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interlock__cfg_8h_1a7e099ad7f13a60cccd3926586a62570e" prot="public" static="no" mutable="no">
+        <type><ref refid="structILCK__ELECTRICAL__STATE__s" kindref="compound">ILCK_ELECTRICAL_STATE_s</ref></type>
+        <definition>ILCK_ELECTRICAL_STATE_s ilck_interlock_state</definition>
+        <argsstring></argsstring>
+        <name>ilck_interlock_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h" line="107" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header for the configuration for the driver for the interlock. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para><copy/> 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.</para></simplesect>
+BSD 3-Clause License Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para>We kindly request you to use one or more of the following phrases to refer to foxBMS in your hardware, software, documentation or advertising materials:</para><para><Prime/>This product uses parts of foxBMS<registered/><Prime/></para><para><Prime/>This product includes parts of foxBMS<registered/><Prime/></para><para><Prime/>This product is derived from foxBMS<registered/><Prime/></para><para><simplesect kind="author"><para>foxBMS Team </para></simplesect>
+<simplesect kind="date"><para>23.09.2015 (date of creation)</para></simplesect>
+<simplesect kind="par"><title>Module-prefix</title><para>ILCK </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>INTERLOCK_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTERLOCK_CFG_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Includes<sp/>=============================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="batterysystem__cfg_8h" kindref="compound">batterysystem_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="io__cfg_8h" kindref="compound">io_cfg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Macros<sp/>and<sp/>Definitions<sp/>===============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>The<sp/>number<sp/>of<sp/>defines<sp/>per<sp/>contactor<sp/>must<sp/>be<sp/>the<sp/>same<sp/>as<sp/>the<sp/>length</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/>of<sp/>the<sp/>array<sp/>ilck_contactors_cfg<sp/>in<sp/>contactor_cfg.c</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>Every<sp/>contactor<sp/>consists<sp/>of<sp/>1<sp/>control<sp/>pin<sp/>and<sp/>1<sp/>feedback<sp/>pin</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>counting<sp/>together<sp/>as<sp/>1<sp/>contactor.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>E.g.<sp/>if<sp/>you<sp/>have<sp/>1<sp/>contactor<sp/>your<sp/>define<sp/>has<sp/>to<sp/>be:</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>ILCK_INTERLOCK_CONTROL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>PIN_MCU_0_INTERLOCK_CONTROL</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>ILCK_INTERLOCK_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/>PIN_MCU_0_INTERLOCK_FEEDBACK</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="interlock__cfg_8h_1a6a4566eacfe83e631987b57b6c6d0939" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ILCK_INTERLOCK_CONTROL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PIN_MCU_0_INTERLOCK_CONTROL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="interlock__cfg_8h_1a3c9bfe30802e3914d559dca9f724ef2b" refkind="member"><highlight class="preprocessor">#define<sp/>ILCK_INTERLOCK_FEEDBACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IO_PIN_MCU_0_INTERLOCK_FEEDBACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="interlock__cfg_8h_1af76cb3035c0aa0306bbc73b6688665c4" refkind="member"><highlight class="preprocessor">#define<sp/>ILCK_STATEMACH_SHORTTIME_MS<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Constant<sp/>and<sp/>Variable<sp/>Definitions<sp/>====================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="73" refid="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297a9ffc852c8d4398af5db9485065a2a85a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297a9ffc852c8d4398af5db9485065a2a85a" kindref="member">ILCK_CURRENT_CHARGE</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297a6a9bdcaec50f4d36ac841a55cc0a86e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297a6a9bdcaec50f4d36ac841a55cc0a86e0" kindref="member">ILCK_CURRENT_DISCHARGE</ref><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="interlock__cfg_8h_1a4dfb0f0691d5491892a843a58dc17297" kindref="member">ILCK_CURRENT_DIRECTION_e</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81" refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346ac2beed225eea58b4985fd9d06c6628fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346ac2beed225eea58b4985fd9d06c6628fb" kindref="member">ILCK_SWITCH_OFF</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346a363b42d49acb513df72333e6374f2c47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346a363b42d49acb513df72333e6374f2c47" kindref="member">ILCK_SWITCH_ON</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346a858ec30512597f31c5fef4ca9c068137" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346a858ec30512597f31c5fef4ca9c068137" kindref="member">ILCK_SWITCH_UNDEF</ref><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" kindref="member">ILCK_ELECTRICAL_STATE_TYPE_s</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90" refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5ad103fafbadffa8abf68a04a5aaa0bd0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5ad103fafbadffa8abf68a04a5aaa0bd0e" kindref="member">ILCK_FEEDBACK_NORMALLY_OPEN</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5a48d34c52512e950929d1fdbc38924de2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5a48d34c52512e950929d1fdbc38924de2" kindref="member">ILCK_FEEDBACK_NORMALLY_CLOSED</ref><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5a347afa82c4eb963816d3c49dd4c12687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5a347afa82c4eb963816d3c49dd4c12687" kindref="member">ILCK_FEEDBACK_TYPE_DONT_CARE</ref><sp/><sp/><sp/><sp/>=<sp/>0xFF<sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<sp/><ref refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5" kindref="member">ILCK_FEEDBACK_TYPE_e</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structILCK__ELECTRICAL__STATE__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96" refid="structILCK__ELECTRICAL__STATE__s_1a901cf426290bf2951dc600101278106b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" kindref="member">ILCK_ELECTRICAL_STATE_TYPE_s</ref><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97" refid="structILCK__ELECTRICAL__STATE__s_1abc475c9660c36ee2c1b6979cc8160a65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1aad86968955b8add2514f3143763d3346" kindref="member">ILCK_ELECTRICAL_STATE_TYPE_s</ref><sp/><ref refid="structILCK__ELECTRICAL__STATE__s_1abc475c9660c36ee2c1b6979cc8160a65" kindref="member">feedback</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/><ref refid="structILCK__ELECTRICAL__STATE__s" kindref="compound">ILCK_ELECTRICAL_STATE_s</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structILCK__CONFIG__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101" refid="structILCK__CONFIG__s_1a8129d316fdba4d08a05e69250f8c261d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/><ref refid="structILCK__CONFIG__s_1a8129d316fdba4d08a05e69250f8c261d" kindref="member">control_pin</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structILCK__CONFIG__s_1ac1537912d93a51de9183539aa8cafde8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io__package__cfg_8h_1a9466819a61a78e6427e50e9b2fd18c70" kindref="member">IO_PORTS_e</ref><sp/><ref refid="structILCK__CONFIG__s_1ac1537912d93a51de9183539aa8cafde8" kindref="member">feedback_pin</ref>;</highlight></codeline>
+<codeline lineno="103" refid="structILCK__CONFIG__s_1aebcd8649d97463b31134e7058b016475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interlock__cfg_8h_1a6394d67750f6b6fd51ac5fcb0963c5a5" kindref="member">ILCK_FEEDBACK_TYPE_e</ref><sp/><ref refid="structILCK__CONFIG__s_1aebcd8649d97463b31134e7058b016475" kindref="member">feedback_pin_type</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/><ref refid="structILCK__CONFIG__s" kindref="compound">ILCK_CONFIG_s</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structILCK__CONFIG__s" kindref="compound">ILCK_CONFIG_s</ref><sp/><ref refid="interlock__cfg_8h_1ac57e189466d66c635b289c49b64c1de3" kindref="member">ilck_interlock_config</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structILCK__ELECTRICAL__STATE__s" kindref="compound">ILCK_ELECTRICAL_STATE_s</ref><sp/><ref refid="interlock__cfg_8h_1a7e099ad7f13a60cccd3926586a62570e" kindref="member">ilck_interlock_state</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Prototypes<sp/>==================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*==================<sp/>Function<sp/>Implementations<sp/>=============================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INTERLOCK_CFG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/module/config/interlock_cfg.h"/>
+  </compounddef>
+</doxygen>

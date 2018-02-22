@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structSOX__STATE__s" kind="struct" language="C++" prot="public">
+    <compoundname>SOX_STATE_s</compoundname>
+    <includes refid="sox_8h" local="no">sox.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSOX__STATE__s_1a8356870263b70ae0f848672ac847029b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SOX_STATE_s::sensor_cc_used</definition>
+        <argsstring></argsstring>
+        <name>sensor_cc_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time in ms before the state machine processes the next state, e.g. in counts of 1ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" line="46" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__STATE__s_1a35791162e9f25c1eda39f5355b6ec3e5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOX_STATE_s::cc_scaling</definition>
+        <argsstring></argsstring>
+        <name>cc_scaling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>scaling for the C-C value from sensor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" line="47" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSOX__STATE__s_1accc25551eca3b799b0d427529f423867" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SOX_STATE_s::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>general purpose counter </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" line="48" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all the variables relevant for the SOX. </para>    </detaileddescription>
+    <location file="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" line="45" column="1" bodyfile="D:/itri/foxBMS/src/foxBMS-setup/embedded-software/mcu-primary/src/application/sox/sox.h" bodystart="45" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structSOX__STATE__s_1a35791162e9f25c1eda39f5355b6ec3e5" prot="public" virt="non-virtual"><scope>SOX_STATE_s</scope><name>cc_scaling</name></member>
+      <member refid="structSOX__STATE__s_1accc25551eca3b799b0d427529f423867" prot="public" virt="non-virtual"><scope>SOX_STATE_s</scope><name>counter</name></member>
+      <member refid="structSOX__STATE__s_1a8356870263b70ae0f848672ac847029b" prot="public" virt="non-virtual"><scope>SOX_STATE_s</scope><name>sensor_cc_used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

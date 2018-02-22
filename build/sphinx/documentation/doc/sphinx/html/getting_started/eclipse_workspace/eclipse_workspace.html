@@ -1,0 +1,809 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Eclipse Workspace Setup and Flashing &mdash; foxBMS 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/foxbms-icon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="foxBMS 1.0 documentation" href="../../index.html"/>
+        <link rel="next" title="5. Cabling foxBMS" href="../cabling/cabling.html"/>
+        <link rel="prev" title="3. Building the foxBMS Software and Documentation" href="../build/build.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> foxBMS
+          
+
+          
+            
+            <img src="../../_static/foxbms250px.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/releases/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/roadmap/roadmap.html">2. Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/overview/overview.html">3. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/motivation/motivation.html">4. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/safety/safety.html">5. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/licenses/licenses.html">6. Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general_information/team/team.html">7. Team</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../general/general.html">1. Getting Started with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foxconda/foxconda.html">2. Installing foxConda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">3. Building the foxBMS Software and Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Eclipse Workspace Setup and Flashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cabling/cabling.html">5. Cabling foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connectors/connectors.html">6. Connectors Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../communicating/communicating.html">7. Communicating with foxBMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../checking/checking.html">8. Checking-up foxBMS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/specifications/specifications.html">1. Hardware Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/overview/overview.html">2. Hardware Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v2.x/slave_12cell_v2_x.html">3. Slave 12-Cell v2.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/slave_v1.x/slave_12cell_v1_x.html">4. Slave 12-Cell v1.x.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/design_resources/design_resources.html">5. Hardware Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/components/components.html">6. Hardware Safety Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/bjb/bjb.html">7. Battery Junction Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware_documentation/toolchain/toolchain.html">8. Hardware Toolchain</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/components/components.html">1. Software Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/overview/overview.html">2. Software Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/defines/defines.html">3. Important Switches in Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/tools/tools.html">5. Software Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/styleguide/styleguide.html">7. Software Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software_documentation/faq/faq.html">8. Software FAQ and HOWTOs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>4. Eclipse Workspace Setup and Flashing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/getting_started/eclipse_workspace/eclipse_workspace.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="eclipse-workspace-setup-and-flashing">
+<span id="getting-started-eclipse-workspace"></span><h1>4. Eclipse Workspace Setup and Flashing<a class="headerlink" href="#eclipse-workspace-setup-and-flashing" title="Permalink to this headline">¶</a></h1>
+<p>In this section, it is shown how to set up an Eclipse workspace to work with the foxBMS sources. Within the workspace, it is possible to flash the compiled sources on the foxBMS Master Unit.</p>
+<div class="section" id="setting-an-eclipse-workspace">
+<h2>4.1. Setting an Eclipse Workspace<a class="headerlink" href="#setting-an-eclipse-workspace" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Every part of this setup instruction must be read carefully and it must be followed step by step, including details. If not the case, the Eclipse Workspace will not work.</p>
+</div>
+<p>In the following, it is described which requirements have to be fulfilled and what steps have to be made to setup an Eclipse workspace for working with the foxBMS sources.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This tutorial uses Unix-style delimiting character (<code class="docutils literal"><span class="pre">/</span></code>) in paths. Under Windows, Windows-style delimiting character (<code class="docutils literal"><span class="pre">\</span></code>) in paths must be used.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The following setup instructions use two variables which have to be adapted to the user’s settings. The example below shows how to adapt these two variables.</p>
+<ul>
+<li><p class="first">Variable 1: <code class="docutils literal"><span class="pre">path/to/foxbms-setup</span></code></p>
+<p>If the setup dir is <code class="docutils literal"><span class="pre">foxbms-setup</span></code>, the path has to be set to <code class="docutils literal"><span class="pre">C:\Users\username\Documents</span></code> and <code class="docutils literal"><span class="pre">C:\Users\username\Documents\foxBMS-setup</span></code> has to be used instead of <code class="docutils literal"><span class="pre">path/to/foxbms-setup</span></code>.</p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="last">
+<li><p class="first">Varibale 2: <code class="docutils literal"><span class="pre">path/to/foxconda</span></code></p>
+<blockquote>
+<div><ul class="simple">
+<li>If <code class="docutils literal"><span class="pre">foxconda</span></code> is installed into the default and preferred installation directory <code class="docutils literal"><span class="pre">C:\foxconda</span></code> <code class="docutils literal"><span class="pre">C:\foxconda</span></code> has to be used instead of <code class="docutils literal"><span class="pre">path/to/foxconda</span></code>.</li>
+<li>If <code class="docutils literal"><span class="pre">foxconda</span></code> is installed into <code class="docutils literal"><span class="pre">C:\foxconda</span></code> some steps of these instructions can be skipped. These steps are indicated.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="requirements">
+<h3>4.1.1. Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<p>The following requirements have to be fulfilled to be able to set up an Eclipse Workspace for working with the foxBMS sources.</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">foxconda</span></code> is installed.</p>
+</li>
+<li><p class="first">foxBMS source files are downloaded to <code class="docutils literal"><span class="pre">path/to/foxbms-setup</span></code>. Getting the source files is described in section “<a class="reference internal" href="../build/build.html#getting-started-build"><span class="std std-ref">Building the foxBMS Software and Documentation</span></a>”.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://www.eclipse.org/cdt/">Eclipse CDT</a> , in version Oxygen.1.Release (4.7.1a). Eclipse CDT Oxygen.1.Release (4.7.1a) can be downloaded form <a class="reference external" href="https://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/oxygenr">eclipse.org</a>. After downloading the .zip file and extracting it, <code class="docutils literal"><span class="pre">eclipse.exe</span></code> must be started to launch <code class="docutils literal"><span class="pre">Eclipse</span> <span class="pre">CDT</span></code>.</p>
+</li>
+<li><p class="first">The following plugins must be installed into <code class="docutils literal"><span class="pre">Eclipse</span> <span class="pre">CDT</span></code>. <code class="docutils literal"><span class="pre">PyDev</span></code> (<a class="reference external" href="https://www.pydev.org/">PyDev project website</a>) is mandatory, while <code class="docutils literal"><span class="pre">LiClipseText</span></code> (<a class="reference external" href="http://www.liclipse.com/">LiClipseText project website</a>) is optional. However it is recommended to install both plugins. The plugins can be  installed from the <code class="docutils literal"><span class="pre">Eclipse</span> <span class="pre">Marketplace</span></code>.</p>
+<div class="figure" id="id7">
+<span id="eclipse-marketplace"></span><img alt="../../_images/eclipse-marketplace.png" src="../../_images/eclipse-marketplace.png" />
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text"><code class="docutils literal"><span class="pre">Eclipse</span> <span class="pre">Marketplace</span></code></span></p>
+</div>
+<ul>
+<li><p class="first">Installing <code class="docutils literal"><span class="pre">PyDev</span></code></p>
+<blockquote>
+<div><blockquote>
+<div><div class="figure" id="id8">
+<span id="pydev-plugin"></span><img alt="../../_images/eclipse-marketplace-pydev.png" src="../../_images/eclipse-marketplace-pydev.png" />
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text"><code class="docutils literal"><span class="pre">PyDev</span></code> Eclipse plugin</span></p>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>Click <img alt="ECLIPSEINSTALL" src="../../_images/eclipse-install.png" /> to install the plugin.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Installing <code class="docutils literal"><span class="pre">LiClipseText</span></code></p>
+<blockquote>
+<div><blockquote>
+<div><div class="figure" id="id9">
+<span id="liclipsetext-plugin"></span><img alt="../../_images/eclipse-marketplace-liclipsetext.png" src="../../_images/eclipse-marketplace-liclipsetext.png" />
+<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text"><code class="docutils literal"><span class="pre">LiClipseText</span></code> Eclipse plugin</span></p>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>Click <img alt="ECLIPSEINSTALL" src="../../_images/eclipse-install.png" /> to install the plugin.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="how-to-setup-the-eclipse-workspace">
+<h3>4.1.2. How to Setup the Eclipse Workspace<a class="headerlink" href="#how-to-setup-the-eclipse-workspace" title="Permalink to this headline">¶</a></h3>
+<p>The setup process is divided into following parts:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><a class="reference internal" href="#creating-the-workspace"><span class="std std-ref">Creating the Workspace</span></a></li>
+<li><a class="reference internal" href="#configuring-the-python-interpreter"><span class="std std-ref">Configuring the Python Interpreter</span></a></li>
+<li><a class="reference internal" href="#importing-the-project"><span class="std std-ref">Importing the Project</span></a></li>
+<li><a class="reference internal" href="#configuring-the-project-paths"><span class="std std-ref">Configuring the Project PATHs</span></a></li>
+<li><a class="reference internal" href="#configuring-the-project-includes"><span class="std std-ref">Configuring the Project Includes</span></a></li>
+<li><a class="reference internal" href="#testing-the-project-setup"><span class="std std-ref">Testing the Project Setup</span></a></li>
+</ol>
+</div></blockquote>
+<p>The order of these steps must <strong>not</strong> be changed.</p>
+<div class="section" id="creating-the-workspace">
+<span id="id1"></span><h4>4.1.2.1. Creating the Workspace<a class="headerlink" href="#creating-the-workspace" title="Permalink to this headline">¶</a></h4>
+<p>The Eclipse Workspace will be called <code class="docutils literal"><span class="pre">.ws</span></code>.</p>
+<ol class="arabic">
+<li><p class="first">Start <code class="docutils literal"><span class="pre">Eclipse</span></code> and click <code class="docutils literal"><span class="pre">File</span></code> -&gt; <code class="docutils literal"><span class="pre">Switch</span> <span class="pre">Workspace</span></code> -&gt; <code class="docutils literal"><span class="pre">other</span></code> and configure <code class="docutils literal"><span class="pre">path/to/foxBMS-setup/.ws</span></code> as workspace, see <a class="reference internal" href="#switch-workspace"><span class="std std-numref">Fig. 4.4</span></a>.</p>
+<div class="figure" id="id10">
+<span id="switch-workspace"></span><a class="reference internal image-reference" href="../../_images/switch-workspace.png"><img alt="../../_images/switch-workspace.png" src="../../_images/switch-workspace.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Selecting the correct workspace location</span></p>
+</div>
+</li>
+<li><p class="first">Click <img alt="ECLIPSELAUNCH" src="../../_images/eclipse-launch.png" /></p>
+</li>
+</ol>
+<p><img alt="OK" src="../../_images/ok.png" /> The foxBMS Eclipse Workspace is now successfully created. <img alt="OK" src="../../_images/ok.png" /></p>
+</div>
+<div class="section" id="configuring-the-python-interpreter">
+<span id="id2"></span><h4>4.1.2.2. Configuring the Python Interpreter<a class="headerlink" href="#configuring-the-python-interpreter" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Open <code class="docutils literal"><span class="pre">Window</span></code> -&gt; <code class="docutils literal"><span class="pre">Preferences</span></code> -&gt; <code class="docutils literal"><span class="pre">PyDev</span></code> -&gt; <code class="docutils literal"><span class="pre">Interpreters</span></code> -&gt;
+<code class="docutils literal"><span class="pre">Python</span> <span class="pre">Interpreter</span></code>.</p>
+<div class="figure" id="id11">
+<span id="select-python-interpreter"></span><img alt="../../_images/select-python-interpreter-1.png" src="../../_images/select-python-interpreter-1.png" />
+<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Selecting the python interpreter</span></p>
+</div>
+</li>
+<li><p class="first">Click <img alt="ECLIPSENEW" src="../../_images/eclipse-new.png" />.
+In the window <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Interpreter</span></code> use</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">foxconda</span></code> for the <code class="docutils literal"><span class="pre">Interpreter</span> <span class="pre">Name</span></code></li>
+<li><code class="docutils literal"><span class="pre">path/to/foxconda/python.exe</span></code> for <code class="docutils literal"><span class="pre">Interpreter</span> <span class="pre">Executable</span></code>.</li>
+</ol>
+<div class="figure" id="id12">
+<span id="select-python-interpreter-2"></span><a class="reference internal image-reference" href="../../_images/select-python-interpreter-2.png"><img alt="../../_images/select-python-interpreter-2.png" src="../../_images/select-python-interpreter-2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Choosing the python interpreter name and executable</span></p>
+</div>
+</li>
+<li><p class="first">Click <img alt="ECLIPSEOK" src="../../_images/eclipse-ok.png" /></p>
+</li>
+<li><p class="first">In menu <code class="docutils literal"><span class="pre">Selection</span> <span class="pre">needed</span></code> do not change anything and click <img alt="ECLIPSEOK" src="../../_images/eclipse-ok.png" /></p>
+<div class="figure" id="id13">
+<span id="python-selection-needed"></span><a class="reference internal image-reference" href="../../_images/python-selection-needed.png"><img alt="../../_images/python-selection-needed.png" src="../../_images/python-selection-needed.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.7 </span><span class="caption-text">Adding the <code class="docutils literal"><span class="pre">PYTHONPATH</span></code></span></p>
+</div>
+</li>
+<li><p class="first">Click <img alt="ECLIPSEAPPLYANDCLOSE" src="../../_images/eclipse-apply-and-close.png" /></p>
+<div class="figure" id="id14">
+<span id="python-configuration-done"></span><a class="reference internal image-reference" href="../../_images/python-configuration-done.png"><img alt="../../_images/python-configuration-done.png" src="../../_images/python-configuration-done.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Configuration done</span></p>
+</div>
+</li>
+</ol>
+<p><img alt="OK" src="../../_images/ok.png" /> foxConda is now successfully selected as Python interpreter. <img alt="OK" src="../../_images/ok.png" /></p>
+</div>
+<div class="section" id="importing-the-project">
+<span id="id3"></span><h4>4.1.2.3. Importing the Project<a class="headerlink" href="#importing-the-project" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Import the project via <code class="docutils literal"><span class="pre">File</span></code> -&gt; <code class="docutils literal"><span class="pre">Import</span></code></p>
+<div class="figure" id="id15">
+<span id="eclipse-import-png"></span><img alt="../../_images/eclipse-import.png" src="../../_images/eclipse-import.png" />
+<p class="caption"><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Select <code class="docutils literal"><span class="pre">Import</span></code></span></p>
+</div>
+</li>
+<li><p class="first">Click <code class="docutils literal"><span class="pre">General</span></code> -&gt; <code class="docutils literal"><span class="pre">Existing</span> <span class="pre">Projects</span> <span class="pre">into</span> <span class="pre">Workspace</span></code>.</p>
+<div class="figure" id="id16">
+<span id="setup-project-existing-projects-into-workspace-png"></span><img alt="../../_images/setup-project-existing-projects-into-workspace.png" src="../../_images/setup-project-existing-projects-into-workspace.png" />
+<p class="caption"><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Select projects import by <code class="docutils literal"><span class="pre">Existing</span> <span class="pre">Projects</span> <span class="pre">into</span> <span class="pre">Workspace</span></code></span></p>
+</div>
+</li>
+<li><p class="first">Click <img alt="ECLIPSENEXT" src="../../_images/eclipse-next.png" /></p>
+</li>
+<li><p class="first">Chose <code class="docutils literal"><span class="pre">Select</span> <span class="pre">archive</span> <span class="pre">file:</span></code> and use
+<code class="docutils literal"><span class="pre">path/to/foxbms-setup/tools/foxbms-eclipse-project.zip</span></code>
+This will list the foxBMS projects.</p>
+<div class="figure" id="id17">
+<span id="setup-project-import-projects-png"></span><img alt="../../_images/setup-project-import-projects.png" src="../../_images/setup-project-import-projects.png" />
+<p class="caption"><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Select all projects to be imported</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Always import all projects that appear, as the number of projects might
+increase with future updates and this help might not be up-to-date.</p>
+</div>
+</li>
+<li><p class="first">Click <img alt="ECLIPSEFINISH" src="../../_images/eclipse-finish.png" /> to complete the project import process.</p>
+</li>
+</ol>
+<p><img alt="OK" src="../../_images/ok.png" /> The foxBMS projects are now successfully imported. <img alt="OK" src="../../_images/ok.png" /></p>
+</div>
+<div class="section" id="configuring-the-project-paths">
+<span id="id4"></span><h4>4.1.2.4. Configuring the Project PATHs<a class="headerlink" href="#configuring-the-project-paths" title="Permalink to this headline">¶</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If a foxConda version greater than 0.5 is used and <code class="docutils literal"><span class="pre">foxconda</span></code> was installed in the default installation path (<code class="docutils literal"><span class="pre">C:\foxconda</span></code>), this section can be skipped.</p>
+</div>
+<ol class="arabic">
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">Primary</span></code> project and click right and select <code class="docutils literal"><span class="pre">Properties</span></code>.</p>
+<div class="figure" id="id18">
+<span id="eclipse-project-properties-png"></span><img alt="../../_images/eclipse-project-properties.png" src="../../_images/eclipse-project-properties.png" />
+<p class="caption"><span class="caption-number">Fig. 4.12 </span><span class="caption-text">Eclipse project properties</span></p>
+</div>
+</li>
+<li><p class="first">Goto <code class="docutils literal"><span class="pre">C/C++</span> <span class="pre">Build</span></code> -&gt; <code class="docutils literal"><span class="pre">Environment</span></code>.</p>
+<div class="figure" id="id19">
+<span id="eclipse-project-properties-c-c-environment-png"></span><img alt="../../_images/eclipse-project-properties-c-c++-environment.png" src="../../_images/eclipse-project-properties-c-c++-environment.png" />
+<p class="caption"><span class="caption-number">Fig. 4.13 </span><span class="caption-text"><code class="docutils literal"><span class="pre">C/C++</span> <span class="pre">Build</span></code> project properties</span></p>
+<div class="legend">
+<ol class="arabic">
+<li><p class="first">Click <img alt="ECLIPSEADD" src="../../_images/eclipse-add.png" /> and</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">use <code class="docutils literal"><span class="pre">FOXCONDA</span></code> for <code class="docutils literal"><span class="pre">Name</span></code></p>
+</li>
+<li><p class="first">use
+<code class="docutils literal"><span class="pre">path/to/foxconda;</span></code>
+<code class="docutils literal"><span class="pre">path/to/foxconda/bin;</span></code>
+<code class="docutils literal"><span class="pre">path/to/foxconda/Scripts;</span></code>
+<code class="docutils literal"><span class="pre">path/to/foxconda/Library/bin;</span></code>
+<code class="docutils literal"><span class="pre">path/to/foxconda/Lib;</span></code>
+for <code class="docutils literal"><span class="pre">Value</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<ul class="last simple">
+<li>The <code class="docutils literal"><span class="pre">Value</span></code> property  must not include spaces.</li>
+<li>Do not add a backslash (<code class="docutils literal"><span class="pre">\</span></code>) at the end of the paths.</li>
+<li>These paths need to be in a single line.</li>
+</ul>
+</div>
+</li>
+<li><p class="first">Check <code class="docutils literal"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">all</span> <span class="pre">configurations</span></code></p>
+</li>
+<li><p class="first">Click <img alt="ECLIPSEOK" src="../../_images/eclipse-ok.png" /></p>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Click <img alt="ECLIPSEADD" src="../../_images/eclipse-add.png" /> and</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Use <code class="docutils literal"><span class="pre">PATH</span></code> for <code class="docutils literal"><span class="pre">Name</span></code></li>
+<li>Leave <code class="docutils literal"><span class="pre">Value</span></code> empty</li>
+<li>Check <code class="docutils literal"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">all</span> <span class="pre">configurations</span></code></li>
+<li>Click <img alt="ECLIPSEOK" src="../../_images/eclipse-ok.png" /></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">PATH</span></code> entry and click <img alt="ECLIPSEEDIT" src="../../_images/eclipse-edit.png" /></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><strong>Pre</strong>pend <code class="docutils literal"><span class="pre">${FOXCONDA};</span></code> to the already specified values in <code class="docutils literal"><span class="pre">Value</span></code></li>
+<li>Click <img alt="ECLIPSEOK" src="../../_images/eclipse-ok.png" /></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+<p>The result should look like this:</p>
+<div class="figure" id="id20">
+<span id="project-path-adding-png"></span><img alt="../../_images/project-path-adding.png" src="../../_images/project-path-adding.png" />
+<p class="caption"><span class="caption-number">Fig. 4.14 </span><span class="caption-text"><code class="docutils literal"><span class="pre">Environment</span></code> settings for the project.</span></p>
+</div>
+</li>
+<li><p class="first">Repeat these steps for the <code class="docutils literal"><span class="pre">Documentation</span></code> and the <code class="docutils literal"><span class="pre">Secondary</span></code> project.</p>
+</li>
+</ol>
+<p><img alt="OK" src="../../_images/ok.png" /> The foxBMS projects now include the correct environment settings. <img alt="OK" src="../../_images/ok.png" /></p>
+</div>
+<div class="section" id="configuring-the-project-includes">
+<span id="id5"></span><h4>4.1.2.5. Configuring the Project Includes<a class="headerlink" href="#configuring-the-project-includes" title="Permalink to this headline">¶</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If a foxConda version greater than 0.5 is used and <code class="docutils literal"><span class="pre">foxconda</span></code> was installed in the default installation path (<code class="docutils literal"><span class="pre">C:\foxconda</span></code>), this section can be skipped.</p>
+</div>
+<ol class="arabic">
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">Primary</span></code> project and click right. Goto <code class="docutils literal"><span class="pre">C/C++</span> <span class="pre">General</span></code> -&gt; <code class="docutils literal"><span class="pre">Paths</span> <span class="pre">and</span> <span class="pre">Symbols</span></code> and switch to Tab <code class="docutils literal"><span class="pre">Includes</span></code>.</p>
+</li>
+<li><p class="first">Click <img alt="ECLIPSEADD" src="../../_images/eclipse-add.png" /> for <code class="docutils literal"><span class="pre">Assembly</span></code>,
+<code class="docutils literal"><span class="pre">GNU</span> <span class="pre">C</span></code> and <code class="docutils literal"><span class="pre">GNU</span> <span class="pre">C++</span></code> and configure the following two paths as <code class="docutils literal"><span class="pre">includes</span></code></p>
+<ol class="arabic">
+<li><p class="first">For <code class="docutils literal"><span class="pre">foxconda</span></code> version <strong>greater than 0.5</strong> the following applies:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">path/to/foxconda/Library/arm-none-eabi/include</span></code></li>
+<li><code class="docutils literal"><span class="pre">path/to/foxconda/Library/lib/gcc/arm-none-eabi/6.3.1/include</span></code></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="first">For <code class="docutils literal"><span class="pre">foxconda</span></code> version <strong>0.5 or less</strong> the following applies:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">path/to/foxconda/arm-none-eabi/include</span></code></li>
+<li><code class="docutils literal"><span class="pre">path/to/foxconda/Lib/gcc/arm-none-eabi/4.9.3/include</span></code></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="figure" id="id21">
+<span id="include-header-png"></span><img alt="../../_images/include-header.png" src="../../_images/include-header.png" />
+<p class="caption"><span class="caption-number">Fig. 4.15 </span><span class="caption-text">Adding the gcc-includes to a project</span></p>
+</div>
+<ol class="arabic simple">
+<li>Click <img alt="ECLIPSEAPPLYANDCLOSE" src="../../_images/eclipse-apply-and-close.png" /></li>
+</ol>
+</li>
+<li><p class="first">Repeat this procedure for the <code class="docutils literal"><span class="pre">Secondary</span></code> project.</p>
+</li>
+<li><p class="first">Restart Eclipse</p>
+</li>
+</ol>
+<p><img alt="OK" src="../../_images/ok.png" /> The foxBMS projects are now successfully configured. <img alt="OK" src="../../_images/ok.png" /></p>
+</div>
+<div class="section" id="testing-the-project-setup">
+<span id="id6"></span><h4>4.1.2.6. Testing the Project Setup<a class="headerlink" href="#testing-the-project-setup" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><code class="docutils literal"><span class="pre">Documentation</span></code> project</p>
+<ol class="arabic">
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">Documentation</span></code> project and click on the dropdown menu of the <img alt="ECLIPSEHAMMER" src="../../_images/eclipse-hammer.png" /> button and select <code class="docutils literal"><span class="pre">1</span> <span class="pre">sphinx</span></code> to build the general foxBMS documentation.</p>
+<div class="figure" id="id22">
+<span id="test-general-documentation-png"></span><img alt="../../_images/test-general-documentation.png" src="../../_images/test-general-documentation.png" />
+<p class="caption"><span class="caption-number">Fig. 4.16 </span><span class="caption-text">Generating the foxBMS documentation</span></p>
+</div>
+<p>The documentation generation was successful, if the Eclipse console puts the following line:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">Waf: Leaving directory `path/to/foxBMS-setup/build/sphinx&#39;</span>
+<span class="go">&#39;sphinx&#39; finished successfully (2.329s)</span>
+<span class="go">INFO:root:Success: Process return code 0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">The <code class="docutils literal"><span class="pre">Documentation</span></code> project is now successfully tested.</p>
+</li>
+</ol>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">Primary</span></code> project</p>
+<ol class="arabic">
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">Primary</span></code> project and click on the dropdown menu of the <img alt="ECLIPSEHAMMER" src="../../_images/eclipse-hammer.png" /> button and select <code class="docutils literal"><span class="pre">1</span> <span class="pre">build</span></code> to build the foxBMS binaries of the primary mcu.</p>
+<div class="figure" id="id23">
+<span id="test-primary-binaries-png"></span><img alt="../../_images/test-primary-binaries.png" src="../../_images/test-primary-binaries.png" />
+<p class="caption"><span class="caption-number">Fig. 4.17 </span><span class="caption-text">Building the primary foxBMS binaries</span></p>
+</div>
+<p>The binaries generation was successful, if the Eclipse console puts the following line at the bottom:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">Waf: Leaving directory `path/to/foxBMS-setup/build/primary&#39;</span>
+<span class="go">&#39;build&#39; finished successfully (1.340s)</span>
+<span class="go">INFO:root:Success: Process return code 0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">Primary</span></code> project and click on the dropdown menu of the <img alt="ECLIPSEHAMMER" src="../../_images/eclipse-hammer.png" /> button and select <code class="docutils literal"><span class="pre">3</span> <span class="pre">doxygen</span></code> to build the foxBMS source code documentation of the primary mcu.</p>
+<div class="figure" id="id24">
+<span id="test-primary-doxygen-png"></span><img alt="../../_images/test-primary-doxygen.png" src="../../_images/test-primary-doxygen.png" />
+<p class="caption"><span class="caption-number">Fig. 4.18 </span><span class="caption-text">Building the primary foxBMS binaries</span></p>
+</div>
+<p>There might be warnings (e.g., about not documented parameters). This can be ignored and the doxygen documentation generation was successful as long as the last line of the Eclipse console states:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">INFO:root:Success: Process return code 0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Select the <code class="docutils literal"><span class="pre">Primary</span></code> project and click on the dropdown menu of the <img alt="ECLIPSEHAMMER" src="../../_images/eclipse-hammer.png" /> button and select <code class="docutils literal"><span class="pre">2</span> <span class="pre">clean</span></code> to clean the foxBMS binaries and the doxygen documentation of the primary mcu.</p>
+<div class="figure" id="id25">
+<span id="test-primary-clean-png"></span><img alt="../../_images/test-primary-clean.png" src="../../_images/test-primary-clean.png" />
+<p class="caption"><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Cleaning the primary foxBMS binaries and doxygen documentation</span></p>
+</div>
+<p>Cleaning was successful if the Eclipse console puts the following line at the bottom:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&#39;clean&#39; finished successfully (0.050s)</span>
+<span class="go">INFO:root:Success: Process return code 0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">The <code class="docutils literal"><span class="pre">Primary</span></code> project is now successfully tested.</p>
+</li>
+</ol>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">Secondary</span></code> project</p>
+<ol class="arabic simple">
+<li>Select the <code class="docutils literal"><span class="pre">Secondary</span></code> project and repeat all steps of the
+<code class="docutils literal"><span class="pre">Primary</span></code> project.</li>
+<li>The <code class="docutils literal"><span class="pre">Secondary</span></code> project is now successfully tested.</li>
+</ol>
+</li>
+</ol>
+<p><img alt="OK" src="../../_images/ok.png" /> The foxBMS Eclipse Workspace is now successfully tested. <img alt="OK" src="../../_images/ok.png" /></p>
+</div>
+</div>
+</div>
+<div class="section" id="flashing-foxbms">
+<h2>4.2. Flashing foxBMS<a class="headerlink" href="#flashing-foxbms" title="Permalink to this headline">¶</a></h2>
+<p>This section describes how to supply the foxBMS Master Unit in order to flash both MCU0 and MCU1 with the firmware produced by compiling the C-code source files.</p>
+<p>This section shows how to connect the different parts of the foxBMS platform.</p>
+<div class="section" id="convention-for-connector-numbering">
+<h3>4.2.1. Convention for Connector Numbering<a class="headerlink" href="#convention-for-connector-numbering" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#connector-convention-flash"><span class="std std-numref">Fig. 4.20</span></a> presents the convention for the connector numbering. It is used throughout the documentation.</p>
+<div class="figure" id="id26">
+<span id="connector-convention-flash"></span><a class="reference internal image-reference" href="../../_images/connector_viewing_direction2.png"><img alt="../../_images/connector_viewing_direction2.png" src="../../_images/connector_viewing_direction2.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Supply connector pin out, receptable - rear view, header - front view (image source: MOLEX)</span></p>
+</div>
+<p>There are two types of connectors:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Header</li>
+<li>Receptable, plugged into the header</li>
+</ul>
+</div></blockquote>
+<p>The numbering shown on the left in <a class="reference internal" href="#connector-convention-flash"><span class="std std-numref">fig. 4.20</span></a> is always valid when viewing in the direction indicated by the arrow with the indication <code class="docutils literal"><span class="pre">viewing</span> <span class="pre">direction</span></code>. This must be taken into account when crimping the receptables.</p>
+</div>
+<div class="section" id="hardware-setup-of-master-and-slaves">
+<h3>4.2.2. Hardware Setup of foxBMS Master Unit and foxBMS Slave Units<a class="headerlink" href="#hardware-setup-of-master-and-slaves" title="Permalink to this headline">¶</a></h3>
+<p>The foxBMS system can be mounted in a metal housing, as shown in <a class="reference internal" href="#housing-flash"><span class="std std-numref">fig. 4.21</span></a>.</p>
+<div class="figure" id="id27">
+<span id="housing-flash"></span><a class="reference internal image-reference" href="../../_images/foxbms_housing1.jpg"><img alt="../../_images/foxbms_housing1.jpg" src="../../_images/foxbms_housing1.jpg" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.21 </span><span class="caption-text">foxBMS Master Unit housing</span></p>
+</div>
+<p>Connectors are available, shown in <a class="reference internal" href="#foxbmsfront-quickstart-flash"><span class="std std-numref">Fig. 4.22</span></a>, which presents all the connectors of the foxBMS Master Unit.</p>
+<div class="figure" id="id28">
+<span id="foxbmsfront-quickstart-flash"></span><a class="reference internal image-reference" href="../../_images/foxbms_front2.png"><img alt="../../_images/foxbms_front2.png" src="../../_images/foxbms_front2.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.22 </span><span class="caption-text">Front view of the foxBMS Master Unit indicating the location of each header</span></p>
+</div>
+<p>For this section on flashing, only the connector <code class="docutils literal"><span class="pre">Supply</span></code> is needed.</p>
+</div>
+<div class="section" id="supply-of-the-master">
+<h3>4.2.3. Supply of the foxBMS Master Unit<a class="headerlink" href="#supply-of-the-master" title="Permalink to this headline">¶</a></h3>
+<p>The first step is to supply the foxBMS Master Unit, which works with supply voltages between 12V and 24V DC. To supply the foxBMS Master Unit, a connector must be prepared for the <code class="docutils literal"><span class="pre">Supply</span></code> connector as shown in <a class="reference internal" href="#master-supply-connector"><span class="std std-numref">table 4.1</span></a>, which describes the different pins used.</p>
+<div class="figure" id="sixcon-view">
+<a class="reference internal image-reference" href="../../_images/connector_6pin1.png"><img alt="../../_images/connector_6pin1.png" src="../../_images/connector_6pin1.png" style="width: 10%;" /></a>
+</div>
+<span id="master-supply-connector"></span><table border="1" class="docutils" id="id29">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">BMS-Master Board Supply Connector</span><a class="headerlink" href="#id29" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="10%" />
+<col width="32%" />
+<col width="29%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin</th>
+<th class="head">Signal</th>
+<th class="head">Input/Output</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>SUPPLY_EXT_2</td>
+<td>Input</td>
+<td>12 - 24V</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>SUPPLY_EXT_2</td>
+<td>Input</td>
+<td>12 - 24V</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>GND_EXT_2</td>
+<td>Input</td>
+<td>GND</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>SUPPLY_EXT_0</td>
+<td>Input</td>
+<td>12 - 24V</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>GND_EXT_0</td>
+<td>Input</td>
+<td>GND</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>GND_EXT_2</td>
+<td>Input</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
+<p>The supply is separated as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>The microcontrollers and the isolation devices are supplied through the pins <code class="docutils literal"><span class="pre">SUPPLY_EXT_0</span></code> and <code class="docutils literal"><span class="pre">GND_EXT_0</span></code></li>
+<li>The contactors and the interlock are supplied through the pins <code class="docutils literal"><span class="pre">SUPPLY_EXT_2</span></code> and <code class="docutils literal"><span class="pre">GND_EXT_2</span></code></li>
+</ul>
+</div></blockquote>
+<p>To power up the foxBMS Master Unit, plug in the supply connector and apply a voltage between 12V and 24V. <code class="docutils literal"><span class="pre">SUPPLY_EXT_0</span></code> / <code class="docutils literal"><span class="pre">GND_EXT_0</span></code> and <code class="docutils literal"><span class="pre">SUPPLY_EXT_2</span></code> / <code class="docutils literal"><span class="pre">GND_EXT_2</span></code> may be connected to the same source for this initial test. At this point, the foxBMS Master Unit should draw approximately 150mA at 12V or 110mA at 24V.</p>
+</div>
+<div class="section" id="primary-and-secondary-mcu">
+<h3>4.2.4. Primary and Secondary MCU<a class="headerlink" href="#primary-and-secondary-mcu" title="Permalink to this headline">¶</a></h3>
+<p>The BMS-Master Board has two MCUs: primary (MCU0) and secondary (MCU1). The MCU1 is present to ensure redundant safety especially when used in research and development prototyping.</p>
+<p>First, the primary MCU will be flashed.</p>
+<p>In order to program the primary MCU, the mini USB jack indicated as <code class="docutils literal"><span class="pre">Prim.</span> <span class="pre">USB</span></code> in <a class="reference internal" href="#foxbmsfront-quickstart-flash"><span class="std std-numref">fig. 4.22</span></a> must be used to connect the foxBMS Master Unit to a PC. The foxBMS Master Unit can be connected to a PC immediately. When connecting foxBMS Master Unit for the first time, the required drivers will install automatically.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Before the connection is made between the foxBMS Master Unit and the computer for the first time, the computer must be connected to the internet, because the operating system might look for drivers on the internet. It this fails, administrators right are needed to install the driver.</p>
+</div>
+<p>In case of problems by the installation of the drivers, administrator rights might be needed. Once the hardware is supplied with the appropriate voltage, the foxBMS binaries can be flashed.</p>
+<p>The same procedure must be made for secondary: the mini USB jack indicated as <code class="docutils literal"><span class="pre">Sec.</span> <span class="pre">USB</span></code> in <a class="reference internal" href="#foxbmsfront-quickstart-flash"><span class="std std-numref">fig. 4.22</span></a> must be used to connect the foxBMS Master Unit to a PC. As for the primary MCU, the PC must be connected to the internet before the connection is made with the foxBMS Master Unit for the first time.</p>
+</div>
+<div class="section" id="flash-the-compiled-source-for-the-primary-mcu">
+<h3>4.2.5. Flash the Compiled Source for the Primary MCU<a class="headerlink" href="#flash-the-compiled-source-for-the-primary-mcu" title="Permalink to this headline">¶</a></h3>
+<p>In the chapter <a class="reference internal" href="../build/build.html#getting-started-build"><span class="std std-ref">Building the foxBMS Software and Documentation</span></a>, the foxBMS sources have been compiled and the generated binary is ready to be flashed.
+The MCU0 will be flashed first.</p>
+<p>These binaries are needed:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>a binary file with the header</li>
+<li>a binary file with the main code</li>
+</ol>
+</div></blockquote>
+<p>Unless the build process has been altered or different binaries should be flashed, there is no need to change the default file locations. For this guide, the default file locations are used.</p>
+<p>The device must be connected to the computer with the USB cable. The MCU0 USB-connector must be used. The <code class="docutils literal"><span class="pre">Primary</span></code> project must be select. Clicking on the dropdown menu of the <img alt="ECLIPSEHAMMER" src="../../_images/eclipse-hammer.png" /> button and selecting <code class="docutils literal"><span class="pre">5</span> <span class="pre">flash</span></code> allows flashing the foxBMS binaries of the primary mcu.</p>
+<p>The connection state can also be checked by watching the LEDs on the foxBMS Master Unit hardware: for a running board, the green power LED is on, and the two indicator LEDs (green and red) are blinking alternately. If the device is connected and being flashed, the power-on LED is on but the two indicator LEDs are off.</p>
+<p>The LEDs for the MCU0 must be used. In the <a class="reference internal" href="../cabling/cabling.html#getting-started-cabling"><span class="std std-ref">Cabling foxBMS</span></a>, it is explained how to find the MCU0 indicator LEDs.</p>
+<p>When the flashing is complete, the flashing windows disappears and the indicator LEDs start to blink again.</p>
+<p>Under Windows 7 (64 bit), it can happen that the COMPORT number is increased by Windows, leading to problems during flashing. This can be reset in registry, by setting <code class="docutils literal"><span class="pre">ComDB</span></code> to zero in the entry <code class="docutils literal"><span class="pre">HKEY_LOCAL_MACHINE::SYSTEM::CURRENT_CONTROL_SET::CONTROL::COM</span> <span class="pre">NAME</span> <span class="pre">ARBITER</span></code>. This way, all COM ports used are reset.</p>
+</div>
+<div class="section" id="flashing-the-secondary-mcu">
+<h3>4.2.6. Flashing the Secondary MCU<a class="headerlink" href="#flashing-the-secondary-mcu" title="Permalink to this headline">¶</a></h3>
+<p>The same procedure as explained above must be followed for the MCU1. The difference is that the MCU1 USB-connector must be used. The <code class="docutils literal"><span class="pre">Secondary</span></code> project must be selected before clicking on the dropdown menu of the <img alt="ECLIPSEHAMMER" src="../../_images/eclipse-hammer.png" /> button. <code class="docutils literal"><span class="pre">5</span> <span class="pre">flash</span></code> must then be selected to flash the foxBMS binaries of the secondary mcu.</p>
+<p>With the supplied code, the MCU1 checks the temperatures and voltages. If one or more of the values are outside the limits, the MCU1 opens the interlock line (thus opening the contactors). The interlock line remains open until the MCU1 is reset.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Setting the limits is safety relevant and must be done with care.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Working without configuring the right battery cell voltage limits is dangerous and should never be done when real batteries are connected, since they may burn and explode when overcharged or shorted.</strong></p>
+</div>
+<p>The next step shown in <a class="reference internal" href="../cabling/cabling.html#getting-started-cabling"><span class="std std-ref">Cabling foxBMS</span></a> is to connect a foxBMS Slave Unit to perform voltage and temperature measurement.</p>
+</div>
+<div class="section" id="debugging-the-primary-and-secondary-mcu">
+<h3>4.2.7. Debugging the Primary and Secondary MCU<a class="headerlink" href="#debugging-the-primary-and-secondary-mcu" title="Permalink to this headline">¶</a></h3>
+<p>The following two debuggers can be used for debugging and have been tested with foxBMS:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://www.segger.com/j-link-plus.html">Segger J-Link Plus</a>, with the <a class="reference external" href="https://www.segger.com/jlink-adapters.html#CM_19pin">19-Pin Cortex-M adapter</a> (needed to connect to foxBMS)</li>
+<li><a class="reference external" href="http://www.lauterbach.com">Lauterbach µTrace Debugger for Cortex-M</a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../cabling/cabling.html" class="btn btn-neutral float-right" title="5. Cabling foxBMS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../build/build.html" class="btn btn-neutral" title="3. Building the foxBMS Software and Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010–2017, Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. All rights reserved. See license section for further information.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="CAN_RxMsg" name="CAN_RxMsg">
+<area shape="rect" id="node2" href="$can_8c.html#a52ba67dd474b373e7179c746f69527f1" title="Receives a bypassed CAN message and interprets it. " alt="" coords="174,157,307,184"/>
+<area shape="rect" id="node12" href="$can_8c.html#a0b6c703ba61116e6f30f7b3c1aa39e53" title="Interprets the received message. " alt="" coords="151,208,331,235"/>
+<area shape="rect" id="node3" href="$can__cfg_8c.html#a5e2181df66b88d357c46c156d5e56aa4" title="CAN_CheckNodeID" alt="" coords="403,5,537,32"/>
+<area shape="rect" id="node4" href="$can__cfg_8c.html#ad1258f7bac42dabd47e8a60e00a5fd42" title="CAN_CheckUniqueDeviceID" alt="" coords="379,56,561,83"/>
+<area shape="rect" id="node5" href="$can__cfg_8c.html#a70128542894da8e9abd73fdda0881d20" title="CAN_CheckBroadcastID" alt="" coords="388,107,552,133"/>
+<area shape="rect" id="node6" href="$can_8c.html#ae507124701ea8830a9bea774d8ed38cb" title="Transmits message directly on the CAN bus. " alt="" coords="423,157,517,184"/>
+<area shape="rect" id="node7" href="$mcu_8c.html#ad73255284eee7230c9082a9f0e0500f9" title="simple wait&#45;loop to wait short periods of time " alt="" coords="417,208,523,235"/>
+<area shape="rect" id="node8" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="622,259,775,285"/>
+<area shape="rect" id="node9" href="$eepr__cfg_8c.html#a4fbf51938cfadc93ea31f69fe2be0e4f" title="Writes data into one eeprom channel function is usable as soon as the timer tasks have been initializ..." alt="" coords="391,309,549,336"/>
+<area shape="rect" id="node10" href="$eepr__cfg_8h.html#aefac79ed7e71cac9d3211a712fad2461" title="requests a state change to be handled by eeprom state machine (used by external modules) ..." alt="" coords="617,309,781,336"/>
+<area shape="rect" id="node11" href="$eepr__cfg_8c.html#a5f92c515fa55d80886bd904624fe1343" title="removes the dirty flag to indicate that the eeprom was actualized " alt="" coords="609,360,788,387"/>
+</map>

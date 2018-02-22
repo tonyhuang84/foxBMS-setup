@@ -1,0 +1,10 @@
+<map id="CAN_RX_IRQHandler" name="CAN_RX_IRQHandler">
+<area shape="rect" id="node2" href="$can_8c.html#a5e6080405cd793da60708daac0f18dd1" title="Receives CAN messages and stores them either in RxBuffer or in hcan. " alt="" coords="199,132,296,159"/>
+<area shape="rect" id="node3" href="$can_8c.html#a52ba67dd474b373e7179c746f69527f1" title="Receives a bypassed CAN message and interprets it. " alt="" coords="367,107,501,133"/>
+<area shape="rect" id="node9" href="$can_8c.html#a0b6c703ba61116e6f30f7b3c1aa39e53" title="Interprets the received message. " alt="" coords="344,157,524,184"/>
+<area shape="rect" id="node4" href="$can__cfg_8c.html#a5e2181df66b88d357c46c156d5e56aa4" title="CAN_CheckNodeID" alt="" coords="596,5,731,32"/>
+<area shape="rect" id="node5" href="$can__cfg_8c.html#ad1258f7bac42dabd47e8a60e00a5fd42" title="CAN_CheckUniqueDeviceID" alt="" coords="572,56,755,83"/>
+<area shape="rect" id="node6" href="$can__cfg_8c.html#a70128542894da8e9abd73fdda0881d20" title="CAN_CheckBroadcastID" alt="" coords="581,107,745,133"/>
+<area shape="rect" id="node7" href="$can_8c.html#ae507124701ea8830a9bea774d8ed38cb" title="Transmits message directly on the CAN bus. " alt="" coords="616,157,711,184"/>
+<area shape="rect" id="node8" href="$mcu_8c.html#ad73255284eee7230c9082a9f0e0500f9" title="simple wait&#45;loop to wait short periods of time " alt="" coords="610,208,717,235"/>
+</map>
