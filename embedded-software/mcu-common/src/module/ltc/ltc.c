@@ -4103,9 +4103,11 @@ uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void*
 	uint32_t j, modIdx = *(uint32_t*)iParam1;
 	char volStr[85] = {0, };
 
-//for (i=0; i < BS_NR_OF_MODULES; i++) {
     for (j=0; j < 7/*BS_NR_OF_BAT_CELLS_PER_MODULE*/; j++) {
-		sprintf(volStr, "%s%u ", volStr, *((uint16_t *)(&LTC_CellVoltages[2*j+modIdx*LTC_NUMBER_OF_LTC_PER_MODULE*24])));        // raw values
+		sprintf(volStr, "%s%u ", volStr,
+				ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j]
+				//*((uint16_t *)(&LTC_CellVoltages[2*j+modIdx*LTC_NUMBER_OF_LTC_PER_MODULE*24]))
+				);        // raw values
     }
 	DEBUG_PRINTF_EX("Module:%d Cell vol.(mV):%s\r\n", modIdx, volStr);
 	return 0;
