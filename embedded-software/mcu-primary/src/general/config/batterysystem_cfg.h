@@ -75,7 +75,8 @@ typedef enum {
  * \par Default:
  * 12
 */
-#define BS_NR_OF_BAT_CELLS_PER_MODULE               12
+//#define BS_NR_OF_BAT_CELLS_PER_MODULE               12
+#define BS_NR_OF_BAT_CELLS_PER_MODULE				8	// ITRI_MOD;
 
 /**
  * @ingroup CONFIG_BATTERYSYSTEM
@@ -95,7 +96,7 @@ typedef enum {
  * 6
 */
 //#define BS_NR_OF_TEMP_SENSORS_PER_MODULE            4
-#define BS_NR_OF_TEMP_SENSORS_PER_MODULE            12	// ITRI_MOD
+#define BS_NR_OF_TEMP_SENSORS_PER_MODULE            12	// ITRI_MOD; for 6 GPIO voltages
 
 
 #define BS_NR_OF_BAT_CELLS                         (BS_NR_OF_MODULES * BS_NR_OF_BAT_CELLS_PER_MODULE)

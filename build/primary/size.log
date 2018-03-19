@@ -2,7 +2,7 @@
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\general\foxbms.elf
 
     text	   data	    bss	    dec	    hex	filename
- 161312	   6424	  29017	 196753	  30091	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\general\foxbms.elf
+ 162004	   6480	  28885	 197369	  302f9	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\general\foxbms.elf
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a
 
     text	   data	    bss	    dec	    hex	filename
@@ -12,14 +12,14 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
     text	   data	    bss	    dec	    hex	filename
     264	      0	      0	    264	    108	adc.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
    8148	     72	   1682	   9902	   26ae	can.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
-   2604	      0	     23	   2627	    a43	cansignal.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
+   2644	      0	     23	   2667	    a6b	cansignal.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
     288	      0	     12	    300	    12c	chksum.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
     584	      0	      0	    584	    248	dma.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
    1212	     16	      0	   1228	    4cc	interlock.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
     956	      0	      0	    956	    3bc	io.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
     896	      0	      0	    896	    380	portcheck.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
     504	      0	      5	    509	    1fd	meas.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
-  22083	    516	    588	  23187	   5a93	ltc.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
+  22699	    569	    561	  23829	   5d15	ltc.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
    1136	      0	      0	   1136	    470	ltc_pec.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
     388	      0	     16	    404	    194	mcu.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
      68	      0	      0	     68	     44	rcc.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
@@ -39,7 +39,7 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
       0	     68	      0	     68	     44	rcc_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
       0	    148	      0	    148	     94	rtc_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
    1840	    360	      0	   2200	    898	can_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
-  18645	      0	    548	  19193	   4af9	cansignal_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
+  18726	      0	    524	  19250	   4b32	cansignal_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
       0	    265	      0	    265	    109	spi_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
       0	     65	      0	     65	     41	uart_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
      64	      0	      0	     64	     40	sdram_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a)
@@ -82,19 +82,19 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a
 
     text	   data	    bss	    dec	    hex	filename
-   1788	     24	    236	   2048	    800	bal.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
-   3708	     16	      0	   3724	    e8c	bms.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
+   1784	     24	    220	   2028	    7ec	bal.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
+   3688	     16	      0	   3704	    e78	bms.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
    6662	    812	     41	   7515	   1d5b	com.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
      96	     32	      0	    128	     80	appltask_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
       0	      0	      0	      0	      0	bal_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
       0	      0	      0	      0	      0	bms_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
       0	     76	      0	     76	     4c	sox_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
-   4668	      0	    412	   5080	   13d8	sox.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
+   4668	      0	    404	   5072	   13d0	sox.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
     490	      0	     12	    502	    1f6	appltask.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\libfoxbms-application.a)
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\libfoxbms-engine.a
 
     text	   data	    bss	    dec	    hex	filename
-      0	    136	    924	   1060	    424	database_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\libfoxbms-engine.a)
+      0	    136	    868	   1004	    3ec	database_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\libfoxbms-engine.a)
    1340	   2496	      0	   3836	    efc	diag_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\libfoxbms-engine.a)
     514	     96	     28	    638	    27e	enginetask_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\libfoxbms-engine.a)
       0	      0	      0	      0	      0	sys_cfg.c.1.o (ex D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\libfoxbms-engine.a)
@@ -132,7 +132,7 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\cansignal\cansignal.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-   2604	      0	     23	   2627	    a43	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\cansignal\cansignal.c.1.o
+   2644	      0	     23	   2667	    a6b	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\cansignal\cansignal.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\chksum\chksum.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
@@ -156,7 +156,7 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\ltc\ltc.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-  22083	    516	    588	  23187	   5a93	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\ltc\ltc.c.1.o
+  22699	    569	    561	  23829	   5d15	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\ltc\ltc.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-common\src\module\ltc\ltc_pec.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
@@ -324,11 +324,11 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\bal\bal.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-   1788	     24	    236	   2048	    800	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\bal\bal.c.1.o
+   1784	     24	    220	   2028	    7ec	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\bal\bal.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\bms\bms.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-   3708	     16	      0	   3724	    e8c	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\bms\bms.c.1.o
+   3688	     16	      0	   3704	    e78	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\bms\bms.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\com\com.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
@@ -352,7 +352,7 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\sox\sox.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-   4668	      0	    412	   5080	   13d8	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\sox\sox.c.1.o
+   4668	      0	    404	   5072	   13d0	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\sox\sox.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\application\task\appltask.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
@@ -360,7 +360,7 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\config\database_cfg.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-      0	    136	    924	   1060	    424	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\config\database_cfg.c.1.o
+      0	    136	    868	   1004	    3ec	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\config\database_cfg.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\engine\config\diag_cfg.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
@@ -436,7 +436,7 @@ arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primar
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\module\config\cansignal_cfg.c.1.o
 
     text	   data	    bss	    dec	    hex	filename
-  18645	      0	    548	  19193	   4af9	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\module\config\cansignal_cfg.c.1.o
+  18726	      0	    524	  19250	   4b32	D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\module\config\cansignal_cfg.c.1.o
 arm-none-eabi-size --format=berkley D:\itri\foxBMS\src\foxBMS-setup\build\primary\embedded-software\mcu-primary\src\module\config\can_cfg.c.1.o
 
     text	   data	    bss	    dec	    hex	filename

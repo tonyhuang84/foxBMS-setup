@@ -945,7 +945,7 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
 #if defined(ITRI_MOD_2)
         //DEBUG_PRINTF_EX("modIdx:%u cellIdx:%u temp:%u\r\n", modIdx, cellIdx, tmpVal);
         if (cellIdx >= 6) {
-        	*(uint32_t *)value = (uint32_t)tmpVal;
+        	*(uint32_t *)value = (uint32_t)temp_tab.temperature[(modIdx * BS_NR_OF_TEMP_SENSORS_PER_MODULE) + cellIdx];
         }
 #endif
     }
@@ -1625,6 +1625,11 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
             		LTC_Set_Get_Property("set_set_ebm_eb_state", (void*)configBuf, NULL, NULL, NULL);
             	}
             	break;
+            case 25:
+				{
+					LTC_Set_Get_Property("set_curr_cali", NULL, NULL, NULL, NULL);
+				}
+				break;
 #endif
 
             default:

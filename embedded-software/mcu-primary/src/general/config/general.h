@@ -48,6 +48,8 @@
 	#define ITRI_DBG_PRINT
 	#define ITRI_MOD_1			// COM command
 	#define ITRI_MOD_2			// LTC extend
+	#define ITRI_MOD_3			// fixed foxBMS 1.0.1 bug
+	#define ITRI_MOD_4
 #endif
 
 /**

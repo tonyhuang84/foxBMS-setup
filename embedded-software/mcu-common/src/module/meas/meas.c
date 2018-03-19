@@ -92,7 +92,7 @@ void MEAS_Ctrl(void)
                 case 4:
                     LTC_SaveVoltages();
 #if defined(ITRI_MOD_2)
-                    if (ltc_ebm_cmd != LTC_EBM_NONE) {
+                    if (ltc_ebm_cmd > LTC_EBM_NONE) {
                     	LTC_SetStateRequest(LTC_STATE_EBMCONTROL_REQUEST,LTC_VOLTAGE_MEASUREMENT_MODE,LTC_ADCMEAS_ALLCHANNEL, LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
                     }
 #else

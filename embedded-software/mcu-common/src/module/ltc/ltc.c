@@ -234,6 +234,17 @@ typedef struct {
 } LTC_EBM_CONFIG_s;
 LTC_EBM_CONFIG_s ltc_ebm_config[BS_NR_OF_MODULES];
 
+#define LTC_EBM_MAX_CURR_CAL_CNT	(10)
+#define LTC_EBM_CURR_ZERO_BASE		(25000)
+#define LTC_EBM_BAT_CURR_IDX		(4)
+#define LTC_EBM_MOD_CURR_IDX		(5)
+typedef struct {
+	uint8_t		isCali;				// 0: means calibrated
+	uint16_t	curBat_offset;
+	uint16_t	curMod_offset;
+} LTC_EBM_CALI_s;
+LTC_EBM_CALI_s ltc_ebm_cali[BS_NR_OF_MODULES];
+
 static STD_RETURN_TYPE_e LTC_EBM_SetEBState(void);
 #endif
 
@@ -409,9 +420,32 @@ extern void LTC_SaveVoltages(void) {
     uint8_t cell_number_max = 0;
 
     for (i=0; i < BS_NR_OF_MODULES; i++) {
-        for (j=0; j < BS_NR_OF_BAT_CELLS_PER_MODULE; j++) {
+#if defined(ITRI_MOD_2)
+		if (ltc_ebm_cmd == LTC_EBM_CURR_CALI && ltc_ebm_cali[i].isCali > 0) {
+			ltc_ebm_cali[i].curBat_offset += (*((uint16_t *)(&LTC_CellVoltages[2*LTC_EBM_BAT_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*24])) - LTC_EBM_CURR_ZERO_BASE);
+			ltc_ebm_cali[i].curMod_offset += (*((uint16_t *)(&LTC_CellVoltages[2*LTC_EBM_MOD_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*24])) - LTC_EBM_CURR_ZERO_BASE);
+			ltc_ebm_cali[i].isCali--;
+			if (ltc_ebm_cali[i].isCali == 0) {
+				ltc_ebm_cali[i].curBat_offset /= LTC_EBM_MAX_CURR_CAL_CNT;
+				ltc_ebm_cali[i].curMod_offset /= LTC_EBM_MAX_CURR_CAL_CNT;
+				ltc_ebm_cmd = LTC_EBM_NONE;
+				DEBUG_PRINTF_EX("current calibation done.\r\n");
+			}
+		}
+#endif
 
+        for (j=0; j < BS_NR_OF_BAT_CELLS_PER_MODULE; j++) {
+#if defined(ITRI_MOD_3)
+        	val_ui = *((uint16_t *)(&LTC_CellVoltages[2*j+i*LTC_NUMBER_OF_LTC_PER_MODULE*BS_NR_OF_BAT_CELLS_PER_MODULE*2]));        // raw values
+#else
             val_ui = *((uint16_t *)(&LTC_CellVoltages[2*j+i*LTC_NUMBER_OF_LTC_PER_MODULE*24]));        // raw values
+#endif
+#if defined(ITRI_MOD_2)
+            if (ltc_ebm_cali[i].isCali == 0) {
+				if (j == LTC_EBM_BAT_CURR_IDX) val_ui -= ltc_ebm_cali[i].curBat_offset;
+				if (j == LTC_EBM_MOD_CURR_IDX) val_ui -= ltc_ebm_cali[i].curMod_offset;
+            }
+#endif
             val_fl = ((float)(val_ui))*100e-6*1000.0;        // Unit V -> in mV
             ltc_cellvoltage.voltage[i*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j]=(uint16_t)(val_fl);
         }
@@ -564,8 +598,9 @@ extern void LTC_SaveTemperatures(void) {
 #if defined(ITRI_MOD_2)
 	for (i=0; i < BS_NR_OF_MODULES; i++) {
 		for (j=0; j < 6; j++) {
-			//ltc_celltemperature.temperature[i*(BS_NR_OF_TEMP_SENSORS_PER_MODULE)+j] = *((int16_t *)(&LTC_GPIOVoltages[i*6*2 + j*2]));
-			ltc_celltemperature.temperature[i*(BS_NR_OF_TEMP_SENSORS_PER_MODULE)+j+6] = *((int16_t *)(&LTC_allGPIOVoltages[i*6 + j]));
+			//(uint16_t)(((float)(*((uint16_t *)(&LTC_GPIOVoltages[2*i]))))*100e-6*1000.0)
+			ltc_celltemperature.temperature[i*(BS_NR_OF_TEMP_SENSORS_PER_MODULE)+j+6] = *((int16_t *)(&LTC_GPIOVoltages[i*6*2 + j*2]));
+			//ltc_celltemperature.temperature[i*(BS_NR_OF_TEMP_SENSORS_PER_MODULE)+j+6] = *((int16_t *)(&LTC_allGPIOVoltages[i*6 + j]));
 		}
 	}
 	//DEBUG_PRINTF_EX("temp:%u %u %u %u %u %u\r\n",
@@ -2764,6 +2799,12 @@ static void LTC_SaveRXtoVoltagebuffer(uint8_t registerSet, uint8_t *rxBuffer) {
     uint16_t i = 0;
     uint8_t i_offset = 0;
 
+#if defined(ITRI_MOD_3)
+    uint8_t regSetNum = (uint8_t)((BS_NR_OF_BAT_CELLS_PER_MODULE+2) / 3);
+    uint16_t j = 0, cellNum = 3;
+    if (registerSet >= regSetNum)		return;
+    if ((registerSet+1) == regSetNum)	cellNum = BS_NR_OF_BAT_CELLS_PER_MODULE % 3;
+#endif
 
     if (registerSet == 0) {
     // RDCVA command -> voltage register group A
@@ -2789,13 +2830,19 @@ static void LTC_SaveRXtoVoltagebuffer(uint8_t registerSet, uint8_t *rxBuffer) {
 
     /* Retrieve data without command and CRC*/
     for (i=0; i < LTC_N_LTC; i++) {
-
+#if defined(ITRI_MOD_3)
+    	for (j=0; j < cellNum; j++) {
+    		LTC_CellVoltages[(0+2*j)+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[(4+2*j)+i*8];
+    		LTC_CellVoltages[(1+2*j)+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[(5+2*j)+i*8];
+    	}
+#else
         LTC_CellVoltages[0+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[4+i*8];
         LTC_CellVoltages[1+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[5+i*8];
         LTC_CellVoltages[2+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[6+i*8];
         LTC_CellVoltages[3+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[7+i*8];
         LTC_CellVoltages[4+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[8+i*8];
         LTC_CellVoltages[5+i_offset+2*BS_NR_OF_BAT_CELLS_PER_MODULE*i]= rxBuffer[9+i*8];
+#endif
     }
 }
 
@@ -2868,6 +2915,14 @@ static STD_RETURN_TYPE_e LTC_Init(void) {
     uint16_t PEC_result = 0;
     uint16_t i = 0;
 
+
+#if defined(ITRI_MOD_2)
+    for (i=0; i < BS_NR_OF_MODULES; i++) {
+    	ltc_ebm_cali[i].isCali = LTC_EBM_MAX_CURR_CAL_CNT;
+    	ltc_ebm_cali[i].curBat_offset = 0;
+    	ltc_ebm_cali[i].curMod_offset = 0;
+    }
+#endif
 
     // The transfer-time is set according to the length of the daisy-chain
     // now set REFON bit to 1
@@ -3041,11 +3096,11 @@ static STD_RETURN_TYPE_e LTC_EBM_SetEBState(void) {
 		i = BS_NR_OF_MODULES-j-1;
 
 		if (ltc_ebm_config[j].eb_state == 0) {
-			ltc_tmpTXbuffer[0+(i)*6] = 0xAC;	// bypass
+			ltc_tmpTXbuffer[0+(i)*6] = 0xEC;	// bypass;	1010 1100
 		} else if (ltc_ebm_config[j].eb_state == 1) {
-			ltc_tmpTXbuffer[0+(i)*6] = 0xEC;	// enable
+			ltc_tmpTXbuffer[0+(i)*6] = 0xAC;	// enable;	1110 1100
 		} else if (ltc_ebm_config[j].eb_state == 2) {
-			ltc_tmpTXbuffer[0+(i)*6] = 0xFC;	// disable
+			ltc_tmpTXbuffer[0+(i)*6] = 0xFC;	// disable; 1111 1100
 		} else {
 			DEBUG_PRINTF_EX("[ERR]unknown ebm state(%u), module(%u)\r\n", ltc_ebm_config[j].eb_state, j);
 			return E_NOT_OK;
@@ -4103,13 +4158,26 @@ uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void*
 	uint32_t j, modIdx = *(uint32_t*)iParam1;
 	char volStr[85] = {0, };
 
-    for (j=0; j < 7/*BS_NR_OF_BAT_CELLS_PER_MODULE*/; j++) {
-		sprintf(volStr, "%s%u ", volStr,
-				ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j]
-				//*((uint16_t *)(&LTC_CellVoltages[2*j+modIdx*LTC_NUMBER_OF_LTC_PER_MODULE*24]))
-				);        // raw values
-    }
+#if 1 // there is a timing issue
+	sprintf(volStr, "%u %u %u %u %u %u %u ",
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+0],
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+1],
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+2],
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+3],
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+4],
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+5],
+					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+6]);
 	DEBUG_PRINTF_EX("Module:%d Cell vol.(mV):%s\r\n", modIdx, volStr);
+#else // debug
+	DEBUG_PRINTF_EX("Module:%d Cell vol.(mV):%u %u \r\n", modIdx,
+			*((uint16_t *)(&LTC_CellVoltages[2*4+modIdx*LTC_NUMBER_OF_LTC_PER_MODULE*24])),
+			*((uint16_t *)(&LTC_CellVoltages[2*5+modIdx*LTC_NUMBER_OF_LTC_PER_MODULE*24])));
+#endif
+	return 0;
+}
+
+uint32_t set_curr_cali(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
+	if (ltc_ebm_cmd == LTC_EBM_NONE) ltc_ebm_cmd = LTC_EBM_CURR_CALI;
 	return 0;
 }
 
@@ -4125,6 +4193,7 @@ LTC_PROP_s ltc_props[] = {
 	{"get_LTC_allGPIOVoltages", &get_LTC_allGPIOVoltages},
 	{"set_set_ebm_eb_state", &set_set_ebm_eb_state},
 	{"get_LTC_CellVoltages", &get_LTC_CellVoltages},
+	{"set_curr_cali", &set_curr_cali},
 };
 
 uint32_t LTC_Set_Get_Property(char* prop, void* iParam1, void* iParam2, void* oParam1, void* oParam2) {

@@ -56,6 +56,7 @@ typedef struct {
 
 #if defined(ITRI_MOD_2)
 typedef enum {
+	LTC_EBM_CURR_CALI,		// current calibration
 	LTC_EBM_NONE,
 	LTC_EBM_EB_CTRL,		// enable/bypass control
 } LTC_EBM_CMD_s;
