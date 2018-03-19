@@ -4133,13 +4133,22 @@ uint32_t get_BS_NR_OF_TEMP_SENSORS_PER_MODULE(void* iParam1, void* iParam2, void
 }
 
 uint32_t get_LTC_allGPIOVoltages(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
-	uint32_t j, modIdx = *(uint32_t*)iParam1;
-	char gpioStr[64] = {0, };
+	uint32_t modIdx = *(uint32_t*)iParam1;
+	char *com_out_buf = (char*)oParam1;
 
+/*
 	for (j=0; j < 6; j++) {
-		sprintf(gpioStr, "%s%u ", gpioStr, *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + j])));
+		sprintf(com_out_buf, "%s%u ", com_out_buf, *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + j])));
 	}
-	DEBUG_PRINTF_EX("Module:%d GPIO(mV):%s\r\n", modIdx, gpioStr);
+*/
+	sprintf(com_out_buf, "M[%u] %u %u %u %u %u %u", modIdx,
+			 	 	 	 	 	 	 	 	 	 *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + 0])),
+												 *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + 1])),
+												 *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + 2])),
+												 *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + 3])),
+												 *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + 4])),
+												 *((uint16_t *)(&LTC_allGPIOVoltages[modIdx*6 + 5])));
+
 	return 0;
 }
 
@@ -4155,11 +4164,12 @@ uint32_t set_set_ebm_eb_state(void* iParam1, void* iParam2, void* oParam1, void*
 }
 
 uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
-	uint32_t j, modIdx = *(uint32_t*)iParam1;
-	char volStr[85] = {0, };
+	uint32_t modIdx = *(uint32_t*)iParam1;
+	char *com_out_buf = (char*)oParam1;
+	//char volStr[85] = {0, };
 
 #if 1 // there is a timing issue
-	sprintf(volStr, "%u %u %u %u %u %u %u ",
+	sprintf(com_out_buf, "M[%u] %u %u %u %u %u %u %u ", modIdx,
 					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+0],
 					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+1],
 					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+2],
@@ -4167,7 +4177,7 @@ uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void*
 					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+4],
 					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+5],
 					ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+6]);
-	DEBUG_PRINTF_EX("Module:%d Cell vol.(mV):%s\r\n", modIdx, volStr);
+	//DEBUG_PRINTF_EX("Module:%d Cell vol.(mV):%s\r\n", modIdx, volStr);
 #else // debug
 	DEBUG_PRINTF_EX("Module:%d Cell vol.(mV):%u %u \r\n", modIdx,
 			*((uint16_t *)(&LTC_CellVoltages[2*4+modIdx*LTC_NUMBER_OF_LTC_PER_MODULE*24])),

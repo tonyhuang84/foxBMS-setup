@@ -132,6 +132,8 @@ void COM_StartupInfo(void) {
 typedef uint32_t (*rb_cmd_funcPtr)(char* params);
 extern uint32_t LTC_Set_Get_Property(char* prop, void* iParam1, void* iParam2, void* oParam1, void* oParam2);
 
+static char com_ltc_out_buf[96] = {0, };
+
 uint32_t rb_cmd_test1(char* params) {
 	DEBUG_PRINTF_EX("DEBUG_PRINTF_EX test, float(%s), int(%d), hex(0x%02X), str(%s)\r\n", float_to_string(1.234), 123, 16, "A", "abc");
 	return 0;
@@ -163,7 +165,7 @@ uint32_t rb_cmd_get_LTC_allGPIOVoltages(char* params) {
 	char* pParam = strtok(NULL, " ");
 	uint32_t modIdx = (uint32_t)atoi(pParam);
 
-	LTC_Set_Get_Property("get_LTC_allGPIOVoltages", (void*)&modIdx, NULL, NULL, NULL);
+	LTC_Set_Get_Property("get_LTC_allGPIOVoltages", (void*)&modIdx, NULL, com_ltc_out_buf, NULL);
 	return 0;
 }
 
@@ -190,7 +192,7 @@ uint32_t rb_cmd_get_LTC_CellVoltages(char* params) {
 	char* pParam = strtok(NULL, " ");
 	uint32_t modIdx = (uint32_t)atoi(pParam);
 
-	LTC_Set_Get_Property("get_LTC_CellVoltages", (void*)&modIdx, NULL, NULL, NULL);
+	LTC_Set_Get_Property("get_LTC_CellVoltages", (void*)&modIdx, NULL, com_ltc_out_buf, NULL);
 	return 0;
 }
 
@@ -232,6 +234,13 @@ uint32_t exe_rb_cmd(char* com_receivedbyte) {
 void COM_printHelpCommand(void) {
 
     static uint8_t cnt = 0;
+
+#if defined(ITRI_MOD_2)
+    if (strlen(com_ltc_out_buf) > 0) {
+    	DEBUG_PRINTF_EX("%s\r\n", com_ltc_out_buf);
+    	com_ltc_out_buf[0] = '\0';
+    }
+#endif
 
     if(printHelp==0)
         return;
