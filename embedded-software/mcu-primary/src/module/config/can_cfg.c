@@ -361,6 +361,178 @@ const CAN_MSG_TX_TYPE_s can_CAN0_messages_tx[] = {
 #ifdef CAN_ISABELLENHUETTE_TRIGGERED
         , { 0x35B, 8, 100, 20, NULL_PTR }  //!< Current Sensor Trigger
 #endif
+
+#if defined(ITRI_MOD_5)
+        { 0x400, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 8 cells 0 1 2
+        { 0x401, 8, 200, 160, NULL_PTR },
+        { 0x402, 8, 200, 160, NULL_PTR },
+        { 0x403, 8, 200, 160, NULL_PTR },
+
+        { 0x410, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 8 cells 0 1 2
+        { 0x411, 8, 200, 170, NULL_PTR },
+        { 0x412, 8, 200, 170, NULL_PTR },
+        { 0x413, 8, 200, 170, NULL_PTR },
+
+		{ 0x420, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 9 cells 0 1 2
+		{ 0x421, 8, 200, 160, NULL_PTR },
+		{ 0x422, 8, 200, 160, NULL_PTR },
+		{ 0x423, 8, 200, 160, NULL_PTR },
+
+		{ 0x430, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 9 cells 0 1 2
+		{ 0x431, 8, 200, 170, NULL_PTR },
+		{ 0x432, 8, 200, 170, NULL_PTR },
+		{ 0x433, 8, 200, 170, NULL_PTR },
+
+		{ 0x440, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 10 cells 0 1 2
+		{ 0x441, 8, 200, 160, NULL_PTR },
+		{ 0x442, 8, 200, 160, NULL_PTR },
+		{ 0x443, 8, 200, 160, NULL_PTR },
+
+		{ 0x450, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 10 cells 0 1 2
+		{ 0x451, 8, 200, 170, NULL_PTR },
+		{ 0x452, 8, 200, 170, NULL_PTR },
+		{ 0x453, 8, 200, 170, NULL_PTR },
+
+		{ 0x460, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 11 cells 0 1 2
+		{ 0x461, 8, 200, 160, NULL_PTR },
+		{ 0x462, 8, 200, 160, NULL_PTR },
+		{ 0x463, 8, 200, 160, NULL_PTR },
+
+		{ 0x470, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 11 cells 0 1 2
+		{ 0x471, 8, 200, 170, NULL_PTR },
+		{ 0x472, 8, 200, 170, NULL_PTR },
+		{ 0x473, 8, 200, 170, NULL_PTR },
+
+		{ 0x480, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 12 cells 0 1 2
+		{ 0x481, 8, 200, 160, NULL_PTR },
+		{ 0x482, 8, 200, 160, NULL_PTR },
+		{ 0x483, 8, 200, 160, NULL_PTR },
+
+		{ 0x490, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 12 cells 0 1 2
+		{ 0x491, 8, 200, 170, NULL_PTR },
+		{ 0x492, 8, 200, 170, NULL_PTR },
+		{ 0x493, 8, 200, 170, NULL_PTR },
+
+		{ 0x4A0, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 13 cells 0 1 2
+		{ 0x4A1, 8, 200, 160, NULL_PTR },
+		{ 0x4A2, 8, 200, 160, NULL_PTR },
+		{ 0x4A3, 8, 200, 160, NULL_PTR },
+
+		{ 0x4B0, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 13 cells 0 1 2
+		{ 0x4B1, 8, 200, 170, NULL_PTR },
+		{ 0x4B2, 8, 200, 170, NULL_PTR },
+		{ 0x4B3, 8, 200, 170, NULL_PTR },
+
+		{ 0x4C0, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 14 cells 0 1 2
+		{ 0x4C1, 8, 200, 160, NULL_PTR },
+		{ 0x4C2, 8, 200, 160, NULL_PTR },
+		{ 0x4C3, 8, 200, 160, NULL_PTR },
+
+		{ 0x4D0, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 14 cells 0 1 2
+		{ 0x4D1, 8, 200, 170, NULL_PTR },
+		{ 0x4D2, 8, 200, 170, NULL_PTR },
+		{ 0x4D3, 8, 200, 170, NULL_PTR },
+
+		{ 0x4E0, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 15 cells 0 1 2
+		{ 0x4E1, 8, 200, 160, NULL_PTR },
+		{ 0x4E2, 8, 200, 160, NULL_PTR },
+		{ 0x4E3, 8, 200, 160, NULL_PTR },
+
+		{ 0x4F0, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 15 cells 0 1 2
+		{ 0x4F1, 8, 200, 170, NULL_PTR },
+		{ 0x4F2, 8, 200, 170, NULL_PTR },
+		{ 0x4F3, 8, 200, 170, NULL_PTR },
+
+		{ 0x500, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 16 cells 0 1 2
+		{ 0x501, 8, 200, 160, NULL_PTR },
+		{ 0x502, 8, 200, 160, NULL_PTR },
+		{ 0x503, 8, 200, 160, NULL_PTR },
+
+		{ 0x510, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 16 cells 0 1 2
+		{ 0x511, 8, 200, 170, NULL_PTR },
+		{ 0x512, 8, 200, 170, NULL_PTR },
+		{ 0x513, 8, 200, 170, NULL_PTR },
+
+		{ 0x520, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 17 cells 0 1 2
+		{ 0x521, 8, 200, 160, NULL_PTR },
+		{ 0x522, 8, 200, 160, NULL_PTR },
+		{ 0x523, 8, 200, 160, NULL_PTR },
+
+		{ 0x530, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 17 cells 0 1 2
+		{ 0x531, 8, 200, 170, NULL_PTR },
+		{ 0x532, 8, 200, 170, NULL_PTR },
+		{ 0x533, 8, 200, 170, NULL_PTR },
+
+		{ 0x540, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 18 cells 0 1 2
+		{ 0x541, 8, 200, 160, NULL_PTR },
+		{ 0x542, 8, 200, 160, NULL_PTR },
+		{ 0x543, 8, 200, 160, NULL_PTR },
+
+		{ 0x550, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 18 cells 0 1 2
+		{ 0x551, 8, 200, 170, NULL_PTR },
+		{ 0x552, 8, 200, 170, NULL_PTR },
+		{ 0x553, 8, 200, 170, NULL_PTR },
+
+		{ 0x560, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 19 cells 0 1 2
+		{ 0x561, 8, 200, 160, NULL_PTR },
+		{ 0x562, 8, 200, 160, NULL_PTR },
+		{ 0x563, 8, 200, 160, NULL_PTR },
+
+		{ 0x570, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 19 cells 0 1 2
+		{ 0x571, 8, 200, 170, NULL_PTR },
+		{ 0x572, 8, 200, 170, NULL_PTR },
+		{ 0x573, 8, 200, 170, NULL_PTR },
+
+		{ 0x580, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 20 cells 0 1 2
+		{ 0x581, 8, 200, 160, NULL_PTR },
+		{ 0x582, 8, 200, 160, NULL_PTR },
+		{ 0x583, 8, 200, 160, NULL_PTR },
+
+		{ 0x590, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 20 cells 0 1 2
+		{ 0x591, 8, 200, 170, NULL_PTR },
+		{ 0x592, 8, 200, 170, NULL_PTR },
+		{ 0x593, 8, 200, 170, NULL_PTR },
+
+		{ 0x5A0, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 21 cells 0 1 2
+		{ 0x5A1, 8, 200, 160, NULL_PTR },
+		{ 0x5A2, 8, 200, 160, NULL_PTR },
+		{ 0x5A3, 8, 200, 160, NULL_PTR },
+
+		{ 0x5B0, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 21 cells 0 1 2
+		{ 0x5B1, 8, 200, 170, NULL_PTR },
+		{ 0x5B2, 8, 200, 170, NULL_PTR },
+		{ 0x5B3, 8, 200, 170, NULL_PTR },
+
+		{ 0x5C0, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 22 cells 0 1 2
+		{ 0x5C1, 8, 200, 160, NULL_PTR },
+		{ 0x5C2, 8, 200, 160, NULL_PTR },
+		{ 0x5C3, 8, 200, 160, NULL_PTR },
+
+		{ 0x5D0, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 22 cells 0 1 2
+		{ 0x5D1, 8, 200, 170, NULL_PTR },
+		{ 0x5D2, 8, 200, 170, NULL_PTR },
+		{ 0x5D3, 8, 200, 170, NULL_PTR },
+
+		{ 0x5E0, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 23 cells 0 1 2
+		{ 0x5E1, 8, 200, 160, NULL_PTR },
+		{ 0x5E2, 8, 200, 160, NULL_PTR },
+		{ 0x5E3, 8, 200, 160, NULL_PTR },
+
+		{ 0x5F0, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 23 cells 0 1 2
+		{ 0x5F1, 8, 200, 170, NULL_PTR },
+		{ 0x5F2, 8, 200, 170, NULL_PTR },
+		{ 0x5F3, 8, 200, 170, NULL_PTR },
+
+		{ 0x600, 8, 200, 160, NULL_PTR },  //!< Cell voltages module 24 cells 0 1 2
+		{ 0x601, 8, 200, 160, NULL_PTR },
+		{ 0x602, 8, 200, 160, NULL_PTR },
+		{ 0x603, 8, 200, 160, NULL_PTR },
+
+		{ 0x610, 8, 200, 170, NULL_PTR },  //!< Cell temperatures module 24 cells 0 1 2
+		{ 0x611, 8, 200, 170, NULL_PTR },
+		{ 0x612, 8, 200, 170, NULL_PTR },
+		{ 0x613, 8, 200, 170, NULL_PTR },
+#endif
 };
 
 

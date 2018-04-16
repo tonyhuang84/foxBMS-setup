@@ -240,8 +240,8 @@ LTC_EBM_CONFIG_s ltc_ebm_config[BS_NR_OF_MODULES];
 #define LTC_EBM_MOD_CURR_IDX		(5)
 typedef struct {
 	uint8_t		isCali;				// 0: means calibrated
-	uint16_t	curBat_offset;
-	uint16_t	curMod_offset;
+	int16_t		curBat_offset;
+	int16_t		curMod_offset;
 } LTC_EBM_CALI_s;
 LTC_EBM_CALI_s ltc_ebm_cali[BS_NR_OF_MODULES];
 
@@ -422,8 +422,10 @@ extern void LTC_SaveVoltages(void) {
     for (i=0; i < BS_NR_OF_MODULES; i++) {
 #if defined(ITRI_MOD_2)
 		if (ltc_ebm_cmd == LTC_EBM_CURR_CALI && ltc_ebm_cali[i].isCali > 0) {
-			ltc_ebm_cali[i].curBat_offset += (*((uint16_t *)(&LTC_CellVoltages[2*LTC_EBM_BAT_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*24])) - LTC_EBM_CURR_ZERO_BASE);
-			ltc_ebm_cali[i].curMod_offset += (*((uint16_t *)(&LTC_CellVoltages[2*LTC_EBM_MOD_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*24])) - LTC_EBM_CURR_ZERO_BASE);
+			//DEBUG_PRINTF_EX("%u %u\r\n", *((uint16_t *)(&LTC_CellVoltages[2*LTC_EBM_BAT_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*2*BS_NR_OF_BAT_CELLS_PER_MODULE])),
+			//							 *((uint16_t *)(&LTC_CellVoltages[2*LTC_EBM_MOD_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*2*BS_NR_OF_BAT_CELLS_PER_MODULE])));
+			ltc_ebm_cali[i].curBat_offset += (*((int16_t *)(&LTC_CellVoltages[2*LTC_EBM_BAT_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*2*BS_NR_OF_BAT_CELLS_PER_MODULE])) - LTC_EBM_CURR_ZERO_BASE);
+			ltc_ebm_cali[i].curMod_offset += (*((int16_t *)(&LTC_CellVoltages[2*LTC_EBM_MOD_CURR_IDX+i*LTC_NUMBER_OF_LTC_PER_MODULE*2*BS_NR_OF_BAT_CELLS_PER_MODULE])) - LTC_EBM_CURR_ZERO_BASE);
 			ltc_ebm_cali[i].isCali--;
 			if (ltc_ebm_cali[i].isCali == 0) {
 				ltc_ebm_cali[i].curBat_offset /= LTC_EBM_MAX_CURR_CAL_CNT;
@@ -442,8 +444,15 @@ extern void LTC_SaveVoltages(void) {
 #endif
 #if defined(ITRI_MOD_2)
             if (ltc_ebm_cali[i].isCali == 0) {
-				if (j == LTC_EBM_BAT_CURR_IDX) val_ui -= ltc_ebm_cali[i].curBat_offset;
-				if (j == LTC_EBM_MOD_CURR_IDX) val_ui -= ltc_ebm_cali[i].curMod_offset;
+				if (j == LTC_EBM_BAT_CURR_IDX) val_ui = (uint16_t)(val_ui - ltc_ebm_cali[i].curBat_offset);
+            	/*
+            	if (j == LTC_EBM_BAT_CURR_IDX) {
+            		DEBUG_PRINTF_EX("%u %u %u\r\n", val_ui, LTC_EBM_CURR_ZERO_BASE, ltc_ebm_cali[i].curBat_offset);
+            		val_ui = val_ui + LTC_EBM_CURR_ZERO_BASE - ltc_ebm_cali[i].curBat_offset;
+            		DEBUG_PRINTF_EX("%u\r\n", val_ui);
+            	}
+            	*/
+				if (j == LTC_EBM_MOD_CURR_IDX) val_ui = (uint16_t)(val_ui - ltc_ebm_cali[i].curMod_offset);
             }
 #endif
             val_fl = ((float)(val_ui))*100e-6*1000.0;        // Unit V -> in mV

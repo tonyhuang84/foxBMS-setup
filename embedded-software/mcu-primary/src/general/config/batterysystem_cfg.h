@@ -65,7 +65,7 @@ typedef enum {
  * \par Default:
  * 2
 */
-#define BS_NR_OF_MODULES                           1
+#define BS_NR_OF_MODULES                           20
 
 /**
  * @ingroup CONFIG_BATTERYSYSTEM

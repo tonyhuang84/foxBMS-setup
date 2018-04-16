@@ -50,6 +50,7 @@
 	#define ITRI_MOD_2			// LTC extend
 	#define ITRI_MOD_3			// fixed foxBMS 1.0.1 bug
 	#define ITRI_MOD_4
+	#define ITRI_MOD_5			// expand module number to 25
 #endif
 
 /**

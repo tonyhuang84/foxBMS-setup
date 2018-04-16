@@ -160,6 +160,160 @@ typedef enum {
     CAN0_MSG_BMS_CurrentTrigger,    //!< Cell Voltages Max Min Average
 #endif
 
+#if defined(ITRI_MOD_5)
+    CAN0_MSG_Mod8_Cellvolt_0,  //!< Module 8 Cell voltages 0-2
+    CAN0_MSG_Mod8_Cellvolt_1,
+    CAN0_MSG_Mod8_Cellvolt_2,
+    CAN0_MSG_Mod8_Cellvolt_3,
+    CAN0_MSG_Mod8_Celltemp_0,  //!< Module 8 Cell temperatures 0-2
+    CAN0_MSG_Mod8_Celltemp_1,
+    CAN0_MSG_Mod8_Celltemp_2,
+    CAN0_MSG_Mod8_Celltemp_3,
+
+    CAN0_MSG_Mod9_Cellvolt_0,  //!< Module 9 Cell voltages 0-2
+    CAN0_MSG_Mod9_Cellvolt_1,
+    CAN0_MSG_Mod9_Cellvolt_2,
+    CAN0_MSG_Mod9_Cellvolt_3,
+    CAN0_MSG_Mod9_Celltemp_0,  //!< Module 9 Cell temperatures 0-2
+    CAN0_MSG_Mod9_Celltemp_1,
+    CAN0_MSG_Mod9_Celltemp_2,
+    CAN0_MSG_Mod9_Celltemp_3,
+
+    CAN0_MSG_Mod10_Cellvolt_0,  //!< Module 10 Cell voltages 0-2
+    CAN0_MSG_Mod10_Cellvolt_1,
+    CAN0_MSG_Mod10_Cellvolt_2,
+    CAN0_MSG_Mod10_Cellvolt_3,
+    CAN0_MSG_Mod10_Celltemp_0,  //!< Module 10 Cell temperatures 0-2
+    CAN0_MSG_Mod10_Celltemp_1,
+    CAN0_MSG_Mod10_Celltemp_2,
+    CAN0_MSG_Mod10_Celltemp_3,
+
+    CAN0_MSG_Mod11_Cellvolt_0,  //!< Module 11 Cell voltages 0-2
+    CAN0_MSG_Mod11_Cellvolt_1,
+    CAN0_MSG_Mod11_Cellvolt_2,
+    CAN0_MSG_Mod11_Cellvolt_3,
+    CAN0_MSG_Mod11_Celltemp_0,  //!< Module 11 Cell temperatures 0-2
+    CAN0_MSG_Mod11_Celltemp_1,
+    CAN0_MSG_Mod11_Celltemp_2,
+    CAN0_MSG_Mod11_Celltemp_3,
+
+    CAN0_MSG_Mod12_Cellvolt_0,  //!< Module 12 Cell voltages 0-2
+    CAN0_MSG_Mod12_Cellvolt_1,
+    CAN0_MSG_Mod12_Cellvolt_2,
+    CAN0_MSG_Mod12_Cellvolt_3,
+    CAN0_MSG_Mod12_Celltemp_0,  //!< Module 12 Cell temperatures 0-2
+    CAN0_MSG_Mod12_Celltemp_1,
+    CAN0_MSG_Mod12_Celltemp_2,
+    CAN0_MSG_Mod12_Celltemp_3,
+
+    CAN0_MSG_Mod13_Cellvolt_0,  //!< Module 13 Cell voltages 0-2
+    CAN0_MSG_Mod13_Cellvolt_1,
+    CAN0_MSG_Mod13_Cellvolt_2,
+    CAN0_MSG_Mod13_Cellvolt_3,
+    CAN0_MSG_Mod13_Celltemp_0,  //!< Module 13 Cell temperatures 0-2
+    CAN0_MSG_Mod13_Celltemp_1,
+    CAN0_MSG_Mod13_Celltemp_2,
+    CAN0_MSG_Mod13_Celltemp_3,
+
+    CAN0_MSG_Mod14_Cellvolt_0,  //!< Module 14 Cell voltages 0-2
+    CAN0_MSG_Mod14_Cellvolt_1,
+    CAN0_MSG_Mod14_Cellvolt_2,
+    CAN0_MSG_Mod14_Cellvolt_3,
+    CAN0_MSG_Mod14_Celltemp_0,  //!< Module 14 Cell temperatures 0-2
+    CAN0_MSG_Mod14_Celltemp_1,
+    CAN0_MSG_Mod14_Celltemp_2,
+    CAN0_MSG_Mod14_Celltemp_3,
+
+    CAN0_MSG_Mod15_Cellvolt_0,  //!< Module 15 Cell voltages 0-2
+    CAN0_MSG_Mod15_Cellvolt_1,
+    CAN0_MSG_Mod15_Cellvolt_2,
+    CAN0_MSG_Mod15_Cellvolt_3,
+    CAN0_MSG_Mod15_Celltemp_0,  //!< Module 15 Cell temperatures 0-2
+    CAN0_MSG_Mod15_Celltemp_1,
+    CAN0_MSG_Mod15_Celltemp_2,
+    CAN0_MSG_Mod15_Celltemp_3,
+
+    CAN0_MSG_Mod16_Cellvolt_0,  //!< Module 16 Cell voltages 0-2
+    CAN0_MSG_Mod16_Cellvolt_1,
+    CAN0_MSG_Mod16_Cellvolt_2,
+    CAN0_MSG_Mod16_Cellvolt_3,
+    CAN0_MSG_Mod16_Celltemp_0,  //!< Module 16 Cell temperatures 0-2
+    CAN0_MSG_Mod16_Celltemp_1,
+    CAN0_MSG_Mod16_Celltemp_2,
+    CAN0_MSG_Mod16_Celltemp_3,
+
+    CAN0_MSG_Mod17_Cellvolt_0,  //!< Module 17 Cell voltages 0-2
+    CAN0_MSG_Mod17_Cellvolt_1,
+    CAN0_MSG_Mod17_Cellvolt_2,
+    CAN0_MSG_Mod17_Cellvolt_3,
+    CAN0_MSG_Mod17_Celltemp_0,  //!< Module 17 Cell temperatures 0-2
+    CAN0_MSG_Mod17_Celltemp_1,
+    CAN0_MSG_Mod17_Celltemp_2,
+    CAN0_MSG_Mod17_Celltemp_3,
+
+    CAN0_MSG_Mod18_Cellvolt_0,  //!< Module 18 Cell voltages 0-2
+    CAN0_MSG_Mod18_Cellvolt_1,
+    CAN0_MSG_Mod18_Cellvolt_2,
+    CAN0_MSG_Mod18_Cellvolt_3,
+    CAN0_MSG_Mod18_Celltemp_0,  //!< Module 18 Cell temperatures 0-2
+    CAN0_MSG_Mod18_Celltemp_1,
+    CAN0_MSG_Mod18_Celltemp_2,
+    CAN0_MSG_Mod18_Celltemp_3,
+
+    CAN0_MSG_Mod19_Cellvolt_0,  //!< Module 19 Cell voltages 0-2
+    CAN0_MSG_Mod19_Cellvolt_1,
+    CAN0_MSG_Mod19_Cellvolt_2,
+    CAN0_MSG_Mod19_Cellvolt_3,
+    CAN0_MSG_Mod19_Celltemp_0,  //!< Module 19 Cell temperatures 0-2
+    CAN0_MSG_Mod19_Celltemp_1,
+    CAN0_MSG_Mod19_Celltemp_2,
+    CAN0_MSG_Mod19_Celltemp_3,
+
+    CAN0_MSG_Mod20_Cellvolt_0,  //!< Module 20 Cell voltages 0-2
+    CAN0_MSG_Mod20_Cellvolt_1,
+    CAN0_MSG_Mod20_Cellvolt_2,
+    CAN0_MSG_Mod20_Cellvolt_3,
+    CAN0_MSG_Mod20_Celltemp_0,  //!< Module 20 Cell temperatures 0-2
+    CAN0_MSG_Mod20_Celltemp_1,
+    CAN0_MSG_Mod20_Celltemp_2,
+    CAN0_MSG_Mod20_Celltemp_3,
+
+    CAN0_MSG_Mod21_Cellvolt_0,  //!< Module 21 Cell voltages 0-2
+    CAN0_MSG_Mod21_Cellvolt_1,
+    CAN0_MSG_Mod21_Cellvolt_2,
+    CAN0_MSG_Mod21_Cellvolt_3,
+    CAN0_MSG_Mod21_Celltemp_0,  //!< Module 21 Cell temperatures 0-2
+    CAN0_MSG_Mod21_Celltemp_1,
+    CAN0_MSG_Mod21_Celltemp_2,
+    CAN0_MSG_Mod21_Celltemp_3,
+
+    CAN0_MSG_Mod22_Cellvolt_0,  //!< Module 22 Cell voltages 0-2
+    CAN0_MSG_Mod22_Cellvolt_1,
+    CAN0_MSG_Mod22_Cellvolt_2,
+    CAN0_MSG_Mod22_Cellvolt_3,
+    CAN0_MSG_Mod22_Celltemp_0,  //!< Module 22 Cell temperatures 0-2
+    CAN0_MSG_Mod22_Celltemp_1,
+    CAN0_MSG_Mod22_Celltemp_2,
+    CAN0_MSG_Mod22_Celltemp_3,
+
+    CAN0_MSG_Mod23_Cellvolt_0,  //!< Module 23 Cell voltages 0-2
+    CAN0_MSG_Mod23_Cellvolt_1,
+    CAN0_MSG_Mod23_Cellvolt_2,
+    CAN0_MSG_Mod23_Cellvolt_3,
+    CAN0_MSG_Mod23_Celltemp_0,  //!< Module 23 Cell temperatures 0-2
+    CAN0_MSG_Mod23_Celltemp_1,
+    CAN0_MSG_Mod23_Celltemp_2,
+    CAN0_MSG_Mod23_Celltemp_3,
+
+    CAN0_MSG_Mod24_Cellvolt_0,  //!< Module 24 Cell voltages 0-2
+    CAN0_MSG_Mod24_Cellvolt_1,
+    CAN0_MSG_Mod24_Cellvolt_2,
+    CAN0_MSG_Mod24_Cellvolt_3,
+    CAN0_MSG_Mod24_Celltemp_0,  //!< Module 24 Cell temperatures 0-2
+    CAN0_MSG_Mod24_Celltemp_1,
+    CAN0_MSG_Mod24_Celltemp_2,
+    CAN0_MSG_Mod24_Celltemp_3,
+#endif
 
     /* Insert here symbolic names for CAN1 messages */
 
