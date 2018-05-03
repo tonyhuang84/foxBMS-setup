@@ -196,6 +196,16 @@ uint32_t rb_cmd_get_LTC_CellVoltages(char* params) {
 	return 0;
 }
 
+uint32_t rb_cmd_ltc_task_ALLGPIOMEASUREMEN(char* params) {
+	LTC_Set_Get_Property("ltc_task_ALLGPIOMEASUREMEN", NULL, NULL, NULL, NULL);
+	return 0;
+}
+
+uint32_t rb_cmd_ltc_task_VOLTAGEMEASUREMENT(char* params) {
+	LTC_Set_Get_Property("ltc_task_VOLTAGEMEASUREMENT", NULL, NULL, NULL, NULL);
+	return 0;
+}
+
 typedef struct {
 	char cmd[48];
 	char desc[64];
@@ -210,6 +220,8 @@ RB_CMD_s rb_cmds[] = {
 	{"get_LTC_allGPIOVoltages", "ro, ex:cmd 0; get m0 gpio vol.", &rb_cmd_get_LTC_allGPIOVoltages},
 	{"set_set_ebm_eb_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), m2(by)", &rb_cmd_set_set_ebm_eb_state},
 	{"get_LTC_CellVoltages", "ro, ex:cmd 0; get m0 cell vol.", &rb_cmd_get_LTC_CellVoltages},
+	{"ltc_task_ALLGPIOMEASUREMEN", "ro,", &rb_cmd_ltc_task_ALLGPIOMEASUREMEN},
+	{"ltc_task_VOLTAGEMEASUREMENT", "ro,", &rb_cmd_ltc_task_VOLTAGEMEASUREMENT},
 };
 
 uint32_t exe_rb_cmd(char* com_receivedbyte) {

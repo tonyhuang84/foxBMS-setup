@@ -49,8 +49,16 @@
 	#define ITRI_MOD_1			// COM command
 	#define ITRI_MOD_2			// LTC extend
 	#define ITRI_MOD_3			// fixed foxBMS 1.0.1 bug
-	#define ITRI_MOD_4
+	//#define ITRI_MOD_4
 	#define ITRI_MOD_5			// expand module number to 25
+	//#define ITRI_MOD_6			// modify LTC cmd transfer time
+	#define ITRI_MOD_8			// bypass reading temperature and UID
+	#define	ITRI_MOD_9			// supporting SPM on/off
+
+	#define ITRI_EBM_CHROMA_V1	// disable:H(GPIO2)/H(GPIO4), bypass:L/H, enable:L/L
+	//#define ITRI_EBM_CHROMA_V2	// disable:H(GPIO2)/H(GPIO4), bypass:L/L, enable:L/H
+
+//	#define ITRI_MOD_90			// [WARNING] LTC enables command mode
 #endif
 
 /**

@@ -59,6 +59,12 @@ typedef enum {
 	LTC_EBM_CURR_CALI,		// current calibration
 	LTC_EBM_NONE,
 	LTC_EBM_EB_CTRL,		// enable/bypass control
+#if defined(ITRI_MOD_9)
+	LTC_EBM_EB_COL_CTRL,	// en/by + col. SPM control
+#endif
+
+	LTC_IDLE_STATE_TASK_VOLTAGEMEASUREMENT,
+	LTC_IDLE_STATE_TASK_ALLGPIOMEASUREMENT,
 } LTC_EBM_CMD_s;
 #endif // ITRI_MOD_2
 /*================== Constant and Variable Definitions ====================*/

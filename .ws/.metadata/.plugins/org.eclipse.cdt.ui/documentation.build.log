@@ -1,4 +1,4 @@
-10:04:26 **** Incremental Build of configuration sphinx for project documentation ****
+08:41:32 **** Incremental Build of configuration sphinx for project documentation ****
 python "D:\\itri\\foxBMS\\src\\foxBMS-setup\\.ws/../build.py" --sphinx 
 Setting top to                           : D:\itri\foxBMS\src\foxBMS-setup 
 Setting out to                           : D:\itri\foxBMS\src\foxBMS-setup\build\sphinx 
@@ -23,8 +23,8 @@ arm-none-eabi-ranlib RANLIB
 Checking for program 'arm-none-eabi-ranlib'  : C:\foxconda\Library\bin\arm-none-eabi-ranlib.exe 
 arm-none-eabi-as AS
 Checking for program 'arm-none-eabi-as'      : C:\foxconda\Library\bin\arm-none-eabi-as.exe 
-Basename:     foxbms-1.0-f2a2cd3-20180208020432-debug
-Prefix:       foxbms-1.0-f2a2cd3-20180208020432
+Basename:     foxbms-1.0-a7d02c4-20180503004135-debug
+Prefix:       foxbms-1.0-a7d02c4-20180503004135
 CFLAGS:       -mcpu=cortex-m4
               -mthumb
               -mlittle-endian
@@ -49,13 +49,13 @@ CFLAGS:       -mcpu=cortex-m4
               -DHSE_VALUE=8000000
               -g
               -O0
-'configure' finished successfully (3.536s)
+'configure' finished successfully (1.790s)
 Waf: Entering directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
 ['D:\\itri\\foxBMS\\src\\foxBMS-setup\\_ext', 'D:\\itri\\foxBMS\\src\\foxBMS-setup', 'D:\\itri\\foxBMS', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools\\waf-1.9.13-c6a32c41574b7fba5e65e4e7336fbc53', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools', 'D:\\tony\\Dropbox\\Public\\code\\python\\ITRI\\bSim_p', 'C:\\foxconda\\python27.zip', 'C:\\foxconda\\DLLs', 'C:\\foxconda\\lib', 'C:\\foxconda\\lib\\plat-win', 'C:\\foxconda\\lib\\lib-tk', 'C:\\foxconda', 'C:\\foxconda\\lib\\site-packages', 'C:\\foxconda\\lib\\site-packages\\Babel-2.5.0-py2.7.egg', 'C:\\foxconda\\lib\\site-packages\\win32', 'C:\\foxconda\\lib\\site-packages\\win32\\lib', 'C:\\foxconda\\lib\\site-packages\\Pythonwin', 'C:\\foxconda\\lib\\site-packages\\wx-3.0-msw']
-Thu Feb 08 10:04:32 2018 Time zone not defined
+Thu May 03 08:41:36 2018 Time zone not defined
 Waf: Leaving directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
-'sphinx' finished successfully (0.530s)
+'sphinx' finished successfully (0.669s)
 INFO:root:Success: Process return code 0
 
-10:04:32 Build Finished (took 6s.173ms)
+08:41:36 Build Finished (took 3s.881ms)
 

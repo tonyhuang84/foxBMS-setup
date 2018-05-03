@@ -78,6 +78,21 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 
 #if defined(ITRI_MOD_2)
 	extern uint32_t LTC_Set_Get_Property(char* prop, void* iParam1, void* iParam2, void* oParam1, void* oParam2);
+	static cans_ebm_getconfig(void* value, uint8_t* configBuf, uint8_t* colConfigBuf) {
+		uint64_t config = (*(uint64_t *)value & 0xFFFFFFFFFFFFFF00) >> 8;
+		uint32_t i;
+		//uint8_t configBuf[BS_NR_OF_MODULES];
+
+		for (i=0; i < BS_NR_OF_MODULES; i++) {
+			configBuf[i] = (uint8_t)((config >> i*2) & 0x03) ;
+		}
+
+		if (colConfigBuf != NULL) {
+			for (i=0; i < BS_NR_OF_COLUMNS; i++) {
+				colConfigBuf[i] = (uint8_t)((config >> (i + BS_NR_OF_MODULES*2)) & 0x01);
+			}
+		}
+	}
 #endif
 /*================== Macros and Definitions ===============================*/
 static DATA_BLOCK_CURRENT_s cans_current_tab;
@@ -1159,6 +1174,76 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
         modIdx = 7;
         cellIdx = sigIdx - CAN0_SIG_Mod7_volt_valid_0_2;
     }
+#if defined(ITRI_MOD_5)
+    else if (sigIdx - CAN0_SIG_Mod8_volt_valid_0_2 <= 15) {
+		modIdx = 8;
+		cellIdx = sigIdx - CAN0_SIG_Mod8_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod9_volt_valid_0_2 <= 15) {
+		modIdx = 9;
+		cellIdx = sigIdx - CAN0_SIG_Mod9_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod10_volt_valid_0_2 <= 15) {
+		modIdx = 10;
+		cellIdx = sigIdx - CAN0_SIG_Mod10_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod11_volt_valid_0_2 <= 15) {
+		modIdx = 11;
+		cellIdx = sigIdx - CAN0_SIG_Mod11_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod12_volt_valid_0_2 <= 15) {
+		modIdx = 12;
+		cellIdx = sigIdx - CAN0_SIG_Mod12_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod13_volt_valid_0_2 <= 15) {
+		modIdx = 13;
+		cellIdx = sigIdx - CAN0_SIG_Mod13_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod14_volt_valid_0_2 <= 15) {
+		modIdx = 14;
+		cellIdx = sigIdx - CAN0_SIG_Mod14_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod15_volt_valid_0_2 <= 15) {
+		modIdx = 15;
+		cellIdx = sigIdx - CAN0_SIG_Mod15_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod16_volt_valid_0_2 <= 15) {
+		modIdx = 16;
+		cellIdx = sigIdx - CAN0_SIG_Mod16_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod17_volt_valid_0_2 <= 15) {
+		modIdx = 17;
+		cellIdx = sigIdx - CAN0_SIG_Mod17_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod18_volt_valid_0_2 <= 15) {
+		modIdx = 18;
+		cellIdx = sigIdx - CAN0_SIG_Mod18_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod19_volt_valid_0_2 <= 15) {
+		modIdx = 19;
+		cellIdx = sigIdx - CAN0_SIG_Mod19_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod20_volt_valid_0_2 <= 15) {
+		modIdx = 20;
+		cellIdx = sigIdx - CAN0_SIG_Mod20_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod21_volt_valid_0_2 <= 15) {
+		modIdx = 21;
+		cellIdx = sigIdx - CAN0_SIG_Mod21_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod22_volt_valid_0_2 <= 15) {
+		modIdx = 22;
+		cellIdx = sigIdx - CAN0_SIG_Mod22_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod23_volt_valid_0_2 <= 15) {
+		modIdx = 23;
+		cellIdx = sigIdx - CAN0_SIG_Mod23_volt_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod24_volt_valid_0_2 <= 15) {
+		modIdx = 24;
+		cellIdx = sigIdx - CAN0_SIG_Mod24_volt_valid_0_2;
+	}
+#endif
 
     if (value != NULL_PTR) {
         switch (sigIdx) {
@@ -1170,6 +1255,25 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_volt_valid_0_2:
             case CAN0_SIG_Mod6_volt_valid_0_2:
             case CAN0_SIG_Mod7_volt_valid_0_2:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_valid_0_2:
+            case CAN0_SIG_Mod9_volt_valid_0_2:
+            case CAN0_SIG_Mod10_volt_valid_0_2:
+            case CAN0_SIG_Mod11_volt_valid_0_2:
+            case CAN0_SIG_Mod12_volt_valid_0_2:
+            case CAN0_SIG_Mod13_volt_valid_0_2:
+            case CAN0_SIG_Mod14_volt_valid_0_2:
+            case CAN0_SIG_Mod15_volt_valid_0_2:
+            case CAN0_SIG_Mod16_volt_valid_0_2:
+            case CAN0_SIG_Mod17_volt_valid_0_2:
+            case CAN0_SIG_Mod18_volt_valid_0_2:
+            case CAN0_SIG_Mod19_volt_valid_0_2:
+            case CAN0_SIG_Mod20_volt_valid_0_2:
+            case CAN0_SIG_Mod21_volt_valid_0_2:
+            case CAN0_SIG_Mod22_volt_valid_0_2:
+            case CAN0_SIG_Mod23_volt_valid_0_2:
+            case CAN0_SIG_Mod24_volt_valid_0_2:
+#endif
                 tmp = volt_tab.valid_voltPECs[modIdx];
                 *(uint32_t *)value = 0x07 & tmp;
                 break;
@@ -1182,6 +1286,25 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_volt_valid_3_5:
             case CAN0_SIG_Mod6_volt_valid_3_5:
             case CAN0_SIG_Mod7_volt_valid_3_5:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_valid_3_5:
+            case CAN0_SIG_Mod9_volt_valid_3_5:
+            case CAN0_SIG_Mod10_volt_valid_3_5:
+            case CAN0_SIG_Mod11_volt_valid_3_5:
+            case CAN0_SIG_Mod12_volt_valid_3_5:
+            case CAN0_SIG_Mod13_volt_valid_3_5:
+            case CAN0_SIG_Mod14_volt_valid_3_5:
+            case CAN0_SIG_Mod15_volt_valid_3_5:
+            case CAN0_SIG_Mod16_volt_valid_3_5:
+            case CAN0_SIG_Mod17_volt_valid_3_5:
+            case CAN0_SIG_Mod18_volt_valid_3_5:
+            case CAN0_SIG_Mod19_volt_valid_3_5:
+            case CAN0_SIG_Mod20_volt_valid_3_5:
+            case CAN0_SIG_Mod21_volt_valid_3_5:
+            case CAN0_SIG_Mod22_volt_valid_3_5:
+            case CAN0_SIG_Mod23_volt_valid_3_5:
+            case CAN0_SIG_Mod24_volt_valid_3_5:
+#endif
                 tmp = volt_tab.valid_voltPECs[modIdx] >> 3;
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1194,6 +1317,25 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_volt_valid_6_8:
             case CAN0_SIG_Mod6_volt_valid_6_8:
             case CAN0_SIG_Mod7_volt_valid_6_8:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_valid_6_8:
+            case CAN0_SIG_Mod9_volt_valid_6_8:
+            case CAN0_SIG_Mod10_volt_valid_6_8:
+            case CAN0_SIG_Mod11_volt_valid_6_8:
+            case CAN0_SIG_Mod12_volt_valid_6_8:
+            case CAN0_SIG_Mod13_volt_valid_6_8:
+            case CAN0_SIG_Mod14_volt_valid_6_8:
+            case CAN0_SIG_Mod15_volt_valid_6_8:
+            case CAN0_SIG_Mod16_volt_valid_6_8:
+            case CAN0_SIG_Mod17_volt_valid_6_8:
+            case CAN0_SIG_Mod18_volt_valid_6_8:
+            case CAN0_SIG_Mod19_volt_valid_6_8:
+            case CAN0_SIG_Mod20_volt_valid_6_8:
+            case CAN0_SIG_Mod21_volt_valid_6_8:
+            case CAN0_SIG_Mod22_volt_valid_6_8:
+            case CAN0_SIG_Mod23_volt_valid_6_8:
+            case CAN0_SIG_Mod24_volt_valid_6_8:
+#endif
                 tmp = volt_tab.valid_voltPECs[modIdx] >> 6;
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1206,6 +1348,25 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_volt_valid_9_11:
             case CAN0_SIG_Mod6_volt_valid_9_11:
             case CAN0_SIG_Mod7_volt_valid_9_11:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_valid_9_11:
+            case CAN0_SIG_Mod9_volt_valid_9_11:
+            case CAN0_SIG_Mod10_volt_valid_9_11:
+            case CAN0_SIG_Mod11_volt_valid_9_11:
+            case CAN0_SIG_Mod12_volt_valid_9_11:
+            case CAN0_SIG_Mod13_volt_valid_9_11:
+            case CAN0_SIG_Mod14_volt_valid_9_11:
+            case CAN0_SIG_Mod15_volt_valid_9_11:
+            case CAN0_SIG_Mod16_volt_valid_9_11:
+            case CAN0_SIG_Mod17_volt_valid_9_11:
+            case CAN0_SIG_Mod18_volt_valid_9_11:
+            case CAN0_SIG_Mod19_volt_valid_9_11:
+            case CAN0_SIG_Mod20_volt_valid_9_11:
+            case CAN0_SIG_Mod21_volt_valid_9_11:
+            case CAN0_SIG_Mod22_volt_valid_9_11:
+            case CAN0_SIG_Mod23_volt_valid_9_11:
+            case CAN0_SIG_Mod24_volt_valid_9_11:
+#endif
                 tmp = volt_tab.valid_voltPECs[modIdx] >> 9;
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1234,6 +1395,59 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_volt_0:
             case CAN0_SIG_Mod7_volt_1:
             case CAN0_SIG_Mod7_volt_2:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_0:
+			case CAN0_SIG_Mod8_volt_1:
+			case CAN0_SIG_Mod8_volt_2:
+            case CAN0_SIG_Mod9_volt_0:
+			case CAN0_SIG_Mod9_volt_1:
+			case CAN0_SIG_Mod9_volt_2:
+            case CAN0_SIG_Mod10_volt_0:
+			case CAN0_SIG_Mod10_volt_1:
+			case CAN0_SIG_Mod10_volt_2:
+            case CAN0_SIG_Mod11_volt_0:
+			case CAN0_SIG_Mod11_volt_1:
+			case CAN0_SIG_Mod11_volt_2:
+            case CAN0_SIG_Mod12_volt_0:
+			case CAN0_SIG_Mod12_volt_1:
+			case CAN0_SIG_Mod12_volt_2:
+            case CAN0_SIG_Mod13_volt_0:
+			case CAN0_SIG_Mod13_volt_1:
+			case CAN0_SIG_Mod13_volt_2:
+            case CAN0_SIG_Mod14_volt_0:
+			case CAN0_SIG_Mod14_volt_1:
+			case CAN0_SIG_Mod14_volt_2:
+            case CAN0_SIG_Mod15_volt_0:
+			case CAN0_SIG_Mod15_volt_1:
+			case CAN0_SIG_Mod15_volt_2:
+            case CAN0_SIG_Mod16_volt_0:
+			case CAN0_SIG_Mod16_volt_1:
+			case CAN0_SIG_Mod16_volt_2:
+            case CAN0_SIG_Mod17_volt_0:
+			case CAN0_SIG_Mod17_volt_1:
+			case CAN0_SIG_Mod17_volt_2:
+            case CAN0_SIG_Mod18_volt_0:
+			case CAN0_SIG_Mod18_volt_1:
+			case CAN0_SIG_Mod18_volt_2:
+            case CAN0_SIG_Mod19_volt_0:
+			case CAN0_SIG_Mod19_volt_1:
+			case CAN0_SIG_Mod19_volt_2:
+            case CAN0_SIG_Mod20_volt_0:
+			case CAN0_SIG_Mod20_volt_1:
+			case CAN0_SIG_Mod20_volt_2:
+            case CAN0_SIG_Mod21_volt_0:
+			case CAN0_SIG_Mod21_volt_1:
+			case CAN0_SIG_Mod21_volt_2:
+            case CAN0_SIG_Mod22_volt_0:
+			case CAN0_SIG_Mod22_volt_1:
+			case CAN0_SIG_Mod22_volt_2:
+            case CAN0_SIG_Mod23_volt_0:
+			case CAN0_SIG_Mod23_volt_1:
+			case CAN0_SIG_Mod23_volt_2:
+            case CAN0_SIG_Mod24_volt_0:
+			case CAN0_SIG_Mod24_volt_1:
+			case CAN0_SIG_Mod24_volt_2:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 tmpVal = volt_tab.voltage[(modIdx * BS_NR_OF_BAT_CELLS_PER_MODULE) + cellIdx];
                 break;
@@ -1262,6 +1476,59 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_volt_3:
             case CAN0_SIG_Mod7_volt_4:
             case CAN0_SIG_Mod7_volt_5:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_3:
+			case CAN0_SIG_Mod8_volt_4:
+			case CAN0_SIG_Mod8_volt_5:
+            case CAN0_SIG_Mod9_volt_3:
+			case CAN0_SIG_Mod9_volt_4:
+			case CAN0_SIG_Mod9_volt_5:
+            case CAN0_SIG_Mod10_volt_3:
+			case CAN0_SIG_Mod10_volt_4:
+			case CAN0_SIG_Mod10_volt_5:
+            case CAN0_SIG_Mod11_volt_3:
+			case CAN0_SIG_Mod11_volt_4:
+			case CAN0_SIG_Mod11_volt_5:
+            case CAN0_SIG_Mod12_volt_3:
+			case CAN0_SIG_Mod12_volt_4:
+			case CAN0_SIG_Mod12_volt_5:
+            case CAN0_SIG_Mod13_volt_3:
+			case CAN0_SIG_Mod13_volt_4:
+			case CAN0_SIG_Mod13_volt_5:
+            case CAN0_SIG_Mod14_volt_3:
+			case CAN0_SIG_Mod14_volt_4:
+			case CAN0_SIG_Mod14_volt_5:
+            case CAN0_SIG_Mod15_volt_3:
+			case CAN0_SIG_Mod15_volt_4:
+			case CAN0_SIG_Mod15_volt_5:
+            case CAN0_SIG_Mod16_volt_3:
+			case CAN0_SIG_Mod16_volt_4:
+			case CAN0_SIG_Mod16_volt_5:
+            case CAN0_SIG_Mod17_volt_3:
+			case CAN0_SIG_Mod17_volt_4:
+			case CAN0_SIG_Mod17_volt_5:
+            case CAN0_SIG_Mod18_volt_3:
+			case CAN0_SIG_Mod18_volt_4:
+			case CAN0_SIG_Mod18_volt_5:
+            case CAN0_SIG_Mod19_volt_3:
+			case CAN0_SIG_Mod19_volt_4:
+			case CAN0_SIG_Mod19_volt_5:
+            case CAN0_SIG_Mod20_volt_3:
+			case CAN0_SIG_Mod20_volt_4:
+			case CAN0_SIG_Mod20_volt_5:
+            case CAN0_SIG_Mod21_volt_3:
+			case CAN0_SIG_Mod21_volt_4:
+			case CAN0_SIG_Mod21_volt_5:
+            case CAN0_SIG_Mod22_volt_3:
+			case CAN0_SIG_Mod22_volt_4:
+			case CAN0_SIG_Mod22_volt_5:
+            case CAN0_SIG_Mod23_volt_3:
+			case CAN0_SIG_Mod23_volt_4:
+			case CAN0_SIG_Mod23_volt_5:
+            case CAN0_SIG_Mod24_volt_3:
+			case CAN0_SIG_Mod24_volt_4:
+			case CAN0_SIG_Mod24_volt_5:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_volt_valid_3_5
                 tmpVal = volt_tab.voltage[(modIdx * BS_NR_OF_BAT_CELLS_PER_MODULE) + cellIdx];
@@ -1291,6 +1558,59 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_volt_6:
             case CAN0_SIG_Mod7_volt_7:
             case CAN0_SIG_Mod7_volt_8:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_6:
+			case CAN0_SIG_Mod8_volt_7:
+			case CAN0_SIG_Mod8_volt_8:
+            case CAN0_SIG_Mod9_volt_6:
+			case CAN0_SIG_Mod9_volt_7:
+			case CAN0_SIG_Mod9_volt_8:
+            case CAN0_SIG_Mod10_volt_6:
+			case CAN0_SIG_Mod10_volt_7:
+			case CAN0_SIG_Mod10_volt_8:
+            case CAN0_SIG_Mod11_volt_6:
+			case CAN0_SIG_Mod11_volt_7:
+			case CAN0_SIG_Mod11_volt_8:
+            case CAN0_SIG_Mod12_volt_6:
+			case CAN0_SIG_Mod12_volt_7:
+			case CAN0_SIG_Mod12_volt_8:
+            case CAN0_SIG_Mod13_volt_6:
+			case CAN0_SIG_Mod13_volt_7:
+			case CAN0_SIG_Mod13_volt_8:
+            case CAN0_SIG_Mod14_volt_6:
+			case CAN0_SIG_Mod14_volt_7:
+			case CAN0_SIG_Mod14_volt_8:
+            case CAN0_SIG_Mod15_volt_6:
+			case CAN0_SIG_Mod15_volt_7:
+			case CAN0_SIG_Mod15_volt_8:
+            case CAN0_SIG_Mod16_volt_6:
+			case CAN0_SIG_Mod16_volt_7:
+			case CAN0_SIG_Mod16_volt_8:
+            case CAN0_SIG_Mod17_volt_6:
+			case CAN0_SIG_Mod17_volt_7:
+			case CAN0_SIG_Mod17_volt_8:
+            case CAN0_SIG_Mod18_volt_6:
+			case CAN0_SIG_Mod18_volt_7:
+			case CAN0_SIG_Mod18_volt_8:
+            case CAN0_SIG_Mod19_volt_6:
+			case CAN0_SIG_Mod19_volt_7:
+			case CAN0_SIG_Mod19_volt_8:
+            case CAN0_SIG_Mod20_volt_6:
+			case CAN0_SIG_Mod20_volt_7:
+			case CAN0_SIG_Mod20_volt_8:
+            case CAN0_SIG_Mod21_volt_6:
+			case CAN0_SIG_Mod21_volt_7:
+			case CAN0_SIG_Mod21_volt_8:
+            case CAN0_SIG_Mod22_volt_6:
+			case CAN0_SIG_Mod22_volt_7:
+			case CAN0_SIG_Mod22_volt_8:
+            case CAN0_SIG_Mod23_volt_6:
+			case CAN0_SIG_Mod23_volt_7:
+			case CAN0_SIG_Mod23_volt_8:
+            case CAN0_SIG_Mod24_volt_6:
+			case CAN0_SIG_Mod24_volt_7:
+			case CAN0_SIG_Mod24_volt_8:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_volt_valid_3_5
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_volt_valid_6_8
@@ -1321,6 +1641,59 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_volt_9:
             case CAN0_SIG_Mod7_volt_10:
             case CAN0_SIG_Mod7_volt_11:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_volt_9:
+			case CAN0_SIG_Mod8_volt_10:
+			case CAN0_SIG_Mod8_volt_11:
+			case CAN0_SIG_Mod9_volt_9:
+			case CAN0_SIG_Mod9_volt_10:
+			case CAN0_SIG_Mod9_volt_11:
+			case CAN0_SIG_Mod10_volt_9:
+			case CAN0_SIG_Mod10_volt_10:
+			case CAN0_SIG_Mod10_volt_11:
+			case CAN0_SIG_Mod11_volt_9:
+			case CAN0_SIG_Mod11_volt_10:
+			case CAN0_SIG_Mod11_volt_11:
+			case CAN0_SIG_Mod12_volt_9:
+			case CAN0_SIG_Mod12_volt_10:
+			case CAN0_SIG_Mod12_volt_11:
+			case CAN0_SIG_Mod13_volt_9:
+			case CAN0_SIG_Mod13_volt_10:
+			case CAN0_SIG_Mod13_volt_11:
+			case CAN0_SIG_Mod14_volt_9:
+			case CAN0_SIG_Mod14_volt_10:
+			case CAN0_SIG_Mod14_volt_11:
+			case CAN0_SIG_Mod15_volt_9:
+			case CAN0_SIG_Mod15_volt_10:
+			case CAN0_SIG_Mod15_volt_11:
+			case CAN0_SIG_Mod16_volt_9:
+			case CAN0_SIG_Mod16_volt_10:
+			case CAN0_SIG_Mod16_volt_11:
+			case CAN0_SIG_Mod17_volt_9:
+			case CAN0_SIG_Mod17_volt_10:
+			case CAN0_SIG_Mod17_volt_11:
+			case CAN0_SIG_Mod18_volt_9:
+			case CAN0_SIG_Mod18_volt_10:
+			case CAN0_SIG_Mod18_volt_11:
+			case CAN0_SIG_Mod19_volt_9:
+			case CAN0_SIG_Mod19_volt_10:
+			case CAN0_SIG_Mod19_volt_11:
+			case CAN0_SIG_Mod20_volt_9:
+			case CAN0_SIG_Mod20_volt_10:
+			case CAN0_SIG_Mod20_volt_11:
+			case CAN0_SIG_Mod21_volt_9:
+			case CAN0_SIG_Mod21_volt_10:
+			case CAN0_SIG_Mod21_volt_11:
+			case CAN0_SIG_Mod22_volt_9:
+			case CAN0_SIG_Mod22_volt_10:
+			case CAN0_SIG_Mod22_volt_11:
+			case CAN0_SIG_Mod23_volt_9:
+			case CAN0_SIG_Mod23_volt_10:
+			case CAN0_SIG_Mod23_volt_11:
+			case CAN0_SIG_Mod24_volt_9:
+			case CAN0_SIG_Mod24_volt_10:
+			case CAN0_SIG_Mod24_volt_11:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_volt_valid_3_5
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_volt_valid_6_8
@@ -1379,6 +1752,76 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
         modIdx = 7;
         cellIdx = sigIdx - CAN0_SIG_Mod7_temp_valid_0_2;
     }
+#if defined(ITRI_MOD_5)
+    else if (sigIdx - CAN0_SIG_Mod8_temp_valid_0_2 <= 15) {
+            modIdx = 8;
+            cellIdx = sigIdx - CAN0_SIG_Mod8_temp_valid_0_2;
+    }
+    else if (sigIdx - CAN0_SIG_Mod9_temp_valid_0_2 <= 15) {
+        modIdx = 9;
+        cellIdx = sigIdx - CAN0_SIG_Mod9_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod10_temp_valid_0_2 <= 15) {
+		modIdx = 10;
+		cellIdx = sigIdx - CAN0_SIG_Mod10_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod11_temp_valid_0_2 <= 15) {
+		modIdx = 11;
+		cellIdx = sigIdx - CAN0_SIG_Mod11_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod12_temp_valid_0_2 <= 15) {
+		modIdx = 12;
+		cellIdx = sigIdx - CAN0_SIG_Mod12_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod13_temp_valid_0_2 <= 15) {
+		modIdx = 13;
+		cellIdx = sigIdx - CAN0_SIG_Mod13_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod14_temp_valid_0_2 <= 15) {
+		modIdx = 14;
+		cellIdx = sigIdx - CAN0_SIG_Mod14_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod15_temp_valid_0_2 <= 15) {
+		modIdx = 15;
+		cellIdx = sigIdx - CAN0_SIG_Mod15_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod16_temp_valid_0_2 <= 15) {
+		modIdx = 16;
+		cellIdx = sigIdx - CAN0_SIG_Mod16_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod17_temp_valid_0_2 <= 15) {
+		modIdx = 17;
+		cellIdx = sigIdx - CAN0_SIG_Mod17_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod18_temp_valid_0_2 <= 15) {
+		modIdx = 18;
+		cellIdx = sigIdx - CAN0_SIG_Mod18_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod19_temp_valid_0_2 <= 15) {
+		modIdx = 19;
+		cellIdx = sigIdx - CAN0_SIG_Mod19_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod20_temp_valid_0_2 <= 15) {
+		modIdx = 20;
+		cellIdx = sigIdx - CAN0_SIG_Mod20_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod21_temp_valid_0_2 <= 15) {
+		modIdx = 21;
+		cellIdx = sigIdx - CAN0_SIG_Mod21_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod22_temp_valid_0_2 <= 15) {
+		modIdx = 22;
+		cellIdx = sigIdx - CAN0_SIG_Mod22_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod23_temp_valid_0_2 <= 15) {
+		modIdx = 23;
+		cellIdx = sigIdx - CAN0_SIG_Mod23_temp_valid_0_2;
+	}
+    else if (sigIdx - CAN0_SIG_Mod24_temp_valid_0_2 <= 15) {
+		modIdx = 24;
+		cellIdx = sigIdx - CAN0_SIG_Mod24_temp_valid_0_2;
+	}
+#endif
 
     if (value != NULL_PTR) {
         switch (sigIdx) {
@@ -1390,6 +1833,25 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_temp_valid_0_2:
             case CAN0_SIG_Mod6_temp_valid_0_2:
             case CAN0_SIG_Mod7_temp_valid_0_2:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_valid_0_2:
+            case CAN0_SIG_Mod9_temp_valid_0_2:
+            case CAN0_SIG_Mod10_temp_valid_0_2:
+            case CAN0_SIG_Mod11_temp_valid_0_2:
+            case CAN0_SIG_Mod12_temp_valid_0_2:
+            case CAN0_SIG_Mod13_temp_valid_0_2:
+            case CAN0_SIG_Mod14_temp_valid_0_2:
+            case CAN0_SIG_Mod15_temp_valid_0_2:
+            case CAN0_SIG_Mod16_temp_valid_0_2:
+            case CAN0_SIG_Mod17_temp_valid_0_2:
+            case CAN0_SIG_Mod18_temp_valid_0_2:
+            case CAN0_SIG_Mod19_temp_valid_0_2:
+            case CAN0_SIG_Mod20_temp_valid_0_2:
+            case CAN0_SIG_Mod21_temp_valid_0_2:
+            case CAN0_SIG_Mod22_temp_valid_0_2:
+            case CAN0_SIG_Mod23_temp_valid_0_2:
+            case CAN0_SIG_Mod24_temp_valid_0_2:
+#endif
                 tmp = temp_tab.valid_temperaturePECs[modIdx];
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1402,6 +1864,25 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_temp_valid_3_5:
             case CAN0_SIG_Mod6_temp_valid_3_5:
             case CAN0_SIG_Mod7_temp_valid_3_5:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_valid_3_5:
+            case CAN0_SIG_Mod9_temp_valid_3_5:
+            case CAN0_SIG_Mod10_temp_valid_3_5:
+            case CAN0_SIG_Mod11_temp_valid_3_5:
+            case CAN0_SIG_Mod12_temp_valid_3_5:
+            case CAN0_SIG_Mod13_temp_valid_3_5:
+            case CAN0_SIG_Mod14_temp_valid_3_5:
+            case CAN0_SIG_Mod15_temp_valid_3_5:
+            case CAN0_SIG_Mod16_temp_valid_3_5:
+            case CAN0_SIG_Mod17_temp_valid_3_5:
+            case CAN0_SIG_Mod18_temp_valid_3_5:
+            case CAN0_SIG_Mod19_temp_valid_3_5:
+            case CAN0_SIG_Mod20_temp_valid_3_5:
+            case CAN0_SIG_Mod21_temp_valid_3_5:
+            case CAN0_SIG_Mod22_temp_valid_3_5:
+            case CAN0_SIG_Mod23_temp_valid_3_5:
+            case CAN0_SIG_Mod24_temp_valid_3_5:
+#endif
                 tmp = temp_tab.valid_temperaturePECs[modIdx] >> 3;
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1414,6 +1895,25 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_temp_valid_6_8:
             case CAN0_SIG_Mod6_temp_valid_6_8:
             case CAN0_SIG_Mod7_temp_valid_6_8:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_valid_6_8:
+            case CAN0_SIG_Mod9_temp_valid_6_8:
+            case CAN0_SIG_Mod10_temp_valid_6_8:
+            case CAN0_SIG_Mod11_temp_valid_6_8:
+            case CAN0_SIG_Mod12_temp_valid_6_8:
+            case CAN0_SIG_Mod13_temp_valid_6_8:
+            case CAN0_SIG_Mod14_temp_valid_6_8:
+            case CAN0_SIG_Mod15_temp_valid_6_8:
+            case CAN0_SIG_Mod16_temp_valid_6_8:
+            case CAN0_SIG_Mod17_temp_valid_6_8:
+            case CAN0_SIG_Mod18_temp_valid_6_8:
+            case CAN0_SIG_Mod19_temp_valid_6_8:
+            case CAN0_SIG_Mod20_temp_valid_6_8:
+            case CAN0_SIG_Mod21_temp_valid_6_8:
+            case CAN0_SIG_Mod22_temp_valid_6_8:
+            case CAN0_SIG_Mod23_temp_valid_6_8:
+            case CAN0_SIG_Mod24_temp_valid_6_8:
+#endif
                 tmp = temp_tab.valid_temperaturePECs[modIdx] >> 6;
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1426,6 +1926,25 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod5_temp_valid_9_11:
             case CAN0_SIG_Mod6_temp_valid_9_11:
             case CAN0_SIG_Mod7_temp_valid_9_11:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_valid_9_11:
+            case CAN0_SIG_Mod9_temp_valid_9_11:
+            case CAN0_SIG_Mod10_temp_valid_9_11:
+            case CAN0_SIG_Mod11_temp_valid_9_11:
+            case CAN0_SIG_Mod12_temp_valid_9_11:
+            case CAN0_SIG_Mod13_temp_valid_9_11:
+            case CAN0_SIG_Mod14_temp_valid_9_11:
+            case CAN0_SIG_Mod15_temp_valid_9_11:
+            case CAN0_SIG_Mod16_temp_valid_9_11:
+            case CAN0_SIG_Mod17_temp_valid_9_11:
+            case CAN0_SIG_Mod18_temp_valid_9_11:
+            case CAN0_SIG_Mod19_temp_valid_9_11:
+            case CAN0_SIG_Mod20_temp_valid_9_11:
+            case CAN0_SIG_Mod21_temp_valid_9_11:
+            case CAN0_SIG_Mod22_temp_valid_9_11:
+            case CAN0_SIG_Mod23_temp_valid_9_11:
+            case CAN0_SIG_Mod24_temp_valid_9_11:
+#endif
                 tmp = temp_tab.valid_temperaturePECs[modIdx] >> 9;
                 tmpVal = 0x07 & tmp;
                 break;
@@ -1454,6 +1973,59 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_temp_0:
             case CAN0_SIG_Mod7_temp_1:
             case CAN0_SIG_Mod7_temp_2:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_0:
+            case CAN0_SIG_Mod8_temp_1:
+            case CAN0_SIG_Mod8_temp_2:
+            case CAN0_SIG_Mod9_temp_0:
+            case CAN0_SIG_Mod9_temp_1:
+            case CAN0_SIG_Mod9_temp_2:
+            case CAN0_SIG_Mod10_temp_0:
+            case CAN0_SIG_Mod10_temp_1:
+            case CAN0_SIG_Mod10_temp_2:
+            case CAN0_SIG_Mod11_temp_0:
+            case CAN0_SIG_Mod11_temp_1:
+            case CAN0_SIG_Mod11_temp_2:
+            case CAN0_SIG_Mod12_temp_0:
+            case CAN0_SIG_Mod12_temp_1:
+            case CAN0_SIG_Mod12_temp_2:
+            case CAN0_SIG_Mod13_temp_0:
+            case CAN0_SIG_Mod13_temp_1:
+            case CAN0_SIG_Mod13_temp_2:
+            case CAN0_SIG_Mod14_temp_0:
+            case CAN0_SIG_Mod14_temp_1:
+            case CAN0_SIG_Mod14_temp_2:
+            case CAN0_SIG_Mod15_temp_0:
+            case CAN0_SIG_Mod15_temp_1:
+            case CAN0_SIG_Mod15_temp_2:
+            case CAN0_SIG_Mod16_temp_0:
+            case CAN0_SIG_Mod16_temp_1:
+            case CAN0_SIG_Mod16_temp_2:
+            case CAN0_SIG_Mod17_temp_0:
+            case CAN0_SIG_Mod17_temp_1:
+            case CAN0_SIG_Mod17_temp_2:
+            case CAN0_SIG_Mod18_temp_0:
+            case CAN0_SIG_Mod18_temp_1:
+            case CAN0_SIG_Mod18_temp_2:
+            case CAN0_SIG_Mod19_temp_0:
+            case CAN0_SIG_Mod19_temp_1:
+            case CAN0_SIG_Mod19_temp_2:
+            case CAN0_SIG_Mod20_temp_0:
+            case CAN0_SIG_Mod20_temp_1:
+            case CAN0_SIG_Mod20_temp_2:
+            case CAN0_SIG_Mod21_temp_0:
+            case CAN0_SIG_Mod21_temp_1:
+            case CAN0_SIG_Mod21_temp_2:
+            case CAN0_SIG_Mod22_temp_0:
+            case CAN0_SIG_Mod22_temp_1:
+            case CAN0_SIG_Mod22_temp_2:
+            case CAN0_SIG_Mod23_temp_0:
+            case CAN0_SIG_Mod23_temp_1:
+            case CAN0_SIG_Mod23_temp_2:
+            case CAN0_SIG_Mod24_temp_0:
+            case CAN0_SIG_Mod24_temp_1:
+            case CAN0_SIG_Mod24_temp_2:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 tmpVal = temp_tab.temperature[(modIdx * BS_NR_OF_TEMP_SENSORS_PER_MODULE) + cellIdx];
                 break;
@@ -1482,6 +2054,59 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_temp_3:
             case CAN0_SIG_Mod7_temp_4:
             case CAN0_SIG_Mod7_temp_5:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_3:
+            case CAN0_SIG_Mod8_temp_4:
+            case CAN0_SIG_Mod8_temp_5:
+            case CAN0_SIG_Mod9_temp_3:
+            case CAN0_SIG_Mod9_temp_4:
+            case CAN0_SIG_Mod9_temp_5:
+            case CAN0_SIG_Mod10_temp_3:
+            case CAN0_SIG_Mod10_temp_4:
+            case CAN0_SIG_Mod10_temp_5:
+            case CAN0_SIG_Mod11_temp_3:
+            case CAN0_SIG_Mod11_temp_4:
+            case CAN0_SIG_Mod11_temp_5:
+            case CAN0_SIG_Mod12_temp_3:
+            case CAN0_SIG_Mod12_temp_4:
+            case CAN0_SIG_Mod12_temp_5:
+            case CAN0_SIG_Mod13_temp_3:
+            case CAN0_SIG_Mod13_temp_4:
+            case CAN0_SIG_Mod13_temp_5:
+            case CAN0_SIG_Mod14_temp_3:
+            case CAN0_SIG_Mod14_temp_4:
+            case CAN0_SIG_Mod14_temp_5:
+            case CAN0_SIG_Mod15_temp_3:
+            case CAN0_SIG_Mod15_temp_4:
+            case CAN0_SIG_Mod15_temp_5:
+            case CAN0_SIG_Mod16_temp_3:
+            case CAN0_SIG_Mod16_temp_4:
+            case CAN0_SIG_Mod16_temp_5:
+            case CAN0_SIG_Mod17_temp_3:
+            case CAN0_SIG_Mod17_temp_4:
+            case CAN0_SIG_Mod17_temp_5:
+            case CAN0_SIG_Mod18_temp_3:
+            case CAN0_SIG_Mod18_temp_4:
+            case CAN0_SIG_Mod18_temp_5:
+            case CAN0_SIG_Mod19_temp_3:
+            case CAN0_SIG_Mod19_temp_4:
+            case CAN0_SIG_Mod19_temp_5:
+            case CAN0_SIG_Mod20_temp_3:
+            case CAN0_SIG_Mod20_temp_4:
+            case CAN0_SIG_Mod20_temp_5:
+            case CAN0_SIG_Mod21_temp_3:
+            case CAN0_SIG_Mod21_temp_4:
+            case CAN0_SIG_Mod21_temp_5:
+            case CAN0_SIG_Mod22_temp_3:
+            case CAN0_SIG_Mod22_temp_4:
+            case CAN0_SIG_Mod22_temp_5:
+            case CAN0_SIG_Mod23_temp_3:
+            case CAN0_SIG_Mod23_temp_4:
+            case CAN0_SIG_Mod23_temp_5:
+            case CAN0_SIG_Mod24_temp_3:
+            case CAN0_SIG_Mod24_temp_4:
+            case CAN0_SIG_Mod24_temp_5:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_temp_valid_3_5
                 tmpVal = temp_tab.temperature[(modIdx * BS_NR_OF_TEMP_SENSORS_PER_MODULE) + cellIdx];
@@ -1511,6 +2136,59 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_temp_6:
             case CAN0_SIG_Mod7_temp_7:
             case CAN0_SIG_Mod7_temp_8:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_6:
+            case CAN0_SIG_Mod8_temp_7:
+            case CAN0_SIG_Mod8_temp_8:
+            case CAN0_SIG_Mod9_temp_6:
+            case CAN0_SIG_Mod9_temp_7:
+            case CAN0_SIG_Mod9_temp_8:
+            case CAN0_SIG_Mod10_temp_6:
+            case CAN0_SIG_Mod10_temp_7:
+            case CAN0_SIG_Mod10_temp_8:
+            case CAN0_SIG_Mod11_temp_6:
+            case CAN0_SIG_Mod11_temp_7:
+            case CAN0_SIG_Mod11_temp_8:
+            case CAN0_SIG_Mod12_temp_6:
+            case CAN0_SIG_Mod12_temp_7:
+            case CAN0_SIG_Mod12_temp_8:
+            case CAN0_SIG_Mod13_temp_6:
+            case CAN0_SIG_Mod13_temp_7:
+            case CAN0_SIG_Mod13_temp_8:
+            case CAN0_SIG_Mod14_temp_6:
+            case CAN0_SIG_Mod14_temp_7:
+            case CAN0_SIG_Mod14_temp_8:
+            case CAN0_SIG_Mod15_temp_6:
+            case CAN0_SIG_Mod15_temp_7:
+            case CAN0_SIG_Mod15_temp_8:
+            case CAN0_SIG_Mod16_temp_6:
+            case CAN0_SIG_Mod16_temp_7:
+            case CAN0_SIG_Mod16_temp_8:
+            case CAN0_SIG_Mod17_temp_6:
+            case CAN0_SIG_Mod17_temp_7:
+            case CAN0_SIG_Mod17_temp_8:
+            case CAN0_SIG_Mod18_temp_6:
+            case CAN0_SIG_Mod18_temp_7:
+            case CAN0_SIG_Mod18_temp_8:
+            case CAN0_SIG_Mod19_temp_6:
+            case CAN0_SIG_Mod19_temp_7:
+            case CAN0_SIG_Mod19_temp_8:
+            case CAN0_SIG_Mod20_temp_6:
+            case CAN0_SIG_Mod20_temp_7:
+            case CAN0_SIG_Mod20_temp_8:
+            case CAN0_SIG_Mod21_temp_6:
+            case CAN0_SIG_Mod21_temp_7:
+            case CAN0_SIG_Mod21_temp_8:
+            case CAN0_SIG_Mod22_temp_6:
+            case CAN0_SIG_Mod22_temp_7:
+            case CAN0_SIG_Mod22_temp_8:
+            case CAN0_SIG_Mod23_temp_6:
+            case CAN0_SIG_Mod23_temp_7:
+            case CAN0_SIG_Mod23_temp_8:
+            case CAN0_SIG_Mod24_temp_6:
+            case CAN0_SIG_Mod24_temp_7:
+            case CAN0_SIG_Mod24_temp_8:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_temp_valid_3_5
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_temp_valid_6_8
@@ -1541,6 +2219,59 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
             case CAN0_SIG_Mod7_temp_9:
             case CAN0_SIG_Mod7_temp_10:
             case CAN0_SIG_Mod7_temp_11:
+#if defined(ITRI_MOD_5)
+            case CAN0_SIG_Mod8_temp_9:
+            case CAN0_SIG_Mod8_temp_10:
+            case CAN0_SIG_Mod8_temp_11:
+            case CAN0_SIG_Mod9_temp_9:
+            case CAN0_SIG_Mod9_temp_10:
+            case CAN0_SIG_Mod9_temp_11:
+            case CAN0_SIG_Mod10_temp_9:
+            case CAN0_SIG_Mod10_temp_10:
+            case CAN0_SIG_Mod10_temp_11:
+            case CAN0_SIG_Mod11_temp_9:
+            case CAN0_SIG_Mod11_temp_10:
+            case CAN0_SIG_Mod11_temp_11:
+            case CAN0_SIG_Mod12_temp_9:
+            case CAN0_SIG_Mod12_temp_10:
+            case CAN0_SIG_Mod12_temp_11:
+            case CAN0_SIG_Mod13_temp_9:
+            case CAN0_SIG_Mod13_temp_10:
+            case CAN0_SIG_Mod13_temp_11:
+            case CAN0_SIG_Mod14_temp_9:
+            case CAN0_SIG_Mod14_temp_10:
+            case CAN0_SIG_Mod14_temp_11:
+            case CAN0_SIG_Mod15_temp_9:
+            case CAN0_SIG_Mod15_temp_10:
+            case CAN0_SIG_Mod15_temp_11:
+            case CAN0_SIG_Mod16_temp_9:
+            case CAN0_SIG_Mod16_temp_10:
+            case CAN0_SIG_Mod16_temp_11:
+            case CAN0_SIG_Mod17_temp_9:
+            case CAN0_SIG_Mod17_temp_10:
+            case CAN0_SIG_Mod17_temp_11:
+            case CAN0_SIG_Mod18_temp_9:
+            case CAN0_SIG_Mod18_temp_10:
+            case CAN0_SIG_Mod18_temp_11:
+            case CAN0_SIG_Mod19_temp_9:
+            case CAN0_SIG_Mod19_temp_10:
+            case CAN0_SIG_Mod19_temp_11:
+            case CAN0_SIG_Mod20_temp_9:
+            case CAN0_SIG_Mod20_temp_10:
+            case CAN0_SIG_Mod20_temp_11:
+            case CAN0_SIG_Mod21_temp_9:
+            case CAN0_SIG_Mod21_temp_10:
+            case CAN0_SIG_Mod21_temp_11:
+            case CAN0_SIG_Mod22_temp_9:
+            case CAN0_SIG_Mod22_temp_10:
+            case CAN0_SIG_Mod22_temp_11:
+            case CAN0_SIG_Mod23_temp_9:
+            case CAN0_SIG_Mod23_temp_10:
+            case CAN0_SIG_Mod23_temp_11:
+            case CAN0_SIG_Mod24_temp_9:
+            case CAN0_SIG_Mod24_temp_10:
+            case CAN0_SIG_Mod24_temp_11:
+#endif
                 cellIdx--;  // Because cell 0 - valid flag = 1, decrement by one to get the right index
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_temp_valid_3_5
                 cellIdx--;  // Because of signal: CAN0_SIG_Modx_temp_valid_6_8
@@ -2224,6 +2955,10 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 #if defined(ITRI_MOD_2)
             case 20:
             	{
+				#if 1
+            		uint8_t configBuf[BS_NR_OF_MODULES];
+            		cans_ebm_getconfig(value, configBuf, NULL);
+				#else
             		uint64_t config = (*(uint64_t *)value & 0xFFFFFFFFFFFFFF00) >> 8;
             		uint32_t i;
             		uint8_t configBuf[BS_NR_OF_MODULES];
@@ -2231,12 +2966,13 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
             		for (i=0; i < BS_NR_OF_MODULES; i++) {
             			configBuf[i] = (uint8_t)((config >> i*2) & 0x03) ;
             		}
+				#endif
             		//DEBUG_PRINTF_EX("data:0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X 0x%02X \r\n",
             		//		data[1], data[2], data[3], data[4], data[5], data[6], data[7]);
             		//DEBUG_PRINTF_EX("configBuf:%u %u %u %u %u\r\n",
             		//		configBuf[0], configBuf[1], configBuf[2], configBuf[3], configBuf[4]);
 
-            		LTC_Set_Get_Property("set_set_ebm_eb_state", (void*)configBuf, NULL, NULL, NULL);
+            		LTC_Set_Get_Property("set_ebm_eb_state", (void*)configBuf, NULL, NULL, NULL);
             	}
             	break;
             case 25:
@@ -2244,6 +2980,16 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 					LTC_Set_Get_Property("set_curr_cali", NULL, NULL, NULL, NULL);
 				}
 				break;
+#if defined(ITRI_MOD_9)
+			case 21:
+				{
+					uint8_t configBuf[BS_NR_OF_MODULES];
+					uint8_t colConfigBuf[BS_NR_OF_COLUMNS];
+					cans_ebm_getconfig(value, configBuf, colConfigBuf);
+					LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)configBuf, (void*)colConfigBuf, NULL, NULL);
+				}
+				break;
+#endif
 #endif
 
             default:

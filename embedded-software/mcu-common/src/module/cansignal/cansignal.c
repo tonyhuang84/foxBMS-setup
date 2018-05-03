@@ -120,6 +120,7 @@ static STD_RETURN_TYPE_e CANS_PeriodicTransmit(void) {
             CANS_ComposeMessage(CAN_NODE0, (CANS_messagesTx_e)(i), PduToSend.sdu);
             PduToSend.id = can_CAN0_messages_tx[i].ID;
 
+            //if (PduToSend.id == 0x400) DEBUG_PRINTF_EX("[%d]id:0x%x sdu:0x%x 0x%x 0x%x 0x%x\r\n", __LINE__, PduToSend.id, PduToSend.sdu[0], PduToSend.sdu[1], PduToSend.sdu[2], PduToSend.sdu[3]);
             result = CAN_Send(CAN_NODE0, PduToSend.id, PduToSend.sdu, PduToSend.dlc, 0);
 
             if (result == E_NOT_OK) {

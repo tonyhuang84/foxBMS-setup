@@ -101,8 +101,13 @@ static LTC_STATE_s ltc_state = {
     .ErrRequestCounter       = 0,
     .VoltageSampleTime       = 0,
     .muxSampleTime           = 0,
+#if defined(ITRI_MOD_6)
+	.commandDataTransferTime = 10,
+	.commandTransferTime     = 10,
+#else
     .commandDataTransferTime = 3,
     .commandTransferTime     = 3,
+#endif
     .gpioClocksTransferTime  = 3,
     .muxmeas_seqptr          = NULL_PTR,
     .muxmeas_seqendptr       = NULL_PTR,
@@ -233,8 +238,11 @@ typedef struct {
 	uint8_t eb_state;		// 0:bypass, 1: enable, 2:disable(open)
 } LTC_EBM_CONFIG_s;
 LTC_EBM_CONFIG_s ltc_ebm_config[BS_NR_OF_MODULES];
+#if defined(ITRI_MOD_9)
+	LTC_EBM_CONFIG_s ltc_col_config[BS_NR_OF_COLUMNS];
+#endif
 
-#define LTC_EBM_MAX_CURR_CAL_CNT	(10)
+#define LTC_EBM_MAX_CURR_CAL_CNT	(60)
 #define LTC_EBM_CURR_ZERO_BASE		(25000)
 #define LTC_EBM_BAT_CURR_IDX		(4)
 #define LTC_EBM_MOD_CURR_IDX		(5)
@@ -246,6 +254,10 @@ typedef struct {
 LTC_EBM_CALI_s ltc_ebm_cali[BS_NR_OF_MODULES];
 
 static STD_RETURN_TYPE_e LTC_EBM_SetEBState(void);
+#if defined(ITRI_MOD_9)
+	static STD_RETURN_TYPE_e LTC_EBM_SetEBColState_start(void);
+	static STD_RETURN_TYPE_e LTC_EBM_SetEBColState_end(void);
+#endif
 #endif
 
 /*================== Function Prototypes ==================================*/
@@ -430,8 +442,10 @@ extern void LTC_SaveVoltages(void) {
 			if (ltc_ebm_cali[i].isCali == 0) {
 				ltc_ebm_cali[i].curBat_offset /= LTC_EBM_MAX_CURR_CAL_CNT;
 				ltc_ebm_cali[i].curMod_offset /= LTC_EBM_MAX_CURR_CAL_CNT;
-				ltc_ebm_cmd = LTC_EBM_NONE;
-				DEBUG_PRINTF_EX("current calibation done.\r\n");
+				if (i == (BS_NR_OF_MODULES-1)) {
+					ltc_ebm_cmd = LTC_EBM_NONE;
+					DEBUG_PRINTF_EX("current calibation done.\r\n");
+				}
 			}
 		}
 #endif
@@ -456,6 +470,9 @@ extern void LTC_SaveVoltages(void) {
             }
 #endif
             val_fl = ((float)(val_ui))*100e-6*1000.0;        // Unit V -> in mV
+#if 0 //defined(ITRI_MOD_2)
+            if (val_fl >=3.6 || val_fl <= 2.6) DEBUG_PRINTF_EX("[ERR]M[%d] C[%d] vol:%s\r\n", i, j, float_to_string(val_fl));
+#endif
             ltc_cellvoltage.voltage[i*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j]=(uint16_t)(val_fl);
         }
     }
@@ -786,11 +803,11 @@ LTC_RETURN_TYPE_e LTC_SetStateRequest(LTC_STATE_REQUEST_e statereq, LTC_ADCMODE_
 
     if (retVal == LTC_OK || retVal == LTC_BUSY_OK || retVal == LTC_OK_FROM_ERROR) {
 
-            ltc_state.statereq   = statereq;
-            ltc_state.adcModereq = adcModereq;            // measurement mode
-            ltc_state.adcMeasChreq = adcMeasChreq;        // measurement channel
-            ltc_state.numberOfMeasuredMux = numberOfMeasuredMux;        // measurement channel
-        }
+		ltc_state.statereq   = statereq;
+		ltc_state.adcModereq = adcModereq;            // measurement mode
+		ltc_state.adcMeasChreq = adcMeasChreq;        // measurement channel
+		ltc_state.numberOfMeasuredMux = numberOfMeasuredMux;        // measurement channel
+	}
     OS_TaskExit_Critical();
 
     return (retVal);
@@ -1123,7 +1140,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_A_RDCVA_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1171,7 +1190,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_B_RDCVB_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1218,7 +1239,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_C_RDCVC_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1272,7 +1295,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_D_RDCVD_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1325,7 +1350,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_E_RDCVE_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1372,7 +1399,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_D_RDCVD_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1399,7 +1428,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_E_RDCVE_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1424,7 +1455,9 @@ void LTC_Trigger(void) {
                 } else if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_F_RDCVF_READVOLTAGE) {
                     // 18 Cells
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1483,7 +1516,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_VOLTAGE_REGISTER_A_RDCVA_READVOLTAGE) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1521,9 +1556,14 @@ void LTC_Trigger(void) {
 				LTC_SAVELASTSTATES();
 
 				if (ltc_ebm_cmd == LTC_EBM_EB_CTRL) {
-					retVal = LTC_EBM_SetEBState();	// TODO;
+					retVal = LTC_EBM_SetEBState();
 					ltc_ebm_cmd = LTC_EBM_NONE;
 				}
+#if defined(ITRI_MOD_9)
+				if (ltc_ebm_cmd == LTC_EBM_EB_COL_CTRL) {
+					retVal = LTC_EBM_SetEBColState_start();	// TODO:
+				}
+#endif
 
 				if (retVal != E_OK) {
 
@@ -1548,6 +1588,35 @@ void LTC_Trigger(void) {
                 }
 			} else if (ltc_state.substate == LTC_PROC1_EBMCONTROL) {
 				LTC_SAVELASTSTATES();
+
+#if defined(ITRI_MOD_9)
+				if (ltc_ebm_cmd == LTC_EBM_EB_COL_CTRL) {
+					retVal = LTC_EBM_SetEBColState_end();	// TODO:
+					ltc_ebm_cmd = LTC_EBM_NONE;
+				}
+#endif
+
+				if (retVal != E_OK) {
+
+                    ++ltc_state.ErrRetryCounter;
+                    ltc_state.timer = LTC_STATEMACH_SEQERRTTIME;
+                    if (ltc_state.ErrRetryCounter > LTC_TRANSMIT_SPIERRLIMIT) {
+
+                        ltc_state.timer = LTC_STATEMACH_SHORTTIME;
+                        ltc_state.state = LTC_STATEMACH_ERROR_SPIFAILED;
+                        ltc_state.substate = LTC_ERROR_ENTRY;
+                        break;
+                    }
+
+                } else {
+                    ltc_state.timer = ltc_state.commandDataTransferTime;
+                    ltc_state.ErrRetryCounter = 0;
+                    if (ltc_ebm_cmd != LTC_EBM_NONE) {
+                    	ltc_state.substate = LTC_PROC2_EBMCONTROL;
+                    } else {
+                    	ltc_state.substate = LTC_EXIT_EBMCONTROL;
+                    }
+                }
 			} else if (ltc_state.substate == LTC_PROC2_EBMCONTROL) {
 				LTC_SAVELASTSTATES();
 			} else if (ltc_state.substate == LTC_EXIT_EBMCONTROL) {
@@ -1654,7 +1723,9 @@ void LTC_Trigger(void) {
 
                 LTC_SAVELASTSTATES();
                 if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                     if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                         if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -1984,6 +2055,7 @@ void LTC_Trigger(void) {
 
             /****************************BOARD TEMPERATURE SENSOR*********************************/
             case LTC_STATEMACH_TEMP_SENS_READ:
+
                 if (ltc_state.substate == LTC_TEMP_SENS_SEND_DATA1) {
 
                     temp_sens_taskcycle = 1;    // FIXME: remove repeated wake-up function
@@ -2196,7 +2268,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_I2C_TRANSMISSION_RESULT_RDCOMM_MUXMEASUREMENT_CONFIG) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2298,7 +2372,9 @@ void LTC_Trigger(void) {
 
                 ltc_state.lastsubstate = ltc_state.substate;
                 if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                     if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                         if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2363,6 +2439,7 @@ void LTC_Trigger(void) {
 
         /****************************MEASUREMENT OF ALL GPIOS************************/
         case LTC_STATEMACH_ALLGPIOMEASUREMENT:
+        	//DEBUG_PRINTF_EX("[INFO]LTC_STATEMACH_ALLGPIOMEASUREMENT\r\n");
             retVal = LTC_StartGPIOMeasurement(ltc_state.adcMode, ltc_state.adcMeasCh);
             LTC_SAVELASTSTATES();
             if ((retVal != E_OK)) {
@@ -2388,11 +2465,13 @@ void LTC_Trigger(void) {
         // used in case there are no multiplexers, measurement of all GPIOs
         case LTC_STATEMACH_READALLGPIO:
             if (ltc_state.substate == LTC_READ_AUXILIARY_REGISTER_A_RAUXA_READALLGPIO) {
+            	//DEBUG_PRINTF_EX("[INFO]LTC_READ_AUXILIARY_REGISTER_A_RAUXA_READALLGPIO\r\n");
 
                 LTC_SAVELASTSTATES();
                 retVal = LTC_RX((uint8_t*)ltc_cmdRDAUXA, ltc_DataBufferSPI_RX_with_PEC_temperatures);
                 if (retVal != E_OK) {
 
+                	DEBUG_PRINTF_EX("[ERR]LTC_READ_AUXILIARY_REGISTER_A_RAUXA_READALLGPIO ret err!!!\r\n");
                     ++(ltc_state.ErrRetryCounter);
                     ltc_state.timer = LTC_STATEMACH_SEQERRTTIME;
                     if (ltc_state.ErrRetryCounter > LTC_TRANSMIT_SPIERRLIMIT) {
@@ -2408,11 +2487,14 @@ void LTC_Trigger(void) {
                     ltc_state.timer = ltc_state.commandDataTransferTime;
                 }
             } else if (ltc_state.substate == LTC_READ_AUXILIARY_REGISTER_B_RAUXB_READALLGPIO) {
+            	//DEBUG_PRINTF_EX("[INFO]LTC_READ_AUXILIARY_REGISTER_B_RAUXB_READALLGPIO\r\n");
 
                 if (ltc_state.lastsubstate == LTC_READ_AUXILIARY_REGISTER_A_RAUXA_READALLGPIO) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2438,6 +2520,7 @@ void LTC_Trigger(void) {
                 ltc_state.lastsubstate = ltc_state.substate;
                 retVal = LTC_RX((uint8_t*)ltc_cmdRDAUXB, ltc_DataBufferSPI_RX_with_PEC_temperatures);
                 if (retVal != E_OK) {
+                	DEBUG_PRINTF_EX("[ERR]LTC_READ_AUXILIARY_REGISTER_B_RAUXB_READALLGPIO ret err!!!\r\n");
 
                     ++(ltc_state.ErrRetryCounter);
                     ltc_state.timer = LTC_STATEMACH_SEQERRTTIME;
@@ -2461,11 +2544,14 @@ void LTC_Trigger(void) {
                 }
 
             } else if (ltc_state.substate == LTC_READ_AUXILIARY_REGISTER_C_RAUXC_READALLGPIO) {
+            	//DEBUG_PRINTF_EX("[INFO]LTC_READ_AUXILIARY_REGISTER_C_RAUXC_READALLGPIO\r\n");
 
                 if (ltc_state.lastsubstate == LTC_READ_AUXILIARY_REGISTER_B_RAUXB_READALLGPIO) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2512,7 +2598,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_AUXILIARY_REGISTER_C_RAUXC_READALLGPIO) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2554,12 +2642,15 @@ void LTC_Trigger(void) {
                     ltc_state.timer = ltc_state.commandDataTransferTime;
                 }
             } else if (ltc_state.substate == LTC_EXIT_READALLGPIO) {
+            	//DEBUG_PRINTF_EX("[INFO]LTC_EXIT_READALLGPIO\r\n");
 
                 // 12-Cell
                 if (ltc_state.lastsubstate == LTC_READ_AUXILIARY_REGISTER_B_RAUXB_READALLGPIO) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2585,7 +2676,9 @@ void LTC_Trigger(void) {
                 if (ltc_state.lastsubstate == LTC_READ_AUXILIARY_REGISTER_D_RAUXD_READALLGPIO) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
-
+#if defined(ITRI_MOD_2)
+                	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+#endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
                             if (LTC_GOTO_PEC_ERROR_STATE == TRUE) {
@@ -2775,11 +2868,13 @@ static void LTC_SaveGPIOMeasurement(uint8_t registerSet, uint8_t *rxBuffer) {
         LTC_GPIOVoltages[3+i_offset+24*i]= rxBuffer[7+i*8];
         LTC_GPIOVoltages[4+i_offset+24*i]= rxBuffer[8+i*8];
         LTC_GPIOVoltages[5+i_offset+24*i]= rxBuffer[9+i*8];
+
     }
     #else
     for (i=0; i < LTC_N_LTC; i++) {
         LTC_GPIOVoltages[0+i_offset+12*i]= rxBuffer[4+i*8];
         LTC_GPIOVoltages[1+i_offset+12*i]= rxBuffer[5+i*8];
+        //DEBUG_PRINTF_EX("[TN]trace registerSet:%u [4]:0x%x [5]:0x%x\r\n", registerSet, rxBuffer[4+i*8], rxBuffer[5+i*8]);
         LTC_GPIOVoltages[2+i_offset+12*i]= rxBuffer[6+i*8];
         LTC_GPIOVoltages[3+i_offset+12*i]= rxBuffer[7+i*8];
         LTC_GPIOVoltages[4+i_offset+12*i]= rxBuffer[8+i*8];
@@ -3105,11 +3200,23 @@ static STD_RETURN_TYPE_e LTC_EBM_SetEBState(void) {
 		i = BS_NR_OF_MODULES-j-1;
 
 		if (ltc_ebm_config[j].eb_state == 0) {
-			ltc_tmpTXbuffer[0+(i)*6] = 0xEC;	// bypass;	1010 1100
+#if defined(ITRI_EBM_CHROMA_V1)
+			ltc_tmpTXbuffer[0+(i)*6] = 0xEC;	// bypass;	1110 1100
+#else
+			ltc_tmpTXbuffer[0+(i)*6] = 0xAC;	// bypass;	1010 1100
+#endif
 		} else if (ltc_ebm_config[j].eb_state == 1) {
-			ltc_tmpTXbuffer[0+(i)*6] = 0xAC;	// enable;	1110 1100
+#if defined(ITRI_EBM_CHROMA_V1)
+			ltc_tmpTXbuffer[0+(i)*6] = 0xAC;	// enable;	1010 1100
+#else
+			ltc_tmpTXbuffer[0+(i)*6] = 0xEC;	// enable;	1110 1100
+#endif
 		} else if (ltc_ebm_config[j].eb_state == 2) {
+#if defined(ITRI_EBM_CHROMA_V1)
 			ltc_tmpTXbuffer[0+(i)*6] = 0xFC;	// disable; 1111 1100
+#else
+			ltc_tmpTXbuffer[0+(i)*6] = 0xFC;	// disable; 1111 1100
+#endif
 		} else {
 			DEBUG_PRINTF_EX("[ERR]unknown ebm state(%u), module(%u)\r\n", ltc_ebm_config[j].eb_state, j);
 			return E_NOT_OK;
@@ -3122,6 +3229,140 @@ static STD_RETURN_TYPE_e LTC_EBM_SetEBState(void) {
 		ltc_tmpTXbuffer[5+(i)*6] = 0x00;
 	}
 	retVal = LTC_TX((uint8_t*)ltc_cmdWRCFG, ltc_tmpTXbuffer, ltc_DataBufferSPI_TX_with_PEC_init);
+
+	return retVal;
+}
+#endif
+
+#if defined(ITRI_MOD_9)
+static void LTC_EBM_SetGPIO(uint8_t gpioNo, uint8_t val, uint8_t* txBuf) {
+	if (val == 0) {
+		*txBuf &= ~(0x01 << (gpioNo+2));
+	} else {
+		*txBuf |= (0x01 << (gpioNo+2));
+	}
+}
+
+typedef struct {
+	uint8_t no;
+	uint8_t val;
+} GPIO_SETTING;
+typedef struct {
+	GPIO_SETTING gpio1;
+	GPIO_SETTING gpio2;
+	GPIO_SETTING gpio4;
+} EB_STATE_SETTING;
+static EB_STATE_SETTING eb_state_setting[] = {
+		// bypass setting
+#if defined(ITRI_EBM_CHROMA_V1)
+		{{1, 1}, {2, 0}, {4, 1},},
+#else
+		{{1, 1}, {2, 0}, {4, 0},},
+#endif
+		// enable setting
+#if defined(ITRI_EBM_CHROMA_V1)
+		{{1, 1}, {2, 0}, {4, 0},},
+#else
+		{{1, 1}, {2, 0}, {4, 1},},
+#endif
+		// disable setting
+		{{1, 1}, {2, 1}, {4, 1},},
+};
+
+typedef struct {
+	uint16_t modNo;
+	uint8_t  gpioNo;
+	uint8_t  gpioVal;
+} COL_GPIO_SETTING;
+typedef struct {
+	// read state; gpioVal:9 -> not read, gpioVal:0 -> no change, gpioVal:1 -> reset(ON), gpioVal:2 -> disable(OFF)
+	COL_GPIO_SETTING	state;
+	// reset(ON)
+	COL_GPIO_SETTING	reset;
+	// disable(OFF)
+	COL_GPIO_SETTING	disable;
+} COL_STATE_SETTING;
+static COL_STATE_SETTING col_state_setting[] = {
+		// column 0
+		{{0, 1, 9}, {1, 1, 0}, {2, 1, 0},},
+		// column 1
+		{{5, 1, 9}, {6, 1, 0}, {7, 1, 0},},
+		// column 2
+		{{10, 1, 9}, {11, 1, 0}, {12, 1, 0},},
+		// column 3
+		{{19, 1, 9}, {18, 1, 0}, {17, 1, 0},},
+		// column 4
+		{{24, 1, 9}, {23, 1, 0}, {22, 1, 0},},
+};
+static void LTC_EBM_SetColState(uint16_t modNo, uint8_t* txBuf) {
+	uint16_t colNo = modNo / BS_NR_OF_ROWS;
+	uint8_t oldState = 0;
+
+	// get col. old state and set new state
+	if (col_state_setting[colNo].state.gpioVal == 9) {
+		return;
+	}
+
+}
+
+static STD_RETURN_TYPE_e LTC_EBM_SetEBColState_start(void) {
+	STD_RETURN_TYPE_e retVal = E_OK;
+	uint16_t i=0, j=0;
+	uint8_t gpio1 = 1, gpio2 = 1, gpio4 = 1;
+
+	for (j=0; j < BS_NR_OF_MODULES; j++) {
+		i = BS_NR_OF_MODULES-j-1;
+		ltc_tmpTXbuffer[0+(i)*6] = 0xFC;	// REFON = 1, GPIOs are all enabled
+
+		LTC_EBM_SetGPIO(eb_state_setting[ltc_ebm_config[j].eb_state].gpio1.no,
+						eb_state_setting[ltc_ebm_config[j].eb_state].gpio1.val,
+						&ltc_tmpTXbuffer[0+(i)*6]);
+		LTC_EBM_SetGPIO(eb_state_setting[ltc_ebm_config[j].eb_state].gpio2.no,
+						eb_state_setting[ltc_ebm_config[j].eb_state].gpio2.val,
+						&ltc_tmpTXbuffer[0+(i)*6]);
+		LTC_EBM_SetGPIO(eb_state_setting[ltc_ebm_config[j].eb_state].gpio4.no,
+						eb_state_setting[ltc_ebm_config[j].eb_state].gpio4.val,
+						&ltc_tmpTXbuffer[0+(i)*6]);
+/*
+		if (ltc_ebm_config[j].eb_state == 0) { // bypass
+#if defined(ITRI_EBM_CHROMA_V1)
+			gpio1 = 1; gpio2 = 0; gpio4 = 1;
+#else
+			gpio1 = 1; gpio2 = 0; gpio4 = 0;
+#endif
+		} else if (ltc_ebm_config[j].eb_state == 1) { // enable
+#if defined(ITRI_EBM_CHROMA_V1)
+			gpio1 = 1; gpio2 = 0; gpio4 = 0;
+#else
+			gpio1 = 1; gpio2 = 0; gpio4 = 1;
+#endif
+		} else if (ltc_ebm_config[j].eb_state == 2) { // disable
+#if defined(ITRI_EBM_CHROMA_V1)
+			gpio1 = 1; gpio2 = 1; gpio4 = 1;
+#else
+			gpio1 = 1; gpio2 = 1; gpio4 = 1;
+#endif
+		} else {
+			DEBUG_PRINTF_EX("[ERR]unknown ebm state(%u), module(%u)\r\n", ltc_ebm_config[j].eb_state, j);
+			return E_NOT_OK;
+		}
+
+		LTC_EBM_SetGPIO(1, gpio1, &ltc_tmpTXbuffer[0+(i)*6]);
+		LTC_EBM_SetGPIO(2, gpio2, &ltc_tmpTXbuffer[0+(i)*6]);
+		LTC_EBM_SetGPIO(4, gpio4, &ltc_tmpTXbuffer[0+(i)*6]);
+*/
+		ltc_tmpTXbuffer[1+(i)*6] = 0x00;
+		ltc_tmpTXbuffer[2+(i)*6] = 0x00;
+		ltc_tmpTXbuffer[3+(i)*6] = 0x00;
+		ltc_tmpTXbuffer[4+(i)*6] = 0x00;
+		ltc_tmpTXbuffer[5+(i)*6] = 0x00;
+	}
+	retVal = LTC_TX((uint8_t*)ltc_cmdWRCFG, ltc_tmpTXbuffer, ltc_DataBufferSPI_TX_with_PEC_init);
+
+	return retVal;
+}
+static STD_RETURN_TYPE_e LTC_EBM_SetEBColState_end(void) {
+	STD_RETURN_TYPE_e retVal = E_OK;
 
 	return retVal;
 }
@@ -3373,6 +3614,10 @@ static STD_RETURN_TYPE_e LTC_RX_PECCheck(uint8_t *DataBufferSPI_RX_with_PEC) {
             LTC_ErrorTable[i/LTC_NUMBER_OF_LTC_PER_MODULE].LTC[j] = 1;
 
             DIAG_Handler(DIAG_CH_LTC_PEC, DIAG_EVENT_NOK, 0, NULL_PTR);
+
+#if defined(ITRI_MOD_2)
+//            DEBUG_PRINTF_EX("[%d:WARN]LTC_RX_PECCheck ret E_NOT_OK\r\n", __LINE__);
+#endif
             retVal = E_NOT_OK;
 
         } else {
@@ -4161,7 +4406,7 @@ uint32_t get_LTC_allGPIOVoltages(void* iParam1, void* iParam2, void* oParam1, vo
 	return 0;
 }
 
-uint32_t set_set_ebm_eb_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
+uint32_t set_ebm_eb_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
 	ltc_ebm_cmd = LTC_EBM_EB_CTRL;
 	uint8_t* pEBState = (uint8_t*)iParam1;
 	uint32_t i;
@@ -4171,6 +4416,23 @@ uint32_t set_set_ebm_eb_state(void* iParam1, void* iParam2, void* oParam1, void*
 	}
 	return 0;
 }
+
+#if defined(ITRI_MOD_9)
+uint32_t set_ebm_eb_col_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
+	ltc_ebm_cmd = LTC_EBM_EB_COL_CTRL;
+	uint8_t* pEBState = (uint8_t*)iParam1;
+	uint8_t* pColState = (uint8_t*)iParam2;
+	uint32_t i;
+
+	for (i=0; i < BS_NR_OF_MODULES; i++) {
+		ltc_ebm_config[i].eb_state = pEBState[i];
+	}
+	for (i=0; i < BS_NR_OF_COLUMNS; i++) {
+		ltc_col_config[i].eb_state = pColState[i];
+	}
+	return 0;
+}
+#endif
 
 uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
 	uint32_t modIdx = *(uint32_t*)iParam1;
@@ -4196,7 +4458,27 @@ uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void*
 }
 
 uint32_t set_curr_cali(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
-	if (ltc_ebm_cmd == LTC_EBM_NONE) ltc_ebm_cmd = LTC_EBM_CURR_CALI;
+	if (ltc_ebm_cmd == LTC_EBM_NONE) {
+		ltc_ebm_cmd = LTC_EBM_CURR_CALI;
+	}
+	return 0;
+}
+
+uint32_t ltc_task_ALLGPIOMEASUREMEN(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
+	if (ltc_ebm_cmd == LTC_EBM_NONE) {
+		ltc_ebm_cmd = LTC_IDLE_STATE_TASK_ALLGPIOMEASUREMENT;
+
+		memset(LTC_GPIOVoltages, 0x00, sizeof(LTC_GPIOVoltages));
+	}
+	return 0;
+}
+
+uint32_t ltc_task_VOLTAGEMEASUREMENT(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
+	if (ltc_ebm_cmd == LTC_EBM_NONE) {
+		ltc_ebm_cmd = LTC_IDLE_STATE_TASK_VOLTAGEMEASUREMENT;
+
+		memset(LTC_GPIOVoltages, 0x00, sizeof(LTC_GPIOVoltages));
+	}
 	return 0;
 }
 
@@ -4210,9 +4492,14 @@ LTC_PROP_s ltc_props[] = {
 	{"get_BS_NR_OF_BAT_CELLS_PER_MODULE", &get_BS_NR_OF_BAT_CELLS_PER_MODULE},
 	{"get_BS_NR_OF_TEMP_SENSORS_PER_MODULE", &get_BS_NR_OF_TEMP_SENSORS_PER_MODULE},
 	{"get_LTC_allGPIOVoltages", &get_LTC_allGPIOVoltages},
-	{"set_set_ebm_eb_state", &set_set_ebm_eb_state},
+	{"set_ebm_eb_state", &set_ebm_eb_state},
+#if defined(ITRI_MOD_9)
+	{"set_ebm_eb_col_state", &set_ebm_eb_col_state},
+#endif
 	{"get_LTC_CellVoltages", &get_LTC_CellVoltages},
 	{"set_curr_cali", &set_curr_cali},
+	{"ltc_task_ALLGPIOMEASUREMEN", &ltc_task_ALLGPIOMEASUREMEN},
+	{"ltc_task_VOLTAGEMEASUREMENT", &ltc_task_VOLTAGEMEASUREMENT},
 };
 
 uint32_t LTC_Set_Get_Property(char* prop, void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
