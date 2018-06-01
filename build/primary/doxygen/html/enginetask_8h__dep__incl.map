@@ -1,5 +1,0 @@
-<map id="enginetask.h" name="enginetask.h">
-<area shape="rect" id="node2" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,80,101,107"/>
-<area shape="rect" id="node3" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="126,80,173,107"/>
-<area shape="rect" id="node4" href="$database_8c.html" title="Database module implementation. " alt="" coords="197,80,283,107"/>
-</map>

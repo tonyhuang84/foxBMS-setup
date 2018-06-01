@@ -1,4 +1,0 @@
-<map id="EEPR_SetDefaultValue" name="EEPR_SetDefaultValue">
-<area shape="rect" id="node2" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="212,5,365,32"/>
-<area shape="rect" id="node3" href="$eepr__cfg_8c.html#a62ad4bbac7d8b92d7481346b31cf187d" title="sets a dirty flag to indicate that the data of a channel have been changed " alt="" coords="212,56,365,83"/>
-</map>

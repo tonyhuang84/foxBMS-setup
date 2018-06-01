@@ -50,9 +50,9 @@ BINFILE := \
 CFLAGS := \
 	-mcpu=cortex-m4           \
 	-mthumb -mlittle-endian   \
-	-mfloat-abi=softfp        \
+	-mfloat-abi=hard        \
 	-mfpu=fpv4-sp-d16         \
-	-O0                       \
+	-O2                       \
 	-fmessage-length=0        \
 	-fno-common 		  \
 	-fsigned-char             \
@@ -69,6 +69,7 @@ CFLAGS := \
 	-DTRACE                   \
 	-DOS_USE_TRACE_ITM        \
 	-DUSE_HAL_DRIVER          \
+	-DARM_MATH_CM4=1			  \
 	-DHSE_VALUE=8000000
 
 # all assembler flags passed through GCC can be applied here

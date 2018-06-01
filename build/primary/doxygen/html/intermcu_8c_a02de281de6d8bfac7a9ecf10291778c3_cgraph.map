@@ -1,5 +1,0 @@
-<map id="IMC_sendByte" name="IMC_sendByte">
-<area shape="rect" id="node2" href="$spi_8c.html#a0ef3d3e3c5397195b3d768fcbf9eefb4" title="sets Chip Select low to start SPI transmission. " alt="" coords="167,5,255,32"/>
-<area shape="rect" id="node4" href="$spi_8c.html#a91406c314b72fede70c5b70edfb75dec" title="sets Chip Select high to end SPI transmission. " alt="" coords="160,56,263,83"/>
-<area shape="rect" id="node3" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="311,31,403,57"/>
-</map>

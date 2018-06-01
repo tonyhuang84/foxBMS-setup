@@ -1,9 +1,0 @@
-<map id="contactor.h" name="contactor.h">
-<area shape="rect" id="node2" href="$contactor__cfg_8h.html" title="Header for the configuration for the driver for the contactors. " alt="" coords="141,80,252,107"/>
-<area shape="rect" id="node3" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="19,155,159,181"/>
-<area shape="rect" id="node4" href="$general_8h.html" title="Settings for the system. " alt="" coords="51,229,126,256"/>
-<area shape="rect" id="node7" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="259,155,326,181"/>
-<area shape="rect" id="node6" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,304,186,331"/>
-<area shape="rect" id="node9" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="257,229,379,256"/>
-<area shape="rect" id="node10" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU0 (primary) " alt="" coords="403,229,502,256"/>
-</map>

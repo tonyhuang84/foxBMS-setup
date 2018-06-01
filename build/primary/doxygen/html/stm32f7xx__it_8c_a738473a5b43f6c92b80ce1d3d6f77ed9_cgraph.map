@@ -1,4 +1,0 @@
-<map id="EXTI15_10_IRQHandler" name="EXTI15_10_IRQHandler">
-<area shape="rect" id="node2" href="$io_8c.html#aa0f7f326f4e3dc599c3e47be410a460b" title="Returns the state of a pin. " alt="" coords="210,5,301,32"/>
-<area shape="rect" id="node3" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="209,56,301,83"/>
-</map>

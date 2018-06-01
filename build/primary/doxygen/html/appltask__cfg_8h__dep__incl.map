@@ -1,6 +1,0 @@
-<map id="appltask_cfg.h" name="appltask_cfg.h">
-<area shape="rect" id="node2" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="5,80,112,107"/>
-<area shape="rect" id="node3" href="$appltask_8h.html" title="Header for external functions of the application tasks. " alt="" coords="136,80,219,107"/>
-<area shape="rect" id="node4" href="$appltask_8c.html" title="Function calls within application tasks. " alt="" coords="91,155,173,181"/>
-<area shape="rect" id="node5" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="198,155,245,181"/>
-</map>

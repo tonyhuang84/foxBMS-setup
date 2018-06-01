@@ -1,5 +1,0 @@
-<map id="LTC_SetMuxChannel" name="LTC_SetMuxChannel">
-<area shape="rect" id="node2" href="$ltc_8c.html#ad6964d802efa9eac1ee91f5b8414ad2f" title="configures the data that will be sent to the LTC daisy&#45;chain to configure multiplexer channels..." alt="" coords="197,5,372,32"/>
-<area shape="rect" id="node3" href="$ltc_8c.html#a66092dc4eb5b34b11d37701763836c41" title="sends command and data to the LTC daisy&#45;chain. " alt="" coords="251,56,318,83"/>
-<area shape="rect" id="node4" href="$ltc__pec_8c.html#ae9dad9a8929c02631ba7e5d5c3b3d5a6" title="calaculates and returns the CRC15 " alt="" coords="420,56,539,83"/>
-</map>

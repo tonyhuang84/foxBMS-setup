@@ -109,14 +109,15 @@ static STD_RETURN_TYPE_e CANS_PeriodicTransmit(void) {
 
 #if CAN_USE_CAN_NODE0 == TRUE
     for (i = 0; i < can_CAN0_tx_length; i++) {
+#if defined(ITRI_MOD_5)
+    	if (can_CAN0_messages_tx[i].ID >= 0x115 && can_CAN0_messages_tx[i].ID <= 0x1E2) {
+    		continue;	// drop these msg
+    	}
+#endif
+
         if (((counter_ticks * CANS_TICK_MS) % (can_CAN0_messages_tx[i].repetition_time)) == can_CAN0_messages_tx[i].repetition_phase) {
             Can_PduType PduToSend = { { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, 0x0, 8 };
-#if defined(ITRI_MOD_4)
-            uint8_t is_skip = 0;
-            uint32_t skip_msg_start = CAN0_MSG_Mod0_Cellvolt_0 + 8*BS_NR_OF_MODULES;
-            if (i >= skip_msg_start && i <= CAN0_MSG_Mod7_Celltemp_3) is_skip = 1;
-            if (is_skip == 1) continue;
-#endif
+
             CANS_ComposeMessage(CAN_NODE0, (CANS_messagesTx_e)(i), PduToSend.sdu);
             PduToSend.id = can_CAN0_messages_tx[i].ID;
 

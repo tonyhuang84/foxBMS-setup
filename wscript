@@ -46,6 +46,7 @@ SECONDARY = False
 BOOTLOADER = False
 SPHINX = False
 
+
 # Check that only meaningful combinations of parameters are executed.
 # Possible options are:
 #   - TODO
@@ -194,6 +195,7 @@ def configure(conf):
         conf.find_program('dot', var='dot')
     conf.env.CFLAGS = '-mcpu=cortex-m4 -mthumb -mlittle-endian -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -fmessage-length=0 -fno-common -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -std=c99'.split(
         ' ')
+        
     # change for STM32F7 CPU
     # conf.env.CFLAGS = '-mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-sp-d16 -fmessage-length=0 -fno-common -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -std=c99'.split(' ')
     conf.env.CFLAGS += str('-DBUILD_VERSION=\"' +
@@ -309,7 +311,11 @@ def configure(conf):
     conf.setenv('debug', env_debug)
     conf.define('RELEASE', 1)
     conf.undefine('DEBUG')
-    conf.env.CFLAGS += ['-g', '-O0']
+    #ITRI_MOD; conf.env.CFLAGS += ['-g', '-O0']
+    if (1):
+        conf.env.CFLAGS += ['-O2'] #ITRI_MOD
+    else:
+        conf.env.CFLAGS += ['-g', '-O0']
     env_debug.basename = conf.env.appname + '-' + conf.env.version + \
         '-' + conf.env.buildno + '-' + conf.env.timestamp + '-debug'
     env_debug.PREFIX = conf.env.appname + '-' + conf.env.version + \
@@ -322,6 +328,8 @@ def configure(conf):
         '-' + conf.env.buildno + '-' + conf.env.timestamp + '-release'
     env_release.PREFIX = conf.env.appname + '-' + conf.env.version + \
         '-' + conf.env.buildno + '-' + conf.env.timestamp
+    
+    logging.error("[tony]options:%r" % (conf.options))
     if conf.options.target == 'release':
         conf.setenv('', env_release)
     else:

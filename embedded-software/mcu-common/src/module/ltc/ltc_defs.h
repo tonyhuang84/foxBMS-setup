@@ -502,6 +502,9 @@ typedef struct {
     LTC_CONFIG_s ltcConfig;                 /*!< struct that holds the measurement configuration of the ltc network                          */
     uint8_t first_measurement_made;         /*!< flag that indicates if the first measurement cycle was completed                          */
     STD_RETURN_TYPE_e ltc_muxcycle_finished;/*!< flag that indictes if the measurement sequence of the multiplexers is finished                         */
+#if defined(ITRI_MOD_6_i)
+    uint8_t check_spi_flag;
+#endif
 } LTC_STATE_s;
 
 /*================== Function Prototypes ==================================*/

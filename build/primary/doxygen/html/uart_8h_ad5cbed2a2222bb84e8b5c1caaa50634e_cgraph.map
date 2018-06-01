@@ -1,6 +1,0 @@
-<map id="UART_Init" name="UART_Init">
-<area shape="rect" id="node2" href="$uart_8c.html#ac308c1e7bd9c48ff894bdfee4fc0685d" title="HAL_UART_CustomIRQHandler is responsible for handling all requests. " alt="" coords="133,43,340,69"/>
-<area shape="rect" id="node3" href="$uart_8c.html#a03ea09e13ef4e763fabce35fc3454136" title="UART_IntRx is responsible for handling receive requests. " alt="" coords="405,5,498,32"/>
-<area shape="rect" id="node4" href="$uart_8c.html#ad364d02588fd09332955ff897bd72eb5" title="UART_IntTx is responsible for handling send requests. " alt="" coords="406,81,497,108"/>
-<area shape="rect" id="node5" href="$uart_8c.html#a5d5b8f61fe495fe7287979d64bfc77c5" title="UART_IntRxComp" alt="" coords="388,132,515,159"/>
-</map>

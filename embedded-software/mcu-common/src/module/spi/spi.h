@@ -39,7 +39,12 @@
 #include "spi_cfg.h"
 
 /*================== Macros and Definitions ===============================*/
-
+#if defined(ITRI_MOD_6_i)
+typedef struct {
+    uint8_t transmit_ongoing;               /*!< time in ms before the state machine processes the next state, e.g. in counts of 1ms    */
+    uint8_t counter;                        /*!< general purpose counter */
+} SPI_STATE_s;
+#endif
 /*================== Constant and Variable Definitions ====================*/
 
 /*================== Function Prototypes ==================================*/
@@ -119,6 +124,11 @@ extern void SPI_SetCS(uint8_t busID);
  */
 extern void SPI_UnsetCS(uint8_t busID);
 /*================== Function Implementations =============================*/
+
+#if defined(ITRI_MOD_6_i)
+extern STD_RETURN_TYPE_e SPI_IsTransmitOngoing(void);
+extern void SPI_SetTransmitOngoing(void);
+#endif
 
 
 #endif /* SPI_IF_H_ */

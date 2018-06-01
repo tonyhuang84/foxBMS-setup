@@ -1,9 +1,0 @@
-<map id="enginetask_cfg.c" name="enginetask_cfg.c">
-<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="51,304,126,331"/>
-<area shape="rect" id="node5" href="$enginetask__cfg_8h.html" title="Engine task configuration header. " alt="" coords="87,80,207,107"/>
-<area shape="rect" id="node8" href="$database_8h.html" title="Database module header. " alt="" coords="237,80,324,107"/>
-<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,379,186,405"/>
-<area shape="rect" id="node6" href="$os_8h.html" title="Implementation of the tasks used by the system, headers. " alt="" coords="137,155,184,181"/>
-<area shape="rect" id="node9" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="248,155,359,181"/>
-<area shape="rect" id="node10" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="240,229,380,256"/>
-</map>

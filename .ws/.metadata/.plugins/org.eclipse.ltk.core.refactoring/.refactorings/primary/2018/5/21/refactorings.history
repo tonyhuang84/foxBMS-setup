@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;primary/mcu-primary/src/module/config/can0_msg_cfg.h&apos; to &apos;can0_msg_cfg_4msg.h&apos;" description="Rename resource &apos;can0_msg_cfg.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="mcu-primary/src/module/config/can0_msg_cfg.h" name="can0_msg_cfg_4msg.h" stamp="1527212538285" updateReferences="true"/>
+</session>

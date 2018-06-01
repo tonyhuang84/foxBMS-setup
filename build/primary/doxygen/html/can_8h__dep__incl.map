@@ -1,9 +1,0 @@
-<map id="can.h" name="can.h">
-<area shape="rect" id="node2" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,80,101,107"/>
-<area shape="rect" id="node3" href="$stm32f4xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="125,80,232,107"/>
-<area shape="rect" id="node4" href="$stm32f7xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="256,80,363,107"/>
-<area shape="rect" id="node5" href="$main_8c.html" title="Main function. " alt="" coords="387,80,448,107"/>
-<area shape="rect" id="node6" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="473,80,519,107"/>
-<area shape="rect" id="node7" href="$can_8c.html" title="Driver for the CAN module. " alt="" coords="543,80,598,107"/>
-<area shape="rect" id="node8" href="$cansignal_8c.html" title="Messages and signal settings for the CAN driver. " alt="" coords="623,80,711,107"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="CAN2_TX_IRQHandler" name="CAN2_TX_IRQHandler">
-<area shape="rect" id="node2" href="$can_8c.html#a539bc7c8da4f1a8724915582aaf4dee5" title="Handles CAN TX interrupt request. " alt="" coords="204,31,347,57"/>
-<area shape="rect" id="node3" href="$can_8c.html#a7527dda2064eca2a8785fd7f8be134d1" title="Disables transmit mailbox empty interrupt and calls callback functions for transmitting messages from..." alt="" coords="395,31,568,57"/>
-<area shape="rect" id="node4" href="$can_8c.html#a8f33c36f63d1d1f1eef92f5fc3e44d20" title="Transmission complete callback in non blocking mode. " alt="" coords="616,31,759,57"/>
-<area shape="rect" id="node5" href="$can_8c.html#a1aef8b8c5b4c2a4e50033d65630a473e" title="Transmits a can message from transmit buffer. " alt="" coords="807,31,935,57"/>
-<area shape="rect" id="node6" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="983,5,1137,32"/>
-<area shape="rect" id="node7" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="987,56,1133,83"/>
-</map>

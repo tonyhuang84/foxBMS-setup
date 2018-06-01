@@ -1,0 +1,13 @@
+/*
+ * can0_msg_cfg.h
+ *
+ *  Created on: 2018¦~5¤ë25¤é
+ *      Author: A50130
+ */
+
+#ifndef MCU_PRIMARY_SRC_MODULE_CONFIG_CAN0_MSG_CFG_4MSG_H_
+#define MCU_PRIMARY_SRC_MODULE_CONFIG_CAN0_MSG_CFG_4MSG_H_
+
+
+
+#endif /* MCU_PRIMARY_SRC_MODULE_CONFIG_CAN0_MSG_CFG_4MSG_H_ */

@@ -1,7 +1,0 @@
-<map id="batterysystem_cfg.c" name="batterysystem_cfg.c">
-<area shape="rect" id="node2" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="19,229,159,256"/>
-<area shape="rect" id="node6" href="$database_8h.html" title="Database module header. " alt="" coords="85,80,172,107"/>
-<area shape="rect" id="node3" href="$general_8h.html" title="Settings for the system. " alt="" coords="51,304,126,331"/>
-<area shape="rect" id="node5" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,379,186,405"/>
-<area shape="rect" id="node7" href="$database__cfg_8h.html" title="Database configuration header. " alt="" coords="80,155,191,181"/>
-</map>

@@ -169,7 +169,7 @@ uint32_t rb_cmd_get_LTC_allGPIOVoltages(char* params) {
 	return 0;
 }
 
-uint32_t rb_cmd_set_set_ebm_eb_state(char* params) {
+uint32_t rb_cmd_set_ebm_eb_state(char* params) {
 	uint32_t i;
 	uint8_t ebState[BS_NR_OF_MODULES];
 	char* pCmd = strtok(params, " ");
@@ -182,10 +182,32 @@ uint32_t rb_cmd_set_set_ebm_eb_state(char* params) {
 		//DEBUG_PRINTF_EX("pParam:%s ebState[%u]:%u\r\n", pParam, i, ebState[i]);
 	}
 
-	LTC_Set_Get_Property("set_set_ebm_eb_state", (void*)ebState, NULL, NULL, NULL);
-	DEBUG_PRINTF_EX("rb_cmd_set_set_ebm_eb_state done\r\n");
+	LTC_Set_Get_Property("set_ebm_eb_state", (void*)ebState, NULL, NULL, NULL);
+	DEBUG_PRINTF_EX("rb_cmd_set_ebm_eb_state done\r\n");
 	return 0;
 }
+
+#if defined(ITRI_MOD_9)
+uint32_t rb_cmd_set_ebm_eb_col_state(char* params) {
+	uint32_t i;
+	uint8_t ebState[BS_NR_OF_MODULES];
+	uint8_t colState[BS_NR_OF_COLUMNS];
+	char* pCmd = strtok(params, " ");
+	char* pParam = NULL;
+
+	for (i=0; i < BS_NR_OF_MODULES; i++) {
+		pParam = strtok(NULL, " ");
+		ebState[i] = (uint8_t)atoi(pParam);
+	}
+	for (i=0; i < BS_NR_OF_COLUMNS; i++) {
+		pParam = strtok(NULL, " ");
+		colState[i] = (uint8_t)atoi(pParam);
+	}
+
+	LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)ebState, (void*)colState, NULL, NULL);
+	//DEBUG_PRINTF_EX("rb_cmd_set_ebm_eb_col_state done\r\n");
+}
+#endif
 
 uint32_t rb_cmd_get_LTC_CellVoltages(char* params) {
 	char* pCmd = strtok(params, " ");
@@ -218,7 +240,10 @@ RB_CMD_s rb_cmds[] = {
 	{"get_BS_NR_OF_BAT_CELLS_PER_MODULE", "ro,", &rb_cmd_get_BS_NR_OF_BAT_CELLS_PER_MODULE},
 	{"get_BS_NR_OF_TEMP_SENSORS_PER_MODULE", "ro,", &rb_cmd_get_BS_NR_OF_TEMP_SENSORS_PER_MODULE},
 	{"get_LTC_allGPIOVoltages", "ro, ex:cmd 0; get m0 gpio vol.", &rb_cmd_get_LTC_allGPIOVoltages},
-	{"set_set_ebm_eb_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), m2(by)", &rb_cmd_set_set_ebm_eb_state},
+	{"set_ebm_eb_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), m2(by)", &rb_cmd_set_ebm_eb_state},
+#if defined(ITRI_MOD_9)
+	{"set_ebm_eb_col_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), c0(en)", &rb_cmd_set_ebm_eb_col_state},
+#endif
 	{"get_LTC_CellVoltages", "ro, ex:cmd 0; get m0 cell vol.", &rb_cmd_get_LTC_CellVoltages},
 	{"ltc_task_ALLGPIOMEASUREMEN", "ro,", &rb_cmd_ltc_task_ALLGPIOMEASUREMEN},
 	{"ltc_task_VOLTAGEMEASUREMENT", "ro,", &rb_cmd_ltc_task_VOLTAGEMEASUREMENT},

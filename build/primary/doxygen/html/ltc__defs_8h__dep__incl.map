@@ -1,8 +1,0 @@
-<map id="ltc_defs.h" name="ltc_defs.h">
-<area shape="rect" id="node2" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC monitoring chip. " alt="" coords="41,80,111,107"/>
-<area shape="rect" id="node4" href="$ltc_8h.html" title="Headers for the driver for the LTC monitoring chip. " alt="" coords="126,155,173,181"/>
-<area shape="rect" id="node3" href="$ltc__cfg_8c.html" title="Configuration for the LTC monitoring chip. " alt="" coords="31,155,102,181"/>
-<area shape="rect" id="node5" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="5,229,101,256"/>
-<area shape="rect" id="node6" href="$ltc_8c.html" title="Driver for the LTC monitoring chip. " alt="" coords="126,229,173,256"/>
-<area shape="rect" id="node7" href="$meas_8c.html" title="Driver for the measurements needed by the BMS (e.g., I,V,T). " alt="" coords="197,229,262,256"/>
-</map>

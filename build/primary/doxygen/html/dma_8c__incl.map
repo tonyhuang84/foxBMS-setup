@@ -1,6 +1,0 @@
-<map id="dma.c" name="dma.c">
-<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="103,80,178,107"/>
-<area shape="rect" id="node5" href="$dma_8h.html" title="Headers for the driver for the DMA module (encapsulation of the init function). " alt="" coords="211,80,270,107"/>
-<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="95,155,186,181"/>
-<area shape="rect" id="node6" href="$dma__cfg_8h.html" title="Headers for the configuration for the DMA module. " alt="" coords="210,155,293,181"/>
-</map>

@@ -261,7 +261,11 @@
 * Deactivated: CRC code cleaned from driver
 */
 
+#if defined(ITRI_MOD_6_b)
+#define USE_SPI_CRC                     1U
+#else
 #define USE_SPI_CRC                     0U
+#endif
 
 /* Includes ------------------------------------------------------------------*/
 /**

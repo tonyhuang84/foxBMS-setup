@@ -1,5 +1,0 @@
-<map id="DIAG_EntryWrite" name="DIAG_EntryWrite">
-<area shape="rect" id="node2" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="177,5,277,32"/>
-<area shape="rect" id="node3" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="178,56,277,83"/>
-<area shape="rect" id="node4" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="176,107,279,133"/>
-</map>

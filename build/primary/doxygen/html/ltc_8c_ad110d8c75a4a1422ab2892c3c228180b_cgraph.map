@@ -1,6 +1,0 @@
-<map id="LTC_SendEEPROMReadCommand" name="LTC_SendEEPROMReadCommand">
-<area shape="rect" id="node2" href="$ltc_8c.html#af00f29f2d7043b1db3c22730042b26ef" title="configures the data that will be sent to the LTC daisy&#45;chain to read EEPROM on slaves. " alt="" coords="281,5,500,32"/>
-<area shape="rect" id="node4" href="$ltc_8c.html#a66092dc4eb5b34b11d37701763836c41" title="sends command and data to the LTC daisy&#45;chain. " alt="" coords="357,56,424,83"/>
-<area shape="rect" id="node3" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="550,5,665,32"/>
-<area shape="rect" id="node5" href="$ltc__pec_8c.html#ae9dad9a8929c02631ba7e5d5c3b3d5a6" title="calaculates and returns the CRC15 " alt="" coords="548,56,667,83"/>
-</map>

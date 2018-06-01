@@ -1,7 +1,0 @@
-<map id="bal.h" name="bal.h">
-<area shape="rect" id="node2" href="$bal_8c.html" title="Driver for the Balancing module. " alt="" coords="5,80,56,107"/>
-<area shape="rect" id="node3" href="$bms_8c.html" title="bms driver implementation " alt="" coords="80,80,139,107"/>
-<area shape="rect" id="node4" href="$appltask__cfg_8c.html" title="Configuration header for application tasks. " alt="" coords="163,80,269,107"/>
-<area shape="rect" id="node5" href="$sys_8c.html" title="Sys driver implementation. " alt="" coords="294,80,349,107"/>
-<area shape="rect" id="node6" href="$enginetask_8c.html" title="Calls of functions within engine task. " alt="" coords="373,80,469,107"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="bkpsram.h" name="bkpsram.h">
-<area shape="rect" id="node2" href="$diag_8c.html" title="Diag driver implementation. " alt="" coords="5,80,63,107"/>
-<area shape="rect" id="node3" href="$main_8c.html" title="Main function. " alt="" coords="87,80,149,107"/>
-<area shape="rect" id="node4" href="$bkpsram_8c.html" title="Driver for static backup RAM. " alt="" coords="173,80,255,107"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="SOF_Calculate" name="SOF_Calculate">
-<area shape="rect" id="node2" href="$sox_8c.html#ab4846b41d8b868d4a8e9b80b13bf03a1" title="calculates the SoF from voltage data (i.e., minimum and maximum voltage) " alt="" coords="175,5,366,32"/>
-<area shape="rect" id="node3" href="$sox_8c.html#a104e09068ce75ad7641fb45d22ca4f29" title="calculates the SoF from SoC data (i.e., minimum and maximum SoC of cells, both values are equal in ca..." alt="" coords="185,56,356,83"/>
-<area shape="rect" id="node4" href="$sox_8c.html#a46c089bf2aba0a9b913560863494aa1d" title="calculates the SoF from temperature data (i.e., minimum and maximum temperature of cells) ..." alt="" coords="179,107,362,149"/>
-<area shape="rect" id="node5" href="$sox_8c.html#a27285bee12976039b9a07aa8912efd0f" title="get the minimum current values of all variants of SoF calculation " alt="" coords="164,173,377,200"/>
-<area shape="rect" id="node6" href="$sox_8c.html#a56b4fa991373e5b1e3fd9aa70d8046b8" title="calculates minimum of three values " alt="" coords="425,173,620,200"/>
-</map>

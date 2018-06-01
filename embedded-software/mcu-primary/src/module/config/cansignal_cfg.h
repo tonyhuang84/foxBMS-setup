@@ -64,6 +64,7 @@ typedef enum {
     CAN0_MSG_SystemState_0,  //!< BMS general state 0
     CAN0_MSG_SystemState_1,  //!< BMS general state 1
     CAN0_MSG_SystemState_2,  //!< BMS general state 2
+
     CAN0_MSG_SlaveState_0,    //!< Slave state 0
     CAN0_MSG_SlaveState_1,    //!< Slave state 1
 

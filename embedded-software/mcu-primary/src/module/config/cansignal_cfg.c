@@ -84,12 +84,13 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 		//uint8_t configBuf[BS_NR_OF_MODULES];
 
 		for (i=0; i < BS_NR_OF_MODULES; i++) {
-			configBuf[i] = (uint8_t)((config >> i*2) & 0x03) ;
+			configBuf[i] = (uint8_t)((config >> i*2) & 0x03);
 		}
 
 		if (colConfigBuf != NULL) {
 			for (i=0; i < BS_NR_OF_COLUMNS; i++) {
 				colConfigBuf[i] = (uint8_t)((config >> (i + BS_NR_OF_MODULES*2)) & 0x01);
+				//DEBUG_PRINTF_EX("[%d]config: 0x%x\r\n", __LINE__, (uint8_t)((config >> (i + BS_NR_OF_MODULES*2)) ));
 			}
 		}
 	}
@@ -1139,7 +1140,11 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
     static DATA_BLOCK_CELLVOLTAGE_s volt_tab;
     uint16_t modIdx = 0;
     uint32_t cellIdx = 0;
+#if defined(ITRI_MOD_6_g)
+    uint32_t tmp = 2;
+#else
     uint32_t tmp = 0;
+#endif
     uint32_t tmpVal = 0;
     float canData = 0;
 
@@ -1708,6 +1713,16 @@ static uint32_t cans_getvolt(uint32_t sigIdx, void *value) {
         canData = cans_checkLimits((float)tmpVal, sigIdx);
         // Apply offset and factor
         *(uint32_t *)value = (uint32_t)((canData + cans_CAN0_signals_tx[sigIdx].offset) * cans_CAN0_signals_tx[sigIdx].factor);
+
+#if defined(ITRI_MOD_6_g)
+        if (modIdx < BS_NR_OF_MODULES && tmp == 2) {
+        	if (cellIdx < 4 && (tmpVal >= 3600.0 || tmpVal <= 2600.0)) {
+        		DEBUG_PRINTF_EX("[%d:ERR]M[%u] C[%u] data:%s val:%u\r\n", __LINE__, modIdx, cellIdx, float_to_string(canData), (uint32_t)(*(uint32_t *)value));
+        	} else if ((cellIdx == 4 || cellIdx == 5) && (tmpVal > 2600.0 || tmpVal < 2400.0)) {
+        		DEBUG_PRINTF_EX("[%d:ERR]M[%u] C[%u] data:%s val:%u\r\n", __LINE__, modIdx, cellIdx, float_to_string(canData), (uint32_t)(*(uint32_t *)value));
+        	}
+        }
+#endif
     }
 
     return 0;
@@ -2291,6 +2306,20 @@ uint32_t cans_gettemp(uint32_t sigIdx, void *value) {
         //DEBUG_PRINTF_EX("modIdx:%u cellIdx:%u temp:%u\r\n", modIdx, cellIdx, tmpVal);
         if (cellIdx >= 6) {
         	*(uint32_t *)value = (uint32_t)temp_tab.temperature[(modIdx * BS_NR_OF_TEMP_SENSORS_PER_MODULE) + cellIdx];
+
+#if defined(ITRI_MOD_6_g)
+			if (modIdx < BS_NR_OF_MODULES) {
+				uint32_t gpioIdx = cellIdx - 6;
+				//if (cellIdx == 2 && ((uint32_t)(*(uint32_t *)value) < 900 || (uint32_t)(*(uint32_t *)value) > 1600)) {
+				//	DEBUG_PRINTF_EX("[%d:ERR]M[%u] gpio[%u] tmp:%s val:%u\r\n", __LINE__, modIdx, gpioIdx, float_to_string(tmpVal), (uint32_t)(*(uint32_t *)value));
+				//} else
+				if (cellIdx == 4 && ((uint32_t)(*(uint32_t *)value) > 2500)) {
+					DEBUG_PRINTF_EX("[%d:ERR]M[%u] gpio[%u] tmp:%s val:%u\r\n", __LINE__, modIdx, gpioIdx, float_to_string(tmpVal), (uint32_t)(*(uint32_t *)value));
+				} else if (cellIdx == 5 && ((uint32_t)(*(uint32_t *)value) > 3100 || (uint32_t)(*(uint32_t *)value) < 2900)) {
+					DEBUG_PRINTF_EX("[%d:ERR]M[%u] gpio[%u] tmp:%s val:%u\r\n", __LINE__, modIdx, gpioIdx, float_to_string(tmpVal), (uint32_t)(*(uint32_t *)value));
+				}
+			}
+#endif
         }
 #endif
     }

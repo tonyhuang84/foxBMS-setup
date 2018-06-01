@@ -6,12 +6,15 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="INFO" key="selection"/>
-		<item value="true" key="casesensitive"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="invoking"/>
+			<item value="in"/>
+			<item value="ITRI_MOD_9"/>
 			<item value="INFO"/>
 			<item value="PEC err"/>
 			<item value="trace"/>
@@ -19,14 +22,6 @@
 			<item value="GPIO"/>
 			<item value="READGPIO"/>
 			<item value="bms"/>
-			<item value="ITRI_MOD_2"/>
-			<item value="GETTIME"/>
-			<item value="ltc_cmdRDCVA"/>
-			<item value="LTC_STATEMACH_READVOLTAGE"/>
-			<item value="LTC_STATEMACH_MUXMEASUREMENT"/>
-			<item value="LTC_SaveAllGPIOs"/>
-			<item value="statereq == "/>
-			<item value="LTC_STATE_READVOLTAGE_REQUEST"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

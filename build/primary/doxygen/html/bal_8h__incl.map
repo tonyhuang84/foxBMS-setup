@@ -1,6 +1,0 @@
-<map id="bal.h" name="bal.h">
-<area shape="rect" id="node2" href="$bal__cfg_8h.html" title="Header for the configuration for the driver for balancing. " alt="" coords="91,80,166,107"/>
-<area shape="rect" id="node3" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="5,155,145,181"/>
-<area shape="rect" id="node4" href="$general_8h.html" title="Settings for the system. " alt="" coords="91,229,166,256"/>
-<area shape="rect" id="node6" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="135,304,226,331"/>
-</map>

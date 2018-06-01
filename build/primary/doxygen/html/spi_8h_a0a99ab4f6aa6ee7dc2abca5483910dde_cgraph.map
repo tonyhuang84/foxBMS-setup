@@ -1,4 +1,0 @@
-<map id="HAL_SPI_TxCpltCallback" name="HAL_SPI_TxCpltCallback">
-<area shape="rect" id="node2" href="$spi_8c.html#a91406c314b72fede70c5b70edfb75dec" title="sets Chip Select high to end SPI transmission. " alt="" coords="223,5,325,32"/>
-<area shape="rect" id="node3" href="$io_8c.html#a1709c6b36be8ee2ebaf5e076300b6a93" title="Sets the state of a pin. " alt="" coords="373,31,465,57"/>
-</map>

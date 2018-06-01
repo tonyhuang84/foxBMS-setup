@@ -8,7 +8,7 @@
 #define BUILD_VERSION "1.0"
 #define BUILD_VENDOR "Fraunhofer IISB"
 #define BUILD_LDSCRIPT "D:\itri\foxBMS\src\foxBMS-setup\"
-#define BUILD_NUMBER "a7d02c4"
+#define BUILD_NUMBER "4b3e2d3"
 #define TOOLCHAIN_WAF_ENABLED 1
 #define USE_DRIVER_HAL 1
 #define INCLUDE_eTaskGetState 1

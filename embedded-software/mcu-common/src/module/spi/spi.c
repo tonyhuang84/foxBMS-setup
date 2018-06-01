@@ -46,12 +46,21 @@
 #include "mcu.h"
 #include "io.h"
 #include "intermcu.h"
+#include "uart.h"
 
 /*================== Macros and Definitions ===============================*/
 
 /*================== Constant and Variable Definitions ====================*/
 const uint8_t spi_cmdDummy[1]={0x00};
-
+#if defined(ITRI_MOD_6_d)
+	static uint8_t g_CS_state = 0;
+#endif
+#if defined(ITRI_MOD_6_i)
+	static SPI_STATE_s spi_state = {
+	    .transmit_ongoing       = FALSE,
+	    .counter                = 0,
+	};
+#endif
 /*================== Function Prototypes ==================================*/
 
 
@@ -113,6 +122,9 @@ void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi) {
     if (hspi  ==  &spi_devices[0])        // Iso-SPI Main
     {
         SPI_UnsetCS(1);
+#if defined(ITRI_MOD_6_i)
+        spi_state.transmit_ongoing = FALSE;
+#endif
     }
     if (hspi  ==  &spi_devices[1])        // Eeprom
     {
@@ -129,6 +141,9 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
     if (hspi  ==  &spi_devices[0])        // Iso-SPI Main
     {
         SPI_UnsetCS(1);
+#if defined(ITRI_MOD_6_i)
+        spi_state.transmit_ongoing = FALSE;
+#endif
     }
 
     if (hspi  ==  &spi_devices[1])        // Eeprom
@@ -138,6 +153,15 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
 #endif
     }
 }
+
+#if defined(ITRI_MOD_6_d)
+void HAL_SPI_ErrorCallback(SPI_HandleTypeDef *hspi) {
+	DEBUG_PRINTF_EX("[%s:%d]HAL_SPI_ErrorCallback\r\n", __FILE__, __LINE__);
+	if (hspi  ==  &spi_devices[0]) {
+
+	}
+}
+#endif
 
 /*void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
     if(hspi == &spi_devices[2]){
@@ -156,6 +180,13 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
 
 
 void SPI_SetCS(uint8_t busID) {
+
+#if defined(ITRI_MOD_6_d)
+	if (busID == 1 && g_CS_state > 0) {
+		DEBUG_PRINTF_EX("[%s:%d]ERR: g_CS_state(%u) invalid!!! \r\n", __FILE__, __LINE__, g_CS_state);
+	}
+	g_CS_state++;
+#endif
 
     switch(busID) {
         case 1:
@@ -189,11 +220,17 @@ void SPI_SetCS(uint8_t busID) {
 #endif
             break;
     }
-
 }
 
 
 void SPI_UnsetCS(uint8_t busID) {
+
+#if defined(ITRI_MOD_6_d)
+	if (busID == 1 && g_CS_state == 0) {
+		DEBUG_PRINTF_EX("[%s:%d]ERR: g_CS_state(%u) invalid!!!\r\n", __FILE__, __LINE__, g_CS_state);
+	}
+	g_CS_state--;
+#endif
 
     switch(busID) {
         case 1:
@@ -242,12 +279,23 @@ STD_RETURN_TYPE_e SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t
         return E_NOT_OK;
     SPI_Wait();
 #endif
+#if 0 //defined(ITRI_MOD_6_d)
+    SPI_SetCS(1);
+   	statusSPI = HAL_SPI_Transmit(hspi, spi_cmdDummy, sizeof(spi_cmdDummy), HAL_MAX_DELAY);
+   	if(statusSPI != E_OK) {
+   		DEBUG_PRINTF_EX("[%s:%d]dummy cmd err!!!\r\n", __FILE__, __LINE__);
+   	    return E_NOT_OK;
+   	}
+   	SPI_UnsetCS(1);
+#endif
 
     SPI_SetCS(1);
     statusSPI = HAL_SPI_Transmit_DMA(hspi, pData, Size);
 
-    if(statusSPI != HAL_OK)
+    if(statusSPI != HAL_OK) {
+    	DEBUG_PRINTF_EX("[%s:%d]statusSPI:%d\r\n", __FILE__, __LINE__, statusSPI);
         retVal = E_NOT_OK;
+    }
 
     return retVal;
 
@@ -267,13 +315,45 @@ STD_RETURN_TYPE_e SPI_TransmitReceive(SPI_HandleTypeDef *hspi, uint8_t *pTxData,
         return E_NOT_OK;
     SPI_Wait();
 #endif
+#if defined(ITRI_MOD_6_d)
+    if (1/*hspi->State == HAL_SPI_STATE_READY*/) {
+    	uint8_t transmitArray[] = {0x00, 0x02, 0x2B, 0x0A};
+		SPI_SetCS(1);
+		statusSPI = HAL_SPI_Transmit(hspi, transmitArray, sizeof(transmitArray), 1000);
+		if(statusSPI != E_OK) {
+			DEBUG_PRINTF_EX("[%s:%d]dummy cmd err (statusSPI:%u)!!! pTxData[0x%x 0x%x]\r\n", __FILE__, __LINE__, statusSPI, pTxData[0], pTxData[1]);
+			SPI_UnsetCS(1);
+			return E_NOT_OK;
+		}
+		SPI_UnsetCS(1);
+    }
+#endif
 
     SPI_SetCS(1);
+
     statusSPI = HAL_SPI_TransmitReceive_DMA(hspi, pTxData, pRxData, Size);
-    if(statusSPI != HAL_OK)
+    if(statusSPI != HAL_OK) {
+    	DEBUG_PRINTF_EX("[%s:%d]statusSPI:%d\r\n", __FILE__, __LINE__, statusSPI);
         retVal = E_NOT_OK;
+    }
 
     return retVal;
 
 }
+
+#if defined(ITRI_MOD_6_i)
+extern STD_RETURN_TYPE_e SPI_IsTransmitOngoing(void) {
+    STD_RETURN_TYPE_e retval = FALSE;
+
+    retval    =  spi_state.transmit_ongoing;
+
+    return (retval);
+}
+
+extern void SPI_SetTransmitOngoing(void) {
+
+    spi_state.transmit_ongoing = TRUE;
+
+}
+#endif
 

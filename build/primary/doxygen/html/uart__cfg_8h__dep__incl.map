@@ -1,9 +1,0 @@
-<map id="uart_cfg.h" name="uart_cfg.h">
-<area shape="rect" id="node2" href="$uart__cfg_8c.html" title="Configuration for the UART. " alt="" coords="141,80,220,107"/>
-<area shape="rect" id="node3" href="$uart_8h.html" title="Headers for the driver for the UART. " alt="" coords="244,80,299,107"/>
-<area shape="rect" id="node4" href="$diag_8c.html" title="Diag driver implementation. " alt="" coords="5,155,63,181"/>
-<area shape="rect" id="node5" href="$stm32f4xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="87,155,194,181"/>
-<area shape="rect" id="node6" href="$stm32f7xx__it_8c.html" title="HAL IT Module, definition of IRQ handlers for hardware units, based on project examples Templates\Src..." alt="" coords="218,155,325,181"/>
-<area shape="rect" id="node7" href="$main_8c.html" title="Main function. " alt="" coords="349,155,410,181"/>
-<area shape="rect" id="node8" href="$uart_8c.html" title="Driver for the UART. " alt="" coords="435,155,489,181"/>
-</map>

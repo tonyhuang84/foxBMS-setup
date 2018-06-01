@@ -1,7 +1,0 @@
-<map id="nvic_cfg.h" name="nvic_cfg.h">
-<area shape="rect" id="node2" href="$nvic__cfg_8c.html" title="Configuration of interrupts. " alt="" coords="5,80,84,107"/>
-<area shape="rect" id="node3" href="$nvic_8h.html" title="Functions for setting and enabling interrupts, headers. " alt="" coords="108,80,163,107"/>
-<area shape="rect" id="node4" href="$main_8c.html" title="Main function. " alt="" coords="22,155,83,181"/>
-<area shape="rect" id="node5" href="$nvic_8c.html" title="Functions for setting and enabling interrupts. " alt="" coords="108,155,163,181"/>
-<area shape="rect" id="node6" href="$os_8c.html" title="Implementation of the tasks used by the system. " alt="" coords="187,155,233,181"/>
-</map>

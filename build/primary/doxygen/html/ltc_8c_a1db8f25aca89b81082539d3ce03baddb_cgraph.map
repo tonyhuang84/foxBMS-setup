@@ -1,6 +1,0 @@
-<map id="LTC_BalanceControl" name="LTC_BalanceControl">
-<area shape="rect" id="node2" href="$ltc_8c.html#a5cd457b3c7e33f5a34fe27d1e2fbd598" title="gets the balancing orders from the database. " alt="" coords="193,5,372,47"/>
-<area shape="rect" id="node4" href="$ltc_8c.html#a66092dc4eb5b34b11d37701763836c41" title="sends command and data to the LTC daisy&#45;chain. " alt="" coords="249,71,316,98"/>
-<area shape="rect" id="node3" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="422,13,537,39"/>
-<area shape="rect" id="node5" href="$ltc__pec_8c.html#ae9dad9a8929c02631ba7e5d5c3b3d5a6" title="calaculates and returns the CRC15 " alt="" coords="420,71,539,98"/>
-</map>

@@ -63,7 +63,11 @@
  * defines the BAUD rate of the CAN
  */
 //#define CAN_BAUDRATE 1000000
+#if defined(ITRI_MOD_10)
+#define CAN_BAUDRATE 1000000
+#else
 #define CAN_BAUDRATE 500000
+#endif
 //#define CAN_BAUDRATE 250000
 //#define CAN_BAUDRATE 125000
 

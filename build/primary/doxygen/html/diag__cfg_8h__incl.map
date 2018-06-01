@@ -1,8 +1,0 @@
-<map id="diag_cfg.h" name="diag_cfg.h">
-<area shape="rect" id="node2" href="$batterysystem__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells, temperature sensors) " alt="" coords="5,80,145,107"/>
-<area shape="rect" id="node6" href="$diag__id__cfg_8h.html" title="This file contains basic definitions in order to use an abstracted diagnosis. " alt="" coords="170,80,269,107"/>
-<area shape="rect" id="node7" href="$rtc_8h.html" title="Headers for the driver for the real time clock. " alt="" coords="293,80,341,107"/>
-<area shape="rect" id="node3" href="$general_8h.html" title="Settings for the system. " alt="" coords="38,155,113,181"/>
-<area shape="rect" id="node5" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="110,229,201,256"/>
-<area shape="rect" id="node8" href="$rtc__cfg_8h.html" title="Headers for the configuration for the real time clock. " alt="" coords="231,155,303,181"/>
-</map>

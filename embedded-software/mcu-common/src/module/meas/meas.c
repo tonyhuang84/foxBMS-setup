@@ -106,17 +106,28 @@ void MEAS_Ctrl(void)
                 switch(ltc_taskcycle)
                 {
                 case 2:
-                    LTC_SetStateRequest(LTC_STATE_VOLTAGEMEASUREMENT_REQUEST,LTC_VOLTAGE_MEASUREMENT_MODE,LTC_ADCMEAS_ALLCHANNEL, LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
+                    LTC_SetStateRequest(LTC_STATE_VOLTAGEMEASUREMENT_REQUEST,LTC_VOLTAGE_MEASUREMENT_MODE,LTC_ADCMEAS_ALLCHANNEL,LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
                     break;
 
                 case 3:
-                    LTC_SetStateRequest(LTC_STATE_READVOLTAGE_REQUEST,LTC_VOLTAGE_MEASUREMENT_MODE,LTC_ADCMEAS_ALLCHANNEL, LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
+                    LTC_SetStateRequest(LTC_STATE_READVOLTAGE_REQUEST,LTC_VOLTAGE_MEASUREMENT_MODE,LTC_ADCMEAS_ALLCHANNEL,LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
+#if defined(ITRI_MOD_6_f)
+                    if (ltc_ebm_cmd > LTC_EBM_NONE) ltc_taskcycle = (4-1);
+                    else							ltc_taskcycle = (9-1); // jump to read all GPIOs
+#endif
+#if defined(ITRI_MOD6_e)
+                    ltc_taskcycle = (4-1);
+#endif
                     break;
 
                 case 4:
                     LTC_SaveVoltages();
 #if defined(ITRI_MOD_2)
+	#if defined(ITRI_MOD_6_e)
+                    if (1) {
+	#else
                     if (ltc_ebm_cmd > LTC_EBM_NONE) {
+	#endif
                     	LTC_SetStateRequest(LTC_STATE_EBMCONTROL_REQUEST,LTC_VOLTAGE_MEASUREMENT_MODE,LTC_ADCMEAS_ALLCHANNEL, LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
                     }
 #else
@@ -159,6 +170,9 @@ void MEAS_Ctrl(void)
                     break;
 
                 case 9:
+#if defined(ITRI_MOD_6_f)
+                	LTC_SaveVoltages();
+#endif
                     LTC_SetStateRequest(LTC_STATE_ALLGPIOMEASUREMENT_REQUEST,LTC_ADCMODE_NORMAL_DCP0,LTC_ADCMEAS_ALLCHANNEL, LTC_NUMBER_OF_MUX_MEASUREMENTS_PER_CYCLE);
                     break;
 

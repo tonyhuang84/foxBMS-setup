@@ -1,7 +1,0 @@
-<map id="OS_TSK_Cyclic_10ms" name="OS_TSK_Cyclic_10ms">
-<area shape="rect" id="node2" href="$enginetask_8c.html#af6d38da27fba7f2fcaf23578f3d8c9c3" title="Task for system&#45; and bmscontrol and SOX algorithms. " alt="" coords="208,56,372,83"/>
-<area shape="rect" id="node3" href="$can_8c.html#a1aef8b8c5b4c2a4e50033d65630a473e" title="Transmits a can message from transmit buffer. " alt="" coords="429,31,557,57"/>
-<area shape="rect" id="node6" href="$wdg_8c.html#a945085e57bde99f27c7ecea1c1ec5714" title="refreshes independent watchdog " alt="" coords="420,81,567,108"/>
-<area shape="rect" id="node4" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="615,5,769,32"/>
-<area shape="rect" id="node5" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="619,56,765,83"/>
-</map>

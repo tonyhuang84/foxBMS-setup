@@ -64,7 +64,11 @@ SPI_HandleTypeDef spi_devices[] = {
         .Init.FirstBit = SPI_FIRSTBIT_MSB,
         .Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_128,    // SPI clock = APB2_CLOCK / 128 = 84 / 128 = 656.25 kHz
         .Init.TIMode = SPI_TIMODE_DISABLED,
+#if defined(ITRI_MOD_6_b)
+		.Init.CRCCalculation = SPI_CRCCALCULATION_ENABLE,
+#else
         .Init.CRCCalculation = SPI_CRCCALCULATION_DISABLED,
+#endif
         .Init.CRCPolynomial = 1,
         .hdmarx = &dma_devices[0],
         .hdmatx = &dma_devices[1]

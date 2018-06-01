@@ -1,5 +1,0 @@
-<map id="LTC_SetPortExpander" name="LTC_SetPortExpander">
-<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="204,5,319,32"/>
-<area shape="rect" id="node3" href="$ltc_8c.html#a66092dc4eb5b34b11d37701763836c41" title="sends command and data to the LTC daisy&#45;chain. " alt="" coords="228,56,295,83"/>
-<area shape="rect" id="node4" href="$ltc__pec_8c.html#ae9dad9a8929c02631ba7e5d5c3b3d5a6" title="calaculates and returns the CRC15 " alt="" coords="367,56,485,83"/>
-</map>

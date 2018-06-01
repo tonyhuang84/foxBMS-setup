@@ -1,6 +1,0 @@
-<map id="spi_cfg.h" name="spi_cfg.h">
-<area shape="rect" id="node3" href="$io_8h.html" title="Header for the driver for the I/O ports (pins).. " alt="" coords="103,80,145,107"/>
-<area shape="rect" id="node4" href="$io__cfg_8h.html" title="Headers for the configuration for the driver for the I/O ports (pins). " alt="" coords="125,155,192,181"/>
-<area shape="rect" id="node5" href="$io__package__cfg_8h.html" title="configuration header of the io&#45;module " alt="" coords="112,229,235,256"/>
-<area shape="rect" id="node6" href="$io__mcu__cfg_8h.html" title="Configuration for the I/O ports for MCU0 (primary) " alt="" coords="259,229,357,256"/>
-</map>

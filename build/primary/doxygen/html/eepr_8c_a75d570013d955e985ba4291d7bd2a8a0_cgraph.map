@@ -1,7 +1,0 @@
-<map id="EEPR_DataCtrl" name="EEPR_DataCtrl">
-<area shape="rect" id="node2" href="$eepr_8c.html#a6f557dc8e24353ebbece6b57485501ca" title="returns actual state of EEPROM state machine " alt="" coords="189,5,306,32"/>
-<area shape="rect" id="node3" href="$eepr_8c.html#aefac79ed7e71cac9d3211a712fad2461" title="requests a state change to be handled by eeprom state machine (used by external modules) ..." alt="" coords="165,56,329,83"/>
-<area shape="rect" id="node4" href="$os_8c.html#a5573d7c2221a3f3b9cfe5c109603b441" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="391,5,545,32"/>
-<area shape="rect" id="node5" href="$eepr_8c.html#aab7b97a818e044d5be21a00339c77f91" title="checks if the transition from one state to another one is allowed " alt="" coords="377,56,559,83"/>
-<area shape="rect" id="node6" href="$os_8c.html#a7e5b7892152952d2109c89baa0add1a8" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR. " alt="" coords="395,107,541,133"/>
-</map>

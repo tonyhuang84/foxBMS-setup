@@ -1,4 +1,0 @@
-<map id="LTC_Send_I2C_Command" name="LTC_Send_I2C_Command">
-<area shape="rect" id="node2" href="$ltc_8c.html#a66092dc4eb5b34b11d37701763836c41" title="sends command and data to the LTC daisy&#45;chain. " alt="" coords="228,5,295,32"/>
-<area shape="rect" id="node3" href="$ltc__pec_8c.html#ae9dad9a8929c02631ba7e5d5c3b3d5a6" title="calaculates and returns the CRC15 " alt="" coords="343,5,461,32"/>
-</map>

@@ -133,7 +133,7 @@ def build(bld):
             '-fdata-sections', '-Wall']
 
     if bld.env.target == 'release':
-        bld.program(source=srcs + [d],
+        bld.program(source=srcs + startupscript,
                     target=bld.env.basename + '.elf',
                     includes=includes,
                     features='strip',

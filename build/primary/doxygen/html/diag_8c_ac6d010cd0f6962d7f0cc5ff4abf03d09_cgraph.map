@@ -1,6 +1,0 @@
-<map id="DIAG_GeneralHandler" name="DIAG_GeneralHandler">
-<area shape="rect" id="node2" href="$diag_8c.html#a60e0b85f3279b672507f3e692e109372" title="DIAG_EntryWrite adds an error entry. " alt="" coords="203,56,325,83"/>
-<area shape="rect" id="node3" href="$rtc_8c.html#a1a6c518bfabf1187db2d330ed6e9d636" title="gets RTC time " alt="" coords="375,5,475,32"/>
-<area shape="rect" id="node4" href="$rtc_8c.html#a432399abca2147611a2123349ec54a12" title="gets RTC date " alt="" coords="375,56,474,83"/>
-<area shape="rect" id="node5" href="$misc_8c.html#a5d1052dd1f18fffd9dd9901271da6c2c" title="U8ToDecascii is a helper function which converts U8 to ASCII. " alt="" coords="373,107,476,133"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="SOC_Init" name="SOC_Init">
-<area shape="rect" id="node2" href="$database_8c.html#ace052ca2c5098dcade967992ecebc8bf" title="Reads a datablock in database by value. " alt="" coords="148,5,263,32"/>
-<area shape="rect" id="node3" href="$bkpsram__cfg_8c.html#aad2b21ba7b320c432a7a7da2471caa1b" title="Gets the soc data saved in the backup SRAM. " alt="" coords="152,56,259,83"/>
-<area shape="rect" id="node5" href="$database_8c.html#a71c46da113f917afb39cc80c56e598be" title="Stores a datablock in database. " alt="" coords="128,107,283,133"/>
-<area shape="rect" id="node4" href="$eepr__cfg_8c.html#ab14595ae571d9012a9650b3e2da964a5" title="EEPR_CalcChecksum" alt="" coords="331,56,484,83"/>
-</map>

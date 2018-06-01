@@ -55,6 +55,7 @@ def start_process(cmd, supress_output=False):
         supress_output (bool): Indicates if logging is active for the build .
     """
     logging.debug(cmd)
+    logging.error("[tony]cmd:%r" % (cmd))
     proc = subprocess.Popen(cmd, stdout=None, stderr=subprocess.PIPE)
     out, err = proc.communicate()
     rtn_code = proc.returncode

@@ -1,6 +1,0 @@
-<map id="sdram.c" name="sdram.c">
-<area shape="rect" id="node2" href="$general_8h.html" title="Settings for the system. " alt="" coords="29,80,104,107"/>
-<area shape="rect" id="node5" href="$sdram_8h.html" title="Headers for the driver for the volatile SDRAM. " alt="" coords="137,80,207,107"/>
-<area shape="rect" id="node4" href="$std__types_8h.html" title="Definition of foxBMS standard types. " alt="" coords="21,155,112,181"/>
-<area shape="rect" id="node6" href="$sdram__cfg_8h.html" title="Headers for the external SDRAM configuration and data definitions. " alt="" coords="136,155,229,181"/>
-</map>

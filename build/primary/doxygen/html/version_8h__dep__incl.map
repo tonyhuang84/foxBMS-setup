@@ -1,7 +1,0 @@
-<map id="version.h" name="version.h">
-<area shape="rect" id="node2" href="$main_8c.html" title="Main function. " alt="" coords="5,155,67,181"/>
-<area shape="rect" id="node3" href="$version_8c.html" title="Functions for setting a version number. " alt="" coords="37,80,110,107"/>
-<area shape="rect" id="node4" href="$chksum_8h.html" title="Header for the driver for the checksum calculation. " alt="" coords="134,80,213,107"/>
-<area shape="rect" id="node5" href="$chksum_8c.html" title="Driver for the checksum calculation. " alt="" coords="211,155,290,181"/>
-<area shape="rect" id="node6" href="$mcu_8c.html" title="Functions for the MCU to manage time and interrupts. " alt="" coords="128,155,187,181"/>
-</map>
