@@ -366,7 +366,8 @@ static COL_STATE_SETTING col_state_setting[] = {
 		// column 0
 		{{0, 1, LTC_EBM_COL_STATE_NOT_READ},  {1, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {2, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 		// column 1
-		{{5, 1, LTC_EBM_COL_STATE_NOT_READ},  {6, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {7, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
+		//{{5, 1, LTC_EBM_COL_STATE_NOT_READ},  {6, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {7, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
+		{{4, 1, LTC_EBM_COL_STATE_NOT_READ},  {5, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {6, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 		// column 2
 		{{10, 1, LTC_EBM_COL_STATE_NOT_READ}, {11, 1, LTC_EBM_COL_STATE_NO_CHANGE}, {12, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 		// column 3
@@ -449,6 +450,7 @@ static void LTC_EBM_SetColState(uint16_t modNo, uint8_t* txBuf, uint8_t isStart)
 	if (isStart == 0 && (modNo % BS_NR_OF_ROWS) == (BS_NR_OF_ROWS - 1)) {
 		col_state_setting[colNo].state.gpioVal = LTC_EBM_COL_STATE_NOT_READ;
 	}
+	//DEBUG_PRINTF_EX("col:%u mod:%u txBuf:0x%x\r\n", colNo, modNo, txBuf[0]);
 }
 
 static STD_RETURN_TYPE_e LTC_EBM_SetEBColState(uint8_t isStart) {
@@ -1068,7 +1070,7 @@ void LTC_Trigger(void) {
 	   }
 #if defined(ITRI_MOD_9)
 	   if (ltc_state.check_spi_flag == 3) {
-		   ltc_state.timer = 11;
+		   ltc_state.timer = 51;
 	   }
 #endif
 	   ltc_state.check_spi_flag = 0;	// reset flag
@@ -1762,7 +1764,7 @@ void LTC_Trigger(void) {
                 ltc_state.state = LTC_STATEMACH_IDLE;
 #if defined(ITRI_MOD_6_i)
                 ltc_state.check_spi_flag = 0;
-                ltc_state.timer = 0;
+                //ltc_state.timer = 0;
 #endif
             }
             break;
@@ -1853,6 +1855,7 @@ void LTC_Trigger(void) {
 					SPI_SetTransmitOngoing();
 #endif
 					retVal = LTC_EBM_SetEBColState(1);	// TODO:
+					//ltc_ebm_cmd = LTC_EBM_NONE;
 				}
 #endif
 
@@ -1894,7 +1897,7 @@ void LTC_Trigger(void) {
 #endif
 
 					retVal =  LTC_EBM_SetEBColState(0);	// TODO:
-					ltc_ebm_cmd = LTC_EBM_NONE;
+					//ltc_ebm_cmd = LTC_EBM_NONE;
 				}
 #endif
 
@@ -1915,6 +1918,9 @@ void LTC_Trigger(void) {
                     ltc_state.ErrRetryCounter = 0;
                     if (ltc_ebm_cmd != LTC_EBM_NONE) {
                     	ltc_state.substate = LTC_PROC2_EBMCONTROL;
+#if defined(ITRI_MOD_6_i)
+                    	ltc_state.timer += 10;
+#endif
                     } else {
 #if defined(ITRI_MOD_6_i)
                     	ltc_state.timer += 10;
@@ -1924,6 +1930,39 @@ void LTC_Trigger(void) {
                 }
 			} else if (ltc_state.substate == LTC_PROC2_EBMCONTROL) {
 				LTC_SAVELASTSTATES();
+
+#if defined(ITRI_MOD_9)
+				if (ltc_ebm_cmd == LTC_EBM_EB_COL_CTRL) {
+#if defined(ITRI_MOD_6_i)
+					ltc_state.check_spi_flag = 1;
+					SPI_SetTransmitOngoing();
+#endif
+
+					retVal =  LTC_EBM_SetEBColState(0);	// TODO:
+					ltc_ebm_cmd = LTC_EBM_NONE;
+				}
+#endif
+
+				if (retVal != E_OK) {
+
+                    ++ltc_state.ErrRetryCounter;
+                    ltc_state.timer = LTC_STATEMACH_SEQERRTTIME;
+                    if (ltc_state.ErrRetryCounter > LTC_TRANSMIT_SPIERRLIMIT) {
+
+                        ltc_state.timer = LTC_STATEMACH_SHORTTIME;
+                        ltc_state.state = LTC_STATEMACH_ERROR_SPIFAILED;
+                        ltc_state.substate = LTC_ERROR_ENTRY;
+                        break;
+                    }
+
+                } else {
+                    ltc_state.timer = ltc_state.commandDataTransferTime;
+                    ltc_state.ErrRetryCounter = 0;
+#if defined(ITRI_MOD_6_i)
+                    ltc_state.timer += 10;
+#endif
+                    ltc_state.substate = LTC_EXIT_EBMCONTROL;
+                }
 			} else if (ltc_state.substate == LTC_EXIT_EBMCONTROL) {
 				ltc_ebm_cmd = LTC_EBM_NONE;
 
@@ -1933,7 +1972,7 @@ void LTC_Trigger(void) {
                 ltc_state.substate = LTC_ENTRY;
                 ltc_state.state = LTC_STATEMACH_IDLE;
 #if defined(ITRI_MOD_6_i)
-                ltc_state.timer = 0;
+                //ltc_state.timer = 0;
 #endif
 			}
 			break;
@@ -3039,7 +3078,7 @@ void LTC_Trigger(void) {
                 ltc_state.substate = LTC_ENTRY;
                 ltc_state.state = LTC_STATEMACH_IDLE;
 #if defined(ITRI_MOD_6_i)
-                ltc_state.timer = 0;
+                //ltc_state.timer = 0;
 #endif
 
             }
@@ -3368,7 +3407,22 @@ static STD_RETURN_TYPE_e LTC_Init(void) {
     // now set REFON bit to 1
     // data for the configuration
     for (i=0; i < LTC_N_LTC; i++) {
+#if defined(ITRI_MOD_9)
+        uint16_t j = BS_NR_OF_MODULES-i-1;
 
+        // FC = disable all pull-downs, REFON = 1
+        ltc_tmpTXbuffer[0+(1*j)*6] = 0xFC;
+        ltc_tmpTXbuffer[1+(1*j)*6] = 0x00;
+        ltc_tmpTXbuffer[2+(1*j)*6] = 0x00;
+        ltc_tmpTXbuffer[3+(1*j)*6] = 0x00;
+        ltc_tmpTXbuffer[4+(1*j)*6] = 0x00;
+        ltc_tmpTXbuffer[5+(1*j)*6] = 0x00;
+
+        // config gpio1 of SPM's reset and disable bit as 0
+    	LTC_EBM_SetColState(i,
+							&ltc_tmpTXbuffer[0+(j)*6],
+							0);
+#else
         // FC = disable all pull-downs, REFON = 1
         ltc_tmpTXbuffer[0+(1*i)*6] = 0xFC;
         ltc_tmpTXbuffer[1+(1*i)*6] = 0x00;
@@ -3376,11 +3430,6 @@ static STD_RETURN_TYPE_e LTC_Init(void) {
         ltc_tmpTXbuffer[3+(1*i)*6] = 0x00;
         ltc_tmpTXbuffer[4+(1*i)*6] = 0x00;
         ltc_tmpTXbuffer[5+(1*i)*6] = 0x00;
-#if defined(ITRI_MOD_9)
-        // config gpio1 of SPM's reset and disable bit as 0
-    	LTC_EBM_SetColState(i,
-							&ltc_tmpTXbuffer[0+(i)*6],
-							0);
 #endif
     }
 
@@ -3405,6 +3454,15 @@ static STD_RETURN_TYPE_e LTC_Init(void) {
     }  // end for
 
     statusSPI = LTC_SendData(ltc_DataBufferSPI_TX_with_PEC_init);
+    //DEBUG_PRINTF_EX("ltc_DataBufferSPI_TX_with_PEC_init:0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x \r\n",
+    //		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*0],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*1],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*2],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*3],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*4],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*5],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*6],
+	//		ltc_DataBufferSPI_TX_with_PEC_init[4 + 8*7]);
 
     if (statusSPI != E_OK) {
         retVal = E_NOT_OK;
