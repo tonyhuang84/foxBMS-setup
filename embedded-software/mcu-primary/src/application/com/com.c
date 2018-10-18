@@ -205,7 +205,7 @@ uint32_t rb_cmd_set_ebm_eb_col_state(char* params) {
 	}
 
 	LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)ebState, (void*)colState, NULL, NULL);
-	//DEBUG_PRINTF_EX("rb_cmd_set_ebm_eb_col_state done\r\n");
+	DEBUG_PRINTF_EX("[com.c:%d]rb_cmd_set_ebm_eb_col_state done\r\n", __LINE__);
 }
 #endif
 
@@ -251,7 +251,7 @@ RB_CMD_s rb_cmds[] = {
 
 uint32_t exe_rb_cmd(char* com_receivedbyte) {
 	uint32_t i, cmd_len = sizeof(rb_cmds) / sizeof(rb_cmds[0]);
-	char cmdStr[64];
+	char cmdStr[128];
 	char* pCmd = NULL;
 
 	strcpy(cmdStr, com_receivedbyte);

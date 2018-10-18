@@ -66,6 +66,7 @@
 	#define	ITRI_MOD_9			// supporting SPM on/off
 	#define ITRI_MOD_9_a		// supporting async. EBM control cmd
 	//#define ITRI_MOD_10			// change CAN baud rate 0.5M -> 1Mbps; NOTE: remember update RPi CAN bitrate simultaneously
+	#define ITRI_MOD_11			// support heart beat
 
 	//#define ITRI_EBM_CHROMA_V2	// disable:H(GPIO2)/H(GPIO4), bypass:L/H, enable:L/L
 	#define ITRI_EBM_CHROMA_V3	// disable:H(GPIO2)/H(GPIO4), bypass:L/L, enable:L/H

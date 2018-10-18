@@ -89,9 +89,48 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 
 		if (colConfigBuf != NULL) {
 			for (i=0; i < BS_NR_OF_COLUMNS; i++) {
+				//colConfigBuf[i] = (uint8_t)((config >> (i + BS_NR_OF_MODULES)*2) & 0x03);
 				colConfigBuf[i] = (uint8_t)((config >> (i + BS_NR_OF_MODULES*2)) & 0x01);
 				//DEBUG_PRINTF_EX("[%d]config: 0x%x\r\n", __LINE__, (uint8_t)((config >> (i + BS_NR_OF_MODULES*2)) ));
 			}
+		}
+	}
+#endif
+#if defined(ITRI_MOD_11)
+	typedef struct {
+		uint8_t		is_connect_can_dev;
+		uint32_t	timestamp;
+	} CAN_HEART_BEAT_s;
+	static CAN_HEART_BEAT_s cans_heart_beat = {0, 0};
+	static uint32_t can_heartbeat_max_diff = 0;	// for debug
+
+	void cans_check_heart_beat() {
+		if (cans_heart_beat.is_connect_can_dev == 1) {
+			uint32_t diff = MCU_GetTimeStamp() - cans_heart_beat.timestamp;
+			if (diff > 2100) {
+				uint8_t configBuf[BS_NR_OF_MODULES];
+				uint8_t colConfigBuf[BS_NR_OF_COLUMNS];
+				uint32_t i;
+
+				DEBUG_PRINTF_EX("[%s:%d]heartbeat losss -> all disable (diff:%u)\r\n", __FILE__, __LINE__, diff);
+				// disable all EBMs
+				for (i=0; i < BS_NR_OF_MODULES; i++) {
+					configBuf[i] = 2;
+				}
+				// disable all SPMs
+				for (i=0; i < BS_NR_OF_COLUMNS; i++) {
+					colConfigBuf[i] = 0;
+				}
+				LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)configBuf, (void*)colConfigBuf, NULL, NULL);
+
+				cans_heart_beat.is_connect_can_dev = 0;
+			}
+			if (diff > can_heartbeat_max_diff) {
+				can_heartbeat_max_diff = diff;
+				DEBUG_PRINTF_EX("[%s:%d]max heartbeat diff. time:%u ms\r\n", __FILE__, __LINE__, can_heartbeat_max_diff);
+			}
+		} else {
+			can_heartbeat_max_diff = 0;
 		}
 	}
 #endif
@@ -3007,6 +3046,7 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
             case 25:
 				{
 					LTC_Set_Get_Property("set_curr_cali", NULL, NULL, NULL, NULL);
+					DEBUG_PRINTF_EX("[%s:%d]set_curr_cali\r\n", __FILE__, __LINE__);
 				}
 				break;
 #if defined(ITRI_MOD_9)
@@ -3016,6 +3056,15 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 					uint8_t colConfigBuf[BS_NR_OF_COLUMNS];
 					cans_ebm_getconfig(value, configBuf, colConfigBuf);
 					LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)configBuf, (void*)colConfigBuf, NULL, NULL);
+				}
+				break;
+#endif
+#if defined(ITRI_MOD_11)
+			case 30:
+				{
+					cans_heart_beat.is_connect_can_dev = 1;
+					cans_heart_beat.timestamp = MCU_GetTimeStamp();
+					DEBUG_PRINTF_EX("[%s:%d]receive heart beat (time:%u)\r\n", __FILE__, __LINE__, cans_heart_beat.timestamp);
 				}
 				break;
 #endif

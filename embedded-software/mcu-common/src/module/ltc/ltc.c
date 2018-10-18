@@ -263,6 +263,9 @@ static STD_RETURN_TYPE_e LTC_EBM_SetEBState(void);
 #endif
 #endif
 
+#define LTC_EBM_DUMP_NUM	(15)
+static uint16_t ltc_ebm_dump_count = 0;
+
 /*================== Function Prototypes ==================================*/
 static float LTC_Convert_MuxVoltages_to_Temperatures(float v_adc);
 
@@ -366,8 +369,7 @@ static COL_STATE_SETTING col_state_setting[] = {
 		// column 0
 		{{0, 1, LTC_EBM_COL_STATE_NOT_READ},  {1, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {2, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 		// column 1
-		//{{5, 1, LTC_EBM_COL_STATE_NOT_READ},  {6, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {7, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
-		{{4, 1, LTC_EBM_COL_STATE_NOT_READ},  {5, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {6, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
+		{{5, 1, LTC_EBM_COL_STATE_NOT_READ},  {6, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {7, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 		// column 2
 		{{10, 1, LTC_EBM_COL_STATE_NOT_READ}, {11, 1, LTC_EBM_COL_STATE_NO_CHANGE}, {12, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 		// column 3
@@ -375,6 +377,10 @@ static COL_STATE_SETTING col_state_setting[] = {
 		// column 4
 		{{24, 1, LTC_EBM_COL_STATE_NOT_READ}, {23, 1, LTC_EBM_COL_STATE_NO_CHANGE}, {22, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 };
+
+uint32_t set_ebm_eb_col_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2);
+static uint8_t ltc_ebm_force_update = 0;
+
 static void LTC_EBM_SetColState(uint16_t modNo, uint8_t* txBuf, uint8_t isStart) {
 	uint16_t colNo = modNo / BS_NR_OF_ROWS;
 	uint8_t oldState = 0;
@@ -383,7 +389,7 @@ static void LTC_EBM_SetColState(uint16_t modNo, uint8_t* txBuf, uint8_t isStart)
 	if (col_state_setting[colNo].state.gpioVal == LTC_EBM_COL_STATE_NOT_READ) {
 		uint16_t modNo = col_state_setting[colNo].state.modNo;
 		uint16_t gpioNo = col_state_setting[colNo].state.gpioNo - 1;
-		uint8_t oldState = *((uint16_t *)(&LTC_GPIOVoltages[modNo*6*2 + gpioNo*2])) > 30000 ? 1:0; // ref. #55; 1:Non-Protecting(=enable), 0:Protection(=bypass)
+		uint8_t oldState = *((uint16_t *)(&LTC_GPIOVoltages[modNo*6*2 + gpioNo*2])) > 40000 ? 1:0; // ref. #55; 1:Non-Protecting(=enable), 0:Protection(=bypass)
 		if (ltc_col_config[colNo].eb_state == oldState) {
 			col_state_setting[colNo].state.gpioVal = LTC_EBM_COL_STATE_NO_CHANGE;	// no change
 		} else if (oldState == 1 && ltc_col_config[colNo].eb_state == 0) {
@@ -396,18 +402,24 @@ static void LTC_EBM_SetColState(uint16_t modNo, uint8_t* txBuf, uint8_t isStart)
 		//		ltc_col_config[colNo].eb_state, col_state_setting[colNo].state.gpioVal, colNo, modNo);
 	}
 
+	// force update
+	if (ltc_ebm_force_update == 1) {
+		if (ltc_col_config[colNo].eb_state == 0) col_state_setting[colNo].state.gpioVal = LTC_EBM_COL_STATE_DISABLE;
+		else 									 col_state_setting[colNo].state.gpioVal = LTC_EBM_COL_STATE_RESET;
+	}
+
 #define SPM_CONFIG_RESET_DISABLE(r, d) 									\
 		if (col_state_setting[colNo].disable.modNo == modNo) { 			\
 			LTC_EBM_SetGPIO(col_state_setting[colNo].disable.gpioNo,	\
 							d,											\
 							txBuf);										\
-			/*DEBUG_PRINTF_EX("disable colNo:%u modNo:%u isStart:%u\r\n", colNo, modNo, isStart);*/ \
+			/*DEBUG_PRINTF_EX("disable(%u) colNo:%u modNo:%u isStart:%u col.state:%u\r\n", d, colNo, modNo, isStart, col_state_setting[colNo].state.gpioVal );*/ \
 		}																\
 		if (col_state_setting[colNo].reset.modNo == modNo) {			\
 			LTC_EBM_SetGPIO(col_state_setting[colNo].reset.gpioNo,		\
 							r,											\
 							txBuf);										\
-			/*DEBUG_PRINTF_EX("reset colNo:%u modNo:%u isStart:%u\r\n", colNo, modNo, isStart);*/ \
+			/*DEBUG_PRINTF_EX("reset(%u) colNo:%u modNo:%u isStart:%u col.state:%u\r\n", r, colNo, modNo, isStart, col_state_setting[colNo].state.gpioVal );*/ \
 		}
 
 	// reset
@@ -608,9 +620,14 @@ extern void LTC_SaveAllGPIOs(void) {
     }
     #endif
 
-	//DEBUG_PRINTF_EX("[RB]GPIO: %u %u %u %u %u %u\r\n",
-	//	*(uint16_t *)&LTC_GPIOVoltages[0], *(uint16_t *)&LTC_GPIOVoltages[2], *(uint16_t *)&LTC_GPIOVoltages[4],
-	//	*(uint16_t *)&LTC_GPIOVoltages[6], *(uint16_t *)&LTC_GPIOVoltages[8], *(uint16_t *)&LTC_GPIOVoltages[10]);
+#if 0	//debug; dump gpio 1/2/4
+	if (ltc_ebm_dump_count > 0) {
+		uint8_t modNo = 0;
+		DEBUG_PRINTF_EX("M[%d] gpio1/2/4: %u/%u/%u (mV)\r\n", modNo,
+				LTC_allGPIOVoltages[modNo*6 + 0], LTC_allGPIOVoltages[modNo*6 + 1], LTC_allGPIOVoltages[modNo*6 + 3]);
+		ltc_ebm_dump_count--;
+	}
+#endif
 }
 
 /**
@@ -687,6 +704,15 @@ extern void LTC_SaveVoltages(void) {
             ltc_cellvoltage.voltage[i*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j]=(uint16_t)(val_fl);
         }
     }
+
+#if 0	//debug; dump cell vol.
+	if (ltc_ebm_dump_count > 0) {
+		uint8_t modNo = 0;
+		uint8_t cellNo = 6;	// 0~3:cell vol., 4:IB, 5:IM, 6:VM
+		DEBUG_PRINTF_EX("M[%d] cell[%d] %u\r\n", modNo, cellNo, ltc_cellvoltage.voltage[modNo*(BS_NR_OF_BAT_CELLS_PER_MODULE)+cellNo]);
+		ltc_ebm_dump_count--;
+	}
+#endif
 
     max = min = ltc_cellvoltage.voltage[0];
     mean = 0;
@@ -1070,7 +1096,7 @@ void LTC_Trigger(void) {
 	   }
 #if defined(ITRI_MOD_9)
 	   if (ltc_state.check_spi_flag == 3) {
-		   ltc_state.timer = 51;
+		   ltc_state.timer = 70;	// 70ms for revised SPM
 	   }
 #endif
 	   ltc_state.check_spi_flag = 0;	// reset flag
@@ -1397,7 +1423,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err(cnt:%u)\r\n", __FILE__, __LINE__, ltc_state.ErrPECCounter);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err(cnt:%u)\r\n", __FILE__, __LINE__, ltc_state.ErrPECCounter);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1454,7 +1480,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1510,7 +1536,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1573,7 +1599,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1628,7 +1654,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1677,7 +1703,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1706,7 +1732,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1733,7 +1759,7 @@ void LTC_Trigger(void) {
                     // 18 Cells
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1798,7 +1824,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1897,6 +1923,7 @@ void LTC_Trigger(void) {
 #endif
 
 					retVal =  LTC_EBM_SetEBColState(0);	// TODO:
+					ltc_ebm_force_update = 0;	// reset it
 					//ltc_ebm_cmd = LTC_EBM_NONE;
 				}
 #endif
@@ -2071,7 +2098,7 @@ void LTC_Trigger(void) {
                 LTC_SAVELASTSTATES();
                 if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    //DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                     if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2616,7 +2643,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2720,7 +2747,7 @@ void LTC_Trigger(void) {
                 ltc_state.lastsubstate = ltc_state.substate;
                 if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    //DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                     if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2858,7 +2885,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2922,7 +2949,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2971,7 +2998,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -3021,7 +3048,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -3049,7 +3076,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -3419,9 +3446,19 @@ static STD_RETURN_TYPE_e LTC_Init(void) {
         ltc_tmpTXbuffer[5+(1*j)*6] = 0x00;
 
         // config gpio1 of SPM's reset and disable bit as 0
+        /*
     	LTC_EBM_SetColState(i,
 							&ltc_tmpTXbuffer[0+(j)*6],
 							0);
+		*/
+        {
+        	uint8_t ebm[BS_NR_OF_MODULES];
+        	uint8_t spm[BS_NR_OF_COLUMNS];
+        	for (uint8_t i=0; i < BS_NR_OF_MODULES; i++) ebm[i] = 2;	// disable
+        	for (uint8_t i=0; i < BS_NR_OF_COLUMNS; i++) spm[i] = 0;	// disable
+        	ltc_ebm_force_update = 1;
+        	set_ebm_eb_col_state(ebm, spm, NULL, NULL);
+        }
 #else
         // FC = disable all pull-downs, REFON = 1
         ltc_tmpTXbuffer[0+(1*i)*6] = 0xFC;
@@ -3884,7 +3921,7 @@ static STD_RETURN_TYPE_e LTC_RX_PECCheck(uint8_t *DataBufferSPI_RX_with_PEC) {
             DIAG_Handler(DIAG_CH_LTC_PEC, DIAG_EVENT_NOK, 0, NULL_PTR);
 
 #if defined(ITRI_MOD_2)
-            DEBUG_PRINTF_EX("[%d:WARN]LTC_RX_PECCheck ret E_NOT_OK (modNo:%u)\r\n", __LINE__, i);
+            //DEBUG_PRINTF_EX("[%d:WARN]LTC_RX_PECCheck ret E_NOT_OK (modNo:%u)\r\n", __LINE__, i);
 #endif
             retVal = E_NOT_OK;
 
@@ -4698,7 +4735,10 @@ uint32_t set_ebm_eb_col_state(void* iParam1, void* iParam2, void* oParam1, void*
 		ltc_col_config[i].eb_state = pColState != NULL ? pColState[i]:1;
 	}
 	//DEBUG_PRINTF_EX("[%d]col_cfg: %u\r\n", __LINE__, ltc_col_config[0].eb_state);
+	//DEBUG_PRINTF_EX("[ltc.c:%d]done\r\n", __LINE__);
 	ltc_ebm_cmd = LTC_EBM_EB_COL_CTRL;
+
+	ltc_ebm_dump_count = LTC_EBM_DUMP_NUM;	//FIXME; debug
 	return 0;
 }
 #endif

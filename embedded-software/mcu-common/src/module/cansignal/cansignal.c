@@ -205,6 +205,11 @@ static STD_RETURN_TYPE_e CANS_PeriodicReceive(void) {
     result_node1 = E_OK;
 #endif
 
+#if defined(ITRI_MOD_11)
+    extern void cans_check_heart_beat();
+    cans_check_heart_beat();
+#endif
+
     return result_node0 && result_node1;
 }
 /**
