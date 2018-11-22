@@ -244,6 +244,9 @@ LTC_EBM_CONFIG_s ltc_ebm_config[BS_NR_OF_MODULES];
 #if defined(ITRI_MOD_9)
 	LTC_EBM_CONFIG_s ltc_col_config[BS_NR_OF_COLUMNS];
 #endif
+#if defined(ITRI_MOD_12)
+	LTC_EBM_CONFIG_s ltc_led_config[BS_NR_OF_LEDS];
+#endif
 
 #define LTC_EBM_MAX_CURR_CAL_CNT	(60)
 #define LTC_EBM_CURR_ZERO_BASE		(25000)
@@ -378,6 +381,41 @@ static COL_STATE_SETTING col_state_setting[] = {
 		{{24, 1, LTC_EBM_COL_STATE_NOT_READ}, {23, 1, LTC_EBM_COL_STATE_NO_CHANGE}, {22, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 };
 
+#if defined(ITRI_MOD_12)
+typedef struct {
+	uint16_t modNo;
+	uint8_t  gpioNo;
+} LED_STATE_SETTING;
+static LED_STATE_SETTING led_state_setting[] = {
+		// LED 0: power
+		{3, 1},
+		// LED 1:
+		{4, 1},
+		// LED 2:
+		{8, 1},
+		// LED 3:
+		{9, 1},
+		// LED 4:
+		{13, 1},
+		// LED 5:
+		{14, 1},
+};
+
+uint32_t set_ebm_led_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2);
+static void LTC_EBM_SetLEDState(uint16_t modNo, uint8_t* txBuf) {
+	uint8_t i;
+
+	for (i=0; i < BS_NR_OF_LEDS; i++) {
+		if (led_state_setting[i].modNo == modNo) {
+			LTC_EBM_SetGPIO(led_state_setting[i].gpioNo,
+							ltc_led_config[i].eb_state,
+							txBuf);
+			break;
+		}
+	}
+}
+#endif // ITRI_MOD_12
+
 uint32_t set_ebm_eb_col_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2);
 static uint8_t ltc_ebm_force_update = 0;
 
@@ -489,6 +527,10 @@ static STD_RETURN_TYPE_e LTC_EBM_SetEBColState(uint8_t isStart) {
 						eb_state_setting[ltc_ebm_config[j].eb_state].gpio4.val,
 						&ltc_tmpTXbuffer[0+(i)*6]);
 
+#if defined(ITRI_MOD_12)
+		LTC_EBM_SetLEDState(j, &ltc_tmpTXbuffer[0+(i)*6]);
+#endif
+
 		ltc_tmpTXbuffer[1+(i)*6] = 0x00;
 		ltc_tmpTXbuffer[2+(i)*6] = 0x00;
 		ltc_tmpTXbuffer[3+(i)*6] = 0x00;
@@ -509,7 +551,8 @@ static STD_RETURN_TYPE_e LTC_EBM_SetEBColState_end(void) {
 	return retVal;
 }
 */
-#endif
+
+#endif // ITRI_MOD_9
 /*================== Public functions =====================================*/
 
 /*================== Static functions =====================================*/
@@ -4742,6 +4785,19 @@ uint32_t set_ebm_eb_col_state(void* iParam1, void* iParam2, void* oParam1, void*
 	return 0;
 }
 #endif
+#if defined(ITRI_MOD_12)
+uint32_t set_ebm_led_state(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
+	uint8_t* pLEDState = (uint8_t*)iParam1;
+	uint8_t i;
+
+	for (i=0; i < BS_NR_OF_LEDS; i++) {
+		ltc_led_config[i].eb_state = pLEDState[i] == 1 ? 0:1;	// for sw: 0->OFF, 1->ON; for hw: 0(LOW)->ON, 1(HIGH)-> OFF
+	}
+	ltc_ebm_cmd = LTC_EBM_EB_COL_CTRL;
+
+	return 0;
+}
+#endif
 
 uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
 	uint32_t modIdx = *(uint32_t*)iParam1;
@@ -4804,6 +4860,9 @@ LTC_PROP_s ltc_props[] = {
 	{"set_ebm_eb_state", &set_ebm_eb_state},
 #if defined(ITRI_MOD_9)
 	{"set_ebm_eb_col_state", &set_ebm_eb_col_state},
+#endif
+#if defined(ITRI_MOD_12)
+	{"set_ebm_led_state", &set_ebm_led_state},
 #endif
 	{"get_LTC_CellVoltages", &get_LTC_CellVoltages},
 	{"set_curr_cali", &set_curr_cali},

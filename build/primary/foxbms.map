@@ -1743,7 +1743,7 @@ LOAD c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn
                 0x08000000                _sflash1 = ORIGIN (FLASH)
                 0x08000004                _jumpadressvectable = (ORIGIN (FLASH) + 0x4)
 
-.text           0x080001b0    0x16580
+.text           0x080001b0    0x16550
                 0x080001b0                . = ALIGN (0x10)
  *arm-none-eabi*(.text*)
  .text          0x080001b0       0x5c c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
@@ -2973,585 +2973,594 @@ LOAD c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn
                 0x0800e8f4       0x2c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
                 0x0800e8f4                set_ebm_eb_state
  .text.set_ebm_eb_col_state
-                0x0800e920       0x54 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800e920       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
                 0x0800e920                set_ebm_eb_col_state
+ .text.set_ebm_led_state
+                0x0800e964       0x2c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800e964                set_ebm_led_state
  .text.set_curr_cali
-                0x0800e974       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800e974                set_curr_cali
+                0x0800e990       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800e990                set_curr_cali
  .text.get_LTC_allGPIOVoltages
-                0x0800e988       0x5c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800e988                get_LTC_allGPIOVoltages
+                0x0800e9a4       0x5c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800e9a4                get_LTC_allGPIOVoltages
  .text.get_LTC_CellVoltages
-                0x0800e9e4       0x68 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800e9e4                get_LTC_CellVoltages
+                0x0800ea00       0x68 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ea00                get_LTC_CellVoltages
  .text.LTC_StartGPIOMeasurement
-                0x0800ea4c      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .text.LTC_TX   0x0800eb4c       0xa0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ea68      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .text.LTC_TX   0x0800eb68       0xa4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .text.LTC_Send_I2C_Command
-                0x0800ebec       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ec0c       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .text.LTC_RX_PECCheck
-                0x0800ec2c       0x9c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .text.LTC_RX   0x0800ecc8       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ec4c       0x8c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .text.LTC_RX   0x0800ecd8       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .text.unlikely.LTC_EBM_SetGPIO.part.0
-                0x0800ed0c       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ed1c       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .text.unlikely.LTC_EBM_SetEBColState
-                0x0800ed1c      0x21c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ed2c      0x200 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .text.LTC_Get_MeasurementTCycle
-                0x0800ef38       0x58 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ef2c       0x58 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .text.ltc_task_ALLGPIOMEASUREMEN
-                0x0800ef90       0x2c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800ef90                ltc_task_ALLGPIOMEASUREMEN
+                0x0800ef84       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800ef84                ltc_task_ALLGPIOMEASUREMEN
  .text.ltc_task_VOLTAGEMEASUREMENT
-                0x0800efbc       0x2c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800efbc                ltc_task_VOLTAGEMEASUREMENT
- .text.LTC_SaveRXtoVoltagebuffer.constprop.5
-                0x0800efe8       0x60 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800efac       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800efac                ltc_task_VOLTAGEMEASUREMENT
  .text.LTC_SaveGPIOMeasurement.constprop.14
-                0x0800f048       0xc8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .text.LTC_I2CClock.isra.2.constprop.16
-                0x0800f110       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800efd4       0xb8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .text.LTC_I2CClock.isra.3.constprop.16
+                0x0800f08c       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .text.LTC_SaveRXtoVoltagebuffer.part.1.constprop.17
+                0x0800f0c4       0x78 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x0800f13c        0x4 ff
  .text.LTC_SaveAllGPIOs
-                0x0800f148       0x54 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f148                LTC_SaveAllGPIOs
- *fill*         0x0800f19c        0x4 ff
+                0x0800f140       0x54 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f140                LTC_SaveAllGPIOs
+ *fill*         0x0800f194        0x4 ff
  .text.LTC_SaveVoltages
-                0x0800f1a0      0x268 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f1a0                LTC_SaveVoltages
+                0x0800f198      0x25c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f198                LTC_SaveVoltages
+ *fill*         0x0800f3f4        0x4 ff
  .text.LTC_SaveTemperatures
-                0x0800f408      0x238 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f408                LTC_SaveTemperatures
+                0x0800f3f8      0x238 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f3f8                LTC_SaveTemperatures
  .text.LTC_CheckReEntrance
-                0x0800f640       0x2c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f640                LTC_CheckReEntrance
+                0x0800f630       0x2c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f630                LTC_CheckReEntrance
  .text.LTC_GetStateRequest
-                0x0800f66c       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f66c                LTC_GetStateRequest
+                0x0800f65c       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f65c                LTC_GetStateRequest
  .text.LTC_GetState
-                0x0800f684        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f684                LTC_GetState
+                0x0800f674        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f674                LTC_GetState
  .text.LTC_SetStateRequest
-                0x0800f690       0x60 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f690                LTC_SetStateRequest
+                0x0800f680       0x60 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f680                LTC_SetStateRequest
  .text.LTC_Trigger
-                0x0800f6f0     0x1f7c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0800f6f0                LTC_Trigger
+                0x0800f6e0     0x1f94 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0800f6e0                LTC_Trigger
  .text.LTC_IsFirstMeasurementCycleFinished
-                0x0801166c       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x0801166c                LTC_IsFirstMeasurementCycleFinished
+                0x08011674       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x08011674                LTC_IsFirstMeasurementCycleFinished
  .text.LTC_SetFirstMeasurementCycleFinished
-                0x08011684       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x08011684                LTC_SetFirstMeasurementCycleFinished
+                0x0801168c       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x0801168c                LTC_SetFirstMeasurementCycleFinished
  .text.LTC_Set_Get_Property
-                0x080116a0       0x6c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x080116a0                LTC_Set_Get_Property
+                0x080116a8       0x6c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x080116a8                LTC_Set_Get_Property
  .text.LTC_pec15_calc
-                0x0801170c       0x3c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_pec.c.1.o)
-                0x0801170c                LTC_pec15_calc
+                0x08011714       0x3c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_pec.c.1.o)
+                0x08011714                LTC_pec15_calc
  .text.MCU_Wait_us
-                0x08011748       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x08011748                MCU_Wait_us
+                0x08011750       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x08011750                MCU_Wait_us
  .text.MCU_DisableINT
-                0x08011788        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x08011788                MCU_DisableINT
+                0x08011790        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x08011790                MCU_DisableINT
  .text.MCU_RestoreINT
-                0x08011790        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x08011790                MCU_RestoreINT
+                0x08011798        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x08011798                MCU_RestoreINT
  .text.MCU_SystemResetStatus_Init
-                0x0801179c       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x0801179c                MCU_SystemResetStatus_Init
+                0x080117a4       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x080117a4                MCU_SystemResetStatus_Init
  .text.MCU_GetTimeStamp
-                0x080117d4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x080117d4                MCU_GetTimeStamp
+                0x080117dc        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x080117dc                MCU_GetTimeStamp
  .text.MCU_GetDeviceID
-                0x080117d8       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x080117d8                MCU_GetDeviceID
+                0x080117e0       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x080117e0                MCU_GetDeviceID
  .text.RCC_ClockConfig
-                0x080117f4       0x3c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rcc.c.1.o)
-                0x080117f4                RCC_ClockConfig
+                0x080117fc       0x3c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rcc.c.1.o)
+                0x080117fc                RCC_ClockConfig
  .text.RTC_Init
-                0x08011830       0x90 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
-                0x08011830                RTC_Init
+                0x08011838       0x90 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
+                0x08011838                RTC_Init
  .text.RTC_setTime
-                0x080118c0       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
-                0x080118c0                RTC_setTime
+                0x080118c8       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
+                0x080118c8                RTC_setTime
  .text.RTC_setDate
-                0x080118d0       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
-                0x080118d0                RTC_setDate
+                0x080118d8       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
+                0x080118d8                RTC_setDate
  .text.RTC_getTime
-                0x080118e0       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
-                0x080118e0                RTC_getTime
+                0x080118e8       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
+                0x080118e8                RTC_getTime
  .text.RTC_getDate
-                0x080118f0       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
-                0x080118f0                RTC_getDate
+                0x080118f8       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
+                0x080118f8                RTC_getDate
  .text.BKP_SRAM_Init
-                0x08011900       0x34 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(bkpsram.c.1.o)
-                0x08011900                BKP_SRAM_Init
+                0x08011908       0x34 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(bkpsram.c.1.o)
+                0x08011908                BKP_SRAM_Init
  .text.SPI_Init
-                0x08011934      0x124 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011934                SPI_Init
+                0x0801193c      0x124 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x0801193c                SPI_Init
  .text.HAL_SPI_TxRxCpltCallback
-                0x08011a58       0x34 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011a58                HAL_SPI_TxRxCpltCallback
+                0x08011a60       0x34 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08011a60                HAL_SPI_TxRxCpltCallback
  .text.HAL_SPI_TxCpltCallback
-                0x08011a8c       0x34 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011a8c                HAL_SPI_TxCpltCallback
+                0x08011a94       0x34 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08011a94                HAL_SPI_TxCpltCallback
  .text.SPI_Transmit
-                0x08011ac0       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011ac0                SPI_Transmit
+                0x08011ac8       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08011ac8                SPI_Transmit
  .text.SPI_TransmitReceive
-                0x08011b04       0x48 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011b04                SPI_TransmitReceive
+                0x08011b0c       0x48 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08011b0c                SPI_TransmitReceive
  .text.SPI_IsTransmitOngoing
-                0x08011b4c        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011b4c                SPI_IsTransmitOngoing
+                0x08011b54        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08011b54                SPI_IsTransmitOngoing
  .text.SPI_SetTransmitOngoing
-                0x08011b58        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
-                0x08011b58                SPI_SetTransmitOngoing
+                0x08011b60        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08011b60                SPI_SetTransmitOngoing
  .text.UART_IntRx
-                0x08011b64       0x64 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x08011b6c       0x64 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
  .text.UART_Init
-                0x08011bc8       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x08011bc8                UART_Init
+                0x08011bd0       0x44 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x08011bd0                UART_Init
  .text.HAL_UART_CustomIRQHandler
-                0x08011c0c      0x15c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x08011c0c                HAL_UART_CustomIRQHandler
+                0x08011c14      0x15c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x08011c14                HAL_UART_CustomIRQHandler
  .text.UART_vWrite
-                0x08011d68       0x68 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x08011d68                UART_vWrite
+                0x08011d70       0x68 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x08011d70                UART_vWrite
  .text.float_to_string
-                0x08011dd0       0x48 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x08011dd0                float_to_string
+                0x08011dd8       0x48 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x08011dd8                float_to_string
  .text.LED_Init
-                0x08011e18       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
-                0x08011e18                LED_Init
+                0x08011e20       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+                0x08011e20                LED_Init
  .text.LED_Ctrl
-                0x08011e30       0xd0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
-                0x08011e30                LED_Ctrl
+                0x08011e38       0xd0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+                0x08011e38                LED_Ctrl
  .text.U16ToDecascii
-                0x08011f00       0x94 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
-                0x08011f00                U16ToDecascii
+                0x08011f08       0x94 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
+                0x08011f08                U16ToDecascii
  .text.U8ToDecascii
-                0x08011f94       0x54 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
-                0x08011f94                U8ToDecascii
+                0x08011f9c       0x54 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
+                0x08011f9c                U8ToDecascii
  .text.hex2ascii
-                0x08011fe8       0x50 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
-                0x08011fe8                hex2ascii
+                0x08011ff0       0x50 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
+                0x08011ff0                hex2ascii
  .text.U32ToHexascii
-                0x08012038        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
-                0x08012038                U32ToHexascii
- .text.U16ToHexascii
                 0x08012040        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
-                0x08012040                U16ToHexascii
+                0x08012040                U32ToHexascii
+ .text.U16ToHexascii
+                0x08012048        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
+                0x08012048                U16ToHexascii
  .text.I32ToDecascii
-                0x08012048      0x170 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
-                0x08012048                I32ToDecascii
+                0x08012050      0x170 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(misc.c.1.o)
+                0x08012050                I32ToDecascii
  .text.SDRAM_Init
-                0x080121b8      0x134 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(sdram.c.1.o)
-                0x080121b8                SDRAM_Init
+                0x080121c0      0x134 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(sdram.c.1.o)
+                0x080121c0                SDRAM_Init
  .text.WDG_Init
-                0x080122ec       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(wdg.c.1.o)
-                0x080122ec                WDG_Init
+                0x080122f4       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(wdg.c.1.o)
+                0x080122f4                WDG_Init
  .text.WDG_IWDG_Refresh
-                0x0801231c        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(wdg.c.1.o)
-                0x0801231c                WDG_IWDG_Refresh
+                0x08012324        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(wdg.c.1.o)
+                0x08012324                WDG_IWDG_Refresh
  .text.CAN_CheckNodeID
-                0x08012328       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x08012328                CAN_CheckNodeID
+                0x08012330       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08012330                CAN_CheckNodeID
  .text.CAN_CheckBroadcastID
-                0x0801233c        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x0801233c                CAN_CheckBroadcastID
+                0x08012344        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08012344                CAN_CheckBroadcastID
  .text.CAN_CheckUniqueDeviceID
-                0x08012348       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x08012348                CAN_CheckUniqueDeviceID
+                0x08012350       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08012350                CAN_CheckUniqueDeviceID
  .text.cans_gettempering
-                0x0801235c        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08012364        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getMaxAllowedPower
-                0x08012368        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08012370        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_gettemp
-                0x08012374      0x8ec embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x0801237c      0x8ec embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getvolt
-                0x08012c60      0x8e8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08012c68      0x8e8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getcurr
-                0x08013548       0xf4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013550       0xf4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getpower
-                0x0801363c       0xf4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013644       0xf4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getminmaxtemp
-                0x08013730      0x12c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013738      0x12c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getminmaxvolt
-                0x0801385c       0xd4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013864       0xd4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getMaxAllowedCurrent
-                0x08013930       0xdc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013938       0xdc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getcanerr
-                0x08013a0c       0xdc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013a14       0xdc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_setcurr
-                0x08013ae8      0x18c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013af0      0x18c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_setstaterequest
-                0x08013c74       0x60 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013c7c       0x60 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getisoguard
-                0x08013cd4       0x9c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013cdc       0x9c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_getsoc
-                0x08013d70       0x78 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013d78       0x78 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_setdebug
-                0x08013de8      0x1f4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013df0      0x18c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .text.cans_check_heart_beat
-                0x08013fdc       0xac embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
-                0x08013fdc                cans_check_heart_beat
+                0x08013f7c       0x9c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08013f7c                cans_check_heart_beat
  .text.SDRAM_c_init
-                0x08014088       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(sdram_cfg.c.1.o)
-                0x08014088                SDRAM_c_init
+                0x08014018       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(sdram_cfg.c.1.o)
+                0x08014018                SDRAM_c_init
  *src/application*(.text*)
  *application.a:(.text*)
- .text.BAL_Init
-                0x080140b0       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .text.BAL_Deactivate
-                0x080140d0       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x08014040       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .text.BAL_Activate
-                0x08014108       0x80 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x08014078       0x78 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .text.BAL_GetState
-                0x08014188        0xc embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
-                0x08014188                BAL_GetState
+                0x080140f0        0xc embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x080140f0                BAL_GetState
  .text.BAL_SetStateRequest
-                0x08014194       0x48 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
-                0x08014194                BAL_SetStateRequest
+                0x080140fc       0x48 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x080140fc                BAL_SetStateRequest
  .text.BAL_Trigger
-                0x080141dc      0x2c0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
-                0x080141dc                BAL_Trigger
+                0x08014144      0x2dc embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x08014144                BAL_Trigger
  .text.BMS_CheckCANRequests
-                0x0801449c       0x24 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
+                0x08014420       0x24 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
  .text.BMS_CheckBalancingRequests
-                0x080144c0       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
+                0x08014444       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
  .text.BMS_CheckAnyErrorFlagSet
-                0x080144f8       0xc4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
+                0x0801447c       0xc4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
  .text.BMS_GetState
-                0x080145bc        0xc embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
-                0x080145bc                BMS_GetState
+                0x08014540        0xc embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
+                0x08014540                BMS_GetState
  .text.BMS_SetStateRequest
-                0x080145c8       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
-                0x080145c8                BMS_SetStateRequest
+                0x0801454c       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
+                0x0801454c                BMS_SetStateRequest
  .text.BMS_Trigger
-                0x08014608      0x614 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
-                0x08014608                BMS_Trigger
+                0x0801458c      0x614 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
+                0x0801458c                BMS_Trigger
  .text.rb_cmd_test1
-                0x08014c1c       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014c1c                rb_cmd_test1
+                0x08014ba0       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014ba0                rb_cmd_test1
  .text.rb_cmd_get_BS_NR_OF_MODULES
-                0x08014c5c       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014c5c                rb_cmd_get_BS_NR_OF_MODULES
+                0x08014be0       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014be0                rb_cmd_get_BS_NR_OF_MODULES
  .text.rb_cmd_get_BS_NR_OF_BAT_CELLS_PER_MODULE
-                0x08014c94       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014c94                rb_cmd_get_BS_NR_OF_BAT_CELLS_PER_MODULE
+                0x08014c18       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014c18                rb_cmd_get_BS_NR_OF_BAT_CELLS_PER_MODULE
  .text.rb_cmd_get_BS_NR_OF_TEMP_SENSORS_PER_MODULE
-                0x08014ccc       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014ccc                rb_cmd_get_BS_NR_OF_TEMP_SENSORS_PER_MODULE
+                0x08014c50       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014c50                rb_cmd_get_BS_NR_OF_TEMP_SENSORS_PER_MODULE
  .text.rb_cmd_ltc_task_ALLGPIOMEASUREMEN
-                0x08014d04       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014d04                rb_cmd_ltc_task_ALLGPIOMEASUREMEN
+                0x08014c88       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014c88                rb_cmd_ltc_task_ALLGPIOMEASUREMEN
  .text.rb_cmd_ltc_task_VOLTAGEMEASUREMENT
-                0x08014d24       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014d24                rb_cmd_ltc_task_VOLTAGEMEASUREMENT
+                0x08014ca8       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014ca8                rb_cmd_ltc_task_VOLTAGEMEASUREMENT
  .text.rb_cmd_get_LTC_allGPIOVoltages
-                0x08014d44       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014d44                rb_cmd_get_LTC_allGPIOVoltages
+                0x08014cc8       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014cc8                rb_cmd_get_LTC_allGPIOVoltages
  .text.rb_cmd_set_ebm_eb_state
-                0x08014d84       0x54 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014d84                rb_cmd_set_ebm_eb_state
+                0x08014d08       0x54 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014d08                rb_cmd_set_ebm_eb_state
  .text.rb_cmd_set_ebm_eb_col_state
-                0x08014dd8       0x6c embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014dd8                rb_cmd_set_ebm_eb_col_state
+                0x08014d5c       0x60 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014d5c                rb_cmd_set_ebm_eb_col_state
+ .text.rb_cmd_set_ebm_led_state
+                0x08014dbc       0x54 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014dbc                rb_cmd_set_ebm_led_state
  .text.rb_cmd_get_LTC_CellVoltages
-                0x08014e44       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014e44                rb_cmd_get_LTC_CellVoltages
+                0x08014e10       0x40 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014e10                rb_cmd_get_LTC_CellVoltages
  .text.COM_printTimeAndDate
-                0x08014e84       0xc0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014e84                COM_printTimeAndDate
+                0x08014e50       0xc0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014e50                COM_printTimeAndDate
  .text.COM_StartupInfo
-                0x08014f44       0xc4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08014f44                COM_StartupInfo
+                0x08014f10       0xc4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014f10                COM_StartupInfo
  .text.exe_rb_cmd
-                0x08015008       0x5c embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08015008                exe_rb_cmd
+                0x08014fd4       0x5c embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08014fd4                exe_rb_cmd
  .text.COM_printHelpCommand
-                0x08015064      0x1a4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08015064                COM_printHelpCommand
+                0x08015030      0x1a4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x08015030                COM_printHelpCommand
+ *fill*         0x080151d4        0x4 ff
  .text.COM_Decoder
-                0x08015208      0x6d8 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x08015208                COM_Decoder
+                0x080151d8      0x6d8 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x080151d8                COM_Decoder
  .text.SOC_Init
-                0x080158e0      0x170 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
-                0x080158e0                SOC_Init
+                0x080158b0      0x170 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x080158b0                SOC_Init
  .text.SOC_SetValue
-                0x08015a50      0x1e8 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
-                0x08015a50                SOC_SetValue
+                0x08015a20      0x1e8 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x08015a20                SOC_SetValue
  .text.SOC_Ctrl
-                0x08015c38      0x28c embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
-                0x08015c38                SOC_Ctrl
+                0x08015c08      0x28c embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x08015c08                SOC_Ctrl
  .text.SOF_Init
-                0x08015ec4      0x1a0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
-                0x08015ec4                SOF_Init
+                0x08015e94      0x1a0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x08015e94                SOF_Init
  .text.SOF_Ctrl
-                0x08016064      0x4ec embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
-                0x08016064                SOF_Ctrl
+                0x08016034      0x4ec embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x08016034                SOF_Ctrl
  .text.APPL_TSK_Cyclic_1ms
-                0x08016550       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
-                0x08016550                APPL_TSK_Cyclic_1ms
+                0x08016520       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x08016520                APPL_TSK_Cyclic_1ms
  .text.APPL_TSK_Cyclic_10ms
-                0x08016588       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
-                0x08016588                APPL_TSK_Cyclic_10ms
+                0x08016558       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x08016558                APPL_TSK_Cyclic_10ms
  .text.APPL_TSK_Cyclic_100ms
-                0x080165c0       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
-                0x080165c0                APPL_TSK_Cyclic_100ms
+                0x08016590       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x08016590                APPL_TSK_Cyclic_100ms
  .text.APPL_CreateMutex
-                0x080165f8        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
-                0x080165f8                APPL_CreateMutex
+                0x080165c8        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x080165c8                APPL_CreateMutex
  .text.APPL_CreateEvent
-                0x080165fc        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
-                0x080165fc                APPL_CreateEvent
+                0x080165cc        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x080165cc                APPL_CreateEvent
  .text.APPL_CreateTask
-                0x08016600       0xa0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
-                0x08016600                APPL_CreateTask
+                0x080165d0       0xa0 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x080165d0                APPL_CreateTask
  .text.APPL_Cyclic_1ms
-                0x080166a0       0x14 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
-                0x080166a0                APPL_Cyclic_1ms
+                0x08016670       0x14 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
+                0x08016670                APPL_Cyclic_1ms
  .text.APPL_Cyclic_10ms
-                0x080166b4       0x28 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
-                0x080166b4                APPL_Cyclic_10ms
+                0x08016684       0x28 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
+                0x08016684                APPL_Cyclic_10ms
  .text.APPL_Cyclic_100ms
-                0x080166dc       0x14 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
-                0x080166dc                APPL_Cyclic_100ms
+                0x080166ac       0x14 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
+                0x080166ac                APPL_Cyclic_100ms
  *(.text)
  *(.text*)
- .text._sbrk    0x080166f0       0x1c c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
-                0x080166f0                _sbrk
+ .text._sbrk    0x080166c0       0x1c c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
+                0x080166c0                _sbrk
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0801670c        0x0 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
+ .eh_frame      0x080166dc        0x0 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
  *(.init)
- .init          0x0801670c        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
-                0x0801670c                _init
- .init          0x08016710        0x8 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
+ .init          0x080166dc        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
+                0x080166dc                _init
+ .init          0x080166e0        0x8 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
  *(.fini)
- .fini          0x08016718        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
-                0x08016718                _fini
- .fini          0x0801671c        0x8 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
-                0x08016730                . = ALIGN (0x10)
- *fill*         0x08016724        0xc ff
-                0x08016730                _etext = .
+ .fini          0x080166e8        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
+                0x080166e8                _fini
+ .fini          0x080166ec        0x8 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
+                0x08016700                . = ALIGN (0x10)
+ *fill*         0x080166f4        0xc ff
+                0x08016700                _etext = .
 
-.vfp11_veneer   0x08016730        0x0
+.vfp11_veneer   0x08016700        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08016730        0x0
+.v4_bx          0x08016700        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08016730        0x0
+.iplt           0x08016700        0x0
  .iplt          0x00000000        0x0 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
 
-.rodata         0x08016730     0x95ac
-                0x08016730                . = ALIGN (0x4)
+.rodata         0x08016700     0x95dc
+                0x08016700                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.nvic_cfg_length
-                0x08016730        0x1 embedded-software\mcu-primary\src\general\config\nvic_cfg.c.1.o
-                0x08016730                nvic_cfg_length
- *fill*         0x08016731        0x3 ff
+                0x08016700        0x1 embedded-software\mcu-primary\src\general\config\nvic_cfg.c.1.o
+                0x08016700                nvic_cfg_length
+ *fill*         0x08016701        0x3 ff
  .rodata.str1.4
-                0x08016734        0x5 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
- *fill*         0x08016739        0x3 ff
+                0x08016704        0x5 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+ *fill*         0x08016709        0x3 ff
  .rodata.str1.4
-                0x0801673c       0x10 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x0801670c       0x10 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .rodata.str1.4
-                0x0801674c       0x62 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
- *fill*         0x080167ae        0x2 ff
+                0x0801671c       0x62 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+ *fill*         0x0801677e        0x2 ff
  .rodata.str1.4
-                0x080167b0      0x28e embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x08016780      0x28e embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
                                 0x296 (size before relaxing)
- *fill*         0x08016a3e        0x2 ff
+ *fill*         0x08016a0e        0x2 ff
  .rodata.str1.4
-                0x08016a40      0xace embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                                0xaf2 (size before relaxing)
- *fill*         0x0801750e        0x2 ff
+                0x08016a10      0xb0e embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                                0xb32 (size before relaxing)
+ *fill*         0x0801751e        0x2 ff
  .rodata.str1.4
-                0x08017510       0x42 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
- *fill*         0x08017552        0x2 ff
+                0x08017520       0x42 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+ *fill*         0x08017562        0x2 ff
  .rodata.appl_tskdef_10ms
-                0x08017554       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
-                0x08017554                appl_tskdef_10ms
+                0x08017564       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
+                0x08017564                appl_tskdef_10ms
  .rodata.adc_number_of_used_devices
-                0x08017564        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_cfg.c.1.o)
-                0x08017564                adc_number_of_used_devices
- *fill*         0x08017565        0x3 ff
+                0x08017574        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_cfg.c.1.o)
+                0x08017574                adc_number_of_used_devices
+ *fill*         0x08017575        0x3 ff
  .rodata.default_contactors_count
-                0x08017568       0x40 embedded-software\mcu-primary\src\module\libfoxbms-module.a(bkpsram_cfg.c.1.o)
-                0x08017568                default_contactors_count
+                0x08017578       0x40 embedded-software\mcu-primary\src\module\libfoxbms-module.a(bkpsram_cfg.c.1.o)
+                0x08017578                default_contactors_count
  .rodata.default_nvsoc
-                0x080175a8       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(bkpsram_cfg.c.1.o)
-                0x080175a8                default_nvsoc
+                0x080175b8       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(bkpsram_cfg.c.1.o)
+                0x080175b8                default_nvsoc
  .rodata.default_operating_hours
-                0x080175c8       0x10 embedded-software\mcu-primary\src\module\libfoxbms-module.a(bkpsram_cfg.c.1.o)
-                0x080175c8                default_operating_hours
+                0x080175d8       0x10 embedded-software\mcu-primary\src\module\libfoxbms-module.a(bkpsram_cfg.c.1.o)
+                0x080175d8                default_operating_hours
  .rodata.eepr_header_default
-                0x080175d8       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x080175d8                eepr_header_default
+                0x080175e8       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x080175e8                eepr_header_default
  .rodata.eepr_board_info_default
-                0x080175f8       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x080175f8                eepr_board_info_default
+                0x08017608       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x08017608                eepr_board_info_default
  .rodata.cont_contactors_config
-                0x08017618        0x9 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor_cfg.c.1.o)
-                0x08017618                cont_contactors_config
+                0x08017628        0x9 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor_cfg.c.1.o)
+                0x08017628                cont_contactors_config
  .rodata.cont_contactors_config_length
-                0x08017621        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor_cfg.c.1.o)
-                0x08017621                cont_contactors_config_length
- *fill*         0x08017622        0x2 ff
+                0x08017631        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor_cfg.c.1.o)
+                0x08017631                cont_contactors_config_length
+ *fill*         0x08017632        0x2 ff
  .rodata.ltc_cmdRDCVA
-                0x08017624        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdRDCVB
-                0x08017628        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdRDCVD
-                0x0801762c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdRDCVF
-                0x08017630        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADCV_filtered_DCP0
                 0x08017634        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADCV_filtered_DCP1
+ .rodata.ltc_cmdRDCVB
                 0x08017638        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_I2CcmdEEPROM1
-                0x0801763c        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x08017642        0x2 ff
- .rodata.ltc_cmdDummy
-                0x08017644        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x08017645        0x3 ff
- .rodata.ltc_cmdRDCOMM
+ .rodata.ltc_cmdRDCVD
+                0x0801763c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdRDCVF
+                0x08017640        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADCV_filtered_DCP0
+                0x08017644        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADCV_filtered_DCP1
                 0x08017648        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_normal_ALLGPIOS
-                0x0801764c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.str1.4
-                0x08017650      0x11a embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x0801776a        0x2 ff
- .rodata.ltc_cmdADAX_filtered_GPIO1
-                0x0801776c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdRDAUXA
-                0x08017770        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdRDAUXB
-                0x08017774        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdRDAUXD
-                0x08017778        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_fast_GPIO1
-                0x0801777c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_fast_GPIO2
-                0x08017780        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_I2CcmdEEPROM1
+                0x0801764c        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x08017652        0x2 ff
  .rodata.ltc_cmdADAX_filtered_ALLGPIOS
+                0x08017654        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdDummy
+                0x08017658        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x08017659        0x3 ff
+ .rodata.ltc_cmdRDCOMM
+                0x0801765c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADAX_normal_ALLGPIOS
+                0x08017660        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.str1.4
+                0x08017664      0x11a embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x0801777e        0x2 ff
+ .rodata.ltc_cmdADAX_filtered_GPIO1
+                0x08017780        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdRDAUXA
                 0x08017784        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_normal_GPIO1
+ .rodata.ltc_cmdRDAUXB
                 0x08017788        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_normal_GPIO2
+ .rodata.ltc_cmdRDAUXD
                 0x0801778c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_normal_GPIO3
+ .rodata.ltc_cmdADAX_fast_GPIO1
                 0x08017790        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_fast_GPIO3
+ .rodata.ltc_cmdADAX_fast_GPIO2
                 0x08017794        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADCV_fast_DCP0
+ .rodata.ltc_cmdADAX_normal_GPIO1
                 0x08017798        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_filtered_GPIO2
+ .rodata.ltc_cmdADAX_normal_GPIO2
                 0x0801779c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_filtered_GPIO3
+ .rodata.ltc_cmdADAX_normal_GPIO3
                 0x080177a0        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_I2CcmdTempSens0
-                0x080177a4        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x080177aa        0x2 ff
- .rodata.ltc_cmdADCV_normal_DCP0
+ .rodata.ltc_cmdADAX_fast_GPIO3
+                0x080177a4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADCV_fast_DCP0
+                0x080177a8        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADAX_filtered_GPIO2
                 0x080177ac        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADCV_normal_DCP1
+ .rodata.ltc_cmdADAX_filtered_GPIO3
                 0x080177b0        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_I2CcmdEEPROM0
+ .rodata.ltc_I2CcmdTempSens0
                 0x080177b4        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  *fill*         0x080177ba        0x2 ff
+ .rodata.ltc_cmdADCV_normal_DCP0
+                0x080177bc        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADCV_normal_DCP1
+                0x080177c0        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_I2CcmdEEPROM0
+                0x080177c4        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x080177ca        0x2 ff
  .rodata.eb_state_setting
-                0x080177bc       0x12 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x080177ce        0x2 ff
+                0x080177cc       0x12 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x080177de        0x2 ff
  .rodata.ltc_I2CcmdEEPROM2
-                0x080177d0        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x080177d6        0x2 ff
+                0x080177e0        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x080177e6        0x2 ff
  .rodata.ltc_cmdRDAUXC
-                0x080177d8        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x080177e8        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .rodata.ltc_cmdRDCVC
-                0x080177dc        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x080177ec        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .rodata.ltc_cmdRDCVE
-                0x080177e0        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADCV_fast_DCP0_twocells
-                0x080177e4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_I2CcmdPortExpander1
-                0x080177e8        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x080177ee        0x2 ff
- .rodata.ltc_cmdWRCFG2
                 0x080177f0        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdWRCFG
+ .rodata.ltc_cmdADCV_fast_DCP0_twocells
                 0x080177f4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADCV_fast_DCP1
-                0x080177f8        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdWRCOMM
-                0x080177fc        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .rodata.ltc_cmdADAX_fast_ALLGPIOS
+ .rodata.ltc_I2CcmdPortExpander1
+                0x080177f8        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x080177fe        0x2 ff
+ .rodata.ltc_cmdWRCFG2
                 0x08017800        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdWRCFG
+                0x08017804        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADCV_fast_DCP1
+                0x08017808        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdWRCOMM
+                0x0801780c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.led_state_setting
+                0x08017810       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .rodata.ltc_cmdADAX_fast_ALLGPIOS
+                0x08017828        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .rodata.ltc_I2CcmdTempSens1
-                0x08017804        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x0801780a        0x2 ff
+                0x0801782c        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x08017832        0x2 ff
  .rodata.crc15Table
-                0x0801780c      0x400 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_pec.c.1.o)
+                0x08017834      0x400 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_pec.c.1.o)
  .rodata.str1.4
-                0x08017c0c       0x50 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+                0x08017c34       0x50 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
  .rodata.str1.4
-                0x08017c5c        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x08017c84        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
  .rodata.dma_number_of_used_streams
-                0x08017c62        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(dma_cfg.c.1.o)
-                0x08017c62                dma_number_of_used_streams
+                0x08017c8a        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(dma_cfg.c.1.o)
+                0x08017c8a                dma_number_of_used_streams
  .rodata.io_cfg_length
-                0x08017c63        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(io_cfg.c.1.o)
-                0x08017c63                io_cfg_length
+                0x08017c8b        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(io_cfg.c.1.o)
+                0x08017c8b                io_cfg_length
  .rodata.io_cfg
-                0x08017c64      0x790 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(io_cfg.c.1.o)
-                0x08017c64                io_cfg
+                0x08017c8c      0x790 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(io_cfg.c.1.o)
+                0x08017c8c                io_cfg
  .rodata.ltc_muxsensortemperatur_cfg
-                0x080183f4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_cfg.c.1.o)
-                0x080183f4                ltc_muxsensortemperatur_cfg
+                0x0801841c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_cfg.c.1.o)
+                0x0801841c                ltc_muxsensortemperatur_cfg
  .rodata.can_CAN1_tx_length
-                0x080183f8        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x080183f8                can_CAN1_tx_length
+                0x08018420        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08018420                can_CAN1_tx_length
  .rodata.can_CAN0_rx_length
-                0x080183f9        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x080183f9                can_CAN0_rx_length
+                0x08018421        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08018421                can_CAN0_rx_length
  .rodata.can_CAN1_rx_length
-                0x080183fa        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x080183fa                can_CAN1_rx_length
- *fill*         0x080183fb        0x1 ff
+                0x08018422        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08018422                can_CAN1_rx_length
+ *fill*         0x08018423        0x1 ff
  .rodata.can_CAN1_messages_tx
-                0x080183fc        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x080183fc                can_CAN1_messages_tx
+                0x08018424        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08018424                can_CAN1_messages_tx
  .rodata.can_CAN0_messages_tx
-                0x080183fc     0x1144 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x080183fc                can_CAN0_messages_tx
+                0x08018424     0x1144 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08018424                can_CAN0_messages_tx
  .rodata.can_CAN0_tx_length
-                0x08019540        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x08019540                can_CAN0_tx_length
- *fill*         0x08019541        0x3 ff
+                0x08019568        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x08019568                can_CAN0_tx_length
+ *fill*         0x08019569        0x3 ff
  .rodata.cans_CAN1_signals_rx
-                0x08019544        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
-                0x08019544                cans_CAN1_signals_rx
+                0x0801956c        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x0801956c                cans_CAN1_signals_rx
  .rodata.cans_CAN1_signals_tx
-                0x08019544        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
-                0x08019544                cans_CAN1_signals_tx
+                0x0801956c        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x0801956c                cans_CAN1_signals_tx
  .rodata.cans_CAN0_signals_rx
-                0x08019544      0x2d8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
-                0x08019544                cans_CAN0_signals_rx
+                0x0801956c      0x2d8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x0801956c                cans_CAN0_signals_rx
  .rodata.cans_CAN1_signals_rx_length
-                0x0801981c        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
-                0x0801981c                cans_CAN1_signals_rx_length
- *fill*         0x0801981e        0x2 ff
+                0x08019844        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x08019844                cans_CAN1_signals_rx_length
+ *fill*         0x08019846        0x2 ff
  .rodata.str1.4
-                0x08019820       0xf4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
-                                0x120 (size before relaxing)
+                0x08019848       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                                 0xf8 (size before relaxing)
  .rodata.cans_CAN0_signals_tx_length
                 0x08019914        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
                 0x08019914                cans_CAN0_signals_tx_length
@@ -3658,7 +3667,7 @@ LOAD c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn
                 0xd0000000                _e_extdata = .
                 0x0801fce4                _sidata = LOADADDR (.data)
 
-.data           0x20000000     0x1b6c load address 0x0801fce4
+.data           0x20000000     0x1c14 load address 0x0801fce4
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -3707,177 +3716,177 @@ LOAD c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn
                 0x20000ad8       0x18 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .data.bms_state
                 0x20000af0       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bms.c.1.o)
- .data.rb_cmds  0x20000b00      0x488 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+ .data.rb_cmds  0x20000b00      0x4fc embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
                 0x20000b00                rb_cmds
  .data.appl_tskdef_100ms
-                0x20000f88       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
-                0x20000f88                appl_tskdef_100ms
+                0x20000ffc       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
+                0x20000ffc                appl_tskdef_100ms
  .data.appl_tskdef_1ms
-                0x20000f98       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
-                0x20000f98                appl_tskdef_1ms
+                0x2000100c       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask_cfg.c.1.o)
+                0x2000100c                appl_tskdef_1ms
  .data.sox_sof_config
-                0x20000fa8       0x4c embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox_cfg.c.1.o)
-                0x20000fa8                sox_sof_config
- .data.adc_cfg  0x20000ff4       0x10 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
+                0x2000101c       0x4c embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox_cfg.c.1.o)
+                0x2000101c                sox_sof_config
+ .data.adc_cfg  0x20001068       0x10 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
  .data.adc_devices
-                0x20001004       0x48 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_cfg.c.1.o)
-                0x20001004                adc_devices
+                0x20001078       0x48 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_cfg.c.1.o)
+                0x20001078                adc_devices
  .data.eepr_WR_RD_Chksum
-                0x2000104c        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x2000104c                eepr_WR_RD_Chksum
- *fill*         0x2000104e        0x2 ff
+                0x200010c0        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x200010c0                eepr_WR_RD_Chksum
+ *fill*         0x200010c2        0x2 ff
  .data.eepr_ch_cfg
-                0x20001050       0xa0 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x20001050                eepr_ch_cfg
+                0x200010c4       0xa0 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x200010c4                eepr_ch_cfg
  .data.cont_state
-                0x200010f0       0x14 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor.c.1.o)
+                0x20001164       0x14 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor.c.1.o)
  .data.eepr_cmd_read
-                0x20001104      0x103 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
-                0x20001104                eepr_cmd_read
- *fill*         0x20001207        0x1 ff
+                0x20001178      0x103 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
+                0x20001178                eepr_cmd_read
+ *fill*         0x2000127b        0x1 ff
  .data.eepr_state
-                0x20001208       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
-                0x20001208                eepr_state
+                0x2000127c       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
+                0x2000127c                eepr_state
  .data.eepr_cmd_WREN
-                0x20001244        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
-                0x20001244                eepr_cmd_WREN
- *fill*         0x20001245        0x3 ff
+                0x200012b8        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
+                0x200012b8                eepr_cmd_WREN
+ *fill*         0x200012b9        0x3 ff
  .data.ISO_measData.9097
-                0x20001248        0xc embedded-software\mcu-primary\src\module\libfoxbms-module.a(isoguard.c.1.o)
- .data.htim3    0x20001254       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(timer_cfg.c.1.o)
-                0x20001254                htim3
- .data.htim4    0x20001290       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(timer_cfg.c.1.o)
-                0x20001290                htim4
- .data.htim9    0x200012cc       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(timer_cfg.c.1.o)
-                0x200012cc                htim9
+                0x200012bc        0xc embedded-software\mcu-primary\src\module\libfoxbms-module.a(isoguard.c.1.o)
+ .data.htim3    0x200012c8       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(timer_cfg.c.1.o)
+                0x200012c8                htim3
+ .data.htim4    0x20001304       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(timer_cfg.c.1.o)
+                0x20001304                htim4
+ .data.htim9    0x20001340       0x3c embedded-software\mcu-primary\src\module\libfoxbms-module.a(timer_cfg.c.1.o)
+                0x20001340                htim9
  .data.measCycleTime
-                0x20001308        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
- *fill*         0x20001309        0x3 ff
+                0x2000137c        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
+ *fill*         0x2000137d        0x3 ff
  .data.ir155_DC
-                0x2000130c       0x10 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
-                0x2000130c                ir155_DC
+                0x20001380       0x10 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
+                0x20001380                ir155_DC
  .data.sFilterConfig
-                0x2000131c       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x2000131c                sFilterConfig
+                0x20001390       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x20001390                sFilterConfig
  .data.can0_rxbuffer
-                0x20001344        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20001344                can0_rxbuffer
+                0x200013b8        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200013b8                can0_rxbuffer
  .data.can0_txbuffer
-                0x2000134c        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x2000134c                can0_txbuffer
+                0x200013c0        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200013c0                can0_txbuffer
  .data.can1_rxbuffer
-                0x20001354        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20001354                can1_rxbuffer
+                0x200013c8        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200013c8                can1_rxbuffer
  .data.can1_txbuffer
-                0x2000135c        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x2000135c                can1_txbuffer
+                0x200013d0        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200013d0                can1_txbuffer
  .data.ilck_state
-                0x20001364       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(interlock.c.1.o)
+                0x200013d8       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(interlock.c.1.o)
  .data.col_state_setting
-                0x20001374       0x3c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x200013e8       0x3c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .data.ltc_ebm_cmd
-                0x200013b0        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x200013b0                ltc_ebm_cmd
- *fill*         0x200013b1        0x3 ff
+                0x20001424        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20001424                ltc_ebm_cmd
+ *fill*         0x20001425        0x3 ff
  .data.ltc_state
-                0x200013b4       0xd0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20001428       0xd0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .data.ltc_props
-                0x20001484      0x208 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x20001484                ltc_props
+                0x200014f8      0x23c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x200014f8                ltc_props
  .data.wrpoi_txbuf
-                0x2000168c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x2000168c                wrpoi_txbuf
+                0x20001734        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20001734                wrpoi_txbuf
  .data.rdpoi_txbuf
-                0x20001690        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x20001690                rdpoi_txbuf
+                0x20001738        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20001738                rdpoi_txbuf
  .data.wrpoi_rxbuf
-                0x20001694        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x20001694                wrpoi_rxbuf
+                0x2000173c        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x2000173c                wrpoi_rxbuf
  .data.rdpoi_rxbuf
-                0x20001698        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x20001698                rdpoi_rxbuf
+                0x20001740        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20001740                rdpoi_rxbuf
  .data.led_0_nbr_of_blink.8396
-                0x2000169c        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+                0x20001744        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
  .data.led_state.8399
-                0x2000169d        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+                0x20001745        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
  .data.led_blink_time.8398
-                0x2000169e        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+                0x20001746        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
  .data.led_1_nbr_of_blink.8397
-                0x200016a0        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
- *fill*         0x200016a1        0x3 ff
+                0x20001748        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+ *fill*         0x20001749        0x3 ff
  .data.dma_devices
-                0x200016a4       0xc0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(dma_cfg.c.1.o)
-                0x200016a4                dma_devices
+                0x2000174c       0xc0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(dma_cfg.c.1.o)
+                0x2000174c                dma_devices
  .data.ilck_interlock_config
-                0x20001764        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(interlock_cfg.c.1.o)
-                0x20001764                ilck_interlock_config
- *fill*         0x20001767        0x1 ff
+                0x2000180c        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(interlock_cfg.c.1.o)
+                0x2000180c                ilck_interlock_config
+ *fill*         0x2000180f        0x1 ff
  .data.ltc_mux_seq
-                0x20001768        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_cfg.c.1.o)
-                0x20001768                ltc_mux_seq
+                0x20001810        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_cfg.c.1.o)
+                0x20001810                ltc_mux_seq
  .data.ltc_mux_seq_main_ch1
-                0x20001770        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_cfg.c.1.o)
-                0x20001770                ltc_mux_seq_main_ch1
+                0x20001818        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc_cfg.c.1.o)
+                0x20001818                ltc_mux_seq_main_ch1
  .data.RCC_ClkInitStruct
-                0x20001778       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rcc_cfg.c.1.o)
-                0x20001778                RCC_ClkInitStruct
+                0x20001820       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rcc_cfg.c.1.o)
+                0x20001820                RCC_ClkInitStruct
  .data.RCC_OscInitStruct
-                0x2000178c       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rcc_cfg.c.1.o)
-                0x2000178c                RCC_OscInitStruct
- .data.rtc_cfg  0x200017bc       0x94 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc_cfg.c.1.o)
-                0x200017bc                rtc_cfg
+                0x20001834       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rcc_cfg.c.1.o)
+                0x20001834                RCC_OscInitStruct
+ .data.rtc_cfg  0x20001864       0x94 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc_cfg.c.1.o)
+                0x20001864                rtc_cfg
  .data.can1_bufferBypass_RxMsgs
-                0x20001850        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x20001850                can1_bufferBypass_RxMsgs
- .data.hcan0    0x2000185c       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x2000185c                hcan0
- .data.hcan1    0x2000189c       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x2000189c                hcan1
+                0x200018f8        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x200018f8                can1_bufferBypass_RxMsgs
+ .data.hcan0    0x20001904       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x20001904                hcan0
+ .data.hcan1    0x20001944       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x20001944                hcan1
  .data.can0_bufferBypass_RxMsgs
-                0x200018dc        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x200018dc                can0_bufferBypass_RxMsgs
+                0x20001984        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x20001984                can0_bufferBypass_RxMsgs
  .data.can0_RxMsgs
-                0x200018e8       0xd0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x200018e8                can0_RxMsgs
+                0x20001990       0xd0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x20001990                can0_RxMsgs
  .data.spi_devices
-                0x200019b8      0x108 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi_cfg.c.1.o)
-                0x200019b8                spi_devices
+                0x20001a60      0x108 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi_cfg.c.1.o)
+                0x20001a60                spi_devices
  .data.spi_number_of_used_SPI_channels
-                0x20001ac0        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi_cfg.c.1.o)
-                0x20001ac0                spi_number_of_used_SPI_channels
+                0x20001b68        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi_cfg.c.1.o)
+                0x20001b68                spi_number_of_used_SPI_channels
  .data.uart_cfg_length
-                0x20001ac1        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart_cfg.c.1.o)
-                0x20001ac1                uart_cfg_length
- *fill*         0x20001ac2        0x2 ff
+                0x20001b69        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart_cfg.c.1.o)
+                0x20001b69                uart_cfg_length
+ *fill*         0x20001b6a        0x2 ff
  .data.uart_cfg
-                0x20001ac4       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart_cfg.c.1.o)
-                0x20001ac4                uart_cfg
+                0x20001b6c       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart_cfg.c.1.o)
+                0x20001b6c                uart_cfg
  .data.impure_data
-                0x20001b04       0x60 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
+                0x20001bac       0x60 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x20001b64        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
-                0x20001b64                _impure_ptr
+                0x20001c0c        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
+                0x20001c0c                _impure_ptr
  .data.__ctype_ptr__
-                0x20001b68        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-ctype_.o)
-                0x20001b68                __ctype_ptr__
-                0x20001b6c                . = ALIGN (0x4)
-                0x20001b6c                _edata = .
-                0x08021850                _siccmram = LOADADDR (.ccmram)
+                0x20001c10        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-ctype_.o)
+                0x20001c10                __ctype_ptr__
+                0x20001c14                . = ALIGN (0x4)
+                0x20001c14                _edata = .
+                0x080218f8                _siccmram = LOADADDR (.ccmram)
 
-.jcr            0x20001b6c        0x0 load address 0x08021850
- .jcr           0x20001b6c        0x0 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
+.jcr            0x20001c14        0x0 load address 0x080218f8
+ .jcr           0x20001c14        0x0 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
 
-.igot.plt       0x20001b6c        0x0 load address 0x08021850
+.igot.plt       0x20001c14        0x0 load address 0x080218f8
  .igot.plt      0x00000000        0x0 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x08021850
+.ccmram         0x10000000        0x0 load address 0x080218f8
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _sccmram = .
  *(.ccmram)
  *(.ccmram*)
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _eccmram = .
-                0x08021850                _eflash1 = (_siccmram + (_eccmram - _sccmram))
+                0x080218f8                _eflash1 = (_siccmram + (_eccmram - _sccmram))
                 0x10000000                . = ALIGN (0x4)
 
 .bkp_ramsect    0x40024000      0xd97
@@ -3910,591 +3919,588 @@ LOAD c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn
  *sdram_cfg*(.bss*)
                 0x40024d98                . = ALIGN (0x4)
 
-.bss            0x20001b6c     0xa3a4
-                0x20001b6c                _sbss = .
-                0x20001b6c                __bss_start__ = _sbss
+.bss            0x20001c14     0x663c
+                0x20001c14                _sbss = .
+                0x20001c14                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20001b6c       0x1c c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
+ .bss           0x20001c14       0x1c c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
  *(.bss*)
  .bss.CAN_CLK1_enabled
-                0x20001b88        0x1 embedded-software\mcu-primary\src\general\config\STM32F4xx\stm32f4xx_hal_msp.c.1.o
- *fill*         0x20001b89        0x1 
+                0x20001c30        0x1 embedded-software\mcu-primary\src\general\config\STM32F4xx\stm32f4xx_hal_msp.c.1.o
+ *fill*         0x20001c31        0x1 
  .bss.cnt.10113
-                0x20001b8a        0x2 embedded-software\mcu-primary\src\general\config\STM32F4xx\stm32f4xx_it.c.1.o
+                0x20001c32        0x2 embedded-software\mcu-primary\src\general\config\STM32F4xx\stm32f4xx_it.c.1.o
  .bss.toggle.10112
-                0x20001b8c        0x1 embedded-software\mcu-primary\src\general\config\STM32F4xx\stm32f4xx_it.c.1.o
+                0x20001c34        0x1 embedded-software\mcu-primary\src\general\config\STM32F4xx\stm32f4xx_it.c.1.o
  .bss.ucMaxSysCallPriority
-                0x20001b8d        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(port.c.1.o)
- *fill*         0x20001b8e        0x2 
+                0x20001c35        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(port.c.1.o)
+ *fill*         0x20001c36        0x2 
  .bss.ulMaxPRIGROUPValue
-                0x20001b90        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(port.c.1.o)
+                0x20001c38        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(port.c.1.o)
  .bss.xFreeBytesRemaining
-                0x20001b94        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
- .bss.pxEnd     0x20001b98        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
- .bss.xStart    0x20001b9c        0x8 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
- .bss.ucHeap    0x20001ba4     0x3c00 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
+                0x20001c3c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
+ .bss.pxEnd     0x20001c40        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
+ .bss.xStart    0x20001c44        0x8 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
+ .bss.ucHeap    0x20001c4c     0x3c00 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
  .bss.xBlockAllocatedBit
-                0x200057a4        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
+                0x2000584c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
  .bss.xMinimumEverFreeBytesRemaining
-                0x200057a8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
+                0x20005850        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(heap_4.c.1.o)
  .bss.xQueueRegistry
-                0x200057ac       0x40 embedded-software\mcu-freertos\libfoxbms-os.a(queue.c.1.o)
-                0x200057ac                xQueueRegistry
+                0x20005854       0x40 embedded-software\mcu-freertos\libfoxbms-os.a(queue.c.1.o)
+                0x20005854                xQueueRegistry
  .bss.xNumOfOverflows
-                0x200057ec        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x20005894        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.pxDelayedTaskList
-                0x200057f0        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x20005898        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xSchedulerRunning
-                0x200057f4        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x2000589c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.uxSchedulerSuspended
-                0x200057f8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200058a0        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xDelayedTaskList1
-                0x200057fc       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200058a4       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.uxPendedTicks
-                0x20005810        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200058b8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.pxReadyTasksLists
-                0x20005814       0xc8 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200058bc       0xc8 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xTasksWaitingTermination
-                0x200058dc       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x20005984       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.uxDeletedTasksWaitingCleanUp
-                0x200058f0        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x20005998        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.pxCurrentTCB
-                0x200058f4        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
-                0x200058f4                pxCurrentTCB
+                0x2000599c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x2000599c                pxCurrentTCB
  .bss.xNextTaskUnblockTime
-                0x200058f8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059a0        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xIdleTaskHandle
-                0x200058fc        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059a4        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xTickCount
-                0x20005900        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059a8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.pxOverflowDelayedTaskList
-                0x20005904        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059ac        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xPendingReadyList
-                0x20005908       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059b0       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.uxTaskNumber
-                0x2000591c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059c4        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.uxCurrentNumberOfTasks
-                0x20005920        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059c8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xDelayedTaskList2
-                0x20005924       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059cc       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xSuspendedTaskList
-                0x20005938       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059e0       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.uxTopReadyPriority
-                0x2000594c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059f4        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.xYieldPending
-                0x20005950        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
+                0x200059f8        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(tasks.c.1.o)
  .bss.pxCurrentTimerList
-                0x20005954        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x200059fc        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.xActiveTimerList1
-                0x20005958       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x20005a00       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.xActiveTimerList2
-                0x2000596c       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x20005a14       0x14 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.xLastTime.9297
-                0x20005980        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x20005a28        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.xTimerQueue
-                0x20005984        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x20005a2c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.pxOverflowTimerList
-                0x20005988        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x20005a30        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.xTimerTaskHandle
-                0x2000598c        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
+                0x20005a34        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(timers.c.1.o)
  .bss.os_safety_state
-                0x20005990        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
-                0x20005990                os_safety_state
- *fill*         0x20005991        0x3 
- .bss.os_timer  0x20005994        0x8 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
-                0x20005994                os_timer
- .bss.eng_init  0x2000599c        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
- *fill*         0x2000599d        0x3 
+                0x20005a38        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
+                0x20005a38                os_safety_state
+ *fill*         0x20005a39        0x3 
+ .bss.os_timer  0x20005a3c        0x8 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
+                0x20005a3c                os_timer
+ .bss.eng_init  0x20005a44        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
+ *fill*         0x20005a45        0x3 
  .bss.os_schedulerstarttime
-                0x200059a0        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
-                0x200059a0                os_schedulerstarttime
- .bss.os_boot   0x200059a4        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
-                0x200059a4                os_boot
- *fill*         0x200059a5        0x3 
+                0x20005a48        0x4 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
+                0x20005a48                os_schedulerstarttime
+ .bss.os_boot   0x20005a4c        0x1 embedded-software\mcu-freertos\libfoxbms-os.a(os.c.1.o)
+                0x20005a4c                os_boot
+ *fill*         0x20005a4d        0x3 
  .bss.data_block_access
-                0x200059a8       0xc0 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
+                0x20005a50       0xc0 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
  .bss.data_block_devptr
-                0x20005a68        0x4 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
+                0x20005b10        0x4 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
  .bss.data_state
-                0x20005a6c        0x1 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
- *fill*         0x20005a6d        0x3 
+                0x20005b14        0x1 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
+ *fill*         0x20005b15        0x3 
  .bss.data_base_mutex
-                0x20005a70       0x40 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
+                0x20005b18       0x40 embedded-software\mcu-common\src\engine\libfoxbms-common-engine.a(database.c.1.o)
  .bss.data_block_minmax
-                0x20005ab0       0x60 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005ab0                data_block_minmax
+                0x20005b58       0x60 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005b58                data_block_minmax
  .bss.data_block_sox
-                0x20005b10       0x28 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005b10                data_block_sox
+                0x20005bb8       0x28 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005bb8                data_block_sox
  .bss.data_block_adc
-                0x20005b38       0x1c embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005b38                data_block_adc
+                0x20005be0       0x1c embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005be0                data_block_adc
  .bss.data_block_user_io_control
-                0x20005b54       0x40 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005b54                data_block_user_io_control
+                0x20005bfc       0x14 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005bfc                data_block_user_io_control
  .bss.data_block_ltc_adc_accuracy
-                0x20005b94       0xd0 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005b94                data_block_ltc_adc_accuracy
+                0x20005c10       0x28 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005c10                data_block_ltc_adc_accuracy
  .bss.data_block_ltc_diagnosis
-                0x20005c64      0x26c embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005c64                data_block_ltc_diagnosis
+                0x20005c38       0x68 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005c38                data_block_ltc_diagnosis
  .bss.data_block_mov_mean
-                0x20005ed0       0x70 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005ed0                data_block_mov_mean
+                0x20005ca0       0x70 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005ca0                data_block_mov_mean
  .bss.data_block_control_balancing
-                0x20005f40      0x338 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20005f40                data_block_control_balancing
+                0x20005d10       0x98 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005d10                data_block_control_balancing
  .bss.data_block_errors
-                0x20006278       0x40 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20006278                data_block_errors
+                0x20005da8       0x40 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005da8                data_block_errors
  .bss.data_block_feedback_balancing
-                0x200062b8      0x338 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x200062b8                data_block_feedback_balancing
+                0x20005de8       0x98 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005de8                data_block_feedback_balancing
  .bss.data_block_staterequest
-                0x200065f0       0x10 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x200065f0                data_block_staterequest
+                0x20005e80       0x10 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005e80                data_block_staterequest
  .bss.data_block_celltemperature
-                0x20006600      0x530 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20006600                data_block_celltemperature
+                0x20005e90       0xe8 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005e90                data_block_celltemperature
  .bss.data_block_isometer
-                0x20006b30        0xc embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20006b30                data_block_isometer
+                0x20005f78        0xc embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005f78                data_block_isometer
  .bss.data_block_cellvoltage
-                0x20006b3c      0x500 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x20006b3c                data_block_cellvoltage
+                0x20005f84       0xe0 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20005f84                data_block_cellvoltage
  .bss.data_block_open_wire
-                0x2000703c      0x1a8 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x2000703c                data_block_open_wire
+                0x20006064       0x58 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x20006064                data_block_open_wire
  .bss.data_block_current
-                0x200071e4       0x70 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
-                0x200071e4                data_block_current
+                0x200060bc       0x70 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(database_cfg.c.1.o)
+                0x200060bc                data_block_current
  .bss.data_queueID
-                0x20007254        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
-                0x20007254                data_queueID
+                0x2000612c        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+                0x2000612c                data_queueID
  .bss.eng_handle_tsk_1ms
-                0x20007258        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+                0x20006130        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
  .bss.eng_handle_tsk_diagnosis
-                0x2000725c        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+                0x20006134        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
  .bss.eng_handle_engine
-                0x20007260        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+                0x20006138        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
  .bss.eng_handle_tsk_100ms
-                0x20007264        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+                0x2000613c        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
  .bss.eng_handle_tsk_eventhandler
-                0x20007268        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+                0x20006140        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
  .bss.eng_handle_tsk_10ms
-                0x2000726c        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
- .bss.diag_fc   0x20007270       0x10 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
-                0x20007270                diag_fc
+                0x20006144        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask_cfg.c.1.o)
+ .bss.diag_fc   0x20006148       0x10 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x20006148                diag_fc
  .bss.diag_sysmon_cnt
-                0x20007280       0x2c embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
-                0x20007280                diag_sysmon_cnt
+                0x20006158       0x2c embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x20006158                diag_sysmon_cnt
  .bss.diag_devptr
-                0x200072ac        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x20006184        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
  .bss.diagsysmonTimestamp
-                0x200072b0        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
- .bss.diag      0x200072b4      0x330 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x20006188        0x4 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+ .bss.diag      0x2000618c      0x330 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
  .bss.diag_sysmon_last
-                0x200075e4       0x58 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
-                0x200075e4                diag_sysmon_last
+                0x200064bc       0x58 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x200064bc                diag_sysmon_last
  .bss.diag_sysmon
-                0x2000763c       0x58 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
-                0x2000763c                diag_sysmon
+                0x20006514       0x58 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x20006514                diag_sysmon
  .bss.diag_locked
-                0x20007694        0x1 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
+                0x2000656c        0x1 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(diag.c.1.o)
  .bss.counter.11904
-                0x20007695        0x1 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask.c.1.o)
- *fill*         0x20007696        0x2 
+                0x2000656d        0x1 embedded-software\mcu-primary\src\engine\libfoxbms-engine.a(enginetask.c.1.o)
+ *fill*         0x2000656e        0x2 
  .bss.bal_current
-                0x20007698       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x20006570       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .bss.bal_minmax.9557
-                0x200076d0       0x30 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x200065a8       0x30 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .bss.bal_cellvoltage.9556
-                0x20007700      0x280 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x200065d8       0x70 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .bss.bal_balancing.9555
-                0x20007980      0x19c embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+                0x20006648       0x4c embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
  .bss.bal_minmax
-                0x20007b1c       0x30 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
- .bss.cnt.9668  0x20007b4c        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
- *fill*         0x20007b4d        0x3 
- .bss.com_Time  0x20007b50       0x14 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x20006694       0x30 embedded-software\mcu-primary\src\application\libfoxbms-application.a(bal.c.1.o)
+ .bss.rb_cmd_idx.9691
+                0x200066c4        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+ .bss.cnt.9680  0x200066c5        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+ *fill*         0x200066c6        0x2 
+ .bss.com_Time  0x200066c8       0x14 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
  .bss.printHelp
-                0x20007b64        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
-                0x20007b64                printHelp
+                0x200066dc        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x200066dc                printHelp
  .bss.com_testmode_enabled
-                0x20007b65        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
- *fill*         0x20007b66        0x2 
- .bss.com_Date  0x20007b68        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+                0x200066dd        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+ *fill*         0x200066de        0x2 
+ .bss.com_Date  0x200066e0        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
  .bss.com_ltc_out_buf
-                0x20007b6c       0x60 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
- .bss.com_buf   0x20007bcc        0x9 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
- *fill*         0x20007bd5        0x3 
+                0x200066e4       0x60 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+ .bss.com_buf   0x20006744        0x9 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
+ *fill*         0x2000674d        0x3 
  .bss.com_tickcount
-                0x20007bd8        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
- .bss.rb_cmd_idx.9679
-                0x20007bdc        0x1 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
- *fill*         0x20007bdd        0x3 
+                0x20006750        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(com.c.1.o)
  .bss.TbasedSof.9135
-                0x20007be0       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006754       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_VoltageDischa
-                0x20007bf0        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006764        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_SocDischa
-                0x20007bf4        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006768        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.values_sof
-                0x20007bf8       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000676c       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_SocDischa
-                0x20007c08        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000677c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.celltemperature
-                0x20007c0c      0x298 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006780       0x74 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_TLowDischa
-                0x20007ea4        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x200067f4        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_THighDischa
-                0x20007ea8        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x200067f8        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.sox_state
-                0x20007eac        0xc embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x200067fc        0xc embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.systemstatetab
-                0x20007eb8       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006808       0x20 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_VoltageCharge
-                0x20007ed8        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006828        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.soc_previous_current_timestamp
-                0x20007edc        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
- .bss.sox       0x20007ee0       0x28 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000682c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+ .bss.sox       0x20006830       0x28 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_SocCharge
-                0x20007f08        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006858        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_TLowCharge
-                0x20007f0c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000685c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_VoltageDischa
-                0x20007f10        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006860        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_THighCharge
-                0x20007f14        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006864        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.soc_previous_current_timestamp_cc
-                0x20007f18        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006868        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_SocCharge
-                0x20007f1c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000686c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_TLowCharge
-                0x20007f20        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006870        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_TLowDischa
-                0x20007f24        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006874        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_THighDischa
-                0x20007f28        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006878        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.UbasedSof.9133
-                0x20007f2c       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000687c       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.cellminmax
-                0x20007f3c       0x30 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x2000688c       0x30 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Offset_VoltageCharge
-                0x20007f6c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x200068bc        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.cellvoltage
-                0x20007f70      0x280 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x200068c0       0x70 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.SbasedSof.9134
-                0x200081f0       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006930       0x10 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.sox_current_tab
-                0x20008200       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006940       0x38 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.Slope_THighCharge
-                0x20008238        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
+                0x20006978        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(sox.c.1.o)
  .bss.appl_handle_tsk_10ms
-                0x2000823c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x2000697c        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
  .bss.appl_handle_tsk_100ms
-                0x20008240        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x20006980        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
  .bss.appl_handle_tsk_1ms
-                0x20008244        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
+                0x20006984        0x4 embedded-software\mcu-primary\src\application\libfoxbms-application.a(appltask.c.1.o)
  .bss.vbat.8428
-                0x20008248        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
- *fill*         0x20008249        0x3 
- .bss.adc_tab   0x2000824c       0x1c embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
+                0x20006988        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
+ *fill*         0x20006989        0x3 
+ .bss.adc_tab   0x2000698c       0x1c embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
  .bss.adc_conversion_state
-                0x20008268        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
- *fill*         0x20008269        0x1 
+                0x200069a8        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(adc_ex.c.1.o)
+ *fill*         0x200069a9        0x1 
  .bss.eepr_spi_rxoffset
-                0x2000826a        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x2000826a                eepr_spi_rxoffset
+                0x200069aa        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x200069aa                eepr_spi_rxoffset
  .bss.eepr_WR_RD_buffer
-                0x2000826c      0x100 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x2000826c                eepr_WR_RD_buffer
+                0x200069ac      0x100 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x200069ac                eepr_WR_RD_buffer
  .bss.eepr_spi_rxbuf
-                0x2000836c      0x103 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x2000836c                eepr_spi_rxbuf
- *fill*         0x2000846f        0x1 
+                0x20006aac      0x103 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x20006aac                eepr_spi_rxbuf
+ *fill*         0x20006baf        0x1 
  .bss.eepr_header
-                0x20008470       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x20008470                eepr_header
+                0x20006bb0       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x20006bb0                eepr_header
  .bss.eepr_board_info
-                0x20008490       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x20008490                eepr_board_info
+                0x20006bd0       0x20 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x20006bd0                eepr_board_info
  .bss.timeout_cnt
-                0x200084b0        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x200084b0                timeout_cnt
- .bss.cnt       0x200084b2        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
-                0x200084b2                cnt
- *fill*         0x200084b3        0x1 
+                0x20006bf0        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x20006bf0                timeout_cnt
+ .bss.cnt       0x20006bf2        0x1 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr_cfg.c.1.o)
+                0x20006bf2                cnt
+ *fill*         0x20006bf3        0x1 
  .bss.cont_current_tab
-                0x200084b4       0x38 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor.c.1.o)
- .bss.tmpbuf    0x200084ec      0x103 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
-                0x200084ec                tmpbuf
- *fill*         0x200085ef        0x1 
+                0x20006bf4       0x38 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor.c.1.o)
+ .bss.tmpbuf    0x20006c2c      0x103 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
+                0x20006c2c                tmpbuf
+ *fill*         0x20006d2f        0x1 
  .bss.eepr_cmdbuf
-                0x200085f0        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
-                0x200085f0                eepr_cmdbuf
- *fill*         0x200085f2        0x2 
+                0x20006d30        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(eepr.c.1.o)
+                0x20006d30                eepr_cmdbuf
+ *fill*         0x20006d32        0x2 
  .bss.cont_contactor_states
-                0x200085f4        0x6 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor_cfg.c.1.o)
-                0x200085f4                cont_contactor_states
- *fill*         0x200085fa        0x2 
+                0x20006d34        0x6 embedded-software\mcu-primary\src\module\libfoxbms-module.a(contactor_cfg.c.1.o)
+                0x20006d34                cont_contactor_states
+ *fill*         0x20006d3a        0x2 
  .bss.sig_ir155_dutycycle
-                0x200085fc        0x8 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
+                0x20006d3c        0x8 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
  .bss.hysteresisCounter
-                0x20008604        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
- *fill*         0x20008606        0x2 
+                0x20006d44        0x2 embedded-software\mcu-primary\src\module\libfoxbms-module.a(ir155.c.1.o)
+ *fill*         0x20006d46        0x2 
  .bss.CAN0_errorStruct
-                0x20008608       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008608                CAN0_errorStruct
+                0x20006d48       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x20006d48                CAN0_errorStruct
  .bss.sReceiveStruct0
-                0x20008624       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008624                sReceiveStruct0
+                0x20006d64       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x20006d64                sReceiveStruct0
  .bss.CAN1_errorStruct
-                0x20008648       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008648                CAN1_errorStruct
+                0x20006d88       0x1c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x20006d88                CAN1_errorStruct
  .bss.can1_rxbufferelements
-                0x20008664      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008664                can1_rxbufferelements
+                0x20006da4      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x20006da4                can1_rxbufferelements
  .bss.can0_txbufferelements
-                0x20008764      0x200 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008764                can0_txbufferelements
+                0x20006ea4      0x200 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x20006ea4                can0_txbufferelements
  .bss.canNode1_listenonly_mode
-                0x20008964        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008964                canNode1_listenonly_mode
- *fill*         0x20008965        0x3 
+                0x200070a4        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200070a4                canNode1_listenonly_mode
+ *fill*         0x200070a5        0x3 
  .bss.can1_txbufferelements
-                0x20008968      0x200 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008968                can1_txbufferelements
+                0x200070a8      0x200 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200070a8                can1_txbufferelements
  .bss.can1_fastLinkIndex
-                0x20008b68        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008b68                can1_fastLinkIndex
- *fill*         0x20008b6b        0x1 
+                0x200072a8        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200072a8                can1_fastLinkIndex
+ *fill*         0x200072ab        0x1 
  .bss.can0_fastLinkIndex
-                0x20008b6c        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008b6c                can0_fastLinkIndex
+                0x200072ac        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200072ac                can0_fastLinkIndex
  .bss.canNode0_listenonly_mode
-                0x20008b6f        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008b6f                canNode0_listenonly_mode
+                0x200072af        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200072af                canNode0_listenonly_mode
  .bss.fastLinkBuffer
-                0x20008b70        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008b70                fastLinkBuffer
+                0x200072b0        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200072b0                fastLinkBuffer
  .bss.can0_rxbufferelements
-                0x20008b78      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008b78                can0_rxbufferelements
+                0x200072b8      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200072b8                can0_rxbufferelements
  .bss.filterNumber.10051
-                0x20008c78        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200073b8        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
  .bss.retVal.10084
-                0x20008c79        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
- *fill*         0x20008c7a        0x2 
+                0x200073b9        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+ *fill*         0x200073ba        0x2 
  .bss.sReceiveStruct1
-                0x20008c7c       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
-                0x20008c7c                sReceiveStruct1
+                0x200073bc       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can.c.1.o)
+                0x200073bc                sReceiveStruct1
  .bss.canstatereq_tab
-                0x20008ca0       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal.c.1.o)
+                0x200073e0       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal.c.1.o)
  .bss.cans_state
-                0x20008cb0        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal.c.1.o)
- *fill*         0x20008cb3        0x1 
+                0x200073f0        0x3 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal.c.1.o)
+ *fill*         0x200073f3        0x1 
  .bss.counter_ticks.11221
-                0x20008cb4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal.c.1.o)
+                0x200073f4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal.c.1.o)
  .bss.chk_status
-                0x20008cb8        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(chksum.c.1.o)
-                0x20008cb8                chk_status
+                0x200073f8        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(chksum.c.1.o)
+                0x200073f8                chk_status
  .bss.ltc_taskcycle
-                0x20008cc4        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(meas.c.1.o)
- *fill*         0x20008cc5        0x3 
+                0x20007404        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(meas.c.1.o)
+ *fill*         0x20007405        0x3 
  .bss.ltc_task_1ms_cnt
-                0x20008cc8        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(meas.c.1.o)
+                0x20007408        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(meas.c.1.o)
  .bss.ltc_DataBufferSPI_TX_with_PEC_init
-                0x20008ccc       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x2000740c       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .bss.ltc_DataBufferSPI_TX_with_PEC_tempsens
-                0x20008d98       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.eeprom_taskcycle.10583
-                0x20008e64        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x20008e65        0x3 
- .bss.ltc_balancing_feedback
-                0x20008e68      0x19c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.cntr.10601
-                0x20009004        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x20009005        0x3 
- .bss.ltc_tmpTXPECbuffer
-                0x20009008       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_TX_with_PEC_eeprom
-                0x200090d4       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_cellvoltage
-                0x200091a0      0x280 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_tmpTXbuffer
-                0x20009420       0x96 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x200094b6        0x2 
- .bss.ltc_DataBufferSPI_RX_with_PEC_tempsens
-                0x200094b8       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_user_io_control
-                0x20009584       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_TX_with_PEC_temperatures
-                0x200095c4       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.LTC_MultiplexerVoltages
-                0x20009690      0x4b0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_ebm_config
-                0x20009b40       0x19 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x20009b40                ltc_ebm_config
- *fill*         0x20009b59        0x3 
- .bss.ltc_user_mux
-                0x20009b5c      0x32c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_ebm_dump_count
-                0x20009e88        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.temp_sens_taskcycle.10584
-                0x20009e8a        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x20009e8b        0x1 
- .bss.LTC_EXT_TEMP_SENS
-                0x20009e8c       0x19 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x20009ea5        0x3 
- .bss.ltc_celltemperature
-                0x20009ea8      0x298 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_TX_ClockCycles_with_PEC
-                0x2000a140        0xd embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x2000a14d        0x3 
- .bss.ltc_balancing_control
-                0x2000a150      0x19c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_RX_with_PEC_user_io
-                0x2000a2ec       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.LTC_allGPIOVoltages
-                0x2000a3b8      0x12c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.LTC_GPIOVoltages
-                0x2000a4e4      0x12c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_RX_with_PEC_voltages
-                0x2000a610       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.LTC_CellVoltages
-                0x2000a6dc      0x190 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.user_io_taskcycle.10582
-                0x2000a86c        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x2000a86d        0x3 
- .bss.ltc_DataBufferSPI_TX_tempsens
-                0x2000a870       0x96 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x2000a906        0x2 
- .bss.ltc_ebm_cali
-                0x2000a908       0x96 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x2000a908                ltc_ebm_cali
- *fill*         0x2000a99e        0x2 
- .bss.ltc_DataBufferSPI_TX_with_PEC_user_io
-                0x2000a9a0       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.LTC_EEPROM_UIDs
-                0x2000aa6c       0x64 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_TX_user_io
-                0x2000aad0       0x96 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x2000ab66        0x2 
- .bss.ltc_minmax
-                0x2000ab68       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_col_config
-                0x2000ab98        0x5 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
-                0x2000ab98                ltc_col_config
- *fill*         0x2000ab9d        0x3 
- .bss.ltc_DataBufferSPI_RX_with_PEC_temperatures
-                0x2000aba0       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- .bss.ltc_DataBufferSPI_TX_eeprom
-                0x2000ac6c       0x96 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x2000ad02        0x2 
+                0x20007430       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .bss.ltc_DataBufferSPI_TX_temperatures
-                0x2000ad04       0x96 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20007454       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_tmpTXPECbuffer
+                0x2000746c       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_TX_with_PEC_eeprom
+                0x20007490       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_cellvoltage
+                0x200074b4       0x70 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_tmpTXbuffer
+                0x20007524       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.temp_sens_taskcycle.10603
+                0x2000753c        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x2000753d        0x3 
+ .bss.ltc_DataBufferSPI_RX_with_PEC_tempsens
+                0x20007540       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_led_config
+                0x20007564        0x6 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20007564                ltc_led_config
+ *fill*         0x2000756a        0x2 
+ .bss.ltc_user_io_control
+                0x2000756c       0x14 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_TX_with_PEC_temperatures
+                0x20007580       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.LTC_MultiplexerVoltages
+                0x200075a4       0xc0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_ebm_config
+                0x20007664        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20007664                ltc_ebm_config
+ .bss.ltc_user_mux
+                0x20007668       0x8c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_ebm_dump_count
+                0x200076f4        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x200076f6        0x2 
+ .bss.LTC_EXT_TEMP_SENS
+                0x200076f8        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_celltemperature
+                0x200076fc       0x74 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_TX_ClockCycles_with_PEC
+                0x20007770        0xd embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x2000777d        0x3 
+ .bss.ltc_balancing_control
+                0x20007780       0x4c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_RX_with_PEC_user_io
+                0x200077cc       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.LTC_allGPIOVoltages
+                0x200077f0       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.LTC_GPIOVoltages
+                0x20007820       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_RX_with_PEC_voltages
+                0x20007850       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.LTC_CellVoltages
+                0x20007874       0x40 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_RX_with_PEC_temperatures
+                0x200078b4       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_TX_tempsens
+                0x200078d8       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_ebm_cali
+                0x200078f0       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x200078f0                ltc_ebm_cali
+ .bss.cntr.10620
+                0x20007908        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x20007909        0x3 
+ .bss.ltc_DataBufferSPI_TX_with_PEC_user_io
+                0x2000790c       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.user_io_taskcycle.10601
+                0x20007930        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x20007931        0x3 
+ .bss.LTC_EEPROM_UIDs
+                0x20007934       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.eeprom_taskcycle.10602
+                0x20007944        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x20007945        0x3 
+ .bss.ltc_DataBufferSPI_TX_user_io
+                0x20007948       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_minmax
+                0x20007960       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_col_config
+                0x20007990        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20007990                ltc_col_config
+ *fill*         0x20007991        0x3 
+ .bss.ltc_balancing_feedback
+                0x20007994       0x4c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ .bss.ltc_DataBufferSPI_TX_eeprom
+                0x200079e0       0x18 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .bss.ltc_ebm_force_update
-                0x2000ad9a        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
- *fill*         0x2000ad9b        0x1 
+                0x200079f8        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+ *fill*         0x200079f9        0x3 
  .bss.LTC_ErrorTable
-                0x2000ad9c      0x1f4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x200079fc       0x50 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .bss.ltc_DataBufferSPI_RX_with_PEC_eeprom
-                0x2000af90       0xcc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
+                0x20007a4c       0x24 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(ltc.c.1.o)
  .bss.mcu_unique_deviceID
-                0x2000b05c       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
-                0x2000b05c                mcu_unique_deviceID
- .bss.hrtc      0x2000b06c       0x20 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
-                0x2000b06c                hrtc
+                0x20007a70       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(mcu.c.1.o)
+                0x20007a70                mcu_unique_deviceID
+ .bss.hrtc      0x20007a80       0x20 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(rtc.c.1.o)
+                0x20007a80                hrtc
  .bss.spi_state
-                0x2000b08c        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
- *fill*         0x2000b08e        0x2 
+                0x20007aa0        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(spi.c.1.o)
+ *fill*         0x20007aa2        0x2 
  .bss.uart_com_receivedbyte
-                0x2000b090       0x64 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x2000b090                uart_com_receivedbyte
- .bss.rxbuf     0x2000b0f4      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x2000b0f4                rxbuf
+                0x20007aa4       0x64 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20007aa4                uart_com_receivedbyte
+ .bss.rxbuf     0x20007b08      0x100 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20007b08                rxbuf
  .bss.g_ftBuf.9348
-                0x2000b1f4       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
- .bss.txbuf     0x2000b204      0x300 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x2000b204                txbuf
+                0x20007c08       0x10 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+ .bss.txbuf     0x20007c18      0x300 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20007c18                txbuf
  .bss.Msg0SendBusy
-                0x2000b504        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x2000b504                Msg0SendBusy
+                0x20007f18        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20007f18                Msg0SendBusy
  .bss.uart_com_receive_slot
-                0x2000b505        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
-                0x2000b505                uart_com_receive_slot
+                0x20007f19        0x1 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(uart.c.1.o)
+                0x20007f19                uart_com_receive_slot
  .bss.cycle_time.8402
-                0x2000b506        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+                0x20007f1a        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
  .bss.led_counter.8395
-                0x2000b508        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
- *fill*         0x2000b50a        0x2 
- .bss.hiwdg     0x2000b50c        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(wdg.c.1.o)
-                0x2000b50c                hiwdg
+                0x20007f1c        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(led.c.1.o)
+ *fill*         0x20007f1e        0x2 
+ .bss.hiwdg     0x20007f20        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(wdg.c.1.o)
+                0x20007f20                hiwdg
  .bss.ilck_interlock_state
-                0x2000b518        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(interlock_cfg.c.1.o)
-                0x2000b518                ilck_interlock_state
- *fill*         0x2000b51a        0x2 
+                0x20007f2c        0x2 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(interlock_cfg.c.1.o)
+                0x20007f2c                ilck_interlock_state
+ *fill*         0x20007f2e        0x2 
  .bss.can1_RxMsgs
-                0x2000b51c        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
-                0x2000b51c                can1_RxMsgs
+                0x20007f30        0x0 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(can_cfg.c.1.o)
+                0x20007f30                can1_RxMsgs
  .bss.minmax_volt_tab.11243
-                0x2000b51c       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20007f30       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.minmax_temp_tab.11256
-                0x2000b54c       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20007f60       0x30 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.cans_current_tab
-                0x2000b57c       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20007f90       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.cans_heart_beat
-                0x2000b5b4        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20007fc8        0x8 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.powMovMean_tab.11271
-                0x2000b5bc       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20007fd0       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.sox_tab.11215
-                0x2000b5f4       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20008008       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.balancing_tab.11345
-                0x2000b61c      0x19c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20008030       0x4c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.canerr_tab.11190
-                0x2000b7b8       0x20 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x2000807c       0x20 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.sox_tab.11225
-                0x2000b7d8       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x2000809c       0x28 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.curMovMean_tab.11286
-                0x2000b800       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x200080c4       0x38 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.balancing_tab.11191
-                0x2000b838      0x19c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x200080fc       0x4c embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.isoguard_tab.11334
-                0x2000b9d4        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20008148        0xc embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.volt_tab.10357
-                0x2000b9e0      0x280 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x20008154       0x70 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.can_heartbeat_max_diff
-                0x2000bc60        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+                0x200081c4        0x4 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
  .bss.temp_tab.10769
-                0x2000bc64      0x298 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
- .bss.uwTick    0x2000befc        0x4 embedded-software\mcu-hal\STM32F4xx_HAL_Driver\libfoxbms-stmhal.a(stm32f4xx_hal.c.1.o)
-                0x2000befc                uwTick
+                0x200081c8       0x74 embedded-software\mcu-common\src\module\libfoxbms-common-module.a(cansignal_cfg.c.1.o)
+ .bss.uwTick    0x2000823c        0x4 embedded-software\mcu-hal\STM32F4xx_HAL_Driver\libfoxbms-stmhal.a(stm32f4xx_hal.c.1.o)
+                0x2000823c                uwTick
  .bss.__malloc_sbrk_start
-                0x2000bf00        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x2000bf00                __malloc_sbrk_start
+                0x20008240        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20008240                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x2000bf04        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x2000bf04                __malloc_free_list
+                0x20008244        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20008244                __malloc_free_list
  .bss.heap_end.4079
-                0x2000bf08        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
+                0x20008248        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
  *(COMMON)
- COMMON         0x2000bf0c        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
-                0x2000bf0c                errno
-                0x2000bf10                . = ALIGN (0x4)
-                0x2000bf10                _ebss = .
-                0x2000bf10                __bss_end__ = _ebss
+ COMMON         0x2000824c        0x4 c:/foxconda/library/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
+                0x2000824c                errno
+                0x20008250                . = ALIGN (0x4)
+                0x20008250                _ebss = .
+                0x20008250                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000bf10      0x600
-                0x2000bf10                . = ALIGN (0x4)
-                0x2000bf10                PROVIDE (end, .)
-                0x2000bf10                PROVIDE (_end, .)
-                0x2000c110                . = (. + _Min_Heap_Size)
- *fill*         0x2000bf10      0x200 
-                0x2000c510                . = (. + _Min_Stack_Size)
- *fill*         0x2000c110      0x400 
-                0x2000c510                . = ALIGN (0x4)
+                0x20008250      0x600
+                0x20008250                . = ALIGN (0x4)
+                0x20008250                PROVIDE (end, .)
+                0x20008250                PROVIDE (_end, .)
+                0x20008450                . = (. + _Min_Heap_Size)
+ *fill*         0x20008250      0x200 
+                0x20008850                . = (. + _Min_Stack_Size)
+ *fill*         0x20008450      0x400 
+                0x20008850                . = ALIGN (0x4)
 
 /DISCARD/
  libc.a(*)

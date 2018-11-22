@@ -3064,7 +3064,7 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 				{
 					cans_heart_beat.is_connect_can_dev = 1;
 					cans_heart_beat.timestamp = MCU_GetTimeStamp();
-					DEBUG_PRINTF_EX("[%s:%d]receive heart beat (time:%u)\r\n", __FILE__, __LINE__, cans_heart_beat.timestamp);
+					//DEBUG_PRINTF_EX("[%s:%d]receive heart beat (time:%u)\r\n", __FILE__, __LINE__, cans_heart_beat.timestamp);
 				}
 				break;
 #endif

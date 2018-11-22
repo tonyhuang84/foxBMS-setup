@@ -208,6 +208,22 @@ uint32_t rb_cmd_set_ebm_eb_col_state(char* params) {
 	DEBUG_PRINTF_EX("[com.c:%d]rb_cmd_set_ebm_eb_col_state done\r\n", __LINE__);
 }
 #endif
+#if defined(ITRI_MOD_12)
+uint32_t rb_cmd_set_ebm_led_state(char* params) {
+	uint32_t i;
+	uint8_t ledState[BS_NR_OF_LEDS];
+	char* pCmd = strtok(params, " ");
+	char* pParam = NULL;
+
+	for (i=0; i < BS_NR_OF_LEDS; i++) {
+		pParam = strtok(NULL, " ");
+		ledState[i] = (uint8_t)atoi(pParam);
+	}
+
+	LTC_Set_Get_Property("set_ebm_led_state", (void*)ledState, NULL, NULL, NULL);
+	DEBUG_PRINTF_EX("[com.c:%d]rb_cmd_set_ebm_led_state done\r\n", __LINE__);
+}
+#endif
 
 uint32_t rb_cmd_get_LTC_CellVoltages(char* params) {
 	char* pCmd = strtok(params, " ");
@@ -242,7 +258,10 @@ RB_CMD_s rb_cmds[] = {
 	{"get_LTC_allGPIOVoltages", "ro, ex:cmd 0; get m0 gpio vol.", &rb_cmd_get_LTC_allGPIOVoltages},
 	{"set_ebm_eb_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), m2(by)", &rb_cmd_set_ebm_eb_state},
 #if defined(ITRI_MOD_9)
-	{"set_ebm_eb_col_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), c0(en)", &rb_cmd_set_ebm_eb_col_state},
+	{"set_ebm_eb_col_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), s0(ds)", &rb_cmd_set_ebm_eb_col_state},
+#endif
+#if defined(ITRI_MOD_12)
+	{"set_ebm_led_state", "wo, ex:cmd 1 0 1; config led0(on) led1(off), led2(on)", &rb_cmd_set_ebm_led_state},
 #endif
 	{"get_LTC_CellVoltages", "ro, ex:cmd 0; get m0 cell vol.", &rb_cmd_get_LTC_CellVoltages},
 	{"ltc_task_ALLGPIOMEASUREMEN", "ro,", &rb_cmd_ltc_task_ALLGPIOMEASUREMEN},
