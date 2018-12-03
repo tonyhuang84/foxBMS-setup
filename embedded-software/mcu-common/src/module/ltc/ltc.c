@@ -3513,6 +3513,13 @@ static STD_RETURN_TYPE_e LTC_Init(void) {
 #endif
     }
 
+#if defined(ITRI_MOD_12)
+    {
+    	uint8_t led[BS_NR_OF_LEDS] = {1, 1, 1, 1, 1, 1};	// all LEDs are turn on
+    	set_ebm_led_state(led, NULL, NULL, NULL);
+    }
+#endif
+
     // now construct the message to be sent: it contains the wanted data, PLUS the needed PECs
     ltc_DataBufferSPI_TX_with_PEC_init[0] = ltc_cmdWRCFG[0];
     ltc_DataBufferSPI_TX_with_PEC_init[1] = ltc_cmdWRCFG[1];
@@ -4791,9 +4798,14 @@ uint32_t set_ebm_led_state(void* iParam1, void* iParam2, void* oParam1, void* oP
 	uint8_t i;
 
 	for (i=0; i < BS_NR_OF_LEDS; i++) {
-		ltc_led_config[i].eb_state = pLEDState[i] == 1 ? 0:1;	// for sw: 0->OFF, 1->ON; for hw: 0(LOW)->ON, 1(HIGH)-> OFF
+		if (pLEDState[i] < 2) {
+			ltc_led_config[i].eb_state = pLEDState[i] == 1 ? 0:1;	// for sw: 0->OFF, 1->ON; for hw: 0(LOW)->ON, 1(HIGH)-> OFF
+		}
 	}
 	ltc_ebm_cmd = LTC_EBM_EB_COL_CTRL;
+
+	DEBUG_PRINTF_EX("[%d]LED: %d %d %d %d %d %d\r\n", __LINE__,
+			pLEDState[0], pLEDState[1], pLEDState[2], pLEDState[3], pLEDState[4], pLEDState[5]);
 
 	return 0;
 }

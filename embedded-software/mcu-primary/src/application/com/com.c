@@ -130,7 +130,9 @@ void COM_StartupInfo(void) {
 
 #if defined(ITRI_MOD_1)
 typedef uint32_t (*rb_cmd_funcPtr)(char* params);
+#if defined(ITRI_MOD_2)
 extern uint32_t LTC_Set_Get_Property(char* prop, void* iParam1, void* iParam2, void* oParam1, void* oParam2);
+#endif
 
 static char com_ltc_out_buf[96] = {0, };
 
@@ -141,21 +143,27 @@ uint32_t rb_cmd_test1(char* params) {
 
 uint32_t rb_cmd_get_BS_NR_OF_MODULES(char* params) {
 	uint32_t numMod = 0;
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("get_BS_NR_OF_MODULES", NULL, NULL, (void*)&numMod, NULL);
+#endif
 	DEBUG_PRINTF_EX("BS_NR_OF_MODULES=%u\r\n", numMod);
 	return 0;
 }
 
 uint32_t rb_cmd_get_BS_NR_OF_BAT_CELLS_PER_MODULE(char* params) {
 	uint32_t numMod = 0;
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("get_BS_NR_OF_BAT_CELLS_PER_MODULE", NULL, NULL, (void*)&numMod, NULL);
+#endif
 	DEBUG_PRINTF_EX("BS_NR_OF_BAT_CELLS_PER_MODULE=%u\r\n", numMod);
 	return 0;
 }
 
 uint32_t rb_cmd_get_BS_NR_OF_TEMP_SENSORS_PER_MODULE(char* params) {
 	uint32_t numMod = 0;
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("get_BS_NR_OF_TEMP_SENSORS_PER_MODULE", NULL, NULL, (void*)&numMod, NULL);
+#endif
 	DEBUG_PRINTF_EX("BS_NR_OF_TEMP_SENSORS_PER_MODULE=%u\r\n", numMod);
 	return 0;
 }
@@ -165,7 +173,9 @@ uint32_t rb_cmd_get_LTC_allGPIOVoltages(char* params) {
 	char* pParam = strtok(NULL, " ");
 	uint32_t modIdx = (uint32_t)atoi(pParam);
 
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("get_LTC_allGPIOVoltages", (void*)&modIdx, NULL, com_ltc_out_buf, NULL);
+#endif
 	return 0;
 }
 
@@ -182,7 +192,9 @@ uint32_t rb_cmd_set_ebm_eb_state(char* params) {
 		//DEBUG_PRINTF_EX("pParam:%s ebState[%u]:%u\r\n", pParam, i, ebState[i]);
 	}
 
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("set_ebm_eb_state", (void*)ebState, NULL, NULL, NULL);
+#endif
 	DEBUG_PRINTF_EX("rb_cmd_set_ebm_eb_state done\r\n");
 	return 0;
 }
@@ -230,17 +242,23 @@ uint32_t rb_cmd_get_LTC_CellVoltages(char* params) {
 	char* pParam = strtok(NULL, " ");
 	uint32_t modIdx = (uint32_t)atoi(pParam);
 
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("get_LTC_CellVoltages", (void*)&modIdx, NULL, com_ltc_out_buf, NULL);
+#endif
 	return 0;
 }
 
 uint32_t rb_cmd_ltc_task_ALLGPIOMEASUREMEN(char* params) {
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("ltc_task_ALLGPIOMEASUREMEN", NULL, NULL, NULL, NULL);
+#endif
 	return 0;
 }
 
 uint32_t rb_cmd_ltc_task_VOLTAGEMEASUREMENT(char* params) {
+#if defined(ITRI_MOD_2)
 	LTC_Set_Get_Property("ltc_task_VOLTAGEMEASUREMENT", NULL, NULL, NULL, NULL);
+#endif
 	return 0;
 }
 
@@ -251,19 +269,19 @@ typedef struct {
 } RB_CMD_s;
 
 RB_CMD_s rb_cmds[] = {
-	{"test1", "test function", &rb_cmd_test1},
+	//{"test1", "test function", &rb_cmd_test1},
 	{"get_BS_NR_OF_MODULES", "ro,", &rb_cmd_get_BS_NR_OF_MODULES},
 	{"get_BS_NR_OF_BAT_CELLS_PER_MODULE", "ro,", &rb_cmd_get_BS_NR_OF_BAT_CELLS_PER_MODULE},
 	{"get_BS_NR_OF_TEMP_SENSORS_PER_MODULE", "ro,", &rb_cmd_get_BS_NR_OF_TEMP_SENSORS_PER_MODULE},
-	{"get_LTC_allGPIOVoltages", "ro, ex:cmd 0; get m0 gpio vol.", &rb_cmd_get_LTC_allGPIOVoltages},
-	{"set_ebm_eb_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), m2(by)", &rb_cmd_set_ebm_eb_state},
+	{"get_LTC_allGPIOVoltages", "ro, ", &rb_cmd_get_LTC_allGPIOVoltages},
+	{"set_ebm_eb_state", "wo, ", &rb_cmd_set_ebm_eb_state},
 #if defined(ITRI_MOD_9)
-	{"set_ebm_eb_col_state", "wo, ex:cmd 1 2 0; config m0(en) m1(ds), s0(ds)", &rb_cmd_set_ebm_eb_col_state},
+	{"set_ebm_eb_col_state", "wo, ", &rb_cmd_set_ebm_eb_col_state},
 #endif
 #if defined(ITRI_MOD_12)
-	{"set_ebm_led_state", "wo, ex:cmd 1 0 1; config led0(on) led1(off), led2(on)", &rb_cmd_set_ebm_led_state},
+	{"set_ebm_led_state", "wo, ", &rb_cmd_set_ebm_led_state},
 #endif
-	{"get_LTC_CellVoltages", "ro, ex:cmd 0; get m0 cell vol.", &rb_cmd_get_LTC_CellVoltages},
+	{"get_LTC_CellVoltages", "ro, ", &rb_cmd_get_LTC_CellVoltages},
 	{"ltc_task_ALLGPIOMEASUREMEN", "ro,", &rb_cmd_ltc_task_ALLGPIOMEASUREMEN},
 	{"ltc_task_VOLTAGEMEASUREMENT", "ro,", &rb_cmd_ltc_task_VOLTAGEMEASUREMENT},
 };

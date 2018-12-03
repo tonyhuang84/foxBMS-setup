@@ -86,7 +86,7 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 		for (i=0; i < BS_NR_OF_MODULES; i++) {
 			configBuf[i] = (uint8_t)((config >> i*2) & 0x03);
 		}
-
+#if defined(ITRI_MOD_9)
 		if (colConfigBuf != NULL) {
 			for (i=0; i < BS_NR_OF_COLUMNS; i++) {
 				//colConfigBuf[i] = (uint8_t)((config >> (i + BS_NR_OF_MODULES)*2) & 0x03);
@@ -94,6 +94,7 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 				//DEBUG_PRINTF_EX("[%d]config: 0x%x\r\n", __LINE__, (uint8_t)((config >> (i + BS_NR_OF_MODULES*2)) ));
 			}
 		}
+#endif
 	}
 #endif
 #if defined(ITRI_MOD_11)
@@ -127,7 +128,7 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 			}
 			if (diff > can_heartbeat_max_diff) {
 				can_heartbeat_max_diff = diff;
-				DEBUG_PRINTF_EX("[%s:%d]max heartbeat diff. time:%u ms\r\n", __FILE__, __LINE__, can_heartbeat_max_diff);
+				//DEBUG_PRINTF_EX("[%s:%d]max heartbeat diff. time:%u ms\r\n", __FILE__, __LINE__, can_heartbeat_max_diff);
 			}
 		} else {
 			can_heartbeat_max_diff = 0;
@@ -3043,12 +3044,6 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
             		LTC_Set_Get_Property("set_ebm_eb_state", (void*)configBuf, NULL, NULL, NULL);
             	}
             	break;
-            case 25:
-				{
-					LTC_Set_Get_Property("set_curr_cali", NULL, NULL, NULL, NULL);
-					DEBUG_PRINTF_EX("[%s:%d]set_curr_cali\r\n", __FILE__, __LINE__);
-				}
-				break;
 #if defined(ITRI_MOD_9)
 			case 21:
 				{
@@ -3056,6 +3051,29 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 					uint8_t colConfigBuf[BS_NR_OF_COLUMNS];
 					cans_ebm_getconfig(value, configBuf, colConfigBuf);
 					LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)configBuf, (void*)colConfigBuf, NULL, NULL);
+				}
+				break;
+#endif
+            case 25:
+				{
+					LTC_Set_Get_Property("set_curr_cali", NULL, NULL, NULL, NULL);
+					DEBUG_PRINTF_EX("[%s:%d]set_curr_cali\r\n", __FILE__, __LINE__);
+				}
+				break;
+#if defined(ITRI_MOD_12)
+            case 26:
+				{
+					uint8_t ledState[BS_NR_OF_LEDS] = {1, 0, 0, 0, 0, 0};
+					if (data[1] == 1) {
+						ledState[1] = 1;	// charge LED turn on
+						ledState[5] = 1;	// light bar
+					} else if (data[1] == 2) {
+						ledState[2] = 1;	// discharge LED turn on
+						ledState[5] = 1;	// light bar
+					}
+					if (data[2] == 255)		ledState[3] = 2;	// skip
+					else if (data[2] > 0)	ledState[3] = 1;	// Sys. error LED turn on
+					LTC_Set_Get_Property("set_ebm_led_state", (void*)ledState, NULL, NULL, NULL);
 				}
 				break;
 #endif
