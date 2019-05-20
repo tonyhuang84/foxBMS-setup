@@ -9,12 +9,22 @@
 		<item value="300" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_HEIGHT"/>
 		<item value="916" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_X_ORIGIN"/>
 	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="180" key="size.height"/>
+		<item value="714" key="size.width"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="PDOMSearchPage">
-		<item value="false" key="caseSensitive"/>
+		<item value="true" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="cans_ebm_all_disable"/>
+			<item value="*SLAVE*"/>
+			<item value="VER"/>
+			<item value="SLAVE"/>
+			<item value="LED"/>
+			<item value="UVP"/>
 			<item value="LTC_READ_AUXILIARY_REGISTER_B_RAUXB_READALLGPIO"/>
 			<item value="rb_cmd_set_ebm_eb_col_state"/>
 			<item value="CAN_TIMING"/>

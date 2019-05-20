@@ -65,13 +65,16 @@ typedef enum {
  * \par Default:
  * 2
 */
-#define BS_NR_OF_MODULES                           	25
-#if defined(ITRI_MOD_9)
-	#define BS_NR_OF_COLUMNS                       	5
+#define BS_NR_OF_MODULES                           	15
+//#if defined(ITRI_MOD_9)
+	#define BS_NR_OF_COLUMNS                       	3
 	#define BS_NR_OF_ROWS							5
-#endif
+//#endif
 #if defined(ITRI_MOD_12)
 	#define BS_NR_OF_LEDS							6
+#endif
+#if defined(ITRI_MOD_13)
+	#define ITRI_NR_OF_BAT_CELLS_PER_MODULE			4
 #endif
 
 

@@ -41,6 +41,8 @@
 #include "bal.h"
 #include "batterycell_cfg.h"
 
+#include "uart.h"	// ITRI_MOD
+
 /*================== Macros and Definitions ===============================*/
 
 /**
@@ -760,18 +762,29 @@ static uint8_t BMS_CheckBalancingRequests(void) {
  *
  * @details verify for cell voltage measurements (U), if minimum and maximum values are out of range
  */
+#if defined(ITRI_MOD_13)
+extern void cans_ebm_all_disable();
+#endif
 static void BMS_CheckVoltages(void) {
     DATA_BLOCK_MINMAX_s minmax;
 
     DATA_GetTable(&minmax, DATA_BLOCK_ID_MINMAX);
 
     if (minmax.voltage_max > BC_VOLTMAX) {
+#if defined(ITRI_MOD_13)
+    	//DEBUG_PRINTF_EX("[ERR]cell(id:%u) OVP (%u > %u)\r\n", minmax.voltage_cell_number_max, minmax.voltage_max, BC_VOLTMAX);
+    	cans_ebm_all_disable();
+#endif
         DIAG_Handler(DIAG_CH_CELLVOLTAGE_OVERVOLTAGE, DIAG_EVENT_NOK, 0, NULL_PTR);
     } else {
         DIAG_Handler(DIAG_CH_CELLVOLTAGE_OVERVOLTAGE, DIAG_EVENT_OK, 0, NULL_PTR);
     }
 
     if (minmax.voltage_min < BC_VOLTMIN) {
+#if defined(ITRI_MOD_13)
+    	//DEBUG_PRINTF_EX("[ERR]cell(id:%u) UVP (%u < %u)\r\n", minmax.voltage_cell_number_min, minmax.voltage_min, BC_VOLTMIN);
+    	cans_ebm_all_disable();
+#endif
         DIAG_Handler(DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE, DIAG_EVENT_NOK, 0, NULL_PTR);
     } else {
         DIAG_Handler(DIAG_CH_CELLVOLTAGE_UNDERVOLTAGE, DIAG_EVENT_OK, 0, NULL_PTR);

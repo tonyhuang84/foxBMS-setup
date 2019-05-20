@@ -96,6 +96,28 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 		}
 #endif
 	}
+
+	void cans_ebm_all_disable() {
+		uint8_t configBuf[BS_NR_OF_MODULES];
+		uint8_t colConfigBuf[BS_NR_OF_COLUMNS];
+		uint32_t i;
+
+		// disable all EBMs
+		for (i=0; i < BS_NR_OF_MODULES; i++) {
+			configBuf[i] = 2;
+		}
+		// disable all SPMs
+		for (i=0; i < BS_NR_OF_COLUMNS; i++) {
+			colConfigBuf[i] = 0;
+		}
+
+		//DEBUG_PRINTF_EX("[%d]cans_ebm_all_disable()\r\n", __LINE__);
+#if defined(ITRI_MOD_9)
+		LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)configBuf, (void*)colConfigBuf, NULL, NULL);
+#else
+		LTC_Set_Get_Property("set_ebm_eb_state", (void*)configBuf, NULL, NULL, NULL);
+#endif
+	}
 #endif
 #if defined(ITRI_MOD_11)
 	typedef struct {
@@ -109,20 +131,8 @@ static uint32_t cans_gettriggercurrent(uint32_t sigIdx, void *value);
 		if (cans_heart_beat.is_connect_can_dev == 1) {
 			uint32_t diff = MCU_GetTimeStamp() - cans_heart_beat.timestamp;
 			if (diff > 2100) {
-				uint8_t configBuf[BS_NR_OF_MODULES];
-				uint8_t colConfigBuf[BS_NR_OF_COLUMNS];
-				uint32_t i;
-
 				DEBUG_PRINTF_EX("[%s:%d]heartbeat losss -> all disable (diff:%u)\r\n", __FILE__, __LINE__, diff);
-				// disable all EBMs
-				for (i=0; i < BS_NR_OF_MODULES; i++) {
-					configBuf[i] = 2;
-				}
-				// disable all SPMs
-				for (i=0; i < BS_NR_OF_COLUMNS; i++) {
-					colConfigBuf[i] = 0;
-				}
-				LTC_Set_Get_Property("set_ebm_eb_col_state", (void*)configBuf, (void*)colConfigBuf, NULL, NULL);
+				cans_ebm_all_disable();
 
 				cans_heart_beat.is_connect_can_dev = 0;
 			}
@@ -3063,6 +3073,7 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 #if defined(ITRI_MOD_12)
             case 26:
 				{
+					static uint8_t isFirstLedStateCmd = 1;
 					uint8_t ledState[BS_NR_OF_LEDS] = {1, 0, 0, 0, 0, 0};
 					if (data[1] == 1) {
 						ledState[1] = 1;	// charge LED turn on
@@ -3071,9 +3082,11 @@ uint32_t cans_setdebug(uint32_t sigIdx, void *value) {
 						ledState[2] = 1;	// discharge LED turn on
 						ledState[5] = 1;	// light bar
 					}
-					if (data[2] == 255)		ledState[3] = 2;	// skip
-					else if (data[2] > 0)	ledState[3] = 1;	// Sys. error LED turn on
+					if (data[2] == 255 && isFirstLedStateCmd != 1)		ledState[4] = 2;	// skip
+					else if (data[2] > 0)								ledState[4] = 1;	// Sys. error LED turn on
 					LTC_Set_Get_Property("set_ebm_led_state", (void*)ledState, NULL, NULL, NULL);
+
+					isFirstLedStateCmd = 0;
 				}
 				break;
 #endif

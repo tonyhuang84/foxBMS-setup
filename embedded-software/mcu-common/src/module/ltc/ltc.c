@@ -50,6 +50,10 @@
 #include "ltc_pec.h"
 #include "uart.h"
 
+#if defined(ITRI_MOD_13)
+	#include "batterycell_cfg.h"
+#endif
+
 /*================== Macros and Definitions ===============================*/
 // LTC COMM definitions
 
@@ -760,7 +764,11 @@ extern void LTC_SaveVoltages(void) {
     max = min = ltc_cellvoltage.voltage[0];
     mean = 0;
     for (i=0; i < BS_NR_OF_MODULES; i++) {
+#if defined(ITRI_MOD_13)
+    	for (j=0; j < ITRI_NR_OF_BAT_CELLS_PER_MODULE; j++) {
+#else
         for (j=0; j < BS_NR_OF_BAT_CELLS_PER_MODULE; j++) {
+#endif
             mean += ltc_cellvoltage.voltage[i*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j];
             if (ltc_cellvoltage.voltage[i*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j] < min) {
                 min = ltc_cellvoltage.voltage[i*(BS_NR_OF_BAT_CELLS_PER_MODULE)+j];
@@ -1457,7 +1465,7 @@ void LTC_Trigger(void) {
                     ltc_state.ErrRetryCounter = 0;
                     ltc_state.timer = ltc_state.commandDataTransferTime;
 #if defined(ITRI_MOD_6_i)
-                    ltc_state.timer += 10;
+                    ltc_state.timer += 20;
 #endif
                 }
             } else if (ltc_state.substate == LTC_READ_VOLTAGE_REGISTER_B_RDCVB_READVOLTAGE) {
@@ -1642,7 +1650,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1697,7 +1705,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1775,7 +1783,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1802,7 +1810,7 @@ void LTC_Trigger(void) {
                     // 18 Cells
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -1867,7 +1875,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_voltages) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2141,7 +2149,7 @@ void LTC_Trigger(void) {
                 LTC_SAVELASTSTATES();
                 if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    //DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                     if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2686,7 +2694,7 @@ void LTC_Trigger(void) {
 
                     if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    	//DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    	DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                         if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -2790,7 +2798,7 @@ void LTC_Trigger(void) {
                 ltc_state.lastsubstate = ltc_state.substate;
                 if (LTC_RX_PECCheck(ltc_DataBufferSPI_RX_with_PEC_temperatures) != E_OK) {
 #if defined(ITRI_MOD_2)
-                    //DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
+                    DEBUG_PRINTF_EX("[%s:%d:WARN]PEC err\r\n", __FILE__, __LINE__);
 #endif
                     if (++ltc_state.ErrPECCounter > LTC_TRANSMIT_PECERRLIMIT) {
 
@@ -4804,8 +4812,8 @@ uint32_t set_ebm_led_state(void* iParam1, void* iParam2, void* oParam1, void* oP
 	}
 	ltc_ebm_cmd = LTC_EBM_EB_COL_CTRL;
 
-	DEBUG_PRINTF_EX("[%d]LED: %d %d %d %d %d %d\r\n", __LINE__,
-			pLEDState[0], pLEDState[1], pLEDState[2], pLEDState[3], pLEDState[4], pLEDState[5]);
+	//DEBUG_PRINTF_EX("[%d]LED: %d %d %d %d %d %d\r\n", __LINE__,
+	//		pLEDState[0], pLEDState[1], pLEDState[2], pLEDState[3], pLEDState[4], pLEDState[5]);
 
 	return 0;
 }

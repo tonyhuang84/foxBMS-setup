@@ -1,4 +1,4 @@
-12:08:58 **** Incremental Build of configuration sphinx for project documentation ****
+08:46:05 **** Build of configuration sphinx for project documentation ****
 python "D:\\itri\\foxBMS\\src\\foxBMS-setup\\.ws/../build.py" --sphinx 
 ERROR:root:[tony]cmd:'C:\\foxconda\\python.exe tools\\waf-1.9.13 configure sphinx'
 Setting top to                           : D:\itri\foxBMS\src\foxBMS-setup 
@@ -11,7 +11,7 @@ Checking for program 'python'                : C:\foxconda\python.exe
 Checking for program 'dot'                   : C:\foxconda\Library\bin\dot.bat 
 Checking for 'gcc' (C compiler)              : arm-none-eabi-gcc.exe 
 Checking for program 'doxygen'               : C:\foxconda\Scripts\doxygen.exe 
-Checking for program 'tar'                   : not found 
+Checking for program 'tar'                   : C:\Windows\system32\tar.exe 
 Checking for program 'sphinx-build'          : C:\foxconda\Scripts\sphinx-build.exe 
 Checking for program 'git'                   : C:\foxconda\Library\bin\git.exe 
 arm-none-eabi-gcc GCC
@@ -24,8 +24,8 @@ arm-none-eabi-ranlib RANLIB
 Checking for program 'arm-none-eabi-ranlib'  : C:\foxconda\Library\bin\arm-none-eabi-ranlib.exe 
 arm-none-eabi-as AS
 Checking for program 'arm-none-eabi-as'      : C:\foxconda\Library\bin\arm-none-eabi-as.exe 
-Basename:     foxbms-1.0-4b3e2d3-20180523040901-debug
-Prefix:       foxbms-1.0-4b3e2d3-20180523040901
+Basename:     foxbms-1.0-3601d6f-20190114004611-debug
+Prefix:       foxbms-1.0-3601d6f-20190114004611
 CFLAGS:       -mcpu=cortex-m4
               -mthumb
               -mlittle-endian
@@ -48,26 +48,25 @@ CFLAGS:       -mcpu=cortex-m4
               -DOS_USE_TRACE_ITM
               -DUSE_HAL_DRIVER
               -DHSE_VALUE=8000000
-              -g
-              -O0
-'configure' finished successfully (1.762s)
+              -O2
+'configure' finished successfully (3.752s)
 Waf: Entering directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
 ['D:\\itri\\foxBMS\\src\\foxBMS-setup\\_ext', 'D:\\itri\\foxBMS\\src\\foxBMS-setup', 'D:\\itri\\foxBMS', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools\\waf-1.9.13-c6a32c41574b7fba5e65e4e7336fbc53', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools', 'D:\\tony\\Dropbox\\Public\\code\\python\\ITRI\\bSim_p', 'C:\\foxconda\\python27.zip', 'C:\\foxconda\\DLLs', 'C:\\foxconda\\lib', 'C:\\foxconda\\lib\\plat-win', 'C:\\foxconda\\lib\\lib-tk', 'C:\\foxconda', 'C:\\foxconda\\lib\\site-packages', 'C:\\foxconda\\lib\\site-packages\\Babel-2.5.0-py2.7.egg', 'C:\\foxconda\\lib\\site-packages\\win32', 'C:\\foxconda\\lib\\site-packages\\win32\\lib', 'C:\\foxconda\\lib\\site-packages\\Pythonwin', 'C:\\foxconda\\lib\\site-packages\\wx-3.0-msw']
-Wed May 23 12:09:01 2018 Time zone not defined
+ERROR:root:ERROR:root:[tony]options:<Values at 0x37a22c8: {'profile': '', 'force': False, 'verbose': 0, 'no_lock_in_out': '', 'primary': False, 'destdir': '', 'zones': '', 'colors': 'auto', 'targets': '', 'out': '', 'progress_bar': 0, 'top': '', 'libdir': None, 'msvc_targets': '', 'no_lock_in_top': '', 'files': '', 'no_lock_in_run': '', 'jobs': 4, 'distcheck_args': None, 'msvc_lazy': True, 'bootloader': False, 'secondary': False, 'msvc_version': '', 'target': 'debug', 'prefix': 'C:\\users\\a50130\\appdata\\local\\temp', 'keep': 0, 'bindir': None, 'configfile': None, 'check_c_compiler': None}>
+Mon Jan 14 08:46:11 2019 Time zone not defined
 Waf: Leaving directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
-'sphinx' finished successfully (0.570s)
-ERROR:root:ERROR:root:[tony]options:<Values at 0x68de2c8: {'profile': '', 'force': False, 'verbose': 0, 'no_lock_in_out': '', 'primary': False, 'destdir': '', 'zones': '', 'colors': 'auto', 'targets': '', 'out': '', 'progress_bar': 0, 'top': '', 'libdir': None, 'msvc_targets': '', 'no_lock_in_top': '', 'files': '', 'no_lock_in_run': '', 'jobs': 4, 'distcheck_args': None, 'msvc_lazy': True, 'bootloader': False, 'secondary': False, 'msvc_version': '', 'target': 'debug', 'prefix': 'C:\\users\\a50130\\appdata\\local\\temp', 'keep': 0, 'bindir': None, 'configfile': None, 'check_c_compiler': None}>
 
-INFO:waflib:'configure' finished successfully (1.762s)
+'sphinx' finished successfully (0.714s)
+INFO:waflib:'configure' finished successfully (3.752s)
 
 INFO:waflib:Waf: Entering directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
 
 INFO:waflib:Waf: Leaving directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
 
-INFO:waflib:'sphinx' finished successfully (0.570s)
+INFO:waflib:'sphinx' finished successfully (0.714s)
 
 
 INFO:root:Success: Process return code 0
 
-12:09:01 Build Finished (took 3s.764ms)
+08:46:12 Build Finished (took 7s.56ms)
 

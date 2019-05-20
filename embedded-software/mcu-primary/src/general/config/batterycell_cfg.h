@@ -101,7 +101,7 @@
  * \par Default:
  * 2800
 */
-#define BC_VOLTMAX 2800
+#define BC_VOLTMAX 4200
 
 /**
  * @ingroup CONFIG_BATTERYCELL
@@ -125,7 +125,7 @@
  * \par Default:
  * 1700
 */
-#define BC_VOLTMIN 1700
+#define BC_VOLTMIN 2400
 
 /**
  * @ingroup CONFIG_BATTERYCELL

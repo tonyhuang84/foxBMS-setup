@@ -110,7 +110,64 @@ static STD_RETURN_TYPE_e CANS_PeriodicTransmit(void) {
 #if CAN_USE_CAN_NODE0 == TRUE
     for (i = 0; i < can_CAN0_tx_length; i++) {
 #if defined(ITRI_MOD_5)
-    	if (can_CAN0_messages_tx[i].ID >= 0x115 && can_CAN0_messages_tx[i].ID <= 0x1E2) {
+    	uint8_t isDrop1 = (can_CAN0_messages_tx[i].ID >= 0x111 && can_CAN0_messages_tx[i].ID <= 0x1E2) ? 1:0;
+    	uint8_t isDrop2 = (can_CAN0_messages_tx[i].ID == 0x203 ||		// M0
+						   can_CAN0_messages_tx[i].ID == 0x223 ||
+						   can_CAN0_messages_tx[i].ID == 0x243 ||
+						   can_CAN0_messages_tx[i].ID == 0x263 ||
+						   can_CAN0_messages_tx[i].ID == 0x283 ||
+						   can_CAN0_messages_tx[i].ID == 0x2A3 ||		// M5
+						   can_CAN0_messages_tx[i].ID == 0x2C3 ||
+						   can_CAN0_messages_tx[i].ID == 0x2E3 ||
+						   can_CAN0_messages_tx[i].ID == 0x403 ||
+						   can_CAN0_messages_tx[i].ID == 0x423 ||
+						   can_CAN0_messages_tx[i].ID == 0x443 ||		// M10
+						   can_CAN0_messages_tx[i].ID == 0x463 ||
+						   can_CAN0_messages_tx[i].ID == 0x483 ||
+						   can_CAN0_messages_tx[i].ID == 0x4A3 ||
+						   can_CAN0_messages_tx[i].ID == 0x4C3 ||
+						   can_CAN0_messages_tx[i].ID == 0x4E3 ||		// M15
+						   can_CAN0_messages_tx[i].ID == 0x503 ||
+						   can_CAN0_messages_tx[i].ID == 0x523 ||
+						   can_CAN0_messages_tx[i].ID == 0x543 ||
+						   can_CAN0_messages_tx[i].ID == 0x563 ||
+    					   can_CAN0_messages_tx[i].ID == 0x583 ||		// M20
+    					   can_CAN0_messages_tx[i].ID == 0x5A3 ||
+    					   can_CAN0_messages_tx[i].ID == 0x5C3 ||
+    					   can_CAN0_messages_tx[i].ID == 0x5E3 ||
+    					   can_CAN0_messages_tx[i].ID == 0x603
+    					  ) ? 1:0;
+    	uint8_t isDrop3 = (
+    					   can_CAN0_messages_tx[i].ID == 0x210 || can_CAN0_messages_tx[i].ID == 0x211 ||		// M0
+						   can_CAN0_messages_tx[i].ID == 0x230 || can_CAN0_messages_tx[i].ID == 0x231 ||		// M1
+						   can_CAN0_messages_tx[i].ID == 0x250 || can_CAN0_messages_tx[i].ID == 0x251 ||		// M2
+						   can_CAN0_messages_tx[i].ID == 0x270 || can_CAN0_messages_tx[i].ID == 0x271 ||		// M3
+						   can_CAN0_messages_tx[i].ID == 0x290 || can_CAN0_messages_tx[i].ID == 0x291 ||		// M4
+						   can_CAN0_messages_tx[i].ID == 0x2B0 || can_CAN0_messages_tx[i].ID == 0x2B1 ||		// M5
+						   can_CAN0_messages_tx[i].ID == 0x2D0 || can_CAN0_messages_tx[i].ID == 0x2D1 ||		// M6
+						   can_CAN0_messages_tx[i].ID == 0x2F0 || can_CAN0_messages_tx[i].ID == 0x2F1 ||		// M7
+						   can_CAN0_messages_tx[i].ID == 0x410 || can_CAN0_messages_tx[i].ID == 0x411 ||		// M8
+						   can_CAN0_messages_tx[i].ID == 0x430 || can_CAN0_messages_tx[i].ID == 0x431 ||		// M9
+						   can_CAN0_messages_tx[i].ID == 0x450 || can_CAN0_messages_tx[i].ID == 0x451 ||		// M10
+						   can_CAN0_messages_tx[i].ID == 0x470 || can_CAN0_messages_tx[i].ID == 0x471 ||		// M11
+						   can_CAN0_messages_tx[i].ID == 0x490 || can_CAN0_messages_tx[i].ID == 0x491 ||		// M12
+						   can_CAN0_messages_tx[i].ID == 0x4B0 || can_CAN0_messages_tx[i].ID == 0x4B1 ||		// M13
+						   can_CAN0_messages_tx[i].ID == 0x4D0 || can_CAN0_messages_tx[i].ID == 0x4D1 ||		// M14
+						   can_CAN0_messages_tx[i].ID == 0x4F0 || can_CAN0_messages_tx[i].ID == 0x4F1 ||		// M15
+						   can_CAN0_messages_tx[i].ID == 0x510 || can_CAN0_messages_tx[i].ID == 0x511 ||		// M16
+						   can_CAN0_messages_tx[i].ID == 0x530 || can_CAN0_messages_tx[i].ID == 0x531 ||		// M17
+    					   can_CAN0_messages_tx[i].ID == 0x550 || can_CAN0_messages_tx[i].ID == 0x551 ||		// M18
+    					   can_CAN0_messages_tx[i].ID == 0x570 || can_CAN0_messages_tx[i].ID == 0x571 ||		// M19
+    					   can_CAN0_messages_tx[i].ID == 0x590 || can_CAN0_messages_tx[i].ID == 0x591 ||		// M20
+    					   can_CAN0_messages_tx[i].ID == 0x5B0 || can_CAN0_messages_tx[i].ID == 0x5B1 ||		// M21
+    					   can_CAN0_messages_tx[i].ID == 0x5D0 || can_CAN0_messages_tx[i].ID == 0x5D1 ||		// M22
+    					   can_CAN0_messages_tx[i].ID == 0x5F0 || can_CAN0_messages_tx[i].ID == 0x5F1 ||		// M23
+    					   can_CAN0_messages_tx[i].ID == 0x610 || can_CAN0_messages_tx[i].ID == 0x611			// M24
+    					  ) ? 1:0;
+    	if (isDrop1
+    		//|| isDrop2
+			//|| isDrop3
+			) {
     		continue;	// drop these msg
     	}
 #endif

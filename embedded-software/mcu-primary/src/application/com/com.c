@@ -499,19 +499,6 @@ void COM_Decoder(void) {
             return;
         }
 
-#if defined(ITRI_MOD_1)
-		if (exe_rb_cmd(com_receivedbyte) == 0) {
-			/* Clear received command */
-            memset(com_receivedbyte, 0, sizeof(com_receivedbyte));
-            com_receive_slot = 0;
-
-            /* Reset timeout to TESTMODE_TIMEOUT */
-            com_tickcount = osKernelSysTick();
-
-            return;
-		}
-#endif
-
         /* Get runtime */
         if (strcmp(com_receivedbyte, "getruntime") == 0) {
 
@@ -815,6 +802,18 @@ void COM_Decoder(void) {
             return;
         }
 
+#if defined(ITRI_MOD_1)
+		if (exe_rb_cmd(com_receivedbyte) == 0) {
+			/* Clear received command */
+            memset(com_receivedbyte, 0, sizeof(com_receivedbyte));
+            com_receive_slot = 0;
+
+            /* Reset timeout to TESTMODE_TIMEOUT */
+            com_tickcount = osKernelSysTick();
+
+            return;
+		}
+#endif
 
         /* Invalid command */
         DEBUG_PRINTF((const uint8_t * )"Invalid command!\r\n");

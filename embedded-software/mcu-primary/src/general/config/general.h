@@ -57,17 +57,18 @@
 	//#define ITRI_MOD_6_b		// SPI CRC
 	//#define ITRI_MOD_6_c		// ADC mode FAST
 	//#define ITRI_MOD_6_d		// add dummy cmd for wake up
-	//#define ITRI_MOD_6_e		// continuous do ebm control
+	//#define ITRI_MOD_6_e		// continuous to do ebm control
 	#define ITRI_MOD_6_f		// refine LTC_SaveVoltages() timing
 	//#define ITRI_MOD_6_g		// verify cell and GPIO voltages
 	//#define ITRI_MOD_6_h
 	#define ITRI_MOD_6_i		// LTC driver uses interrupt
 	#define ITRI_MOD_8			// bypass reading temperature and UID
 	#define	ITRI_MOD_9			// supporting SPM on/off
-	#define ITRI_MOD_9_a		// supporting async. EBM control cmd
+	//#define ITRI_MOD_9_a		// supporting async. EBM control cmd
 	//#define ITRI_MOD_10			// change CAN baud rate 0.5M -> 1Mbps; NOTE: remember update RPi CAN bitrate simultaneously
 	#define ITRI_MOD_11			// support heart beat
 	#define ITRI_MOD_12			// support LED control
+	#define ITRI_MOD_13			// monitor cell voltage safe operating limit (BC_VOLTMAX)
 
 	//#define ITRI_EBM_CHROMA_V2	// disable:H(GPIO2)/H(GPIO4), bypass:L/H, enable:L/L
 	#define ITRI_EBM_CHROMA_V3	// disable:H(GPIO2)/H(GPIO4), bypass:L/L, enable:L/H
