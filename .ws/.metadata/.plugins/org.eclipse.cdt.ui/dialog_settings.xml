@@ -19,6 +19,14 @@
 		<item value="true" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="COM_GetTimeStamp"/>
+			<item value="LTC_EBM_SetColState"/>
+			<item value="LTC_STATEMACH_EBMCONTROL"/>
+			<item value="rb_cmds"/>
+			<item value="CANS_Enable_Periodic"/>
+			<item value="CURRENT_SENSOR_PRESENT"/>
+			<item value="int64_t"/>
+			<item value="int64"/>
 			<item value="cans_ebm_all_disable"/>
 			<item value="*SLAVE*"/>
 			<item value="VER"/>

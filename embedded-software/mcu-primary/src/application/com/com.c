@@ -262,6 +262,11 @@ uint32_t rb_cmd_ltc_task_VOLTAGEMEASUREMENT(char* params) {
 	return 0;
 }
 
+uint32_t rb_cmd_cur_cali(char* params) {
+	LTC_Set_Get_Property("set_curr_cali", NULL, NULL, NULL, NULL);
+	return 0;
+}
+
 typedef struct {
 	char cmd[48];
 	char desc[64];
@@ -284,6 +289,7 @@ RB_CMD_s rb_cmds[] = {
 	{"get_LTC_CellVoltages", "ro, ", &rb_cmd_get_LTC_CellVoltages},
 	{"ltc_task_ALLGPIOMEASUREMEN", "ro,", &rb_cmd_ltc_task_ALLGPIOMEASUREMEN},
 	{"ltc_task_VOLTAGEMEASUREMENT", "ro,", &rb_cmd_ltc_task_VOLTAGEMEASUREMENT},
+	{"set_cur_cali",						"current calibration", 					&rb_cmd_cur_cali},
 };
 
 uint32_t exe_rb_cmd(char* com_receivedbyte) {

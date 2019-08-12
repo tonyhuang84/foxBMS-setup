@@ -4844,6 +4844,12 @@ uint32_t get_LTC_CellVoltages(void* iParam1, void* iParam2, void* oParam1, void*
 
 uint32_t set_curr_cali(void* iParam1, void* iParam2, void* oParam1, void* oParam2) {
 	if (ltc_ebm_cmd == LTC_EBM_NONE) {
+		uint8_t i;
+		for (i=0; i < BS_NR_OF_MODULES; i++) {
+			ltc_ebm_cali[i].isCali = LTC_EBM_MAX_CURR_CAL_CNT;
+			ltc_ebm_cali[i].curBat_offset = 0;
+			ltc_ebm_cali[i].curMod_offset = 0;
+		}
 		ltc_ebm_cmd = LTC_EBM_CURR_CALI;
 	}
 	return 0;

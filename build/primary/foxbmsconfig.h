@@ -8,7 +8,7 @@
 #define BUILD_VERSION "1.0"
 #define BUILD_VENDOR "Fraunhofer IISB"
 #define BUILD_LDSCRIPT "D:\itri\foxBMS\src\foxBMS-setup\embedded-software\mcu-primary\src\STM32F429ZIT6_FLASH.ld"
-#define BUILD_NUMBER "3601d6f"
+#define BUILD_NUMBER "040d565"
 #define TOOLCHAIN_WAF_ENABLED 1
 #define USE_DRIVER_HAL 1
 #define INCLUDE_eTaskGetState 1

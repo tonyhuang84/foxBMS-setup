@@ -51,26 +51,57 @@ err: ..\..\embedded-software\mcu-common\src\module\ltc\ltc.c: In function 'LTC_E
       ltc_cellvoltage.voltage[modIdx*(BS_NR_OF_BAT_CELLS_PER_MODULE)+6]);
       ^
 ..\..\embedded-software\mcu-common\src\module\ltc\ltc.c: In function 'ltc_task_ALLGPIOMEASUREMEN':
-..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:4856:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:4862:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
    memset(LTC_GPIOVoltages, 0x00, sizeof(LTC_GPIOVoltages));
    ^
 ..\..\embedded-software\mcu-common\src\module\ltc\ltc.c: In function 'LTC_Set_Get_Property':
-..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:4899:3: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:4905:3: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
    if (strcmp(prop, ltc_props[i].prop) == 0) {
    ^
 ..\..\embedded-software\mcu-common\src\module\ltc\ltc.c: In function 'LTC_BalanceControl':
-..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:3641:44: warning: iteration 14u invokes undefined behavior [-Waggressive-loop-optimizations]
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:3641:44: warning: iteration 2u invokes undefined behavior [-Waggressive-loop-optimizations]
              if (ltc_balancing_control.value[j*(BS_NR_OF_BAT_CELLS_PER_MODULE)+11] == 1) {
                                             ^
 ..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:3596:9: note: containing loop
          for (j=0; j < BS_NR_OF_MODULES; j++) {
          ^
-..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:3666:44: warning: iteration 14u invokes undefined behavior [-Waggressive-loop-optimizations]
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:3666:44: warning: iteration 2u invokes undefined behavior [-Waggressive-loop-optimizations]
              if (ltc_balancing_control.value[j*(BS_NR_OF_BAT_CELLS_PER_MODULE)+14] == 1) {
                                             ^
 ..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:3648:9: note: containing loop
          for (j=0; j < BS_NR_OF_MODULES; j++) {
          ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c: In function 'LTC_Trigger':
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2196:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[3] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2197:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[4] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2198:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[5] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2199:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[6] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2200:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[7] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2209:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[3] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2210:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[4] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2211:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[5] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2212:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[6] = tmp;
+                                                      ^
+..\..\embedded-software\mcu-common\src\module\ltc\ltc.c:2213:54: warning: array subscript is above array bounds [-Warray-bounds]
+                         ltc_user_io_control.value_out[7] = tmp;
+                                                      ^
 
 [109/114] Linking build\primary\embedded-software\mcu-common\src\module\libfoxbms-common-module.a
 
@@ -95,15 +126,15 @@ out: ************************************************************************
 * Checksum address:     0xfff10 (1048336)                              *
 * Checksum algorithm:   crc32                                          *
 * Crc polynomial:       0x04C11DB7                                     *
-* 32-bit SW-Chksum:     0xBE0C86FB                                     *
+* 32-bit SW-Chksum:     0x6A2AFD4F                                     *
 ************************************************************************
 * Checksum tool successful                                             *
 ************************************************************************
 
 ['C:\\foxconda\\python.exe', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools\\checksum\\writeback.py', '--conffile', 'chk5um\\chksum.log', '--elffile', 'embedded-software\\mcu-primary\\src\\general\\foxbms.elf', '--tool', 'C:\\foxconda\\Library\\bin\\arm-none-eabi-gdb.exe']
 out: 
-Writing checksum 0xBE0C86FB into embedded-software\mcu-primary\src\general\foxbms.elf
-C:\foxconda\Library\bin\arm-none-eabi-gdb.exe -q -se=embedded-software\mcu-primary\src\general\foxbms.elf --write -ex="set var ver_sw_validation.Checksum_u32=0xBE0C86FB" -ex="print ver_sw_validation.Checksum_u32" -ex="quit"
+Writing checksum 0x6A2AFD4F into embedded-software\mcu-primary\src\general\foxbms.elf
+C:\foxconda\Library\bin\arm-none-eabi-gdb.exe -q -se=embedded-software\mcu-primary\src\general\foxbms.elf --write -ex="set var ver_sw_validation.Checksum_u32=0x6A2AFD4F" -ex="print ver_sw_validation.Checksum_u32" -ex="quit"
 Reading symbols from embedded-software\mcu-primary\src\general\foxbms.elf...(no debugging symbols found)...done.
 
 done...
@@ -113,7 +144,7 @@ Attempt to extract a component of a value that is not a structure.
 
 [113/114] Compiling build\primary\embedded-software\mcu-primary\src\general\foxbms.elf
 
+['C:\\foxconda\\Library\\bin\\arm-none-eabi-objcopy.exe', '-j', '.flashheader', '-O', 'binary', 'embedded-software\\mcu-primary\\src\\general\\foxbms.elf', 'embedded-software\\mcu-primary\\src\\general\\foxbms_flashheader.bin']
 [114/114] Compiling build\primary\embedded-software\mcu-primary\src\general\foxbms.elf
 
-['C:\\foxconda\\Library\\bin\\arm-none-eabi-objcopy.exe', '-j', '.flashheader', '-O', 'binary', 'embedded-software\\mcu-primary\\src\\general\\foxbms.elf', 'embedded-software\\mcu-primary\\src\\general\\foxbms_flashheader.bin']
 ['C:\\foxconda\\Library\\bin\\arm-none-eabi-objcopy.exe', '-R', '.bkp_ramsect', '-R', '.flashheader', '-O', 'binary', 'embedded-software\\mcu-primary\\src\\general\\foxbms.elf', 'embedded-software\\mcu-primary\\src\\general\\foxbms_flash.bin']

@@ -67,7 +67,7 @@
 	//#define ITRI_MOD_9_a		// supporting async. EBM control cmd
 	//#define ITRI_MOD_10			// change CAN baud rate 0.5M -> 1Mbps; NOTE: remember update RPi CAN bitrate simultaneously
 	#define ITRI_MOD_11			// support heart beat
-	#define ITRI_MOD_12			// support LED control
+	//#define ITRI_MOD_12			// support LED control
 	#define ITRI_MOD_13			// monitor cell voltage safe operating limit (BC_VOLTMAX)
 
 	//#define ITRI_EBM_CHROMA_V2	// disable:H(GPIO2)/H(GPIO4), bypass:L/H, enable:L/L
