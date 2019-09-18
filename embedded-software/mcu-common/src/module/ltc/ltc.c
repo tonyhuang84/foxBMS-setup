@@ -372,6 +372,14 @@ typedef struct {
 	// disable(OFF)
 	COL_GPIO_SETTING	disable;
 } COL_STATE_SETTING;
+#if 0
+static COL_STATE_SETTING col_state_setting[] = {
+		// column 0
+		{{0, 1, LTC_EBM_COL_STATE_NOT_READ},  {1, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {2, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
+		// column 1
+		{{3, 1, LTC_EBM_COL_STATE_NOT_READ},  {4, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {5, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
+};
+#else
 static COL_STATE_SETTING col_state_setting[] = {
 		// column 0
 		{{0, 1, LTC_EBM_COL_STATE_NOT_READ},  {1, 1, LTC_EBM_COL_STATE_NO_CHANGE},  {2, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
@@ -384,6 +392,7 @@ static COL_STATE_SETTING col_state_setting[] = {
 		// column 4
 		{{24, 1, LTC_EBM_COL_STATE_NOT_READ}, {23, 1, LTC_EBM_COL_STATE_NO_CHANGE}, {22, 1, LTC_EBM_COL_STATE_NO_CHANGE},},
 };
+#endif
 
 #if defined(ITRI_MOD_12)
 typedef struct {
